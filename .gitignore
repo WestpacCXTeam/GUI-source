@@ -1,0 +1,7 @@
+node_modules
+.tmp
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.idea
+_tests

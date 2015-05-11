@@ -1,0 +1,35 @@
+/*![Module-Version-Brand]*/
+/*
+ * Module 2
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| MODULE 2 STYLES
+._module2( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test2: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test2: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test2: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test2: 'WBC';
+	}
+	.getBrand();
+
+
+	.module-2 {
+		background-color: blue;
+		content: @test2;
+	}
+}

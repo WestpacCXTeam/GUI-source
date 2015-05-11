@@ -1,0 +1,50 @@
+/*![Module-Version-Brand]*/
+/*
+ * Module 1
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| MOD GENERAL DEPENDENCY
+._mod() when (default()) {
+	._mod() {}
+
+	//branding logic!
+
+	.modDepend {
+		content: @test;
+	}
+}
+
+
+//////////////////////////////////////| MODULE 1 STYLES
+._module1( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	._mod();
+
+	.module-1 {
+		background-color: pink;
+		content: @test;
+	}
+}

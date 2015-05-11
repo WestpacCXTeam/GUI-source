@@ -1,0 +1,35 @@
+/*![Module-Version-Brand]*/
+/*
+ * Base styles
+ *
+ * Colors, fonts
+ *
+ */
+
+
+//////////////////////////////////////| MODULE 1 STYLES
+._base( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = 'BOM') {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = 'BSA') {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = 'STG') {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = 'WBC') {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.stuff {
+		background-color: pink;
+	}
+}
