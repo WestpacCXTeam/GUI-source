@@ -198,7 +198,7 @@ module.exports = function(grunt) {
 						copy[ 'templateCopy' ] = {
 							expand: true,
 							cwd: './._template/module/',
-							src: '**/*.*',
+							src: '**',
 							dest: './' + name + '/',
 							rename: function(dest, src) {
 								if( src === '1.0.0/js/module.js' ) {
@@ -243,8 +243,8 @@ module.exports = function(grunt) {
 						grunt.config.set('replace', replace);
 						grunt.task.run('replace');
 
-						grunt.config.set('auto_install', auto_install);
-						grunt.task.run('auto_install');
+						// grunt.config.set('auto_install', auto_install);
+						// grunt.task.run('auto_install');
 
 					},
 				},

@@ -97,7 +97,7 @@ module.exports = function(grunt) {
 			var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
 
-			//concat
+			//concat files
 			brands.forEach(function(brand) {
 				concat[ version + 'JS' + brand ] = { //js
 					src: [
@@ -169,7 +169,7 @@ module.exports = function(grunt) {
 			});
 
 
-			//copy base font assets
+			//copy font assets
 			brands.forEach(function(brand) {
 				copy[ version + 'Font' + brand ] = {
 					src: '../base/' + baseVersion + '/_assets/' + brand + '/font/*',
@@ -236,7 +236,7 @@ module.exports = function(grunt) {
 					'./' + version + '/_tests/' + brand + '/assets/css/preview.html',
 					'./' + version + '/_tests/' + brand + '/assets/css/grunticon.loader.js',
 					'./' + version + '/_tests/' + brand + '/assets/css/png/',
-					'./' + version + '/_tests/' + brand + '/assets/css/*.svg',
+					// './' + version + '/_tests/' + brand + '/assets/css/*.svg',
 				];
 			});
 

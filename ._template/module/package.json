@@ -12,6 +12,7 @@
 		"grunt-contrib-imagemin": "^0.9.4",
 		"grunt-contrib-clean": "^0.6.0",
 		"grunt-font": "0.0.9",
+		"grunt-grunticon": "^2.1.6",
 		"grunt-lintspaces": "^0.6.2",
 		"grunt-text-replace": "^0.4.0",
 		"grunt-wakeup": "0.0.6",
