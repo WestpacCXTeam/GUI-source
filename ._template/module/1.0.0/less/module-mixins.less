@@ -1,35 +1,35 @@
 /*![Module-Version-Brand]*/
 /*
- * Module 2
+ * [-Module-] mixins
  *
  * doc comment with stuff and stuff
  *
  */
 
 
-//////////////////////////////////////| MODULE 2 STYLES
-._module2( @brand ) {
+//////////////////////////////////////| [-Module-] STYLES
+._[-Module-]( @brand ) {
 
 	/*
 	 *  SETTINGS
 	 */
 	.getBrand() when (@brand = BOM) {
-		@test2: 'BOM';
+		@test: 'BOM';
 	}
 	.getBrand() when (@brand = BSA) {
-		@test2: 'BSA';
+		@test: 'BSA';
 	}
 	.getBrand() when (@brand = STG) {
-		@test2: 'STG';
+		@test: 'STG';
 	}
 	.getBrand() when (@brand = WBC) {
-		@test2: 'WBC';
+		@test: 'WBC';
 	}
 	.getBrand();
 
 
-	.module-2 {
-		background-color: blue;
-		content: @test2;
+
+	.[-Module-] {
+		content: @test;
 	}
 }

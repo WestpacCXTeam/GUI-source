@@ -26,6 +26,9 @@ var path = require('path');
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Custom functions
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*
+ * return latest base version
+ */
 function GetLastestBase() {
 	var dir = '../base';
 	var result = '';
@@ -53,13 +56,16 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Dependencies
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-text-replace');
 	grunt.loadNpmTasks('grunt-lintspaces');
+	grunt.loadNpmTasks('grunt-grunticon');
 	grunt.loadNpmTasks('grunt-font');
 	grunt.loadNpmTasks('grunt-wakeup');
 
@@ -85,24 +91,23 @@ module.exports = function(grunt) {
 			var copy = {};
 			var font = {};
 			var replace = {};
+			var imagemin = {};
+			var grunticon = {};
+			var clean = {};
 			var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
 
-			//concat js
+			//concat
 			brands.forEach(function(brand) {
-				concat[ version + 'JS' + brand ] = {
+				concat[ version + 'JS' + brand ] = { //js
 					src: [
 						'../base/' + baseVersion + '/js/*.js',
 						'./' + version + '/js/*.js',
 					],
 					dest: './' + version + '/_tests/' + brand + '/assets/js/gui.js',
 				};
-			});
 
-
-			//concat less
-			brands.forEach(function(brand) {
-				concat[ version + 'Less' + brand ] = {
+				concat[ version + 'Less' + brand ] = { //less
 					src: [
 						'../base/' + baseVersion + '/less/base-mixins.less',
 						'../base/' + baseVersion + '/less/settings.less',
@@ -111,12 +116,8 @@ module.exports = function(grunt) {
 					],
 					dest: './' + version + '/_tests/' + brand + '/assets/less/gui.less',
 				};
-			});
 
-
-			//concat html
-			brands.forEach(function(brand) {
-				concat[ version + 'HTML' + brand ] = {
+				concat[ version + 'HTML' + brand ] = { //html
 					src: [
 						'./' + version + '/html/header.html',
 						'./' + version + '/html/source.html',
@@ -135,6 +136,7 @@ module.exports = function(grunt) {
 						compress: false,
 						ieCompat: true,
 						report: 'min',
+						plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
 					},
 					src: [
 						'./' + version + '/_tests/' + brand + '/assets/less/gui.less',
@@ -173,14 +175,69 @@ module.exports = function(grunt) {
 					src: '../base/' + baseVersion + '/_assets/' + brand + '/font/*',
 					dest: './' + version + '/_tests/' + brand + '/assets/font/',
 				};
-			});
 
-			//copy font assets
-			brands.forEach(function(brand) {
 				copy[ version + 'Font' + brand ] = {
 					src: './' + version + '/_assets/' + brand + '/font/',
 					dest: './' + version + '/_tests/' + brand + '/assets/font',
 				};
+			});
+
+
+			//optimise images
+			brands.forEach(function(brand) {
+				imagemin[ version + 'Images' + brand ] = {
+					options: {
+						optimizationLevel: 4,
+					},
+					files: [{
+						expand: true,
+						cwd: './' + version + '/_assets/' + brand + '/img/',
+						src: ['**/*.{png,jpg,gif}'],
+						dest: './' + version + '/_tests/' + brand + '/assets/img/',
+					}],
+				};
+			});
+
+
+			//handle svgs
+			brands.forEach(function(brand) {
+				grunticon[ version + 'SVG' + brand ] = {
+					files: [{
+						expand: true,
+						cwd: './' + version + '/_assets/' + brand + '/svg',
+						src: '*.svg',
+						dest: './' + version + '/_tests/' + brand + '/assets/css',
+					}],
+
+					options: {
+						datasvgcss: 'symbols.data.svg.css',
+						datapngcss: 'symbols.data.png.css',
+						urlpngcss: 'symbols.fallback.css',
+						cssprefix: '.symbol-',
+						pngpath: '../img',
+						enhanceSVG: true,
+						customselectors: {
+							// 'radio-on': ['input[type="radio"]:checked + label'],
+							// 'radio-off': ['.radio label', '.radio-inline label'],
+							// 'checkbox-on': ['input[type="checkbox"]:checked + label'],
+							// 'checkbox-off': ['.checkbox label', '.checkbox-inline label'],
+						},
+					},
+				};
+
+				copy[ version + 'SVG' + brand ] = {
+					expand: true,
+					cwd: './' + version + '/_tests/' + brand + '/assets/css/png',
+					src: '*.png',
+					dest: './' + version + '/_tests/' + brand + '/assets/img',
+				};
+
+				clean[ version + 'SVG' + brand ] = [
+					'./' + version + '/_tests/' + brand + '/assets/css/preview.html',
+					'./' + version + '/_tests/' + brand + '/assets/css/grunticon.loader.js',
+					'./' + version + '/_tests/' + brand + '/assets/css/png/',
+					'./' + version + '/_tests/' + brand + '/assets/css/*.svg',
+				];
 			});
 
 
@@ -195,9 +252,6 @@ module.exports = function(grunt) {
 
 
 			//running tasks
-			grunt.config.set('font', font);
-			grunt.task.run('font');
-
 			grunt.config.set('concat', concat);
 			grunt.task.run('concat');
 
@@ -207,8 +261,20 @@ module.exports = function(grunt) {
 			grunt.config.set('less', less);
 			grunt.task.run('less');
 
+			grunt.config.set('imagemin', imagemin);
+			grunt.task.run('imagemin');
+
+			grunt.config.set('grunticon', grunticon);
+			grunt.task.run('grunticon');
+
 			grunt.config.set('copy', copy);
 			grunt.task.run('copy');
+
+			grunt.config.set('clean', clean);
+			grunt.task.run('clean');
+
+			grunt.config.set('font', font);
+			grunt.task.run('font');
 
 		});
 	});
@@ -284,6 +350,8 @@ module.exports = function(grunt) {
 
 					'!**/_tests/**/*.*',
 					'!node_modules/**/*.*',
+					'!**/*.svg',
+					'!Gruntfile.js',
 				],
 			},
 		},
