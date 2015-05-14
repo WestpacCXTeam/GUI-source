@@ -51,23 +51,24 @@ function GetLastestBase() {
 // Grunt module
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 module.exports = function(grunt) {
+	require('../node_modules/grunt-recursively-load-tasks')(grunt);
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Dependencies
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	grunt.loadNpmTasks('grunt-contrib-imagemin');
-	grunt.loadNpmTasks('grunt-contrib-connect');
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-text-replace');
-	grunt.loadNpmTasks('grunt-lintspaces');
-	grunt.loadNpmTasks('grunt-grunticon');
-	grunt.loadNpmTasks('grunt-font');
-	grunt.loadNpmTasks('grunt-wakeup');
+	grunt.recursivelyLoadTasks('grunt-contrib-imagemin', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-contrib-connect', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-contrib-concat', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-contrib-watch', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-contrib-clean', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-contrib-copy', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-contrib-less', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-text-replace', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-lintspaces', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-grunticon', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-font', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-wakeup', '../node_modules');
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -236,7 +237,6 @@ module.exports = function(grunt) {
 					'./' + version + '/_tests/' + brand + '/assets/css/preview.html',
 					'./' + version + '/_tests/' + brand + '/assets/css/grunticon.loader.js',
 					'./' + version + '/_tests/' + brand + '/assets/css/png/',
-					// './' + version + '/_tests/' + brand + '/assets/css/*.svg',
 				];
 			});
 
@@ -346,7 +346,6 @@ module.exports = function(grunt) {
 					'**/*.less',
 					'**/*.css',
 					'**/*.html',
-					'**/*.svg',
 
 					'!**/_tests/**/*.*',
 					'!node_modules/**/*.*',
@@ -405,7 +404,7 @@ module.exports = function(grunt) {
 	// Tasks breakdown
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('build', [
-		'lintspaces',
+		// 'lintspaces',
 		'buildVersions',
 		'wakeup',
 	]);

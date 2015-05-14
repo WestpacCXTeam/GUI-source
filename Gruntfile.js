@@ -46,7 +46,6 @@ module.exports = function(grunt) {
 	// Dependencies
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-auto-install');
 	grunt.loadNpmTasks('grunt-text-replace');
 	grunt.loadNpmTasks('grunt-prompt');
 	grunt.loadNpmTasks('grunt-wakeup');
@@ -106,9 +105,11 @@ module.exports = function(grunt) {
 		});
 
 
+		//writing out GUI.json
 		grunt.file.write('./GUI.json', JSON.stringify(GUI));
 
 
+		//writing out index.html
 		replace[ 'Replace' ] = {
 			src: [
 				'./._template/index/index.html',
@@ -129,39 +130,6 @@ module.exports = function(grunt) {
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	// Custom grunt task to create list index
-	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	grunt.registerTask('npmInstall', 'Install all npm dependencies.', function() {
-
-		var auto_install = {};
-
-		grunt.file.expand({ filter: 'isDirectory' }, [
-			'./*',
-			'!./node_modules',
-			'!./._templates',
-			'!./.git',
-		]).forEach(function(dir) {
-
-			auto_install[ 'Install' + dir ] = {
-				options: {
-					cwd: dir,
-					stdout: false,
-					stderr: false,
-					failOnError: true,
-					npm: true,
-					bower: false,
-				},
-			};
-
-		});
-
-		//running tasks
-		grunt.config.set('auto_install', auto_install);
-		grunt.task.run('auto_install');
-	});
-
-
-	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Grunt tasks
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.initConfig({
@@ -171,19 +139,19 @@ module.exports = function(grunt) {
 		// Add a new module
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		prompt: {
-			setup: { //setup questionnaire
+			setup: {
 				options: {
 					questions: [
 						{
 							config: 'module',
 							type: 'input',
-							message: "\n\n" + 'Please enter the name of the new module:' + "\n\n",
+							message: "\n\n" + 'Please enter the name of the new module:'.yellow + "\n\n",
 							validate: function(value) {
 								var gui = grunt.file.readJSON('GUI.json');
 
 								var _isFound = gui[value] !== undefined;
 
-								return !_isFound || 'This module name already exists in the GUI namespace. Please choose another one.';
+								return !_isFound || 'This module name already exists in the GUI namespace. Please choose another one.'.red;
 							},
 						},
 					],
@@ -192,7 +160,7 @@ module.exports = function(grunt) {
 						var copy = {};
 						var rename = {};
 						var replace = {};
-						var auto_install = {};
+						var message = '';
 
 						//copy template
 						copy[ 'templateCopy' ] = {
@@ -224,27 +192,26 @@ module.exports = function(grunt) {
 							}],
 						};
 
-						//install npm dependencies
-						auto_install[ 'templateInstall' ] = {
-							options: {
-								cwd: './' + name,
-								stdout: false,
-								stderr: false,
-								failOnError: true,
-								npm: true,
-								bower: false,
-							},
-						};
+
+						//report summary
+						grunt.registerTask('report', 'Report the summary', function() {
+							console.log("\n" + message + "\n\n");
+							grunt.log.ok('done');
+						});
+
 
 						//running tasks
 						grunt.config.set('copy', copy);
 						grunt.task.run('copy');
 
+						message += "\n" + '• Files copied to new module directory: '.green + './'.yellow + name.yellow + '/'.yellow;
+
 						grunt.config.set('replace', replace);
 						grunt.task.run('replace');
 
-						// grunt.config.set('auto_install', auto_install);
-						// grunt.task.run('auto_install');
+						message += "\n" + '• Renamed files, mixins and methods into  '.green + name.yellow + ' namespace'.green;
+
+						grunt.task.run('report');
 
 					},
 				},
