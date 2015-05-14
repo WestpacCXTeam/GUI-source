@@ -76,7 +76,7 @@ you have grunt installed globally.
 
 ### Testing ingredient
 
-> Each `Ingredient` version has a `_test` folder that contains various html files to be tested.
+> Each `Ingredient` version has a `tests` folder that contains various html files to be tested.
 
 **[⬆ back to top](#content)**
 
