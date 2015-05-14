@@ -1,7 +1,7 @@
 /*![Module-Version]*/
 /***************************************************************************************************************************************************************
  *
- * Module 2
+ * [-Module-]
  *
  * Description of module
  *
@@ -16,17 +16,17 @@
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.init = function() {
-		App.debugging( 'Module 2: Initiating', 'report' );
+		App.debugging( '[-Module-]: Initiating', 'report' );
 
 
 		// some js stuff
 	};
 
 
-	App.module2 = module;
+	App.[-Module-] = module;
 
 
 	// run module
-	App.module1.init();
+	App.[-Module-].init();
 
 }(App));
