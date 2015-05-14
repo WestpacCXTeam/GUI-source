@@ -106,7 +106,7 @@ module.exports = function(grunt) {
 						'../base/' + baseVersion + '/js/*.js',
 						'./' + version + '/js/*.js',
 					],
-					dest: './' + version + '/_tests/' + brand + '/assets/js/gui.js',
+					dest: './' + version + '/tests/' + brand + '/assets/js/gui.js',
 				};
 
 				concat[ version + 'Less' + brand ] = { //less
@@ -116,7 +116,7 @@ module.exports = function(grunt) {
 						'./' + version + '/less/module-mixins.less',
 						'./' + version + '/less/settings.less',
 					],
-					dest: './' + version + '/_tests/' + brand + '/assets/less/gui.less',
+					dest: './' + version + '/tests/' + brand + '/assets/less/gui.less',
 				};
 
 				concat[ version + 'HTML' + brand ] = { //html
@@ -125,7 +125,7 @@ module.exports = function(grunt) {
 						'./' + version + '/html/source.html',
 						'./' + version + '/html/footer.html',
 					],
-					dest: './' + version + '/_tests/' + brand + '/index.html',
+					dest: './' + version + '/tests/' + brand + '/index.html',
 				};
 			});
 
@@ -141,9 +141,9 @@ module.exports = function(grunt) {
 						plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
 					},
 					src: [
-						'./' + version + '/_tests/' + brand + '/assets/less/gui.less',
+						'./' + version + '/tests/' + brand + '/assets/less/gui.less',
 					],
-					dest: './' + version + '/_tests/' + brand + '/assets/css/gui.css',
+					dest: './' + version + '/tests/' + brand + '/assets/css/gui.css',
 				};
 			});
 
@@ -152,9 +152,9 @@ module.exports = function(grunt) {
 			brands.forEach(function(brand) {
 				replace[ version + 'Replace' + brand ] = {
 					src: [
-						'./' + version + '/_tests/' + brand + '/assets/js/*.js',
-						'./' + version + '/_tests/' + brand + '/assets/less/*.less',
-						'./' + version + '/_tests/' + brand + '/*.html',
+						'./' + version + '/tests/' + brand + '/assets/js/*.js',
+						'./' + version + '/tests/' + brand + '/assets/less/*.less',
+						'./' + version + '/tests/' + brand + '/*.html',
 					],
 					overwrite: true,
 					replacements: [{
@@ -175,12 +175,12 @@ module.exports = function(grunt) {
 			brands.forEach(function(brand) {
 				copy[ version + 'Font' + brand ] = {
 					src: '../base/' + baseVersion + '/_assets/' + brand + '/font/*',
-					dest: './' + version + '/_tests/' + brand + '/assets/font/',
+					dest: './' + version + '/tests/' + brand + '/assets/font/',
 				};
 
 				copy[ version + 'Font' + brand ] = {
 					src: './' + version + '/_assets/' + brand + '/font/',
-					dest: './' + version + '/_tests/' + brand + '/assets/font',
+					dest: './' + version + '/tests/' + brand + '/assets/font',
 				};
 			});
 
@@ -195,7 +195,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: './' + version + '/_assets/' + brand + '/img/',
 						src: ['**/*.{png,jpg,gif}'],
-						dest: './' + version + '/_tests/' + brand + '/assets/img/',
+						dest: './' + version + '/tests/' + brand + '/assets/img/',
 					}],
 				};
 			});
@@ -208,7 +208,7 @@ module.exports = function(grunt) {
 						expand: true,
 						cwd: './' + version + '/_assets/' + brand + '/svg',
 						src: '*.svg',
-						dest: './' + version + '/_tests/' + brand + '/assets/css',
+						dest: './' + version + '/tests/' + brand + '/assets/css',
 					}],
 
 					options: {
@@ -229,15 +229,15 @@ module.exports = function(grunt) {
 
 				copy[ version + 'SVG' + brand ] = {
 					expand: true,
-					cwd: './' + version + '/_tests/' + brand + '/assets/css/png',
+					cwd: './' + version + '/tests/' + brand + '/assets/css/png',
 					src: '*.png',
-					dest: './' + version + '/_tests/' + brand + '/assets/img',
+					dest: './' + version + '/tests/' + brand + '/assets/img',
 				};
 
 				clean[ version + 'SVG' + brand ] = [
-					'./' + version + '/_tests/' + brand + '/assets/css/preview.html',
-					'./' + version + '/_tests/' + brand + '/assets/css/grunticon.loader.js',
-					'./' + version + '/_tests/' + brand + '/assets/css/png/',
+					'./' + version + '/tests/' + brand + '/assets/css/preview.html',
+					'./' + version + '/tests/' + brand + '/assets/css/grunticon.loader.js',
+					'./' + version + '/tests/' + brand + '/assets/css/png/',
 				];
 			});
 
@@ -299,7 +299,7 @@ module.exports = function(grunt) {
 			watch[ version ] = {
 				files: [
 					'./' + version + '/**/*.*',
-					'!./' + version + '/_tests/**/*.*',
+					'!./' + version + '/tests/**/*.*',
 					'../base/' + baseVersion + '/**/*.*',
 				],
 				tasks: [
@@ -348,7 +348,7 @@ module.exports = function(grunt) {
 					'**/*.css',
 					'**/*.html',
 
-					'!**/_tests/**/*.*',
+					'!**/tests/**/*.*',
 					'!node_modules/**/*.*',
 					'!**/*.svg',
 					'!Gruntfile.js',
