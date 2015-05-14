@@ -20,7 +20,7 @@ GUI-source
 
 ### General
 
-> We try to keep our rules simple and keep to them.
+> We try to keep our rules simple.
 
 We call each module `GUI Ingredient` and a compiled mix `GUI Flavour`. The `GUI Blender` is provided to help you pick your mix.
 
