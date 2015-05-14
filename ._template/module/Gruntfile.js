@@ -9,7 +9,7 @@
 //                                                            ╚██████╔╝ ╚██████╔╝ ██║
 //                                                             ╚═════╝   ╚═════╝  ╚═╝
 //                                                                       Created by Westpac digital
-// @desc     GUI source code for testing and maintance
+// @desc     GUI source running each module
 // @author   Dominik Wilkowski
 // @website  https://github.com/WestpacCXTeam/GUI-source
 // @issues   https://github.com/WestpacCXTeam/GUI-source/issues
@@ -82,6 +82,7 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('buildVersions', 'Build all versions in this module.', function() {
 
+		//iterate over all modules
 		grunt.file.expand({ filter: 'isDirectory' }, ['./*', '!./node_modules']).forEach(function(dir) {
 
 			var moduleName = process.cwd().split('/')[( process.cwd().split('/').length - 1 )];

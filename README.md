@@ -22,7 +22,7 @@ GUI-source
 
 > We try to keep our rules simple and keep to them.
 
-We call each module `GUI Ingredient` and a compiled mix `GUI Flavour`. A `Blender` is provided to help you pick your mix.
+We call each module `GUI Ingredient` and a compiled mix `GUI Flavour`. The `GUI Blender` is provided to help you pick your mix.
 
 1. The code is modular and built so each `Ingredient` can be blended together at will.
 1. The browser/feature support philosopy is:
@@ -44,6 +44,8 @@ We call each module `GUI Ingredient` and a compiled mix `GUI Flavour`. A `Blende
 
 > `Ingredient` get a new version when HTML changes. We try to keep HTML changes to the absolute minimum.
 > Older versions will always be avaliable but might not be supported anymore.
+
+To add a new version to an `Ingredient`, just duplicate the version folder. Grunt does the rest. (Do run `grunt` in the root folder though)
 
 **[⬆ back to top](#content)**
 
