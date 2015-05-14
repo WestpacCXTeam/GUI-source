@@ -31,7 +31,7 @@ We call each module `GUI Ingredient` and a compiled mix `GUI Flavour`. The `GUI 
 	1. Don't fake features that are not supported.
 1. Make as little assumption as possible about the enviroment this might be used in.
 1. This is primarly a CSS framework and Javascript should only be used to toggle classes.
-1. Collaboration has to abide to the [Styleguide](wiki/Styleguide).
+1. Collaboration has to abide to the [Styleguide](https://github.com/WestpacCXTeam/GUI-source/wiki/Styleguide).
 
 
 **[⬆ back to top](#content)**

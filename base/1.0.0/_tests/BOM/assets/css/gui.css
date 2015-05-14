@@ -1,0 +1,21 @@
+/*!base v1.0.0 BOM*/
+/*
+ * Base styles
+ *
+ * Colors, fonts
+ *
+ */
+/*!base v1.0.0 BOM*/
+/*
+ * Settings
+ *
+ * Calling module mixins
+ *
+ */
+/* ---------------------------------------| BASE |--------------------------------------- */
+/*
+	 *  SETTINGS
+	 */
+.stuff {
+  background-color: pink;
+}
