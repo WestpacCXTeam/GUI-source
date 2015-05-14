@@ -88,10 +88,10 @@ module.exports = function(grunt) {
 						'	<li>' +
 						'		<h3>v' + version + '</h3>' +
 						'		<ul>' +
-						'			<li><a href="' + subdir + '/_tests/BOM/">BOM</a></li>' +
-						'			<li><a href="' + subdir + '/_tests/BSA/">BSA</a></li>' +
-						'			<li><a href="' + subdir + '/_tests/STG/">STG</a></li>' +
-						'			<li><a href="' + subdir + '/_tests/WBC/">WBC</a></li>' +
+						'			<li><a href="' + subdir + '/tests/BOM/">BOM</a></li>' +
+						'			<li><a href="' + subdir + '/tests/BSA/">BSA</a></li>' +
+						'			<li><a href="' + subdir + '/tests/STG/">STG</a></li>' +
+						'			<li><a href="' + subdir + '/tests/WBC/">WBC</a></li>' +
 						'		</ul>' +
 						'	</li>' +
 						'</ul>';
@@ -193,6 +193,26 @@ module.exports = function(grunt) {
 						};
 
 
+						//creating missing empty folders
+						grunt.registerTask('folders', 'Creating missing empty folders', function() {
+
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/font') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/img') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/svg') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/font') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/img') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/svg') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/font') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/img') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/svg') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/font') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/img') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/svg') );
+							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/tests') );
+
+						});
+
+
 						//report summary
 						grunt.registerTask('report', 'Report the summary', function() {
 							console.log("\n" + message + "\n\n");
@@ -203,6 +223,8 @@ module.exports = function(grunt) {
 						//running tasks
 						grunt.config.set('copy', copy);
 						grunt.task.run('copy');
+
+						grunt.task.run('folders');
 
 						message += "\n" + '• Files copied to new module directory: '.green + './'.yellow + name.yellow + '/'.yellow;
 
