@@ -1,0 +1,127 @@
+/*!symbols v1.0.0 BOM*/
+/*
+ * Base styles
+ *
+ * Colors, fonts
+ *
+ */
+
+
+//////////////////////////////////////| MODULE 1 STYLES
+._base( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = 'BOM') {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = 'BSA') {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = 'STG') {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = 'WBC') {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.stuff {
+		background-color: pink;
+	}
+}
+/*!symbols v1.0.0 BOM*/
+/*
+ * Settings
+ *
+ * Calling module mixins
+ *
+ */
+
+
+/* ---------------------------------------| BASE |--------------------------------------- */
+._base(BOM);
+/*!symbols v1.0.0 BOM*/
+/*
+ * symbols mixins
+ *
+ * The symbols still need dimensions to display in background mode.
+ *
+ */
+
+
+//////////////////////////////////////| symbols STYLES
+._symbols( @brand ) {
+
+	.symbol-add-account {
+		width: 42px;
+		height: 42px;
+	}
+	.symbol-american-express {
+		width: 80px;
+		height: 70px;
+	}
+	.symbol-checkbox-off {
+		width: 32px;
+		height: 32px;
+	}
+	.symbol-checkbox-on {
+		width: 32px;
+		height: 32px;
+	}
+	.symbol-logo-alt {
+		width: 143px;
+		height: 65px;
+	}
+	.symbol-logo-phone {
+		width: 26px;
+		height: 44px;
+	}
+	.symbol-logo-tablet {
+		width: 143px;
+		height: 65px;
+	}
+	.symbol-master-card {
+		width: 74px;
+		height: 45px;
+	}
+	.symbol-radio-off {
+		width: 32px;
+		height: 32px;
+	}
+	.symbol-radio-on {
+		width: 32px;
+		height: 32px;
+	}
+	.symbol-store-apple {
+		width: 170px;
+		height: 58px;
+	}
+	.symbol-store-google {
+		width: 170px;
+		height: 58px;
+	}
+	.symbol-store-windows {
+		width: 170px;
+		height: 58px;
+	}
+	.symbol-visa {
+		width: 80px;
+		height: 25px;
+	}
+
+}
+/*!symbols v1.0.0 BOM*/
+/*
+ * symbols settings
+ *
+ * Calling module mixins
+ *
+ */
+
+
+/* ---------------------------------------| symbols |--------------------------------------- */
+._symbols(BOM);
