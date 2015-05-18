@@ -404,7 +404,7 @@ module.exports = function(grunt) {
 	// Tasks breakdown
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('build', [
-		// 'lintspaces',
+		'lintspaces',
 		'buildVersions',
 		'wakeup',
 	]);
