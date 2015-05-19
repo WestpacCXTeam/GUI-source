@@ -39,8 +39,8 @@ var App = (function() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debugging prettiness
 		//
-		// text  string   Text to be printed to debugger
-		// code  string   The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
+		// text  [string]   Text to be printed to debugger
+		// code  [string]   The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		debugging: function( text, code ) {
 
