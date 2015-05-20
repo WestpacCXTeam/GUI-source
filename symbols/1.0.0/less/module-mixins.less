@@ -2,13 +2,32 @@
 /*
  * symbols mixins
  *
- * The symbols still need dimensions to display in background mode.
+ * doc comment with stuff and stuff
  *
  */
 
 
 //////////////////////////////////////| symbols STYLES
 ._symbols( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
 
 	.symbol-add-account {
 		width: 42px;
@@ -27,15 +46,15 @@
 		height: 32px;
 	}
 	.symbol-logo-alt {
-		width: 143px;
+		width: 180px;
 		height: 65px;
 	}
 	.symbol-logo-phone {
-		width: 26px;
-		height: 44px;
+		width: 88px;
+		height: 42px;
 	}
 	.symbol-logo-tablet {
-		width: 143px;
+		width: 180px;
 		height: 65px;
 	}
 	.symbol-master-card {
@@ -62,9 +81,12 @@
 		width: 170px;
 		height: 58px;
 	}
+	.symbol-tick {
+		width: 32px;
+		height: 32px;
+	}
 	.symbol-visa {
 		width: 80px;
 		height: 25px;
 	}
-
 }

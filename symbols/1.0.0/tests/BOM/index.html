@@ -57,10 +57,14 @@
 		<div class="symbol-store-windows"></div>
 	</li>
 	<li>
+		<div class="symbol-tick"></div>
+	</li>
+	<li>
 		<div class="symbol-visa"></div>
 	</li>
 </ul>
 
+<hr>
 
 <h2>Direct enbedding</h2>
 <ul>
@@ -104,7 +108,41 @@
 		<div class="symbol-store-windows" data-grunticon-embed></div>
 	</li>
 	<li>
+		<div class="symbol-tick" data-grunticon-embed></div>
+	</li>
+	<li>
 		<div class="symbol-visa" data-grunticon-embed></div>
+	</li>
+</ul>
+
+<hr>
+
+<h2>Direct enbedding with CSS</h2>
+
+<style>
+	.symbol-checkbox-on polygon {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+	.symbol-checkbox-on:hover polygon {
+		opacity: 1;
+	}
+
+	.symbol-radio-on circle {
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+	.symbol-radio-on:hover circle {
+		opacity: 1;
+	}
+</style>
+
+<ul>
+	<li>
+		<div class="symbol-checkbox-on" data-grunticon-embed></div>
+	</li>
+	<li>
+		<div class="symbol-radio-on" data-grunticon-embed></div>
 	</li>
 </ul>
 	<script src="assets/js/gui.js"></script>
