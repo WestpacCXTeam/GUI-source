@@ -1557,63 +1557,69 @@ a:focus {
 /*
 	 *  SETTINGS
 	 */
-.symbol-add-account {
+.symbol.symbol-add-account {
   width: 42px;
   height: 42px;
 }
-.symbol-american-express {
+.symbol.symbol-american-express {
   width: 80px;
   height: 70px;
 }
-.symbol-checkbox-off {
+.symbol.symbol-checkbox-off {
   width: 32px;
   height: 32px;
 }
-.symbol-checkbox-on {
+.symbol.symbol-checkbox-on {
   width: 32px;
   height: 32px;
 }
-.symbol-logo-alt {
+.symbol.symbol-logo-alt {
   width: 180px;
   height: 65px;
 }
-.symbol-logo-phone {
+.symbol.symbol-logo-phone {
   width: 88px;
   height: 42px;
 }
-.symbol-logo-tablet {
+.symbol.symbol-logo-tablet {
   width: 180px;
   height: 65px;
 }
-.symbol-master-card {
+.symbol.symbol-master-card {
   width: 74px;
   height: 45px;
 }
-.symbol-radio-off {
+.symbol.symbol-radio-off {
   width: 32px;
   height: 32px;
 }
-.symbol-radio-on {
+.symbol.symbol-radio-on {
   width: 32px;
   height: 32px;
 }
-.symbol-store-apple {
+.symbol.symbol-store-apple {
   width: 170px;
   height: 58px;
 }
-.symbol-store-google {
+.symbol.symbol-store-google {
   width: 170px;
   height: 58px;
 }
-.symbol-store-windows {
+.symbol.symbol-store-windows {
   width: 170px;
   height: 58px;
 }
-.symbol-tick {
+.symbol.symbol-tick {
   width: 32px;
   height: 32px;
 }
-.symbol-visa {
+.symbol.symbol-visa {
   width: 80px;
   height: 25px;
+}
+.symbol.symbol-size-lg {
+  background-size: 200% 200%;
+}
+.symbol.symbol-size-sm {
+  background-size: 50% 50%;
 }
