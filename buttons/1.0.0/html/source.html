@@ -37,19 +37,19 @@
 
 <button type="button" class="btn btn-primary">
 	Primary
-	<span class="symbol-tick" data-grunticon-embed></span>
+	<span class="symbol symbol-tick" data-grunticon-embed></span>
 </button>
 <button type="button" class="btn btn-secondary">
 	Secondary
-	<span class="symbol-tick" data-grunticon-embed></span>
+	<span class="symbol symbol-tick" data-grunticon-embed></span>
 </button>
 <button type="button" class="btn btn-tertiary">
 	Tertiary
-	<span class="symbol-tick" data-grunticon-embed></span>
+	<span class="symbol symbol-tick" data-grunticon-embed></span>
 </button>
 <button type="button" class="btn btn-muted">
 	Muted
-	<span class="symbol-tick" data-grunticon-embed></span>
+	<span class="symbol symbol-tick" data-grunticon-embed></span>
 </button>
 
 <hr>
@@ -86,17 +86,17 @@
 <hr>
 <h2>button-groups toggle</h2>
 
-<div class="js-button-group">
+<div class="btn-group js-button-group">
 
-	<label class="is-active">
+	<label class="btn is-active">
 		<input type="radio" name="options"> Left
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options"> Middle
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options"> Right
 	</label>
 
@@ -105,65 +105,65 @@
 <hr>
 <h2>button-groups sizing</h2>
 
-<div class="js-button-group btn-group-xl">
+<div class="btn-group btn-group-xl js-button-group">
 
-	<label class="is-active">
+	<label class="btn is-active">
 		<input type="radio" name="options1"> Left
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options1"> Middle
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options1"> Right
 	</label>
 
 </div>
 
-<div class="js-button-group btn-group-lg">
+<div class="btn-group btn-group-lg js-button-group">
 
-	<label class="is-active">
+	<label class="btn is-active">
 		<input type="radio" name="options2"> Left
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options2"> Middle
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options2"> Right
 	</label>
 
 </div>
 
-<div class="js-button-group">
+<div class="btn-group js-button-group">
 
-	<label class="is-active">
+	<label class="btn is-active">
 		<input type="radio" name="options3"> Left
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options3"> Middle
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options3"> Right
 	</label>
 
 </div>
 
-<div class="js-button-group btn-group-sm">
+<div class="btn-group btn-group-sm js-button-group">
 
-	<label class="is-active">
+	<label class="btn is-active">
 		<input type="radio" name="options4"> Left
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options4"> Middle
 	</label>
 
-	<label>
+	<label class="btn">
 		<input type="radio" name="options4"> Right
 	</label>
 
@@ -173,29 +173,127 @@
 <h2>dropdown buttons</h2>
 
 <div class="btn-dropdown js-button-dropdown">
-	<button type="button" class="btn btn-primary">
-		Primary
+	<button type="button" class="btn">
+		Dropdown
 	</button>
 	<ul class="dropdown-menu" role="menu">
-		<li><a href="#">Action</a></li>
-		<li><a href="#">Another action</a></li>
-		<li><a href="#">Something else here</a></li>
-		<li class="divider"></li>
-		<li><a href="#">Separated link</a></li>
+		<li><a href="#url">Link 1</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Link 3</a></li>
+		<li><a href="#url">Last link</a></li>
 	</ul>
 </div>
 
 <hr>
-<h2>block buttons</h2>
+
+<div class="btn-dropdown js-button-dropdown">
+	<button type="button" class="btn">
+		Dropdown
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><button class="btn-text">Action 1</button></li>
+		<li><button class="btn-text">Another action</button></li>
+		<li><button class="btn-text">Action 3</button></li>
+		<li><button class="btn-text">Last action</button></li>
+	</ul>
+</div>
 
 <hr>
-<h2>block buttons</h2>
+
+<div class="btn-dropdown js-button-dropdown">
+	<button type="button" class="btn">
+		Dropdown
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>
+			<span>Setting 1</span>
+			<div class="btn-group js-button-group">
+
+				<label class="btn">
+					<input type="radio" name="options5"> Yes
+				</label>
+
+				<label class="btn">
+					<input type="radio" name="options5"> No
+				</label>
+
+			</div>
+		</li>
+		<li>
+			<span>Setting 2</span>
+			<div class="btn-group js-button-group">
+
+				<label class="btn">
+					<input type="radio" name="options6"> Yes
+				</label>
+
+				<label class="btn">
+					<input type="radio" name="options6"> No
+				</label>
+
+			</div>
+		</li>
+		<li>
+			<span>Setting 3</span>
+			<div class="btn-group js-button-group">
+
+				<label class="btn">
+					<input type="radio" name="options7"> Yes
+				</label>
+
+				<label class="btn">
+					<input type="radio" name="options7"> No
+				</label>
+
+			</div>
+		</li>
+		<li>
+			<span>Setting 4</span>
+			<div class="btn-group js-button-group">
+
+				<label class="btn">
+					<input type="radio" name="options8"> Yes
+				</label>
+
+				<label class="btn">
+					<input type="radio" name="options8"> No
+				</label>
+
+			</div>
+		</li>
+	</ul>
+</div>
 
 <hr>
-<h2>block buttons</h2>
 
-<hr>
-<h2>block buttons</h2>
-
-<hr>
-<h2>block buttons</h2>
+<div class="btn-dropdown js-button-dropdown">
+	<button type="button" class="btn">
+		Dropdown
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>
+			<label class="checkbox js-checkbox">
+				<span class="checkbox-text">Setting 1</span>
+				<input class="checkbox-input" type="checkbox">
+			</label>
+		</li>
+		<li>
+			<label class="checkbox js-checkbox">
+				<span class="checkbox-text">Setting 2</span>
+				<input class="checkbox-input" type="checkbox">
+			</label>
+		</li>
+		<li>
+			<label class="checkbox js-checkbox">
+				<span class="checkbox-text">Setting 3</span>
+				<input class="checkbox-input" type="checkbox">
+			</label>
+		</li>
+		<li>
+			<label class="checkbox js-checkbox">
+				<span class="checkbox-text">Setting 4</span>
+				<input class="checkbox-input" type="checkbox">
+			</label>
+		</li>
+	</ul>
+</div>
