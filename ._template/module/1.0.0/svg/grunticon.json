@@ -1,0 +1,6 @@
+{
+	"radio-on": "['input[type=\"radio\"]:checked + label']",
+	"radio-off": "['.radio label', '.radio-inline label']",
+	"checkbox-on": "['input[type=\"checkbox\"]:checked + label']",
+	"checkbox-off": "['.checkbox label', '.checkbox-inline label']"
+}
