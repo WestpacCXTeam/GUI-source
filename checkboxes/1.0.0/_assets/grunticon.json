@@ -1,0 +1,4 @@
+{
+	"checkbox-off": [".checkbox-input + .checkbox-text"],
+	"checkbox-on": [".checkbox-input:checked + .checkbox-text"]
+}
