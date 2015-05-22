@@ -1539,6 +1539,11 @@ a:focus {
  * doc comment with stuff and stuff
  *
  */
+/*
+ * MAKE BUTTONS
+ *
+ * create buttons for each version with active, hover and disabled styles
+ */
 /*!buttons v1.0.0 BSA*/
 /*
  * buttons settings
@@ -1550,6 +1555,155 @@ a:focus {
 /*
 	 *  SETTINGS
 	 */
-.buttons {
-  content: 'BSA';
+.btn {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 300;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid #c0142e;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-appearance: none;
+  overflow: hidden;
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn .btn-text {
+  vertical-align: middle;
+  display: inline-block;
+}
+.btn .btn-icon {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  margin-left: 24px;
+}
+.btn .btn-icon.btn-icon-left {
+  float: left;
+  margin-left: 0;
+  margin-right: 24px;
+}
+.btn.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn:active {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn:hover {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.disabled,
+.btn:disabled {
+  opacity: 0.65;
+}
+.btn.disabled:active,
+.btn:disabled:active,
+.btn.disabled:hover,
+.btn:disabled:hover {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+  cursor: not-allowed;
+}
+.btn.btn-primary {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.btn-primary:active {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.btn-primary:hover {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.btn-primary.disabled,
+.btn.btn-primary:disabled {
+  opacity: 0.65;
+}
+.btn.btn-primary.disabled:active,
+.btn.btn-primary:disabled:active,
+.btn.btn-primary.disabled:hover,
+.btn.btn-primary:disabled:hover {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+  cursor: not-allowed;
+}
+.btn.btn-hero {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.btn-hero:active {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.btn-hero:hover {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.btn-hero.disabled,
+.btn.btn-hero:disabled {
+  opacity: 0.65;
+}
+.btn.btn-hero.disabled:active,
+.btn.btn-hero:disabled:active,
+.btn.btn-hero.disabled:hover,
+.btn.btn-hero:disabled:hover {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+  cursor: not-allowed;
+}
+.btn.btn-neutral {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.btn-neutral:active {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.btn-neutral:hover {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+}
+.btn.btn-neutral.disabled,
+.btn.btn-neutral:disabled {
+  opacity: 0.65;
+}
+.btn.btn-neutral.disabled:active,
+.btn.btn-neutral:disabled:active,
+.btn.btn-neutral.disabled:hover,
+.btn.btn-neutral:disabled:hover {
+  color: #ffffff;
+  border-color: #c0142e;
+  background-color: #c0142e;
+  cursor: not-allowed;
+}
+.btn-block + .btn-block {
+  margin-top: 6px;
 }
