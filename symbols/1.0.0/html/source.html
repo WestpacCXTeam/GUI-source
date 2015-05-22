@@ -7,12 +7,6 @@
 		<div class="symbol symbol-american-express"></div>
 	</li>
 	<li>
-		<div class="symbol symbol-checkbox-off"></div>
-	</li>
-	<li>
-		<div class="symbol symbol-checkbox-on"></div>
-	</li>
-	<li>
 		<div class="symbol symbol-logo-alt"></div>
 	</li>
 	<li>
@@ -23,12 +17,6 @@
 	</li>
 	<li>
 		<div class="symbol symbol-master-card"></div>
-	</li>
-	<li>
-		<div class="symbol symbol-radio-off"></div>
-	</li>
-	<li>
-		<div class="symbol symbol-radio-on"></div>
 	</li>
 	<li>
 		<div class="symbol symbol-store-apple"></div>
@@ -58,12 +46,6 @@
 		<div class="symbol symbol-american-express" data-grunticon-embed></div>
 	</li>
 	<li>
-		<div class="symbol symbol-checkbox-off" data-grunticon-embed></div>
-	</li>
-	<li>
-		<div class="symbol symbol-checkbox-on" data-grunticon-embed></div>
-	</li>
-	<li>
 		<div class="symbol symbol-logo-alt" data-grunticon-embed></div>
 	</li>
 	<li>
@@ -74,12 +56,6 @@
 	</li>
 	<li>
 		<div class="symbol symbol-master-card" data-grunticon-embed></div>
-	</li>
-	<li>
-		<div class="symbol symbol-radio-off" data-grunticon-embed></div>
-	</li>
-	<li>
-		<div class="symbol symbol-radio-on" data-grunticon-embed></div>
 	</li>
 	<li>
 		<div class="symbol symbol-store-apple" data-grunticon-embed></div>
@@ -102,28 +78,26 @@
 <h2>Direct enbedding with CSS</h2>
 
 <style>
-	.css-test .symbol-checkbox-on polygon {
-		opacity: 0;
-		transition: opacity 0.3s ease;
+	.css-test .symbol-store-apple svg > g > path {
+		transition: fill 0.3s ease;
 	}
-	.css-test .symbol-checkbox-on:hover polygon {
-		opacity: 1;
+	.css-test .symbol-store-apple:hover svg > g > path {
+		fill: pink;
 	}
 
-	.css-test .symbol-radio-on circle {
-		opacity: 0;
-		transition: opacity 0.3s ease;
+	.css-test .symbol-store-google svg > g > g > path {
+		transition: fill 0.3s ease;
 	}
-	.css-test .symbol-radio-on:hover circle {
-		opacity: 1;
+	.css-test .symbol-store-google:hover svg > g > g > path {
+		fill: pink;
 	}
 </style>
 
 <ul class="css-test">
 	<li>
-		<div class="symbol symbol-checkbox-on" data-grunticon-embed></div>
+		<div class="symbol symbol-store-apple" data-grunticon-embed></div>
 	</li>
 	<li>
-		<div class="symbol symbol-radio-on" data-grunticon-embed></div>
+		<div class="symbol symbol-store-google" data-grunticon-embed></div>
 	</li>
 </ul>
