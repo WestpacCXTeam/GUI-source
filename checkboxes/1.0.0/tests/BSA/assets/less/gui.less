@@ -1206,8 +1206,30 @@
 
 
 
-	.checkboxes {
-		content: @test;
+	.checkbox {
+		overflow: hidden;
+		display: inline-block;
+
+		.checkbox-input {
+			opacity: 0;
+			position: absolute;
+		}
+
+		.checkbox-text {
+			font-size: 16px;
+			padding-left: 38px;
+			min-height: 32px;
+			display: inline-block;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+			.checkbox-flip& {
+				padding-left: 0;
+				padding-right: 38px;
+				background-position: right top;
+			}
+		}
 	}
 }
 /*!checkboxes v1.0.0 BSA*/
