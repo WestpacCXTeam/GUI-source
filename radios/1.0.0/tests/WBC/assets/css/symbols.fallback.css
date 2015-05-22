@@ -1,0 +1,6 @@
+.radio-input + .radio-text,
+.symbol-radio-off { background-image: url('../img/radio-off.png'); background-repeat: no-repeat; }
+
+.radio-input:checked + .radio-text,
+.symbol-radio-on { background-image: url('../img/radio-on.png'); background-repeat: no-repeat; }
+
