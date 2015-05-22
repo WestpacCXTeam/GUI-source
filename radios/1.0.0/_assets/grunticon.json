@@ -1,0 +1,4 @@
+{
+	"radio-off": [".radio-input + .radio-text"],
+	"radio-on": [".radio-input:checked + .radio-text"]
+}
