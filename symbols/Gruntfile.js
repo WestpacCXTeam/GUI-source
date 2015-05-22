@@ -206,6 +206,8 @@ module.exports = function(grunt) {
 
 
 			//handle svgs
+			var svgselectors = grunt.file.readJSON('./' + version + '/_assets/grunticon.json');
+
 			brands.forEach(function(brand) {
 				grunticon[ version + 'SVG' + brand ] = {
 					files: [{
@@ -222,12 +224,7 @@ module.exports = function(grunt) {
 						cssprefix: '.symbol-',
 						pngpath: '../img',
 						enhanceSVG: true,
-						customselectors: {
-							// 'radio-on': ['input[type="radio"]:checked + label'],
-							// 'radio-off': ['.radio label', '.radio-inline label'],
-							// 'checkbox-on': ['input[type="checkbox"]:checked + label'],
-							// 'checkbox-off': ['.checkbox label', '.checkbox-inline label'],
-						},
+						customselectors: svgselectors,
 					},
 				};
 
