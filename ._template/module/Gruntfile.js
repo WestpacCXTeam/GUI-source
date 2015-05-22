@@ -206,7 +206,7 @@ module.exports = function(grunt) {
 
 
 			//handle svgs
-			var svgselectors = grunt.file.readJSON('./' + version + '/_assets/' + brand + '/svg/grunticon.json');
+			var svgselectors = grunt.file.readJSON('./' + version + '/_assets/grunticon.json');
 
 			brands.forEach(function(brand) {
 				grunticon[ version + 'SVG' + brand ] = {
