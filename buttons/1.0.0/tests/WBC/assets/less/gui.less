@@ -1459,6 +1459,11 @@
 			border: 0 none;
 			color: @color-A;
 			padding: 0;
+			font-size: 14px;
+
+			p > & {
+				vertical-align: top;
+			}
 
 			&:hover {
 				background: transparent;
@@ -1555,7 +1560,7 @@
 		color: @color-Text;
 
 		.btn-dropdown > & {
-			.btn-group-caret:after {
+			.btn-dropdown-caret:after {
 				border-top-color: @color-Text;
 			}
 		}
@@ -1629,7 +1634,7 @@
 		position: relative;
 		display: inline-block;
 
-		& > .btn > .btn-group-caret {
+		& > .btn > .btn-dropdown-caret {
 			&:after {
 				content: " ";
 				margin-left: 6px;
@@ -1653,15 +1658,24 @@
 
 			li {
 				margin: 8px 0;
-				overflow: hidden;
+				white-space: nowrap;
+				display: flex;
+
+				&:extend(.clearfix all);
 
 				.btn-link,
 				a {
 					display: block;
 					color: @color-Muted;
-					font-size: 14px;
 					width: 100%;
 					text-align: left;
+				}
+
+				.btn-dropdown-text {
+					padding-right: 18px;
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
 				}
 			}
 
@@ -1713,10 +1727,6 @@
 				padding: 12px 18px;
 			}
 		}
-
-		.btn-group {
-			float: right;
-		}
 	}
 }
 
@@ -1756,7 +1766,7 @@
 		background-color: @hover-backgroundcolor;
 
 		.btn-dropdown > & {
-			.btn-group-caret:after {
+			.btn-dropdown-caret:after {
 				border-top-color: @hover-fontcolor;
 			}
 		}
@@ -1769,7 +1779,7 @@
 	}
 
 	.btn-dropdown > & {
-		.btn-group-caret:after {
+		.btn-dropdown-caret:after {
 			transition: border 0.2s ease;
 			border-top-color: @fontcolor;
 		}
