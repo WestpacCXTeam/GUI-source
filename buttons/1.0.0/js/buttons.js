@@ -13,6 +13,26 @@
 	var module = {};
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// private function: open close a dropdown
+	//
+	// _isOpen  [boolen]         Whether to open or close the dropdown
+	// $parent  [jquery object]  The parent element
+	// $menu    [jquery object]  The dropdown menu element
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	function toggelDropdown(_isOpen, $parent, $menu) {
+
+		if( !_isOpen ) {
+			$parent.addClass('is-open');
+			$menu.attr('aria-hidden', 'false');
+		}
+		else {
+			$parent.removeClass('is-open');
+			$menu.attr('aria-hidden', 'true');
+		}
+
+	}
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.init = function() {
@@ -30,16 +50,12 @@
 				var $menu = $this.next('.dropdown-menu');
 				var _isOpen = $parent.hasClass('is-open');
 
-				if( !_isOpen ) {
-					$parent.addClass('is-open');
-					$menu.attr('aria-hidden', 'false');
-				}
-				else {
-					$parent.removeClass('is-open');
-					$menu.attr('aria-hidden', 'true');
-				}
+				toggelDropdown(_isOpen, $parent, $menu);
 
 			});
+
+			//ESC button listener for close
+			//toggelDropdown(true, $('.btn-dropdown'), $('.dropdown-menu'));
 		}
 	};
 
