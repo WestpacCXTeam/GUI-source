@@ -718,6 +718,50 @@
 	@color-J-20: mix(@color-J, white, 20%);
 	@color-J-10: mix(@color-J, white, 10%);
 	@color-J-5: mix(@color-J, white, 5%);
+
+	@color-Success-90: mix(@color-Success, white, 90%);
+	@color-Success-80: mix(@color-Success, white, 80%);
+	@color-Success-70: mix(@color-Success, white, 70%);
+	@color-Success-60: mix(@color-Success, white, 60%);
+	@color-Success-50: mix(@color-Success, white, 50%);
+	@color-Success-40: mix(@color-Success, white, 40%);
+	@color-Success-30: mix(@color-Success, white, 30%);
+	@color-Success-20: mix(@color-Success, white, 20%);
+	@color-Success-10: mix(@color-Success, white, 10%);
+	@color-Success-5: mix(@color-Success, white, 5%);
+
+	@color-Danger-90: mix(@color-Danger, white, 90%);
+	@color-Danger-80: mix(@color-Danger, white, 80%);
+	@color-Danger-70: mix(@color-Danger, white, 70%);
+	@color-Danger-60: mix(@color-Danger, white, 60%);
+	@color-Danger-50: mix(@color-Danger, white, 50%);
+	@color-Danger-40: mix(@color-Danger, white, 40%);
+	@color-Danger-30: mix(@color-Danger, white, 30%);
+	@color-Danger-20: mix(@color-Danger, white, 20%);
+	@color-Danger-10: mix(@color-Danger, white, 10%);
+	@color-Danger-5: mix(@color-Danger, white, 5%);
+
+	@color-Warning-90: mix(@color-Warning, white, 90%);
+	@color-Warning-80: mix(@color-Warning, white, 80%);
+	@color-Warning-70: mix(@color-Warning, white, 70%);
+	@color-Warning-60: mix(@color-Warning, white, 60%);
+	@color-Warning-50: mix(@color-Warning, white, 50%);
+	@color-Warning-40: mix(@color-Warning, white, 40%);
+	@color-Warning-30: mix(@color-Warning, white, 30%);
+	@color-Warning-20: mix(@color-Warning, white, 20%);
+	@color-Warning-10: mix(@color-Warning, white, 10%);
+	@color-Warning-5: mix(@color-Warning, white, 5%);
+
+	@color-Info-90: mix(@color-Info, white, 90%);
+	@color-Info-80: mix(@color-Info, white, 80%);
+	@color-Info-70: mix(@color-Info, white, 70%);
+	@color-Info-60: mix(@color-Info, white, 60%);
+	@color-Info-50: mix(@color-Info, white, 50%);
+	@color-Info-40: mix(@color-Info, white, 40%);
+	@color-Info-30: mix(@color-Info, white, 30%);
+	@color-Info-20: mix(@color-Info, white, 20%);
+	@color-Info-10: mix(@color-Info, white, 10%);
+	@color-Info-5: mix(@color-Info, white, 5%);
 }
 
 
@@ -1196,44 +1240,44 @@
 		@primary-backgroundcolor: @color-A;
 		@primary-bordercolor: @color-A;
 		@primary-active-fontcolor: #fff;
-		@primary-active-backgroundcolor: @color-A;
+		@primary-active-backgroundcolor: @color-A-50;
 		@primary-active-bordercolor: @color-A;
 		@primary-hover-fontcolor: #fff;
-		@primary-hover-backgroundcolor: @color-A;
+		@primary-hover-backgroundcolor: @color-A-70;
 		@primary-hover-bordercolor: @color-A;
 
 		//////////////////////////////////////| HERO
 		@hero-fontcolor: #fff;
 		@hero-backgroundcolor: @color-B;
-		@hero-bordercolor: @color-A;
+		@hero-bordercolor: @color-B;
 		@hero-active-fontcolor: #fff;
-		@hero-active-backgroundcolor: @color-A;
-		@hero-active-bordercolor: @color-A;
+		@hero-active-backgroundcolor: @color-B-50;
+		@hero-active-bordercolor: @color-B;
 		@hero-hover-fontcolor: #fff;
-		@hero-hover-backgroundcolor: @color-A;
-		@hero-hover-bordercolor: @color-A;
+		@hero-hover-backgroundcolor: @color-B-70;
+		@hero-hover-bordercolor: @color-B;
 
 		//////////////////////////////////////| NEUTRAL
 		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-C;
-		@neutral-bordercolor: @color-A;
+		@neutral-backgroundcolor: @color-E;
+		@neutral-bordercolor: @color-E;
 		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-A;
-		@neutral-active-bordercolor: @color-A;
+		@neutral-active-backgroundcolor: @color-E-50;
+		@neutral-active-bordercolor: @color-E;
 		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-A;
-		@neutral-hover-bordercolor: @color-A;
+		@neutral-hover-backgroundcolor: @color-E-70;
+		@neutral-hover-bordercolor: @color-E;
 
 		//////////////////////////////////////| FAINT
-		@faint-fontcolor: #fff;
-		@faint-backgroundcolor: @color-D;
-		@faint-bordercolor: @color-A;
-		@faint-active-fontcolor: #fff;
-		@faint-active-backgroundcolor: @color-A;
-		@faint-active-bordercolor: @color-A;
-		@faint-hover-fontcolor: #fff;
-		@faint-hover-backgroundcolor: @color-A;
-		@faint-hover-bordercolor: @color-A;
+		@faint-fontcolor: @color-Muted;
+		@faint-backgroundcolor: @color-I-50;
+		@faint-bordercolor: @color-Border;
+		@faint-active-fontcolor: @color-Muted;
+		@faint-active-backgroundcolor: #fff;
+		@faint-active-bordercolor: @color-Border;
+		@faint-hover-fontcolor: @color-Muted;
+		@faint-hover-backgroundcolor: #fff;
+		@faint-hover-bordercolor: @color-Border;
 	}
 	.getBrand() when (@brand = BSA) { //////////////////////////////////////| BSA
 		//////////////////////////////////////| PRIMARY
@@ -1241,44 +1285,44 @@
 		@primary-backgroundcolor: @color-A;
 		@primary-bordercolor: @color-A;
 		@primary-active-fontcolor: #fff;
-		@primary-active-backgroundcolor: @color-A;
+		@primary-active-backgroundcolor: @color-A-50;
 		@primary-active-bordercolor: @color-A;
 		@primary-hover-fontcolor: #fff;
-		@primary-hover-backgroundcolor: @color-A;
+		@primary-hover-backgroundcolor: @color-A-70;
 		@primary-hover-bordercolor: @color-A;
 
 		//////////////////////////////////////| HERO
 		@hero-fontcolor: #fff;
-		@hero-backgroundcolor: @color-A;
-		@hero-bordercolor: @color-A;
+		@hero-backgroundcolor: @color-B;
+		@hero-bordercolor: @color-B;
 		@hero-active-fontcolor: #fff;
-		@hero-active-backgroundcolor: @color-A;
-		@hero-active-bordercolor: @color-A;
+		@hero-active-backgroundcolor: @color-B-50;
+		@hero-active-bordercolor: @color-B;
 		@hero-hover-fontcolor: #fff;
-		@hero-hover-backgroundcolor: @color-A;
-		@hero-hover-bordercolor: @color-A;
+		@hero-hover-backgroundcolor: @color-B-70;
+		@hero-hover-bordercolor: @color-B;
 
 		//////////////////////////////////////| NEUTRAL
 		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-A;
-		@neutral-bordercolor: @color-A;
+		@neutral-backgroundcolor: @color-F;
+		@neutral-bordercolor: @color-F;
 		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-A;
-		@neutral-active-bordercolor: @color-A;
+		@neutral-active-backgroundcolor: @color-F-50;
+		@neutral-active-bordercolor: @color-F;
 		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-A;
-		@neutral-hover-bordercolor: @color-A;
+		@neutral-hover-backgroundcolor: @color-G;
+		@neutral-hover-bordercolor: @color-F;
 
 		//////////////////////////////////////| FAINT
-		@faint-fontcolor: #fff;
-		@faint-backgroundcolor: @color-A;
-		@faint-bordercolor: @color-A;
-		@faint-active-fontcolor: #fff;
-		@faint-active-backgroundcolor: @color-A;
-		@faint-active-bordercolor: @color-A;
-		@faint-hover-fontcolor: #fff;
-		@faint-hover-backgroundcolor: @color-A;
-		@faint-hover-bordercolor: @color-A;
+		@faint-fontcolor: @color-Muted;
+		@faint-backgroundcolor: @color-J;
+		@faint-bordercolor: @color-Border;
+		@faint-active-fontcolor: @color-Muted;
+		@faint-active-backgroundcolor: #fff;
+		@faint-active-bordercolor: @color-Border;
+		@faint-hover-fontcolor: @color-Muted;
+		@faint-hover-backgroundcolor: #fff;
+		@faint-hover-bordercolor: @color-Border;
 	}
 	.getBrand() when (@brand = STG) { //////////////////////////////////////| STG
 		//////////////////////////////////////| PRIMARY
@@ -1286,44 +1330,44 @@
 		@primary-backgroundcolor: @color-A;
 		@primary-bordercolor: @color-A;
 		@primary-active-fontcolor: #fff;
-		@primary-active-backgroundcolor: @color-A;
+		@primary-active-backgroundcolor: @color-A-50;
 		@primary-active-bordercolor: @color-A;
 		@primary-hover-fontcolor: #fff;
-		@primary-hover-backgroundcolor: @color-A;
+		@primary-hover-backgroundcolor: @color-A-70;
 		@primary-hover-bordercolor: @color-A;
 
 		//////////////////////////////////////| HERO
 		@hero-fontcolor: #fff;
-		@hero-backgroundcolor: @color-A;
-		@hero-bordercolor: @color-A;
+		@hero-backgroundcolor: @color-B;
+		@hero-bordercolor: @color-B;
 		@hero-active-fontcolor: #fff;
-		@hero-active-backgroundcolor: @color-A;
-		@hero-active-bordercolor: @color-A;
+		@hero-active-backgroundcolor: @color-B-50;
+		@hero-active-bordercolor: @color-B;
 		@hero-hover-fontcolor: #fff;
-		@hero-hover-backgroundcolor: @color-A;
-		@hero-hover-bordercolor: @color-A;
+		@hero-hover-backgroundcolor: @color-B-70;
+		@hero-hover-bordercolor: @color-B;
 
 		//////////////////////////////////////| NEUTRAL
 		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-A;
-		@neutral-bordercolor: @color-A;
+		@neutral-backgroundcolor: @color-G;
+		@neutral-bordercolor: @color-G;
 		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-A;
-		@neutral-active-bordercolor: @color-A;
+		@neutral-active-backgroundcolor: @color-G-50;
+		@neutral-active-bordercolor: @color-G;
 		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-A;
-		@neutral-hover-bordercolor: @color-A;
+		@neutral-hover-backgroundcolor: @color-G-70;
+		@neutral-hover-bordercolor: @color-G;
 
 		//////////////////////////////////////| FAINT
-		@faint-fontcolor: #fff;
-		@faint-backgroundcolor: @color-A;
-		@faint-bordercolor: @color-A;
-		@faint-active-fontcolor: #fff;
-		@faint-active-backgroundcolor: @color-A;
-		@faint-active-bordercolor: @color-A;
-		@faint-hover-fontcolor: #fff;
-		@faint-hover-backgroundcolor: @color-A;
-		@faint-hover-bordercolor: @color-A;
+		@faint-fontcolor: @color-Muted;
+		@faint-backgroundcolor: @color-J;
+		@faint-bordercolor: @color-Border;
+		@faint-active-fontcolor: @color-Muted;
+		@faint-active-backgroundcolor: #fff;
+		@faint-active-bordercolor: @color-Border;
+		@faint-hover-fontcolor: @color-Muted;
+		@faint-hover-backgroundcolor: #fff;
+		@faint-hover-bordercolor: @color-Border;
 	}
 	.getBrand() when (@brand = WBC) { //////////////////////////////////////| WBC
 		//////////////////////////////////////| PRIMARY
@@ -1331,49 +1375,49 @@
 		@primary-backgroundcolor: @color-A;
 		@primary-bordercolor: @color-A;
 		@primary-active-fontcolor: #fff;
-		@primary-active-backgroundcolor: @color-A;
+		@primary-active-backgroundcolor: @color-A-50;
 		@primary-active-bordercolor: @color-A;
 		@primary-hover-fontcolor: #fff;
-		@primary-hover-backgroundcolor: @color-A;
+		@primary-hover-backgroundcolor: @color-A-70;
 		@primary-hover-bordercolor: @color-A;
 
 		//////////////////////////////////////| HERO
 		@hero-fontcolor: #fff;
-		@hero-backgroundcolor: @color-A;
-		@hero-bordercolor: @color-A;
+		@hero-backgroundcolor: @color-B;
+		@hero-bordercolor: @color-B;
 		@hero-active-fontcolor: #fff;
-		@hero-active-backgroundcolor: @color-A;
-		@hero-active-bordercolor: @color-A;
+		@hero-active-backgroundcolor: @color-B-50;
+		@hero-active-bordercolor: @color-B;
 		@hero-hover-fontcolor: #fff;
-		@hero-hover-backgroundcolor: @color-A;
-		@hero-hover-bordercolor: @color-A;
+		@hero-hover-backgroundcolor: @color-B-70;
+		@hero-hover-bordercolor: @color-B;
 
 		//////////////////////////////////////| NEUTRAL
 		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-A;
-		@neutral-bordercolor: @color-A;
+		@neutral-backgroundcolor: @color-F;
+		@neutral-bordercolor: @color-F;
 		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-A;
-		@neutral-active-bordercolor: @color-A;
+		@neutral-active-backgroundcolor: @color-F-50;
+		@neutral-active-bordercolor: @color-F;
 		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-A;
-		@neutral-hover-bordercolor: @color-A;
+		@neutral-hover-backgroundcolor: @color-F-70;
+		@neutral-hover-bordercolor: @color-F;
 
 		//////////////////////////////////////| FAINT
-		@faint-fontcolor: #fff;
-		@faint-backgroundcolor: @color-A;
-		@faint-bordercolor: @color-A;
-		@faint-active-fontcolor: #fff;
-		@faint-active-backgroundcolor: @color-A;
-		@faint-active-bordercolor: @color-A;
-		@faint-hover-fontcolor: #fff;
-		@faint-hover-backgroundcolor: @color-A;
-		@faint-hover-bordercolor: @color-A;
+		@faint-fontcolor: @color-Muted;
+		@faint-backgroundcolor: @color-I;
+		@faint-bordercolor: @color-Border;
+		@faint-active-fontcolor: @color-Muted;
+		@faint-active-backgroundcolor: #fff;
+		@faint-active-bordercolor: @color-Border;
+		@faint-hover-fontcolor: @color-Muted;
+		@faint-hover-backgroundcolor: #fff;
+		@faint-hover-bordercolor: @color-Border;
 	}
 	.getBrand();
 
 
-
+	//////////////////////////////////////| BUTTONS
 	.btn {
 		padding: 6px 12px;
 		border-radius: 6px;
@@ -1395,6 +1439,7 @@
 			display: inline-block;
 		}
 
+		//btn icons
 		.btn-icon {
 			display: inline-block;
 			float: right;
@@ -1408,12 +1453,46 @@
 			}
 		}
 
+		//btn link
+		&.btn-link {
+			background: transparent;
+			border: 0 none;
+			color: @color-A;
+			padding: 0;
+
+			&:hover {
+				background: transparent;
+				text-decoration: underline;
+				color: @color-A;
+			}
+		}
+
+		//btn block
 		&.btn-block {
 			display: block;
 			width: 100%;
 		}
 
+		//btn sizing
+		&.btn-xl {
+			font-size: 18px;
+			padding: 13px 14px;
+			line-height: 1.11111111;
+		}
 
+		&.btn-lg {
+			padding: 10px 14px 9px 14px;
+			line-height: 1.33;
+		}
+
+		&.btn-sm {
+			padding: 4px 10px 3px 10px;
+			font-size: 14px;
+			line-height: 1.5;
+			font-weight: 400;
+		}
+
+		//all btn color versions
 		.make-button(
 			@faint-fontcolor,
 			@faint-backgroundcolor,
@@ -1469,8 +1548,175 @@
 		}
 	}
 
+	//btn soft and btn-group styles
+	.btn-group-item .btn,
+	.btn.btn-soft {
+		background-color: #fff;
+		color: @color-Text;
+
+		.btn-dropdown > & {
+			.btn-group-caret:after {
+				border-top-color: @color-Text;
+			}
+		}
+
+		&.disabled,
+		&:disabled {
+
+			&:active,
+			&:hover {
+				background-color: #fff;
+				color: @color-Text;
+			}
+		}
+	}
+
+	//////////////////////////////////////| FOCUS
+	&:focus {
+		outline: 2px dotted #000;
+		outline-offset: 0.5rem;
+		display: inline-block;
+	}
+
+
+	//////////////////////////////////////| BLOCK BUTTONS
 	.btn-block + .btn-block {
 		margin-top: 6px;
+	}
+
+
+	//////////////////////////////////////| BUTTON GROUPS
+	.btn-group {
+		display: inline-block;
+		font-size: 0;
+
+		.btn-group-input {
+			opacity: 0;
+			position: absolute;
+
+			&:focus + .btn {
+				outline: 2px dotted #000;
+				outline-offset: 0.5rem;
+				display: inline-block;
+			}
+		}
+
+		.btn-group-item {
+			.btn {
+				border-right-width: 0;
+				border-radius: 0;
+			}
+
+			&:first-child .btn {
+				border-top-left-radius: 6px;
+				border-bottom-left-radius: 6px;
+			}
+
+			&:last-child .btn {
+				border-right-width: 1px;
+				border-top-right-radius: 6px;
+				border-bottom-right-radius: 6px;
+			}
+		}
+
+		& + .btn-group {
+			margin-top: 6px;
+		}
+	}
+
+	//////////////////////////////////////| BUTTON DROPDOWNS
+	.btn-dropdown {
+		position: relative;
+		display: inline-block;
+
+		& > .btn > .btn-group-caret {
+			&:after {
+				content: " ";
+				margin-left: 6px;
+				display: inline-block;
+				vertical-align: middle;
+				border-top-width: 8px;
+				border-top-style: solid;
+				border-right: 7px solid transparent;
+				border-bottom: none;
+				border-left: 7px solid transparent;
+			}
+		}
+
+		.dropdown-menu {
+			list-style: none;
+			padding: 0;
+			margin: 3px 0 0 0;
+			background-color: #fff;
+			border-radius: 3px;
+			min-width: 180px;
+
+			li {
+				margin: 8px 0;
+				overflow: hidden;
+
+				.btn-link,
+				a {
+					display: block;
+					color: @color-Muted;
+					font-size: 14px;
+					width: 100%;
+					text-align: left;
+				}
+			}
+
+			.dropdown-menu-headline {
+				border-top: 1px solid @color-Text;
+				font-weight: 500;
+				font-size: 12px;
+				margin: 12px -12px 12px -12px;
+				padding: 12px 6px 0 6px;
+			}
+
+			li:first-child {
+				&.dropdown-menu-headline {
+					border-top: 0 none;
+					margin-top: 0;
+					padding-top: 0;
+				}
+			}
+
+			.dropdown-menu-divider {
+				border-top: 1px solid @color-Text;
+				margin: 12px -12px 12px -12px;
+				padding: 12px 12px 0 12px;
+			}
+
+			.js & {
+				display: none;
+				position: absolute;
+				overflow: hidden;
+				z-index: 100;
+			}
+		}
+
+		&.is-open {
+			& > .btn:after {
+				content: " ";
+				position: fixed;
+				z-index: 90;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+
+			.dropdown-menu {
+				display: block;
+				box-shadow: 0 6px 12px rgba(0,0,0,.175);
+				border: 1px solid @color-Border;
+				padding: 12px 18px;
+			}
+		}
+
+		.btn-group {
+			float: right;
+		}
 	}
 }
 
@@ -1496,6 +1742,25 @@
 	color: @fontcolor;
 	border-color: @bordercolor;
 	background-color: @backgroundcolor;
+	transition: background 0.2s ease, color 0.2s ease;
+
+	.btn-group-input:checked + & {
+		color: @fontcolor;
+		border-color: @bordercolor;
+		background-color: @backgroundcolor;
+	}
+
+	&:hover {
+		color: @hover-fontcolor;
+		border-color: @hover-bordercolor;
+		background-color: @hover-backgroundcolor;
+
+		.btn-dropdown > & {
+			.btn-group-caret:after {
+				border-top-color: @hover-fontcolor;
+			}
+		}
+	}
 
 	&:active {
 		color: @active-fontcolor;
@@ -1503,12 +1768,12 @@
 		background-color: @active-backgroundcolor;
 	}
 
-	&:hover {
-		color: @active-fontcolor;
-		border-color: @active-bordercolor;
-		background-color: @active-backgroundcolor;
+	.btn-dropdown > & {
+		.btn-group-caret:after {
+			transition: border 0.2s ease;
+			border-top-color: @fontcolor;
+		}
 	}
-
 
 	&.disabled,
 	&:disabled {
