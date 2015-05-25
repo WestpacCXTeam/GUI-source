@@ -30,12 +30,18 @@
 
 
 	.radio {
-		overflow: hidden;
 		display: inline-block;
+
+		&:extend(.clearfix all);
 
 		.radio-input {
 			opacity: 0;
 			position: absolute;
+
+			&:focus + .radio-text {
+				outline: 2px dotted #000;
+				outline-offset: 0.5rem;
+			}
 		}
 
 		.radio-text {

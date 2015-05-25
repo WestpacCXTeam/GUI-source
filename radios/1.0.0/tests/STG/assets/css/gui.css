@@ -536,14 +536,17 @@ a:focus {
 .container:before,
 .container:after,
 .row:before,
-.row:after {
+.row:after,
+.radio:before,
+.radio:after {
   content: " ";
   display: table;
 }
 .clearfix:after,
 .container-fluid:after,
 .container:after,
-.row:after {
+.row:after,
+.radio:after {
   clear: both;
 }
 *,
@@ -1558,12 +1561,15 @@ a:focus {
 	 *  SETTINGS
 	 */
 .radio {
-  overflow: hidden;
   display: inline-block;
 }
 .radio .radio-input {
   opacity: 0;
   position: absolute;
+}
+.radio .radio-input:focus + .radio-text {
+  outline: 2px dotted #000;
+  outline-offset: 0.5rem;
 }
 .radio .radio-text {
   font-size: 16px;
