@@ -1251,12 +1251,18 @@
 
 
 	.checkbox {
-		overflow: hidden;
 		display: inline-block;
+
+		&:extend(.clearfix all);
 
 		.checkbox-input {
 			opacity: 0;
 			position: absolute;
+
+			&:focus + .checkbox-text {
+				outline: 2px dotted #000;
+				outline-offset: 0.5rem;
+			}
 		}
 
 		.checkbox-text {
