@@ -20,6 +20,7 @@
 	// $menu    [jquery object]  The dropdown menu element
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	function toggelDropdown(_isOpen, $parent, $menu) {
+		App.debugging( 'buttons: ' + ( _isOpen ? 'Closing' : 'Opening' ) + ' dropdown menu', 'report' );
 
 		if( !_isOpen ) {
 			$parent.addClass('is-open');
@@ -45,6 +46,8 @@
 			$('.dropdown-menu').attr('aria-hidden', 'true');
 
 			$('.js-button-dropdown').on('click', function() {
+				App.debugging( 'buttons: dropdown button clicked', 'interaction' );
+
 				var $this = $(this);
 				var $parent = $this.parent('div');
 				var $menu = $this.next('.dropdown-menu');
@@ -54,8 +57,14 @@
 
 			});
 
-			//ESC button listener for close
-			//toggelDropdown(true, $('.btn-dropdown'), $('.dropdown-menu'));
+			//ESC button listener
+			$(document).keyup(function(e) {
+				if(e.keyCode == 27) {
+					App.debugging( 'buttons: Esc button clicked', 'interaction' );
+
+					toggelDropdown(true, $('.btn-dropdown'), $('.dropdown-menu'));
+				}
+			});
 		}
 	};
 
