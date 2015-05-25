@@ -1895,6 +1895,9 @@ p > .btn.btn-link {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.btn-dropdown .dropdown-menu li > .checkbox {
+  width: 100%;
+}
 .btn-dropdown .dropdown-menu .dropdown-menu-headline {
   border-top: 1px solid #0d0d0d;
   font-weight: 500;
