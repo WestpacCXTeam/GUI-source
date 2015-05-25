@@ -30,6 +30,7 @@
 <button type="button" class="btn btn-hero">Hero</button>
 <button type="button" class="btn btn-neutral">Neutral</button>
 <button type="button" class="btn btn-faint">Faint</button>
+<button type="button" class="btn btn-link">Link button</button>
 
 <hr>
 <h2>soft buttons</h2>
@@ -60,7 +61,12 @@
 	grunticon(["http://westpaccxteam.github.io/GUI-source/symbols/1.0.0/tests/BOM/assets/css/symbols.data.svg.css", "http://westpaccxteam.github.io/GUI-source/symbols/1.0.0/tests/BOM/assets/css/symbols.data.png.css", "http://westpaccxteam.github.io/GUI-source/symbols/1.0.0/tests/BOM/assets/css/symbols.fallback.css"]);
 </script>
 <noscript><link href="http://westpaccxteam.github.io/GUI-source/symbols/1.0.0/tests/BOM/assets/css/symbols.fallback.css" rel="stylesheet"></noscript>
-<link rel="stylesheet" type="text/css" href="http://westpaccxteam.github.io/GUI-source/symbols/1.0.0/tests/BOM/assets/css/gui.css">
+<style>
+	.symbol-tick {
+		width: 32px;
+		height: 37px;
+	}
+</style>
 
 <button type="button" class="btn btn-primary">
 	<span class="btn-text">Primary</span>
@@ -82,25 +88,33 @@
 <hr>
 <h2>button sizes</h2>
 
-<button type="button" class="btn btn-primary btn-xg">Primary</button>
-<button type="button" class="btn btn-primary btn-lg">Primary</button>
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-primary btn-sm">Primary</button>
+<p>
+	<button type="button" class="btn btn-primary btn-xl">Primary</button>
+	<button type="button" class="btn btn-primary btn-lg">Primary</button>
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-primary btn-sm">Primary</button>
+</p>
 
-<button type="button" class="btn btn-hero btn-xg">Hero</button>
-<button type="button" class="btn btn-hero btn-lg">Hero</button>
-<button type="button" class="btn btn-hero">Hero</button>
-<button type="button" class="btn btn-hero btn-sm">Hero</button>
+<p>
+	<button type="button" class="btn btn-hero btn-xl">Hero</button>
+	<button type="button" class="btn btn-hero btn-lg">Hero</button>
+	<button type="button" class="btn btn-hero">Hero</button>
+	<button type="button" class="btn btn-hero btn-sm">Hero</button>
+</p>
 
-<button type="button" class="btn btn-neutral btn-xg">Neutral</button>
-<button type="button" class="btn btn-neutral btn-lg">Neutral</button>
-<button type="button" class="btn btn-neutral">Neutral</button>
-<button type="button" class="btn btn-neutral btn-sm">Neutral</button>
+<p>
+	<button type="button" class="btn btn-neutral btn-xl">Neutral</button>
+	<button type="button" class="btn btn-neutral btn-lg">Neutral</button>
+	<button type="button" class="btn btn-neutral">Neutral</button>
+	<button type="button" class="btn btn-neutral btn-sm">Neutral</button>
+</p>
 
-<button type="button" class="btn btn-faint btn-xg">Faint</button>
-<button type="button" class="btn btn-faint btn-lg">Faint</button>
-<button type="button" class="btn btn-faint">Faint</button>
-<button type="button" class="btn btn-faint btn-sm">Faint</button>
+<p>
+	<button type="button" class="btn btn-faint btn-xl">Faint</button>
+	<button type="button" class="btn btn-faint btn-lg">Faint</button>
+	<button type="button" class="btn btn-faint">Faint</button>
+	<button type="button" class="btn btn-faint btn-sm">Faint</button>
+</p>
 
 <hr>
 <h2>block buttons</h2>
@@ -113,217 +127,416 @@
 <hr>
 <h2>button-groups toggle</h2>
 
-<div class="btn-group js-button-group">
+<div class="btn-group">
 
-	<label class="btn-group-input is-active">
-		<input type="radio" name="options"> Left
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options">
+		<span class="btn-group-text btn btn-primary">Left</span>
 	</label>
 
-	<label class="btn-group-input">
-		<input type="radio" name="options"> Middle
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options">
+		<span class="btn-group-text btn btn-primary">Middle</span>
 	</label>
 
-	<label class="btn-group-input">
-		<input type="radio" name="options"> Right
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options">
+		<span class="btn-group-text btn btn-primary">Right</span>
 	</label>
 
 </div>
+
 
 <hr>
 <h2>button-groups sizing</h2>
 
-<div class="btn-group btn-group-xl js-button-group">
+<div class="btn-group">
 
-	<label class="btn-group-input is-active">
-		<input type="radio" name="options1"> Left
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options1">
+		<span class="btn-group-text btn btn-primary btn-xl">Left</span>
 	</label>
 
-	<label class="btn-group-input">
-		<input type="radio" name="options1"> Middle
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options1">
+		<span class="btn-group-text btn btn-primary btn-xl">Middle</span>
 	</label>
 
-	<label class="btn-group-input">
-		<input type="radio" name="options1"> Right
-	</label>
-
-</div>
-
-<div class="btn-group btn-group-lg js-button-group">
-
-	<label class="btn-group-input is-active">
-		<input type="radio" name="options2"> Left
-	</label>
-
-	<label class="btn-group-input">
-		<input type="radio" name="options2"> Middle
-	</label>
-
-	<label class="btn-group-input">
-		<input type="radio" name="options2"> Right
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options1">
+		<span class="btn-group-text btn btn-primary btn-xl">Right</span>
 	</label>
 
 </div>
 
-<div class="btn-group js-button-group">
 
-	<label class="btn-group-input is-active">
-		<input type="radio" name="options3"> Left
+<div class="btn-group">
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options2">
+		<span class="btn-group-text btn btn-hero btn-lg">Left</span>
 	</label>
 
-	<label class="btn-group-input">
-		<input type="radio" name="options3"> Middle
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options2">
+		<span class="btn-group-text btn btn-hero btn-lg">Middle</span>
 	</label>
 
-	<label class="btn-group-input">
-		<input type="radio" name="options3"> Right
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options2">
+		<span class="btn-group-text btn btn-hero btn-lg">Right</span>
+	</label>
+
+</div>
+
+
+<div class="btn-group">
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options3">
+		<span class="btn-group-text btn btn-neutral">Left</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options3">
+		<span class="btn-group-text btn btn-neutral">Middle</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options3">
+		<span class="btn-group-text btn btn-neutral">Right</span>
 	</label>
 
 </div>
 
-<div class="btn-group btn-group-sm js-button-group">
 
-	<label class="btn-group-input is-active">
-		<input type="radio" name="options4"> Left
+<div class="btn-group">
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options4">
+		<span class="btn-group-text btn btn-faint btn-sm">Left</span>
 	</label>
 
-	<label class="btn-group-input">
-		<input type="radio" name="options4"> Middle
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options4">
+		<span class="btn-group-text btn btn-faint btn-sm">Middle</span>
 	</label>
 
-	<label class="btn-group-input">
-		<input type="radio" name="options4"> Right
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options4">
+		<span class="btn-group-text btn btn-faint btn-sm">Right</span>
 	</label>
 
 </div>
+
 
 <hr>
 <h2>dropdown buttons</h2>
 
-<div class="btn-dropdown js-button-dropdown">
-	<button type="button" class="btn btn-primary">
-		Dropdown
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-primary js-button-dropdown">
+		<span class="btn-group-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
+		<li class="dropdown-menu-headline">Headline 1</li>
 		<li><a href="#url">Link 1</a></li>
 		<li><a href="#url">Another link</a></li>
-		<li class="dropdown-menu-divider"><a href="#url">Link 3</a></li>
+		<li class="dropdown-menu-headline">Headline 2</li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li class="dropdown-menu-divider"><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
 		<li><a href="#url">Last link</a></li>
 	</ul>
 </div>
 
-<hr>
 
-<div class="btn-dropdown js-button-dropdown">
-	<button type="button" class="btn btn-hero">
-		Dropdown
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-primary btn-soft js-button-dropdown">
+		<span class="btn-group-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
-		<li><button class="btn-text">Action 1</button></li>
-		<li><button class="btn-text">Another action</button></li>
-		<li class="dropdown-menu-divider"><button class="btn-text">Action 3</button></li>
-		<li><button class="btn-text">Last action</button></li>
+		<li class="dropdown-menu-headline">Headline 1</li>
+		<li><a href="#url">Link 1</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li class="dropdown-menu-headline">Headline 2</li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li class="dropdown-menu-divider"><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Last link</a></li>
 	</ul>
 </div>
 
+
 <hr>
 
-<div class="btn-dropdown js-button-dropdown">
-	<button type="button" class="btn btn-neutral">
-		Dropdown
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-hero js-button-dropdown">
+		<span class="btn-group-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><button class="btn btn-link">Action 1</button></li>
+		<li><button class="btn btn-link">Another action</button></li>
+		<li class="dropdown-menu-divider"><button class="btn btn-link">Action 3</button></li>
+		<li><button class="btn btn-link">Last action</button></li>
+	</ul>
+</div>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-hero btn-soft js-button-dropdown">
+		<span class="btn-group-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><button class="btn btn-link">Action 1</button></li>
+		<li><button class="btn btn-link">Another action</button></li>
+		<li class="dropdown-menu-divider"><button class="btn btn-link">Action 3</button></li>
+		<li><button class="btn btn-link">Last action</button></li>
+	</ul>
+</div>
+
+
+<hr>
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-neutral js-button-dropdown">
+		<span class="btn-group-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
 		<li>
 			<span>Setting 1</span>
-			<div class="btn-group js-button-group">
 
-				<label class="btn-group-input">
-					<input type="radio" name="options5"> Yes
+			<div class="btn-group">
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options5">
+					<span class="btn-group-text btn btn-primary">Yes</span>
 				</label>
 
-				<label class="btn-group-input">
-					<input type="radio" name="options5"> No
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options5">
+					<span class="btn-group-text btn btn-primary">No</span>
 				</label>
 
 			</div>
+
 		</li>
 		<li class="dropdown-menu-divider">
 			<span>Setting 2</span>
-			<div class="btn-group js-button-group">
 
-				<label class="btn-group-input">
-					<input type="radio" name="options6"> Yes
+			<div class="btn-group">
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options6">
+					<span class="btn-group-text btn btn-primary">Yes</span>
 				</label>
 
-				<label class="btn-group-input">
-					<input type="radio" name="options6"> No
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options6">
+					<span class="btn-group-text btn btn-primary">No</span>
 				</label>
 
 			</div>
+
 		</li>
 		<li>
 			<span>Setting 3</span>
-			<div class="btn-group js-button-group">
 
-				<label class="btn-group-input">
-					<input type="radio" name="options7"> Yes
+			<div class="btn-group">
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options7">
+					<span class="btn-group-text btn btn-primary">Yes</span>
 				</label>
 
-				<label class="btn-group-input">
-					<input type="radio" name="options7"> No
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options7">
+					<span class="btn-group-text btn btn-primary">No</span>
 				</label>
 
 			</div>
+
 		</li>
 		<li>
 			<span>Setting 4</span>
-			<div class="btn-group js-button-group">
 
-				<label class="btn-group-input">
-					<input type="radio" name="options8"> Yes
+			<div class="btn-group">
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options8">
+					<span class="btn-group-text btn btn-primary">Yes</span>
 				</label>
 
-				<label class="btn-group-input">
-					<input type="radio" name="options8"> No
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options8">
+					<span class="btn-group-text btn btn-primary">No</span>
 				</label>
 
 			</div>
+
 		</li>
 	</ul>
 </div>
 
-<hr>
 
-<div class="btn-dropdown js-button-dropdown">
-	<button type="button" class="btn btn-faint">
-		Dropdown
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-neutral btn-soft js-button-dropdown">
+		<span class="btn-group-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu">
 		<li>
-			<label class="checkbox js-checkbox">
+			<span>Setting 1</span>
+
+			<div class="btn-group">
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options5">
+					<span class="btn-group-text btn btn-primary">Yes</span>
+				</label>
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options5">
+					<span class="btn-group-text btn btn-primary">No</span>
+				</label>
+
+			</div>
+
+		</li>
+		<li class="dropdown-menu-divider">
+			<span>Setting 2</span>
+
+			<div class="btn-group">
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options6">
+					<span class="btn-group-text btn btn-primary">Yes</span>
+				</label>
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options6">
+					<span class="btn-group-text btn btn-primary">No</span>
+				</label>
+
+			</div>
+
+		</li>
+		<li>
+			<span>Setting 3</span>
+
+			<div class="btn-group">
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options7">
+					<span class="btn-group-text btn btn-primary">Yes</span>
+				</label>
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options7">
+					<span class="btn-group-text btn btn-primary">No</span>
+				</label>
+
+			</div>
+
+		</li>
+		<li>
+			<span>Setting 4</span>
+
+			<div class="btn-group">
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options8">
+					<span class="btn-group-text btn btn-primary">Yes</span>
+				</label>
+
+				<label class="btn-group-item">
+					<input class="btn-group-input" type="radio" name="options8">
+					<span class="btn-group-text btn btn-primary">No</span>
+				</label>
+
+			</div>
+
+		</li>
+	</ul>
+</div>
+
+
+<hr>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-faint js-button-dropdown">
+		<span class="btn-group-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
 				<span class="checkbox-text">Setting 1</span>
-				<input class="checkbox-input" type="checkbox">
 			</label>
 		</li>
 		<li>
-			<label class="checkbox js-checkbox">
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
 				<span class="checkbox-text">Setting 2</span>
-				<input class="checkbox-input" type="checkbox">
 			</label>
 		</li>
 		<li class="dropdown-menu-divider">
-			<label class="checkbox js-checkbox">
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
 				<span class="checkbox-text">Setting 3</span>
-				<input class="checkbox-input" type="checkbox">
 			</label>
 		</li>
 		<li>
-			<label class="checkbox js-checkbox">
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
 				<span class="checkbox-text">Setting 4</span>
-				<input class="checkbox-input" type="checkbox">
 			</label>
 		</li>
 	</ul>
 </div>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-faint btn-soft js-button-dropdown">
+		<span class="btn-group-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 1</span>
+			</label>
+		</li>
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 2</span>
+			</label>
+		</li>
+		<li class="dropdown-menu-divider">
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 3</span>
+			</label>
+		</li>
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 4</span>
+			</label>
+		</li>
+	</ul>
+</div>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	<script src="assets/js/gui.js"></script>
 </body>
 </html>
