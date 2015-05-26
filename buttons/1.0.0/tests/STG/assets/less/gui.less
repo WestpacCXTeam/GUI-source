@@ -1582,6 +1582,9 @@
 		outline-offset: 0.5rem;
 		display: inline-block;
 	}
+	&:hover {
+		outline: none;
+	}
 
 
 	//////////////////////////////////////| BLOCK BUTTONS
@@ -1603,6 +1606,9 @@
 				outline: 2px dotted #000;
 				outline-offset: 0.5rem;
 				display: inline-block;
+			}
+			&:hover + .btn {
+				outline: none;
 			}
 		}
 

@@ -1802,6 +1802,9 @@ p > .btn.btn-link {
   outline-offset: 0.5rem;
   display: inline-block;
 }
+:hover {
+  outline: none;
+}
 .btn-block + .btn-block {
   margin-top: 6px;
 }
@@ -1817,6 +1820,9 @@ p > .btn.btn-link {
   outline: 2px dotted #000;
   outline-offset: 0.5rem;
   display: inline-block;
+}
+.btn-group .btn-group-input:hover + .btn {
+  outline: none;
 }
 .btn-group .btn-group-item .btn {
   border-right-width: 0;
