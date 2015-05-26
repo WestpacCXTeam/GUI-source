@@ -1571,6 +1571,9 @@ a:focus {
   outline: 2px dotted #000;
   outline-offset: 0.5rem;
 }
+.radio .radio-input:hover + .radio-text {
+  outline: none;
+}
 .radio .radio-text {
   font-size: 16px;
   padding-left: 38px;
