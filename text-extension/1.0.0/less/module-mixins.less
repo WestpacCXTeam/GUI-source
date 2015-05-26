@@ -29,7 +29,47 @@
 
 
 
-	.text-extension {
-		content: @test;
+	.lead {
+		margin-bottom: 21px;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.4;
+
+		@media (min-width: @screen-sm) {
+			font-size: 18px;
+		}
 	}
+
+
+	//////////////////////////////////////| TEXT ALIGNMENTS
+	.text-left {
+		text-align: left;
+	}
+
+	.text-right {
+		text-align: right;
+	}
+
+	.text-center {
+		text-align: center;
+	}
+
+	.text-justify {
+		text-align: justify;
+	}
+
+	.text-nowrap {
+		white-space: nowrap;
+	}
+
+
+	//////////////////////////////////////| TEXT ALIGNMENTS
+	.text-muted {
+		color: @color-Muted;
+	}
+
+	.text-primary {
+		color: @color-Text;
+	}
+
 }
