@@ -104,10 +104,9 @@
 		}
 
 		&:focus {
-			outline: 2px dotted #000;
+			.outline();
 			background-color: #fff;
 			color: @color-A;
-			outline-offset: 0.5rem;
 			display: inline-block;
 		}
 	}
@@ -115,6 +114,13 @@
 	//////////////////////////////////////| CLEARFIX
 	.clearfix {
 		._clearfix();
+	}
+
+
+	//////////////////////////////////////| ACCESSIBILITY
+	.outline() {
+		outline: 2px dotted #000;
+		outline-offset: 0.5rem;
 	}
 
 
