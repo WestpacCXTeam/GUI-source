@@ -524,9 +524,9 @@ a:focus {
 }
 a:focus {
   outline: 2px dotted #000;
+  outline-offset: 0.5rem;
   background-color: #fff;
   color: #e30000;
-  outline-offset: 0.5rem;
   display: inline-block;
 }
 .clearfix:before,
