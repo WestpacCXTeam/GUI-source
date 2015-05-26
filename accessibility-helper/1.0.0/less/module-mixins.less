@@ -1,0 +1,56 @@
+/*![Module-Version-Brand]*/
+/*
+ * accessibility-helper mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| accessibility-helper STYLES
+._accessibility-helper( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+	//////////////////////////////////////| SR-ONLY LINK
+	.sr-only {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		padding: 0;
+		overflow: hidden;
+		clip: rect(0,0,0,0);
+		border: 0;
+	}
+
+
+	//////////////////////////////////////| SKIP LINKS
+	.sr-only-focusable {
+		&:active,
+		&:focus {
+			position: absolute;
+			width: auto;
+			height: auto;
+			margin: 0;
+			overflow: visible;
+			clip: auto;
+		}
+	}
+}
