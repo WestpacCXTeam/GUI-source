@@ -1,0 +1,35 @@
+/*![Module-Version-Brand]*/
+/*
+ * tables mixins
+ *
+ * Tabel styles
+ *
+ */
+
+
+//////////////////////////////////////| tables STYLES
+._tables( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.tables {
+		content: @test;
+	}
+}
