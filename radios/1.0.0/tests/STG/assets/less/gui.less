@@ -118,6 +118,13 @@
 	}
 
 
+	//////////////////////////////////////| ACCESSIBILITY
+	.outline() {
+		outline: 2px dotted #000;
+		outline-offset: 0.5rem;
+	}
+
+
 	//////////////////////////////////////| GRID
 	@screen-xs: 480px;
 	@screen-sm: 768px;
@@ -1260,8 +1267,7 @@
 			position: absolute;
 
 			&:focus + .radio-text {
-				outline: 2px dotted #000;
-				outline-offset: 0.5rem;
+				.outline();
 			}
 
 			&:hover + .radio-text {
