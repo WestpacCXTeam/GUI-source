@@ -522,6 +522,10 @@ a:focus {
   color: #d60c8c;
   display: inline-block;
 }
+a:hover {
+  outline: none;
+  background-color: transparent;
+}
 .clearfix:before,
 .clearfix:after,
 .container-fluid:before,
