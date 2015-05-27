@@ -1574,7 +1574,7 @@ a:hover {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 2px solid #c0142e;
+  border: 1px solid #c0142e;
   background-color: #c0142e;
 }
 .lists.lists-hero > li:after {
