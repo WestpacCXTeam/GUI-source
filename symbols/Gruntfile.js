@@ -173,17 +173,17 @@ module.exports = function(grunt) {
 
 			//copy font assets
 			brands.forEach(function(brand) {
-				copy[ version + 'Font' + brand ] = {
+				copy[ version + 'BaseFont' + brand ] = {
 					expand: true,
-					flatten: true,
-					src: '../base/' + baseVersion + '/_assets/' + brand + '/font/*',
-					dest: './' + version + '/tests/' + brand + '/assets/font/',
+					cwd: '../base/' + baseVersion + '/_assets/' + brand + '/font',
+					src: '*',
+					dest: './' + version + '/tests/' + brand + '/assets/font',
 				};
 
 				copy[ version + 'Font' + brand ] = {
 					expand: true,
-					flatten: true,
-					src: './' + version + '/_assets/' + brand + '/font/',
+					cwd: './' + version + '/_assets/' + brand + '/font',
+					src: '*',
 					dest: './' + version + '/tests/' + brand + '/assets/font',
 				};
 			});
