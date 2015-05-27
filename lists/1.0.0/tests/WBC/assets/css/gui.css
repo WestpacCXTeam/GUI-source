@@ -1562,7 +1562,7 @@ a:hover {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 2px solid #d5002b;
+  border: 1px solid #d5002b;
   background-color: #d5002b;
 }
 .lists.lists-hero > li:after {
