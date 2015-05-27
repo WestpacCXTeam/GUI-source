@@ -1,0 +1,68 @@
+/*![Module-Version-Brand]*/
+/*
+ * responsive-embeds mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| responsive-embeds STYLES
+._responsive-embeds( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.responsive-embeds {
+		position: relative;
+		display: block;
+		height: 0;
+		padding: 0;
+		overflow: hidden;
+
+		.responsive-embeds-item,
+		iframe,
+		embed,
+		object {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			height: 100%;
+			width: 100%;
+			border: 0;
+		}
+
+		&.responsive-embeds-16by9 {
+			padding-bottom: 56.25%;
+		}
+
+		&.responsive-embeds-4by3 {
+			padding-bottom: 75%;
+		}
+
+		&.responsive-embeds-185by1 {
+			padding-bottom: 54%;
+		}
+
+		&.responsive-embeds-235by1 {
+			padding-bottom: 42.56%;
+		}
+	}
+}
