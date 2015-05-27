@@ -1262,7 +1262,72 @@
 
 
 	.lists {
-		content: @test;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		& > li {
+			display: block;
+			margin: 4px 0;
+			padding: 0px 0px 0px 15px;
+			position: relative;
+
+			&:after {
+				content: " ";
+				position: absolute;
+				left: 0;
+				top: 6px;
+				display: block;
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				border: 2px solid @color-A;
+				background-color: @color-A;
+			}
+		}
+
+		&.lists-hero > li:after {
+			border-color: @color-B;
+			background-color: @color-B;
+		}
+
+		&.lists-neutral > li:after {
+			border-color: @color-C;
+			background-color: @color-C;
+		}
+
+		& > li > .lists > li:after {
+			background-color: transparent;
+		}
+
+		&.lists-linklist > li {
+
+			& > a {
+				color: @color-Text;
+			}
+
+			&:after {
+				border-top: 0 none;
+				border-left: 0 none;
+				border-color: @color-A;
+				border-radius: 0;
+				background-color: transparent;
+				transform: rotate(-45deg);
+			}
+		}
+
+		&.lists-tick > li {
+			padding-left: 21px;
+
+			&:after {
+				border-radius: 0;
+				border: 0 none;
+				background-color: transparent;
+				width: 16px;
+				height: 16px;
+				top: 1px;
+			}
+		}
 	}
 }
 /*!lists v1.0.0 BOM*/

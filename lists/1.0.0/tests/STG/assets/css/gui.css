@@ -1562,5 +1562,60 @@ a:hover {
 	 *  SETTINGS
 	 */
 .lists {
-  content: 'STG';
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.lists > li {
+  display: block;
+  margin: 4px 0;
+  padding: 0px 0px 0px 15px;
+  position: relative;
+}
+.lists > li:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #e30000;
+  background-color: #e30000;
+}
+.lists.lists-hero > li:after {
+  border-color: #78be20;
+  background-color: #78be20;
+}
+.lists.lists-neutral > li:after {
+  border-color: #858370;
+  background-color: #858370;
+}
+.lists > li > .lists > li:after {
+  background-color: transparent;
+}
+.lists.lists-linklist > li > a {
+  color: #004833;
+}
+.lists.lists-linklist > li:after {
+  border-top: 0 none;
+  border-left: 0 none;
+  border-color: #e30000;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.lists.lists-tick > li {
+  padding-left: 21px;
+}
+.lists.lists-tick > li:after {
+  border-radius: 0;
+  border: 0 none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  top: 1px;
 }

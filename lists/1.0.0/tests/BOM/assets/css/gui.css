@@ -1555,5 +1555,60 @@ a:hover {
 	 *  SETTINGS
 	 */
 .lists {
-  content: 'BOM';
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.lists > li {
+  display: block;
+  margin: 4px 0;
+  padding: 0px 0px 0px 15px;
+  position: relative;
+}
+.lists > li:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #d60c8c;
+  background-color: #d60c8c;
+}
+.lists.lists-hero > li:after {
+  border-color: #685ac0;
+  background-color: #685ac0;
+}
+.lists.lists-neutral > li:after {
+  border-color: #716f7d;
+  background-color: #716f7d;
+}
+.lists > li > .lists > li:after {
+  background-color: transparent;
+}
+.lists.lists-linklist > li > a {
+  color: #0d0d0d;
+}
+.lists.lists-linklist > li:after {
+  border-top: 0 none;
+  border-left: 0 none;
+  border-color: #d60c8c;
+  border-radius: 0;
+  background-color: transparent;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.lists.lists-tick > li {
+  padding-left: 21px;
+}
+.lists.lists-tick > li:after {
+  border-radius: 0;
+  border: 0 none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  top: 1px;
 }
