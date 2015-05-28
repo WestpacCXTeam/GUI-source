@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+	<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+	<html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Testing responsive-margins v1.0.0 STG</title>
+	<link rel="stylesheet" href="assets/css/gui.css">
+
+	<style>
+		header {
+			margin: 21px 0;
+		}
+
+		.nav {
+			float: left;
+		}
+
+		.headline {
+			text-align: right;
+			margin-top: 0;
+		}
+
+		main.container {
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing responsive-margins v1.0.0 STG</h1>
+		</div>
+	</header>
+
+	<main class="container">
+<style>
+	.margin-classes {
+		background-color: #e8e5e2;
+		background-image: repeating-linear-gradient(23deg, transparent, transparent 6px, #f3f2f1 6px, #f3f2f1 15px);
+		overflow: hidden;
+		margin-bottom: 1em;
+	}
+
+	.margin-classes > [class*="top-margin"], .margin-classes > [class*="bottom-margin"] {
+		background-color: #f3f2f1;
+		text-align: center;
+	}
+</style>
+
+<h2>responsive margins</h2>
+
+<div class="margin-classes">
+	<div class="top-margin1-xs top-margin3-sm top-margin5-md top-margin7-lg">
+		top-margin1-xs top-margin3-sm top-margin5-md top-margin7-lg
+	</div>
+</div>
+
+<div class="margin-classes">
+	<div class="no-top-margin-xs top-margin2-sm top-margin4-md top-margin6-lg">
+		no-top-margin-xs top-margin2-sm top-margin4-md top-margin6-lg
+	</div>
+</div>
+
+<div class="margin-classes">
+	<div class="no-bottom-margin-xs bottom-margin2-sm bottom-margin4-md bottom-margin6-lg">
+		no-bottom-margin-xs bottom-margin2-sm bottom-margin4-md bottom-margin6-lg
+	</div>
+</div>
+
+<div class="margin-classes">
+	<div class="bottom-margin1-xs bottom-margin3-sm bottom-margin5-md bottom-margin7-lg">
+		bottom-margin1-xs bottom-margin3-sm bottom-margin5-md bottom-margin7-lg
+	</div>
+</div>
+
+
+<hr>
+<h2>top margins</h2>
+
+<div class="margin-classes">
+	<div class="no-top-margin-xs text-center">no-top-margin-xs (0px)</div>
+</div>
+<div class="margin-classes">
+	<div class="top-margin1-xs text-center">top-margin1-xs (6px)</div>
+</div>
+<div class="margin-classes">
+	<div class="top-margin2-xs text-center">top-margin2-xs (12px)</div>
+</div>
+<div class="margin-classes">
+	<div class="top-margin3-xs text-center">top-margin3-xs (18px)</div>
+</div>
+<div class="margin-classes">
+	<div class="top-margin4-xs text-center">top-margin4-xs (24px)</div>
+</div>
+<div class="margin-classes">
+	<div class="top-margin5-xs text-center">top-margin5-xs (30px)</div>
+</div>
+<div class="margin-classes">
+	<div class="top-margin6-xs text-center">top-margin6-xs (36px)</div>
+</div>
+<div class="margin-classes">
+	<div class="top-margin7-xs text-center">top-margin7-xs (42px)</div>
+</div>
+
+
+<hr>
+<h2>bottom margins</h2>
+
+<div class="margin-classes">
+	<div class="no-bottom-margin-xs text-center">no-bottom-margin-xs (0px)</div>
+</div>
+<div class="margin-classes">
+	<div class="bottom-margin1-xs text-center">bottom-margin1-xs (6px)</div>
+</div>
+<div class="margin-classes">
+	<div class="bottom-margin2-xs text-center">bottom-margin2-xs (12px)</div>
+</div>
+<div class="margin-classes">
+	<div class="bottom-margin3-xs text-center">bottom-margin3-xs (18px)</div>
+</div>
+<div class="margin-classes">
+	<div class="bottom-margin4-xs text-center">bottom-margin4-xs (24px)</div>
+</div>
+<div class="margin-classes">
+	<div class="bottom-margin5-xs text-center">bottom-margin5-xs (30px)</div>
+</div>
+<div class="margin-classes">
+	<div class="bottom-margin6-xs text-center">bottom-margin6-xs (36px)</div>
+</div>
+<div class="margin-classes">
+	<div class="bottom-margin7-xs text-center">bottom-margin7-xs (42px)</div>
+</div>
+	</main>
+
+	<script src="assets/js/gui.js"></script>
+</body>
+</html>
