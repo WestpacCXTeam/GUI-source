@@ -1238,7 +1238,7 @@
 /*
  * badges mixins
  *
- * doc comment with stuff and stuff
+ * badges as indicators
  *
  */
 
@@ -1265,9 +1265,40 @@
 
 
 
-	.badges {
-		content: @test;
+	.badge {
+		display: inline-block;
+		min-width: 10px;
+		padding: 4px 7px;
+		font-size: 12px;
+		color: #fff;
+		line-height: 1;
+		vertical-align: baseline;
+		white-space: nowrap;
+		text-align: center;
+		background-color: #000;
+		border-radius: 12px;
+
+		&:empty {
+			display: none;
+		}
+
+		.btn & {
+			color: @color-Text;
+			background-color: #fff;
+			position: relative;
+			top: -1px;
+		}
+
+		.btn-xl & {
+			top: -2px;
+		}
+
+		.lists & {
+			float: right;
+		}
+
 	}
+
 }
 /*!badges v1.0.0 WBC*/
 /*

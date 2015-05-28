@@ -1550,7 +1550,7 @@ a:hover {
 /*
  * badges mixins
  *
- * doc comment with stuff and stuff
+ * badges as indicators
  *
  */
 /*!badges v1.0.0 STG*/
@@ -1564,6 +1564,31 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.badges {
-  content: 'STG';
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 4px 7px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #000;
+  border-radius: 12px;
+}
+.badge:empty {
+  display: none;
+}
+.btn .badge {
+  color: #004833;
+  background-color: #fff;
+  position: relative;
+  top: -1px;
+}
+.btn-xl .badge {
+  top: -2px;
+}
+.lists .badge {
+  float: right;
 }
