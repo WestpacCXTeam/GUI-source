@@ -1,0 +1,35 @@
+/*![Module-Version-Brand]*/
+/*
+ * responsive-margins mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| responsive-margins STYLES
+._responsive-margins( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.responsive-margins {
+		content: @test;
+	}
+}
