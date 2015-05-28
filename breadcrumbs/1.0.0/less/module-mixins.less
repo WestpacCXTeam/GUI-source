@@ -1,0 +1,55 @@
+/*![Module-Version-Brand]*/
+/*
+ * breadcrumbs mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| breadcrumbs STYLES
+._breadcrumbs( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.breadcrumb {
+		padding: 6px 18px;
+		margin-bottom: 21px;
+		list-style: none;
+
+		> li {
+			display: inline-block;
+
+			+ li:before {
+				content: "/\00a0";
+				padding: 0 6px;
+				color: @color-Text;
+			}
+		}
+
+		> .is-active {
+			color: @color-Text;
+
+			a {
+				color: @color-Text;
+			}
+		}
+	}
+}
