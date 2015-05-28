@@ -1,0 +1,111 @@
+/*![Module-Version-Brand]*/
+/*
+ * pagination mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| pagination STYLES
+._pagination( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@pagination-color: #fff;
+	}
+	.getBrand() when (@brand = BSA) {
+		@pagination-color: #fff;
+	}
+	.getBrand() when (@brand = STG) {
+		@pagination-color: @color-Text;
+	}
+	.getBrand() when (@brand = WBC) {
+		@pagination-color: #fff;
+	}
+	.getBrand();
+
+
+
+	.pagination {
+		display: inline-block;
+		padding-left: 0;
+		margin: 21px 0;
+		border-radius: 3px;
+		list-style: none;
+		font-size: 0;
+
+		> li {
+			display: inline-block;
+
+			> a,
+			> span {
+				position: relative;
+				display: inline-block;
+				padding: 6px 12px;
+				color: @color-Text;
+				border: 1px solid @color-Border;
+				margin-left: -1px;
+				transition: background 0.2s ease;
+				font-size: 14px;
+
+				&:hover {
+					text-decoration: none;
+					background-color: @color-Border;
+				}
+
+				&:focus {
+					text-decoration: none;
+					.outline();
+				}
+			}
+
+			&.is-active {
+				> a,
+				> span {
+					z-index: 2;
+					color: @pagination-color;
+					background-color: @color-B;
+					border-color: @color-B;
+
+					&:hover {
+						color: @pagination-color;
+						background-color: @color-B;
+					}
+				}
+			}
+
+			&.is-disabled {
+				> span,
+				> span:hover,
+				> span:focus,
+				> a,
+				> a:hover,
+				> a:focus {
+					color: @color-G;
+					background-color: #fff;
+					cursor: not-allowed;
+				}
+			}
+
+			&:first-child {
+				> a,
+				> span {
+					margin-left: 0;
+					border-top-left-radius: 3px;
+					border-bottom-left-radius: 3px;
+				}
+			}
+			&:last-child {
+				> a,
+				> span {
+					border-top-right-radius: 3px;
+					border-bottom-right-radius: 3px;
+				}
+			}
+		}
+
+	}
+}
