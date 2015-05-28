@@ -1564,6 +1564,45 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.labels {
-  content: 'STG';
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: #e30000;
+}
+.label[href]:hover,
+.label[href]:focus {
+  background-color: #f18080;
+}
+a.label:hover,
+a.label:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+.label.label-hero {
+  background-color: #78be20;
+}
+.label.label-hero[href]:hover,
+.label.label-hero[href]:focus {
+  background-color: #bcdf90;
+}
+.label.label-faint {
+  background-color: #f3f3f1;
+  color: #004833;
+}
+.label.label-faint[href]:hover,
+.label.label-faint[href]:focus {
+  background-color: #c4c4ba;
+  color: #004833;
 }

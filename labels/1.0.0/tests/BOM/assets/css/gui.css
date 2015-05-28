@@ -1557,6 +1557,45 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.labels {
-  content: 'BOM';
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: #d60c8c;
+}
+.label[href]:hover,
+.label[href]:focus {
+  background-color: #eb86c6;
+}
+a.label:hover,
+a.label:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+.label.label-hero {
+  background-color: #685ac0;
+}
+.label.label-hero[href]:hover,
+.label.label-hero[href]:focus {
+  background-color: #b4ade0;
+}
+.label.label-faint {
+  background-color: #f1f1f2;
+  color: #0d0d0d;
+}
+.label.label-faint[href]:hover,
+.label.label-faint[href]:focus {
+  background-color: #bcbcc1;
+  color: #0d0d0d;
 }

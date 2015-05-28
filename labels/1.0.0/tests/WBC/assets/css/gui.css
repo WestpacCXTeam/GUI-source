@@ -1545,6 +1545,45 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.labels {
-  content: 'WBC';
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: #d5002b;
+}
+.label[href]:hover,
+.label[href]:focus {
+  background-color: #ea8095;
+}
+a.label:hover,
+a.label:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+.label.label-hero {
+  background-color: #621a4b;
+}
+.label.label-hero[href]:hover,
+.label.label-hero[href]:focus {
+  background-color: #b18da5;
+}
+.label.label-faint {
+  background-color: #f4f3f0;
+  color: #2d373e;
+}
+.label.label-faint[href]:hover,
+.label.label-faint[href]:focus {
+  background-color: #c9c4b5;
+  color: #2d373e;
 }

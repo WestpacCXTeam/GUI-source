@@ -1557,6 +1557,45 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.labels {
-  content: 'BSA';
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: bold;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  background-color: #c0142e;
+}
+.label[href]:hover,
+.label[href]:focus {
+  background-color: #e08a97;
+}
+a.label:hover,
+a.label:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.label:empty {
+  display: none;
+}
+.label.label-hero {
+  background-color: #365fb4;
+}
+.label.label-hero[href]:hover,
+.label.label-hero[href]:focus {
+  background-color: #9bafda;
+}
+.label.label-faint {
+  background-color: #ebebeb;
+  color: #333333;
+}
+.label.label-faint[href]:hover,
+.label.label-faint[href]:focus {
+  background-color: #b8b8b8;
+  color: #333333;
 }

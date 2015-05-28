@@ -1265,8 +1265,65 @@
 
 
 
-	.labels {
-		content: @test;
+	.label {
+		display: inline;
+		padding: .2em .6em .3em;
+		font-size: 75%;
+		font-weight: bold;
+		line-height: 1;
+		color: #fff;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: .25em;
+		background-color: @color-A;
+
+		&[href] {
+			&:hover,
+			&:focus {
+				background-color: mix(@color-A, white, 50%);
+			}
+		}
+
+		a& {
+			&:hover,
+			&:focus {
+				color: #fff;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+
+		&:empty {
+			display: none;
+		}
+
+
+		&.label-hero {
+			background-color: @color-B;
+
+			&[href] {
+				&:hover,
+				&:focus {
+					background-color: mix(@color-B, white, 50%);
+				}
+			}
+
+		}
+
+		&.label-faint {
+			background-color: @color-Background;
+			color: @color-Text;
+
+			&[href] {
+				&:hover,
+				&:focus {
+					background-color: darken(@color-Background, 20%);
+					color: @color-Text;
+				}
+			}
+		}
+
 	}
 }
 /*!labels v1.0.0 BSA*/
