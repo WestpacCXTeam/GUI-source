@@ -1564,6 +1564,17 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.wells {
-  content: 'STG';
+.well {
+  min-height: 21px;
+  padding: 18px;
+  margin-bottom: 21px;
+  background-color: #f3f3f1;
+  border: 1px solid #cecdc6;
+  border-radius: 3px;
+}
+.well.well-lg {
+  padding: 28px;
+}
+.well.well-sm {
+  padding: 6px 9px;
 }

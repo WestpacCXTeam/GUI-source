@@ -1265,8 +1265,21 @@
 
 
 
-	.wells {
-		content: @test;
+	.well {
+		min-height: 21px;
+		padding: 18px;
+		margin-bottom: 21px;
+		background-color: @color-Background;
+		border: 1px solid @color-Border;
+		border-radius: 3px;
+
+		&.well-lg {
+			padding: 28px;
+		}
+
+		&.well-sm {
+			padding: 6px 9px;
+		}
 	}
 }
 /*!wells v1.0.0 BSA*/
