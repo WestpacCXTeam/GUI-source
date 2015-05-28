@@ -1,0 +1,194 @@
+<h2>badges</h2>
+
+<p>
+	<span class="badge">5</span>
+</p>
+<p>
+	<span class="badge">95</span>
+</p>
+<p>
+	<span class="badge">595</span>
+</p>
+
+
+<hr>
+<h2>badge in links</h2>
+
+<a href="#url">
+	Inbox
+	<span class="badge">42</span>
+</a>
+
+
+<hr>
+<h2>badge in buttons</h2>
+
+<style>
+	.btn {
+		padding: 6px 12px;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: 300;
+		white-space: nowrap;
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+				touch-action: manipulation;
+		cursor: pointer;
+		border: 1px solid #c6c5cb;
+		-webkit-user-select: none;
+			-moz-user-select: none;
+				-ms-user-select: none;
+						user-select: none;
+		-webkit-appearance: none;
+		overflow: hidden;
+		color: #716f7d;
+		border-color: #c6c5cb;
+		background-color: #f8f8f9;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+
+	.btn.btn-xl {
+		font-size: 18px;
+		padding: 13px 14px;
+		line-height: 1.11111111;
+	}
+	.btn.btn-lg {
+		padding: 10px 14px 9px 14px;
+		line-height: 1.33;
+	}
+	.btn.btn-sm {
+		padding: 4px 10px 3px 10px;
+		font-size: 14px;
+		line-height: 1.5;
+		font-weight: 400;
+	}
+
+	.btn:hover {
+		color: #716f7d;
+		border-color: #c6c5cb;
+		background-color: #ffffff;
+	}
+	.btn:active {
+		color: #716f7d;
+		border-color: #c6c5cb;
+		background-color: #ffffff;
+	}
+	.btn.btn-primary {
+		color: #ffffff;
+		border-color: #d60c8c;
+		background-color: #d60c8c;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+	.btn.btn-primary:hover {
+		color: #ffffff;
+		border-color: #d60c8c;
+		background-color: #e255af;
+	}
+	.btn.btn-primary:active {
+		color: #ffffff;
+		border-color: #d60c8c;
+		background-color: #eb86c6;
+	}
+</style>
+
+<button type="button" class="btn btn-primary">
+	Primary
+	<span class="badge">13</span>
+</button>
+
+<button type="button" class="btn btn-primary btn-xl">
+	Primary LG
+	<span class="badge">13</span>
+</button>
+
+<button type="button" class="btn btn-primary btn-lg">
+	Primary LG
+	<span class="badge">13</span>
+</button>
+
+<button type="button" class="btn btn-primary btn-sm">
+	Primary SM
+	<span class="badge">13</span>
+</button>
+
+
+<hr>
+<h2>badge in lists</h2>
+
+<style>
+	.lists {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+	.lists > li {
+		display: block;
+		margin: 4px 0;
+		padding: 0px 0px 0px 15px;
+		position: relative;
+	}
+	.lists > li:after {
+		content: " ";
+		position: absolute;
+		left: 0;
+		top: 6px;
+		display: block;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		border: 1px solid #d60c8c;
+		background-color: #d60c8c;
+	}
+	.lists > li > .lists > li:after {
+		background-color: transparent;
+	}
+	.lists.lists-linklist > li > a {
+		color: #0d0d0d;
+	}
+	.lists.lists-linklist > li:after {
+		border-top: 0 none;
+		border-left: 0 none;
+		border-color: #d60c8c;
+		border-radius: 0;
+		background-color: transparent;
+		-webkit-transform: rotate(-45deg);
+				-ms-transform: rotate(-45deg);
+						transform: rotate(-45deg);
+	}
+</style>
+
+
+<div class="row">
+	<div class="col-sm-2 col-sm-offset-5">
+
+		<ul class="lists lists-linklist">
+			<li class="clearfix">
+				<a href="#url">
+					Inbox
+					<span class="badge">17</span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="#url">
+					Archive
+					<span class="badge">1</span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="#url">
+					Projects
+					<span class="badge">783</span>
+				</a>
+			</li>
+			<li class="clearfix">
+				<a href="#url">
+					Done
+					<span class="badge">0</span>
+				</a>
+			</li>
+		</ul>
+
+	</div>
+</div>
