@@ -1,0 +1,102 @@
+/*![Module-Version-Brand]*/
+/*
+ * panels mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| panels STYLES
+._panels( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@header-color: #fff;
+	}
+	.getBrand() when (@brand = BSA) {
+		@header-color: #fff;
+	}
+	.getBrand() when (@brand = STG) {
+		@header-color: @color-Text;
+	}
+	.getBrand() when (@brand = WBC) {
+		@header-color: #fff;
+	}
+	.getBrand();
+
+
+
+	.panel {
+		margin-bottom: 21px;
+		background-color: #fff;
+		border: 1px solid @color-B;
+		border-radius: 3px;
+		&:extend(.clearfix all);
+
+		.panel-heading {
+			padding: 12px;
+			background-color: @color-B;
+			color: @header-color;
+			border-top-right-radius: 2px;
+			border-top-left-radius: 2px;
+
+			.panel-title {
+				color: @header-color;
+				margin-top: 0;
+				margin-bottom: 0;
+				font-size: 16px;
+			}
+		}
+
+
+		.panel-body {
+			padding: 12px;
+			&:extend(.clearfix all);
+		}
+
+		& > .table-responsive .table,
+		& > .table {
+			margin-bottom: 0;
+			border-bottom-right-radius: 2px;
+			border-bottom-left-radius: 2px;
+			overflow: hidden;
+
+			caption {
+				padding: 12px 12px 0 12px;
+			}
+		}
+
+		& > .table-responsive {
+			@media (max-width: (@screen-sm - 1)) {
+				border: none 0;
+				margin-bottom: 0;
+			}
+		}
+
+
+		.panel-footer {
+			padding: 12px;
+			background-color: @color-Background;
+			border-top: 1px solid @color-Border;
+			border-bottom-right-radius: 2px;
+			border-bottom-left-radius: 2px;
+		}
+
+
+		&.panel-faint {
+			border-color: @color-Border;
+
+			.panel-heading {
+				background-color: @color-Background;
+				border-bottom: 1px solid @color-Border;
+
+				.panel-title {
+					color: @color-Text;
+				}
+			}
+		}
+	}
+}

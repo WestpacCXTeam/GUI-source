@@ -1,0 +1,291 @@
+<h2>Panel primary</h2>
+
+<div class="panel">
+	<div class="panel-heading">
+		<span class="panel-title">Panel title</span>
+	</div>
+	<div class="panel-body">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officiis officia omnis aperiam voluptate suscipit,
+		laudantium praesentium quas consequatur placeat, perferendis eligendi saepe in unde sequi dolores excepturi doloremque autem!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis perferendis, optio inventore natus nihil, qui laboriosam nostrum esse hic facilis
+		cum corporis libero? Porro veritatis inventore dignissimos laborum minima.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quidem nesciunt rerum sequi soluta consectetur porro rem eos ipsum debitis!
+		Laboriosam aliquid, adipisci vel facere eveniet doloremque iusto ea iste.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic debitis quae eum eveniet ducimus vero odit, officia consequatur vel repellat
+		recusandae labore sed tempora reprehenderit minus incidunt deserunt voluptate ad.
+	</div>
+	<div class="panel-footer">Panel footer</div>
+</div>
+
+
+<hr>
+<h2>Panel faint</h2>
+
+<div class="panel panel-faint">
+	<div class="panel-heading">
+		<span class="panel-title">Panel title</span>
+	</div>
+	<div class="panel-body">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora officiis officia omnis aperiam voluptate suscipit,
+		laudantium praesentium quas consequatur placeat, perferendis eligendi saepe in unde sequi dolores excepturi doloremque autem!
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga quis perferendis, optio inventore natus nihil, qui laboriosam nostrum esse hic facilis
+		cum corporis libero? Porro veritatis inventore dignissimos laborum minima.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quidem nesciunt rerum sequi soluta consectetur porro rem eos ipsum debitis!
+		Laboriosam aliquid, adipisci vel facere eveniet doloremque iusto ea iste.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic debitis quae eum eveniet ducimus vero odit, officia consequatur vel repellat
+		recusandae labore sed tempora reprehenderit minus incidunt deserunt voluptate ad.
+	</div>
+	<div class="panel-footer">Panel footer</div>
+</div>
+
+
+<hr>
+<h2>Panel with body and table</h2>
+
+<style>
+	@-moz-document url-prefix() {
+		fieldset {
+			display: table-cell;
+		}
+	}
+	table col[class*="col-"] {
+		position: static;
+		float: none;
+		display: table-column;
+	}
+	table td[class*="col-"],
+	table th[class*="col-"] {
+		position: static;
+		float: none;
+		display: table-cell;
+	}
+	@media screen and (max-width: 480px) {
+		.table-responsive {
+			width: 100%;
+			margin-bottom: 18px;
+			overflow-y: hidden;
+			overflow-x: auto;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			border: 1px solid #c6c5cb;
+			-webkit-overflow-scrolling: touch;
+		}
+		.table-responsive > .table {
+			margin-bottom: 0;
+		}
+		.table-responsive > .table caption {
+			padding: 12px;
+		}
+		.table-responsive > .table > thead > tr > th,
+		.table-responsive > .table > tbody > tr > th,
+		.table-responsive > .table > tfoot > tr > th,
+		.table-responsive > .table > thead > tr > td,
+		.table-responsive > .table > tbody > tr > td,
+		.table-responsive > .table > tfoot > tr > td {
+			white-space: nowrap;
+		}
+		.table-responsive > .table-bordered {
+			border: 0;
+		}
+		.table-responsive > .table-bordered > thead > tr > th:first-child,
+		.table-responsive > .table-bordered > tbody > tr > th:first-child,
+		.table-responsive > .table-bordered > tfoot > tr > th:first-child,
+		.table-responsive > .table-bordered > thead > tr > td:first-child,
+		.table-responsive > .table-bordered > tbody > tr > td:first-child,
+		.table-responsive > .table-bordered > tfoot > tr > td:first-child {
+			border-left: 0;
+		}
+		.table-responsive > .table-bordered > thead > tr > th:last-child,
+		.table-responsive > .table-bordered > tbody > tr > th:last-child,
+		.table-responsive > .table-bordered > tfoot > tr > th:last-child,
+		.table-responsive > .table-bordered > thead > tr > td:last-child,
+		.table-responsive > .table-bordered > tbody > tr > td:last-child,
+		.table-responsive > .table-bordered > tfoot > tr > td:last-child {
+			border-right: 0;
+		}
+		.table-responsive > .table-bordered > tbody > tr:last-child > th,
+		.table-responsive > .table-bordered > tfoot > tr:last-child > th,
+		.table-responsive > .table-bordered > tbody > tr:last-child > td,
+		.table-responsive > .table-bordered > tfoot > tr:last-child > td {
+			border-bottom: 0;
+		}
+	}
+	.table {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 21px;
+		background-color: #fff;
+	}
+	.table caption {
+		font-weight: 300;
+		font-size: 18px;
+		text-align: left;
+		margin-bottom: 12px;
+	}
+	.table th {
+		text-align: left;
+	}
+	.table > thead > tr > th,
+	.table > tbody > tr > th,
+	.table > tfoot > tr > th,
+	.table > thead > tr > td,
+	.table > tbody > tr > td,
+	.table > tfoot > tr > td {
+		padding: 12px;
+		vertical-align: top;
+		border-top: 1px solid #c6c5cb;
+	}
+	.table > thead > tr > th {
+		vertical-align: bottom;
+		border-bottom: 3px solid #685ac0;
+		font-weight: 500;
+		color: #0d0d0d;
+	}
+	.table > caption + thead > tr:first-child > th,
+	.table > colgroup + thead > tr:first-child > th,
+	.table > thead:first-child > tr:first-child > th,
+	.table > caption + thead > tr:first-child > td,
+	.table > colgroup + thead > tr:first-child > td,
+	.table > thead:first-child > tr:first-child > td {
+		border-top: 0;
+	}
+	.table > tbody + tbody {
+		border-top: 2px solid #685ac0;
+	}
+	.table > tbody > tr {
+		transition: background 0.2s ease;
+	}
+	.table > tbody > tr:hover {
+		background-color: #f1f1f2;
+	}
+	.table.table-striped > tbody > tr:nth-child(odd) {
+		background-color: #f1f1f2;
+	}
+	.table.table-striped > tbody > tr:nth-child(odd):hover {
+		background-color: #e4e4e6;
+	}
+	.table.table-bordered > thead > tr > td,
+	.table.table-bordered > tbody > tr > td,
+	.table.table-bordered > tfoot > tr > td {
+		border: 1px solid #c6c5cb;
+	}
+	.table.table-bordered > thead > tr > th,
+	.table.table-bordered > tbody > tr > th,
+	.table.table-bordered > tfoot > tr > th {
+		border-left: 1px solid #c6c5cb;
+		border-right: 1px solid #c6c5cb;
+	}
+	.table.table-bordered > caption + thead > tr:first-child > th {
+		border-top: 1px solid #c6c5cb;
+	}
+	.table.table-bordered > thead > tr > th,
+	.table.table-bordered > thead > tr > td {
+		border-bottom-width: 2px;
+	}
+	.table.table-bordered > tbody > tr > td.table-highlight + td.table-highlight,
+	.table.table-bordered > tbody > tr > th.table-highlight + td.table-highlight,
+	.table.table-bordered > tbody > tr > td.table-highlight + th.table-highlight,
+	.table.table-bordered > tbody > tr > th.table-highlight + th.table-highlight {
+		border-left: 1px solid #c6c5cb;
+	}
+	.table > tbody > tr.table-highlight {
+		border-left: 6px solid #d60c8c;
+	}
+	.table > tbody > tr.table-highlight > th,
+	.table > tbody > tr.table-highlight > td {
+		border-bottom: 1px solid #d60c8c;
+	}
+	.table > tbody > tr > td.table-highlight,
+	.table > tbody > tr > th.table-highlight {
+		border-left: 6px solid #d60c8c;
+		border-bottom: 1px solid #d60c8c;
+	}
+	.table > tbody > tr > td.table-highlight + td.table-highlight,
+	.table > tbody > tr > th.table-highlight + td.table-highlight,
+	.table > tbody > tr > td.table-highlight + th.table-highlight,
+	.table > tbody > tr > th.table-highlight + th.table-highlight {
+		border-left: 0 none;
+	}
+</style>
+
+<div class="panel">
+	<div class="panel-heading">
+		<span class="panel-title">Panel title</span>
+	</div>
+	<div class="panel-body">
+		<p>
+			Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+			Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.
+		</p>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<caption>
+				Table caption this table width is: <em>(100%)</em>
+			</caption>
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Username</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Justin</td>
+					<td>Spencer</td>
+					<td><i>Justin has no twitter</i></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Dominik</td>
+					<td>Wilkowski</td>
+					<td>@wilkowskidom</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Peter</td>
+					<td>Clancy</td>
+					<td><i>Pete has no twitter either... :(</i></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+<hr>
+<h2>Panel only with table</h2>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<span class="panel-title">Panel title</span>
+	</div>
+
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Justin</td>
+					<td>Spencer</td>
+					<td><i>Justin has no twitter</i></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Dominik</td>
+					<td>Wilkowski</td>
+					<td>@wilkowskidom</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Peter</td>
+					<td>Clancy</td>
+					<td><i>Pete has no twitter either... :(</i></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
