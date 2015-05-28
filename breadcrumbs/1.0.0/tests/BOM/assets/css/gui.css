@@ -1557,6 +1557,22 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.breadcrumbs {
-  content: 'BOM';
+.breadcrumb {
+  padding: 6px 18px;
+  margin-bottom: 21px;
+  list-style: none;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+  padding: 0 6px;
+  color: #0d0d0d;
+}
+.breadcrumb > .is-active {
+  color: #0d0d0d;
+}
+.breadcrumb > .is-active a {
+  color: #0d0d0d;
 }
