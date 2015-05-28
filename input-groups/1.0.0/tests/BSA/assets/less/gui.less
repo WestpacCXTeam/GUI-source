@@ -1265,8 +1265,55 @@
 
 
 
-	.input-groups {
-		content: @test;
+	.input-group {
+		display: inline-block;
+		font-size: 0;
+		border-radius: 3px;
+		border: 1px solid @color-Border;
+		overflow: hidden;
+
+		.input-group-text {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			margin: -1px;
+			padding: 0;
+			overflow: hidden;
+			clip: rect(0,0,0,0);
+			border: 0;
+		}
+
+		.input-group-input,
+		.input-group-addon {
+			color: @color-Text;
+		}
+
+		.input-group-input {
+			-webkit-appearance: none;
+			border: 0 none;
+			font-size: 16px;
+			padding: 8px;
+
+			& + .input-group-addon {
+				border-left: 1px solid @color-Border;
+			}
+
+			&:focus {
+				.outline();
+			}
+		}
+
+		.input-group-addon {
+			font-size: 14px;
+			background-color: @color-Background;
+			padding: 11px;
+
+			& + .input-group-input {
+				border-left: 1px solid @color-Border;
+			}
+
+		}
+
 	}
 }
 /*!input-groups v1.0.0 BSA*/

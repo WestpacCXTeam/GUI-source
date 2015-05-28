@@ -1557,6 +1557,45 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.input-groups {
-  content: 'BSA';
+.input-group {
+  display: inline-block;
+  font-size: 0;
+  border-radius: 3px;
+  border: 1px solid #c2c2c2;
+  overflow: hidden;
+}
+.input-group .input-group-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.input-group .input-group-input,
+.input-group .input-group-addon {
+  color: #333333;
+}
+.input-group .input-group-input {
+  -webkit-appearance: none;
+  border: 0 none;
+  font-size: 16px;
+  padding: 8px;
+}
+.input-group .input-group-input + .input-group-addon {
+  border-left: 1px solid #c2c2c2;
+}
+.input-group .input-group-input:focus {
+  outline: 2px dotted #000;
+  outline-offset: 0.5rem;
+}
+.input-group .input-group-addon {
+  font-size: 14px;
+  background-color: #ebebeb;
+  padding: 11px;
+}
+.input-group .input-group-addon + .input-group-input {
+  border-left: 1px solid #c2c2c2;
 }
