@@ -1,0 +1,48 @@
+/*![Module-Version-Brand]*/
+/*
+ * wells mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| wells STYLES
+._wells( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.well {
+		min-height: 21px;
+		padding: 18px;
+		margin-bottom: 21px;
+		background-color: @color-Background;
+		border: 1px solid @color-Border;
+		border-radius: 3px;
+
+		&.well-lg {
+			padding: 28px;
+		}
+
+		&.well-sm {
+			padding: 6px 9px;
+		}
+	}
+}
