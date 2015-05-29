@@ -1568,8 +1568,7 @@ a:hover {
   display: inline-block;
   font-size: 0;
   border-radius: 3px;
-  border: 1px solid #cecdc6;
-  overflow: hidden;
+  vertical-align: middle;
 }
 .input-group .input-group-text {
   position: absolute;
@@ -1579,7 +1578,7 @@ a:hover {
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0;
+  border: 0 none;
 }
 .input-group .input-group-input,
 .input-group .input-group-addon {
@@ -1590,19 +1589,68 @@ a:hover {
   border: 0 none;
   font-size: 16px;
   padding: 8px;
-}
-.input-group .input-group-input + .input-group-addon {
-  border-left: 1px solid #cecdc6;
+  vertical-align: middle;
+  border: 1px solid #cecdc6;
+  transition: border 0.2s ease;
+  height: 36px;
 }
 .input-group .input-group-input:focus {
-  outline: 2px dotted #000;
-  outline-offset: 0.5rem;
+  outline: none;
+  border: 1px solid #78be20;
+}
+.input-group .input-group-input:nth-child(2) {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.input-group .input-group-input:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
 .input-group .input-group-addon {
   font-size: 14px;
   background-color: #f3f3f1;
-  padding: 11px;
+  padding: 9px;
+  vertical-align: middle;
 }
-.input-group .input-group-addon + .input-group-input {
-  border-left: 1px solid #cecdc6;
+.input-group .input-group-addon:nth-child(2) {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border: 1px solid #cecdc6;
+  border-right: 0 none;
+}
+.input-group .input-group-addon:last-child {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 1px solid #cecdc6;
+  border-left: 0 none;
+}
+.input-group.input-group-xl .input-group-input {
+  padding: 14px;
+}
+.input-group.input-group-xl .input-group-addon {
+  padding: 15px;
+}
+.input-group.input-group-xl .input-group-input,
+.input-group.input-group-xl .input-group-addon {
+  height: 48px;
+}
+.input-group.input-group-lg .input-group-input {
+  padding: 11px 14px;
+}
+.input-group.input-group-lg .input-group-addon {
+  padding: 12px;
+}
+.input-group.input-group-lg .input-group-input,
+.input-group.input-group-lg .input-group-addon {
+  height: 42px;
+}
+.input-group.input-group-sm .input-group-input {
+  padding: 5px 10px;
+}
+.input-group.input-group-sm .input-group-addon {
+  padding: 6px;
+}
+.input-group.input-group-sm .input-group-input,
+.input-group.input-group-sm .input-group-addon {
+  height: 30px;
 }
