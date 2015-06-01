@@ -1,0 +1,18 @@
+.icon-alert,
+.symbol-alert { background-image: url('../img/alert.png'); background-repeat: no-repeat; }
+
+.icon-face-happy,
+.symbol-face-happy { background-image: url('../img/face-happy.png'); background-repeat: no-repeat; }
+
+.icon-face-hmm,
+.symbol-face-hmm { background-image: url('../img/face-hmm.png'); background-repeat: no-repeat; }
+
+.icon-face-sad,
+.symbol-face-sad { background-image: url('../img/face-sad.png'); background-repeat: no-repeat; }
+
+.icon-help,
+.symbol-help { background-image: url('../img/help.png'); background-repeat: no-repeat; }
+
+.icon-info,
+.symbol-info { background-image: url('../img/info.png'); background-repeat: no-repeat; }
+
