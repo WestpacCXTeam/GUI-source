@@ -1545,6 +1545,125 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.forms {
-  content: 'WBC';
+.forms-input {
+  display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 16px;
+  font-weight: 300;
+  color: #2d373e;
+  background-color: #fff;
+  border: 1px solid #d7d2cb;
+  border-radius: 3px;
+  transition: border 0.2s ease;
+  padding: 6px 12px;
+  height: 36px;
+  width: 100%;
+}
+textarea.forms-input {
+  min-height: 60px;
+}
+.forms-input + .forms-input {
+  margin-top: 21px;
+}
+.forms-input:focus {
+  border-color: #621a4b;
+  outline: none;
+}
+.forms-input:disabled {
+  background-color: #f4f3f0;
+  color: #575f65;
+  cursor: not-allowed;
+}
+.forms-input:read-only {
+  background-color: #f4f3f0;
+  color: #2d373e;
+  cursor: not-allowed;
+}
+.forms-input.forms-input-xl {
+  height: 48px;
+  padding: 13px 14px;
+}
+textarea.forms-input.forms-input-xl {
+  min-height: 72px;
+}
+.forms-input.forms-input-lg {
+  height: 42px;
+  padding: 10px 14px 9px 14px;
+}
+textarea.forms-input.forms-input-lg {
+  min-height: 66px;
+}
+.forms-input.forms-input-sm {
+  height: 30px;
+  padding: 3px 10px 3px 10px;
+}
+textarea.forms-input.forms-input-sm {
+  min-height: 54px;
+}
+.forms-select-wrapper {
+  position: relative;
+  vertical-align: middle;
+  height: 36px;
+  display: inline-block;
+  background-color: #fff;
+}
+.forms-select-wrapper:after {
+  position: absolute;
+  top: 45%;
+  right: 6px;
+  z-index: 0;
+  content: " ";
+  margin-left: 6px;
+  display: inline-block;
+  border-top: 8px solid #2d373e;
+  border-right: 7px solid transparent;
+  border-bottom: none;
+  border-left: 7px solid transparent;
+}
+.forms-select-wrapper .forms-select {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  height: 36px;
+  border: none;
+  color: #2d373e;
+  font-size: 16px;
+  padding: 7px 30px 7px 8px;
+  border: 1px solid #d7d2cb;
+  border-radius: 3px;
+  transition: border 0.2s ease;
+}
+.forms-select-wrapper .forms-select:focus {
+  border-color: #621a4b;
+  outline: none;
+}
+.forms-select-wrapper .forms-select:disabled {
+  background-color: #f4f3f0;
+  color: #575f65;
+  cursor: not-allowed;
+  padding-right: 8px;
+}
+fieldset {
+  width: auto;
+  border: 0 none;
+  padding: 0 0 21px 0;
+  margin: 0;
+  min-width: 0;
+}
+fieldset .legend,
+fieldset legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 21px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #575f65;
+  border: 0;
+  border-bottom: 1px solid #d7d2cb;
 }

@@ -8,13 +8,19 @@
 
 <input type="text" class="forms-input forms-input-xl" placeholder="I'm a xl text input">
 
-<input type="text" class="forms-input forms-input-xl" placeholder="I'm a lg text input">
+<input type="text" class="forms-input forms-input-lg" placeholder="I'm a lg text input">
 
-<input type="text" class="forms-input forms-input-xl" placeholder="I'm a sm text input">
+<input type="text" class="forms-input forms-input-sm" placeholder="I'm a sm text input">
 
 <p><strong>disabled</strong></p>
 
 <input type="text" class="forms-input" placeholder="I'm a default text input" disabled>
+
+<input type="text" class="forms-input" placeholder="I'm a default text input" value="Disabled value" disabled>
+
+<p><strong>readonly</strong></p>
+
+<input type="text" class="forms-input" placeholder="I'm a default text input" value="Readonly value" readonly>
 
 
 <hr>
@@ -28,13 +34,19 @@
 
 <input type="email" class="forms-input forms-input-xl" placeholder="I'm a xl email input">
 
-<input type="email" class="forms-input forms-input-xl" placeholder="I'm a lg email input">
+<input type="email" class="forms-input forms-input-lg" placeholder="I'm a lg email input">
 
-<input type="email" class="forms-input forms-input-xl" placeholder="I'm a sm email input">
+<input type="email" class="forms-input forms-input-sm" placeholder="I'm a sm email input">
 
 <p><strong>disabled</strong></p>
 
 <input type="email" class="forms-input" placeholder="I'm a default email input" disabled>
+
+<input type="email" class="forms-input" placeholder="I'm a default email input" value="email@domain.tld" disabled>
+
+<p><strong>readonly</strong></p>
+
+<input type="email" class="forms-input" placeholder="I'm a default email input" value="email@domain.tld" readonly>
 
 
 <hr>
@@ -48,13 +60,19 @@
 
 <input type="password" class="forms-input forms-input-xl" placeholder="I'm a xl password input">
 
-<input type="password" class="forms-input forms-input-xl" placeholder="I'm a lg password input">
+<input type="password" class="forms-input forms-input-lg" placeholder="I'm a lg password input">
 
-<input type="password" class="forms-input forms-input-xl" placeholder="I'm a sm password input">
+<input type="password" class="forms-input forms-input-sm" placeholder="I'm a sm password input">
 
 <p><strong>disabled</strong></p>
 
 <input type="password" class="forms-input" placeholder="I'm a default password input" disabled>
+
+<input type="password" class="forms-input" placeholder="I'm a default password input" value="Disabled value" disabled>
+
+<p><strong>readonly</strong></p>
+
+<input type="password" class="forms-input" placeholder="I'm a default password input" value="Readonly value" readonly>
 
 
 <hr>
@@ -68,13 +86,19 @@
 
 <input type="number" class="forms-input forms-input-xl" placeholder="I'm a xl number input">
 
-<input type="number" class="forms-input forms-input-xl" placeholder="I'm a lg number input">
+<input type="number" class="forms-input forms-input-lg" placeholder="I'm a lg number input">
 
-<input type="number" class="forms-input forms-input-xl" placeholder="I'm a sm number input">
+<input type="number" class="forms-input forms-input-sm" placeholder="I'm a sm number input">
 
 <p><strong>disabled</strong></p>
 
 <input type="number" class="forms-input" placeholder="I'm a default number input" disabled>
+
+<input type="number" class="forms-input" placeholder="I'm a default number input" value="1234567890" disabled>
+
+<p><strong>readonly</strong></p>
+
+<input type="number" class="forms-input" placeholder="I'm a default number input" value="1234567890" readonly>
 
 
 <hr>
@@ -88,13 +112,19 @@
 
 <input type="date" class="forms-input forms-input-xl" placeholder="I'm a xl date input">
 
-<input type="date" class="forms-input forms-input-xl" placeholder="I'm a lg date input">
+<input type="date" class="forms-input forms-input-lg" placeholder="I'm a lg date input">
 
-<input type="date" class="forms-input forms-input-xl" placeholder="I'm a sm date input">
+<input type="date" class="forms-input forms-input-sm" placeholder="I'm a sm date input">
 
 <p><strong>disabled</strong></p>
 
 <input type="date" class="forms-input" placeholder="I'm a default date input" disabled>
+
+<input type="date" class="forms-input" placeholder="I'm a default date input" value="1970-01-01" disabled>
+
+<p><strong>readonly</strong></p>
+
+<input type="date" class="forms-input" placeholder="I'm a default date input" value="1970-01-01" readonly>
 
 
 <hr>
@@ -102,19 +132,49 @@
 
 <p><strong>default</strong></p>
 
-<input type="file" class="forms-input" placeholder="I'm a default file input">
+<div class="forms-file js-formfiles">
+	<input type="file" class="forms-file-input">
+	<div class="forms-file-msg">
+		<span class="forms-file-empty">Please select a file</span>
+		<span class="forms-file-full">File has been selected</span>
+	</div>
+</div>
 
 <p><strong>sizing</strong></p>
 
-<input type="file" class="forms-input forms-input-xl" placeholder="I'm a xl file input">
+<div class="forms-file forms-file-xl js-formfiles">
+	<input type="file" class="forms-file-input">
+	<div class="forms-file-msg">
+		<span class="forms-file-empty">Please select a file</span>
+		<span class="forms-file-full">File has been selected</span>
+	</div>
+</div>
 
-<input type="file" class="forms-input forms-input-xl" placeholder="I'm a lg file input">
+<div class="forms-file forms-file-lg js-formfiles">
+	<input type="file" class="forms-file-input">
+	<div class="forms-file-msg">
+		<span class="forms-file-empty">Please select a file</span>
+		<span class="forms-file-full">File has been selected</span>
+	</div>
+</div>
 
-<input type="file" class="forms-input forms-input-xl" placeholder="I'm a sm file input">
+<div class="forms-file forms-file-sm js-formfiles">
+	<input type="file" class="forms-file-input">
+	<div class="forms-file-msg">
+		<span class="forms-file-empty">Please select a file</span>
+		<span class="forms-file-full">File has been selected</span>
+	</div>
+</div>
 
 <p><strong>disabled</strong></p>
 
-<input type="file" class="forms-input" placeholder="I'm a default file input" disabled>
+<div class="forms-file forms-file-xl js-formfiles">
+	<input type="file" class="forms-file-input" disabled>
+	<div class="forms-file-msg">
+		<span class="forms-file-empty">Please select a file</span>
+		<span class="forms-file-full">File has been selected</span>
+	</div>
+</div>
 
 
 <hr>
@@ -126,15 +186,21 @@
 
 <p><strong>sizing</strong></p>
 
-<textarea class="forms-input xl" placeholder="I'm a xl textarea"></textarea>
+<textarea class="forms-input forms-input-xl" placeholder="I'm a xl textarea"></textarea>
 
-<textarea class="forms-input lg" placeholder="I'm a lg textarea"></textarea>
+<textarea class="forms-input forms-input-lg" placeholder="I'm a lg textarea"></textarea>
 
-<textarea class="forms-input sm" placeholder="I'm a sm textarea"></textarea>
+<textarea class="forms-input forms-input-sm" placeholder="I'm a sm textarea"></textarea>
 
 <p><strong>disabled</strong></p>
 
 <textarea class="forms-input" placeholder="I'm a default textarea" disabled></textarea>
+
+<textarea class="forms-input" placeholder="I'm a default textarea" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</textarea>
+
+<p><strong>readonly</strong></p>
+
+<textarea class="forms-input" placeholder="I'm a default textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</textarea>
 
 
 <hr>
@@ -241,9 +307,13 @@
 			<input type="date" class="forms-input" placeholder="I'm a default date input">
 		</p>
 
-		<p>
-			<input type="file" class="forms-input" placeholder="I'm a default file input">
-		</p>
+		<div class="forms-file js-formfiles">
+			<input type="file" class="forms-file-input">
+			<div class="forms-file-msg">
+				<span class="forms-file-empty">Please select a file</span>
+				<span class="forms-file-full">File has been selected</span>
+			</div>
+		</div>
 
 		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
 
@@ -289,9 +359,13 @@
 			<input type="date" class="forms-input" placeholder="I'm a default date input">
 		</p>
 
-		<p>
-			<input type="file" class="forms-input" placeholder="I'm a default file input">
-		</p>
+		<div class="forms-file js-formfiles">
+			<input type="file" class="forms-file-input">
+			<div class="forms-file-msg">
+				<span class="forms-file-empty">Please select a file</span>
+				<span class="forms-file-full">File has been selected</span>
+			</div>
+		</div>
 
 		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
 
@@ -335,9 +409,13 @@
 			<input type="date" class="forms-input" placeholder="I'm a default date input">
 		</p>
 
-		<p>
-			<input type="file" class="forms-input" placeholder="I'm a default file input">
-		</p>
+		<div class="forms-file js-formfiles">
+			<input type="file" class="forms-file-input">
+			<div class="forms-file-msg">
+				<span class="forms-file-empty">Please select a file</span>
+				<span class="forms-file-full">File has been selected</span>
+			</div>
+		</div>
 
 		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
 
@@ -382,9 +460,13 @@
 			<input type="date" class="forms-input" placeholder="I'm a default date input">
 		</p>
 
-		<p>
-			<input type="file" class="forms-input" placeholder="I'm a default file input">
-		</p>
+		<div class="forms-file js-formfiles">
+			<input type="file" class="forms-file-input">
+			<div class="forms-file-msg">
+				<span class="forms-file-empty">Please select a file</span>
+				<span class="forms-file-full">File has been selected</span>
+			</div>
+		</div>
 
 		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
 
@@ -431,9 +513,13 @@
 			<input type="date" class="forms-input" placeholder="I'm a default date input">
 		</p>
 
-		<p>
-			<input type="file" class="forms-input" placeholder="I'm a default file input">
-		</p>
+		<div class="forms-file js-formfiles">
+			<input type="file" class="forms-file-input">
+			<div class="forms-file-msg">
+				<span class="forms-file-empty">Please select a file</span>
+				<span class="forms-file-full">File has been selected</span>
+			</div>
+		</div>
 
 		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
 
