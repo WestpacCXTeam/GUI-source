@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+	<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+	<html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Testing forms v1.0.0 STG</title>
+	<link rel="stylesheet" href="assets/css/gui.css">
+
+	<style>
+		header {
+			margin: 21px 0;
+		}
+
+		.nav {
+			float: left;
+		}
+
+		.headline {
+			text-align: right;
+			margin-top: 0;
+		}
+
+		main.container {
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing forms v1.0.0 STG</h1>
+		</div>
+	</header>
+
+	<main class="container">
+<h2>input text</h2>
+
+<p><strong>default</strong></p>
+
+<input type="text" class="forms-input" placeholder="I'm a default text input">
+
+<p><strong>sizing</strong></p>
+
+<input type="text" class="forms-input forms-input-xl" placeholder="I'm a xl text input">
+
+<input type="text" class="forms-input forms-input-xl" placeholder="I'm a lg text input">
+
+<input type="text" class="forms-input forms-input-xl" placeholder="I'm a sm text input">
+
+<p><strong>disabled</strong></p>
+
+<input type="text" class="forms-input" placeholder="I'm a default text input" disabled>
+
+
+<hr>
+<h2>input email</h2>
+
+<p><strong>default</strong></p>
+
+<input type="email" class="forms-input" placeholder="I'm a default email input">
+
+<p><strong>sizing</strong></p>
+
+<input type="email" class="forms-input forms-input-xl" placeholder="I'm a xl email input">
+
+<input type="email" class="forms-input forms-input-xl" placeholder="I'm a lg email input">
+
+<input type="email" class="forms-input forms-input-xl" placeholder="I'm a sm email input">
+
+<p><strong>disabled</strong></p>
+
+<input type="email" class="forms-input" placeholder="I'm a default email input" disabled>
+
+
+<hr>
+<h2>input password</h2>
+
+<p><strong>default</strong></p>
+
+<input type="password" class="forms-input" placeholder="I'm a default password input">
+
+<p><strong>sizing</strong></p>
+
+<input type="password" class="forms-input forms-input-xl" placeholder="I'm a xl password input">
+
+<input type="password" class="forms-input forms-input-xl" placeholder="I'm a lg password input">
+
+<input type="password" class="forms-input forms-input-xl" placeholder="I'm a sm password input">
+
+<p><strong>disabled</strong></p>
+
+<input type="password" class="forms-input" placeholder="I'm a default password input" disabled>
+
+
+<hr>
+<h2>input number</h2>
+
+<p><strong>default</strong></p>
+
+<input type="number" class="forms-input" placeholder="I'm a default number input">
+
+<p><strong>sizing</strong></p>
+
+<input type="number" class="forms-input forms-input-xl" placeholder="I'm a xl number input">
+
+<input type="number" class="forms-input forms-input-xl" placeholder="I'm a lg number input">
+
+<input type="number" class="forms-input forms-input-xl" placeholder="I'm a sm number input">
+
+<p><strong>disabled</strong></p>
+
+<input type="number" class="forms-input" placeholder="I'm a default number input" disabled>
+
+
+<hr>
+<h2>input date</h2>
+
+<p><strong>default</strong></p>
+
+<input type="date" class="forms-input" placeholder="I'm a default date input">
+
+<p><strong>sizing</strong></p>
+
+<input type="date" class="forms-input forms-input-xl" placeholder="I'm a xl date input">
+
+<input type="date" class="forms-input forms-input-xl" placeholder="I'm a lg date input">
+
+<input type="date" class="forms-input forms-input-xl" placeholder="I'm a sm date input">
+
+<p><strong>disabled</strong></p>
+
+<input type="date" class="forms-input" placeholder="I'm a default date input" disabled>
+
+
+<hr>
+<h2>input file</h2>
+
+<p><strong>default</strong></p>
+
+<input type="file" class="forms-input" placeholder="I'm a default file input">
+
+<p><strong>sizing</strong></p>
+
+<input type="file" class="forms-input forms-input-xl" placeholder="I'm a xl file input">
+
+<input type="file" class="forms-input forms-input-xl" placeholder="I'm a lg file input">
+
+<input type="file" class="forms-input forms-input-xl" placeholder="I'm a sm file input">
+
+<p><strong>disabled</strong></p>
+
+<input type="file" class="forms-input" placeholder="I'm a default file input" disabled>
+
+
+<hr>
+<h2>textarea</h2>
+
+<p><strong>default</strong></p>
+
+<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
+
+<p><strong>sizing</strong></p>
+
+<textarea class="forms-input xl" placeholder="I'm a xl textarea"></textarea>
+
+<textarea class="forms-input lg" placeholder="I'm a lg textarea"></textarea>
+
+<textarea class="forms-input sm" placeholder="I'm a sm textarea"></textarea>
+
+<p><strong>disabled</strong></p>
+
+<textarea class="forms-input" placeholder="I'm a default textarea" disabled></textarea>
+
+
+<hr>
+<h2>select</h2>
+
+<p><strong>default</strong></p>
+
+<div class="forms-select-wrapper">
+	<select class="forms-select">
+		<option>Please select</option>
+		<option>Option A</option>
+		<option>Option B</option>
+		<option>Option C</option>
+		<option>Option D</option>
+		<option>Option E</option>
+		<option>Option F</option>
+		<option>Option G</option>
+	</select>
+</div>
+
+<p><strong>sizing</strong></p>
+
+<div class="forms-select-wrapper forms-select-xl">
+	<select class="forms-select">
+		<option>Please select</option>
+		<option>Option A</option>
+		<option>Option B</option>
+		<option>Option C</option>
+		<option>Option D</option>
+		<option>Option E</option>
+		<option>Option F</option>
+		<option>Option G</option>
+	</select>
+</div>
+
+<div class="forms-select-wrapper forms-select-lg">
+	<select class="forms-select">
+		<option>Please select</option>
+		<option>Option A</option>
+		<option>Option B</option>
+		<option>Option C</option>
+		<option>Option D</option>
+		<option>Option E</option>
+		<option>Option F</option>
+		<option>Option G</option>
+	</select>
+</div>
+
+<div class="forms-select-wrapper forms-select-sm">
+	<select class="forms-select">
+		<option>Please select</option>
+		<option>Option A</option>
+		<option>Option B</option>
+		<option>Option C</option>
+		<option>Option D</option>
+		<option>Option E</option>
+		<option>Option F</option>
+		<option>Option G</option>
+	</select>
+</div>
+
+<p><strong>disabled</strong></p>
+
+<div class="forms-select-wrapper">
+	<select class="forms-select" disabled>
+		<option>Please select</option>
+		<option>Option A</option>
+		<option>Option B</option>
+		<option>Option C</option>
+		<option>Option D</option>
+		<option>Option E</option>
+		<option>Option F</option>
+		<option>Option G</option>
+	</select>
+</div>
+
+
+<hr>
+<h2>fieldset</h2>
+
+<p><strong>default</strong></p>
+
+<form>
+	<fieldset>
+		<legend>Legend</legend>
+
+		<p>
+			<input type="text" class="forms-input" placeholder="I'm a default text input">
+		</p>
+
+		<p>
+			<input type="email" class="forms-input" placeholder="I'm a default email input">
+		</p>
+
+		<p>
+			<input type="password" class="forms-input" placeholder="I'm a default password input">
+		</p>
+
+		<p>
+			<input type="number" class="forms-input" placeholder="I'm a default number input">
+		</p>
+
+		<p>
+			<input type="date" class="forms-input" placeholder="I'm a default date input">
+		</p>
+
+		<p>
+			<input type="file" class="forms-input" placeholder="I'm a default file input">
+		</p>
+
+		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
+
+		<div class="forms-select-wrapper">
+			<select class="forms-select">
+				<option>Please select</option>
+				<option>Option A</option>
+				<option>Option B</option>
+				<option>Option C</option>
+				<option>Option D</option>
+				<option>Option E</option>
+				<option>Option F</option>
+				<option>Option G</option>
+			</select>
+		</div>
+
+	</fieldset>
+</form>
+
+<p><strong>sizing</strong></p>
+
+<form>
+	<fieldset class="forms-xl">
+		<legend>Legend</legend>
+
+		<p>
+			<input type="text" class="forms-input" placeholder="I'm a default text input">
+		</p>
+
+		<p>
+			<input type="email" class="forms-input" placeholder="I'm a default email input">
+		</p>
+
+		<p>
+			<input type="password" class="forms-input" placeholder="I'm a default password input">
+		</p>
+
+		<p>
+			<input type="number" class="forms-input" placeholder="I'm a default number input">
+		</p>
+
+		<p>
+			<input type="date" class="forms-input" placeholder="I'm a default date input">
+		</p>
+
+		<p>
+			<input type="file" class="forms-input" placeholder="I'm a default file input">
+		</p>
+
+		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
+
+		<div class="forms-select-wrapper">
+			<select class="forms-select">
+				<option>Please select</option>
+				<option>Option A</option>
+				<option>Option B</option>
+				<option>Option C</option>
+				<option>Option D</option>
+				<option>Option E</option>
+				<option>Option F</option>
+				<option>Option G</option>
+			</select>
+		</div>
+
+	</fieldset>
+</form>
+
+<form>
+	<fieldset class="forms-lg">
+		<legend>Legend</legend>
+
+		<p>
+			<input type="text" class="forms-input" placeholder="I'm a default text input">
+		</p>
+
+		<p>
+			<input type="email" class="forms-input" placeholder="I'm a default email input">
+		</p>
+
+		<p>
+			<input type="password" class="forms-input" placeholder="I'm a default password input">
+		</p>
+
+		<p>
+			<input type="number" class="forms-input" placeholder="I'm a default number input">
+		</p>
+
+		<p>
+			<input type="date" class="forms-input" placeholder="I'm a default date input">
+		</p>
+
+		<p>
+			<input type="file" class="forms-input" placeholder="I'm a default file input">
+		</p>
+
+		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
+
+		<div class="forms-select-wrapper">
+			<select class="forms-select">
+				<option>Please select</option>
+				<option>Option A</option>
+				<option>Option B</option>
+				<option>Option C</option>
+				<option>Option D</option>
+				<option>Option E</option>
+				<option>Option F</option>
+				<option>Option G</option>
+			</select>
+		</div>
+
+	</fieldset>
+</form>
+
+
+<form>
+	<fieldset class="forms-sm">
+		<legend>Legend</legend>
+
+		<p>
+			<input type="text" class="forms-input" placeholder="I'm a default text input">
+		</p>
+
+		<p>
+			<input type="email" class="forms-input" placeholder="I'm a default email input">
+		</p>
+
+		<p>
+			<input type="password" class="forms-input" placeholder="I'm a default password input">
+		</p>
+
+		<p>
+			<input type="number" class="forms-input" placeholder="I'm a default number input">
+		</p>
+
+		<p>
+			<input type="date" class="forms-input" placeholder="I'm a default date input">
+		</p>
+
+		<p>
+			<input type="file" class="forms-input" placeholder="I'm a default file input">
+		</p>
+
+		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
+
+		<div class="forms-select-wrapper">
+			<select class="forms-select">
+				<option>Please select</option>
+				<option>Option A</option>
+				<option>Option B</option>
+				<option>Option C</option>
+				<option>Option D</option>
+				<option>Option E</option>
+				<option>Option F</option>
+				<option>Option G</option>
+			</select>
+		</div>
+
+	</fieldset>
+</form>
+
+
+<p><strong>disabled</strong></p>
+
+<form>
+	<fieldset disabled>
+		<legend>Legend</legend>
+
+		<p>
+			<input type="text" class="forms-input" placeholder="I'm a default text input">
+		</p>
+
+		<p>
+			<input type="email" class="forms-input" placeholder="I'm a default email input">
+		</p>
+
+		<p>
+			<input type="password" class="forms-input" placeholder="I'm a default password input">
+		</p>
+
+		<p>
+			<input type="number" class="forms-input" placeholder="I'm a default number input">
+		</p>
+
+		<p>
+			<input type="date" class="forms-input" placeholder="I'm a default date input">
+		</p>
+
+		<p>
+			<input type="file" class="forms-input" placeholder="I'm a default file input">
+		</p>
+
+		<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
+
+		<div class="forms-select-wrapper">
+			<select class="forms-select">
+				<option>Please select</option>
+				<option>Option A</option>
+				<option>Option B</option>
+				<option>Option C</option>
+				<option>Option D</option>
+				<option>Option E</option>
+				<option>Option F</option>
+				<option>Option G</option>
+			</select>
+		</div>
+
+	</fieldset>
+</form>
+
+<br><br><br><br><br><br>
+	</main>
+
+	<script src="assets/js/gui.js"></script>
+</body>
+</html>
