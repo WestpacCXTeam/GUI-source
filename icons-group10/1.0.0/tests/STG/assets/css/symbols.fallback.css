@@ -1,12 +1,18 @@
+.icon-android,
 .symbol-android { background-image: url('../img/android.png'); background-repeat: no-repeat; }
 
+.icon-apple,
 .symbol-apple { background-image: url('../img/apple.png'); background-repeat: no-repeat; }
 
+.icon-desktop,
 .symbol-desktop { background-image: url('../img/desktop.png'); background-repeat: no-repeat; }
 
+.icon-phone,
 .symbol-phone { background-image: url('../img/phone.png'); background-repeat: no-repeat; }
 
+.icon-tablet,
 .symbol-tablet { background-image: url('../img/tablet.png'); background-repeat: no-repeat; }
 
+.icon-windows-new,
 .symbol-windows-new { background-image: url('../img/windows-new.png'); background-repeat: no-repeat; }
 

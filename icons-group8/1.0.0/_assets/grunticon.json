@@ -1,3 +1,5 @@
 {
-	"symbol": ["selector"]
+	"bar-chart": [".icon-bar-chart"],
+	"invest": [".icon-invest"],
+	"pie-chart": [".icon-pie-chart"]
 }
