@@ -1274,14 +1274,14 @@
 
 		//////////////////////////////////////| NEUTRAL
 		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-E;
-		@neutral-bordercolor: @color-E;
+		@neutral-backgroundcolor: @color-C;
+		@neutral-bordercolor: @color-C;
 		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-E-50;
-		@neutral-active-bordercolor: @color-E;
+		@neutral-active-backgroundcolor: @color-C-50;
+		@neutral-active-bordercolor: @color-C;
 		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-E-70;
-		@neutral-hover-bordercolor: @color-E;
+		@neutral-hover-backgroundcolor: @color-C-70;
+		@neutral-hover-bordercolor: @color-C;
 
 		//////////////////////////////////////| FAINT
 		@faint-fontcolor: @color-Muted;
@@ -1319,14 +1319,14 @@
 
 		//////////////////////////////////////| NEUTRAL
 		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-F;
-		@neutral-bordercolor: @color-F;
+		@neutral-backgroundcolor: @color-C;
+		@neutral-bordercolor: @color-C;
 		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-F-50;
-		@neutral-active-bordercolor: @color-F;
+		@neutral-active-backgroundcolor: @color-C-50;
+		@neutral-active-bordercolor: @color-C;
 		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-G;
-		@neutral-hover-bordercolor: @color-F;
+		@neutral-hover-backgroundcolor: @color-C;
+		@neutral-hover-bordercolor: @color-C;
 
 		//////////////////////////////////////| FAINT
 		@faint-fontcolor: @color-Muted;
@@ -1352,26 +1352,26 @@
 		@primary-hover-bordercolor: @color-A;
 
 		//////////////////////////////////////| HERO
-		@hero-fontcolor: #fff;
+		@hero-fontcolor: @color-Text;
 		@hero-backgroundcolor: @color-B;
 		@hero-bordercolor: @color-B;
-		@hero-active-fontcolor: #fff;
+		@hero-active-fontcolor: @color-Text;
 		@hero-active-backgroundcolor: @color-B-50;
 		@hero-active-bordercolor: @color-B;
-		@hero-hover-fontcolor: #fff;
+		@hero-hover-fontcolor: @color-Text;
 		@hero-hover-backgroundcolor: @color-B-70;
 		@hero-hover-bordercolor: @color-B;
 
 		//////////////////////////////////////| NEUTRAL
 		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-G;
-		@neutral-bordercolor: @color-G;
+		@neutral-backgroundcolor: @color-C;
+		@neutral-bordercolor: @color-C;
 		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-G-50;
-		@neutral-active-bordercolor: @color-G;
+		@neutral-active-backgroundcolor: @color-C-50;
+		@neutral-active-bordercolor: @color-C;
 		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-G-70;
-		@neutral-hover-bordercolor: @color-G;
+		@neutral-hover-backgroundcolor: @color-C-70;
+		@neutral-hover-bordercolor: @color-C;
 
 		//////////////////////////////////////| FAINT
 		@faint-fontcolor: @color-Muted;
@@ -1409,14 +1409,14 @@
 
 		//////////////////////////////////////| NEUTRAL
 		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-F;
-		@neutral-bordercolor: @color-F;
+		@neutral-backgroundcolor: @color-C;
+		@neutral-bordercolor: @color-C;
 		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-F-50;
-		@neutral-active-bordercolor: @color-F;
+		@neutral-active-backgroundcolor: @color-C-50;
+		@neutral-active-bordercolor: @color-C;
 		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-F-70;
-		@neutral-hover-bordercolor: @color-F;
+		@neutral-hover-backgroundcolor: @color-C-70;
+		@neutral-hover-bordercolor: @color-C;
 
 		//////////////////////////////////////| FAINT
 		@faint-fontcolor: @color-Muted;
@@ -1457,12 +1457,10 @@
 		//btn icons
 		.btn-icon {
 			display: inline-block;
-			float: right;
 			vertical-align: middle;
 			margin-left: 24px;
 
 			&.btn-icon-left {
-				float: left;
 				margin-left: 0;
 				margin-right: 24px;
 			}
@@ -1783,6 +1781,11 @@
 		background-color: @backgroundcolor;
 	}
 
+	svg,
+	.icons-background {
+		fill: @fontcolor;
+	}
+
 	&:hover {
 		color: @hover-fontcolor;
 		border-color: @hover-bordercolor;
@@ -1793,12 +1796,22 @@
 				border-top-color: @hover-fontcolor;
 			}
 		}
+
+		svg,
+		.icons-background {
+			fill: @hover-fontcolor;
+		}
 	}
 
 	&:active {
 		color: @active-fontcolor;
 		border-color: @active-bordercolor;
 		background-color: @active-backgroundcolor;
+
+		svg,
+		.icons-background {
+			fill: @active-fontcolor;
+		}
 	}
 
 	.btn-dropdown > & {
