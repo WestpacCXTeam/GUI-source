@@ -1,3 +1,14 @@
 {
-	"symbol": ["selector"]
+	"book": [".icon-book"],
+	"compass": [".icon-compass"],
+	"contacts": [".icon-contacts"],
+	"cross": [".icon-cross"],
+	"cube": [".icon-cube"],
+	"global": [".icon-global"],
+	"idea": [".icon-idea"],
+	"key": [".icon-key"],
+	"more": [".icon-more"],
+	"tick": [".icon-tick"],
+	"umbrella": [".icon-umbrella"],
+	"wallet": [".icon-wallet"]
 }
