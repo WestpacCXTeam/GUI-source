@@ -34,7 +34,7 @@
 		width: 32px;
 		height: 32px;
 
-		&.icon-size-lg {
+		&.icon-size-sm {
 			background-size: 16px 16px;
 			width: 16px;
 			height: 16px;
@@ -56,7 +56,7 @@
 		// 	}
 		// }
 
-		&.icon-size-sm {
+		&.icon-size-lg {
 			background-size: 64px 64px;
 			width: 64px;
 			height: 64px;
@@ -64,6 +64,13 @@
 			svg {
 				width: 64px;
 				height: 64px;
+			}
+		}
+
+		a & {
+			svg,
+			.icons-background {
+				fill: @color-A;
 			}
 		}
 	}

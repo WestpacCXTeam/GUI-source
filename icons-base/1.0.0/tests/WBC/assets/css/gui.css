@@ -1550,21 +1550,25 @@ a:hover {
   width: 32px;
   height: 32px;
 }
-.icon.icon-size-lg {
+.icon.icon-size-sm {
   background-size: 16px 16px;
   width: 16px;
   height: 16px;
 }
-.icon.icon-size-lg svg {
+.icon.icon-size-sm svg {
   width: 16px;
   height: 16px;
 }
-.icon.icon-size-sm {
+.icon.icon-size-lg {
   background-size: 64px 64px;
   width: 64px;
   height: 64px;
 }
-.icon.icon-size-sm svg {
+.icon.icon-size-lg svg {
   width: 64px;
   height: 64px;
+}
+a .icon svg,
+a .icon .icons-background {
+  fill: #d5002b;
 }
