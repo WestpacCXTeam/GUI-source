@@ -1,3 +1,12 @@
 {
-	"symbol": ["selector"]
+	"credit-card": [".icon-credit-card"],
+	"dollar": [".icon-dollar"],
+	"growth": [".icon-growth"],
+	"limit": [".icon-limit"],
+	"money-in": [".icon-money-in"],
+	"money-out": [".icon-money-out"],
+	"percent": [".icon-percent"],
+	"save": [".icon-save"],
+	"super": [".icon-super"],
+	"switch": [".icon-switch"]
 }
