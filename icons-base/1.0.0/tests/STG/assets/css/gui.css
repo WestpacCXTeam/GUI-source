@@ -422,6 +422,7 @@ h1 {
 }
 h1 small {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-weight: 300;
 }
 h2 {
   font-size: 30px;
@@ -435,6 +436,7 @@ h2 {
 }
 h2 small {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-weight: 300;
 }
 h3 {
   font-size: 24px;
@@ -448,6 +450,7 @@ h3 {
 }
 h3 small {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-weight: 300;
 }
 h4 {
   font-size: 18px;
@@ -455,12 +458,13 @@ h4 {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
-  font-weight: 900;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h4 small {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-weight: 300;
 }
 h5 {
   font-size: 16px;
@@ -468,12 +472,13 @@ h5 {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 6px;
-  font-weight: 900;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h5 small {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-weight: 700;
 }
 h6 {
   font-size: 14px;
@@ -481,12 +486,13 @@ h6 {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
-  font-weight: 900;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h6 small {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-weight: 700;
 }
 h1,
 h2,
@@ -504,7 +510,6 @@ h5 small,
 h6 small {
   font-size: 100%;
   color: #858370;
-  font-weight: 300;
 }
 html {
   font-size: 6px;
