@@ -1,0 +1,70 @@
+/*![Module-Version-Brand]*/
+/*
+ * icons-base mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| icons-base STYLES
+._icons-base( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.icon {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+
+		&.icon-size-lg {
+			background-size: 16px 16px;
+			width: 16px;
+			height: 16px;
+
+			svg {
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+		// &.icon-size-md {
+		// 	background-size: 32px 32px;
+		// 	width: 32px;
+		// 	height: 32px;
+
+		// 	svg {
+		// 		width: 32px;
+		// 		height: 32px;
+		// 	}
+		// }
+
+		&.icon-size-sm {
+			background-size: 64px 64px;
+			width: 64px;
+			height: 64px;
+
+			svg {
+				width: 64px;
+				height: 64px;
+			}
+		}
+	}
+}
