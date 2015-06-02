@@ -1,3 +1,7 @@
 {
-	"symbol": ["selector"]
+	"excel-file": [".icon-excel-file"],
+	"generic-file": [".icon-generic-file"],
+	"pdf-file": [".icon-pdf-file"],
+	"word-file": [".icon-word-file"],
+	"zip-file": [".icon-zip-file"]
 }
