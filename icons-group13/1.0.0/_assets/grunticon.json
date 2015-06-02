@@ -1,3 +1,14 @@
 {
-	"symbol": ["selector"]
+	"add": [".icon-add"],
+	"backspace": [".icon-backspace"],
+	"close": [".icon-close"],
+	"download": [".icon-download"],
+	"new-window": [".icon-new-window"],
+	"pause": [".icon-pause"],
+	"play": [".icon-play"],
+	"plus": [".icon-plus"],
+	"refresh": [".icon-refresh"],
+	"remove": [".icon-remove"],
+	"upload": [".icon-upload"],
+	"write": [".icon-write"]
 }
