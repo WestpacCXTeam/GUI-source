@@ -29,33 +29,64 @@
 <hr>
 <h2>buttons with icons</h2>
 
-<script>
-	/*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
-	(function(e){function n(n,t,o,a){"use strict";var i=e.document.createElement("link"),r=t||e.document.getElementsByTagName("script")[0],d=e.document.styleSheets;return i.rel="stylesheet",i.href=n,i.media="only x",a&&(i.onload=a),r.parentNode.insertBefore(i,r),i.onloadcssdefined=function(e){for(var t,o=0;d.length>o;o++)d[o].href&&d[o].href.indexOf(n)>-1&&(t=!0);t?e():setTimeout(function(){i.onloadcssdefined(e)})},i.onloadcssdefined(function(){i.media=o||"all"}),i}function t(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}var o=function(a,i){"use strict";if(a&&3===a.length){var r=e.Image,d=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),c=new r;c.onerror=function(){o.method="png",o.href=a[2],n(a[2])},c.onload=function(){var e=1===c.width&&1===c.height,r=a[e&&d?0:e?1:2];o.method=e&&d?"svg":e?"datapng":"png",o.href=r,t(n(r),i)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};o.loadCSS=n,o.onloadCSS=t,e.grunticon=o})(this);(function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,d={};if(n=e.sheet,!n)return d;t=n.cssRules?n.cssRules:n.rules;for(var s=0;t.length>s;s++)r=t[s].cssText,a=o+t[s].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),d[a]=c);return d},c=function(e){var n,r,a;r="data-grunticon-embed";for(var i in e){a=i.slice(o.length);try{n=t.querySelectorAll(a+"["+r+"]")}catch(c){continue}if(n.length)for(var d=0;n.length>d;d++)n[d].innerHTML=e[i],n[d].style.backgroundImage="none",n[d].removeAttribute(r)}return n},d=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=d,e.embedSVG=d})(grunticon,this);
-	grunticon(["http://westpaccxteam.github.io/GUI-source/symbols/1.0.0/tests/BOM/assets/css/symbols.data.svg.css", "http://westpaccxteam.github.io/GUI-source/symbols/1.0.0/tests/BOM/assets/css/symbols.data.png.css", "http://westpaccxteam.github.io/GUI-source/symbols/1.0.0/tests/BOM/assets/css/symbols.fallback.css"]);
-</script>
-<noscript><link href="http://westpaccxteam.github.io/GUI-source/symbols/1.0.0/tests/BOM/assets/css/symbols.fallback.css" rel="stylesheet"></noscript>
+
 <style>
-	.symbol-tick {
+	.icon-face-happy,
+	.symbol-face-happy { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23575f65%22%20class%3D%22icons-background%22%20d%3D%22M8%2011c0-1.1%200.9-2%202-2s2%200.9%202%202-0.9%202-2%202c-1.1%200-2-0.9-2-2zM20%2011c0%201.1%200.9%202%202%202s2-0.9%202-2-0.9-2-2-2c-1.1%200-2%200.9-2%202zM22%2019.6c-1.2%202-3.5%203.4-6%203.4s-4.8-1.4-6-3.4l-2.6%201.5c1.8%203%205%204.9%208.6%204.9s6.8-1.9%208.6-4.9l-2.6-1.5zM16%200c-8.8%200-16%207.2-16%2016s7.2%2016%2016%2016%2016-7.2%2016-16-7.2-16-16-16zM30%2016c0%207.7-6.3%2014-14%2014s-14-6.3-14-14%206.3-14%2014-14%2014%206.3%2014%2014z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
+	.icon {
+		display: inline-block;
 		width: 32px;
-		height: 37px;
+		height: 32px;
+	}
+	.icon.icon-size-sm {
+		background-size: 16px 16px;
+		width: 16px;
+		height: 16px;
+	}
+	.icon.icon-size-sm svg {
+		width: 16px;
+		height: 16px;
+	}
+	.icon.icon-size-lg {
+		background-size: 64px 64px;
+		width: 64px;
+		height: 64px;
+	}
+	.icon.icon-size-lg svg {
+		width: 64px;
+		height: 64px;
+	}
+	a .icon svg,
+	a .icon .icons-background {
+		fill: #e30000;
 	}
 </style>
 
 <button type="button" class="btn btn-primary">
 	<span class="btn-text">Primary</span>
-	<span class="btn-icon symbol symbol-tick"></span>
+	<span class="btn-icon icon icon-size-sm icon-face-happy"></span>
 </button>
 <button type="button" class="btn btn-hero">
-	<span class="btn-icon btn-icon-left symbol symbol-tick"></span>
+	<span class="btn-icon btn-icon-left icon icon-size-sm icon-face-happy"></span>
 	<span class="btn-text">Hero</span>
 </button>
 <button type="button" class="btn btn-neutral">
 	<span class="btn-text">Neutral</span>
-	<span class="btn-icon symbol symbol-tick" style="background-image: none;"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve"><g id="Layer_1"> <g>  <path fill="#685AC0" d="M0,16l13,16c0,0,11.9-23.5,19-32c-8.9,4.3-20,20-20,20l-8-7L0,16z"></path> </g></g><g id="Layer_2"></g></svg></span>
+
+	<span class="btn-icon icon icon-size-sm icon-face-happy" data-grunticon-embed style="background: none;">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+			<path fill="#716f7d" class="icons-background" d="M8 11c0-1.1 0.9-2 2-2s2 0.9 2 2-0.9 2-2 2c-1.1 0-2-0.9-2-2zM20 11c0 1.1 0.9 2 2 2s2-0.9 2-2-0.9-2-2-2c-1.1 0-2 0.9-2 2zM22 19.6c-1.2 2-3.5 3.4-6 3.4s-4.8-1.4-6-3.4l-2.6 1.5c1.8 3 5 4.9 8.6 4.9s6.8-1.9 8.6-4.9l-2.6-1.5zM16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zM30 16c0 7.7-6.3 14-14 14s-14-6.3-14-14 6.3-14 14-14 14 6.3 14 14z"></path>
+		</svg>
+	</span>
 </button>
 <button type="button" class="btn btn-faint">
-	<span class="btn-icon btn-icon-left symbol symbol-tick" style="background-image: none;"><!--?xml version="1.0" encoding="utf-8"?--><svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve"><g id="Layer_1"> <g>  <path fill="#685AC0" d="M0,16l13,16c0,0,11.9-23.5,19-32c-8.9,4.3-20,20-20,20l-8-7L0,16z"></path> </g></g><g id="Layer_2"></g></svg></span>
+
+	<span class="btn-icon btn-icon-left icon icon-size-sm icon-face-happy" data-grunticon-embed style="background: none;">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+			<path fill="#716f7d" class="icons-background" d="M8 11c0-1.1 0.9-2 2-2s2 0.9 2 2-0.9 2-2 2c-1.1 0-2-0.9-2-2zM20 11c0 1.1 0.9 2 2 2s2-0.9 2-2-0.9-2-2-2c-1.1 0-2 0.9-2 2zM22 19.6c-1.2 2-3.5 3.4-6 3.4s-4.8-1.4-6-3.4l-2.6 1.5c1.8 3 5 4.9 8.6 4.9s6.8-1.9 8.6-4.9l-2.6-1.5zM16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zM30 16c0 7.7-6.3 14-14 14s-14-6.3-14-14 6.3-14 14-14 14 6.3 14 14z"></path>
+		</svg>
+	</span>
+
 	<span class="btn-text">Faint</span>
 </button>
 
