@@ -466,7 +466,7 @@ h5 {
   -moz-osx-font-smoothing: grayscale;
 }
 h5 small {
-  font-weight: 300;
+  font-weight: 700;
 }
 h6 {
   font-size: 14px;
@@ -479,7 +479,7 @@ h6 {
   -moz-osx-font-smoothing: grayscale;
 }
 h6 small {
-  font-weight: 300;
+  font-weight: 700;
 }
 h1,
 h2,
@@ -497,7 +497,6 @@ h5 small,
 h6 small {
   font-size: 100%;
   color: #716f7d;
-  font-weight: 300;
 }
 html {
   font-size: 6px;
