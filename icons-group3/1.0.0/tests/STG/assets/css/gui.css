@@ -1548,7 +1548,7 @@ a:hover {
 }
 /*!icons-group3 v1.0.0 STG*/
 /*
- * icons-group3 mixins
+ * icons-group2 mixins
  *
  * doc comment with stuff and stuff
  *
@@ -1564,6 +1564,3 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.icons-group3 {
-  content: 'STG';
-}
