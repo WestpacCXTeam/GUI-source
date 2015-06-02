@@ -1,10 +1,15 @@
+.icon-excel-file,
 .symbol-excel-file { background-image: url('../img/excel-file.png'); background-repeat: no-repeat; }
 
+.icon-generic-file,
 .symbol-generic-file { background-image: url('../img/generic-file.png'); background-repeat: no-repeat; }
 
+.icon-pdf-file,
 .symbol-pdf-file { background-image: url('../img/pdf-file.png'); background-repeat: no-repeat; }
 
+.icon-word-file,
 .symbol-word-file { background-image: url('../img/word-file.png'); background-repeat: no-repeat; }
 
+.icon-zip-file,
 .symbol-zip-file { background-image: url('../img/zip-file.png'); background-repeat: no-repeat; }
 
