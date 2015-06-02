@@ -1,3 +1,14 @@
 {
-	"symbol": ["selector"]
+	"alarm": [".icon-alarm"],
+	"australia": [".icon-australia"],
+	"chat": [".icon-chat"],
+	"clock": [".icon-clock"],
+	"edit": [".icon-edit"],
+	"email": [".icon-email"],
+	"id-card": [".icon-id-card"],
+	"padlock": [".icon-padlock"],
+	"print": [".icon-print"],
+	"sms": [".icon-sms"],
+	"stopwatch": [".icon-stopwatch"],
+	"telephone": [".icon-telephone"]
 }
