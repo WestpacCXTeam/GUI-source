@@ -1,3 +1,6 @@
 {
-	"symbol": ["selector"]
+	"business-person": [".icon-business-person"],
+	"eftpos": [".icon-eftpos"],
+	"office": [".icon-office"],
+	"shop": [".icon-shop"]
 }
