@@ -453,10 +453,10 @@ h5 {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 6px;
-  font-weight: 400;
+  font-weight: 700;
 }
 h5 small {
-  font-weight: 300;
+  font-weight: 700;
 }
 h6 {
   font-size: 14px;
@@ -464,10 +464,10 @@ h6 {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
-  font-weight: 500;
+  font-weight: 700;
 }
 h6 small {
-  font-weight: 300;
+  font-weight: 700;
 }
 h1,
 h2,
@@ -485,7 +485,6 @@ h5 small,
 h6 small {
   font-size: 100%;
   color: #575f65;
-  font-weight: 300;
 }
 html {
   font-size: 6px;
