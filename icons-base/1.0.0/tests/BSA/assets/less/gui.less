@@ -1265,8 +1265,43 @@
 
 
 
-	.icons-base {
-		content: @test;
+	.icon {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+
+		&.icon-size-lg {
+			background-size: 16px 16px;
+			width: 16px;
+			height: 16px;
+
+			svg {
+				width: 16px;
+				height: 16px;
+			}
+		}
+
+		// &.icon-size-md {
+		// 	background-size: 32px 32px;
+		// 	width: 32px;
+		// 	height: 32px;
+
+		// 	svg {
+		// 		width: 32px;
+		// 		height: 32px;
+		// 	}
+		// }
+
+		&.icon-size-sm {
+			background-size: 64px 64px;
+			width: 64px;
+			height: 64px;
+
+			svg {
+				width: 64px;
+				height: 64px;
+			}
+		}
 	}
 }
 /*!icons-base v1.0.0 BSA*/

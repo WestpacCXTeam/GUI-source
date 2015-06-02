@@ -1557,6 +1557,26 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.icons-base {
-  content: 'BOM';
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.icon.icon-size-lg {
+  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+}
+.icon.icon-size-lg svg {
+  width: 16px;
+  height: 16px;
+}
+.icon.icon-size-sm {
+  background-size: 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+.icon.icon-size-sm svg {
+  width: 64px;
+  height: 64px;
 }
