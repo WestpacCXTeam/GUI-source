@@ -45,7 +45,7 @@
 
 			$('.dropdown-menu').attr('aria-hidden', 'true');
 
-			$('.js-button-dropdown').on('click', function() {
+			$('.js-button-dropdown').on('click', function toggelDropdownButton() {
 				App.debugging( 'buttons: dropdown button clicked', 'interaction' );
 
 				var $this = $(this);
