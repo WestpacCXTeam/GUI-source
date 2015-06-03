@@ -43,6 +43,10 @@
 			border-top-right-radius: 2px;
 			border-top-left-radius: 2px;
 
+			@media (min-width: @screen-sm) {
+				padding: 24px;
+			}
+
 			.panel-title {
 				color: @header-color;
 				margin-top: 0;
@@ -55,6 +59,10 @@
 		.panel-body {
 			padding: 12px;
 			&:extend(.clearfix all);
+
+			@media (min-width: @screen-sm) {
+				padding: 24px;
+			}
 		}
 
 		& > .table-responsive .table,
@@ -66,6 +74,10 @@
 
 			caption {
 				padding: 12px 12px 0 12px;
+
+				@media (min-width: @screen-sm) {
+					padding: 24px 24px 0 24px;
+				}
 			}
 		}
 
@@ -83,6 +95,10 @@
 			border-top: 1px solid @color-Border;
 			border-bottom-right-radius: 2px;
 			border-bottom-left-radius: 2px;
+
+			@media (min-width: @screen-sm) {
+				padding: 24px;
+			}
 		}
 
 

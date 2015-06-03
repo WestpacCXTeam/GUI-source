@@ -1563,6 +1563,11 @@ a:hover {
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
 }
+@media (min-width: 768px) {
+  .panel .panel-heading {
+    padding: 24px;
+  }
+}
 .panel .panel-heading .panel-title {
   color: #ffffff;
   margin-top: 0;
@@ -1571,6 +1576,11 @@ a:hover {
 }
 .panel .panel-body {
   padding: 12px;
+}
+@media (min-width: 768px) {
+  .panel .panel-body {
+    padding: 24px;
+  }
 }
 .panel > .table-responsive .table,
 .panel > .table {
@@ -1582,6 +1592,12 @@ a:hover {
 .panel > .table-responsive .table caption,
 .panel > .table caption {
   padding: 12px 12px 0 12px;
+}
+@media (min-width: 768px) {
+  .panel > .table-responsive .table caption,
+  .panel > .table caption {
+    padding: 24px 24px 0 24px;
+  }
 }
 @media (max-width: 767px) {
   .panel > .table-responsive {
@@ -1595,6 +1611,11 @@ a:hover {
   border-top: 1px solid #d7d2cb;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
+}
+@media (min-width: 768px) {
+  .panel .panel-footer {
+    padding: 24px;
+  }
 }
 .panel.panel-faint {
   border-color: #d7d2cb;
