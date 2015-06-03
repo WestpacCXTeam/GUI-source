@@ -14,16 +14,16 @@
 	 *  SETTINGS
 	 */
 	.getBrand() when (@brand = BOM) {
-		@test: 'BOM';
+		@hero-fontcolor: #fff;
 	}
 	.getBrand() when (@brand = BSA) {
-		@test: 'BSA';
+		@hero-fontcolor: #fff;
 	}
 	.getBrand() when (@brand = STG) {
-		@test: 'STG';
+		@hero-fontcolor: @color-Text;
 	}
 	.getBrand() when (@brand = WBC) {
-		@test: 'WBC';
+		@hero-fontcolor: #fff;
 	}
 	.getBrand();
 
@@ -31,15 +31,15 @@
 
 	.label {
 		display: inline;
-		padding: .2em .6em .3em;
-		font-size: 75%;
-		font-weight: bold;
+		padding: 2px 6px;
+		font-size: 12px;
+		font-weight: 400;
 		line-height: 1;
 		color: #fff;
 		text-align: center;
 		white-space: nowrap;
 		vertical-align: baseline;
-		border-radius: .25em;
+		border-radius: 2px;
 		background-color: @color-A;
 
 		&[href] {
@@ -65,11 +65,13 @@
 
 		&.label-hero {
 			background-color: @color-B;
+			color: @hero-fontcolor;
 
 			&[href] {
 				&:hover,
 				&:focus {
 					background-color: mix(@color-B, white, 50%);
+					color: @hero-fontcolor;
 				}
 			}
 
