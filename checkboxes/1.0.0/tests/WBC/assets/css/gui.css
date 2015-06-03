@@ -1563,6 +1563,7 @@ a:hover {
 }
 .checkbox .checkbox-text {
   font-size: 16px;
+  font-weight: 300;
   padding-left: 38px;
   min-height: 32px;
   display: inline-block;
@@ -1580,4 +1581,7 @@ a:hover {
   padding-left: 0;
   padding-right: 38px;
   background-position: right top;
+}
+.checkbox + .checkbox {
+  margin-left: 18px;
 }
