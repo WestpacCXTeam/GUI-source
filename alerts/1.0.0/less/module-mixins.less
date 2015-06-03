@@ -1,0 +1,137 @@
+/*![Module-Version-Brand]*/
+/*
+ * alerts mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| alerts STYLES
+._alerts( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.text-success {
+		color: @color-Success;
+	}
+
+	.text-info {
+		color: @color-Info;
+	}
+
+	.text-warning {
+		color: @color-Warning;
+	}
+
+	.text-danger {
+		color: @color-Danger;
+	}
+
+
+	//////////////////////////////////////| ALERT BOXES
+	.alert {
+		padding: 18px;
+		margin-bottom: 21px;
+		border-top: 1px solid @color-Border;
+		border-bottom: 1px solid @color-Border;
+		overflow: hidden;
+
+		> p,
+		> ul {
+			margin-bottom: 0;
+		}
+
+		> p + p {
+			margin-top: 5px;
+		}
+
+		.alert-close {
+			float: right;
+			overflow: hidden;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			padding: 0 6px;
+			margin: 0;
+			border: 0 none;
+			background-color: transparent;
+			text-indent: -9999em;
+			cursor: pointer;
+			font-size: 0;
+			line-height: 1;
+			margin-top: -8px;
+
+			&:after {
+				content: "\00d7";
+				display: block;
+				font-weight: 700;
+				font-size: 32px;
+				text-indent: 0;
+				opacity: 0.5;
+				transition: opacity 0.2s ease;
+			}
+
+			&:focus {
+				.outline();
+			}
+
+			&:hover {
+				outline: none;
+
+				&:after {
+					opacity: 1;
+				}
+			}
+
+		}
+
+
+		&.alert-success {
+			color: @color-Success;
+			border-color: @color-Success-50;
+			background-color: @color-Success-5;
+		}
+
+		&.alert-info {
+			color: @color-Info;
+			border-color: @color-Info-50;
+			background-color: @color-Info-5;
+		}
+
+		&.alert-warning {
+			color: @color-Warning;
+			border-color: @color-Warning-50;
+			background-color: @color-Warning-5;
+		}
+
+		&.alert-danger {
+			color: @color-Danger;
+			border-color: @color-Danger-50;
+			background-color: @color-Danger-5;
+		}
+
+		&.alert-system {
+			color: #000;
+			border-color: yellow;
+			background-color: yellow;
+		}
+
+	}
+}
