@@ -1270,8 +1270,160 @@
 
 
 
-	.popovers {
-		content: @test;
+	.popover {
+		position: relative;
+
+		.popover-popup {
+			position: absolute;
+			display: block;
+			left: 50%;
+			bottom: 100%;
+			width: 282px;
+			margin: 0 0 21px -131px;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+			border-radius: 3px;
+			border: 1px solid @color-Muted;
+			z-index: 3;
+			background-color: #fff;
+			pointer-events: none;
+
+			&:before,
+			&:after {
+				content: " ";
+				position: absolute;
+				bottom: -17px;
+				left: 50%;
+				margin-left: -21px;
+				width: 0;
+				border-top: 18px solid #fff;
+				border-right: 12px solid transparent;
+				border-left: 12px solid transparent;
+				font-size: 0;
+				line-height: 0;
+				z-index: 3;
+			}
+
+			&:before {
+				bottom: -19px;
+				border-top-color: @color-Muted;
+				z-index: 2;
+			}
+
+			.popover-popup-title,
+			.popover-popup-body {
+				display: block;
+				white-space: normal;
+				padding: 10px 12px;
+				text-align: left;
+				color: @color-Text;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 1.428571429;
+			}
+
+			.popover-popup-title {
+				background-color: @color-Muted;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 400;
+			}
+
+			.popover-popup-body {
+				min-height: 60px;
+				padding-bottom: 18px;
+			}
+
+			.js & {
+				opacity: 0;
+				visibility: none;
+				transition: opacity 0.2s ease, visibility 0.2s ease;
+			}
+
+			.is-open& {
+				opacity: 1;
+				visibility: visible;
+			}
+
+		}
+
+
+		//////////////////////////////////////| DISMISSIBLE
+		&.popover-dismissible.is-open {
+			&:after {
+				content: " ";
+				position: fixed;
+				z-index: 1;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: transparent;
+			}
+		}
+
+
+		//////////////////////////////////////| POSITIONING
+		&.is-right {
+			.popover-popup {
+				bottom: 100%;
+				left: 285px;
+				margin-bottom: -51px;
+
+				&:before,
+				&:after {
+					bottom: 22px;
+					left: -21px;
+					margin-left: 0;
+					transform: rotate(90deg);
+				}
+
+				&:before {
+					left: -22px;
+				}
+			}
+		}
+
+		&.is-left {
+			.popover-popup {
+				bottom: 100%;
+				left: auto;
+				right: 100%;
+				margin-bottom: -51px;
+				margin-right: 22px;
+
+				&:before,
+				&:after {
+					bottom: 22px;
+					right: -21px;
+					left: auto;
+					margin-left: 0;
+					transform: rotate(-90deg);
+				}
+
+				&:before {
+					right: -22px;
+				}
+			}
+		}
+
+		&.is-bottom {
+			.popover-popup {
+				bottom: auto;
+				top: 100%;
+				margin-top: 23px;
+
+				&:before,
+				&:after {
+					bottom: auto;
+					top: -19px;
+					transform: rotate(180deg);
+				}
+
+				&:after {
+					display: none;
+				}
+			}
+		}
 	}
 }
 /*!popovers v1.0.0 BOM*/
