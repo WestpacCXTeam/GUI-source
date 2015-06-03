@@ -1,4 +1,4 @@
-/*![Module-Version-Brand]*/
+/*!tooltips v1.0.0 STG*/
 /*
  * Base styles
  *
@@ -1228,3 +1228,105 @@
 		padding: 0;
 	}
 }
+/*!tooltips v1.0.0 STG*/
+/*
+ * Settings
+ *
+ * Calling module mixins
+ *
+ */
+
+
+/* ---------------------------------------| BASE |--------------------------------------- */
+._base(STG);
+/*!tooltips v1.0.0 STG*/
+/*
+ * tooltips mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| tooltips STYLES
+._tooltips( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.tooltip {
+		position: relative;
+		z-index: 2;
+		cursor: pointer;
+
+		&:before,
+		&:after {
+			position: absolute;
+			bottom: 110%;
+			left: 50%;
+			visibility: hidden;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.2s ease, visibility 0.2s ease;
+			transition-delay: 100ms;
+
+			:focus&,
+			:hover& {
+				visibility: visible;
+				opacity: 0.9;
+			}
+		}
+
+		&:before {
+			content: attr(title);
+			margin: 0 0 5px -18px;
+			padding: 7px;
+			max-width: 300px;
+			border-radius: 3px;
+			background-color: #000;
+			color: #fff;
+			text-align: center;
+			font-size: 12px;
+			line-height: 1.2;
+		}
+
+		&:after {
+			margin-left: -5px;
+			width: 0;
+			border-top: 5px solid #000;
+			border-right: 5px solid transparent;
+			border-left: 5px solid transparent;
+			content: " ";
+			font-size: 0;
+			line-height: 0;
+		}
+
+	}
+}
+/*!tooltips v1.0.0 STG*/
+/*
+ * tooltips settings
+ *
+ * Calling module mixins
+ *
+ */
+
+
+/* ---------------------------------------| tooltips |--------------------------------------- */
+._tooltips(STG);
