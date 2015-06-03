@@ -1546,15 +1546,15 @@ a:hover {
 	 */
 .label {
   display: inline;
-  padding: .2em .6em .3em;
-  font-size: 75%;
-  font-weight: bold;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 400;
   line-height: 1;
   color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
+  border-radius: 2px;
   background-color: #d5002b;
 }
 .label[href]:hover,
@@ -1572,10 +1572,12 @@ a.label:focus {
 }
 .label.label-hero {
   background-color: #621a4b;
+  color: #ffffff;
 }
 .label.label-hero[href]:hover,
 .label.label-hero[href]:focus {
   background-color: #b18da5;
+  color: #ffffff;
 }
 .label.label-faint {
   background-color: #f4f3f0;
