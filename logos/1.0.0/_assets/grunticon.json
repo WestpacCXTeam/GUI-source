@@ -1,0 +1,14 @@
+{
+	"bom-alt": [".logo-bom-alt"],
+	"bom-phone": [".logo-bom-phone"],
+	"bom-tablet": [".logo-bom-tablet"],
+	"bsa-alt": [".logo-bsa-alt"],
+	"bsa-phone": [".logo-bsa-phone"],
+	"bsa-tablet": [".logo-bsa-tablet"],
+	"stg-alt": [".logo-stg-alt"],
+	"stg-phone": [".logo-stg-phone"],
+	"stg-tablet": [".logo-stg-tablet"],
+	"wbc-alt": [".logo-wbc-alt"],
+	"wbc-phone": [".logo-wbc-phone"],
+	"wbc-tablet": [".logo-wbc-tablet"]
+}
