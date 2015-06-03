@@ -1255,16 +1255,16 @@
 	 *  SETTINGS
 	 */
 	.getBrand() when (@brand = BOM) {
-		@test: 'BOM';
+		@font-color: #fff;
 	}
 	.getBrand() when (@brand = BSA) {
-		@test: 'BSA';
+		@font-color: #fff;
 	}
 	.getBrand() when (@brand = STG) {
-		@test: 'STG';
+		@font-color: @color-Text;
 	}
 	.getBrand() when (@brand = WBC) {
-		@test: 'WBC';
+		@font-color: #fff;
 	}
 	.getBrand();
 
@@ -1289,6 +1289,7 @@
 
 			.input-addon-input {
 				font-size: 16px;
+				font-weight: 300;
 				border: 1px solid @color-Border;
 				border-left: 0 none;
 				padding: 8px;
@@ -1326,7 +1327,7 @@
 			border: 0 none;
 			padding: 8px;
 			margin: 0;
-			color: #fff;
+			color: @font-color;
 			background-color: @color-B;
 			line-height: 1.3;
 			border: 1px solid @color-B;
@@ -1379,7 +1380,7 @@
 				content: " ";
 				margin-left: 6px;
 				display: inline-block;
-				border-top: 8px solid #fff;
+				border-top: 8px solid @font-color;
 				border-right: 7px solid transparent;
 				border-bottom: none;
 				border-left: 7px solid transparent;
@@ -1395,8 +1396,9 @@
 				text-overflow: '';
 				height: 33px;
 				border: none;
-				color: #fff;
+				color: @font-color;
 				font-size: 16px;
+				font-weight: 300;
 				padding: 7px 30px 8px 8px;
 
 				&:focus {
