@@ -1599,7 +1599,7 @@ a:hover {
 }
 .btn .btn-icon.btn-icon-left {
   margin-left: 0;
-  margin-right: 24px;
+  margin-right: 3px;
 }
 .btn.btn-link {
   background: transparent;
@@ -1607,6 +1607,7 @@ a:hover {
   color: #c0142e;
   padding: 0;
   font-size: 14px;
+  font-weight: 400;
 }
 p > .btn.btn-link {
   vertical-align: top;
