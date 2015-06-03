@@ -29,6 +29,7 @@
 
 
 
+	//////////////////////////////////////| TEXT COLORS
 	.text-success {
 		color: @color-Success;
 	}
@@ -48,11 +49,15 @@
 
 	//////////////////////////////////////| ALERT BOXES
 	.alert {
-		padding: 18px;
+		position: relative;
+		padding: 18px 36px 18px 18px;
 		margin-bottom: 21px;
 		border-top: 1px solid @color-Border;
 		border-bottom: 1px solid @color-Border;
 		overflow: hidden;
+		z-index: 1;
+		max-height: 500px;
+		opacity: 1;
 
 		> p,
 		> ul {
@@ -64,28 +69,25 @@
 		}
 
 		.alert-close {
-			float: right;
+			position: absolute;
+			top: 5px;
+			right: 5px;
 			overflow: hidden;
 			-webkit-appearance: none;
 			-moz-appearance: none;
-			padding: 0 6px;
+			padding: 7px;
 			margin: 0;
 			border: 0 none;
 			background-color: transparent;
-			text-indent: -9999em;
 			cursor: pointer;
+			opacity: 0.5;
+			transition: opacity 0.2s ease;
 			font-size: 0;
-			line-height: 1;
-			margin-top: -8px;
+			z-index: 2;
 
-			&:after {
-				content: "\00d7";
-				display: block;
-				font-weight: 700;
-				font-size: 32px;
-				text-indent: 0;
-				opacity: 0.5;
-				transition: opacity 0.2s ease;
+			svg {
+				width: 16px;
+				height: 16px;
 			}
 
 			&:focus {
@@ -94,12 +96,22 @@
 
 			&:hover {
 				outline: none;
-
-				&:after {
-					opacity: 1;
-				}
+				opacity: 1;
 			}
 
+		}
+
+		.js & {
+			transition: all 0.15s ease;
+			max-height: 500px;
+		}
+
+		&.is-closed {
+			max-height: 0;
+			opacity: 0;
+			padding: 0;
+			margin: 0;
+			border: 0 none;
 		}
 
 
@@ -107,31 +119,126 @@
 			color: @color-Success;
 			border-color: @color-Success-50;
 			background-color: @color-Success-5;
+
+			.alert-close {
+				svg,
+				.icons-background {
+					fill: @color-Success;
+				}
+			}
 		}
 
 		&.alert-info {
 			color: @color-Info;
 			border-color: @color-Info-50;
 			background-color: @color-Info-5;
+
+			.alert-close {
+				svg,
+				.icons-background {
+					fill: @color-Info;
+				}
+			}
 		}
 
 		&.alert-warning {
 			color: @color-Warning;
 			border-color: @color-Warning-50;
 			background-color: @color-Warning-5;
+
+			.alert-close {
+				svg,
+				.icons-background {
+					fill: @color-Warning;
+				}
+			}
 		}
 
 		&.alert-danger {
 			color: @color-Danger;
 			border-color: @color-Danger-50;
 			background-color: @color-Danger-5;
+
+			.alert-close {
+				svg,
+				.icons-background {
+					fill: @color-Danger;
+				}
+			}
 		}
 
 		&.alert-system {
 			color: #000;
 			border-color: yellow;
 			background-color: yellow;
+
+			.alert-close {
+				svg,
+				.icons-background {
+					fill: #000;
+				}
+			}
 		}
 
+	}
+
+
+	//////////////////////////////////////| LABELS
+	.label {
+		&.label-success {
+			background-color: @color-Success;
+			color: #fff;
+
+			&[href] {
+				&:hover,
+				&:focus {
+					background-color: mix(@color-Success, white, 50%);
+					color: #fff;
+				}
+			}
+
+		}
+
+		&.label-info {
+			background-color: @color-Info;
+			color: #fff;
+
+			&[href] {
+				&:hover,
+				&:focus {
+					background-color: mix(@color-Info, white, 50%);
+					color: #fff;
+				}
+			}
+
+		}
+
+		&.label-warning {
+			background-color: @color-Warning;
+			color: #fff;
+
+			&[href] {
+				&:hover,
+				&:focus {
+					background-color: mix(@color-Warning, white, 50%);
+					color: #fff;
+				}
+			}
+
+		}
+
+		&.label-danger {
+			background-color: @color-Danger;
+			color: #fff;
+
+			&[href] {
+				&:hover,
+				&:focus {
+					background-color: mix(@color-Danger, white, 50%);
+					color: #fff;
+				}
+			}
+
+		}
 	}
 }

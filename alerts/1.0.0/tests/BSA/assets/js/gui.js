@@ -94,7 +94,15 @@ App.init();
 		App.debugging( 'alerts: Initiating', 'report' );
 
 
-		// some js stuff
+		$('.js-alertclose').on('click', function closeAlert() {
+			App.debugging( 'alerts: Closing alert', 'interaction' );
+
+			var $parent = $(this).parent('.alert');
+
+			$parent
+				.addClass('is-closed')
+				.attr('aria-hidden', 'true');
+		});
 	};
 
 

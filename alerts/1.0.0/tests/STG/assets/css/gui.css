@@ -1582,11 +1582,15 @@ a:hover {
   color: #c40000;
 }
 .alert {
-  padding: 18px;
+  position: relative;
+  padding: 18px 36px 18px 18px;
   margin-bottom: 21px;
   border-top: 1px solid #cecdc6;
   border-bottom: 1px solid #cecdc6;
   overflow: hidden;
+  z-index: 1;
+  max-height: 500px;
+  opacity: 1;
 }
 .alert > p,
 .alert > ul {
@@ -1596,28 +1600,25 @@ a:hover {
   margin-top: 5px;
 }
 .alert .alert-close {
-  float: right;
+  position: absolute;
+  top: 5px;
+  right: 5px;
   overflow: hidden;
   -webkit-appearance: none;
   -moz-appearance: none;
-  padding: 0 6px;
+  padding: 7px;
   margin: 0;
   border: 0 none;
   background-color: transparent;
-  text-indent: -9999em;
   cursor: pointer;
-  font-size: 0;
-  line-height: 1;
-  margin-top: -8px;
-}
-.alert .alert-close:after {
-  content: "\00d7";
-  display: block;
-  font-weight: 700;
-  font-size: 32px;
-  text-indent: 0;
   opacity: 0.5;
   transition: opacity 0.2s ease;
+  font-size: 0;
+  z-index: 2;
+}
+.alert .alert-close svg {
+  width: 16px;
+  height: 16px;
 }
 .alert .alert-close:focus {
   outline: 2px dotted #000;
@@ -1625,32 +1626,97 @@ a:hover {
 }
 .alert .alert-close:hover {
   outline: none;
-}
-.alert .alert-close:hover:after {
   opacity: 1;
+}
+.js .alert {
+  transition: all 0.15s ease;
+  max-height: 500px;
+}
+.alert.is-closed {
+  max-height: 0;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  border: 0 none;
 }
 .alert.alert-success {
   color: #008000;
   border-color: #80c080;
   background-color: #f2f9f2;
 }
+.alert.alert-success .alert-close svg,
+.alert.alert-success .alert-close .icons-background {
+  fill: #008000;
+}
 .alert.alert-info {
   color: #0074c4;
   border-color: #80bae2;
   background-color: #f2f8fc;
+}
+.alert.alert-info .alert-close svg,
+.alert.alert-info .alert-close .icons-background {
+  fill: #0074c4;
 }
 .alert.alert-warning {
   color: #d06800;
   border-color: #e8b480;
   background-color: #fdf7f2;
 }
+.alert.alert-warning .alert-close svg,
+.alert.alert-warning .alert-close .icons-background {
+  fill: #d06800;
+}
 .alert.alert-danger {
   color: #c40000;
   border-color: #e28080;
   background-color: #fcf2f2;
 }
+.alert.alert-danger .alert-close svg,
+.alert.alert-danger .alert-close .icons-background {
+  fill: #c40000;
+}
 .alert.alert-system {
   color: #000;
   border-color: yellow;
   background-color: yellow;
+}
+.alert.alert-system .alert-close svg,
+.alert.alert-system .alert-close .icons-background {
+  fill: #000;
+}
+.label.label-success {
+  background-color: #008000;
+  color: #fff;
+}
+.label.label-success[href]:hover,
+.label.label-success[href]:focus {
+  background-color: #80c080;
+  color: #fff;
+}
+.label.label-info {
+  background-color: #0074c4;
+  color: #fff;
+}
+.label.label-info[href]:hover,
+.label.label-info[href]:focus {
+  background-color: #80bae2;
+  color: #fff;
+}
+.label.label-warning {
+  background-color: #d06800;
+  color: #fff;
+}
+.label.label-warning[href]:hover,
+.label.label-warning[href]:focus {
+  background-color: #e8b480;
+  color: #fff;
+}
+.label.label-danger {
+  background-color: #c40000;
+  color: #fff;
+}
+.label.label-danger[href]:hover,
+.label.label-danger[href]:focus {
+  background-color: #e28080;
+  color: #fff;
 }
