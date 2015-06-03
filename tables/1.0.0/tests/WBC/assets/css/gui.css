@@ -1635,6 +1635,9 @@ table th[class*="col-"] {
   vertical-align: top;
   border-top: 1px solid #d7d2cb;
 }
+.table > tfoot {
+  color: #575f65;
+}
 .table > thead > tr > th {
   vertical-align: bottom;
   border-bottom: 3px solid #621a4b;
