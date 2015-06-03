@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+	<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+	<html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Testing alerts v1.0.0 BOM</title>
+
+	<script>
+		/*! grunt-grunticon Stylesheet Loader - v2.1.7 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+		(function(e){function n(n,t,o,a){"use strict";var i=e.document.createElement("link"),r=t||e.document.getElementsByTagName("script")[0],d=e.document.styleSheets;return i.rel="stylesheet",i.href=n,i.media="only x",a&&(i.onload=a),r.parentNode.insertBefore(i,r),i.onloadcssdefined=function(e){for(var t,o=0;d.length>o;o++)d[o].href&&d[o].href.indexOf(n)>-1&&(t=!0);t?e():setTimeout(function(){i.onloadcssdefined(e)})},i.onloadcssdefined(function(){i.media=o||"all"}),i}function t(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}var o=function(a,i){"use strict";if(a&&3===a.length){var r=e.Image,d=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),c=new r;c.onerror=function(){o.method="png",o.href=a[2],n(a[2])},c.onload=function(){var e=1===c.width&&1===c.height,r=a[e&&d?0:e?1:2];o.method=e&&d?"svg":e?"datapng":"png",o.href=r,t(n(r),i)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};o.loadCSS=n,o.onloadCSS=t,e.grunticon=o})(this);(function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;t.length>d;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;n.length>d;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;r.length>d;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s})(grunticon,this);
+		grunticon(["assets/css/symbols.data.svg.css", "assets/css/symbols.data.png.css", "assets/css/symbols.fallback.css"], grunticon.svgLoadedCallback);
+	</script>
+	<noscript><link href="assets/css/symbols.fallback.css" rel="stylesheet"></noscript>
+
+	<link rel="stylesheet" href="assets/css/gui.css">
+
+	<style>
+		header {
+			margin: 21px 0;
+		}
+
+		.nav {
+			float: left;
+		}
+
+		.headline {
+			text-align: right;
+			margin-top: 0;
+		}
+
+		main.container {
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing alerts v1.0.0 BOM</h1>
+		</div>
+	</header>
+
+	<main class="container">
+<h2>alerts in text</h2>
+
+<p class="text-success">
+	I'm text-success. I'm accessible.
+</p>
+
+<p class="text-info">
+	I'm text-info. I'm accessible. Please don't use me for anything else.
+</p>
+
+<p class="text-warning">
+	I'm text-warning. I'm accessible. Don't use me for anything else either.
+</p>
+
+<p class="text-danger">
+	I'm text-danger. I'm accessible too
+</p>
+
+
+<hr>
+<h2>alerts boxes with buttons</h2>
+
+<div class="alert alert-success" role="alert">
+	<button type="button" class="alert-close js-alertclose" data-grunticon-embed>
+		Close
+	</button>
+
+	<strong>Well done!</strong> You successfully read this important alert message.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor provident quasi nisi officia tempore fuga autem, animi iste molestiae, qui omnis
+	doloribus aliquid ipsam rem fugiat veniam voluptatem accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, unde quis, molestias nisi
+	quae voluptates nemo quaerat nihil, consequuntur nobis ratione rerum asperiores eveniet dicta maiores quia nostrum. Pariatur, natus.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, magnam illum harum consequatur, quo sunt impedit quam minus eaque saepe voluptas
+	corrupti voluptatum, sapiente dolor sequi tempore maxime? Neque, obcaecati.
+</div>
+
+<div class="alert alert-info" role="alert">
+	<button type="button" class="alert-close js-alertclose" data-grunticon-embed>
+		Close
+	</button>
+
+	<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+
+<div class="alert alert-warning" role="alert">
+	<button type="button" class="alert-close js-alertclose" data-grunticon-embed>
+		Close
+	</button>
+
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+
+<div class="alert alert-danger" role="alert">
+	<button type="button" class="alert-close js-alertclose" data-grunticon-embed>
+		Close
+	</button>
+
+	<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<div class="alert alert-system" role="alert">
+	<button type="button" class="alert-close js-alertclose" data-grunticon-embed>
+		Close
+	</button>
+
+	<strong>System Error 8942:</strong> The server is no responding. Please try again later. Sorry for the inconvenience.
+</div>
+
+
+<hr>
+<h2>alerts boxes without buttons</h2>
+
+<div class="alert alert-success" role="alert">
+	<strong>Well done!</strong> You successfully read this important alert message.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor provident quasi nisi officia tempore fuga autem, animi iste molestiae, qui omnis
+	doloribus aliquid ipsam rem fugiat veniam voluptatem accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, unde quis, molestias nisi
+	quae voluptates nemo quaerat nihil, consequuntur nobis ratione rerum asperiores eveniet dicta maiores quia nostrum. Pariatur, natus.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, magnam illum harum consequatur, quo sunt impedit quam minus eaque saepe voluptas
+	corrupti voluptatum, sapiente dolor sequi tempore maxime? Neque, obcaecati.
+</div>
+
+<div class="alert alert-info" role="alert">
+	<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+
+<div class="alert alert-warning" role="alert">
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+
+<div class="alert alert-danger" role="alert">
+	<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<div class="alert alert-system" role="alert">
+	<strong>System Error 8942:</strong> The server is no responding. Please try again later. Sorry for the inconvenience.
+</div>
+
+
+<hr>
+<h2>alerts in labels</h2>
+
+<style>
+	.label {
+		display: inline;
+		padding: 2px 6px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1;
+		color: #fff;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: 2px;
+		background-color: #e30000;
+	}
+	.label[href]:hover,
+	.label[href]:focus {
+		background-color: #f18080;
+	}
+	a.label:hover,
+	a.label:focus {
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.label:empty {
+		display: none;
+	}
+</style>
+
+<a href="#link" class="label label-success">Success</a>
+<a href="#link" class="label label-info">Info</a>
+<a href="#link" class="label label-warning">Warning</a>
+<a href="#link" class="label label-danger">Danger</a>
+
+<br><br>
+
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+
+
+<br><br><br><br><br><br><br><br>
+	</main>
+
+	<script src="assets/js/gui.js"></script>
+</body>
+</html>
