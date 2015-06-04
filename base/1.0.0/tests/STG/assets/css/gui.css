@@ -14,7 +14,7 @@
  */
 /* ---------------------------------------| BASE |--------------------------------------- */
 .written-by {
-  content: 'Dominik Wilkowski, Justin Spencer';
+  content: 'Dominik Wilkowski, Justin Spencer, Kate T MacDonald';
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -458,7 +458,7 @@ h4 {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
-  font-weight: normal;
+  font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -472,13 +472,13 @@ h5 {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 6px;
-  font-weight: normal;
+  font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h5 small {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 h6 {
   font-size: 14px;
@@ -486,13 +486,13 @@ h6 {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
-  font-weight: normal;
+  font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 h6 small {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 h1,
 h2,
@@ -520,6 +520,17 @@ body {
   color: #004833;
   background-color: #f3f3f1;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #cecdc6;
+}
+address {
+  font-style: normal;
+}
+blockquote {
+  font-size: 16px;
+  font-weight: 300;
 }
 a {
   color: #e30000;
