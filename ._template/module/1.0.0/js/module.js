@@ -8,7 +8,7 @@
  **************************************************************************************************************************************************************/
 
 
-(function(App) {
+(function(GUI) {
 
 	var module = {};
 
@@ -16,17 +16,17 @@
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.init = function() {
-		App.debugging( '[-Module-]: Initiating', 'report' );
+		GUI.debugging( '[-Module-]: Initiating', 'report' );
 
 
 		// some js stuff
 	};
 
 
-	App.[-Module-] = module;
+	GUI.[-Module-] = module;
 
 
 	// run module
-	App.[-Module-].init();
+	GUI.[-Module-].init();
 
-}(App));
+}(GUI));
