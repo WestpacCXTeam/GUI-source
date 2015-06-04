@@ -102,7 +102,9 @@ GUI.init();
 				.removeClass('is-open')
 				.attr('aria-hidden', 'true');
 
-			$('.modal-backdrop').remove();
+			$('.modal-backdrop').fadeTo( 200, 0, function fadeOut() {
+				$('.modal-backdrop').remove();
+			});
 		}
 		else {
 			$modal
@@ -110,7 +112,13 @@ GUI.init();
 				.attr('aria-hidden', 'false')
 				.focus();
 
-			$modal.after('<div class="modal-backdrop js-modalclose" data-modal="' + target + '"></div>')
+			$('<div/>')
+				.addClass('modal-backdrop js-modalclose')
+				.attr('data-modal', target)
+				.css('opacity', 0)
+				.insertAfter( $modal )
+				.fadeTo( 250, 1 );
+
 		}
 
 	}
