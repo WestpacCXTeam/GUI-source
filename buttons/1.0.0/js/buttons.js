@@ -8,19 +8,19 @@
  **************************************************************************************************************************************************************/
 
 
-(function(App) {
+(function(GUI) {
 
 	var module = {};
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	// private function: open close a dropdown
+	// private function: open / close a dropdown
 	//
 	// _isOpen  [boolen]         Whether to open or close the dropdown
 	// $parent  [jquery object]  The parent element
 	// $menu    [jquery object]  The dropdown menu element
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	function toggelDropdown(_isOpen, $parent, $menu) {
-		App.debugging( 'buttons: ' + ( _isOpen ? 'Closing' : 'Opening' ) + ' dropdown menu', 'report' );
+		GUI.debugging( 'buttons: ' + ( _isOpen ? 'Closing' : 'Opening' ) + ' dropdown menu', 'report' );
 
 		if( !_isOpen ) {
 			$parent.addClass('is-open');
@@ -36,17 +36,17 @@
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	module.init = function() {
-		App.debugging( 'buttons: Initiating', 'report' );
+	module.init = function buttonInit() {
+		GUI.debugging( 'buttons: Initiating', 'report' );
 
 
 		if( $('.js-button-dropdown').length ) {
-			App.debugging( 'buttons: Found instances', 'report' );
+			GUI.debugging( 'buttons: Found instances', 'report' );
 
 			$('.dropdown-menu').attr('aria-hidden', 'true');
 
 			$('.js-button-dropdown').on('click', function toggelDropdownButton() {
-				App.debugging( 'buttons: dropdown button clicked', 'interaction' );
+				GUI.debugging( 'buttons: dropdown button clicked', 'interaction' );
 
 				var $this = $(this);
 				var $parent = $this.parent('div');
@@ -58,9 +58,9 @@
 			});
 
 			//ESC button listener
-			$(document).keyup(function(e) {
+			$(document).keyup(function escapeKey(e) {
 				if(e.keyCode == 27) {
-					App.debugging( 'buttons: Esc button clicked', 'interaction' );
+					GUI.debugging( 'buttons: Esc button clicked', 'interaction' );
 
 					toggelDropdown(true, $('.btn-dropdown'), $('.dropdown-menu'));
 				}
@@ -69,10 +69,10 @@
 	};
 
 
-	App.buttons = module;
+	GUI.buttons = module;
 
 
 	// run module
-	App.buttons.init();
+	GUI.buttons.init();
 
-}(App));
+}(GUI));
