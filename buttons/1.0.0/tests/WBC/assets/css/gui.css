@@ -1581,7 +1581,6 @@ a:hover {
       -ms-user-select: none;
           user-select: none;
   -webkit-appearance: none;
-  overflow: hidden;
   color: #575f65;
   border-color: #d7d2cb;
   background-color: #f4f3f0;
@@ -1841,6 +1840,14 @@ p > .btn.btn-link {
   background-color: #2d373e;
   cursor: not-allowed;
 }
+.btn:focus {
+  outline: 2px dotted #000;
+  outline-offset: 0.5rem;
+  display: inline-block;
+}
+.btn:hover {
+  outline: none;
+}
 .btn-group-item .btn,
 .btn.btn-soft {
   background-color: #fff;
@@ -1860,14 +1867,6 @@ p > .btn.btn-link {
 .btn.btn-soft:disabled:hover {
   background-color: #fff;
   color: #2d373e;
-}
-:focus {
-  outline: 2px dotted #000;
-  outline-offset: 0.5rem;
-  display: inline-block;
-}
-:hover {
-  outline: none;
 }
 .btn-block + .btn-block {
   margin-top: 6px;
