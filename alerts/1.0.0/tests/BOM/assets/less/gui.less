@@ -1505,6 +1505,73 @@
 
 		}
 	}
+
+
+	//////////////////////////////////////| FORM VALIDATIONS
+	.alert-form {
+		margin-bottom: 21px;
+
+		.alert-form-msg {
+			display: none;
+
+			.has-success&,
+			.has-info&,
+			.has-warning&,
+			.has-danger& {
+				display: block;
+				margin: 3px 0 0 0;
+			}
+		}
+
+		.has-success& {
+			.alert-form-msg {
+				color: @color-Success;
+			}
+
+			.forms-input,
+			.forms-select,
+			.forms-select:focus {
+				border-color: @color-Success;
+			}
+		}
+
+		.has-info& {
+			.alert-form-msg {
+				color: @color-Info;
+			}
+
+			.forms-input,
+			.forms-select,
+			.forms-select:focus {
+				border-color: @color-Info;
+			}
+		}
+
+		.has-warning& {
+			.alert-form-msg {
+				color: @color-Warning;
+			}
+
+			.forms-input,
+			.forms-select,
+			.forms-select:focus {
+				border-color: @color-Warning;
+			}
+		}
+
+		.has-danger& {
+			.alert-form-msg {
+				color: @color-Danger;
+			}
+
+			.forms-input,
+			.forms-select,
+			.forms-select:focus {
+				border-color: @color-Danger;
+			}
+		}
+
+	}
 }
 /*!alerts v1.0.0 BOM*/
 /*
