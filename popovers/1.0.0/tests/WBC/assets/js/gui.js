@@ -13,25 +13,25 @@ return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeTyp
 'use strict';
 
 
-var App = (function() {
+var GUI = (function guiInit() {
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// settings
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	return {
 		DEBUG: true, //debugging infos
-		SVGPATH: 'assets/img/svg-sprite.svg', //svg path
-		SVGREVISION: '10000', //svg revision
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		// Initiate app
+		// Initiate GUI
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		init: function() {
-			if( App.DEBUG ) console.log('%cDEBUGGING INFORMATION', 'font-size: 25px;');
+		init: function guiInit() {
+			if( GUI.DEBUG ) console.log('%cDEBUGGING INFORMATION', 'font-size: 25px;');
 
 			//remove fallback HTML
-			$('html').removeClass('no-js').addClass('js');
+			$('html')
+				.removeClass('no-js')
+				.addClass('js');
 
 		},
 
@@ -39,29 +39,29 @@ var App = (function() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debugging prettiness
 		//
-		// text  [string]   Text to be printed to debugger
-		// code  [string]   The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
+		// text  [string]  Text to be printed to debugger
+		// code  [string]  The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		debugging: function( text, code ) {
+		debugging: function Debug( text, code ) {
 
 			if( code === 'report' ) {
-				if( App.DEBUG ) console.log('%c\u2611 ', 'color: green; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u2611 ', 'color: green; font-size: 18px;', text);
 			}
 
 			else if( code === 'error' ) {
-				if( App.DEBUG ) console.log('%c\u2612 ', 'color: red; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u2612 ', 'color: red; font-size: 18px;', text);
 			}
 
 			else if( code === 'interaction' ) {
-				if( App.DEBUG ) console.log('%c\u261C ', 'color: blue; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u261C ', 'color: blue; font-size: 18px;', text);
 			}
 
 			else if( code === 'send' ) {
-				if( App.DEBUG ) console.log('%c\u219D ', 'color: pink; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u219D ', 'color: pink; font-size: 18px;', text);
 			}
 
 			else if( code === 'receive' ) {
-				if( App.DEBUG ) console.log('%c\u219C ', 'color: pink; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u219C ', 'color: pink; font-size: 18px;', text);
 			}
 
 		}
@@ -71,8 +71,8 @@ var App = (function() {
 }());
 
 
-//run app
-App.init();
+//run GUI
+GUI.init();
 /*!popovers v1.0.0*/
 /***************************************************************************************************************************************************************
  *
@@ -83,19 +83,19 @@ App.init();
  **************************************************************************************************************************************************************/
 
 
-(function(App) {
+(function(GUI) {
 
 	var module = {};
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	module.init = function() {
-		App.debugging( 'popovers: Initiating', 'report' );
+	module.init = function popoversInit() {
+		GUI.debugging( 'popovers: Initiating', 'report' );
 
 
 		$('.js-popover').on('click', function openPopover() {
-			App.debugging( 'popovers: popover button clicked', 'interaction' );
+			GUI.debugging( 'popovers: popover button clicked', 'interaction' );
 
 			var $this = $(this);
 			var _isOpen = $this.hasClass('is-open');
@@ -103,7 +103,7 @@ App.init();
 			var index = $('.js-popover').index( this );
 
 			if( _isOpen ) {
-				App.debugging( 'popovers: closing popover', 'report' );
+				GUI.debugging( 'popovers: closing popover', 'report' );
 
 				$this
 					.removeClass('is-open');
@@ -111,7 +111,7 @@ App.init();
 				$popover.attr('aria-hidden', 'true');
 			}
 			else {
-				App.debugging( 'popovers: opening popover', 'report' );
+				GUI.debugging( 'popovers: opening popover', 'report' );
 
 				$('.js-popover-styles-' + index).remove();
 				$popover.attr('style', '');
@@ -128,14 +128,14 @@ App.init();
 
 
 				if( top < 0 ) { //the popup is cut off on the top
-					App.debugging( 'popovers: top boundary detected', 'report' );
+					GUI.debugging( 'popovers: top boundary detected', 'report' );
 
 					$this.addClass('is-bottom');
 				}
 
 
 				if( left < 0 ) { //the popup is cut off on the left
-					App.debugging( 'popovers: left boundary detected', 'report' );
+					GUI.debugging( 'popovers: left boundary detected', 'report' );
 
 					var className = 'js-popover-' + index;
 					var marginLeft = parseInt( $popover.css('marginLeft') );
@@ -155,7 +155,7 @@ App.init();
 
 
 				if( right < 0 ) { //the popup is cut off on the right
-					App.debugging( 'popovers: right boundary detected', 'report' );
+					GUI.debugging( 'popovers: right boundary detected', 'report' );
 
 					var className = 'js-popover-' + index;
 					var marginLeft = parseInt( $popover.css('marginLeft') );
@@ -177,10 +177,10 @@ App.init();
 	};
 
 
-	App.popovers = module;
+	GUI.popovers = module;
 
 
 	// run module
-	App.popovers.init();
+	GUI.popovers.init();
 
-}(App));
+}(GUI));
