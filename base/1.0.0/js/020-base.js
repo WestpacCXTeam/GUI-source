@@ -8,7 +8,7 @@
 'use strict';
 
 
-var GUI = (function() {
+var GUI = (function guiInit() {
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// settings
@@ -20,7 +20,7 @@ var GUI = (function() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// Initiate GUI
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		init: function() {
+		init: function guiInit() {
 			if( GUI.DEBUG ) console.log('%cDEBUGGING INFORMATION', 'font-size: 25px;');
 
 			//remove fallback HTML
@@ -37,7 +37,7 @@ var GUI = (function() {
 		// text  [string]  Text to be printed to debugger
 		// code  [string]  The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		debugging: function( text, code ) {
+		debugging: function Debug( text, code ) {
 
 			if( code === 'report' ) {
 				if( GUI.DEBUG ) console.log('%c\u2611 ', 'color: green; font-size: 18px;', text);
