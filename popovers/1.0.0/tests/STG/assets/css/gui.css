@@ -1646,43 +1646,6 @@ a:hover {
   left: 0;
   background-color: transparent;
 }
-.popover.is-right .popover-popup {
-  bottom: 100%;
-  left: 285px;
-  margin-bottom: -51px;
-}
-.popover.is-right .popover-popup:before,
-.popover.is-right .popover-popup:after {
-  bottom: 22px;
-  left: -21px;
-  margin-left: 0;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-.popover.is-right .popover-popup:before {
-  left: -22px;
-}
-.popover.is-left .popover-popup {
-  bottom: 100%;
-  left: auto;
-  right: 100%;
-  margin-bottom: -51px;
-  margin-right: 22px;
-}
-.popover.is-left .popover-popup:before,
-.popover.is-left .popover-popup:after {
-  bottom: 22px;
-  right: -21px;
-  left: auto;
-  margin-left: 0;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-.popover.is-left .popover-popup:before {
-  right: -22px;
-}
 .popover.is-bottom .popover-popup {
   bottom: auto;
   top: 100%;
