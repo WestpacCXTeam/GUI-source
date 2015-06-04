@@ -1731,3 +1731,48 @@ a:hover {
   background-color: #e28080;
   color: #fff;
 }
+.alert-form {
+  margin-bottom: 21px;
+}
+.alert-form .alert-form-msg {
+  display: none;
+}
+.has-success.alert-form .alert-form-msg,
+.has-info.alert-form .alert-form-msg,
+.has-warning.alert-form .alert-form-msg,
+.has-danger.alert-form .alert-form-msg {
+  display: block;
+  margin: 3px 0 0 0;
+}
+.has-success.alert-form .alert-form-msg {
+  color: #008000;
+}
+.has-success.alert-form .forms-input,
+.has-success.alert-form .forms-select,
+.has-success.alert-form .forms-select:focus {
+  border-color: #008000;
+}
+.has-info.alert-form .alert-form-msg {
+  color: #0074c4;
+}
+.has-info.alert-form .forms-input,
+.has-info.alert-form .forms-select,
+.has-info.alert-form .forms-select:focus {
+  border-color: #0074c4;
+}
+.has-warning.alert-form .alert-form-msg {
+  color: #d06800;
+}
+.has-warning.alert-form .forms-input,
+.has-warning.alert-form .forms-select,
+.has-warning.alert-form .forms-select:focus {
+  border-color: #d06800;
+}
+.has-danger.alert-form .alert-form-msg {
+  color: #c40000;
+}
+.has-danger.alert-form .forms-input,
+.has-danger.alert-form .forms-select,
+.has-danger.alert-form .forms-select:focus {
+  border-color: #c40000;
+}
