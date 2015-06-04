@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+	<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+	<html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Testing modals v1.0.0 BSA</title>
+	<link rel="stylesheet" href="assets/css/gui.css">
+
+	<style>
+		header {
+			margin: 21px 0;
+		}
+
+		.nav {
+			float: left;
+		}
+
+		.headline {
+			text-align: right;
+			margin-top: 0;
+		}
+
+		main.container {
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing modals v1.0.0 BSA</h1>
+		</div>
+	</header>
+
+	<main class="container">
+<style>
+	.btn {
+		padding: 6px 12px;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: 300;
+		white-space: nowrap;
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+				touch-action: manipulation;
+		cursor: pointer;
+		border: 1px solid #cecdc6;
+		-webkit-user-select: none;
+			-moz-user-select: none;
+				-ms-user-select: none;
+						user-select: none;
+		-webkit-appearance: none;
+		overflow: hidden;
+		color: #858370;
+		border-color: #cecdc6;
+		background-color: #f9f9f8;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+	.btn .btn-text {
+		vertical-align: middle;
+		display: inline-block;
+	}
+	.btn svg,
+	.btn .icons-background {
+		fill: #858370;
+	}
+	.btn:hover {
+		color: #858370;
+		border-color: #cecdc6;
+		background-color: #ffffff;
+	}
+	.btn:hover svg,
+	.btn:hover .icons-background {
+		fill: #858370;
+	}
+	.btn:active {
+		color: #858370;
+		border-color: #cecdc6;
+		background-color: #ffffff;
+	}
+	.btn:active svg,
+	.btn:active .icons-background {
+		fill: #858370;
+	}
+	.btn.disabled,
+	.btn:disabled {
+		opacity: 0.65;
+	}
+	.btn.disabled:active,
+	.btn:disabled:active,
+	.btn.disabled:hover,
+	.btn:disabled:hover {
+		color: #858370;
+		border-color: #cecdc6;
+		background-color: #f9f9f8;
+		cursor: not-allowed;
+	}
+	.btn.btn-primary {
+		color: #ffffff;
+		border-color: #e30000;
+		background-color: #e30000;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+	.btn-group-input:checked + .btn.btn-primary {
+		color: #ffffff;
+		border-color: #e30000;
+		background-color: #e30000;
+	}
+	.btn.btn-primary svg,
+	.btn.btn-primary .icons-background {
+		fill: #ffffff;
+	}
+	.btn.btn-primary:hover {
+		color: #ffffff;
+		border-color: #e30000;
+		background-color: #eb4d4d;
+	}
+	.btn-dropdown > .btn.btn-primary:hover .btn-dropdown-caret:after {
+		border-top-color: #ffffff;
+	}
+	.btn.btn-primary:hover svg,
+	.btn.btn-primary:hover .icons-background {
+		fill: #ffffff;
+	}
+	.btn.btn-primary:active {
+		color: #ffffff;
+		border-color: #e30000;
+		background-color: #f18080;
+	}
+	.btn.btn-primary:active svg,
+	.btn.btn-primary:active .icons-background {
+		fill: #ffffff;
+	}
+	.btn-dropdown > .btn.btn-primary .btn-dropdown-caret:after {
+		transition: border 0.2s ease;
+		border-top-color: #ffffff;
+	}
+	.btn.btn-primary.disabled,
+	.btn.btn-primary:disabled {
+		opacity: 0.65;
+	}
+	.btn.btn-primary.disabled:active,
+	.btn.btn-primary:disabled:active,
+	.btn.btn-primary.disabled:hover,
+	.btn.btn-primary:disabled:hover {
+		color: #ffffff;
+		border-color: #e30000;
+		background-color: #e30000;
+		cursor: not-allowed;
+	}
+	.btn.btn-hero {
+		color: #004833;
+		border-color: #78be20;
+		background-color: #78be20;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+	.btn-group-input:checked + .btn.btn-hero {
+		color: #004833;
+		border-color: #78be20;
+		background-color: #78be20;
+	}
+	.btn.btn-hero svg,
+	.btn.btn-hero .icons-background {
+		fill: #004833;
+	}
+	.btn.btn-hero:hover {
+		color: #004833;
+		border-color: #78be20;
+		background-color: #a1d263;
+	}
+	.btn-dropdown > .btn.btn-hero:hover .btn-dropdown-caret:after {
+		border-top-color: #004833;
+	}
+	.btn.btn-hero:hover svg,
+	.btn.btn-hero:hover .icons-background {
+		fill: #004833;
+	}
+	.btn.btn-hero:active {
+		color: #004833;
+		border-color: #78be20;
+		background-color: #bcdf90;
+	}
+	.btn.btn-hero:active svg,
+	.btn.btn-hero:active .icons-background {
+		fill: #004833;
+	}
+	.btn-dropdown > .btn.btn-hero .btn-dropdown-caret:after {
+		transition: border 0.2s ease;
+		border-top-color: #004833;
+	}
+	.btn.btn-hero.disabled,
+	.btn.btn-hero:disabled {
+		opacity: 0.65;
+	}
+	.btn.btn-hero.disabled:active,
+	.btn.btn-hero:disabled:active,
+	.btn.btn-hero.disabled:hover,
+	.btn.btn-hero:disabled:hover {
+		color: #004833;
+		border-color: #78be20;
+		background-color: #78be20;
+		cursor: not-allowed;
+	}
+	.btn.btn-neutral {
+		color: #ffffff;
+		border-color: #858370;
+		background-color: #858370;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+	.btn-group-input:checked + .btn.btn-neutral {
+		color: #ffffff;
+		border-color: #858370;
+		background-color: #858370;
+	}
+	.btn.btn-neutral svg,
+	.btn.btn-neutral .icons-background {
+		fill: #ffffff;
+	}
+	.btn.btn-neutral:hover {
+		color: #ffffff;
+		border-color: #858370;
+		background-color: #aaa89b;
+	}
+	.btn-dropdown > .btn.btn-neutral:hover .btn-dropdown-caret:after {
+		border-top-color: #ffffff;
+	}
+	.btn.btn-neutral:hover svg,
+	.btn.btn-neutral:hover .icons-background {
+		fill: #ffffff;
+	}
+	.btn.btn-neutral:active {
+		color: #ffffff;
+		border-color: #858370;
+		background-color: #c2c1b8;
+	}
+	.btn.btn-neutral:active svg,
+	.btn.btn-neutral:active .icons-background {
+		fill: #ffffff;
+	}
+	.btn-dropdown > .btn.btn-neutral .btn-dropdown-caret:after {
+		transition: border 0.2s ease;
+		border-top-color: #ffffff;
+	}
+	.btn.btn-neutral.disabled,
+	.btn.btn-neutral:disabled {
+		opacity: 0.65;
+	}
+	.btn.btn-neutral.disabled:active,
+	.btn.btn-neutral:disabled:active,
+	.btn.btn-neutral.disabled:hover,
+	.btn.btn-neutral:disabled:hover {
+		color: #ffffff;
+		border-color: #858370;
+		background-color: #858370;
+		cursor: not-allowed;
+	}
+	.btn-group-item .btn,
+	.btn.btn-soft {
+		background-color: #fff;
+		color: #004833;
+	}
+	.btn-dropdown > .btn-group-item .btn .btn-dropdown-caret:after,
+	.btn-dropdown > .btn.btn-soft .btn-dropdown-caret:after {
+		border-top-color: #004833;
+	}
+	.btn-group-item .btn.disabled:active,
+	.btn.btn-soft.disabled:active,
+	.btn-group-item .btn:disabled:active,
+	.btn.btn-soft:disabled:active,
+	.btn-group-item .btn.disabled:hover,
+	.btn.btn-soft.disabled:hover,
+	.btn-group-item .btn:disabled:hover,
+	.btn.btn-soft:disabled:hover {
+		background-color: #fff;
+		color: #004833;
+	}
+	:focus {
+		outline: 2px dotted #000;
+		outline-offset: 0.5rem;
+		display: inline-block;
+	}
+	:hover {
+		outline: none;
+	}
+</style>
+
+<h2>modals</h2>
+
+<button class="btn btn-primary js-modal" data-modal="#myModal">launch that damn thing!</button>
+
+<div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modal-header-title1" aria-describedby="modal-body1" aria-hidden="true">
+	<div class="modal-header">
+		<button class="modal-header-close js-modalclose" aria-label="close" data-grunticon-embed>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#858370" class="icons-background" d="M30.3 6.2l-9.9 9.9 9.9 9.9-4.3 4.3-9.9-9.9-9.9 9.9-4.2-4.3 9.9-9.9-9.9-9.9 4.2-4.2 9.9 9.9 9.9-9.9 4.3 4.2z"></path></svg>
+		</button>
+		<span class="modal-header-title" id="modal-header-title1">Modal title</span>
+	</div>
+	<div class="modal-body" id="modal-body1">
+		text
+		<p>Hello world! I'm the modal body</p>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-faint js-modalclose">Close</button>
+		<button type="button" class="btn btn-hero">Save changes</button>
+	</div>
+</div>
+
+
+<hr>
+<h2>modal sizes</h2>
+
+<button class="btn btn-primary js-modal" data-modal="#myModal2">launch a big one</button>
+
+<div class="modal modal-lg" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="modal-header-title2" aria-describedby="modal-body2" aria-hidden="true">
+	<div class="modal-header">
+		<button class="modal-header-close js-modalclose" aria-label="close" data-grunticon-embed>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#858370" class="icons-background" d="M30.3 6.2l-9.9 9.9 9.9 9.9-4.3 4.3-9.9-9.9-9.9 9.9-4.2-4.3 9.9-9.9-9.9-9.9 4.2-4.2 9.9 9.9 9.9-9.9 4.3 4.2z"></path></svg>
+		</button>
+		<span class="modal-header-title" id="modal-header-title2">Modal title</span>
+	</div>
+	<div class="modal-body" id="modal-body2">
+		text
+		<p>Hello world! I'm the modal body</p>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-faint js-modalclose">Close</button>
+		<button type="button" class="btn btn-hero">Save changes</button>
+	</div>
+</div>
+
+
+<button class="btn btn-primary js-modal" data-modal="#myModal3">launch a small one</button>
+
+<div class="modal modal-sm" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="modal-header-title3" aria-describedby="modal-body3" aria-hidden="true">
+	<div class="modal-header">
+		<button class="modal-header-close js-modalclose" aria-label="close" data-grunticon-embed>
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#858370" class="icons-background" d="M30.3 6.2l-9.9 9.9 9.9 9.9-4.3 4.3-9.9-9.9-9.9 9.9-4.2-4.3 9.9-9.9-9.9-9.9 4.2-4.2 9.9 9.9 9.9-9.9 4.3 4.2z"></path></svg>
+		</button>
+		<span class="modal-header-title" id="modal-header-title3">Modal title</span>
+	</div>
+	<div class="modal-body" id="modal-body3">
+		text
+		<p>Hello world! I'm the modal body</p>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-faint js-modalclose">Close</button>
+		<button type="button" class="btn btn-hero">Save changes</button>
+	</div>
+</div>
+	</main>
+
+	<script src="assets/js/gui.js"></script>
+</body>
+</html>
