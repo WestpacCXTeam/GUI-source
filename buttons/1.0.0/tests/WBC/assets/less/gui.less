@@ -1475,7 +1475,6 @@
 		border: 1px solid @faint-bordercolor;
 		user-select: none;
 		-webkit-appearance: none;
-		overflow: hidden;
 
 		.btn-text {
 			vertical-align: middle;
@@ -1593,6 +1592,15 @@
 				@neutral-hover-bordercolor
 			);
 		}
+
+		//////////////////////////////////////| FOCUS
+		&:focus {
+			.outline();
+			display: inline-block;
+		}
+		&:hover {
+			outline: none;
+		}
 	}
 
 	//btn soft and btn-group styles
@@ -1616,15 +1624,6 @@
 				color: @color-Text;
 			}
 		}
-	}
-
-	//////////////////////////////////////| FOCUS
-	&:focus {
-		.outline();
-		display: inline-block;
-	}
-	&:hover {
-		outline: none;
 	}
 
 
