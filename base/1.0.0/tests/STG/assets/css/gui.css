@@ -14,7 +14,7 @@
  */
 /* ---------------------------------------| BASE |--------------------------------------- */
 .written-by {
-  content: 'Dominik Wilkowski, Justin Spencer';
+  content: 'Dominik Wilkowski, Justin Spencer, Kate T MacDonald';
 }
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -520,6 +520,10 @@ body {
   color: #004833;
   background-color: #f3f3f1;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #cecdc6;
 }
 a {
   color: #e30000;
