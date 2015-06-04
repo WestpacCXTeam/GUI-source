@@ -8,19 +8,19 @@
  **************************************************************************************************************************************************************/
 
 
-(function(App) {
+(function(GUI) {
 
 	var module = {};
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	module.init = function() {
-		App.debugging( 'alerts: Initiating', 'report' );
+	module.init = function alertsInit() {
+		GUI.debugging( 'alerts: Initiating', 'report' );
 
 
 		$('.js-alertclose').on('click', function closeAlert() {
-			App.debugging( 'alerts: Closing alert', 'interaction' );
+			GUI.debugging( 'alerts: Closing alert', 'interaction' );
 
 			var $parent = $(this).parent('.alert');
 
@@ -31,10 +31,10 @@
 	};
 
 
-	App.alerts = module;
+	GUI.alerts = module;
 
 
 	// run module
-	App.alerts.init();
+	GUI.alerts.init();
 
-}(App));
+}(GUI));

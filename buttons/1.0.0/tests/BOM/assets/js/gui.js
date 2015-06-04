@@ -13,25 +13,25 @@ return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeTyp
 'use strict';
 
 
-var App = (function() {
+var GUI = (function guiInit() {
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// settings
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	return {
 		DEBUG: true, //debugging infos
-		SVGPATH: 'assets/img/svg-sprite.svg', //svg path
-		SVGREVISION: '10000', //svg revision
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		// Initiate app
+		// Initiate GUI
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		init: function() {
-			if( App.DEBUG ) console.log('%cDEBUGGING INFORMATION', 'font-size: 25px;');
+		init: function guiInit() {
+			if( GUI.DEBUG ) console.log('%cDEBUGGING INFORMATION', 'font-size: 25px;');
 
 			//remove fallback HTML
-			$('html').removeClass('no-js').addClass('js');
+			$('html')
+				.removeClass('no-js')
+				.addClass('js');
 
 		},
 
@@ -39,29 +39,29 @@ var App = (function() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debugging prettiness
 		//
-		// text  [string]   Text to be printed to debugger
-		// code  [string]   The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
+		// text  [string]  Text to be printed to debugger
+		// code  [string]  The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		debugging: function( text, code ) {
+		debugging: function Debug( text, code ) {
 
 			if( code === 'report' ) {
-				if( App.DEBUG ) console.log('%c\u2611 ', 'color: green; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u2611 ', 'color: green; font-size: 18px;', text);
 			}
 
 			else if( code === 'error' ) {
-				if( App.DEBUG ) console.log('%c\u2612 ', 'color: red; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u2612 ', 'color: red; font-size: 18px;', text);
 			}
 
 			else if( code === 'interaction' ) {
-				if( App.DEBUG ) console.log('%c\u261C ', 'color: blue; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u261C ', 'color: blue; font-size: 18px;', text);
 			}
 
 			else if( code === 'send' ) {
-				if( App.DEBUG ) console.log('%c\u219D ', 'color: pink; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u219D ', 'color: pink; font-size: 18px;', text);
 			}
 
 			else if( code === 'receive' ) {
-				if( App.DEBUG ) console.log('%c\u219C ', 'color: pink; font-size: 18px;', text);
+				if( GUI.DEBUG ) console.log('%c\u219C ', 'color: pink; font-size: 18px;', text);
 			}
 
 		}
@@ -71,8 +71,8 @@ var App = (function() {
 }());
 
 
-//run app
-App.init();
+//run GUI
+GUI.init();
 /*!buttons v1.0.0*/
 /***************************************************************************************************************************************************************
  *
@@ -83,19 +83,19 @@ App.init();
  **************************************************************************************************************************************************************/
 
 
-(function(App) {
+(function(GUI) {
 
 	var module = {};
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	// private function: open close a dropdown
+	// private function: open / close a dropdown
 	//
 	// _isOpen  [boolen]         Whether to open or close the dropdown
 	// $parent  [jquery object]  The parent element
 	// $menu    [jquery object]  The dropdown menu element
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	function toggelDropdown(_isOpen, $parent, $menu) {
-		App.debugging( 'buttons: ' + ( _isOpen ? 'Closing' : 'Opening' ) + ' dropdown menu', 'report' );
+		GUI.debugging( 'buttons: ' + ( _isOpen ? 'Closing' : 'Opening' ) + ' dropdown menu', 'report' );
 
 		if( !_isOpen ) {
 			$parent.addClass('is-open');
@@ -111,17 +111,17 @@ App.init();
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	module.init = function() {
-		App.debugging( 'buttons: Initiating', 'report' );
+	module.init = function buttonsInit() {
+		GUI.debugging( 'buttons: Initiating', 'report' );
 
 
 		if( $('.js-button-dropdown').length ) {
-			App.debugging( 'buttons: Found instances', 'report' );
+			GUI.debugging( 'buttons: Found instances', 'report' );
 
 			$('.dropdown-menu').attr('aria-hidden', 'true');
 
 			$('.js-button-dropdown').on('click', function toggelDropdownButton() {
-				App.debugging( 'buttons: dropdown button clicked', 'interaction' );
+				GUI.debugging( 'buttons: dropdown button clicked', 'interaction' );
 
 				var $this = $(this);
 				var $parent = $this.parent('div');
@@ -133,9 +133,9 @@ App.init();
 			});
 
 			//ESC button listener
-			$(document).keyup(function(e) {
+			$(document).keyup(function escapeKey(e) {
 				if(e.keyCode == 27) {
-					App.debugging( 'buttons: Esc button clicked', 'interaction' );
+					GUI.debugging( 'buttons: Esc button clicked', 'interaction' );
 
 					toggelDropdown(true, $('.btn-dropdown'), $('.dropdown-menu'));
 				}
@@ -144,10 +144,10 @@ App.init();
 	};
 
 
-	App.buttons = module;
+	GUI.buttons = module;
 
 
 	// run module
-	App.buttons.init();
+	GUI.buttons.init();
 
-}(App));
+}(GUI));
