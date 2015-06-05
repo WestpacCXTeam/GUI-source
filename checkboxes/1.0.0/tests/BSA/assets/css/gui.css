@@ -1584,6 +1584,9 @@ a:hover {
 .checkbox .checkbox-input:hover + .checkbox-text {
   outline: none;
 }
+.checkbox .checkbox-input:disabled + .checkbox-text {
+  color: #707070;
+}
 .checkbox .checkbox-text {
   font-size: 16px;
   font-weight: 300;

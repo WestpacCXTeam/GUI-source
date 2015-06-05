@@ -59,18 +59,19 @@
 		}
 
 		&:disabled {
-			background-color: @color-Background;
+			background-color: @color-J;
 			color: @color-Muted;
 			cursor: not-allowed;
 		}
 
 		&:read-only {
-			background-color: @color-Background;
+			background-color: @color-J;
 			color: @color-Text;
 			cursor: not-allowed;
 		}
 
-		&.forms-input-xl {
+		&.forms-input-xl,
+		.forms-xl & {
 			height: 48px;
 			padding: 13px 14px;
 
@@ -79,7 +80,8 @@
 			}
 		}
 
-		&.forms-input-lg {
+		&.forms-input-lg,
+		.forms-lg & {
 			height: 42px;
 			padding: 10px 14px 9px 14px;
 
@@ -88,7 +90,8 @@
 			}
 		}
 
-		&.forms-input-sm {
+		&.forms-input-sm,
+		.forms-sm & {
 			height: 30px;
 			padding: 3px 10px 3px 10px;
 
@@ -202,14 +205,15 @@
 			}
 
 			&:disabled {
-				background-color: @color-Background;
+				background-color: @color-J;
 				color: @color-Muted;
 				cursor: not-allowed;
 				padding-right: 8px;
 			}
 		}
 
-		&.forms-select-xl {
+		&.forms-select-xl,
+		.forms-xl & {
 			height: 48px;
 
 			.forms-select {
@@ -218,7 +222,8 @@
 			}
 		}
 
-		&.forms-select-lg {
+		&.forms-select-lg,
+		.forms-lg & {
 			height: 42px;
 
 			.forms-select {
@@ -227,7 +232,8 @@
 			}
 		}
 
-		&.forms-select-sm {
+		&.forms-select-sm,
+		.forms-sm & {
 			height: 30px;
 
 			.forms-select {

@@ -1475,6 +1475,7 @@
 		border: 1px solid @faint-bordercolor;
 		user-select: none;
 		-webkit-appearance: none;
+		-moz-appearance: none;
 
 		.btn-text {
 			vertical-align: middle;
@@ -1495,7 +1496,10 @@
 
 		//btn link
 		&.btn-link {
+			-webkit-appearance: none;
+			-moz-appearance: none;
 			background: transparent;
+			border-radius: 0;
 			border: 0 none;
 			color: @color-A;
 			padding: 0;
@@ -1702,11 +1706,16 @@
 			min-width: 180px;
 
 			li {
-				margin: 8px 0;
+				margin: 0;
 				white-space: nowrap;
 				display: flex;
+				transition: background 0.2s ease;
 
 				&:extend(.clearfix all);
+
+				&:hover {
+					background-color: @color-Background;
+				}
 
 				.btn-link,
 				a {
@@ -1714,13 +1723,28 @@
 					color: @color-Muted;
 					width: 100%;
 					text-align: left;
+
+					&:hover {
+						text-decoration: none;
+					}
 				}
 
 				.btn-dropdown-text {
 					padding-right: 18px;
-					display: flex;
-					justify-content: center;
-					flex-direction: column;
+					vertical-align: middle;
+				}
+
+				.btn-link,
+				a,
+				.btn-dropdown-setting,
+				.checkbox,
+				.radio {
+					padding: 8px 6px;
+				}
+
+				.btn-dropdown-setting,
+				.btn-group {
+					vertical-align: middle;
 				}
 
 				& > .checkbox {
@@ -1732,8 +1756,11 @@
 				border-top: 1px solid @color-Text;
 				font-weight: 500;
 				font-size: 12px;
-				margin: 12px -12px 12px -12px;
-				padding: 12px 6px 0 6px;
+				padding: 6px 3px;
+
+				&:hover {
+					background-color: transparent;
+				}
 			}
 
 			li:first-child {
@@ -1746,8 +1773,8 @@
 
 			.dropdown-menu-divider {
 				border-top: 1px solid @color-Text;
-				margin: 12px -12px 12px -12px;
-				padding: 12px 12px 0 12px;
+				// margin: 12px -12px 12px -12px;
+				// padding: 12px 12px 0 12px;
 			}
 
 			.js & {
@@ -1773,7 +1800,7 @@
 				display: block;
 				box-shadow: 0 6px 12px rgba(0,0,0,.175);
 				border: 1px solid @color-Border;
-				padding: 12px 18px;
+				padding: 12px 6px;
 			}
 		}
 	}
@@ -1851,7 +1878,7 @@
 
 	&.disabled,
 	&:disabled {
-		opacity: 0.65;
+		opacity: 0.5;
 
 		&:active,
 		&:hover {
