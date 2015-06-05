@@ -1600,6 +1600,9 @@ a:hover {
 .checkbox .checkbox-input:disabled + .checkbox-text {
   color: #858370;
 }
+.checkbox .checkbox-input:disabled + .checkbox-text:hover {
+  cursor: not-allowed;
+}
 .checkbox .checkbox-text {
   font-size: 16px;
   font-weight: 300;
@@ -1615,6 +1618,9 @@ a:hover {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.checkbox .checkbox-text:hover {
+  cursor: pointer;
 }
 .checkbox-flip.checkbox .checkbox-text {
   padding-left: 0;

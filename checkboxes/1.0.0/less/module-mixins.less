@@ -49,6 +49,10 @@
 			&:disabled {
 				& + .checkbox-text {
 					color: @color-Muted;
+
+					&:hover {
+						cursor: not-allowed;
+					}
 				}
 			}
 		}
@@ -62,6 +66,10 @@
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
+
+			&:hover {
+				cursor: pointer;
+			}
 
 			.checkbox-flip& {
 				padding-left: 0;
