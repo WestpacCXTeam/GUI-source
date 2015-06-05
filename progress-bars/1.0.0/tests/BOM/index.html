@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+	<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+	<html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Testing progress-bars v1.0.0 BOM</title>
+	<link rel="stylesheet" href="assets/css/gui.css">
+
+	<style>
+		header {
+			margin: 21px 0;
+		}
+
+		.nav {
+			float: left;
+		}
+
+		.headline {
+			text-align: right;
+			margin-top: 0;
+		}
+
+		main.container {
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing progress-bars v1.0.0 BOM</h1>
+		</div>
+	</header>
+
+	<main class="container">
+<h2>progress bar</h2>
+
+<div class="progress-bar">
+	<div class="progress-bar-indicator" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+		<span class="progress-bar-text">45%</span>
+	</div>
+</div>
+
+<div class="progress-bar">
+	<div class="progress-bar-indicator" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+		<span class="progress-bar-text">0%</span>
+	</div>
+</div>
+
+
+<hr>
+<h2>skinny progress bar</h2>
+
+<div class="progress-bar progress-bar-skinny">
+	<div class="progress-bar-indicator" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%;">
+		<span class="progress-bar-text">74% Complete</span>
+	</div>
+</div>
+	</main>
+
+	<script src="assets/js/gui.js"></script>
+</body>
+</html>
