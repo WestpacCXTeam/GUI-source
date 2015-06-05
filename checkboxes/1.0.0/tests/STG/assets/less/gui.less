@@ -1309,6 +1309,12 @@
 			&:hover + .checkbox-text {
 				outline: none;
 			}
+
+			&:disabled {
+				& + .checkbox-text {
+					// opacity: 0.5;
+				}
+			}
 		}
 
 		.checkbox-text {
