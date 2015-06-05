@@ -1316,8 +1316,10 @@
 			margin-left: -300px;
 
 			.modal-lg& {
-				width: 900px;
-				margin-left: -450px;
+				@media (min-width: @screen-md) {
+					width: 900px;
+					margin-left: -450px;
+				}
 			}
 
 			.modal-sm& {
@@ -1402,10 +1404,7 @@
 		bottom: 0;
 		left: 0;
 		z-index: 10;
-
-		&:hover {
-			cursor: pointer;
-		}
+		cursor: pointer
 	}
 }
 /*!modals v1.0.0 STG*/

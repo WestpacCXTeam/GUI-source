@@ -1590,13 +1590,15 @@ a:hover {
     right: auto;
     margin-left: -300px;
   }
-  .modal-lg.modal {
-    width: 900px;
-    margin-left: -450px;
-  }
   .modal-sm.modal {
     width: 300px;
     margin-left: -150px;
+  }
+}
+@media (min-width: 768px) and (min-width: 992px) {
+  .modal-lg.modal {
+    width: 900px;
+    margin-left: -450px;
   }
 }
 .modal.is-open {
@@ -1663,7 +1665,5 @@ a:hover {
   bottom: 0;
   left: 0;
   z-index: 10;
-}
-.modal-backdrop:hover {
   cursor: pointer;
 }
