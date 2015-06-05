@@ -1,0 +1,67 @@
+/*![Module-Version-Brand]*/
+/*
+ * badges mixins
+ *
+ * badges as indicators
+ *
+ */
+
+
+//////////////////////////////////////| badges STYLES
+._badges( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.badge {
+		display: inline-block;
+		min-width: 10px;
+		padding: 4px 7px;
+		color: #fff;
+		line-height: 1;
+		vertical-align: baseline;
+		white-space: nowrap;
+		text-align: center;
+		background-color: @color-C;
+		border-radius: 12px;
+		font-weight: 700;
+		font-size: 14px;
+
+		&:empty {
+			display: none;
+		}
+
+		.btn & {
+			color: @color-Text;
+			background-color: #fff;
+			position: relative;
+			top: -1px;
+		}
+
+		.btn-xl & {
+			top: -2px;
+		}
+
+		.lists & {
+			float: right;
+		}
+
+	}
+
+}

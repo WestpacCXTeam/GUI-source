@@ -50,6 +50,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-prompt');
 	grunt.loadNpmTasks('grunt-wakeup');
 	grunt.loadNpmTasks('grunt-font');
+	grunt.loadNpmTasks('grunt-hub');
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -255,13 +256,13 @@ module.exports = function(grunt) {
 				text: '| GUI SOURCE',
 			},
 
-			install: {
+			merge: {
 				options: {
 					font: 'simple',
 					maxLength: 30,
 					colors: ['magenta'],
 				},
-				text: ' installing dependencies',
+				text: ' merging base',
 			},
 
 			index: {
@@ -285,6 +286,21 @@ module.exports = function(grunt) {
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		// Grunt HUB
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		hub: {
+			all: {
+				expand: true,
+				src: [
+					'./*/Gruntfile.js',
+					'!./base/Gruntfile.js',
+				],
+				tasks: ['buildVersions'],
+			},
+		},
+
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// Wakeup
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		wakeup: {
@@ -300,23 +316,23 @@ module.exports = function(grunt) {
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	// Build tasks
+	// Public tasks
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	grunt.registerTask('default', [
+	grunt.registerTask('default', [ //build index and gui.json
 		'font:title',
 		'font:index',
 		'buildIndex',
 		'wakeup',
 	]);
 
-	grunt.registerTask('install', [
+	grunt.registerTask('merge', [ //merge base into all modules
 		'font:title',
-		'font:install',
-		'npmInstall',
+		'font:merge',
+		'hub',
 		'wakeup',
 	]);
 
-	grunt.registerTask('add', [
+	grunt.registerTask('add', [ //add new module
 		'font:title',
 		'font:add',
 		'prompt',

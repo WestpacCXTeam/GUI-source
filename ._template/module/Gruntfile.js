@@ -173,13 +173,17 @@ module.exports = function(grunt) {
 
 			//copy font assets
 			brands.forEach(function(brand) {
-				copy[ version + 'Font' + brand ] = {
-					src: '../base/' + baseVersion + '/_assets/' + brand + '/font/*',
-					dest: './' + version + '/tests/' + brand + '/assets/font/',
+				copy[ version + 'BaseFont' + brand ] = {
+					expand: true,
+					cwd: '../base/' + baseVersion + '/_assets/' + brand + '/font',
+					src: '*',
+					dest: './' + version + '/tests/' + brand + '/assets/font',
 				};
 
 				copy[ version + 'Font' + brand ] = {
-					src: './' + version + '/_assets/' + brand + '/font/',
+					expand: true,
+					cwd: './' + version + '/_assets/' + brand + '/font',
+					src: '*',
 					dest: './' + version + '/tests/' + brand + '/assets/font',
 				};
 			});
@@ -202,6 +206,8 @@ module.exports = function(grunt) {
 
 
 			//handle svgs
+			var svgselectors = grunt.file.readJSON('./' + version + '/_assets/grunticon.json');
+
 			brands.forEach(function(brand) {
 				grunticon[ version + 'SVG' + brand ] = {
 					files: [{
@@ -218,12 +224,7 @@ module.exports = function(grunt) {
 						cssprefix: '.symbol-',
 						pngpath: '../img',
 						enhanceSVG: true,
-						customselectors: {
-							// 'radio-on': ['input[type="radio"]:checked + label'],
-							// 'radio-off': ['.radio label', '.radio-inline label'],
-							// 'checkbox-on': ['input[type="checkbox"]:checked + label'],
-							// 'checkbox-off': ['.checkbox label', '.checkbox-inline label'],
-						},
+						customselectors: svgselectors,
 					},
 				};
 
@@ -405,14 +406,14 @@ module.exports = function(grunt) {
 	// Tasks breakdown
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('build', [
-		// 'lintspaces',
+		'lintspaces',
 		'buildVersions',
 		'wakeup',
 	]);
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	// Build tasks
+	// Public tasks
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('default', [
 		'font',

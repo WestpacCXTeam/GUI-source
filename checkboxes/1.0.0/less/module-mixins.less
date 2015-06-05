@@ -1,0 +1,77 @@
+/*![Module-Version-Brand]*/
+/*
+ * checkboxes mixins
+ *
+ * checkboxes with flexbox enhancements
+ *
+ */
+
+
+//////////////////////////////////////| checkboxes STYLES
+._checkboxes( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		// @test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		// @test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		// @test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		// @test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.checkbox {
+		display: inline-block;
+
+		&:extend(.clearfix all);
+
+		.checkbox-input {
+			opacity: 0;
+			position: absolute;
+
+			&:focus + .checkbox-text {
+				.outline();
+			}
+
+			&:hover + .checkbox-text {
+				outline: none;
+			}
+
+			&:disabled {
+				& + .checkbox-text {
+					color: @color-Muted;
+				}
+			}
+		}
+
+		.checkbox-text {
+			font-size: 16px;
+			font-weight: 300;
+			padding-left: 38px;
+			min-height: 32px;
+			display: inline-block;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+
+			.checkbox-flip& {
+				padding-left: 0;
+				padding-right: 38px;
+				background-position: right top;
+			}
+		}
+
+		& + .checkbox {
+			margin-left: 18px;
+		}
+	}
+}

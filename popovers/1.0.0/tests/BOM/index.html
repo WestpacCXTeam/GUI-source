@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+	<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+	<html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Testing popovers v1.0.0 BOM</title>
+	<link rel="stylesheet" href="assets/css/gui.css">
+
+	<style>
+		header {
+			margin: 21px 0;
+		}
+
+		.nav {
+			float: left;
+		}
+
+		.headline {
+			text-align: right;
+			margin-top: 0;
+		}
+
+		main.container {
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing popovers v1.0.0 BOM</h1>
+		</div>
+	</header>
+
+	<main class="container">
+<style>
+	.btn {
+		padding: 6px 12px;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: 300;
+		white-space: nowrap;
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		-ms-touch-action: manipulation;
+				touch-action: manipulation;
+		cursor: pointer;
+		border: 1px solid #c6c5cb;
+		-webkit-user-select: none;
+			-moz-user-select: none;
+				-ms-user-select: none;
+						user-select: none;
+		-webkit-appearance: none;
+		color: #716f7d;
+		border-color: #c6c5cb;
+		background-color: #f8f8f9;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+	.btn:hover {
+		color: #716f7d;
+		border-color: #c6c5cb;
+		background-color: #ffffff;
+	}
+	.btn:active {
+		color: #716f7d;
+		border-color: #c6c5cb;
+		background-color: #ffffff;
+	}
+	.btn.disabled,
+	.btn:disabled {
+		opacity: 0.65;
+	}
+	.btn.disabled:active,
+	.btn:disabled:active,
+	.btn.disabled:hover,
+	.btn:disabled:hover {
+		color: #716f7d;
+		border-color: #c6c5cb;
+		background-color: #f8f8f9;
+		cursor: not-allowed;
+	}
+	:focus {
+		outline: 2px dotted #000;
+		outline-offset: 0.5rem;
+		display: inline-block;
+	}
+	:hover {
+		outline: none;
+	}
+</style>
+
+<h2>popovers</h2>
+
+<button class="btn popover js-popover">
+	Popover button
+
+	<span class="popover-popup" aria-hidden="true">
+		<span class="popover-popup-title">
+			Hello Popover on top
+		</span>
+		<span class="popover-popup-body">
+			This is the first popover.<br>
+			Hello vivamus sagittis lacus vel augue laoreet rutrum faucibus.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt laboriosam, mollitia magnam ad magni consequuntur hic et quos optio
+			corrupti praesentium veniam aspernatur minima aperiam ut quas, possimus non architecto.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut animi velit in? Suscipit nostrum itaque voluptatibus dolorem qui soluta nobis
+			modi officia incidunt eos dolores atque, unde error delectus officiis.
+		</span>
+	</span>
+</button>
+
+<button class="btn popover js-popover" style="float:right;">
+	Popover button
+
+	<span class="popover-popup" aria-hidden="true">
+		<span class="popover-popup-title">
+			Hello Popover on top
+		</span>
+		<span class="popover-popup-body">
+			This is the first popover.<br>
+			Hello vivamus sagittis lacus vel augue laoreet rutrum faucibus.
+		</span>
+	</span>
+</button>
+
+
+<hr>
+<h2>dismissible popovers</h2>
+
+<button class="btn popover popover-dismissible js-popover">
+	Dismissible popover
+
+	<span class="popover-popup" aria-hidden="true">
+		<span class="popover-popup-title">
+			Hello Popover on top
+		</span>
+		<span class="popover-popup-body">
+			This is the first popover.<br>
+			Hello vivamus sagittis lacus vel augue laoreet rutrum faucibus.
+		</span>
+	</span>
+</button>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<button class="btn popover js-popover">
+	Popover button
+
+	<span class="popover-popup" aria-hidden="true">
+		<span class="popover-popup-title">
+			Hello Popover on top
+		</span>
+		<span class="popover-popup-body">
+			This is the first popover.<br>
+			Hello vivamus sagittis lacus vel augue laoreet rutrum faucibus.
+		</span>
+	</span>
+</button>
+
+
+<br><br><br><br><br><br>
+	</main>
+
+	<script src="assets/js/gui.js"></script>
+</body>
+</html>

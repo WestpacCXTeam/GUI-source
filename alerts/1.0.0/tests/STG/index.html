@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+	<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+	<html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Testing alerts v1.0.0 STG</title>
+	<link rel="stylesheet" href="assets/css/gui.css">
+
+	<style>
+		header {
+			margin: 21px 0;
+		}
+
+		.nav {
+			float: left;
+		}
+
+		.headline {
+			text-align: right;
+			margin-top: 0;
+		}
+
+		main.container {
+			background-color: #fff;
+		}
+	</style>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing alerts v1.0.0 STG</h1>
+		</div>
+	</header>
+
+	<main class="container">
+<h2>alerts in text</h2>
+
+<p class="text-success">
+	I'm text-success. I'm accessible.
+</p>
+
+<p class="text-info">
+	I'm text-info. I'm accessible. Please don't use me for anything else.
+</p>
+
+<p class="text-warning">
+	I'm text-warning. I'm accessible. Don't use me for anything else either.
+</p>
+
+<p class="text-danger">
+	I'm text-danger. I'm accessible too
+</p>
+
+
+<hr>
+<h2>alerts boxes with buttons</h2>
+
+<div class="alert alert-success" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-size-md icon-cross" aria-label="close" data-grunticon-embed>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#2d373e" class="icons-background" d="M30.3 6.2l-9.9 9.9 9.9 9.9-4.3 4.3-9.9-9.9-9.9 9.9-4.2-4.3 9.9-9.9-9.9-9.9 4.2-4.2 9.9 9.9 9.9-9.9 4.3 4.2z"></path></svg>
+	</button>
+
+	<strong>Well done!</strong> You successfully read this important alert message.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor provident quasi nisi officia tempore fuga autem, animi iste molestiae, qui omnis
+	doloribus aliquid ipsam rem fugiat veniam voluptatem accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, unde quis, molestias nisi
+	quae voluptates nemo quaerat nihil, consequuntur nobis ratione rerum asperiores eveniet dicta maiores quia nostrum. Pariatur, natus.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, magnam illum harum consequatur, quo sunt impedit quam minus eaque saepe voluptas
+	corrupti voluptatum, sapiente dolor sequi tempore maxime? Neque, obcaecati.
+</div>
+
+<div class="alert alert-info" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-size-md icon-cross" aria-label="close" data-grunticon-embed>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#2d373e" class="icons-background" d="M30.3 6.2l-9.9 9.9 9.9 9.9-4.3 4.3-9.9-9.9-9.9 9.9-4.2-4.3 9.9-9.9-9.9-9.9 4.2-4.2 9.9 9.9 9.9-9.9 4.3 4.2z"></path></svg>
+	</button>
+
+	<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+
+<div class="alert alert-warning" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-size-md icon-cross" aria-label="close" data-grunticon-embed>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#2d373e" class="icons-background" d="M30.3 6.2l-9.9 9.9 9.9 9.9-4.3 4.3-9.9-9.9-9.9 9.9-4.2-4.3 9.9-9.9-9.9-9.9 4.2-4.2 9.9 9.9 9.9-9.9 4.3 4.2z"></path></svg>
+	</button>
+
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+
+<div class="alert alert-danger" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-size-md icon-cross" aria-label="close" data-grunticon-embed>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#2d373e" class="icons-background" d="M30.3 6.2l-9.9 9.9 9.9 9.9-4.3 4.3-9.9-9.9-9.9 9.9-4.2-4.3 9.9-9.9-9.9-9.9 4.2-4.2 9.9 9.9 9.9-9.9 4.3 4.2z"></path></svg>
+	</button>
+
+	<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<div class="alert alert-system" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-size-md icon-cross" aria-label="close" data-grunticon-embed>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32"><path fill="#2d373e" class="icons-background" d="M30.3 6.2l-9.9 9.9 9.9 9.9-4.3 4.3-9.9-9.9-9.9 9.9-4.2-4.3 9.9-9.9-9.9-9.9 4.2-4.2 9.9 9.9 9.9-9.9 4.3 4.2z"></path></svg>
+	</button>
+
+	<strong>System Error 8942:</strong> The server is no responding. Please try again later. Sorry for the inconvenience.
+</div>
+
+
+<hr>
+<h2>alerts boxes without buttons</h2>
+
+<div class="alert alert-success" role="alert">
+	<strong>Well done!</strong> You successfully read this important alert message.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor provident quasi nisi officia tempore fuga autem, animi iste molestiae, qui omnis
+	doloribus aliquid ipsam rem fugiat veniam voluptatem accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, unde quis, molestias nisi
+	quae voluptates nemo quaerat nihil, consequuntur nobis ratione rerum asperiores eveniet dicta maiores quia nostrum. Pariatur, natus.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, magnam illum harum consequatur, quo sunt impedit quam minus eaque saepe voluptas
+	corrupti voluptatum, sapiente dolor sequi tempore maxime? Neque, obcaecati.
+</div>
+
+<div class="alert alert-info" role="alert">
+	<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+
+<div class="alert alert-warning" role="alert">
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+
+<div class="alert alert-danger" role="alert">
+	<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<div class="alert alert-system" role="alert">
+	<strong>System Error 8942:</strong> The server is no responding. Please try again later. Sorry for the inconvenience.
+</div>
+
+
+<hr>
+<h2>alerts in labels</h2>
+
+<style>
+	.label {
+		display: inline;
+		padding: 2px 6px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1;
+		color: #fff;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: 2px;
+		background-color: #e30000;
+	}
+	.label[href]:hover,
+	.label[href]:focus {
+		background-color: #f18080;
+	}
+	a.label:hover,
+	a.label:focus {
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.label:empty {
+		display: none;
+	}
+</style>
+
+<a href="#link" class="label label-success">Success</a>
+<a href="#link" class="label label-info">Info</a>
+<a href="#link" class="label label-warning">Warning</a>
+<a href="#link" class="label label-danger">Danger</a>
+
+<br><br>
+
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+
+
+<hr>
+<h2>alerts in forms</h2>
+
+<style>
+	.forms-input {
+		display: inline-block;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		font-size: 16px;
+		font-weight: 300;
+		color: #2d373e;
+		background-color: #fff;
+		border: 1px solid #d7d2cb;
+		border-radius: 3px;
+		transition: border 0.2s ease;
+		padding: 6px 12px;
+		height: 36px;
+		width: 100%;
+	}
+	textarea.forms-input {
+		min-height: 60px;
+	}
+	.forms-input + .forms-input {
+		margin-top: 21px;
+	}
+	.forms-input:focus {
+		border-color: #621a4b;
+		outline: none;
+	}
+	.forms-input:disabled {
+		background-color: #f4f3f0;
+		color: #575f65;
+		cursor: not-allowed;
+	}
+	.forms-input:read-only {
+		background-color: #f4f3f0;
+		color: #2d373e;
+		cursor: not-allowed;
+	}
+	.forms-input.forms-input-xl {
+		height: 48px;
+		padding: 13px 14px;
+	}
+	textarea.forms-input.forms-input-xl {
+		min-height: 72px;
+	}
+	.forms-input.forms-input-lg {
+		height: 42px;
+		padding: 10px 14px 9px 14px;
+	}
+	textarea.forms-input.forms-input-lg {
+		min-height: 66px;
+	}
+	.forms-input.forms-input-sm {
+		height: 30px;
+		padding: 3px 10px 3px 10px;
+	}
+	textarea.forms-input.forms-input-sm {
+		min-height: 54px;
+	}
+	.forms-select-wrapper {
+		position: relative;
+		vertical-align: middle;
+		height: 36px;
+		display: inline-block;
+		background-color: #fff;
+	}
+	.forms-select-wrapper:after {
+		position: absolute;
+		top: 45%;
+		right: 12px;
+		z-index: 0;
+		content: " ";
+		margin-left: 6px;
+		display: inline-block;
+		border-top: 8px solid #2d373e;
+		border-right: 7px solid transparent;
+		border-bottom: none;
+		border-left: 7px solid transparent;
+	}
+	.forms-select-wrapper .forms-select {
+		position: relative;
+		z-index: 1;
+		background: transparent;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		text-indent: 0.01px;
+		text-overflow: '';
+		height: 36px;
+		border: none;
+		color: #2d373e;
+		font-size: 16px;
+		font-weight: 300;
+		padding: 6px 36px 6px 8px;
+		border: 1px solid #d7d2cb;
+		border-radius: 3px;
+		transition: border 0.2s ease;
+	}
+	.forms-select-wrapper .forms-select:focus {
+		border-color: #621a4b;
+		outline: none;
+	}
+	.forms-select-wrapper .forms-select:disabled {
+		background-color: #f4f3f0;
+		color: #575f65;
+		cursor: not-allowed;
+		padding-right: 8px;
+	}
+	.forms-select-wrapper.forms-select-xl {
+		height: 48px;
+	}
+	.forms-select-wrapper.forms-select-xl .forms-select {
+		height: 48px;
+		padding: 13px 36px 13px 14px;
+	}
+	.forms-select-wrapper.forms-select-lg {
+		height: 42px;
+	}
+	.forms-select-wrapper.forms-select-lg .forms-select {
+		height: 42px;
+		padding: 10px 35px 9px 14px;
+	}
+	.forms-select-wrapper.forms-select-sm {
+		height: 30px;
+	}
+	.forms-select-wrapper.forms-select-sm .forms-select {
+		height: 30px;
+		padding: 3px 34px 3px 10px;
+	}
+	fieldset {
+		width: auto;
+		border: 0 none;
+		padding: 0 0 21px 0;
+		margin: 0;
+		min-width: 0;
+	}
+	fieldset .legend,
+	fieldset legend {
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin-bottom: 21px;
+		font-size: 21px;
+		line-height: inherit;
+		color: #575f65;
+		border: 0;
+		border-bottom: 1px solid #d7d2cb;
+	}
+</style>
+
+
+<div class="alert-form">
+	<input type="text" class="forms-input forms-input-xl" placeholder="I'm a xl text input">
+	<p class="alert-form-msg">This should not show.</p>
+</div>
+
+<div class="alert-form has-success">
+	<input type="text" class="forms-input forms-input-xl" placeholder="I'm a xl text input">
+	<p class="alert-form-msg">Success! We can approve this amount.</p>
+</div>
+
+<div class="alert-form has-info">
+	<input type="password" class="forms-input forms-input-lg" placeholder="I'm a lg text input">
+	<p class="alert-form-msg">Info! At least 10 characters</p>
+</div>
+
+<div class="alert-form has-warning">
+	<input type="text" class="forms-input" placeholder="I'm a default text input">
+	<p class="alert-form-msg">Warning! Are you sure this is your name?</p>
+</div>
+
+<div class="alert-form has-danger">
+	<input type="text" class="forms-input forms-input-sm" placeholder="I'm a sm text input">
+	<p class="alert-form-msg">Danger! Your email address has an error in it.</p>
+</div>
+
+
+<div class="alert-form has-danger">
+	<textarea class="forms-input" placeholder="I'm a default textarea"></textarea>
+	<p class="alert-form-msg">We can approve this amount.</p>
+</div>
+
+<div class="alert-form has-danger">
+	<div class="forms-select-wrapper">
+		<select class="forms-select">
+			<option>Please select</option>
+			<option>Option A</option>
+			<option>Option B</option>
+			<option>Option C</option>
+			<option>Option D</option>
+			<option>Option E</option>
+			<option>Option F</option>
+			<option>Option G</option>
+		</select>
+	</div>
+
+	<p class="alert-form-msg">We can approve this amount.</p>
+</div>
+
+<br><br><br><br><br><br><br><br>
+	</main>
+
+	<script src="assets/js/gui.js"></script>
+</body>
+</html>
