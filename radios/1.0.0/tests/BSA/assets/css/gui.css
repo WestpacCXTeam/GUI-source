@@ -1584,8 +1584,11 @@ a:hover {
 .radio .radio-input:hover + .radio-text {
   outline: none;
 }
-.radio .radio-input:disabled + .checkbox-text {
+.radio .radio-input:disabled + .radio-text {
   color: #707070;
+}
+.radio .radio-input:disabled + .radio-text:hover {
+  cursor: not-allowed;
 }
 .radio .radio-text {
   font-size: 16px;
@@ -1602,6 +1605,9 @@ a:hover {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.radio .radio-text:hover {
+  cursor: pointer;
 }
 .radio-flip.radio .radio-text {
   padding-left: 0;

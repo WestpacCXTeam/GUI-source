@@ -47,8 +47,12 @@
 			}
 
 			&:disabled {
-				& + .checkbox-text {
+				& + .radio-text {
 					color: @color-Muted;
+
+					&:hover {
+						cursor: not-allowed;
+					}
 				}
 			}
 		}
@@ -62,6 +66,10 @@
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
+
+			&:hover {
+				cursor: pointer;
+			}
 
 			.radio-flip& {
 				padding-left: 0;
