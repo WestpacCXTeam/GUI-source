@@ -1593,34 +1593,40 @@ textarea.forms-input {
   outline: none;
 }
 .forms-input:disabled {
-  background-color: #f1f1f2;
+  background-color: #f8f8f8;
   color: #716f7d;
   cursor: not-allowed;
 }
 .forms-input:read-only {
-  background-color: #f1f1f2;
+  background-color: #f8f8f8;
   color: #0d0d0d;
   cursor: not-allowed;
 }
-.forms-input.forms-input-xl {
+.forms-input.forms-input-xl,
+.forms-xl .forms-input {
   height: 48px;
   padding: 13px 14px;
 }
-textarea.forms-input.forms-input-xl {
+textarea.forms-input.forms-input-xl,
+textarea.forms-xl .forms-input {
   min-height: 72px;
 }
-.forms-input.forms-input-lg {
+.forms-input.forms-input-lg,
+.forms-lg .forms-input {
   height: 42px;
   padding: 10px 14px 9px 14px;
 }
-textarea.forms-input.forms-input-lg {
+textarea.forms-input.forms-input-lg,
+textarea.forms-lg .forms-input {
   min-height: 66px;
 }
-.forms-input.forms-input-sm {
+.forms-input.forms-input-sm,
+.forms-sm .forms-input {
   height: 30px;
   padding: 3px 10px 3px 10px;
 }
-textarea.forms-input.forms-input-sm {
+textarea.forms-input.forms-input-sm,
+textarea.forms-sm .forms-input {
   min-height: 54px;
 }
 .forms-select-wrapper {
@@ -1666,29 +1672,35 @@ textarea.forms-input.forms-input-sm {
   outline: none;
 }
 .forms-select-wrapper .forms-select:disabled {
-  background-color: #f1f1f2;
+  background-color: #f8f8f8;
   color: #716f7d;
   cursor: not-allowed;
   padding-right: 8px;
 }
-.forms-select-wrapper.forms-select-xl {
+.forms-select-wrapper.forms-select-xl,
+.forms-xl .forms-select-wrapper {
   height: 48px;
 }
-.forms-select-wrapper.forms-select-xl .forms-select {
+.forms-select-wrapper.forms-select-xl .forms-select,
+.forms-xl .forms-select-wrapper .forms-select {
   height: 48px;
   padding: 13px 36px 13px 14px;
 }
-.forms-select-wrapper.forms-select-lg {
+.forms-select-wrapper.forms-select-lg,
+.forms-lg .forms-select-wrapper {
   height: 42px;
 }
-.forms-select-wrapper.forms-select-lg .forms-select {
+.forms-select-wrapper.forms-select-lg .forms-select,
+.forms-lg .forms-select-wrapper .forms-select {
   height: 42px;
   padding: 10px 35px 9px 14px;
 }
-.forms-select-wrapper.forms-select-sm {
+.forms-select-wrapper.forms-select-sm,
+.forms-sm .forms-select-wrapper {
   height: 30px;
 }
-.forms-select-wrapper.forms-select-sm .forms-select {
+.forms-select-wrapper.forms-select-sm .forms-select,
+.forms-sm .forms-select-wrapper .forms-select {
   height: 30px;
   padding: 3px 34px 3px 10px;
 }
