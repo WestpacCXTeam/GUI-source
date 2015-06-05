@@ -1309,6 +1309,12 @@
 			&:hover + .radio-text {
 				outline: none;
 			}
+
+			&:disabled {
+				& + .checkbox-text {
+					color: @color-Muted;
+				}
+			}
 		}
 
 		.radio-text {
