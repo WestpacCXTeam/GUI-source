@@ -37,14 +37,16 @@
 		&:extend(.clearfix all);
 
 		.panel-heading {
-			padding: 12px;
+			padding: 10px 12px;
 			background-color: @color-B;
 			color: @header-color;
 			border-top-right-radius: 2px;
 			border-top-left-radius: 2px;
 
-			@media (min-width: @screen-sm) {
-				padding: 24px;
+			.panel-responsive& {
+				@media (min-width: @screen-sm) {
+					padding: 10px 24px;
+				}
 			}
 
 			.panel-title {
@@ -60,8 +62,10 @@
 			padding: 12px;
 			&:extend(.clearfix all);
 
-			@media (min-width: @screen-sm) {
-				padding: 24px;
+			.panel-responsive& {
+				@media (min-width: @screen-sm) {
+					padding: 24px;
+				}
 			}
 		}
 
@@ -75,8 +79,10 @@
 			caption {
 				padding: 12px 12px 0 12px;
 
-				@media (min-width: @screen-sm) {
-					padding: 24px 24px 0 24px;
+				.panel-responsive& {
+					@media (min-width: @screen-sm) {
+						padding: 24px 24px 0 24px;
+					}
 				}
 			}
 		}
@@ -90,14 +96,16 @@
 
 
 		.panel-footer {
-			padding: 12px;
+			padding: 10px 12px;
 			background-color: @color-Background;
 			border-top: 1px solid @color-Border;
 			border-bottom-right-radius: 2px;
 			border-bottom-left-radius: 2px;
 
-			@media (min-width: @screen-sm) {
-				padding: 24px;
+			.panel-responsive& {
+				@media (min-width: @screen-sm) {
+					padding: 10px 24px;
+				}
 			}
 		}
 
