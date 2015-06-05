@@ -45,6 +45,12 @@
 			&:hover + .checkbox-text {
 				outline: none;
 			}
+
+			&:disabled {
+				& + .checkbox-text {
+					color: @color-Muted;
+				}
+			}
 		}
 
 		.checkbox-text {
