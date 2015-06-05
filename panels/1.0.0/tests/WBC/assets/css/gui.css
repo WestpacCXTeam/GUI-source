@@ -1568,15 +1568,15 @@ a:hover {
   border-radius: 3px;
 }
 .panel .panel-heading {
-  padding: 12px;
+  padding: 10px 12px;
   background-color: #621a4b;
   color: #ffffff;
   border-top-right-radius: 2px;
   border-top-left-radius: 2px;
 }
 @media (min-width: 768px) {
-  .panel .panel-heading {
-    padding: 24px;
+  .panel-responsive.panel .panel-heading {
+    padding: 10px 24px;
   }
 }
 .panel .panel-heading .panel-title {
@@ -1589,7 +1589,7 @@ a:hover {
   padding: 12px;
 }
 @media (min-width: 768px) {
-  .panel .panel-body {
+  .panel-responsive.panel .panel-body {
     padding: 24px;
   }
 }
@@ -1605,8 +1605,8 @@ a:hover {
   padding: 12px 12px 0 12px;
 }
 @media (min-width: 768px) {
-  .panel > .table-responsive .table caption,
-  .panel > .table caption {
+  .panel-responsive.panel > .table-responsive .table caption,
+  .panel-responsive.panel > .table caption {
     padding: 24px 24px 0 24px;
   }
 }
@@ -1617,15 +1617,15 @@ a:hover {
   }
 }
 .panel .panel-footer {
-  padding: 12px;
+  padding: 10px 12px;
   background-color: #f4f3f0;
   border-top: 1px solid #d7d2cb;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
 }
 @media (min-width: 768px) {
-  .panel .panel-footer {
-    padding: 24px;
+  .panel-responsive.panel .panel-footer {
+    padding: 10px 24px;
   }
 }
 .panel.panel-faint {
