@@ -1575,7 +1575,7 @@ a:hover {
   border-radius: 3px;
 }
 @media (min-width: 768px) {
-  .well {
+  .well-responsive.well {
     padding: 24px;
   }
 }
