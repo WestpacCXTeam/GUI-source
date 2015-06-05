@@ -1619,7 +1619,7 @@ a:hover {
 .pagination > li.is-disabled > a:hover,
 .pagination > li.is-disabled > a:focus {
   color: #716f7d;
-  background-color: #fff;
+  background-color: #f8f8f8;
   cursor: not-allowed;
 }
 .pagination > li:first-child > a,

@@ -1607,7 +1607,7 @@ a:hover {
 .pagination > li.is-disabled > a:hover,
 .pagination > li.is-disabled > a:focus {
   color: #575f65;
-  background-color: #fff;
+  background-color: #f9f9f8;
   cursor: not-allowed;
 }
 .pagination > li:first-child > a,
