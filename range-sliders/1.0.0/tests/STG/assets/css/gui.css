@@ -1660,6 +1660,7 @@ a:hover {
   border: 1px solid #78be20;
   content: " ";
   white-space: nowrap;
+  z-index: 2;
 }
 .range-slider:focus::-ms-thumb:after {
   position: absolute;
@@ -1673,6 +1674,7 @@ a:hover {
   border: 1px solid #78be20;
   content: " ";
   white-space: nowrap;
+  z-index: 2;
 }
 .range-slider:focus::-moz-range-thumb:after {
   position: absolute;
@@ -1685,6 +1687,7 @@ a:hover {
   border: 1px solid #78be20;
   content: " ";
   white-space: nowrap;
+  z-index: 2;
 }
 .range-slider:hover {
   outline: none;
