@@ -1,0 +1,143 @@
+/*![Module-Version-Brand]*/
+/*
+ * range-sliders mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| range-sliders STYLES
+._range-sliders( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.range-slider {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		background: none;
+
+		&::-webkit-slider-runnable-track {
+			height: 5px;
+			background: #ddd;
+			border: none;
+			border-radius: 3px;
+		}
+
+		&::-ms-track {
+			height: 5px;
+			background: #ddd;
+			border: none;
+			border-radius: 3px;
+		}
+
+		&::-moz-range-track {
+			height: 5px;
+			background: #ddd;
+			border: none;
+			border-radius: 3px;
+		}
+
+		&::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			border: none;
+			height: 16px;
+			width: 16px;
+			border-radius: 50%;
+			background: #555;
+			margin-top: -5px;
+			position: relative;
+		}
+
+		&::-ms-thumb {
+			-webkit-appearance: none;
+			border: none;
+			height: 16px;
+			width: 16px;
+			border-radius: 50%;
+			background: #555;
+			margin-top: -5px;
+			position: relative;
+		}
+
+		&::-moz-range-thumb {
+			-webkit-appearance: none;
+			border: none;
+			height: 16px;
+			width: 16px;
+			border-radius: 50%;
+			background: #555;
+			margin-top: -5px;
+			position: relative;
+		}
+
+		&:focus {
+			outline: none;
+
+			&::-webkit-slider-thumb:after {
+				position: absolute;
+				top: -35px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: #eee;
+				border-radius: 5px;
+				color: #555;
+				padding: 5px 10px;
+				border: 2px solid #555;
+			}
+			&::-ms-thumb:after {
+				position: absolute;
+				top: -35px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: #eee;
+				border-radius: 5px;
+				color: #555;
+				padding: 5px 10px;
+				border: 2px solid #555;
+			}
+			&::-moz-range-thumb:after {
+				position: absolute;
+				top: -35px;
+				left: 50%;
+				transform: translateX(-50%);
+				background: #eee;
+				border-radius: 5px;
+				color: #555;
+				padding: 5px 10px;
+				border: 2px solid #555;
+			}
+		}
+
+
+		&:focus::-webkit-slider-runnable-track {
+			background: #ccc;
+		}
+
+		&:focus::-ms-track {
+			background: #ccc;
+		}
+
+		&:focus::-moz-range-track {
+			background: #ccc;
+		}
+	}
+
+}
