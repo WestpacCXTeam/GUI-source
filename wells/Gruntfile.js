@@ -394,6 +394,8 @@ module.exports = function(grunt) {
 					open: false,
 					hostname: '127.0.0.1',
 					port: 1337,
+					directory: '../',
+					base: '../',
 				},
 			},
 		},
