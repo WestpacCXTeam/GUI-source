@@ -1584,7 +1584,7 @@ a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: none;
-  padding: 6px 0;
+  padding: 12px 0;
   width: 100%;
 }
 .range-slider::-webkit-slider-runnable-track {
