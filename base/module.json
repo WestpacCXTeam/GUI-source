@@ -1,8 +1,8 @@
 {
-	"ID": "",
-	"name": "",
-	"description": "",
-	"category": "",
+	"ID": "base",
+	"name": "base",
+	"description": "Base styling and grid system",
+	"category": "_fixed",
 
 	"versions": {
 
