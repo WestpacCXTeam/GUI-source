@@ -167,6 +167,68 @@
 		&:extend(.clearfix all);
 	}
 
+
+	@media print {
+		* {
+			text-shadow: none !important;
+			color: #000 !important;
+			background: transparent !important;
+			box-shadow: none !important;
+			border-color: #000;
+		}
+		a,
+		a:visited {
+			text-decoration: underline;
+		}
+		a[href]:after {
+			content: " (" attr(href) ")";
+		}
+		abbr[title]:after {
+			content: " (" attr(title) ")";
+		}
+		a[href^="javascript:"]:after,
+		a[href^="#"]:after {
+			content: "";
+		}
+		pre,
+		blockquote {
+			border: 1px solid #999;
+			padding: 6px;
+			page-break-inside: avoid;
+		}
+		thead {
+			display: table-header-group;
+		}
+		tr,
+		img {
+			page-break-inside: avoid;
+		}
+		img {
+			max-width: 100% !important;
+		}
+		p,
+		h2,
+		h3 {
+			orphans: 3;
+			widows: 3;
+		}
+		h2,
+		h3 {
+			page-break-after: avoid;
+		}
+		p a {
+			word-wrap: break-word;
+		}
+		select {
+			background: #fff !important;
+		}
+		.container,
+		.container-fluid {
+			margin: auto;
+			width: auto;
+		}
+	}
+
 }
 
 
@@ -271,7 +333,7 @@
 
 	.getBrand() when (@brand = BOM) { /////////////////////////////////////////////////////// BOM
 		h1 {
-			font-size: 36px;
+			font-size: 30px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
 			margin-top: 18px;
@@ -283,22 +345,12 @@
 			small {
 				font-weight: 300;
 			}
-		}
-		h2 {
-			font-size: 30px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
 
-			small {
-				font-weight: 300;
+			@media (min-width: @screen-sm) {
+				font-size: 36px;
 			}
 		}
-		h3 {
+		h2 {
 			font-size: 24px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -311,9 +363,31 @@
 			small {
 				font-weight: 300;
 			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 30px;
+			}
+		}
+		h3 {
+			font-size: 18px;
+			color: @color-B;
+			font-family: @brand-fontfamily;
+			margin-top: 18px;
+			margin-bottom: 12px;
+			font-weight: 700;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			small {
+				font-weight: 300;
+			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 24px;
+			}
 		}
 		h4 {
-			font-size: 18px;
+			font-size: 16px;
 			color: @color-B;
 			font-family: @fontfamily;
 			margin-top: 18px;
@@ -324,6 +398,10 @@
 
 			small {
 				font-weight: 300;
+			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 18px;
 			}
 		}
 		h5 {
@@ -357,7 +435,7 @@
 	}
 	.getBrand() when (@brand = BSA) { /////////////////////////////////////////////////////// BSA
 		h1 {
-			font-size: 36px;
+			font-size: 30px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
 			margin-top: 18px;
@@ -369,22 +447,12 @@
 			small {
 				font-weight: 300;
 			}
-		}
-		h2 {
-			font-size: 30px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
 
-			small {
-				font-weight: 300;
+			@media (min-width: @screen-sm) {
+				font-size: 36px;
 			}
 		}
-		h3 {
+		h2 {
 			font-size: 24px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -397,9 +465,31 @@
 			small {
 				font-weight: 300;
 			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 30px;
+			}
+		}
+		h3 {
+			font-size: 18px;
+			color: @color-B;
+			font-family: @brand-fontfamily;
+			margin-top: 18px;
+			margin-bottom: 12px;
+			font-weight: 700;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			small {
+				font-weight: 300;
+			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 24px;
+			}
 		}
 		h4 {
-			font-size: 18px;
+			font-size: 16px;
 			color: @color-B;
 			font-family: @fontfamily;
 			margin-top: 18px;
@@ -410,6 +500,10 @@
 
 			small {
 				font-weight: 300;
+			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 18px;
 			}
 		}
 		h5 {
@@ -443,7 +537,7 @@
 	}
 	.getBrand() when (@brand = STG) { /////////////////////////////////////////////////////// STG
 		h1 {
-			font-size: 36px;
+			font-size: 30px;
 			color: @color-F;
 			font-family: @brand-fontfamily;
 			margin-top: 18px;
@@ -456,23 +550,16 @@
 				font-family: @fontfamily;
 				font-weight: 300;
 			}
-		}
-		h2 {
-			font-size: 30px;
-			color: @color-F;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: normal;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
 
-			small {
+			@media (min-width: @screen-sm) {
+				font-size: 36px;
+			}
+
+			&.text-body {
 				font-family: @fontfamily;
-				font-weight: 300;
 			}
 		}
-		h3 {
+		h2 {
 			font-size: 24px;
 			color: @color-F;
 			font-family: @brand-fontfamily;
@@ -486,9 +573,40 @@
 				font-family: @fontfamily;
 				font-weight: 300;
 			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 30px;
+			}
+
+			&.text-body {
+				font-family: @fontfamily;
+			}
+		}
+		h3 {
+			font-size: 18px;
+			color: @color-F;
+			font-family: @brand-fontfamily;
+			margin-top: 18px;
+			margin-bottom: 12px;
+			font-weight: normal;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			small {
+				font-family: @fontfamily;
+				font-weight: 300;
+			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 24px;
+			}
+
+			&.text-body {
+				font-family: @fontfamily;
+			}
 		}
 		h4 {
-			font-size: 18px;
+			font-size: 16px;
 			color: @color-F;
 			font-family: @fontfamily;
 			margin-top: 18px;
@@ -500,6 +618,14 @@
 			small {
 				font-family: @fontfamily;
 				font-weight: 300;
+			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 18px;
+			}
+
+			&.text-body {
+				font-family: @fontfamily;
 			}
 		}
 		h5 {
@@ -516,6 +642,10 @@
 				font-family: @fontfamily;
 				font-weight: 400;
 			}
+
+			&.text-body {
+				font-family: @fontfamily;
+			}
 		}
 		h6 {
 			font-size: 14px;
@@ -531,11 +661,15 @@
 				font-family: @fontfamily;
 				font-weight: 400;
 			}
+
+			&.text-body {
+				font-family: @fontfamily;
+			}
 		}
 	}
 	.getBrand() when (@brand = WBC) { /////////////////////////////////////////////////////// WBC
 		h1 {
-			font-size: 36px;
+			font-size: 30px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
 			margin-top: 18px;
@@ -545,20 +679,12 @@
 			small {
 				font-weight: 300;
 			}
-		}
-		h2 {
-			font-size: 30px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 300;
 
-			small {
-				font-weight: 300;
+			@media (min-width: @screen-sm) {
+				font-size: 36px;
 			}
 		}
-		h3 {
+		h2 {
 			font-size: 24px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -569,9 +695,29 @@
 			small {
 				font-weight: 300;
 			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 30px;
+			}
+		}
+		h3 {
+			font-size: 18px;
+			color: @color-B;
+			font-family: @brand-fontfamily;
+			margin-top: 18px;
+			margin-bottom: 12px;
+			font-weight: 300;
+
+			small {
+				font-weight: 300;
+			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 24px;
+			}
 		}
 		h4 {
-			font-size: 18px;
+			font-size: 16px;
 			color: @color-B;
 			font-family: @fontfamily;
 			margin-top: 18px;
@@ -580,6 +726,10 @@
 
 			small {
 				font-weight: 300;
+			}
+
+			@media (min-width: @screen-sm) {
+				font-size: 18px;
 			}
 		}
 		h5 {
@@ -1251,9 +1401,8 @@
 		padding: 0;
 	}
 }
-/*!accessibility-helper v1.0.0 WBC*/
 /*
- * Settings
+ * Settings for accessibility-helper v1.0.0 WBC
  *
  * Calling module mixins
  *
