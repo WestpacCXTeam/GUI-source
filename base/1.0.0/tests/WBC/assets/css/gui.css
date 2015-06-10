@@ -5,9 +5,8 @@
  * Colors, fonts and base HTML elements
  *
  */
-/*!base v1.0.0 WBC*/
 /*
- * Settings
+ * Settings for base v1.0.0 WBC
  *
  * Calling module mixins
  *
@@ -404,7 +403,7 @@ th {
   font-style: italic;
 }
 h1 {
-  font-size: 36px;
+  font-size: 30px;
   color: #621a4b;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -414,8 +413,13 @@ h1 {
 h1 small {
   font-weight: 300;
 }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 h2 {
-  font-size: 30px;
+  font-size: 24px;
   color: #621a4b;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -425,8 +429,13 @@ h2 {
 h2 small {
   font-weight: 300;
 }
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
 h3 {
-  font-size: 24px;
+  font-size: 18px;
   color: #621a4b;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -436,8 +445,13 @@ h3 {
 h3 small {
   font-weight: 300;
 }
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: #621a4b;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -446,6 +460,11 @@ h4 {
 }
 h4 small {
   font-weight: 300;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 h5 {
   font-size: 16px;
@@ -1535,5 +1554,65 @@ a:hover {
   .container {
     padding-right: 24px;
     padding-left: 24px;
+  }
+}
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-color: #000;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    padding: 6px;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  p a {
+    word-wrap: break-word;
+  }
+  select {
+    background: #fff !important;
+  }
+  .container,
+  .container-fluid {
+    margin: auto;
+    width: auto;
   }
 }
