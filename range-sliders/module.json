@@ -1,0 +1,16 @@
+{
+	"ID": "range-slider",
+	"name": "Range Slider",
+	"description": "An input device to capture a range between two numbers",
+	"category": "Forms",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"svg": false
+		}
+
+	}
+}

@@ -59,7 +59,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('buildIndex', 'Build an index html file to mapp all modules for gh-pages.', function() {
 
 		var replace = {};
-		var replaceStr = '';
+		var replaceStr = '<ul class="gui-list">' + "\n";
 		var GUI = {};
 
 		grunt.file.expand({ filter: 'isDirectory' }, [
@@ -69,41 +69,36 @@ module.exports = function(grunt) {
 			'!./.git',
 		]).forEach(function(dir) {
 
-			var module = dir.substr( dir.lastIndexOf('/') + 1 );
+			var module = grunt.file.readJSON( dir + '/' + 'module.json');
 
-			GUI[ module ] = {
-				'name': module,
-				'versions': {},
-			};
+			GUI[ module.category ] = module;
 
-			replaceStr += '<li>';
+			replaceStr += '	<li>';
 
-			grunt.file.expand({ filter: 'isDirectory' }, [dir + '/*']).forEach(function(subdir) {
+			Object.keys( module.versions ).forEach(function( version ) {
 
-				var version = subdir.substr( subdir.lastIndexOf('/') + 1 );
+					var subdir = dir + '/' + version;
 
-				if( version !== 'node_modules' ) {
 					//add versioning to files
-					replaceStr += '<h2>' + module + '</h2>' +
-						'<ul>' +
-						'	<li>' +
-						'		<h3>v' + version + '</h3>' +
-						'		<ul>' +
-						'			<li><a href="' + subdir + '/tests/BOM/">BOM</a></li>' +
-						'			<li><a href="' + subdir + '/tests/BSA/">BSA</a></li>' +
-						'			<li><a href="' + subdir + '/tests/STG/">STG</a></li>' +
-						'			<li><a href="' + subdir + '/tests/WBC/">WBC</a></li>' +
-						'		</ul>' +
-						'	</li>' +
-						'</ul>';
-
-					GUI[ module ].versions[version] = module + '/' + version + '/';
-				}
+					replaceStr += "\n" + '		<h2>' + module.name + '</h2>' + "\n" +
+						'		<ul>' + "\n" +
+						'			<li>' + "\n" +
+						'				<h3>v' + version + '</h3>' + "\n" +
+						'				<ul>' + "\n" +
+						'					<li><a href="' + subdir + '/tests/BOM/">BOM</a></li>' + "\n" +
+						'					<li><a href="' + subdir + '/tests/BSA/">BSA</a></li>' + "\n" +
+						'					<li><a href="' + subdir + '/tests/STG/">STG</a></li>' + "\n" +
+						'					<li><a href="' + subdir + '/tests/WBC/">WBC</a></li>' + "\n" +
+						'				</ul>' + "\n" +
+						'			</li>' + "\n" +
+						'		</ul>' + "\n";
 			});
 
-			replaceStr += '</li>';
+			replaceStr += '	</li>' + "\n";
 
 		});
+
+		replaceStr += '</ul>';
 
 
 		//writing out GUI.json
