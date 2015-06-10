@@ -166,6 +166,9 @@ module.exports = function(grunt) {
 					}, {
 						from: '[Brand]',
 						to: brand,
+					}, {
+						from: '[Debug]',
+						to: 'true',
 					}],
 				};
 			});
