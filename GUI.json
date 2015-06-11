@@ -1,1 +1,1 @@
-{"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}},"buttons":{"name":"buttons","versions":{"1.0.0":"buttons/1.0.0/"}}}
+{"_fixed":{"ID":"base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"Buttons":{"ID":"buttons","name":"Buttons","description":"Buttons, Button-groups, Dropdown-buttons etc.","category":"Buttons","versions":{"1.0.0":{"dependencies":[],"js":true,"svg":false}}}}
