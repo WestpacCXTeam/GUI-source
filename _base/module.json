@@ -1,5 +1,5 @@
 {
-	"ID": "base",
+	"ID": "_base",
 	"name": "_Base",
 	"description": "Base styling and grid system",
 	"category": "_fixed",
