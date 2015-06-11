@@ -1,0 +1,16 @@
+{
+	"ID": "breadcrumbs",
+	"name": "Breadcrumbs",
+	"description": "Breadcrumbs show a breakdown of your current position in the navigation.",
+	"category": "Navigation",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}
