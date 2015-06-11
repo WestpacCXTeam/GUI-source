@@ -412,9 +412,6 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h1 small {
-  font-weight: 300;
-}
 @media (min-width: 768px) {
   h1 {
     font-size: 36px;
@@ -429,9 +426,6 @@ h2 {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-h2 small {
-  font-weight: 300;
 }
 @media (min-width: 768px) {
   h2 {
@@ -448,9 +442,6 @@ h3 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h3 small {
-  font-weight: 300;
-}
 @media (min-width: 768px) {
   h3 {
     font-size: 24px;
@@ -465,9 +456,6 @@ h4 {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-h4 small {
-  font-weight: 300;
 }
 @media (min-width: 768px) {
   h4 {
@@ -484,9 +472,6 @@ h5 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h5 small {
-  font-weight: 400;
-}
 h6 {
   font-size: 14px;
   color: #365fb4;
@@ -497,9 +482,6 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h6 small {
-  font-weight: 400;
-}
 h1,
 h2,
 h3,
@@ -507,15 +489,6 @@ h4,
 h5,
 h6 {
   line-height: 1.1;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-size: 100%;
-  color: #707070;
 }
 html {
   font-size: 6px;
@@ -529,7 +502,7 @@ body {
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #c2c2c2;
+  border-bottom: 1px dotted #333333;
 }
 address {
   font-style: normal;
@@ -574,6 +547,12 @@ a:hover {
 .container:after,
 .row:after {
   clear: both;
+}
+.body-font {
+  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+}
+.brand-font {
+  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
 :after,
@@ -1574,7 +1553,7 @@ a:hover {
     color: #000 !important;
     background: transparent !important;
     box-shadow: none !important;
-    border-color: #000;
+    border-color: #000 !important;
   }
   a,
   a:visited {
