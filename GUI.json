@@ -1,1 +1,1 @@
-{"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}},"breadcrumbs":{"name":"breadcrumbs","versions":{"1.0.0":"breadcrumbs/1.0.0/"}}}
+{"_fixed":{"ID":"base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"Navigation":{"ID":"breadcrumbs","name":"Breadcrumbs","description":"Breadcrumbs show a breakdown of your current position in the navigation.","category":"Navigation","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}}}
