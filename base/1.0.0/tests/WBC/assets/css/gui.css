@@ -405,66 +405,66 @@ th {
 h1 {
   font-size: 30px;
   color: #621a4b;
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 18px;
-  font-weight: 300;
-}
-h1 small {
-  font-weight: 300;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   h1 {
     font-size: 36px;
   }
 }
+h1.body-font {
+  font-weight: 300;
+}
 h2 {
   font-size: 24px;
   color: #621a4b;
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
-  font-weight: 300;
-}
-h2 small {
-  font-weight: 300;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   h2 {
     font-size: 30px;
   }
 }
+h2.body-font {
+  font-weight: 300;
+}
 h3 {
   font-size: 18px;
   color: #621a4b;
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
-  font-weight: 300;
-}
-h3 small {
-  font-weight: 300;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   h3 {
     font-size: 24px;
   }
 }
+h3.body-font {
+  font-weight: 300;
+}
 h4 {
   font-size: 16px;
   color: #621a4b;
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
-  font-weight: 400;
-}
-h4 small {
-  font-weight: 300;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
   h4 {
     font-size: 18px;
   }
+}
+h4.body-font {
+  font-weight: 400;
 }
 h5 {
   font-size: 16px;
@@ -474,8 +474,8 @@ h5 {
   margin-bottom: 6px;
   font-weight: 500;
 }
-h5 small {
-  font-weight: 400;
+h5.body-font {
+  font-weight: 500;
 }
 h6 {
   font-size: 14px;
@@ -485,8 +485,8 @@ h6 {
   margin-bottom: 0px;
   font-weight: 700;
 }
-h6 small {
-  font-weight: 400;
+h6.body-font {
+  font-weight: 700;
 }
 h1,
 h2,
@@ -495,15 +495,6 @@ h4,
 h5,
 h6 {
   line-height: 1.1;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-size: 100%;
-  color: #575f65;
 }
 html {
   font-size: 6px;
@@ -517,7 +508,7 @@ body {
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #d7d2cb;
+  border-bottom: 1px dotted #2d373e;
 }
 address {
   font-style: normal;
@@ -562,6 +553,12 @@ a:hover {
 .container:after,
 .row:after {
   clear: both;
+}
+.body-font {
+  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+}
+.brand-font {
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
 :after,
@@ -1562,7 +1559,7 @@ a:hover {
     color: #000 !important;
     background: transparent !important;
     box-shadow: none !important;
-    border-color: #000;
+    border-color: #000 !important;
   }
   a,
   a:visited {
