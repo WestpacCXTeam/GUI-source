@@ -1,1 +1,1 @@
-{"alerts":{"name":"alerts","versions":{"1.0.0":"alerts/1.0.0/"}},"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}}}
+{"Alerts":{"ID":"alerts","name":"Alerts","description":"Alerts and contextual color classes","category":"Alerts","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"_fixed":{"ID":"base","name":"base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}}}

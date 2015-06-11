@@ -5,9 +5,8 @@
  * Colors, fonts and base HTML elements
  *
  */
-/*!alerts v1.0.0 BOM*/
 /*
- * Settings
+ * Settings for alerts v1.0.0 BOM
  *
  * Calling module mixins
  *
@@ -404,7 +403,7 @@ th {
   font-style: italic;
 }
 h1 {
-  font-size: 36px;
+  font-size: 30px;
   color: #685ac0;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -416,8 +415,13 @@ h1 {
 h1 small {
   font-weight: 300;
 }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 h2 {
-  font-size: 30px;
+  font-size: 24px;
   color: #685ac0;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -429,8 +433,13 @@ h2 {
 h2 small {
   font-weight: 300;
 }
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
 h3 {
-  font-size: 24px;
+  font-size: 18px;
   color: #685ac0;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -442,8 +451,13 @@ h3 {
 h3 small {
   font-weight: 300;
 }
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: #685ac0;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -454,6 +468,11 @@ h4 {
 }
 h4 small {
   font-weight: 300;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 18px;
+  }
 }
 h5 {
   font-size: 16px;
@@ -1549,6 +1568,66 @@ a:hover {
     padding-left: 24px;
   }
 }
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border-color: #000;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    padding: 6px;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  p a {
+    word-wrap: break-word;
+  }
+  select {
+    background: #fff !important;
+  }
+  .container,
+  .container-fluid {
+    margin: auto;
+    width: auto;
+  }
+}
 /*!alerts v1.0.0 BOM*/
 /*
  * alerts mixins
@@ -1723,13 +1802,18 @@ a:hover {
 }
 .alert-form .alert-form-msg {
   display: none;
+  font-style: italic;
+  font-size: 13px;
 }
 .has-success.alert-form .alert-form-msg,
 .has-info.alert-form .alert-form-msg,
 .has-warning.alert-form .alert-form-msg,
 .has-danger.alert-form .alert-form-msg {
   display: block;
-  margin: 3px 0 0 0;
+  margin: 4px 0 0 0;
+}
+.alert-form > textarea.forms-input + p.alert-form-msg {
+  margin-top: 0;
 }
 .has-success.alert-form .alert-form-msg {
   color: #008000;
@@ -1762,4 +1846,57 @@ a:hover {
 .has-danger.alert-form .forms-select,
 .has-danger.alert-form .forms-select:focus {
   border-color: #c40000;
+}
+@media print {
+  .text-success,
+  .text-info,
+  .text-warning,
+  .text-danger {
+    color: #000;
+  }
+  .alert.alert-success,
+  .alert.alert-info,
+  .alert.alert-warning,
+  .alert.alert-danger,
+  .alert.alert-system {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
+  .alert .alert-close {
+    display: none;
+  }
+  .label.label-success,
+  .label.label-info,
+  .label.label-warning,
+  .label.label-danger {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+  }
+  .has-success.alert-form .alert-form-msg,
+  .has-info.alert-form .alert-form-msg,
+  .has-warning.alert-form .alert-form-msg,
+  .has-danger.alert-form .alert-form-msg {
+    color: #000;
+  }
+  .alert-form .forms-input,
+  .alert-form .forms-select,
+  .alert-form .forms-select:focus {
+    border-color: #000;
+  }
+  .has-success.alert-form .forms-input,
+  .has-success.alert-form .forms-select,
+  .has-success.alert-form .forms-select:focus,
+  .has-info.alert-form .forms-input,
+  .has-info.alert-form .forms-select,
+  .has-info.alert-form .forms-select:focus,
+  .has-warning.alert-form .forms-input,
+  .has-warning.alert-form .forms-select,
+  .has-warning.alert-form .forms-select:focus,
+  .has-danger.alert-form .forms-input,
+  .has-danger.alert-form .forms-select,
+  .has-danger.alert-form .forms-select:focus {
+    border-color: #000;
+  }
 }
