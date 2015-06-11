@@ -80,7 +80,8 @@ module.exports = function(grunt) {
 					var subdir = dir + '/' + version;
 
 					//add versioning to files
-					replaceStr += "\n" + '		<h2>' + module.name + '</h2>' + "\n" +
+					replaceStr += "\n" + '		<small>[' + module.category + ']</small>' + "\n" +
+						"\n" + '		<h2 class="modules">' + module.name + ' <small class="description">(' + module.description + ')</small></h2>' + "\n" +
 						'		<ul>' + "\n" +
 						'			<li>' + "\n" +
 						'				<h3>v' + version + '</h3>' + "\n" +
