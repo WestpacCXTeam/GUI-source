@@ -1,0 +1,16 @@
+{
+	"ID": "badges",
+	"name": "Badges",
+	"description": "Badges display a count or number as indicators",
+	"category": "Other stuff",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}
