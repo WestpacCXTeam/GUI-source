@@ -1,1 +1,1 @@
-{"_fixed":{"ID":"base","name":"base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}}}
+{"_fixed":{"ID":"base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}}}
