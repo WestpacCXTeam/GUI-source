@@ -61,6 +61,7 @@ module.exports = function(grunt) {
 		var replace = {};
 		var replaceStr = '<ul class="gui-list">' + "\n";
 		var GUI = {};
+		var category = '';
 
 		grunt.file.expand({ filter: 'isDirectory' }, [
 			'./*',
@@ -73,6 +74,10 @@ module.exports = function(grunt) {
 
 			GUI[ module.category ] = module;
 
+			if( category !== module.category ) {
+				replaceStr += '	<li class="category"><small>[' + module.category + ']</small></li>';
+			}
+
 			replaceStr += '	<li>';
 
 			Object.keys( module.versions ).forEach(function( version ) {
@@ -80,22 +85,22 @@ module.exports = function(grunt) {
 					var subdir = dir + '/' + version;
 
 					//add versioning to files
-					replaceStr += "\n" + '		<small>[' + module.category + ']</small>' + "\n" +
-						"\n" + '		<h2 class="modules">' + module.name + ' <small class="description">(' + module.description + ')</small></h2>' + "\n" +
+					replaceStr += "\n" + '		<h2 class="modules">' + module.name + ' <small class="description">(' + module.description + ')</small></h2>' + "\n" +
 						'		<ul>' + "\n" +
 						'			<li>' + "\n" +
 						'				<h3>v' + version + '</h3>' + "\n" +
 						'				<ul>' + "\n" +
-						'					<li><a href="' + subdir + '/tests/BOM/">BOM</a></li>' + "\n" +
-						'					<li><a href="' + subdir + '/tests/BSA/">BSA</a></li>' + "\n" +
-						'					<li><a href="' + subdir + '/tests/STG/">STG</a></li>' + "\n" +
-						'					<li><a href="' + subdir + '/tests/WBC/">WBC</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-bom" href="' + subdir + '/tests/BOM/">BOM</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-bsa" href="' + subdir + '/tests/BSA/">BSA</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-stg" href="' + subdir + '/tests/STG/">STG</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-wbc" href="' + subdir + '/tests/WBC/">WBC</a></li>' + "\n" +
 						'				</ul>' + "\n" +
 						'			</li>' + "\n" +
 						'		</ul>' + "\n";
 			});
 
 			replaceStr += '	</li>' + "\n";
+			category = module.category;
 
 		});
 

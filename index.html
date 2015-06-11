@@ -50,6 +50,14 @@
 			}
 		}
 
+		.well {
+			padding: 12px;
+			margin-bottom: 18px;
+			background-color: #f4f3f0;
+			border: 1px solid #d7d2cb;
+			border-radius: 3px;
+		}
+
 		.modules {
 			margin-top: 0;
 		}
@@ -74,6 +82,10 @@
 			margin: 0;
 		}
 
+		.gui-list > li.category {
+			width: 100%;
+		}
+
 		.gui-list > li > ul {
 			list-style: none;
 		}
@@ -91,6 +103,24 @@
 		.gui-list > li > ul > li > ul > li {
 			display: inline-block;
 			padding: 0 5px;
+		}
+
+		.brand-link {
+			display: inline-block;
+			padding: 6px 6px 0 6px;
+			border-bottom: 8px solid transparent;
+		}
+		.brand-link.brand-link-bom {
+			border-color: #685ac0;
+		}
+		.brand-link.brand-link-bsa {
+			border-color: #365fb4;
+		}
+		.brand-link.brand-link-stg {
+			border-color: #78be20;
+		}
+		.brand-link.brand-link-wbc {
+			border-color: #621a4b;
 		}
 	</style>
 
@@ -115,25 +145,24 @@
 
 	<main class="container">
 
-		<p class="lead">
+		<p class="well lead">
 			This is the repository in which we develop each element of the GUI.
-			Each module is tested in isolation and can be seen below.
+			Each module is tested in isolation and can be seen below.<br>
+			For contribution, bugs or questions please go to the <a href="https://github.com/WestpacCXTeam/GUI-source">GitHub repo</a>.
 		</p>
 
 
 <ul class="gui-list">
-	<li>
-		<small>[_fixed]</small>
-
+	<li class="category"><small>[_fixed]</small></li>	<li>
 		<h2 class="modules">_Base <small class="description">(Base styling and grid system)</small></h2>
 		<ul>
 			<li>
 				<h3>v1.0.0</h3>
 				<ul>
-					<li><a href="./base/1.0.0/tests/BOM/">BOM</a></li>
-					<li><a href="./base/1.0.0/tests/BSA/">BSA</a></li>
-					<li><a href="./base/1.0.0/tests/STG/">STG</a></li>
-					<li><a href="./base/1.0.0/tests/WBC/">WBC</a></li>
+					<li><a class="brand-link brand-link-bom" href="./base/1.0.0/tests/BOM/">BOM</a></li>
+					<li><a class="brand-link brand-link-bsa" href="./base/1.0.0/tests/BSA/">BSA</a></li>
+					<li><a class="brand-link brand-link-stg" href="./base/1.0.0/tests/STG/">STG</a></li>
+					<li><a class="brand-link brand-link-wbc" href="./base/1.0.0/tests/WBC/">WBC</a></li>
 				</ul>
 			</li>
 		</ul>
