@@ -2,14 +2,14 @@
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 //
-//                                                             ██████╗  ██╗   ██╗ ██╗
-//                                                            ██╔════╝  ██║   ██║ ██║
-//                                                            ██║  ███╗ ██║   ██║ ██║
-//                                                            ██║   ██║ ██║   ██║ ██║
-//                                                            ╚██████╔╝ ╚██████╔╝ ██║
-//                                                             ╚═════╝   ╚═════╝  ╚═╝
+//                                              ██████╗  ██╗   ██╗ ██╗          ██████╗   █████╗  ███████╗ ███████╗
+//                                             ██╔════╝  ██║   ██║ ██║          ██╔══██╗ ██╔══██╗ ██╔════╝ ██╔════╝
+//                                             ██║  ███╗ ██║   ██║ ██║          ██████╔╝ ███████║ ███████╗ █████╗
+//                                             ██║   ██║ ██║   ██║ ██║          ██╔══██╗ ██╔══██║ ╚════██║ ██╔══╝
+//                                             ╚██████╔╝ ╚██████╔╝ ██║          ██████╔╝ ██║  ██║ ███████║ ███████╗
+//                                              ╚═════╝   ╚═════╝  ╚═╝          ╚═════╝  ╚═╝  ╚═╝ ╚══════╝ ╚══════╝
 //                                                                       Created by Westpac digital
-// @desc     GUI source running each module
+// @desc     GUI source running base module
 // @author   Dominik Wilkowski
 // @website  https://github.com/WestpacCXTeam/GUI-source
 // @issues   https://github.com/WestpacCXTeam/GUI-source/issues
@@ -82,7 +82,6 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('buildVersions', 'Build all versions in this module.', function() {
 
-		//iterate over all modules
 		grunt.file.expand({ filter: 'isDirectory' }, ['./*', '!./node_modules']).forEach(function(dir) {
 
 			var moduleName = process.cwd().split('/')[( process.cwd().split('/').length - 1 )];
@@ -104,7 +103,7 @@ module.exports = function(grunt) {
 				concat[ version + 'JS' + brand ] = { //js
 					src: [
 						'../_base/' + baseVersion + '/js/*.js',
-						'./' + version + '/js/*.js',
+						// './' + version + '/js/*.js',
 					],
 					dest: './' + version + '/tests/' + brand + '/assets/js/gui.js',
 				};
@@ -113,8 +112,8 @@ module.exports = function(grunt) {
 					src: [
 						'../_base/' + baseVersion + '/less/base-mixins.less',
 						'../_base/' + baseVersion + '/less/settings.less',
-						'./' + version + '/less/module-mixins.less',
-						'./' + version + '/less/settings.less',
+						// './' + version + '/less/module-mixins.less',
+						// './' + version + '/less/settings.less',
 					],
 					dest: './' + version + '/tests/' + brand + '/assets/less/gui.less',
 				};
@@ -176,19 +175,19 @@ module.exports = function(grunt) {
 
 			//copy font assets
 			brands.forEach(function(brand) {
-				copy[ version + 'BaseFont' + brand ] = {
-					expand: true,
-					cwd: '../_base/' + baseVersion + '/_assets/' + brand + '/font',
-					src: '*',
-					dest: './' + version + '/tests/' + brand + '/assets/font',
-				};
-
 				copy[ version + 'Font' + brand ] = {
 					expand: true,
-					cwd: './' + version + '/_assets/' + brand + '/font',
-					src: '*',
-					dest: './' + version + '/tests/' + brand + '/assets/font',
+					flatten: true,
+					src: '../_base/' + baseVersion + '/_assets/' + brand + '/font/*',
+					dest: './' + version + '/tests/' + brand + '/assets/font/',
 				};
+
+				// copy[ version + 'Font' + brand ] = {
+				// 	expand: true,
+				// 	flatten: true,
+				// 	src: './' + version + '/_assets/' + brand + '/font/',
+				// 	dest: './' + version + '/tests/' + brand + '/assets/font',
+				// };
 			});
 
 
@@ -209,8 +208,6 @@ module.exports = function(grunt) {
 
 
 			//handle svgs
-			var svgselectors = grunt.file.readJSON('./' + version + '/_assets/grunticon.json');
-
 			brands.forEach(function(brand) {
 				grunticon[ version + 'SVG' + brand ] = {
 					files: [{
@@ -227,7 +224,12 @@ module.exports = function(grunt) {
 						cssprefix: '.symbol-',
 						pngpath: '../img',
 						enhanceSVG: true,
-						customselectors: svgselectors,
+						customselectors: {
+							// 'radio-on': ['input[type="radio"]:checked + label'],
+							// 'radio-off': ['.radio label', '.radio-inline label'],
+							// 'checkbox-on': ['input[type="checkbox"]:checked + label'],
+							// 'checkbox-off': ['.checkbox label', '.checkbox-inline label'],
+						},
 					},
 				};
 
@@ -304,7 +306,7 @@ module.exports = function(grunt) {
 				files: [
 					'./' + version + '/**/*.*',
 					'!./' + version + '/tests/**/*.*',
-					'../_base/' + baseVersion + '/**/*.*',
+					// '../_base/' + baseVersion + '/**/*.*',
 				],
 				tasks: [
 					'build',
