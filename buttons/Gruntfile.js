@@ -30,7 +30,7 @@ var path = require('path');
  * return latest base version
  */
 function GetLastestBase() {
-	var dir = '../base';
+	var dir = '../_base';
 	var result = '';
 
 	fs.readdirSync( dir ).some(function(name) {
@@ -103,7 +103,7 @@ module.exports = function(grunt) {
 			brands.forEach(function(brand) {
 				concat[ version + 'JS' + brand ] = { //js
 					src: [
-						'../base/' + baseVersion + '/js/*.js',
+						'../_base/' + baseVersion + '/js/*.js',
 						'./' + version + '/js/*.js',
 					],
 					dest: './' + version + '/tests/' + brand + '/assets/js/gui.js',
@@ -111,8 +111,8 @@ module.exports = function(grunt) {
 
 				concat[ version + 'Less' + brand ] = { //less
 					src: [
-						'../base/' + baseVersion + '/less/base-mixins.less',
-						'../base/' + baseVersion + '/less/settings.less',
+						'../_base/' + baseVersion + '/less/base-mixins.less',
+						'../_base/' + baseVersion + '/less/settings.less',
 						'./' + version + '/less/module-mixins.less',
 						'./' + version + '/less/settings.less',
 					],
@@ -178,7 +178,7 @@ module.exports = function(grunt) {
 			brands.forEach(function(brand) {
 				copy[ version + 'BaseFont' + brand ] = {
 					expand: true,
-					cwd: '../base/' + baseVersion + '/_assets/' + brand + '/font',
+					cwd: '../_base/' + baseVersion + '/_assets/' + brand + '/font',
 					src: '*',
 					dest: './' + version + '/tests/' + brand + '/assets/font',
 				};
@@ -304,7 +304,7 @@ module.exports = function(grunt) {
 				files: [
 					'./' + version + '/**/*.*',
 					'!./' + version + '/tests/**/*.*',
-					'../base/' + baseVersion + '/**/*.*',
+					'../_base/' + baseVersion + '/**/*.*',
 				],
 				tasks: [
 					'build',
