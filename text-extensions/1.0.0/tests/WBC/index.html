@@ -17,8 +17,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
 
-	<title>Testing the GUI</title>
-	<link rel="stylesheet" href="_base/1.0.0/tests/WBC/assets/css/gui.css">
+	<title>Testing text-extensions v1.0.0 WBC</title>
+	<link rel="stylesheet" href="assets/css/gui.css">
 
 	<style>
 		header {
@@ -37,91 +37,6 @@
 		main.container {
 			background-color: #fff;
 		}
-
-		.lead {
-			margin-bottom: 21px;
-			font-size: 16px;
-			font-weight: 300;
-			line-height: 1.4;
-		}
-		@media (min-width: 768px) {
-			.lead {
-				font-size: 18px;
-			}
-		}
-
-		.well {
-			padding: 12px;
-			margin-bottom: 18px;
-			background-color: #f4f3f0;
-			border: 1px solid #d7d2cb;
-			border-radius: 3px;
-		}
-
-		.modules {
-			margin-top: 0;
-		}
-
-		.description {
-			font-size: 14px;
-			font-family: Helvetica;
-			font-weight: normal;
-			color: #575f65;
-		}
-
-		.gui-list {
-			list-style: none;
-			padding: 0;
-			overflow: hidden;
-		}
-
-		.gui-list > li {
-			float: left;
-			width: 50%;
-			padding: 0;
-			margin: 0;
-		}
-
-		.gui-list > li.category {
-			width: 100%;
-		}
-
-		.gui-list > li > ul {
-			list-style: none;
-		}
-
-		.gui-list > li > ul > li > h3 {
-			display: inline-block;
-		}
-
-		.gui-list > li > ul > li > ul {
-			list-style: none;
-			display: inline-block;
-			padding: 0 5px;
-		}
-
-		.gui-list > li > ul > li > ul > li {
-			display: inline-block;
-			padding: 0 5px;
-		}
-
-		.brand-link {
-			display: inline-block;
-			padding: 6px 6px 0 6px;
-			border-bottom: 8px solid transparent;
-		}
-		.brand-link.brand-link-bom {
-			border-color: #685ac0;
-		}
-		.brand-link.brand-link-bsa {
-			border-color: #365fb4;
-		}
-		.brand-link.brand-link-stg {
-			border-color: #78be20;
-		}
-		.brand-link.brand-link-wbc {
-			border-color: #621a4b;
-		}
 	</style>
 
 	<!--[if lt IE 9]>
@@ -139,51 +54,73 @@
 
 	<header>
 		<div class="container">
-			<h1 class="headline">GUI source</h1>
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing text-extensions v1.0.0 WBC</h1>
 		</div>
 	</header>
 
 	<main class="container">
+<h2>lead</h2>
 
-		<p class="well lead">
-			This is the repository in which we develop each element of the GUI.
-			Each module is tested in isolation and can be seen below.<br>
-			For contribution, bugs or questions please go to the <a href="https://github.com/WestpacCXTeam/GUI-source">GitHub repo</a>.
-		</p>
+<p class="lead">
+	I'm lead text. Read me and you'll get an idea of what's below. Don't over do it though keep me short and sweet or things might get a little loud.
+	I'm not intended to be used in big paragraphs as this defeats the objective for the skim reader.
+</p>
 
 
-<ul class="gui-list">
-	<li class="category"><small>[_fixed]</small></li>	<li>
-		<h2 class="modules">_Base <small class="description">(Base styling and grid system)</small></h2>
-		<ul>
-			<li>
-				<h3>v1.0.0</h3>
-				<ul>
-					<li><a class="brand-link brand-link-bom" href="./_base/1.0.0/tests/BOM/">BOM</a></li>
-					<li><a class="brand-link brand-link-bsa" href="./_base/1.0.0/tests/BSA/">BSA</a></li>
-					<li><a class="brand-link brand-link-stg" href="./_base/1.0.0/tests/STG/">STG</a></li>
-					<li><a class="brand-link brand-link-wbc" href="./_base/1.0.0/tests/WBC/">WBC</a></li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li class="category"><small>[Typography]</small></li>	<li>
-		<h2 class="modules">text-extensions <small class="description">(Text classes for additional formating)</small></h2>
-		<ul>
-			<li>
-				<h3>v1.0.0</h3>
-				<ul>
-					<li><a class="brand-link brand-link-bom" href="./text-extensions/1.0.0/tests/BOM/">BOM</a></li>
-					<li><a class="brand-link brand-link-bsa" href="./text-extensions/1.0.0/tests/BSA/">BSA</a></li>
-					<li><a class="brand-link brand-link-stg" href="./text-extensions/1.0.0/tests/STG/">STG</a></li>
-					<li><a class="brand-link brand-link-wbc" href="./text-extensions/1.0.0/tests/WBC/">WBC</a></li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-</ul>
+<hr>
+<h2>text alignment</h2>
 
+<p class="text-left">
+	<strong>Left aligned text.</strong><br>
+	Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
+	ipsum quia dolor sialiquam qualaboriosam, nisi olu voluptas nulla pariatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+	Tempore autem modi voluptatum quia iusto pariatur hic, excepturi explicabo dignissimos, vitae nulla, cumque possimus reiciendis natus officiis delectus,
+	accusantium voluptate fugiat.
+</p>
+
+<p class="text-center">
+	<strong>Center aligned text.</strong><br>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed magnam cupiditate dolorum eius nulla. Voluptatum est eos qui?
+	Consequatur ipsa ea asperiores explicabo quae fuga minima est eaque ut nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nobis iure,
+	minima laudantium aperiam? Quos rem, nesciunt facilis, necessitatibus impedit nostrum cum inventore, pariatur voluptatibus quibusdam totam omnis nulla quae.
+</p>
+
+<p class="text-right">
+	<strong>Right aligned text.</strong><br>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis esse enim quia tenetur eius facere magnam repudiandae nulla quaerat laudantium expedita,
+	tempore velit, earum molestias libero quibusdam quo saepe cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum itaque suscipit
+	rem hic possimus quos, officia alias! Reprehenderit nemo odio quos, impedit, perferendis nam. Possimus, repellat? Repellendus earum magnam eius!
+</p>
+
+<p class="text-justify">
+	<strong>Justify text.</strong><br>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis esse enim quia tenetur eius facere magnam repudiandae nulla quaerat laudantium expedita,
+	tempore velit, earum molestias libero quibusdam quo saepe cupiditate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur,
+	optio quisquam. Ducimus vero odio cupiditate odit voluptate at atque, id reiciendis aut mollitia dolorem explicabo dolore nemo, suscipit quidem.
+</p>
+
+<p class="text-nowrap">
+	<strong>Nowrap text.</strong><br>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis esse enim quia tenetur eius facere magnam repudiandae nulla quaerat laudantium expedita,
+	tempore velit, earum molestias libero quibusdam quo saepe cupiditate.
+</p>
+
+
+<hr>
+<h2>text colors</h2>
+
+<p class="text-muted">
+	I'm text-muted. I'm accessible on white but always check.
+</p>
+
+<p class="text-primary">
+	I'm text-primary. I'm super accessible. I'm all about being seen.
+</p>
 	</main>
 
+	<script src="assets/js/gui.js"></script>
 </body>
 </html>

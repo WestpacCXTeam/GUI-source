@@ -1,0 +1,16 @@
+{
+	"ID": "text-extensions",
+	"name": "text-extensions",
+	"description": "Text classes for additional formating",
+	"category": "Typography",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}
