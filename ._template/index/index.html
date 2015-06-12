@@ -18,7 +18,7 @@
 	<meta name="viewport" content="width=device-width">
 
 	<title>Testing the GUI</title>
-	<link rel="stylesheet" href="base/1.0.0/tests/WBC/assets/css/gui.css">
+	<link rel="stylesheet" href="_base/1.0.0/tests/WBC/assets/css/gui.css">
 
 	<style>
 		header {
@@ -50,6 +50,25 @@
 			}
 		}
 
+		.well {
+			padding: 12px;
+			margin-bottom: 18px;
+			background-color: #f4f3f0;
+			border: 1px solid #d7d2cb;
+			border-radius: 3px;
+		}
+
+		.modules {
+			margin-top: 0;
+		}
+
+		.description {
+			font-size: 14px;
+			font-family: Helvetica;
+			font-weight: normal;
+			color: #575f65;
+		}
+
 		.gui-list {
 			list-style: none;
 			padding: 0;
@@ -61,6 +80,10 @@
 			width: 50%;
 			padding: 0;
 			margin: 0;
+		}
+
+		.gui-list > li.category {
+			width: 100%;
 		}
 
 		.gui-list > li > ul {
@@ -80,6 +103,24 @@
 		.gui-list > li > ul > li > ul > li {
 			display: inline-block;
 			padding: 0 5px;
+		}
+
+		.brand-link {
+			display: inline-block;
+			padding: 6px 6px 0 6px;
+			border-bottom: 8px solid transparent;
+		}
+		.brand-link.brand-link-bom {
+			border-color: #685ac0;
+		}
+		.brand-link.brand-link-bsa {
+			border-color: #365fb4;
+		}
+		.brand-link.brand-link-stg {
+			border-color: #78be20;
+		}
+		.brand-link.brand-link-wbc {
+			border-color: #621a4b;
 		}
 	</style>
 
@@ -104,9 +145,10 @@
 
 	<main class="container">
 
-		<p class="lead">
+		<p class="well lead">
 			This is the repository in which we develop each element of the GUI.
-			Each module is tested in isolation and can be seen below.
+			Each module is tested in isolation and can be seen below.<br>
+			For contribution, bugs or questions please go to the <a href="https://github.com/WestpacCXTeam/GUI-source">GitHub repo</a>.
 		</p>
 
 
