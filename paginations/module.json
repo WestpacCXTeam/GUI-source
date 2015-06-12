@@ -1,7 +1,7 @@
 {
-	"ID": "pagination",
-	"name": "Pagination",
-	"description": "Pagination finite and infinite",
+	"ID": "paginations",
+	"name": "Paginations",
+	"description": "Paginations finite and infinite",
 	"category": "Navigation",
 
 	"versions": {
