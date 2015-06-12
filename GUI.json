@@ -1,1 +1,1 @@
-{"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}},"tables":{"name":"tables","versions":{"1.0.0":"tables/1.0.0/"}}}
+{"_fixed":{"ID":"_base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"Tables":{"ID":"tables","name":"Tables","description":"Tables in colors and responsive","category":"Tables","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}}}
