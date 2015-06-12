@@ -1,1 +1,1 @@
-{"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}},"tooltips":{"name":"tooltips","versions":{"1.0.0":"tooltips/1.0.0/"}}}
+{"_fixed":{"ID":"_base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"Popovers":{"ID":"tooltips","name":"Tooltips","description":"Tooltips for text","category":"Popovers","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}}}
