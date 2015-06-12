@@ -105,10 +105,10 @@ module.exports = function(grunt) {
 						'			<li>' + "\n" +
 						'				<h3 class="version-headline">v' + version + '</h3>' + "\n" +
 						'				<ul class="gui-list-version-brand">' + "\n" +
-						'					<li><a class="brand-link brand-link-bom" href="' + subdir + '/BOM/">BOM</a></li>' + "\n" +
-						'					<li><a class="brand-link brand-link-bsa" href="' + subdir + '/BSA/">BSA</a></li>' + "\n" +
-						'					<li><a class="brand-link brand-link-stg" href="' + subdir + '/STG/">STG</a></li>' + "\n" +
-						'					<li><a class="brand-link brand-link-wbc" href="' + subdir + '/WBC/">WBC</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-bom" href="' + subdir + 'BOM/">BOM</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-bsa" href="' + subdir + 'BSA/">BSA</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-stg" href="' + subdir + 'STG/">STG</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'WBC/">WBC</a></li>' + "\n" +
 						'				</ul>' + "\n" +
 						'			</li>' + "\n" +
 						'		</ul>' + "\n";
