@@ -141,7 +141,7 @@
 		&:after {
 			content: " ";
 			width: 0;
-			background: @color-B;
+			background-color: @color-B;
 			position: absolute;
 			top: 0;
 			height: 8px;
@@ -149,6 +149,42 @@
 			border-top-left-radius: 1000px;
 			border-bottom-left-radius: 1000px;
 			z-index: 1;
+		}
+	}
+
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.range-slider-wrapper:after {
+			background-color: #000;
+		}
+
+		.range-slider {
+			background-color: transparent !important;
+
+			&::-webkit-slider-runnable-track {
+				background-color: transparent !important;
+			}
+
+			&::-ms-track {
+				background-color: transparent !important;
+			}
+
+			&::-moz-range-track {
+				background-color: transparent !important;
+			}
+
+			&::-webkit-slider-thumb {
+				border-color: #000;
+			}
+
+			&::-ms-thumb {
+				border-color: #000;
+			}
+
+			&::-moz-range-thumb {
+				border-color: #000;
+			}
 		}
 	}
 
