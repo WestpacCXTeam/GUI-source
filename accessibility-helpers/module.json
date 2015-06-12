@@ -1,0 +1,16 @@
+{
+	"ID": "accessibility-helpers",
+	"name": "Accessibility Helpers",
+	"description": "Accessibility classes",
+	"category": "Accessibility",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}
