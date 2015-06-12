@@ -1,0 +1,16 @@
+{
+	"ID": "[-Module-]",
+	"name": "[-Module-]",
+	"description": "",
+	"category": "",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}
