@@ -1,7 +1,7 @@
 {
 	"ID": "breadcrumbs",
 	"name": "Breadcrumbs",
-	"description": "Breadcrumbs show a breakdown of your current position in the navigation.",
+	"description": "Navigational breadcrumbs",
 	"category": "Navigation",
 
 	"versions": {
