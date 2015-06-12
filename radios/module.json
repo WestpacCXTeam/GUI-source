@@ -1,0 +1,16 @@
+{
+	"ID": "radios",
+	"name": "Radios",
+	"description": "Radio buttons for forms",
+	"category": "Forms",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": true
+		}
+
+	}
+}
