@@ -419,17 +419,13 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h1 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 300;
-}
 @media (min-width: 768px) {
   h1 {
     font-size: 36px;
   }
 }
-h1.text-body {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+h1.body-font {
+  font-weight: 700;
 }
 h2 {
   font-size: 24px;
@@ -441,17 +437,13 @@ h2 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h2 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 300;
-}
 @media (min-width: 768px) {
   h2 {
     font-size: 30px;
   }
 }
-h2.text-body {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+h2.body-font {
+  font-weight: 700;
 }
 h3 {
   font-size: 18px;
@@ -463,17 +455,13 @@ h3 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h3 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 300;
-}
 @media (min-width: 768px) {
   h3 {
     font-size: 24px;
   }
 }
-h3.text-body {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+h3.body-font {
+  font-weight: 700;
 }
 h4 {
   font-size: 16px;
@@ -485,17 +473,13 @@ h4 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h4 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 300;
-}
 @media (min-width: 768px) {
   h4 {
     font-size: 18px;
   }
 }
-h4.text-body {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+h4.body-font {
+  font-weight: 700;
 }
 h5 {
   font-size: 16px;
@@ -507,12 +491,8 @@ h5 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h5 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 400;
-}
-h5.text-body {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+h5.body-font {
+  font-weight: 700;
 }
 h6 {
   font-size: 14px;
@@ -524,12 +504,8 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h6 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 400;
-}
-h6.text-body {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+h6.body-font {
+  font-weight: 700;
 }
 h1,
 h2,
@@ -538,15 +514,6 @@ h4,
 h5,
 h6 {
   line-height: 1.1;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-size: 100%;
-  color: #858370;
 }
 html {
   font-size: 6px;
@@ -560,7 +527,7 @@ body {
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #cecdc6;
+  border-bottom: 1px dotted #004833;
 }
 address {
   font-style: normal;
@@ -605,6 +572,12 @@ a:hover {
 .container:after,
 .row:after {
   clear: both;
+}
+.body-font {
+  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+}
+.brand-font {
+  font-family: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
 :after,
@@ -1603,9 +1576,9 @@ a:hover {
   * {
     text-shadow: none !important;
     color: #000 !important;
-    background: transparent !important;
+    background: #fff !important;
     box-shadow: none !important;
-    border-color: #000;
+    border-color: #000 !important;
   }
   a,
   a:visited {
@@ -1909,7 +1882,7 @@ a:hover {
 .range-slider-wrapper:after {
   content: " ";
   width: 0;
-  background: #78be20;
+  background-color: #78be20;
   position: absolute;
   top: 0;
   height: 8px;
@@ -1917,4 +1890,30 @@ a:hover {
   border-top-left-radius: 1000px;
   border-bottom-left-radius: 1000px;
   z-index: 1;
+}
+@media print {
+  .range-slider-wrapper:after {
+    background-color: #000;
+  }
+  .range-slider {
+    background-color: transparent !important;
+  }
+  .range-slider::-webkit-slider-runnable-track {
+    background-color: transparent !important;
+  }
+  .range-slider::-ms-track {
+    background-color: transparent !important;
+  }
+  .range-slider::-moz-range-track {
+    background-color: transparent !important;
+  }
+  .range-slider::-webkit-slider-thumb {
+    border-color: #000;
+  }
+  .range-slider::-ms-thumb {
+    border-color: #000;
+  }
+  .range-slider::-moz-range-thumb {
+    border-color: #000;
+  }
 }
