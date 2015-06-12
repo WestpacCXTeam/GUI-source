@@ -1,1 +1,1 @@
-{"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}},"progress-bars":{"name":"progress-bars","versions":{"1.0.0":"progress-bars/1.0.0/"}}}
+{"_fixed":{"ID":"_base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"Other stuff":{"ID":"progress-bars","name":"Progress-Bars","description":"Progress-Bars as visual representation of progress","category":"Other stuff","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}}}
