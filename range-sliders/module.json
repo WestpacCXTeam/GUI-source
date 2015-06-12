@@ -1,6 +1,6 @@
 {
-	"ID": "range-slider",
-	"name": "Range-Slider",
+	"ID": "range-sliders",
+	"name": "Range-Sliders",
 	"description": "An input device to capture a range between two numbers",
 	"category": "Forms",
 
