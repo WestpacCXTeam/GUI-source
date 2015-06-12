@@ -540,6 +540,33 @@
 			}
 		}
 	}
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.btn {
+			svg,
+			.icons-background {
+				fill: #000 !important;
+			}
+		}
+
+		.btn-dropdown {
+			& > .btn > .btn-dropdown-caret {
+				&:after {
+					border-top-color: #000 !important;
+				}
+			}
+		}
+
+		.btn-dropdown .dropdown-menu {
+			background-color: #fff !important;
+		}
+
+		.btn-group-input:checked + .btn {
+			background-color: #000 !important;
+			color: #fff !important;
+		}
+	}
 }
 
 

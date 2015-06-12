@@ -37,6 +37,44 @@ var GUI = (function guiInit() {
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		// debounce function by _underscore.js
+		//
+		// func       [function]  Function to be executed
+		// wait       [integer]   Wait for next iteration for n in milliseconds
+		// immediate  [boolean]   Trigger the function on the leading edge, instead of the trailing
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		debounce: function Debounce(func, wait, immediate) {
+			GUI.debugging( 'Base: Debounce called', 'report' );
+
+			var timeout;
+			return function() {
+				var context = this;
+				var args = arguments;
+
+				var later = function() {
+					timeout = null;
+
+					if(!immediate) {
+						GUI.debugging( 'Base: Debounce executed', 'report' );
+
+						func.apply(context, args);
+					}
+				};
+
+				var callNow = immediate && !timeout;
+				clearTimeout(timeout);
+				timeout = setTimeout(later, wait);
+
+				if(callNow) {
+					GUI.debugging( 'Base: Debounce executed', 'report' );
+
+					func.apply(context, args);
+				}
+			};
+		},
+
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debugging prettiness
 		//
 		// text  [string]  Text to be printed to debugger
@@ -88,6 +126,32 @@ GUI.init();
 	var module = {};
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// private function: resize bubble shadow
+	//
+	// $wrapper  [jquery object]  The wrapper element
+	// index     [integer]        The index of that element
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	function BubbleShadow( $wrapper, index ) {
+		GUI.debugging( 'range-sliders: Setting shadow ', 'report' );
+
+		var $this = $wrapper.find('.range-slider');
+		var value = $this.val();
+		var min = $this.attr('min');
+		var max = $this.attr('max');
+		var percentage = ( 100 / (max - min) ) * ( value - min );
+
+		$wrapper.addClass( 'js-range-slider-' + index );
+
+		var $style = $('<style/>')
+			.addClass('js-rangestyle-' + index)
+			.html('.js-range-slider-' + index + ':after { width: ' + ( percentage > 0 ? percentage : 0 ) + '%; }')
+
+		return $style;
+
+	};
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.init = function() {
@@ -97,10 +161,26 @@ GUI.init();
 		if( $('.js-range-slider').length ) {
 			GUI.debugging( 'range-sliders: Found instance', 'report' );
 
-			$('.js-range-slider').on('mousedown input focus', function showBubble() {
+
+			i = 0;
+			$('.js-range-slider').each(function iterateSliders() {
+				var $styles = BubbleShadow( $(this), i );
+
+				$(this)
+					.before( $styles )
+					.attr('data-index', i);
+
+
+				i++;
+			});
+
+
+			$('.js-range-slider .range-slider').on('mousedown input active focus touchstart', function showBubble() {
 				GUI.debugging( 'range-sliders: input changed', 'interaction' );
 
 				var $this = $(this);
+				var $wrapper = $this.parent('.js-range-slider');
+				var index = $wrapper.attr('data-index');
 				var _isCurrency = $this.hasClass('range-slider-currency');
 				var _isPercentage = $this.hasClass('range-slider-percentage');
 				var value = this.value;
@@ -119,15 +199,20 @@ GUI.init();
 					value += '%';
 				}
 
-				$('.js-style').remove();
+				$( '.js-rangestyle-' + index ).remove();
 
-				$this.before(
-					'<style class="js-style">' +
-					'	.range-slider:focus::-webkit-slider-thumb:after { content: "' + value + '"; }' +
-					'	.range-slider:focus::-ms-thumb:after { content: "' + value + '"; }' +
-					'	.range-slider:focus::-moz-range-thumb:after { content: "' + value + '"; }' +
-					'</style>'
-				);
+				var $styles = BubbleShadow( $wrapper, index );
+				$styles.insertBefore( $this );
+
+				var $styles = $('<style/>')
+					.addClass('js-rangestyle-' + index)
+					.html(
+						' .js-range-slider-' + index + ' .range-slider::-webkit-slider-thumb:after { content: "' + value + '"; }' +
+						' .js-range-slider-' + index + ' .range-slider::-ms-thumb:after { content: "' + value + '"; }' +
+						' .js-range-slider-' + index + ' .range-slider::-moz-range-thumb:after { content: "' + value + '"; }'
+					)
+					.insertBefore( $this );
+
 			});
 		}
 	};

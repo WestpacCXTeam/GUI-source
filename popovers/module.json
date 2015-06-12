@@ -1,0 +1,16 @@
+{
+	"ID": "popovers",
+	"name": "Popovers",
+	"description": "Popovers for buttons",
+	"category": "Popovers",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"svg": false
+		}
+
+	}
+}

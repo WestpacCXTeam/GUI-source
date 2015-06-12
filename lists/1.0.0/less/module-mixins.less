@@ -98,4 +98,27 @@
 			}
 		}
 	}
+
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.lists {
+			& > li:after,
+			&.lists-hero > li:after,
+			&.lists-neutral > li:after,
+			&.lists-linklist > li:after {
+				border-color: #000;
+				background-color: #000;
+			}
+
+			&.lists-linklist > li:after {
+				background-color: transparent;
+			}
+
+			&.lists-tick > li:after {
+				background: none;
+				content: "\2713"
+			}
+		}
+	}
 }

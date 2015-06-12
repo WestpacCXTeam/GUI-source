@@ -249,14 +249,20 @@
 
 		.alert-form-msg {
 			display: none;
+			font-style: italic;
+			font-size: 13px;
 
 			.has-success&,
 			.has-info&,
 			.has-warning&,
 			.has-danger& {
 				display: block;
-				margin: 3px 0 0 0;
+				margin: 4px 0 0 0;
 			}
+		}
+
+		& > textarea.forms-input + p.alert-form-msg {
+			margin-top: 0;
 		}
 
 		.has-success& {
@@ -307,5 +313,67 @@
 			}
 		}
 
+	}
+
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.text-success,
+		.text-info,
+		.text-warning,
+		.text-danger {
+			color: #000;
+		}
+
+		.alert {
+			&.alert-success,
+			&.alert-info,
+			&.alert-warning,
+			&.alert-danger,
+			&.alert-system {
+				background-color: #fff;
+				color: #000;
+				border: 1px solid #000;
+			}
+
+			.alert-close {
+				display: none;
+			}
+		}
+
+		.label {
+			&.label-success,
+			&.label-info,
+			&.label-warning,
+			&.label-danger {
+				color: #000;
+				background-color: #fff;
+				border: 1px solid #000;
+			}
+		}
+
+		.alert-form {
+			.alert-form-msg {
+				.has-success&,
+				.has-info&,
+				.has-warning&,
+				.has-danger& {
+					color: #000;
+				}
+			}
+
+			.forms-input,
+			.forms-select,
+			.forms-select:focus {
+				border-color: #000;
+
+				.has-success&,
+				.has-info&,
+				.has-warning&,
+				.has-danger& {
+					border-color: #000;
+				}
+			}
+		}
 	}
 }

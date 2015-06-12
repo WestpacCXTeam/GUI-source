@@ -1,0 +1,16 @@
+{
+	"ID": "breadcrumbs",
+	"name": "Breadcrumbs",
+	"description": "Navigational breadcrumbs",
+	"category": "Navigation",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}

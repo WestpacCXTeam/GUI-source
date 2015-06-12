@@ -1,0 +1,16 @@
+{
+	"ID": "panels",
+	"name": "panels",
+	"description": "Panel containers",
+	"category": "Containers",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"ID": "images",
+	"name": "Images",
+	"description": "Image classes",
+	"category": "Media",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}
