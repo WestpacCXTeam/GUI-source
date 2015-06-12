@@ -1,0 +1,16 @@
+{
+	"ID": "icons-group13",
+	"name": "Icons-Group 13",
+	"description": "Icons-Group 13",
+	"category": "Icons",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": true
+		}
+
+	}
+}
