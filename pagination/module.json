@@ -1,0 +1,16 @@
+{
+	"ID": "pagination",
+	"name": "Pagination",
+	"description": "Pagination finite and infinite",
+	"category": "Navigation",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}
