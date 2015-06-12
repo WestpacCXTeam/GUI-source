@@ -1,0 +1,16 @@
+{
+	"ID": "icons-group8",
+	"name": "Icons-Group 8",
+	"description": "Icons-Group 8",
+	"category": "Icons",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": true
+		}
+
+	}
+}
