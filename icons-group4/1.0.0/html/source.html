@@ -24,7 +24,17 @@
 	}
 	a .icon svg,
 	a .icon .icons-background {
-		fill: #d60c8c;
+		fill: #d5002b;
+	}
+	@media print {
+		.icon svg,
+		.icon .icons-background {
+			fill: #000;
+		}
+		a  svg,
+		a  .icons-background {
+			fill: #000 !important;
+		}
 	}
 </style>
 
