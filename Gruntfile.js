@@ -294,7 +294,7 @@ module.exports = function(grunt) {
 				expand: true,
 				src: [
 					'./*/Gruntfile.js',
-					'!./base/Gruntfile.js',
+					'!./_base/Gruntfile.js',
 				],
 				tasks: ['buildVersions'],
 			},
