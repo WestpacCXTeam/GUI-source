@@ -1,0 +1,16 @@
+{
+	"ID": "icon-base",
+	"name": "Icon-Base",
+	"description": "Icon sizing and coloring",
+	"category": "Icons",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}

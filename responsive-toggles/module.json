@@ -1,0 +1,16 @@
+{
+	"ID": "responsive-toggles",
+	"name": "Responsive-Toggles",
+	"description": "Responsive-Toggles can hide and show elements responsively",
+	"category": "Layout",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"ID": "responsive-embeds",
+	"name": "Responsive-Embeds",
+	"description": "Responsive-Embeds are best for videos",
+	"category": "Media",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}

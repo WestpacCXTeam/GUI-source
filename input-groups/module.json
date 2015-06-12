@@ -1,0 +1,16 @@
+{
+	"ID": "input-groups",
+	"name": "Input-Groups",
+	"description": "Attachment to an input field",
+	"category": "Forms",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}

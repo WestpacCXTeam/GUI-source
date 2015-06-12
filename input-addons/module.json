@@ -1,0 +1,16 @@
+{
+	"ID": "input-addons",
+	"name": "Input-Addons",
+	"description": "Input fields with attached selects or buttons",
+	"category": "Forms",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}

@@ -37,6 +37,44 @@ var GUI = (function guiInit() {
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		// debounce function by _underscore.js
+		//
+		// func       [function]  Function to be executed
+		// wait       [integer]   Wait for next iteration for n in milliseconds
+		// immediate  [boolean]   Trigger the function on the leading edge, instead of the trailing
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		debounce: function Debounce(func, wait, immediate) {
+			GUI.debugging( 'Base: Debounce called', 'report' );
+
+			var timeout;
+			return function() {
+				var context = this;
+				var args = arguments;
+
+				var later = function() {
+					timeout = null;
+
+					if(!immediate) {
+						GUI.debugging( 'Base: Debounce executed', 'report' );
+
+						func.apply(context, args);
+					}
+				};
+
+				var callNow = immediate && !timeout;
+				clearTimeout(timeout);
+				timeout = setTimeout(later, wait);
+
+				if(callNow) {
+					GUI.debugging( 'Base: Debounce executed', 'report' );
+
+					func.apply(context, args);
+				}
+			};
+		},
+
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debugging prettiness
 		//
 		// text  [string]  Text to be printed to debugger

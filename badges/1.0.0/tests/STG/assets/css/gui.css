@@ -5,9 +5,8 @@
  * Colors, fonts and base HTML elements
  *
  */
-/*!badges v1.0.0 STG*/
 /*
- * Settings
+ * Settings for badges v1.0.0 STG
  *
  * Calling module mixins
  *
@@ -411,7 +410,7 @@ th {
   font-style: italic;
 }
 h1 {
-  font-size: 36px;
+  font-size: 30px;
   color: #004833;
   font-family: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -420,25 +419,15 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h1 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 300;
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+h1.body-font {
+  font-weight: 700;
 }
 h2 {
-  font-size: 30px;
-  color: #004833;
-  font-family: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
-  margin-top: 18px;
-  margin-bottom: 12px;
-  font-weight: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-h2 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 300;
-}
-h3 {
   font-size: 24px;
   color: #004833;
   font-family: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
@@ -448,12 +437,34 @@ h3 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h3 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 300;
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+h2.body-font {
+  font-weight: 700;
+}
+h3 {
+  font-size: 18px;
+  color: #004833;
+  font-family: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+h3.body-font {
+  font-weight: 700;
 }
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: #004833;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
@@ -462,9 +473,13 @@ h4 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h4 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 300;
+@media (min-width: 768px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+h4.body-font {
+  font-weight: 700;
 }
 h5 {
   font-size: 16px;
@@ -476,9 +491,8 @@ h5 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h5 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 400;
+h5.body-font {
+  font-weight: 700;
 }
 h6 {
   font-size: 14px;
@@ -490,9 +504,8 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h6 small {
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
-  font-weight: 400;
+h6.body-font {
+  font-weight: 700;
 }
 h1,
 h2,
@@ -501,15 +514,6 @@ h4,
 h5,
 h6 {
   line-height: 1.1;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-size: 100%;
-  color: #858370;
 }
 html {
   font-size: 6px;
@@ -523,7 +527,7 @@ body {
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #cecdc6;
+  border-bottom: 1px dotted #004833;
 }
 address {
   font-style: normal;
@@ -568,6 +572,12 @@ a:hover {
 .container:after,
 .row:after {
   clear: both;
+}
+.body-font {
+  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+}
+.brand-font {
+  font-family: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
 :after,
@@ -1562,6 +1572,66 @@ a:hover {
     padding-left: 24px;
   }
 }
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    border-color: #000 !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    padding: 6px;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  p a {
+    word-wrap: break-word;
+  }
+  select {
+    background: #fff !important;
+  }
+  .container,
+  .container-fluid {
+    margin: auto;
+    width: auto;
+  }
+}
 /*!badges v1.0.0 STG*/
 /*
  * badges mixins
@@ -1608,4 +1678,12 @@ a:hover {
 }
 .lists .badge {
   float: right;
+}
+@media print {
+  .btn .badge,
+  .badge {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+  }
 }

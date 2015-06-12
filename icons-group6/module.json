@@ -1,0 +1,16 @@
+{
+	"ID": "icons-group6",
+	"name": "Icons-Group 6",
+	"description": "Icons-Group 6",
+	"category": "Icons",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": true
+		}
+
+	}
+}

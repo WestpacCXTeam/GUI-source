@@ -1,0 +1,16 @@
+{
+	"ID": "input-fields",
+	"name": "Input-Fields",
+	"description": "Text, email, password, number, date, textarea and selects",
+	"category": "Forms",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}

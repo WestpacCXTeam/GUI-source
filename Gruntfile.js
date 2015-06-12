@@ -59,9 +59,12 @@ module.exports = function(grunt) {
 	grunt.registerTask('buildIndex', 'Build an index html file to mapp all modules for gh-pages.', function() {
 
 		var replace = {};
-		var replaceStr = '';
+		var replaceStr = '<ul class="gui-list">' + "\n";
 		var GUI = {};
+		var oldCategory = '';
 
+
+		//build GUI.json
 		grunt.file.expand({ filter: 'isDirectory' }, [
 			'./*',
 			'!./node_modules',
@@ -69,41 +72,57 @@ module.exports = function(grunt) {
 			'!./.git',
 		]).forEach(function(dir) {
 
-			var module = dir.substr( dir.lastIndexOf('/') + 1 );
+			var newModule = {};
+			var module = grunt.file.readJSON( dir + '/' + 'module.json');
 
-			GUI[ module ] = {
-				'name': module,
-				'versions': {},
-			};
+			if( typeof(GUI[ module.category ]) === 'undefined' ) {
+				GUI[ module.category ] = [];
+			}
 
-			replaceStr += '<li>';
+			GUI[ module.category ].push( module );
+		});
 
-			grunt.file.expand({ filter: 'isDirectory' }, [dir + '/*']).forEach(function(subdir) {
 
-				var version = subdir.substr( subdir.lastIndexOf('/') + 1 );
+		//build index.html
+		Object.keys( GUI ).forEach(function iterateCategories( category ) {
 
-				if( version !== 'node_modules' ) {
-					//add versioning to files
-					replaceStr += '<h2>' + module + '</h2>' +
-						'<ul>' +
-						'	<li>' +
-						'		<h3>v' + version + '</h3>' +
-						'		<ul>' +
-						'			<li><a href="' + subdir + '/tests/BOM/">BOM</a></li>' +
-						'			<li><a href="' + subdir + '/tests/BSA/">BSA</a></li>' +
-						'			<li><a href="' + subdir + '/tests/STG/">STG</a></li>' +
-						'			<li><a href="' + subdir + '/tests/WBC/">WBC</a></li>' +
-						'		</ul>' +
-						'	</li>' +
-						'</ul>';
+			GUI[category].forEach(function iterateModules( module ) {
 
-					GUI[ module ].versions[version] = module + '/' + version + '/';
+				if( oldCategory !== category ) {
+					replaceStr += '	<li class="category"><small>[' + category + ']</small></li>';
 				}
+
+				replaceStr += '	<li class="module"><div class="module-wrapper">';
+
+				Object.keys( module.versions ).forEach(function interateVersions( version ) {
+
+					var subdir = './' + module.ID + '/' + version + '/tests/';
+
+					//add versioning to files
+					replaceStr += "\n" + '		<h2 class="module-headline">' + module.name +
+						' <small class="description">(' + module.description + ')</small></h2>' + "\n" +
+						'		<ul class="gui-list-version">' + "\n" +
+						'			<li>' + "\n" +
+						'				<h3 class="version-headline">v' + version + '</h3>' + "\n" +
+						'				<ul class="gui-list-version-brand">' + "\n" +
+						'					<li><a class="brand-link brand-link-bom" href="' + subdir + '/tests/BOM/">BOM</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-bsa" href="' + subdir + '/tests/BSA/">BSA</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-stg" href="' + subdir + '/tests/STG/">STG</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-wbc" href="' + subdir + '/tests/WBC/">WBC</a></li>' + "\n" +
+						'				</ul>' + "\n" +
+						'			</li>' + "\n" +
+						'		</ul>' + "\n";
+
+					replaceStr += '	</div></li>' + "\n";
+				});
+
+				oldCategory = category;
+
 			});
 
-			replaceStr += '</li>';
-
 		});
+
+		replaceStr += '</ul>';
 
 
 		//writing out GUI.json
@@ -293,7 +312,7 @@ module.exports = function(grunt) {
 				expand: true,
 				src: [
 					'./*/Gruntfile.js',
-					'!./base/Gruntfile.js',
+					'!./_base/Gruntfile.js',
 				],
 				tasks: ['buildVersions'],
 			},
