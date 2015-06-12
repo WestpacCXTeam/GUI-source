@@ -1,0 +1,16 @@
+{
+	"ID": "logos",
+	"name": "Logos",
+	"description": "All logos for all brands",
+	"category": "Symbols",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": true
+		}
+
+	}
+}

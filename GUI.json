@@ -1,1 +1,1 @@
-{"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}},"logos":{"name":"logos","versions":{"1.0.0":"logos/1.0.0/"}}}
+{"_fixed":{"ID":"_base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"Symbols":{"ID":"logos","name":"Logos","description":"All logos for all brands","category":"Symbols","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":true}}}}
