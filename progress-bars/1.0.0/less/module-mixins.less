@@ -52,7 +52,7 @@
 			transition: width 0.6s ease;
 
 			.progress-bar-text {
-				padding: 0 12px;
+				margin: 0 12px;
 			}
 		}
 
@@ -62,6 +62,20 @@
 			.progress-bar-text {
 				position: absolute;
 				opacity: 0;
+			}
+		}
+	}
+
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.progress-bar {
+			.progress-bar-indicator {
+				background-color: #000 !important;
+			}
+			.progress-bar-text {
+				color: #fff !important;
+				background-color: #000 !important;
 			}
 		}
 	}
