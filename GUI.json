@@ -1,1 +1,1 @@
-{"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}},"icons-group1":{"name":"icons-group1","versions":{"1.0.0":"icons-group1/1.0.0/"}}}
+{"_fixed":{"ID":"_base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"Icons":{"ID":"icons-group1","name":"Icons-Group 1","description":"Icons-Group 1","category":"Icons","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":true}}}}
