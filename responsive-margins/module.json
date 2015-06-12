@@ -1,7 +1,7 @@
 {
 	"ID": "responsive-margins",
 	"name": "Responsive-Margins",
-	"description": "Responsive-Margins can hide and show elements responsively",
+	"description": "Responsive-Margins adds vertical spacing responsively",
 	"category": "Layout",
 
 	"versions": {
