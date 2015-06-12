@@ -1,0 +1,16 @@
+{
+	"ID": "labels",
+	"name": "Labels",
+	"description": "Labels for callouts",
+	"category": "Other stuff",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}
