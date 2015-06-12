@@ -5,9 +5,8 @@
  * Colors, fonts and base HTML elements
  *
  */
-/*!tables v1.0.0 WBC*/
 /*
- * Settings
+ * Settings for tables v1.0.0 WBC
  *
  * Calling module mixins
  *
@@ -404,48 +403,68 @@ th {
   font-style: italic;
 }
 h1 {
-  font-size: 36px;
+  font-size: 30px;
   color: #621a4b;
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 18px;
-  font-weight: 300;
+  font-weight: 700;
 }
-h1 small {
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+h1.body-font {
   font-weight: 300;
 }
 h2 {
-  font-size: 30px;
+  font-size: 24px;
   color: #621a4b;
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
-  font-weight: 300;
+  font-weight: 700;
 }
-h2 small {
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+h2.body-font {
   font-weight: 300;
 }
 h3 {
-  font-size: 24px;
+  font-size: 18px;
   color: #621a4b;
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
-  font-weight: 300;
+  font-weight: 700;
 }
-h3 small {
+@media (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+h3.body-font {
   font-weight: 300;
 }
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: #621a4b;
-  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
-  font-weight: 400;
+  font-weight: 700;
 }
-h4 small {
-  font-weight: 300;
+@media (min-width: 768px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+h4.body-font {
+  font-weight: 400;
 }
 h5 {
   font-size: 16px;
@@ -455,8 +474,8 @@ h5 {
   margin-bottom: 6px;
   font-weight: 500;
 }
-h5 small {
-  font-weight: 400;
+h5.body-font {
+  font-weight: 500;
 }
 h6 {
   font-size: 14px;
@@ -466,8 +485,8 @@ h6 {
   margin-bottom: 0px;
   font-weight: 700;
 }
-h6 small {
-  font-weight: 400;
+h6.body-font {
+  font-weight: 700;
 }
 h1,
 h2,
@@ -476,15 +495,6 @@ h4,
 h5,
 h6 {
   line-height: 1.1;
-}
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small {
-  font-size: 100%;
-  color: #575f65;
 }
 html {
   font-size: 6px;
@@ -498,7 +508,7 @@ body {
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #d7d2cb;
+  border-bottom: 1px dotted #2d373e;
 }
 address {
   font-style: normal;
@@ -543,6 +553,12 @@ a:hover {
 .container:after,
 .row:after {
   clear: both;
+}
+.body-font {
+  font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
+}
+.brand-font {
+  font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
 :after,
@@ -1537,6 +1553,66 @@ a:hover {
     padding-left: 24px;
   }
 }
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    border-color: #000 !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    padding: 6px;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  p a {
+    word-wrap: break-word;
+  }
+  select {
+    background: #fff !important;
+  }
+  .container,
+  .container-fluid {
+    margin: auto;
+    width: auto;
+  }
+}
 /*!tables v1.0.0 WBC*/
 /*
  * tables mixins
@@ -1544,72 +1620,6 @@ a:hover {
  * Tabel styles
  *
  */
-@-moz-document url-prefix() {
-  fieldset {
-    display: table-cell;
-  }
-}
-table col[class*="col-"] {
-  position: static;
-  float: none;
-  display: table-column;
-}
-table td[class*="col-"],
-table th[class*="col-"] {
-  position: static;
-  float: none;
-  display: table-cell;
-}
-@media screen and (max-width: 480px) {
-  .table-responsive {
-    width: 100%;
-    margin-bottom: 18px;
-    overflow-y: hidden;
-    overflow-x: auto;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #d7d2cb;
-    -webkit-overflow-scrolling: touch;
-  }
-  .table-responsive > .table {
-    margin-bottom: 0;
-  }
-  .table-responsive > .table caption {
-    padding: 12px;
-  }
-  .table-responsive > .table > thead > tr > th,
-  .table-responsive > .table > tbody > tr > th,
-  .table-responsive > .table > tfoot > tr > th,
-  .table-responsive > .table > thead > tr > td,
-  .table-responsive > .table > tbody > tr > td,
-  .table-responsive > .table > tfoot > tr > td {
-    white-space: nowrap;
-  }
-  .table-responsive > .table-bordered {
-    border: 0;
-  }
-  .table-responsive > .table-bordered > thead > tr > th:first-child,
-  .table-responsive > .table-bordered > tbody > tr > th:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-  .table-responsive > .table-bordered > thead > tr > td:first-child,
-  .table-responsive > .table-bordered > tbody > tr > td:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
-    border-left: 0;
-  }
-  .table-responsive > .table-bordered > thead > tr > th:last-child,
-  .table-responsive > .table-bordered > tbody > tr > th:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-  .table-responsive > .table-bordered > thead > tr > td:last-child,
-  .table-responsive > .table-bordered > tbody > tr > td:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
-    border-right: 0;
-  }
-  .table-responsive > .table-bordered > tbody > tr:last-child > th,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-  .table-responsive > .table-bordered > tbody > tr:last-child > td,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
-    border-bottom: 0;
-  }
-}
 /*!tables v1.0.0 WBC*/
 /*
  * tables settings
@@ -1719,4 +1729,78 @@ table th[class*="col-"] {
 .table > tbody > tr > td.table-highlight + th.table-highlight,
 .table > tbody > tr > th.table-highlight + th.table-highlight {
   border-left: 0 none;
+}
+@-moz-document url-prefix() {
+  fieldset {
+    display: table-cell;
+  }
+}
+table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell;
+}
+@media screen and (max-width: 480px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 18px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #d7d2cb;
+    -webkit-overflow-scrolling: touch;
+  }
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .table-responsive > .table caption {
+    padding: 12px;
+  }
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+  .table-responsive > .table-bordered {
+    border: 0;
+  }
+  .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+@media print {
+  .table > tbody > tr > td.table-highlight,
+  .table > tbody > tr > th.table-highlight,
+  .table > tbody > tr.table-highlight > th,
+  .table > tbody > tr.table-highlight > td {
+    border-bottom-width: 2px;
+  }
 }

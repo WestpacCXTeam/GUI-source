@@ -190,93 +190,103 @@
 			}
 		}
 	}
-}
 
 
-//////////////////////////////////////| FIREFOX HACK FOR RESPONSIVE TABLES
-@-moz-document url-prefix() {
-	fieldset { display: table-cell; }
-}
+	//////////////////////////////////////| FIREFOX HACK FOR RESPONSIVE TABLES
+	@-moz-document url-prefix() {
+		fieldset { display: table-cell; }
+	}
 
 
-//////////////////////////////////////| Reset default table behavior
-table col[class*="col-"] {
-	position: static;
-	float: none;
-	display: table-column;
-}
+	//////////////////////////////////////| Reset default table behavior
+	table col[class*="col-"] {
+		position: static;
+		float: none;
+		display: table-column;
+	}
 
-table {
-	td,
-	th {
-		&[class*="col-"] {
-			position: static;
-			float: none;
-			display: table-cell;
+	table {
+		td,
+		th {
+			&[class*="col-"] {
+				position: static;
+				float: none;
+				display: table-cell;
+			}
 		}
 	}
-}
 
 
-//////////////////////////////////////| RESPONSIVE TABLE
-.table-responsive {
+	//////////////////////////////////////| RESPONSIVE TABLE
+	.table-responsive {
 
-	@media screen and (max-width: @screen-xs) {
-		width: 100%;
-		margin-bottom: 18px;
-		overflow-y: hidden;
-		overflow-x: auto;
-		-ms-overflow-style: -ms-autohiding-scrollbar;
-		border: 1px solid @color-Border;
-		-webkit-overflow-scrolling: touch;
+		@media screen and (max-width: @screen-xs) {
+			width: 100%;
+			margin-bottom: 18px;
+			overflow-y: hidden;
+			overflow-x: auto;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			border: 1px solid @color-Border;
+			-webkit-overflow-scrolling: touch;
 
-		> .table {
-			margin-bottom: 0;
+			> .table {
+				margin-bottom: 0;
 
-			caption {
-				padding: 12px;
-			}
+				caption {
+					padding: 12px;
+				}
 
-			> thead,
-			> tbody,
-			> tfoot {
-				> tr {
-					> th,
-					> td {
-						white-space: nowrap;
+				> thead,
+				> tbody,
+				> tfoot {
+					> tr {
+						> th,
+						> td {
+							white-space: nowrap;
+						}
 					}
 				}
+			}
+
+			> .table-bordered {
+				border: 0;
+
+				> thead,
+				> tbody,
+				> tfoot {
+					> tr {
+						> th:first-child,
+						> td:first-child {
+							border-left: 0;
+						}
+						> th:last-child,
+						> td:last-child {
+							border-right: 0;
+						}
+					}
+				}
+
+				> tbody,
+				> tfoot {
+					> tr:last-child {
+						> th,
+						> td {
+							border-bottom: 0;
+						}
+					}
+				}
+
 			}
 		}
+	}
 
-		> .table-bordered {
-			border: 0;
-
-			> thead,
-			> tbody,
-			> tfoot {
-				> tr {
-					> th:first-child,
-					> td:first-child {
-						border-left: 0;
-					}
-					> th:last-child,
-					> td:last-child {
-						border-right: 0;
-					}
-				}
-			}
-
-			> tbody,
-			> tfoot {
-				> tr:last-child {
-					> th,
-					> td {
-						border-bottom: 0;
-					}
-				}
-			}
-
+	//////////////////////////////////////| PRINT
+	@media print {
+		.table > tbody > tr > td.table-highlight,
+		.table > tbody > tr > th.table-highlight,
+		.table > tbody > tr.table-highlight > th,
+		.table > tbody > tr.table-highlight > td {
+			border-bottom-width: 2px;
 		}
 	}
 }
