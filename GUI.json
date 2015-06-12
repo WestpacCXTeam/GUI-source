@@ -1,1 +1,1 @@
-{"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}},"panels":{"name":"panels","versions":{"1.0.0":"panels/1.0.0/"}}}
+{"_fixed":{"ID":"_base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"Containers":{"ID":"panels","name":"panels","description":"Panel containers","category":"Containers","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}}}
