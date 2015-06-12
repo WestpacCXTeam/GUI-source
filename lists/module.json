@@ -1,0 +1,16 @@
+{
+	"ID": "lists",
+	"name": "Lists",
+	"description": "HTML lists in various colors",
+	"category": "Lists",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": false
+		}
+
+	}
+}
