@@ -1,1 +1,1 @@
-{"base":{"name":"base","versions":{"1.0.0":"base/1.0.0/"}},"responsive-toggle":{"name":"responsive-toggle","versions":{"1.0.0":"responsive-toggle/1.0.0/"}}}
+{"_fixed":{"ID":"_base","name":"_Base","description":"Base styling and grid system","category":"_fixed","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}},"Layout":{"ID":"responsive-toggles","name":"Responsive-Toggles","description":"Responsive-Toggles can hide and show elements responsively","category":"Layout","versions":{"1.0.0":{"dependencies":[],"js":false,"svg":false}}}}

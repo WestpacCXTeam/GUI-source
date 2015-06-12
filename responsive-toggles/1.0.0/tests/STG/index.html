@@ -17,8 +17,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
 
-	<title>Testing the GUI</title>
-	<link rel="stylesheet" href="_base/1.0.0/tests/WBC/assets/css/gui.css">
+	<title>Testing responsive-toggles v1.0.0 STG</title>
+	<link rel="stylesheet" href="assets/css/gui.css">
 
 	<style>
 		header {
@@ -34,93 +34,8 @@
 			margin-top: 0;
 		}
 
-		main.container {
+		main.container-fluid {
 			background-color: #fff;
-		}
-
-		.lead {
-			margin-bottom: 21px;
-			font-size: 16px;
-			font-weight: 300;
-			line-height: 1.4;
-		}
-		@media (min-width: 768px) {
-			.lead {
-				font-size: 18px;
-			}
-		}
-
-		.well {
-			padding: 12px;
-			margin-bottom: 18px;
-			background-color: #f4f3f0;
-			border: 1px solid #d7d2cb;
-			border-radius: 3px;
-		}
-
-		.modules {
-			margin-top: 0;
-		}
-
-		.description {
-			font-size: 14px;
-			font-family: Helvetica;
-			font-weight: normal;
-			color: #575f65;
-		}
-
-		.gui-list {
-			list-style: none;
-			padding: 0;
-			overflow: hidden;
-		}
-
-		.gui-list > li {
-			float: left;
-			width: 50%;
-			padding: 0;
-			margin: 0;
-		}
-
-		.gui-list > li.category {
-			width: 100%;
-		}
-
-		.gui-list > li > ul {
-			list-style: none;
-		}
-
-		.gui-list > li > ul > li > h3 {
-			display: inline-block;
-		}
-
-		.gui-list > li > ul > li > ul {
-			list-style: none;
-			display: inline-block;
-			padding: 0 5px;
-		}
-
-		.gui-list > li > ul > li > ul > li {
-			display: inline-block;
-			padding: 0 5px;
-		}
-
-		.brand-link {
-			display: inline-block;
-			padding: 6px 6px 0 6px;
-			border-bottom: 8px solid transparent;
-		}
-		.brand-link.brand-link-bom {
-			border-color: #685ac0;
-		}
-		.brand-link.brand-link-bsa {
-			border-color: #365fb4;
-		}
-		.brand-link.brand-link-stg {
-			border-color: #78be20;
-		}
-		.brand-link.brand-link-wbc {
-			border-color: #621a4b;
 		}
 	</style>
 
@@ -139,51 +54,123 @@
 
 	<header>
 		<div class="container">
-			<h1 class="headline">GUI source</h1>
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing responsive-toggles v1.0.0 STG</h1>
 		</div>
 	</header>
 
-	<main class="container">
+	<main class="container-fluid">
+<h2>visibility classes</h2>
 
-		<p class="well lead">
-			This is the repository in which we develop each element of the GUI.
-			Each module is tested in isolation and can be seen below.<br>
-			For contribution, bugs or questions please go to the <a href="https://github.com/WestpacCXTeam/GUI-source">GitHub repo</a>.
-		</p>
+<style>
+	.example {
+		display: block;
+		border: 1px solid #999;
+		background-color: rgba(0, 0, 0, 0.1);
+		margin-bottom: 21px;
+		padding: 6px;
+		min-height: 54px;
+	}
+
+	.example-div {
+		background-color: rgba(255, 192, 203, 0.5);
+	}
+</style>
+
+<div class="example">
+	visible-xs-block:
+	<div class="example-div visible-xs-block">visible-xs-block</div>
+</div>
+<div class="example">
+	visible-sm-block:
+	<div class="example-div visible-sm-block">visible-sm-block</div>
+</div>
+<div class="example">
+	visible-md-block:
+	<div class="example-div visible-md-block">visible-md-block</div>
+</div>
+<div class="example">
+	visible-lg-block:
+	<div class="example-div visible-lg-block">visible-lg-block</div>
+</div>
+<div class="example">
+	visible-xs-inline:
+	<div class="example-div visible-xs-inline">visible-xs-inline</div>
+</div>
+<div class="example">
+	visible-sm-inline:
+	<div class="example-div visible-sm-inline">visible-sm-inline</div>
+</div>
+<div class="example">
+	visible-md-inline:
+	<div class="example-div visible-md-inline">visible-md-inline</div>
+</div>
+<div class="example">
+	visible-lg-inline:
+	<div class="example-div visible-lg-inline">visible-lg-inline</div>
+</div>
+<div class="example">
+	visible-xs-inline-block:
+	<div class="example-div visible-xs-inline-block">visible-xs-inline-block</div>
+</div>
+<div class="example">
+	visible-sm-inline-block:
+	<div class="example-div visible-sm-inline-block">visible-sm-inline-block</div>
+</div>
+<div class="example">
+	visible-md-inline-block:
+	<div class="example-div visible-md-inline-block">visible-md-inline-block</div>
+</div>
+<div class="example">
+	visible-lg-inline-block:
+	<div class="example-div visible-lg-inline-block">visible-lg-inline-block</div>
+</div>
 
 
-<ul class="gui-list">
-	<li class="category"><small>[_fixed]</small></li>	<li>
-		<h2 class="modules">_Base <small class="description">(Base styling and grid system)</small></h2>
-		<ul>
-			<li>
-				<h3>v1.0.0</h3>
-				<ul>
-					<li><a class="brand-link brand-link-bom" href="./_base/1.0.0/tests/BOM/">BOM</a></li>
-					<li><a class="brand-link brand-link-bsa" href="./_base/1.0.0/tests/BSA/">BSA</a></li>
-					<li><a class="brand-link brand-link-stg" href="./_base/1.0.0/tests/STG/">STG</a></li>
-					<li><a class="brand-link brand-link-wbc" href="./_base/1.0.0/tests/WBC/">WBC</a></li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li class="category"><small>[Layout]</small></li>	<li>
-		<h2 class="modules">Responsive-Toggles <small class="description">(Responsive-Toggles can hide and show elements responsively)</small></h2>
-		<ul>
-			<li>
-				<h3>v1.0.0</h3>
-				<ul>
-					<li><a class="brand-link brand-link-bom" href="./responsive-toggles/1.0.0/tests/BOM/">BOM</a></li>
-					<li><a class="brand-link brand-link-bsa" href="./responsive-toggles/1.0.0/tests/BSA/">BSA</a></li>
-					<li><a class="brand-link brand-link-stg" href="./responsive-toggles/1.0.0/tests/STG/">STG</a></li>
-					<li><a class="brand-link brand-link-wbc" href="./responsive-toggles/1.0.0/tests/WBC/">WBC</a></li>
-				</ul>
-			</li>
-		</ul>
-	</li>
-</ul>
+<hr>
+<h2>hidden classes</h2>
 
+<div class="example">
+	hidden-xs:
+	<div class="example-div hidden-xs">hidden-xs</div>
+</div>
+<div class="example">
+	hidden-sm:
+	<div class="example-div hidden-sm">hidden-sm</div>
+</div>
+<div class="example">
+	hidden-md:
+	<div class="example-div hidden-md">hidden-md</div>
+</div>
+<div class="example">
+	hidden-lg:
+	<div class="example-div hidden-lg">hidden-lg</div>
+</div>
+
+
+<hr>
+<h2>print classes</h2>
+
+<div class="example">
+	visible-print-block:
+	<div class="example-div visible-print-block">visible-print-block</div>
+</div>
+<div class="example">
+	visible-print-inline:
+	<div class="example-div visible-print-inline">visible-print-inline</div>
+</div>
+<div class="example">
+	visible-print-inline-block:
+	<div class="example-div visible-print-inline-block">visible-print-inline-block</div>
+</div>
+<div class="example">
+	hidden-print:
+	<div class="example-div hidden-print">hidden-print</div>
+</div>
 	</main>
 
+	<script src="assets/js/gui.js"></script>
 </body>
 </html>
