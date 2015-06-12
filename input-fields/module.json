@@ -1,7 +1,7 @@
 {
 	"ID": "input-fields",
 	"name": "Input-Fields",
-	"description": "Text, email, password, number, date, textarea and select fields",
+	"description": "Text, email, password, number, date, textarea and selects",
 	"category": "Forms",
 
 	"versions": {
