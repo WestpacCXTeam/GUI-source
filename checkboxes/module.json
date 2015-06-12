@@ -1,0 +1,16 @@
+{
+	"ID": "checkboxes",
+	"name": "Checkboxes",
+	"description": "Form checkboxes with svg enhancements",
+	"category": "Forms",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"svg": true
+		}
+
+	}
+}
