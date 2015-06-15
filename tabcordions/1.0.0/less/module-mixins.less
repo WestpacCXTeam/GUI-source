@@ -1,0 +1,111 @@
+/*![Module-Version-Brand]*/
+/*
+ * tabcordion-soft mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| tabcordion-soft STYLES
+._tabcordions( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	//////////////////////////////////////| COLLAPSIBLE
+	.collapsible-body {
+		.js & {
+			height: 0;
+			overflow: hidden;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.4s ease, visibility 0.4s ease;
+
+			&.is-open {
+				height: auto;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
+
+	//////////////////////////////////////| JS BREAKPOINT SYNC
+	html {
+		line-height: 1px;
+
+		@media (min-width: @screen-sm) {
+			line-height: 2px;
+		}
+
+		@media (min-width: @screen-md) {
+			line-height: 3px;
+		}
+
+		@media (min-width: @screen-lg) {
+			line-height: 4px;
+		}
+	}
+
+
+	//////////////////////////////////////| TABCORDION
+	.tabcordion {
+		.tabcordion-tabs {
+			display: none;
+
+			@media (min-width: @screen-sm) {
+				display: block;
+			}
+
+			.tabcordion-tabs& {
+				display: block;
+			}
+
+			.tabcordion-tab {}
+		}
+
+		.tabcordion-body {
+			.collapsible-body {
+				border: 1px solid @color-Border;
+
+				.tabcordion-body-header {
+					display: block;
+					border-bottom: 1px solid @color-Border;
+
+					.tabcordion-body-headline {
+						display: block;
+						padding: 12px;
+						color: @color-Text;
+
+						&:focus {
+							.outline();
+						}
+
+						&:hover {
+							outline: none;
+						}
+					}
+				}
+				.tabcordion-body-text {}
+			}
+		}
+
+	}
+}
