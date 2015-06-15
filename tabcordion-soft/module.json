@@ -1,0 +1,16 @@
+{
+	"ID": "tabcordion-soft",
+	"name": "tabcordion-soft",
+	"description": "Accordion and Tab component",
+	"category": "Containers",
+
+	"versions": {
+
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"svg": false
+		}
+
+	}
+}
