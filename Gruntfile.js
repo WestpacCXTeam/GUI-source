@@ -62,6 +62,7 @@ module.exports = function(grunt) {
 		var replaceStr = '<ul class="gui-list">' + "\n";
 		var GUI = {};
 		var oldCategory = '';
+		var categories = '<ul class="category-list">';
 
 
 		//build GUI.json
@@ -88,8 +89,10 @@ module.exports = function(grunt) {
 
 			GUI[category].forEach(function iterateModules( module ) {
 
+				categories += '<li><a href="#' + module.ID + '">' + category + '</a></li>';
+
 				if( oldCategory !== category ) {
-					replaceStr += '	<li class="category"><small>[' + category + ']</small></li>';
+					replaceStr += '	<li class="category" id="' + module.ID + '"><small>[' + category + ']</small></li>';
 				}
 
 				replaceStr += '	<li class="module"><div class="module-wrapper">';
@@ -123,6 +126,7 @@ module.exports = function(grunt) {
 		});
 
 		replaceStr += '</ul>';
+		categories += '</ul>';
 
 
 		//writing out GUI.json
@@ -138,7 +142,7 @@ module.exports = function(grunt) {
 			overwrite: false,
 			replacements: [{
 				from: '[Modules]',
-				to: replaceStr,
+				to: ( categories + replaceStr ),
 			}],
 		};
 
