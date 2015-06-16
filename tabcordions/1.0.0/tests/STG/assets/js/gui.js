@@ -123,8 +123,8 @@ GUI.init();
 
 (function(GUI) {
 
-	var module = {};
-	var module2 = {};
+	var collapsible = {};
+	var api = {};
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// public API function: collapsible
@@ -133,24 +133,30 @@ GUI.init();
 	// _isAnimated  [boolean]   Wether or not to animate the height
 	// Callback     [function]  Callback function executed after completion
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	module2.toggle = function( target, _isAnimated, Callback ) {
+	api.toggle = function( target, _isAnimated, Callback ) {
 		GUI.debugging( 'collapsible: Toggle called', 'report' );
 
 		if( target instanceof jQuery ) {
-			var $target = target;
+			var $targets = target;
 		}
 		else {
-			var $target = $( target );
+			var $targets = $( target );
 		}
 
-		var _isOpen = $target.hasClass('is-open');
 
-		if( _isOpen ) {
-			GUI.collapsible.close( target, _isAnimated, Callback );
-		}
-		else {
-			GUI.collapsible.open( target, _isAnimated, Callback );
-		}
+		$targets.each(function iterateTargets() { //iterate over each element for toggling
+
+			var $target = $(this);
+			var _isOpen = $target.hasClass('is-open');
+
+			if( _isOpen ) {
+				GUI.collapsible.close( $target, _isAnimated, Callback );
+			}
+			else {
+				GUI.collapsible.open( $target, _isAnimated, Callback );
+			}
+
+		});
 	};
 
 
@@ -161,7 +167,7 @@ GUI.init();
 	// _isAnimated  [boolean]   Wether or not to animate the height
 	// Callback     [function]  Callback function executed after completion
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	module2.close = function closingCollapsible( target, _isAnimated, Callback ) {
+	api.close = function closingCollapsible( target, _isAnimated, Callback ) {
 		GUI.debugging( 'collapsible: closing element "' + target + '"', 'report' );
 
 		if( target instanceof jQuery ) {
@@ -180,10 +186,13 @@ GUI.init();
 
 		$target
 			.css({ 'height': oldHeight })
-			.removeClass('is-open');
+			.removeClass('is-open')
+			.attr('aria-hidden', 'true');
 
 		if( _isAnimated ) {
-			$target.stop(true).animate({ 'height': 0 }, 400, Callback);
+			$target
+				.stop(true)
+				.animate({ 'height': 0 }, 400, Callback);
 		}
 		else {
 			$target.css({ 'height': 0 });
@@ -200,10 +209,10 @@ GUI.init();
 	// public API function: collapsible opening
 	//
 	// target       [string]    Selector for target element to toggle is-open class
-	// _isAnimated  [boolean]   Wether or not to animate the height
+	// _isAnimated  [boolean]   Whether or not to animate the height
 	// Callback     [function]  Callback function executed after completion
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	module2.open = function openingCollapsible( target, _isAnimated, Callback ) {
+	api.open = function openingCollapsible( target, _isAnimated, Callback ) {
 		GUI.debugging( 'collapsible: opening element "' + target + '"', 'report' );
 
 		if( target instanceof jQuery ) {
@@ -225,7 +234,8 @@ GUI.init();
 		}
 
 		$target
-			.addClass('is-open');
+			.addClass('is-open')
+			.attr('aria-hidden', 'false');
 
 		if( _isAnimated ) {
 			$target.stop(true).animate({ 'height': height }, 400, function animateCallback() {
@@ -250,7 +260,7 @@ GUI.init();
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	module.init = function initTabcodions() {
+	collapsible.init = function initTabcodions() {
 		GUI.debugging( 'tabcordion-soft: Initiating', 'report' );
 
 		if( $('.js-collapsible').length ) {
@@ -283,9 +293,11 @@ GUI.init();
 						_isAccordion = false;
 					}
 
+					//animating transition
 					if( _isAccordion ) {
 						GUI.collapsible.close( $tabs.filter('.is-open'), true );
 						GUI.collapsible.open( $tabcordion.find( target ), true, function scrollToTab() {
+							//scroll to top
 							$('html, body').animate({ scrollTop: ( $this.offset().top - 60 ) }, 300);
 						});
 					}
@@ -295,12 +307,26 @@ GUI.init();
 						});
 					}
 
+					//adding active states to tabs and headers
+					$tabcordion.find('.js-collapsible').parent().removeClass('is-active');
+					$tabcordion.find('.js-collapsible[data-collapsible="' + target + '"], .js-collapsible[href="' + target + '"]').parent().addClass('is-active');
 
 				}
 				else {
-					GUI.debugging( 'collapsible: triggering toggle', 'report' );
+					GUI.debugging( 'collapsible: triggering pure toggle', 'report' );
 
-					GUI.collapsible.toggle( target, true );
+					var mode = $this.attr('data-collapsible-mode');
+
+					//collapsible API
+					if( mode === 'show' ) {
+						GUI.collapsible.open( target, true );
+					}
+					else if( mode === 'hide' ) {
+						GUI.collapsible.close( target, true );
+					}
+					else {
+						GUI.collapsible.toggle( target, true );
+					}
 				}
 
 			});
@@ -309,8 +335,8 @@ GUI.init();
 	};
 
 
-	GUI.tabcordionSoft = module;
-	GUI.collapsible = module2;
+	GUI.tabcordionSoft = collapsible;
+	GUI.collapsible = api;
 
 
 	// run module

@@ -1686,33 +1686,239 @@ html {
     line-height: 4px;
   }
 }
+.tabcordion {
+  border: 1px solid #c6c5cb;
+  border-bottom: 0 none;
+}
+@media (min-width: 768px) {
+  .tabcordion {
+    border: 0 none;
+  }
+}
+.tabcordion-tabs.tabcordion {
+  border: 0 none;
+}
+.tabcordion-accordion.tabcordion {
+  border: 1px solid #c6c5cb;
+  border-bottom: 0 none;
+}
 .tabcordion .tabcordion-tabs {
   display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .tabcordion .tabcordion-tabs {
-    display: block;
+    display: table;
+  }
+  .tabcordion .tabcordion-tabs.tabcordion-tabs-justified {
+    width: 100%;
   }
 }
 .tabcordion-tabs.tabcordion .tabcordion-tabs {
-  display: block;
+  display: table;
 }
-.tabcordion .tabcordion-body .collapsible-body {
+.tabcordion .tabcordion-tabs .tabcordion-tab {
+  display: table-cell;
+  text-align: center;
+  padding-left: 2px;
+}
+.tabcordion .tabcordion-tabs .tabcordion-tab:first-child {
+  padding-left: 0;
+}
+.tabcordion .tabcordion-tabs .tabcordion-tab a {
+  display: inline-block;
+  padding: 13px 18px 12px 18px;
+  color: #0d0d0d;
+  background-color: #f8f8f8;
   border: 1px solid #c6c5cb;
+  border-bottom: 0 none;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  transition: background 0.3s ease;
+  width: 100%;
 }
-.tabcordion .tabcordion-body .collapsible-body .tabcordion-body-header {
+.tabcordion .tabcordion-tabs .tabcordion-tab a:focus {
+  outline: 2px dotted #000;
+  outline-offset: 0.5rem;
+  text-decoration: none;
+}
+.tabcordion .tabcordion-tabs .tabcordion-tab a:hover {
+  outline: none;
+  text-decoration: none;
+}
+.tabcordion .tabcordion-tabs .tabcordion-tab.is-active a {
+  background-color: #fff;
+  margin-bottom: -1px;
+  padding-bottom: 13px;
+}
+.tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab a {
+  background-color: #685ac0;
+  color: #ffffff;
+  border-radius: 0;
+  margin-bottom: 2px;
+  padding-bottom: 10px;
+  border-color: #685ac0;
+  transition: background 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+}
+.tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab.is-active a {
+  background-color: #fff;
+  color: #0d0d0d;
+  margin-bottom: -1px;
+  padding-bottom: 13px;
+  border-color: #c6c5cb;
+}
+.tabcordion .tabcordion-body-header {
+  display: block;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+  border-bottom: 1px solid #c6c5cb;
+}
+.tabcordion .tabcordion-body-header:last-child {
+  border-bottom: 0 none;
+}
+@media (min-width: 768px) {
+  .tabcordion .tabcordion-body-header {
+    display: none;
+    border-bottom: 0 none;
+  }
+}
+.tabcordion-accordion.tabcordion .tabcordion-body-header {
   display: block;
   border-bottom: 1px solid #c6c5cb;
 }
-.tabcordion .tabcordion-body .collapsible-body .tabcordion-body-header .tabcordion-body-headline {
+.tabcordion .tabcordion-body-header .tabcordion-body-headline {
   display: block;
-  padding: 12px;
+  padding: 13px 18px;
   color: #0d0d0d;
+  position: relative;
 }
-.tabcordion .tabcordion-body .collapsible-body .tabcordion-body-header .tabcordion-body-headline:focus {
+.tabcordion .tabcordion-body-header .tabcordion-body-headline:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 23px;
+  right: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 8px solid #0d0d0d;
+  border-top-style: solid;
+  border-right: 7px solid transparent;
+  border-bottom: none;
+  border-left: 7px solid transparent;
+  z-index: 1;
+}
+.tabcordion .tabcordion-body-header .tabcordion-body-headline:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 6px solid #0d0d0d;
+  border-right: 5px solid transparent;
+  border-bottom: none;
+  border-left: 5px solid transparent;
+  z-index: 2;
+  transition: border 0.3s ease;
+}
+.tabcordion .tabcordion-body-header .tabcordion-body-headline:focus {
   outline: 2px dotted #000;
   outline-offset: 0.5rem;
 }
-.tabcordion .tabcordion-body .collapsible-body .tabcordion-body-header .tabcordion-body-headline:hover {
+.tabcordion .tabcordion-body-header .tabcordion-body-headline:hover {
   outline: none;
+  text-decoration: none;
+}
+.tabcordion .tabcordion-body-header.is-active {
+  border-bottom: 0 none;
+}
+.tabcordion .tabcordion-body-header.is-active:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  left: 42px;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 16px solid #c6c5cb;
+  border-top-style: solid;
+  border-right: 12px solid transparent;
+  border-bottom: none;
+  border-left: 12px solid transparent;
+  z-index: 1;
+}
+.tabcordion .tabcordion-body-header.is-active:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -15px;
+  left: 42px;
+  display: inline-block;
+  vertical-align: middle;
+  border-top: 16px solid #fff;
+  border-right: 12px solid transparent;
+  border-bottom: none;
+  border-left: 12px solid transparent;
+  z-index: 2;
+}
+.tabcordion .tabcordion-body-header.is-active .tabcordion-body-headline:after {
+  border-top-color: #fff;
+}
+.tabcordion-lego.tabcordion .tabcordion-body-header {
+  transition: border 0.3s ease;
+}
+.tabcordion-lego.tabcordion .tabcordion-body-header.is-active {
+  border-left: 12px solid #685ac0;
+}
+.tabcordion-lego.tabcordion .tabcordion-body-header.is-active:before,
+.tabcordion-lego.tabcordion .tabcordion-body-header.is-active:after {
+  display: none;
+}
+.tabcordion .collapsible-body {
+  position: relative;
+  z-index: 1;
+}
+.tabcordion .collapsible-body .tabcordion-body {
+  border-top: 1px solid #c6c5cb;
+  border-bottom: 1px solid #c6c5cb;
+  padding: 30px 18px;
+}
+@media (min-width: 768px) {
+  .tabcordion .collapsible-body .tabcordion-body {
+    border-right: 1px solid #c6c5cb;
+    border-left: 1px solid #c6c5cb;
+  }
+}
+.tabcordion-accordion.tabcordion .collapsible-body .tabcordion-body {
+  border-right: 0 none;
+  border-left: 0 none;
+}
+.tabcordion-tabs.tabcordion .collapsible-body .tabcordion-body {
+  border-right: 1px solid #c6c5cb;
+  border-left: 1px solid #c6c5cb;
+}
+.tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
+  border-top: 0 none;
+  padding-left: 30px;
+}
+@media (min-width: 768px) {
+  .tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
+    border-top: 1px solid #c6c5cb;
+    padding-left: 18px;
+  }
+}
+.tabcordion-accordion.tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
+  border-top: 0 none;
+  padding-left: 30px;
+}
+.tabcordion-tabs.tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
+  border-top: 1px solid #c6c5cb;
+  padding-left: 18px;
 }
