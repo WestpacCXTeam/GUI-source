@@ -59,9 +59,10 @@ module.exports = function(grunt) {
 	grunt.registerTask('buildIndex', 'Build an index html file to mapp all modules for gh-pages.', function() {
 
 		var replace = {};
-		var replaceStr = '<ul class="gui-list">' + "\n";
+		var replaceStr = '<h2>Modules</h2><ul class="gui-list">' + "\n";
 		var GUI = {};
 		var oldCategory = '';
+		var categories = '<h2>Categories</h2><ul class="category-list">';
 
 
 		//build GUI.json
@@ -89,7 +90,9 @@ module.exports = function(grunt) {
 			GUI[category].forEach(function iterateModules( module ) {
 
 				if( oldCategory !== category ) {
-					replaceStr += '	<li class="category"><small>[' + category + ']</small></li>';
+					replaceStr += '	<li class="category" id="' + module.ID + '"><small>[' + category + ']</small></li>';
+
+					categories += '<li><a href="#' + module.ID + '">' + category + '</a></li>';
 				}
 
 				replaceStr += '	<li class="module"><div class="module-wrapper">';
@@ -99,11 +102,11 @@ module.exports = function(grunt) {
 					var subdir = './' + module.ID + '/' + version + '/tests/';
 
 					//add versioning to files
-					replaceStr += "\n" + '		<h2 class="module-headline">' + module.name +
-						' <small class="description">(' + module.description + ')</small></h2>' + "\n" +
+					replaceStr += "\n" + '		<h3 class="module-headline">' + module.name +
+						' <small class="description">(' + module.description + ')</small></h3>' + "\n" +
 						'		<ul class="gui-list-version">' + "\n" +
 						'			<li>' + "\n" +
-						'				<h3 class="version-headline">v' + version + '</h3>' + "\n" +
+						'				<h4 class="version-headline">v' + version + '</h4>' + "\n" +
 						'				<ul class="gui-list-version-brand">' + "\n" +
 						'					<li><a class="brand-link brand-link-bom" href="' + subdir + 'BOM/">BOM</a></li>' + "\n" +
 						'					<li><a class="brand-link brand-link-bsa" href="' + subdir + 'BSA/">BSA</a></li>' + "\n" +
@@ -123,6 +126,7 @@ module.exports = function(grunt) {
 		});
 
 		replaceStr += '</ul>';
+		categories += '</ul>';
 
 
 		//writing out GUI.json
@@ -138,7 +142,7 @@ module.exports = function(grunt) {
 			overwrite: false,
 			replacements: [{
 				from: '[Modules]',
-				to: replaceStr,
+				to: ( categories + replaceStr ),
 			}],
 		};
 
