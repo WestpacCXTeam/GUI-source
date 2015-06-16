@@ -593,8 +593,8 @@ a:hover {
   font-family: "stag", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,
