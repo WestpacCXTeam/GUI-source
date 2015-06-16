@@ -42,15 +42,31 @@
 
 
 	//////////////////////////////////////| SKIP LINKS
-	.sr-only-focusable {
+	.sr-skiplink {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		padding: 0;
+		overflow: hidden;
+		clip: rect(0,0,0,0);
+		border: 0;
+		font-size: 21px;
+
 		&:active,
 		&:focus {
-			position: absolute;
-			width: auto;
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
 			height: auto;
+			width: auto;
 			margin: 0;
+			padding: 21px;
 			overflow: visible;
 			clip: auto;
+			text-align: center;
+			z-index: 100;
 		}
 	}
 }
