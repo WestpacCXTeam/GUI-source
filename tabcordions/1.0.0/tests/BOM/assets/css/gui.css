@@ -587,8 +587,8 @@ a:hover {
   font-family: "stag", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,
@@ -1689,18 +1689,25 @@ html {
 .tabcordion {
   border: 1px solid #c6c5cb;
   border-bottom: 0 none;
+  border-radius: 3px;
 }
 @media (min-width: 768px) {
   .tabcordion {
     border: 0 none;
+    border-radius: 0;
   }
 }
 .tabcordion-tabs.tabcordion {
   border: 0 none;
+  border-radius: 0;
 }
 .tabcordion-accordion.tabcordion {
   border: 1px solid #c6c5cb;
   border-bottom: 0 none;
+  border-radius: 3px;
+}
+.tabcordion-lego.tabcordion {
+  border-radius: 0;
 }
 .tabcordion .tabcordion-tabs {
   display: none;
@@ -1724,15 +1731,16 @@ html {
 }
 .tabcordion .tabcordion-tabs .tabcordion-tab {
   display: table-cell;
-  text-align: center;
+  text-align: left;
   padding-left: 2px;
+  line-height: 1.2;
 }
 .tabcordion .tabcordion-tabs .tabcordion-tab:first-child {
   padding-left: 0;
 }
 .tabcordion .tabcordion-tabs .tabcordion-tab a {
   display: inline-block;
-  padding: 13px 18px 12px 18px;
+  padding: 14px 18px 14px 18px;
   color: #0d0d0d;
   background-color: #f8f8f8;
   border: 1px solid #c6c5cb;
@@ -1750,26 +1758,30 @@ html {
 .tabcordion .tabcordion-tabs .tabcordion-tab a:hover {
   outline: none;
   text-decoration: none;
+  background-color: #f1f1f2;
 }
 .tabcordion .tabcordion-tabs .tabcordion-tab.is-active a {
   background-color: #fff;
   margin-bottom: -1px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 }
 .tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab a {
   background-color: #685ac0;
   color: #ffffff;
   border-radius: 0;
   margin-bottom: 2px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   border-color: #685ac0;
   transition: background 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+}
+.tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab a:hover {
+  background-color: #958cd3;
 }
 .tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab.is-active a {
   background-color: #fff;
   color: #0d0d0d;
   margin-bottom: -1px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
   border-color: #c6c5cb;
 }
 .tabcordion .tabcordion-body-header {
@@ -1794,15 +1806,17 @@ html {
 }
 .tabcordion .tabcordion-body-header .tabcordion-body-headline {
   display: block;
-  padding: 13px 18px;
+  padding: 13px 36px 13px 18px;
   color: #0d0d0d;
   position: relative;
+  transition: 0.3s ease;
+  background-color: #f8f8f8;
 }
 .tabcordion .tabcordion-body-header .tabcordion-body-headline:before {
   content: " ";
   display: block;
   position: absolute;
-  top: 23px;
+  top: 19px;
   right: 12px;
   display: inline-block;
   vertical-align: middle;
@@ -1817,7 +1831,7 @@ html {
   content: " ";
   display: block;
   position: absolute;
-  top: 24px;
+  top: 20px;
   right: 14px;
   display: inline-block;
   vertical-align: middle;
@@ -1831,9 +1845,14 @@ html {
 .tabcordion .tabcordion-body-header .tabcordion-body-headline:focus {
   outline: 2px dotted #000;
   outline-offset: 0.5rem;
+  text-decoration: none;
 }
 .tabcordion .tabcordion-body-header .tabcordion-body-headline:hover {
   outline: none;
+  text-decoration: none;
+  background-color: #f1f1f2;
+}
+.tabcordion .tabcordion-body-header .tabcordion-body-headline:active {
   text-decoration: none;
 }
 .tabcordion .tabcordion-body-header.is-active {
@@ -1862,20 +1881,30 @@ html {
   left: 42px;
   display: inline-block;
   vertical-align: middle;
-  border-top: 16px solid #fff;
+  border-top: 16px solid #f8f8f8;
   border-right: 12px solid transparent;
   border-bottom: none;
   border-left: 12px solid transparent;
   z-index: 2;
+}
+.tabcordion .tabcordion-body-header.is-active .tabcordion-body-headline:hover {
+  background-color: #f8f8f8;
 }
 .tabcordion .tabcordion-body-header.is-active .tabcordion-body-headline:after {
   border-top-color: #fff;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header {
   transition: border 0.3s ease;
+  border-left: 12px solid #c6c5cb;
+}
+.tabcordion-lego.tabcordion .tabcordion-body-header .tabcordion-body-headline {
+  padding-left: 12px;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header.is-active {
-  border-left: 12px solid #685ac0;
+  border-left-color: #685ac0;
+}
+.tabcordion-lego.tabcordion .tabcordion-body-header.is-active .tabcordion-body-headline {
+  background-color: #fff;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header.is-active:before,
 .tabcordion-lego.tabcordion .tabcordion-body-header.is-active:after {
@@ -1888,7 +1917,7 @@ html {
 .tabcordion .collapsible-body .tabcordion-body {
   border-top: 1px solid #c6c5cb;
   border-bottom: 1px solid #c6c5cb;
-  padding: 30px 18px;
+  padding: 24px 3.22%;
 }
 @media (min-width: 768px) {
   .tabcordion .collapsible-body .tabcordion-body {
@@ -1906,21 +1935,23 @@ html {
 }
 .tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
   border-top: 0 none;
-  padding-left: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 @media (min-width: 768px) {
   .tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
     border-top: 1px solid #c6c5cb;
-    padding-left: 18px;
+    padding-left: 3.22%;
   }
 }
 .tabcordion-accordion.tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
   border-top: 0 none;
-  padding-left: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .tabcordion-tabs.tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
   border-top: 1px solid #c6c5cb;
-  padding-left: 18px;
+  padding-left: 3.22%;
 }
 @media print {
   .tabcordion .tabcordion-body-header.is-active:before {
