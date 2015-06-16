@@ -1890,3 +1890,8 @@ html {
   border-top: 1px solid #c2c2c2;
   padding-left: 18px;
 }
+@media print {
+  .tabcordion .tabcordion-body-header.is-active:before {
+    border-top-color: #000;
+  }
+}
