@@ -69,18 +69,27 @@
 	.tabcordion {
 		border: 1px solid @color-Border;
 		border-bottom: 0 none;
+		border-radius: 3px;
 
 		@media (min-width: @screen-sm) {
 			border: 0 none;
+			border-radius: 0;
 		}
 
 		.tabcordion-tabs& {
 			border: 0 none;
+			border-radius: 0;
 		}
 
 		.tabcordion-accordion& {
 			border: 1px solid @color-Border;
 			border-bottom: 0 none;
+			border-radius: 3px;
+		}
+
+		//LEGO STYLE
+		.tabcordion-lego& {
+			border-radius: 0;
 		}
 
 		//tabs
@@ -95,6 +104,8 @@
 
 			@media (min-width: @screen-sm) {
 				display: table;
+				// display: flex;
+				// align-items: stretch;
 
 				&.tabcordion-tabs-justified {
 					width: 100%;
@@ -103,12 +114,16 @@
 
 			.tabcordion-tabs& {
 				display: table;
+				// display: flex;
+				// align-items: stretch;
 			}
 
 			.tabcordion-tab {
 				display: table-cell;
-				text-align: center;
+				// display: flex;
+				text-align: left;
 				padding-left: 2px;
+				line-height: 1.2;
 
 				&:first-child {
 					padding-left: 0;
@@ -116,7 +131,7 @@
 
 				a {
 					display: inline-block;
-					padding: 13px 18px 12px 18px;
+					padding: 14px 18px 14px 18px;
 					color: @color-Text;
 					background-color: @color-J;
 					border: 1px solid @color-Border;
@@ -134,13 +149,14 @@
 					&:hover {
 						outline: none;
 						text-decoration: none;
+						background-color: @color-Background;
 					}
 				}
 
 				&.is-active a {
 					background-color: #fff;
 					margin-bottom: -1px;
-					padding-bottom: 13px;
+					padding-bottom: 15px;
 				}
 			}
 
@@ -151,16 +167,20 @@
 					color: @font-color;
 					border-radius: 0;
 					margin-bottom: 2px;
-					padding-bottom: 10px;
+					padding-bottom: 12px;
 					border-color: @color-B;
 					transition: background 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+
+					&:hover {
+						background-color: @color-B-70;
+					}
 				}
 
 				.tabcordion-tab.is-active a {
 					background-color: #fff;
 					color: @color-Text;
 					margin-bottom: -1px;
-					padding-bottom: 13px;
+					padding-bottom: 15px;
 					border-color: @color-Border;
 				}
 			}
@@ -190,15 +210,17 @@
 
 			.tabcordion-body-headline {
 				display: block;
-				padding: 13px 18px;
+				padding: 13px 36px 13px 18px;
 				color: @color-Text;
 				position: relative;
+				transition: 0.3s ease;
+				background-color: @color-J;
 
 				&:before {
 					content: " ";
 					display: block;
 					position: absolute;
-					top: 23px;
+					top: 19px;
 					right: 12px;
 					display: inline-block;
 					vertical-align: middle;
@@ -214,7 +236,7 @@
 					content: " ";
 					display: block;
 					position: absolute;
-					top: 24px;
+					top: 20px;
 					right: 14px;
 					display: inline-block;
 					vertical-align: middle;
@@ -228,10 +250,16 @@
 
 				&:focus {
 					.outline();
+					text-decoration: none;
 				}
 
 				&:hover {
 					outline: none;
+					text-decoration: none;
+					background-color: @color-Background;
+				}
+
+				&:active {
 					text-decoration: none;
 				}
 			}
@@ -264,24 +292,39 @@
 					left: 42px;
 					display: inline-block;
 					vertical-align: middle;
-					border-top: 16px solid #fff;
+					border-top: 16px solid @color-J;
 					border-right: 12px solid transparent;
 					border-bottom: none;
 					border-left: 12px solid transparent;
 					z-index: 2;
 				}
 
-				.tabcordion-body-headline:after {
-					border-top-color: #fff;
+				.tabcordion-body-headline {
+					&:hover {
+						background-color: @color-J;
+					}
+
+					&:after {
+						border-top-color: #fff;
+					}
 				}
 			}
 
 			//LEGO STYLE
 			.tabcordion-lego& {
 				transition: border 0.3s ease;
+				border-left: 12px solid @color-Border;
+
+				.tabcordion-body-headline {
+					padding-left: 12px;
+				}
 
 				&.is-active {
-					border-left: 12px solid @color-B;
+					border-left-color: @color-B;
+
+					.tabcordion-body-headline {
+						background-color: #fff;
+					}
 
 					&:before,
 					&:after {
@@ -299,7 +342,7 @@
 			.tabcordion-body {
 				border-top: 1px solid @color-Border;
 				border-bottom: 1px solid @color-Border;
-				padding: 30px 18px;
+				padding: 24px 3.22%;
 
 				@media (min-width: @screen-sm) {
 					border-right: 1px solid @color-Border;
@@ -322,21 +365,23 @@
 			.tabcordion-lego& {
 				.tabcordion-body {
 					border-top: 0 none;
-					padding-left: 30px;
+					padding-left: 24px;
+					padding-right: 24px;
 
 					@media (min-width: @screen-sm) {
 						border-top: 1px solid @color-Border;
-						padding-left: 18px;
+						padding-left: 3.22%;
 					}
 
 					.tabcordion-accordion& {
 						border-top: 0 none;
-						padding-left: 30px;
+						padding-left: 24px;
+						padding-right: 24px;
 					}
 
 					.tabcordion-tabs& {
 						border-top: 1px solid @color-Border;
-						padding-left: 18px;
+						padding-left: 3.22%;
 					}
 				}
 			}
