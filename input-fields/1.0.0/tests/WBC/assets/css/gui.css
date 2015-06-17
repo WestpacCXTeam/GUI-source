@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -561,8 +561,8 @@ a:hover {
   font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,
@@ -1636,7 +1636,7 @@ a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   color: #2d373e;
   background-color: #fff;
   border: 1px solid #d7d2cb;
@@ -1702,7 +1702,7 @@ textarea.input-field-sm .input-field {
 }
 .input-field-select-wrapper:after {
   position: absolute;
-  top: 45%;
+  top: 44%;
   right: 12px;
   z-index: 0;
   content: " ";
@@ -1725,7 +1725,7 @@ textarea.input-field-sm .input-field {
   border: none;
   color: #2d373e;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   padding: 6px 36px 6px 8px;
   border: 1px solid #d7d2cb;
   border-radius: 3px;
