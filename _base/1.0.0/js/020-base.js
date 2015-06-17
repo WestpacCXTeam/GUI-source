@@ -1,7 +1,9 @@
 /*![Module-Version]*/
 /***************************************************************************************************************************************************************
  *
- * Westpac GUI framework and settings
+ * Westpac GUI framework
+ *
+ * This base includes a debugging console and debounce and throttle functions.
  *
  **************************************************************************************************************************************************************/
 
@@ -20,10 +22,16 @@ var GUI = (function guiInit() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// Initiate GUI
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		init: function guiInit() {
+		init: function GuiInit() {
+			if( !window.console ) { //removing console.log from IE8
+				console = {
+					log: function() {}
+				};
+			}
+
 			if( GUI.DEBUG ) console.log('%cDEBUGGING INFORMATION', 'font-size: 25px;');
 
-			//remove fallback HTML
+			//remove fallback HTML class
 			$('html')
 				.removeClass('no-js')
 				.addClass('js');
@@ -34,9 +42,11 @@ var GUI = (function guiInit() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debounce function by _underscore.js
 		//
-		// func       [function]  Function to be executed
-		// wait       [integer]   Wait for next iteration for n in milliseconds
-		// immediate  [boolean]   Trigger the function on the leading edge, instead of the trailing
+		// @param   func       [function]  Function to be executed
+		// @param   wait       [integer]   Wait for next iteration for n in milliseconds
+		// @param   immediate  [boolean]   Trigger the function on the leading edge [true], instead of the trailing [false]
+		//
+		// @return  [function]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		debounce: function Debounce(func, wait, immediate) {
 			GUI.debugging( 'Base: Debounce called', 'report' );
@@ -70,10 +80,46 @@ var GUI = (function guiInit() {
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		// throttle function
+		//
+		// @param   func       [function]  Function to be executed
+		// @param   wait       [integer]   Run as much as possible without ever going more than once per [n in milliseconds] duration
+		//
+		// @return  [function]
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		throttle: function Throttle(func, wait) {
+			wait || (wait = 250);
+			var last;
+			var deferTimer;
+
+			return function() {
+				var context = this;
+				var now = +new Date;
+				var args = arguments;
+
+				if(last && now < last + wait) {
+					clearTimeout(deferTimer);
+
+					deferTimer = setTimeout(function() {
+						last = now;
+						func.apply(context, args);
+					}, wait);
+				}
+				else {
+					last = now;
+					func.apply(context, args);
+				}
+			};
+		},
+
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debugging prettiness
 		//
-		// text  [string]  Text to be printed to debugger
-		// code  [string]  The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
+		// @param   text  [string]  Text to be printed to debugger
+		// @param   code  [string]  The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
+		//
+		// @return  [none]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		debugging: function Debug( text, code ) {
 
