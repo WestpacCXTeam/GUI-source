@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -561,8 +561,8 @@ a:hover {
   font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,
@@ -1650,13 +1650,13 @@ a:hover {
 .input-group .input-group-input,
 .input-group .input-group-addon {
   color: #2d373e;
+  font-weight: 400;
 }
 .input-group .input-group-input {
   -webkit-appearance: none;
   border-radius: 0;
   border: 0 none;
   font-size: 16px;
-  font-weight: 300;
   padding: 8px;
   vertical-align: middle;
   border: 1px solid #d7d2cb;
@@ -1719,9 +1719,10 @@ a:hover {
   padding: 5px 10px;
 }
 .input-group.input-group-sm .input-group-addon {
-  padding: 6px;
+  padding: 4px 6px;
 }
 .input-group.input-group-sm .input-group-input,
 .input-group.input-group-sm .input-group-addon {
   height: 30px;
+  font-size: 14px;
 }

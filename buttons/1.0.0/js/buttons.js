@@ -3,7 +3,7 @@
  *
  * buttons
  *
- * Description of module
+ * JS for toggling dropdown classes, aria-hidden attr and ESC button listener
  *
  **************************************************************************************************************************************************************/
 
@@ -15,9 +15,11 @@
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// private function: open / close a dropdown
 	//
-	// _isOpen  [boolen]         Whether to open or close the dropdown
-	// $parent  [jquery object]  The parent element
-	// $menu    [jquery object]  The dropdown menu element
+	// @param   _isOpen  [boolen]         Whether to open or close the dropdown
+	// @param   $parent  [jquery object]  The parent element
+	// @param   $menu    [jquery object]  The dropdown menu element
+	//
+	// @return  [none]
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	function toggelDropdown(_isOpen, $parent, $menu) {
 		GUI.debugging( 'buttons: ' + ( _isOpen ? 'Closing' : 'Opening' ) + ' dropdown menu', 'report' );
