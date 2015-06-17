@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -590,8 +590,8 @@ a:hover {
   font-family: "stag", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,
@@ -1646,7 +1646,7 @@ a:hover {
 /*
  * buttons mixins
  *
- * doc comment with stuff and stuff
+ * Button styls for btn, block btn, btn groups and dropdown btn
  *
  */
 /*
@@ -1669,7 +1669,7 @@ a:hover {
   padding: 6px 12px;
   border-radius: 6px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   white-space: nowrap;
   display: inline-block;
   text-align: center;
