@@ -17,8 +17,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
 
-	<title>Testing the GUI</title>
 	<link rel="stylesheet" href="_base/1.0.0/tests/WBC/assets/css/gui.css">
+
+	<title>Testing the GUI</title>
 
 	<style>
 		header {
@@ -58,8 +59,42 @@
 			border-radius: 3px;
 		}
 
-		.modules {
+		.category {
+			display: inline-block;
+			width: 100%;
+			border-top: 4px dotted #d7d2cb;
+			margin-top: 84px;
+			clear: both;
+		}
+
+		.category:first-child() {
+			border: 0 none;
+			margin: 0;
+		}
+
+		.module {
+			float: left;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		@media (min-width: 768px) {
+			.module {
+				width: 50%;
+			}
+		}
+
+		.module-headline {
 			margin-top: 0;
+		}
+
+		.module-wrapper {
+			padding: 12px;
+			margin: 12px;
+			background-color: #f4f3f0;
+			border: 1px solid #d7d2cb;
+			border-radius: 3px;
 		}
 
 		.description {
@@ -67,40 +102,43 @@
 			font-family: Helvetica;
 			font-weight: normal;
 			color: #575f65;
+			display: block;
+			margin-top: 3px;
+		}
+
+		.category-list {
+			list-style: none;
+			padding: 0;
+			margin-bottom: 60px;
+		}
+
+		.category-list li {
+			display: inline-block;
+			margin-right: 12px;
 		}
 
 		.gui-list {
 			list-style: none;
 			padding: 0;
 			overflow: hidden;
+			margin-top: -80px;
 		}
 
-		.gui-list > li {
-			float: left;
-			width: 50%;
-			padding: 0;
-			margin: 0;
-		}
-
-		.gui-list > li.category {
-			width: 100%;
-		}
-
-		.gui-list > li > ul {
+		.gui-list-version {
 			list-style: none;
 		}
 
-		.gui-list > li > ul > li > h3 {
+		.version-headline {
 			display: inline-block;
 		}
 
-		.gui-list > li > ul > li > ul {
+		.gui-list-version-brand {
 			list-style: none;
 			display: inline-block;
 			padding: 0 5px;
 		}
 
-		.gui-list > li > ul > li > ul > li {
+		.gui-list-version-brand > li {
 			display: inline-block;
 			padding: 0 5px;
 		}
@@ -108,7 +146,7 @@
 		.brand-link {
 			display: inline-block;
 			padding: 6px 6px 0 6px;
-			border-bottom: 8px solid transparent;
+			border-bottom: 2px solid transparent;
 		}
 		.brand-link.brand-link-bom {
 			border-color: #685ac0;
@@ -152,13 +190,13 @@
 		</p>
 
 
-<ul class="gui-list">
-	<li class="category"><small>[_fixed]</small></li>	<li>
-		<h2 class="modules">_Base <small class="description">(Base styling and grid system)</small></h2>
-		<ul>
+<h2>Categories</h2><ul class="category-list"><li><a href="#_base">_fixed</a></li><li><a href="#alerts">Alerts</a></li></ul><h2>Modules</h2><ul class="gui-list">
+	<li class="category" id="_base"><small>[_fixed]</small></li>	<li class="module"><div class="module-wrapper">
+		<h3 class="module-headline">_Base <small class="description">(Base styling and grid system)</small></h3>
+		<ul class="gui-list-version">
 			<li>
-				<h3>v1.0.0</h3>
-				<ul>
+				<h4 class="version-headline">v1.0.0</h4>
+				<ul class="gui-list-version-brand">
 					<li><a class="brand-link brand-link-bom" href="./_base/1.0.0/tests/BOM/">BOM</a></li>
 					<li><a class="brand-link brand-link-bsa" href="./_base/1.0.0/tests/BSA/">BSA</a></li>
 					<li><a class="brand-link brand-link-stg" href="./_base/1.0.0/tests/STG/">STG</a></li>
@@ -166,13 +204,13 @@
 				</ul>
 			</li>
 		</ul>
-	</li>
-	<li class="category"><small>[Alerts]</small></li>	<li>
-		<h2 class="modules">Alerts <small class="description">(Alerts and contextual color classes)</small></h2>
-		<ul>
+	</div></li>
+	<li class="category" id="alerts"><small>[Alerts]</small></li>	<li class="module"><div class="module-wrapper">
+		<h3 class="module-headline">Alerts <small class="description">(Alerts and contextual color classes)</small></h3>
+		<ul class="gui-list-version">
 			<li>
-				<h3>v1.0.0</h3>
-				<ul>
+				<h4 class="version-headline">v1.0.0</h4>
+				<ul class="gui-list-version-brand">
 					<li><a class="brand-link brand-link-bom" href="./alerts/1.0.0/tests/BOM/">BOM</a></li>
 					<li><a class="brand-link brand-link-bsa" href="./alerts/1.0.0/tests/BSA/">BSA</a></li>
 					<li><a class="brand-link brand-link-stg" href="./alerts/1.0.0/tests/STG/">STG</a></li>
@@ -180,7 +218,7 @@
 				</ul>
 			</li>
 		</ul>
-	</li>
+	</div></li>
 </ul>
 
 	</main>
