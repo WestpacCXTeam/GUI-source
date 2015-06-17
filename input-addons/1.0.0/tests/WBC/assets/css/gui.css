@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -561,8 +561,8 @@ a:hover {
   font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,
@@ -1645,7 +1645,7 @@ a:hover {
 }
 .input-addon .input-addon-label .input-addon-input {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   border: 1px solid #d7d2cb;
   border-left: 0 none;
   padding: 8px;
@@ -1673,7 +1673,7 @@ a:hover {
 }
 .input-addon .input-addon-btn {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   -webkit-appearance: none;
   border: 0 none;
   padding: 8px;
@@ -1720,7 +1720,7 @@ a:hover {
 }
 .input-addon .input-addon-select-wrapper:after {
   position: absolute;
-  top: 45%;
+  top: 44%;
   right: 6px;
   z-index: 0;
   content: " ";
@@ -1743,7 +1743,7 @@ a:hover {
   border: none;
   color: #ffffff;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   padding: 7px 30px 8px 8px;
 }
 .input-addon .input-addon-select-wrapper .input-addon-select:focus {
@@ -1792,15 +1792,17 @@ a:hover {
 .input-addon.input-addon-sm .input-addon-label .input-addon-input,
 .input-addon.input-addon-sm .input-addon-btn {
   height: 30px;
-  padding: 3px 10px 3px 10px;
+  padding: 5px 10px 3px 10px;
   line-height: 1.5;
+  font-size: 14px;
 }
 .input-addon.input-addon-sm .input-addon-select-wrapper {
   height: 30px;
 }
 .input-addon.input-addon-sm .input-addon-select-wrapper .input-addon-select {
   height: 27px;
-  padding: 3px 30px 3px 8px;
+  padding: 5px 30px 3px 8px;
+  font-size: 14px;
 }
 @media print {
   .input-addon .input-addon-select-wrapper:after {
