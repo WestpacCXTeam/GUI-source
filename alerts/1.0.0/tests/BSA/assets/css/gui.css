@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -555,8 +555,8 @@ a:hover {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,
@@ -1611,7 +1611,7 @@ a:hover {
 /*
  * alerts mixins
  *
- * doc comment with stuff and stuff
+ * Callout moduls, lable addons and form validation colors
  *
  */
 /*!alerts v1.0.0 BSA*/

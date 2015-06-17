@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -583,8 +583,8 @@ a:hover {
   font-family: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,
@@ -1674,8 +1674,8 @@ a:hover {
   cursor: not-allowed;
 }
 .checkbox .checkbox-text {
-  font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.2;
   padding-left: 38px;
   min-height: 32px;
   display: inline-block;
