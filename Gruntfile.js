@@ -59,10 +59,13 @@ module.exports = function(grunt) {
 	grunt.registerTask('buildIndex', 'Build an index html file to mapp all modules for gh-pages.', function() {
 
 		var replace = {};
-		var replaceStr = '<ul class="gui-list">' + "\n";
+		var replaceStr = '<h2>Modules</h2><ul class="gui-list">' + "\n";
 		var GUI = {};
-		var category = '';
+		var oldCategory = '';
+		var categories = '<h2>Categories</h2><ul class="category-list">';
 
+
+		//build GUI.json
 		grunt.file.expand({ filter: 'isDirectory' }, [
 			'./*',
 			'!./node_modules',
@@ -70,41 +73,60 @@ module.exports = function(grunt) {
 			'!./.git',
 		]).forEach(function(dir) {
 
+			var newModule = {};
 			var module = grunt.file.readJSON( dir + '/' + 'module.json');
 
-			GUI[ module.category ] = module;
-
-			if( category !== module.category ) {
-				replaceStr += '	<li class="category"><small>[' + module.category + ']</small></li>';
+			if( typeof(GUI[ module.category ]) === 'undefined' ) {
+				GUI[ module.category ] = [];
 			}
 
-			replaceStr += '	<li>';
+			GUI[ module.category ].push( module );
+		});
 
-			Object.keys( module.versions ).forEach(function( version ) {
 
-					var subdir = dir + '/' + version;
+		//build index.html
+		Object.keys( GUI ).forEach(function iterateCategories( category ) {
+
+			GUI[category].forEach(function iterateModules( module ) {
+
+				if( oldCategory !== category ) {
+					replaceStr += '	<li class="category" id="' + module.ID + '"><small>[' + category + ']</small></li>';
+
+					categories += '<li><a href="#' + module.ID + '">' + category + '</a></li>';
+				}
+
+				replaceStr += '	<li class="module"><div class="module-wrapper">';
+
+				Object.keys( module.versions ).forEach(function interateVersions( version ) {
+
+					var subdir = './' + module.ID + '/' + version + '/tests/';
 
 					//add versioning to files
-					replaceStr += "\n" + '		<h2 class="modules">' + module.name + ' <small class="description">(' + module.description + ')</small></h2>' + "\n" +
-						'		<ul>' + "\n" +
+					replaceStr += "\n" + '		<h3 class="module-headline">' + module.name +
+						' <small class="description">(' + module.description + ')</small></h3>' + "\n" +
+						'		<ul class="gui-list-version">' + "\n" +
 						'			<li>' + "\n" +
-						'				<h3>v' + version + '</h3>' + "\n" +
-						'				<ul>' + "\n" +
-						'					<li><a class="brand-link brand-link-bom" href="' + subdir + '/tests/BOM/">BOM</a></li>' + "\n" +
-						'					<li><a class="brand-link brand-link-bsa" href="' + subdir + '/tests/BSA/">BSA</a></li>' + "\n" +
-						'					<li><a class="brand-link brand-link-stg" href="' + subdir + '/tests/STG/">STG</a></li>' + "\n" +
-						'					<li><a class="brand-link brand-link-wbc" href="' + subdir + '/tests/WBC/">WBC</a></li>' + "\n" +
+						'				<h4 class="version-headline">v' + version + '</h4>' + "\n" +
+						'				<ul class="gui-list-version-brand">' + "\n" +
+						'					<li><a class="brand-link brand-link-bom" href="' + subdir + 'BOM/">BOM</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-bsa" href="' + subdir + 'BSA/">BSA</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-stg" href="' + subdir + 'STG/">STG</a></li>' + "\n" +
+						'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'WBC/">WBC</a></li>' + "\n" +
 						'				</ul>' + "\n" +
 						'			</li>' + "\n" +
 						'		</ul>' + "\n";
-			});
 
-			replaceStr += '	</li>' + "\n";
-			category = module.category;
+					replaceStr += '	</div></li>' + "\n";
+				});
+
+				oldCategory = category;
+
+			});
 
 		});
 
 		replaceStr += '</ul>';
+		categories += '</ul>';
 
 
 		//writing out GUI.json
@@ -120,7 +142,7 @@ module.exports = function(grunt) {
 			overwrite: false,
 			replacements: [{
 				from: '[Modules]',
-				to: replaceStr,
+				to: ( categories + replaceStr ),
 			}],
 		};
 
