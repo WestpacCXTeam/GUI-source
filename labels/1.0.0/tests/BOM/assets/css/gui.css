@@ -1692,15 +1692,6 @@ a.label:focus {
   background-color: #b4ade0;
   color: #ffffff;
 }
-.label.label-faint {
-  background-color: #f1f1f2;
-  color: #0d0d0d;
-}
-.label.label-faint[href]:hover,
-.label.label-faint[href]:focus {
-  background-color: #bcbcc1;
-  color: #0d0d0d;
-}
 @media print {
   .label,
   .label.label-primary,

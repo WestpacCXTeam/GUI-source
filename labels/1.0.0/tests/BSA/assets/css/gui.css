@@ -1660,15 +1660,6 @@ a.label:focus {
   background-color: #9bafda;
   color: #ffffff;
 }
-.label.label-faint {
-  background-color: #ebebeb;
-  color: #333333;
-}
-.label.label-faint[href]:hover,
-.label.label-faint[href]:focus {
-  background-color: #b8b8b8;
-  color: #333333;
-}
 @media print {
   .label,
   .label.label-primary,
