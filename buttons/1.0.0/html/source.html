@@ -1,0 +1,600 @@
+<h2>buttons</h2>
+
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-hero">Hero</button>
+<button type="button" class="btn btn-neutral">Neutral</button>
+<button type="button" class="btn btn-faint">Faint</button>
+<button type="button" class="btn btn-link">Link button</button>
+
+<hr>
+<h2>soft buttons</h2>
+
+<button type="button" class="btn btn-primary btn-soft">Primary</button>
+<button type="button" class="btn btn-hero btn-soft">Hero</button>
+<button type="button" class="btn btn-neutral btn-soft">Neutral</button>
+<button type="button" class="btn btn-faint btn-soft">Faint</button>
+
+<hr>
+<h2>disabled buttons</h2>
+
+<button type="button" class="btn btn-primary" disabled>Primary</button>
+<button type="button" class="btn btn-hero" disabled>Hero</button>
+<button type="button" class="btn btn-neutral" disabled>Neutral</button>
+<button type="button" class="btn btn-faint" disabled>Faint</button>
+<button type="button" class="btn btn-primary btn-soft" disabled>Primary</button>
+<button type="button" class="btn btn-hero btn-soft" disabled>Hero</button>
+<button type="button" class="btn btn-neutral btn-soft" disabled>Neutral</button>
+<button type="button" class="btn btn-faint btn-soft" disabled>Faint</button>
+
+<hr>
+<h2>buttons with icons</h2>
+
+
+<style>
+	.icon-face-happy,
+	.symbol-face-happy { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23575f65%22%20class%3D%22icons-background%22%20d%3D%22M8%2011c0-1.1%200.9-2%202-2s2%200.9%202%202-0.9%202-2%202c-1.1%200-2-0.9-2-2zM20%2011c0%201.1%200.9%202%202%202s2-0.9%202-2-0.9-2-2-2c-1.1%200-2%200.9-2%202zM22%2019.6c-1.2%202-3.5%203.4-6%203.4s-4.8-1.4-6-3.4l-2.6%201.5c1.8%203%205%204.9%208.6%204.9s6.8-1.9%208.6-4.9l-2.6-1.5zM16%200c-8.8%200-16%207.2-16%2016s7.2%2016%2016%2016%2016-7.2%2016-16-7.2-16-16-16zM30%2016c0%207.7-6.3%2014-14%2014s-14-6.3-14-14%206.3-14%2014-14%2014%206.3%2014%2014z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
+	.icon {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+	}
+	.icon.icon-size-sm {
+		background-size: 16px 16px;
+		width: 16px;
+		height: 16px;
+	}
+	.icon.icon-size-sm svg {
+		width: 16px;
+		height: 16px;
+	}
+	.icon.icon-size-lg {
+		background-size: 64px 64px;
+		width: 64px;
+		height: 64px;
+	}
+	.icon.icon-size-lg svg {
+		width: 64px;
+		height: 64px;
+	}
+	a .icon svg,
+	a .icon .icons-background {
+		fill: #e30000;
+	}
+</style>
+
+<button type="button" class="btn btn-primary">
+	<span class="btn-text">Primary</span>
+	<span class="btn-icon icon icon-size-sm icon-face-happy"></span>
+</button>
+<button type="button" class="btn btn-hero">
+	<span class="btn-icon btn-icon-left icon icon-size-sm icon-face-happy"></span>
+	<span class="btn-text">Hero</span>
+</button>
+<button type="button" class="btn btn-neutral">
+	<span class="btn-text">Neutral</span>
+
+	<span class="btn-icon icon icon-size-sm icon-face-happy" data-grunticon-embed style="background: none;">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+			<path fill="#716f7d" class="icons-background" d="M8 11c0-1.1 0.9-2 2-2s2 0.9 2 2-0.9 2-2 2c-1.1 0-2-0.9-2-2zM20 11c0 1.1 0.9 2 2 2s2-0.9 2-2-0.9-2-2-2c-1.1 0-2 0.9-2 2zM22 19.6c-1.2 2-3.5 3.4-6 3.4s-4.8-1.4-6-3.4l-2.6 1.5c1.8 3 5 4.9 8.6 4.9s6.8-1.9 8.6-4.9l-2.6-1.5zM16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zM30 16c0 7.7-6.3 14-14 14s-14-6.3-14-14 6.3-14 14-14 14 6.3 14 14z"></path>
+		</svg>
+	</span>
+</button>
+<button type="button" class="btn btn-faint">
+
+	<span class="btn-icon btn-icon-left icon icon-size-sm icon-face-happy" data-grunticon-embed style="background: none;">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+			<path fill="#716f7d" class="icons-background" d="M8 11c0-1.1 0.9-2 2-2s2 0.9 2 2-0.9 2-2 2c-1.1 0-2-0.9-2-2zM20 11c0 1.1 0.9 2 2 2s2-0.9 2-2-0.9-2-2-2c-1.1 0-2 0.9-2 2zM22 19.6c-1.2 2-3.5 3.4-6 3.4s-4.8-1.4-6-3.4l-2.6 1.5c1.8 3 5 4.9 8.6 4.9s6.8-1.9 8.6-4.9l-2.6-1.5zM16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zM30 16c0 7.7-6.3 14-14 14s-14-6.3-14-14 6.3-14 14-14 14 6.3 14 14z"></path>
+		</svg>
+	</span>
+
+	<span class="btn-text">Faint</span>
+</button>
+
+<hr>
+<h2>button sizes</h2>
+
+<p>
+	<button type="button" class="btn btn-primary btn-xl">Primary</button>
+	<button type="button" class="btn btn-primary btn-lg">Primary</button>
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-primary btn-sm">Primary</button>
+</p>
+
+<p>
+	<button type="button" class="btn btn-hero btn-xl">Hero</button>
+	<button type="button" class="btn btn-hero btn-lg">Hero</button>
+	<button type="button" class="btn btn-hero">Hero</button>
+	<button type="button" class="btn btn-hero btn-sm">Hero</button>
+</p>
+
+<p>
+	<button type="button" class="btn btn-neutral btn-xl">Neutral</button>
+	<button type="button" class="btn btn-neutral btn-lg">Neutral</button>
+	<button type="button" class="btn btn-neutral">Neutral</button>
+	<button type="button" class="btn btn-neutral btn-sm">Neutral</button>
+</p>
+
+<p>
+	<button type="button" class="btn btn-faint btn-xl">Faint</button>
+	<button type="button" class="btn btn-faint btn-lg">Faint</button>
+	<button type="button" class="btn btn-faint">Faint</button>
+	<button type="button" class="btn btn-faint btn-sm">Faint</button>
+</p>
+
+<hr>
+<h2>block buttons</h2>
+
+<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-hero btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-neutral btn-lg btn-block">Block level button</button>
+<button type="button" class="btn btn-faint btn-lg btn-block">Block level button</button>
+
+<hr>
+<h2>button-groups toggle</h2>
+
+<div class="btn-group">
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options">
+		<span class="btn-group-text btn btn-primary">Left</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options">
+		<span class="btn-group-text btn btn-primary">Middle</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options">
+		<span class="btn-group-text btn btn-primary">Right</span>
+	</label>
+
+</div>
+
+
+<hr>
+<h2>button-groups sizing</h2>
+
+<div class="btn-group">
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options1">
+		<span class="btn-group-text btn btn-primary btn-xl">Left</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options1">
+		<span class="btn-group-text btn btn-primary btn-xl">Middle</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options1">
+		<span class="btn-group-text btn btn-primary btn-xl">Right</span>
+	</label>
+
+</div>
+
+
+<div class="btn-group">
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options2">
+		<span class="btn-group-text btn btn-hero btn-lg">Left</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options2">
+		<span class="btn-group-text btn btn-hero btn-lg">Middle</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options2">
+		<span class="btn-group-text btn btn-hero btn-lg">Right</span>
+	</label>
+
+</div>
+
+
+<div class="btn-group">
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options3">
+		<span class="btn-group-text btn btn-neutral">Left</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options3">
+		<span class="btn-group-text btn btn-neutral">Middle</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options3">
+		<span class="btn-group-text btn btn-neutral">Right</span>
+	</label>
+
+</div>
+
+
+<div class="btn-group">
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options4">
+		<span class="btn-group-text btn btn-faint btn-sm">Left</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options4">
+		<span class="btn-group-text btn btn-faint btn-sm">Middle</span>
+	</label>
+
+	<label class="btn-group-item">
+		<input class="btn-group-input" type="radio" name="options4">
+		<span class="btn-group-text btn btn-faint btn-sm">Right</span>
+	</label>
+
+</div>
+
+
+<hr>
+<h2>dropdown buttons</h2>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-primary js-button-dropdown">
+		<span class="btn-dropdown-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li class="dropdown-menu-headline">Headline 1</li>
+		<li><a href="#url">Link 1</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li class="dropdown-menu-headline">Headline 2</li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li class="dropdown-menu-divider"><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Last link</a></li>
+	</ul>
+</div>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-primary btn-soft js-button-dropdown">
+		<span class="btn-dropdown-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li class="dropdown-menu-headline">Headline 1</li>
+		<li><a href="#url">Link 1</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li class="dropdown-menu-headline">Headline 2</li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li class="dropdown-menu-divider"><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Another link</a></li>
+		<li><a href="#url">Last link</a></li>
+	</ul>
+</div>
+
+
+<hr>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-hero js-button-dropdown">
+		<span class="btn-dropdown-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><button class="btn btn-link">Action 1</button></li>
+		<li><button class="btn btn-link">Another action</button></li>
+		<li class="dropdown-menu-divider"><button class="btn btn-link">Action 3</button></li>
+		<li><button class="btn btn-link">Last action</button></li>
+	</ul>
+</div>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-hero btn-soft js-button-dropdown">
+		<span class="btn-dropdown-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><button class="btn btn-link">Action 1</button></li>
+		<li><button class="btn btn-link">Another action</button></li>
+		<li class="dropdown-menu-divider"><button class="btn btn-link">Action 3</button></li>
+		<li><button class="btn btn-link">Last action</button></li>
+	</ul>
+</div>
+
+
+<hr>
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-neutral js-button-dropdown">
+		<span class="btn-dropdown-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>
+			<div class="btn-dropdown-setting">
+				<span class="btn-dropdown-text">Setting 1</span>
+
+				<div class="btn-group">
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options5">
+						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+					</label>
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options5">
+						<span class="btn-group-text btn btn-hero btn-sm">No</span>
+					</label>
+
+				</div>
+			</div>
+
+		</li>
+		<li class="dropdown-menu-divider">
+			<div class="btn-dropdown-setting">
+				<span class="btn-dropdown-text">Setting 2</span>
+
+				<div class="btn-group">
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options6">
+						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+					</label>
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options6">
+						<span class="btn-group-text btn btn-hero btn-sm">No</span>
+					</label>
+
+				</div>
+			</div>
+
+		</li>
+		<li>
+			<div class="btn-dropdown-setting">
+				<span class="btn-dropdown-text">Setting 3</span>
+
+				<div class="btn-group">
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options7">
+						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+					</label>
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options7">
+						<span class="btn-group-text btn btn-hero btn-sm">No</span>
+					</label>
+
+				</div>
+			</div>
+
+		</li>
+		<li>
+			<div class="btn-dropdown-setting">
+				<span class="btn-dropdown-text">Setting 4</span>
+
+				<div class="btn-group">
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options8">
+						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+					</label>
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options8">
+						<span class="btn-group-text btn btn-hero btn-sm">No</span>
+					</label>
+
+				</div>
+			</div>
+
+		</li>
+	</ul>
+</div>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-neutral btn-soft js-button-dropdown">
+		<span class="btn-dropdown-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>
+			<div class="btn-dropdown-setting">
+				<span class="btn-dropdown-text">Setting 1</span>
+
+				<div class="btn-group">
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options5">
+						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+					</label>
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options5">
+						<span class="btn-group-text btn btn-hero btn-sm">No</span>
+					</label>
+
+				</div>
+			</div>
+
+		</li>
+		<li class="dropdown-menu-divider">
+			<div class="btn-dropdown-setting">
+				<span class="btn-dropdown-text">Setting 2</span>
+
+				<div class="btn-group">
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options6">
+						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+					</label>
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options6">
+						<span class="btn-group-text btn btn-hero btn-sm">No</span>
+					</label>
+
+				</div>
+			</div>
+
+		</li>
+		<li>
+			<div class="btn-dropdown-setting">
+				<span class="btn-dropdown-text">Setting 3</span>
+
+				<div class="btn-group">
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options7">
+						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+					</label>
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options7">
+						<span class="btn-group-text btn btn-hero btn-sm">No</span>
+					</label>
+
+				</div>
+			</div>
+
+		</li>
+		<li>
+			<div class="btn-dropdown-setting">
+				<span class="btn-dropdown-text">Setting 4</span>
+
+				<div class="btn-group">
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options8">
+						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+					</label>
+
+					<label class="btn-group-item">
+						<input class="btn-group-input" type="radio" name="options8">
+						<span class="btn-group-text btn btn-hero btn-sm">No</span>
+					</label>
+
+				</div>
+			</div>
+
+		</li>
+	</ul>
+</div>
+
+
+<hr>
+<style>
+
+	.checkbox-input + .checkbox-text,
+	.symbol-checkbox-off { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.0%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FTR%2F2001%2FREC-SVG-20010904%2FDTD%2Fsvg10.dtd%22%3E%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2232px%22%20%20height%3D%2232px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22Layer_1%22%3E%20%3Cg%3E%20%20%3Cg%3E%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M6%2C31.5c-5.4%2C0-5.5-5.3-5.5-5.5V6c0-5.4%2C5.3-5.5%2C5.5-5.5h20c5.4%2C0%2C5.5%2C5.3%2C5.5%2C5.5v20%20%20%20%20c0%2C5.4-5.3%2C5.5-5.5%2C5.5H6z%22%2F%3E%20%20%20%3Cpath%20fill%3D%22%23685AC0%22%20d%3D%22M26%2C1c4.8%2C0%2C5%2C4.5%2C5%2C5v20c0%2C4.8-4.5%2C5-5%2C5H6c-4.8%2C0-5-4.5-5-5V6c0-4.8%2C4.5-5%2C5-5H26%20M26%2C0H6c0%2C0-6%2C0-6%2C6%20%20%20%20v20c0%2C0%2C0%2C6%2C6%2C6h20c0%2C0%2C6%2C0%2C6-6V6C32%2C6%2C32%2C0%2C26%2C0L26%2C0z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_2%22%3E%3C%2Fg%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
+
+	.checkbox-input:checked + .checkbox-text,
+	.symbol-checkbox-on { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.0%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FTR%2F2001%2FREC-SVG-20010904%2FDTD%2Fsvg10.dtd%22%3E%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2232px%22%20%20height%3D%2232px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22Layer_1%22%3E%20%3Cg%3E%20%20%3Cg%3E%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M6%2C31.5c-5.4%2C0-5.5-5.3-5.5-5.5V6c0-5.4%2C5.3-5.5%2C5.5-5.5h20c5.4%2C0%2C5.5%2C5.3%2C5.5%2C5.5v20%20%20%20%20c0%2C5.4-5.3%2C5.5-5.5%2C5.5H6z%22%2F%3E%20%20%20%3Cpath%20fill%3D%22%23685AC0%22%20d%3D%22M26%2C1c4.8%2C0%2C5%2C4.5%2C5%2C5v20c0%2C4.8-4.5%2C5-5%2C5H6c-4.8%2C0-5-4.5-5-5V6c0-4.8%2C4.5-5%2C5-5H26%20M26%2C0H6c0%2C0-6%2C0-6%2C6%20%20%20%20v20c0%2C0%2C0%2C6%2C6%2C6h20c0%2C0%2C6%2C0%2C6-6V6C32%2C6%2C32%2C0%2C26%2C0L26%2C0z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3Cpolygon%20fill%3D%22%23685AC0%22%20points%3D%2221.3%2C8%2013.8%2C18.6%208.6%2C14.8%206%2C18.4%2014.9%2C25%2025%2C10.7%20%20%22%2F%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_2%22%3E%3C%2Fg%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
+
+	.checkbox {
+		display: inline-block;
+	}
+	.checkbox .checkbox-input {
+		opacity: 0;
+		position: absolute;
+	}
+	.checkbox .checkbox-input:focus + .checkbox-text {
+		outline: 2px dotted #000;
+		outline-offset: 0.5rem;
+	}
+	.checkbox .checkbox-text {
+		font-size: 16px;
+		padding-left: 38px;
+		min-height: 32px;
+		display: inline-block;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-justify-content: center;
+				-ms-flex-pack: center;
+						justify-content: center;
+		-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+						flex-direction: column;
+	}
+	.checkbox-flip.checkbox .checkbox-text {
+		padding-left: 0;
+		padding-right: 38px;
+		background-position: right top;
+	}
+</style>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-faint js-button-dropdown">
+		<span class="btn-dropdown-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 1</span>
+			</label>
+		</li>
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 2</span>
+			</label>
+		</li>
+		<li class="dropdown-menu-divider">
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 3</span>
+			</label>
+		</li>
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 4</span>
+			</label>
+		</li>
+	</ul>
+</div>
+
+
+<div class="btn-dropdown" aria-haspopup="true">
+	<button type="button" class="btn btn-faint btn-soft js-button-dropdown">
+		<span class="btn-dropdown-caret">Dropdown</span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 1</span>
+			</label>
+		</li>
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 2</span>
+			</label>
+		</li>
+		<li class="dropdown-menu-divider">
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 3</span>
+			</label>
+		</li>
+		<li>
+			<label class="checkbox checkbox-flip">
+				<input class="checkbox-input" type="checkbox" name="option2">
+				<span class="checkbox-text">Setting 4</span>
+			</label>
+		</li>
+	</ul>
+</div>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

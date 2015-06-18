@@ -1,0 +1,654 @@
+/*![Module-Version-Brand]*/
+/*
+ * buttons mixins
+ *
+ * Button styls for btn, block btn, btn groups and dropdown btn
+ *
+ */
+
+
+//////////////////////////////////////| buttons STYLES
+._buttons( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) { //////////////////////////////////////| BOM
+		//////////////////////////////////////| PRIMARY
+		@primary-fontcolor: #fff;
+		@primary-backgroundcolor: @color-A;
+		@primary-bordercolor: @color-A;
+		@primary-active-fontcolor: #fff;
+		@primary-active-backgroundcolor: @color-A-50;
+		@primary-active-bordercolor: @color-A;
+		@primary-hover-fontcolor: #fff;
+		@primary-hover-backgroundcolor: @color-A-70;
+		@primary-hover-bordercolor: @color-A;
+
+		//////////////////////////////////////| HERO
+		@hero-fontcolor: #fff;
+		@hero-backgroundcolor: @color-B;
+		@hero-bordercolor: @color-B;
+		@hero-active-fontcolor: #fff;
+		@hero-active-backgroundcolor: @color-B-50;
+		@hero-active-bordercolor: @color-B;
+		@hero-hover-fontcolor: #fff;
+		@hero-hover-backgroundcolor: @color-B-70;
+		@hero-hover-bordercolor: @color-B;
+
+		//////////////////////////////////////| NEUTRAL
+		@neutral-fontcolor: #fff;
+		@neutral-backgroundcolor: @color-C;
+		@neutral-bordercolor: @color-C;
+		@neutral-active-fontcolor: #fff;
+		@neutral-active-backgroundcolor: @color-C-50;
+		@neutral-active-bordercolor: @color-C;
+		@neutral-hover-fontcolor: #fff;
+		@neutral-hover-backgroundcolor: @color-C-70;
+		@neutral-hover-bordercolor: @color-C;
+
+		//////////////////////////////////////| FAINT
+		@faint-fontcolor: @color-Muted;
+		@faint-backgroundcolor: @color-I-50;
+		@faint-bordercolor: @color-Border;
+		@faint-active-fontcolor: @color-Muted;
+		@faint-active-backgroundcolor: #fff;
+		@faint-active-bordercolor: @color-Border;
+		@faint-hover-fontcolor: @color-Muted;
+		@faint-hover-backgroundcolor: #fff;
+		@faint-hover-bordercolor: @color-Border;
+	}
+	.getBrand() when (@brand = BSA) { //////////////////////////////////////| BSA
+		//////////////////////////////////////| PRIMARY
+		@primary-fontcolor: #fff;
+		@primary-backgroundcolor: @color-A;
+		@primary-bordercolor: @color-A;
+		@primary-active-fontcolor: #fff;
+		@primary-active-backgroundcolor: @color-A-50;
+		@primary-active-bordercolor: @color-A;
+		@primary-hover-fontcolor: #fff;
+		@primary-hover-backgroundcolor: @color-A-70;
+		@primary-hover-bordercolor: @color-A;
+
+		//////////////////////////////////////| HERO
+		@hero-fontcolor: #fff;
+		@hero-backgroundcolor: @color-B;
+		@hero-bordercolor: @color-B;
+		@hero-active-fontcolor: #fff;
+		@hero-active-backgroundcolor: @color-B-50;
+		@hero-active-bordercolor: @color-B;
+		@hero-hover-fontcolor: #fff;
+		@hero-hover-backgroundcolor: @color-B-70;
+		@hero-hover-bordercolor: @color-B;
+
+		//////////////////////////////////////| NEUTRAL
+		@neutral-fontcolor: #fff;
+		@neutral-backgroundcolor: @color-C;
+		@neutral-bordercolor: @color-C;
+		@neutral-active-fontcolor: #fff;
+		@neutral-active-backgroundcolor: @color-C-50;
+		@neutral-active-bordercolor: @color-C;
+		@neutral-hover-fontcolor: #fff;
+		@neutral-hover-backgroundcolor: @color-C;
+		@neutral-hover-bordercolor: @color-C;
+
+		//////////////////////////////////////| FAINT
+		@faint-fontcolor: @color-Muted;
+		@faint-backgroundcolor: @color-J;
+		@faint-bordercolor: @color-Border;
+		@faint-active-fontcolor: @color-Muted;
+		@faint-active-backgroundcolor: #fff;
+		@faint-active-bordercolor: @color-Border;
+		@faint-hover-fontcolor: @color-Muted;
+		@faint-hover-backgroundcolor: #fff;
+		@faint-hover-bordercolor: @color-Border;
+	}
+	.getBrand() when (@brand = STG) { //////////////////////////////////////| STG
+		//////////////////////////////////////| PRIMARY
+		@primary-fontcolor: #fff;
+		@primary-backgroundcolor: @color-A;
+		@primary-bordercolor: @color-A;
+		@primary-active-fontcolor: #fff;
+		@primary-active-backgroundcolor: @color-A-50;
+		@primary-active-bordercolor: @color-A;
+		@primary-hover-fontcolor: #fff;
+		@primary-hover-backgroundcolor: @color-A-70;
+		@primary-hover-bordercolor: @color-A;
+
+		//////////////////////////////////////| HERO
+		@hero-fontcolor: @color-Text;
+		@hero-backgroundcolor: @color-B;
+		@hero-bordercolor: @color-B;
+		@hero-active-fontcolor: @color-Text;
+		@hero-active-backgroundcolor: @color-B-50;
+		@hero-active-bordercolor: @color-B;
+		@hero-hover-fontcolor: @color-Text;
+		@hero-hover-backgroundcolor: @color-B-70;
+		@hero-hover-bordercolor: @color-B;
+
+		//////////////////////////////////////| NEUTRAL
+		@neutral-fontcolor: #fff;
+		@neutral-backgroundcolor: @color-C;
+		@neutral-bordercolor: @color-C;
+		@neutral-active-fontcolor: #fff;
+		@neutral-active-backgroundcolor: @color-C-50;
+		@neutral-active-bordercolor: @color-C;
+		@neutral-hover-fontcolor: #fff;
+		@neutral-hover-backgroundcolor: @color-C-70;
+		@neutral-hover-bordercolor: @color-C;
+
+		//////////////////////////////////////| FAINT
+		@faint-fontcolor: @color-Muted;
+		@faint-backgroundcolor: @color-J;
+		@faint-bordercolor: @color-Border;
+		@faint-active-fontcolor: @color-Muted;
+		@faint-active-backgroundcolor: #fff;
+		@faint-active-bordercolor: @color-Border;
+		@faint-hover-fontcolor: @color-Muted;
+		@faint-hover-backgroundcolor: #fff;
+		@faint-hover-bordercolor: @color-Border;
+	}
+	.getBrand() when (@brand = WBC) { //////////////////////////////////////| WBC
+		//////////////////////////////////////| PRIMARY
+		@primary-fontcolor: #fff;
+		@primary-backgroundcolor: @color-A;
+		@primary-bordercolor: @color-A;
+		@primary-active-fontcolor: #fff;
+		@primary-active-backgroundcolor: @color-A-50;
+		@primary-active-bordercolor: @color-A;
+		@primary-hover-fontcolor: #fff;
+		@primary-hover-backgroundcolor: @color-A-70;
+		@primary-hover-bordercolor: @color-A;
+
+		//////////////////////////////////////| HERO
+		@hero-fontcolor: #fff;
+		@hero-backgroundcolor: @color-B;
+		@hero-bordercolor: @color-B;
+		@hero-active-fontcolor: #fff;
+		@hero-active-backgroundcolor: @color-B-50;
+		@hero-active-bordercolor: @color-B;
+		@hero-hover-fontcolor: #fff;
+		@hero-hover-backgroundcolor: @color-B-70;
+		@hero-hover-bordercolor: @color-B;
+
+		//////////////////////////////////////| NEUTRAL
+		@neutral-fontcolor: #fff;
+		@neutral-backgroundcolor: @color-C;
+		@neutral-bordercolor: @color-C;
+		@neutral-active-fontcolor: #fff;
+		@neutral-active-backgroundcolor: @color-C-50;
+		@neutral-active-bordercolor: @color-C;
+		@neutral-hover-fontcolor: #fff;
+		@neutral-hover-backgroundcolor: @color-C-70;
+		@neutral-hover-bordercolor: @color-C;
+
+		//////////////////////////////////////| FAINT
+		@faint-fontcolor: @color-Muted;
+		@faint-backgroundcolor: @color-I;
+		@faint-bordercolor: @color-Border;
+		@faint-active-fontcolor: @color-Muted;
+		@faint-active-backgroundcolor: #fff;
+		@faint-active-bordercolor: @color-Border;
+		@faint-hover-fontcolor: @color-Muted;
+		@faint-hover-backgroundcolor: #fff;
+		@faint-hover-bordercolor: @color-Border;
+	}
+	.getBrand();
+
+
+	//////////////////////////////////////| BUTTONS
+	.btn {
+		padding: 6px 12px;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: 400;
+		white-space: nowrap;
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		touch-action: manipulation;
+		cursor: pointer;
+		border: 1px solid @faint-bordercolor;
+		user-select: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+		.btn-text {
+			vertical-align: middle;
+			display: inline-block;
+		}
+
+		//btn icons
+		.btn-icon {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 24px;
+
+			&.btn-icon-left {
+				margin-left: 0;
+				margin-right: 3px;
+			}
+		}
+
+		//btn link
+		&.btn-link {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			background: transparent;
+			border-radius: 0;
+			border: 0 none;
+			color: @color-A;
+			padding: 0;
+			font-size: 14px;
+			font-weight: 400;
+
+			p > & {
+				vertical-align: top;
+			}
+
+			&:hover {
+				background: transparent;
+				text-decoration: underline;
+				color: @color-A;
+			}
+		}
+
+		//btn block
+		&.btn-block {
+			display: block;
+			width: 100%;
+		}
+
+		//btn sizing
+		&.btn-xl {
+			font-size: 18px;
+			padding: 13px 14px;
+			line-height: 1.11111111;
+		}
+
+		&.btn-lg {
+			padding: 10px 14px 9px 14px;
+			line-height: 1.33;
+		}
+
+		&.btn-sm {
+			padding: 4px 10px 3px 10px;
+			font-size: 14px;
+			line-height: 1.5;
+			font-weight: 400;
+		}
+
+		//all btn color versions
+		.make-button(
+			@faint-fontcolor,
+			@faint-backgroundcolor,
+			@faint-bordercolor,
+			@faint-active-fontcolor,
+			@faint-active-backgroundcolor,
+			@faint-active-bordercolor,
+			@faint-hover-fontcolor,
+			@faint-hover-backgroundcolor,
+			@faint-hover-bordercolor
+		);
+
+		&.btn-primary {
+			.make-button(
+				@primary-fontcolor,
+				@primary-backgroundcolor,
+				@primary-bordercolor,
+				@primary-active-fontcolor,
+				@primary-active-backgroundcolor,
+				@primary-active-bordercolor,
+				@primary-hover-fontcolor,
+				@primary-hover-backgroundcolor,
+				@primary-hover-bordercolor
+			);
+		}
+
+		&.btn-hero {
+			.make-button(
+				@hero-fontcolor,
+				@hero-backgroundcolor,
+				@hero-bordercolor,
+				@hero-active-fontcolor,
+				@hero-active-backgroundcolor,
+				@hero-active-bordercolor,
+				@hero-hover-fontcolor,
+				@hero-hover-backgroundcolor,
+				@hero-hover-bordercolor
+			);
+		}
+
+		&.btn-neutral {
+			.make-button(
+				@neutral-fontcolor,
+				@neutral-backgroundcolor,
+				@neutral-bordercolor,
+				@neutral-active-fontcolor,
+				@neutral-active-backgroundcolor,
+				@neutral-active-bordercolor,
+				@neutral-hover-fontcolor,
+				@neutral-hover-backgroundcolor,
+				@neutral-hover-bordercolor
+			);
+		}
+
+		//////////////////////////////////////| FOCUS
+		&:focus {
+			.outline();
+			display: inline-block;
+		}
+		&:hover {
+			outline: none;
+		}
+	}
+
+	//btn soft and btn-group styles
+	.btn-group-item .btn,
+	.btn.btn-soft {
+		background-color: #fff;
+		color: @color-Text;
+
+		.btn-dropdown > & {
+			.btn-dropdown-caret:after {
+				border-top-color: @color-Text;
+			}
+		}
+
+		&.disabled,
+		&:disabled {
+
+			&:active,
+			&:hover {
+				background-color: #fff;
+				color: @color-Text;
+			}
+		}
+	}
+
+
+	//////////////////////////////////////| BLOCK BUTTONS
+	.btn-block + .btn-block {
+		margin-top: 6px;
+	}
+
+
+	//////////////////////////////////////| BUTTON GROUPS
+	.btn-group {
+		display: inline-block;
+		font-size: 0;
+
+		.btn-group-input {
+			opacity: 0;
+			position: absolute;
+
+			&:focus + .btn {
+				.outline();
+				display: inline-block;
+			}
+			&:hover + .btn {
+				outline: none;
+			}
+		}
+
+		.btn-group-item {
+			.btn {
+				border-right-width: 0;
+				border-radius: 0;
+			}
+
+			&:first-child .btn {
+				border-top-left-radius: 6px;
+				border-bottom-left-radius: 6px;
+			}
+
+			&:last-child .btn {
+				border-right-width: 1px;
+				border-top-right-radius: 6px;
+				border-bottom-right-radius: 6px;
+			}
+		}
+
+		& + .btn-group {
+			margin-top: 6px;
+		}
+	}
+
+	//////////////////////////////////////| BUTTON DROPDOWNS
+	.btn-dropdown {
+		position: relative;
+		display: inline-block;
+
+		& > .btn > .btn-dropdown-caret {
+			&:after {
+				content: " ";
+				margin-left: 6px;
+				display: inline-block;
+				vertical-align: middle;
+				border-top-width: 8px;
+				border-top-style: solid;
+				border-right: 7px solid transparent;
+				border-bottom: none;
+				border-left: 7px solid transparent;
+			}
+		}
+
+		.dropdown-menu {
+			list-style: none;
+			padding: 0;
+			margin: 3px 0 0 0;
+			background-color: #fff;
+			border-radius: 3px;
+			min-width: 180px;
+
+			li {
+				margin: 0;
+				white-space: nowrap;
+				display: flex;
+				transition: background 0.2s ease;
+
+				&:extend(.clearfix all);
+
+				&:hover {
+					background-color: @color-Background;
+				}
+
+				.btn-link,
+				a {
+					display: block;
+					color: @color-Muted;
+					width: 100%;
+					text-align: left;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+
+				.btn-dropdown-text {
+					padding-right: 18px;
+					vertical-align: middle;
+				}
+
+				.btn-link,
+				a,
+				.btn-dropdown-setting,
+				.checkbox,
+				.radio {
+					padding: 8px 6px;
+				}
+
+				.btn-dropdown-setting,
+				.btn-group {
+					vertical-align: middle;
+				}
+
+				& > .checkbox {
+					width: 100%;
+				}
+			}
+
+			.dropdown-menu-headline {
+				border-top: 1px solid @color-Text;
+				font-weight: 500;
+				font-size: 12px;
+				padding: 6px 3px;
+
+				&:hover {
+					background-color: transparent;
+				}
+			}
+
+			li:first-child {
+				&.dropdown-menu-headline {
+					border-top: 0 none;
+					margin-top: 0;
+					padding-top: 0;
+				}
+			}
+
+			.dropdown-menu-divider {
+				border-top: 1px solid @color-Text;
+				// margin: 12px -12px 12px -12px;
+				// padding: 12px 12px 0 12px;
+			}
+
+			.js & {
+				display: none;
+				position: absolute;
+				overflow: hidden;
+				z-index: 100;
+			}
+		}
+
+		&.is-open {
+			& > .btn:after {
+				content: " ";
+				position: fixed;
+				z-index: 90;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+
+			.dropdown-menu {
+				display: block;
+				box-shadow: 0 6px 12px rgba(0,0,0,.175);
+				border: 1px solid @color-Border;
+				padding: 12px 6px;
+			}
+		}
+	}
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.btn {
+			svg,
+			.icons-background {
+				fill: #000 !important;
+			}
+		}
+
+		.btn-dropdown {
+			& > .btn > .btn-dropdown-caret {
+				&:after {
+					border-top-color: #000 !important;
+				}
+			}
+		}
+
+		.btn-dropdown .dropdown-menu {
+			background-color: #fff !important;
+		}
+
+		.btn-group-input:checked + .btn {
+			background-color: #000 !important;
+			color: #fff !important;
+		}
+	}
+}
+
+
+
+/*
+ * MAKE BUTTONS
+ *
+ * create buttons for each version with active, hover and disabled styles
+ */
+.make-button(
+	@fontcolor,
+	@backgroundcolor,
+	@bordercolor,
+	@active-fontcolor,
+	@active-backgroundcolor,
+	@active-bordercolor,
+	@hover-fontcolor,
+	@hover-backgroundcolor,
+	@hover-bordercolor
+) {
+
+	color: @fontcolor;
+	border-color: @bordercolor;
+	background-color: @backgroundcolor;
+	transition: background 0.2s ease, color 0.2s ease;
+
+	.btn-group-input:checked + & {
+		color: @fontcolor;
+		border-color: @bordercolor;
+		background-color: @backgroundcolor;
+	}
+
+	svg,
+	.icons-background {
+		fill: @fontcolor;
+	}
+
+	&:hover {
+		color: @hover-fontcolor;
+		border-color: @hover-bordercolor;
+		background-color: @hover-backgroundcolor;
+
+		.btn-dropdown > & {
+			.btn-dropdown-caret:after {
+				border-top-color: @hover-fontcolor;
+			}
+		}
+
+		svg,
+		.icons-background {
+			fill: @hover-fontcolor;
+		}
+	}
+
+	&:active {
+		color: @active-fontcolor;
+		border-color: @active-bordercolor;
+		background-color: @active-backgroundcolor;
+
+		svg,
+		.icons-background {
+			fill: @active-fontcolor;
+		}
+	}
+
+	.btn-dropdown > & {
+		.btn-dropdown-caret:after {
+			transition: border 0.2s ease;
+			border-top-color: @fontcolor;
+		}
+	}
+
+	&.disabled,
+	&:disabled {
+		opacity: 0.5;
+
+		&:active,
+		&:hover {
+			color: @fontcolor;
+			border-color: @bordercolor;
+			background-color: @backgroundcolor;
+			cursor: not-allowed;
+		}
+	}
+}
