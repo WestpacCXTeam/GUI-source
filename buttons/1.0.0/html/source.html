@@ -28,39 +28,14 @@
 
 <hr>
 <h2>buttons with icons</h2>
-
-
-<style>
-	.icon-face-happy,
-	.symbol-face-happy { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%3E%3Cpath%20fill%3D%22%23575f65%22%20class%3D%22icons-background%22%20d%3D%22M8%2011c0-1.1%200.9-2%202-2s2%200.9%202%202-0.9%202-2%202c-1.1%200-2-0.9-2-2zM20%2011c0%201.1%200.9%202%202%202s2-0.9%202-2-0.9-2-2-2c-1.1%200-2%200.9-2%202zM22%2019.6c-1.2%202-3.5%203.4-6%203.4s-4.8-1.4-6-3.4l-2.6%201.5c1.8%203%205%204.9%208.6%204.9s6.8-1.9%208.6-4.9l-2.6-1.5zM16%200c-8.8%200-16%207.2-16%2016s7.2%2016%2016%2016%2016-7.2%2016-16-7.2-16-16-16zM30%2016c0%207.7-6.3%2014-14%2014s-14-6.3-14-14%206.3-14%2014-14%2014%206.3%2014%2014z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
-	.icon {
-		display: inline-block;
-		width: 32px;
-		height: 32px;
-	}
-	.icon.icon-size-sm {
-		background-size: 16px 16px;
-		width: 16px;
-		height: 16px;
-	}
-	.icon.icon-size-sm svg {
-		width: 16px;
-		height: 16px;
-	}
-	.icon.icon-size-lg {
-		background-size: 64px 64px;
-		width: 64px;
-		height: 64px;
-	}
-	.icon.icon-size-lg svg {
-		width: 64px;
-		height: 64px;
-	}
-	a .icon svg,
-	a .icon .icons-background {
-		fill: #e30000;
-	}
-</style>
+<script>
+	/*! grunt-grunticon Stylesheet Loader - v2.1.7 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+	(function(e){function n(n,t,o,a){"use strict";var i=e.document.createElement("link"),r=t||e.document.getElementsByTagName("script")[0],d=e.document.styleSheets;return i.rel="stylesheet",i.href=n,i.media="only x",a&&(i.onload=a),r.parentNode.insertBefore(i,r),i.onloadcssdefined=function(e){for(var t,o=0;d.length>o;o++)d[o].href&&d[o].href.indexOf(n)>-1&&(t=!0);t?e():setTimeout(function(){i.onloadcssdefined(e)})},i.onloadcssdefined(function(){i.media=o||"all"}),i}function t(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}var o=function(a,i){"use strict";if(a&&3===a.length){var r=e.Image,d=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),c=new r;c.onerror=function(){o.method="png",o.href=a[2],n(a[2])},c.onload=function(){var e=1===c.width&&1===c.height,r=a[e&&d?0:e?1:2];o.method=e&&d?"svg":e?"datapng":"png",o.href=r,t(n(r),i)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};o.loadCSS=n,o.onloadCSS=t,e.grunticon=o})(this);(function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;t.length>d;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;n.length>d;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;r.length>d;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s})(grunticon,this);
+	grunticon(["../../../../icons-group1/1.0.0/tests/[Brand]/assets/css/symbols.data.svg.css", "../../../../icons-group1/1.0.0/tests/[Brand]/assets/css/symbols.data.png.css", "../../../../icons-group1/1.0.0/tests/[Brand]/assets/css/symbols.fallback.css"], grunticon.svgLoadedCallback);
+</script>
+<noscript><link href="../../../../icons-group1/1.0.0/tests/[Brand]/assets/css/symbols.fallback.css" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../../../../icons-base/1.0.0/tests/[Brand]/assets/css/gui.css">
+<link rel="stylesheet" href="../../../../icons-group1/1.0.0/tests/[Brand]/assets/css/gui.css">
 
 <button type="button" class="btn btn-primary">
 	<span class="btn-text">Primary</span>
@@ -73,19 +48,11 @@
 <button type="button" class="btn btn-neutral">
 	<span class="btn-text">Neutral</span>
 
-	<span class="btn-icon icon icon-size-sm icon-face-happy" data-grunticon-embed style="background: none;">
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-			<path fill="#716f7d" class="icons-background" d="M8 11c0-1.1 0.9-2 2-2s2 0.9 2 2-0.9 2-2 2c-1.1 0-2-0.9-2-2zM20 11c0 1.1 0.9 2 2 2s2-0.9 2-2-0.9-2-2-2c-1.1 0-2 0.9-2 2zM22 19.6c-1.2 2-3.5 3.4-6 3.4s-4.8-1.4-6-3.4l-2.6 1.5c1.8 3 5 4.9 8.6 4.9s6.8-1.9 8.6-4.9l-2.6-1.5zM16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zM30 16c0 7.7-6.3 14-14 14s-14-6.3-14-14 6.3-14 14-14 14 6.3 14 14z"></path>
-		</svg>
-	</span>
+	<span class="btn-icon icon icon-size-sm icon-face-happy" data-grunticon-embed></span>
 </button>
 <button type="button" class="btn btn-faint">
 
-	<span class="btn-icon btn-icon-left icon icon-size-sm icon-face-happy" data-grunticon-embed style="background: none;">
-		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-			<path fill="#716f7d" class="icons-background" d="M8 11c0-1.1 0.9-2 2-2s2 0.9 2 2-0.9 2-2 2c-1.1 0-2-0.9-2-2zM20 11c0 1.1 0.9 2 2 2s2-0.9 2-2-0.9-2-2-2c-1.1 0-2 0.9-2 2zM22 19.6c-1.2 2-3.5 3.4-6 3.4s-4.8-1.4-6-3.4l-2.6 1.5c1.8 3 5 4.9 8.6 4.9s6.8-1.9 8.6-4.9l-2.6-1.5zM16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zM30 16c0 7.7-6.3 14-14 14s-14-6.3-14-14 6.3-14 14-14 14 6.3 14 14z"></path>
-		</svg>
-	</span>
+	<span class="btn-icon btn-icon-left icon icon-size-sm icon-face-happy" data-grunticon-embed></span>
 
 	<span class="btn-text">Faint</span>
 </button>
@@ -487,47 +454,13 @@
 
 
 <hr>
-<style>
-
-	.checkbox-input + .checkbox-text,
-	.symbol-checkbox-off { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.0%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FTR%2F2001%2FREC-SVG-20010904%2FDTD%2Fsvg10.dtd%22%3E%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2232px%22%20%20height%3D%2232px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22Layer_1%22%3E%20%3Cg%3E%20%20%3Cg%3E%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M6%2C31.5c-5.4%2C0-5.5-5.3-5.5-5.5V6c0-5.4%2C5.3-5.5%2C5.5-5.5h20c5.4%2C0%2C5.5%2C5.3%2C5.5%2C5.5v20%20%20%20%20c0%2C5.4-5.3%2C5.5-5.5%2C5.5H6z%22%2F%3E%20%20%20%3Cpath%20fill%3D%22%23685AC0%22%20d%3D%22M26%2C1c4.8%2C0%2C5%2C4.5%2C5%2C5v20c0%2C4.8-4.5%2C5-5%2C5H6c-4.8%2C0-5-4.5-5-5V6c0-4.8%2C4.5-5%2C5-5H26%20M26%2C0H6c0%2C0-6%2C0-6%2C6%20%20%20%20v20c0%2C0%2C0%2C6%2C6%2C6h20c0%2C0%2C6%2C0%2C6-6V6C32%2C6%2C32%2C0%2C26%2C0L26%2C0z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_2%22%3E%3C%2Fg%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
-
-	.checkbox-input:checked + .checkbox-text,
-	.symbol-checkbox-on { background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.0%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FTR%2F2001%2FREC-SVG-20010904%2FDTD%2Fsvg10.dtd%22%3E%3Csvg%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2232px%22%20%20height%3D%2232px%22%20viewBox%3D%220%200%2032%2032%22%20enable-background%3D%22new%200%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22Layer_1%22%3E%20%3Cg%3E%20%20%3Cg%3E%20%20%20%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M6%2C31.5c-5.4%2C0-5.5-5.3-5.5-5.5V6c0-5.4%2C5.3-5.5%2C5.5-5.5h20c5.4%2C0%2C5.5%2C5.3%2C5.5%2C5.5v20%20%20%20%20c0%2C5.4-5.3%2C5.5-5.5%2C5.5H6z%22%2F%3E%20%20%20%3Cpath%20fill%3D%22%23685AC0%22%20d%3D%22M26%2C1c4.8%2C0%2C5%2C4.5%2C5%2C5v20c0%2C4.8-4.5%2C5-5%2C5H6c-4.8%2C0-5-4.5-5-5V6c0-4.8%2C4.5-5%2C5-5H26%20M26%2C0H6c0%2C0-6%2C0-6%2C6%20%20%20%20v20c0%2C0%2C0%2C6%2C6%2C6h20c0%2C0%2C6%2C0%2C6-6V6C32%2C6%2C32%2C0%2C26%2C0L26%2C0z%22%2F%3E%20%20%3C%2Fg%3E%20%3C%2Fg%3E%20%3Cpolygon%20fill%3D%22%23685AC0%22%20points%3D%2221.3%2C8%2013.8%2C18.6%208.6%2C14.8%206%2C18.4%2014.9%2C25%2025%2C10.7%20%20%22%2F%3E%3C%2Fg%3E%3Cg%20id%3D%22Layer_2%22%3E%3C%2Fg%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
-
-	.checkbox {
-		display: inline-block;
-	}
-	.checkbox .checkbox-input {
-		opacity: 0;
-		position: absolute;
-	}
-	.checkbox .checkbox-input:focus + .checkbox-text {
-		outline: 2px dotted #000;
-		outline-offset: 0.5rem;
-	}
-	.checkbox .checkbox-text {
-		font-size: 16px;
-		padding-left: 38px;
-		min-height: 32px;
-		display: inline-block;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-justify-content: center;
-				-ms-flex-pack: center;
-						justify-content: center;
-		-webkit-flex-direction: column;
-				-ms-flex-direction: column;
-						flex-direction: column;
-	}
-	.checkbox-flip.checkbox .checkbox-text {
-		padding-left: 0;
-		padding-right: 38px;
-		background-position: right top;
-	}
-</style>
-
+<script>
+	/*! grunt-grunticon Stylesheet Loader - v2.1.7 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+	(function(e){function n(n,t,o,a){"use strict";var i=e.document.createElement("link"),r=t||e.document.getElementsByTagName("script")[0],d=e.document.styleSheets;return i.rel="stylesheet",i.href=n,i.media="only x",a&&(i.onload=a),r.parentNode.insertBefore(i,r),i.onloadcssdefined=function(e){for(var t,o=0;d.length>o;o++)d[o].href&&d[o].href.indexOf(n)>-1&&(t=!0);t?e():setTimeout(function(){i.onloadcssdefined(e)})},i.onloadcssdefined(function(){i.media=o||"all"}),i}function t(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}var o=function(a,i){"use strict";if(a&&3===a.length){var r=e.Image,d=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),c=new r;c.onerror=function(){o.method="png",o.href=a[2],n(a[2])},c.onload=function(){var e=1===c.width&&1===c.height,r=a[e&&d?0:e?1:2];o.method=e&&d?"svg":e?"datapng":"png",o.href=r,t(n(r),i)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};o.loadCSS=n,o.onloadCSS=t,e.grunticon=o})(this);(function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;t.length>d;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;n.length>d;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;r.length>d;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s})(grunticon,this);
+	grunticon(["../../../../checkboxes/1.0.0/tests/[Brand]/assets/css/symbols.data.svg.css", "../../../../checkboxes/1.0.0/tests/[Brand]/assets/css/symbols.data.png.css", "../../../../checkboxes/1.0.0/tests/[Brand]/assets/css/symbols.fallback.css"], grunticon.svgLoadedCallback);
+</script>
+<noscript><link href="../../../../checkboxes/1.0.0/tests/[Brand]/assets/css/symbols.fallback.css" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="../../../../checkboxes/1.0.0/tests/[Brand]/assets/css/gui.css">
 
 <div class="btn-dropdown" aria-haspopup="true">
 	<button type="button" class="btn btn-faint js-button-dropdown">
