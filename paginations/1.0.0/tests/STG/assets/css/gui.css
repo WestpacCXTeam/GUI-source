@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -580,8 +580,8 @@ a:hover {
   font-family: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,
@@ -1675,7 +1675,7 @@ a:hover {
 .pagination > li > a:hover,
 .pagination > li > span:hover {
   text-decoration: none;
-  background-color: #cecdc6;
+  background-color: #f3f3f1;
 }
 .pagination > li > a:focus,
 .pagination > li > span:focus {
@@ -1704,6 +1704,7 @@ a:hover {
   color: #858370;
   background-color: #f9f9f8;
   cursor: not-allowed;
+  opacity: 0.5;
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
