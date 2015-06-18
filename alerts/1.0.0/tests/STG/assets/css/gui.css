@@ -1832,39 +1832,39 @@ a:hover {
   display: block;
   margin: 4px 0 0 0;
 }
-.alert-form > textarea.forms-input + p.alert-form-msg {
+.alert-form > textarea.input-field + p.alert-form-msg {
   margin-top: 0;
 }
 .has-success.alert-form .alert-form-msg {
   color: #008000;
 }
-.has-success.alert-form .forms-input,
-.has-success.alert-form .forms-select,
-.has-success.alert-form .forms-select:focus {
+.has-success.alert-form .input-field,
+.has-success.alert-form .input-field-select,
+.has-success.alert-form .input-field-select:focus {
   border-color: #008000;
 }
 .has-info.alert-form .alert-form-msg {
   color: #0074c4;
 }
-.has-info.alert-form .forms-input,
-.has-info.alert-form .forms-select,
-.has-info.alert-form .forms-select:focus {
+.has-info.alert-form .input-field,
+.has-info.alert-form .input-field-select,
+.has-info.alert-form .input-field-select:focus {
   border-color: #0074c4;
 }
 .has-warning.alert-form .alert-form-msg {
   color: #d06800;
 }
-.has-warning.alert-form .forms-input,
-.has-warning.alert-form .forms-select,
-.has-warning.alert-form .forms-select:focus {
+.has-warning.alert-form .input-field,
+.has-warning.alert-form .input-field-select,
+.has-warning.alert-form .input-field-select:focus {
   border-color: #d06800;
 }
 .has-danger.alert-form .alert-form-msg {
   color: #c40000;
 }
-.has-danger.alert-form .forms-input,
-.has-danger.alert-form .forms-select,
-.has-danger.alert-form .forms-select:focus {
+.has-danger.alert-form .input-field,
+.has-danger.alert-form .input-field-select,
+.has-danger.alert-form .input-field-select:focus {
   border-color: #c40000;
 }
 @media print {
@@ -1900,23 +1900,23 @@ a:hover {
   .has-danger.alert-form .alert-form-msg {
     color: #000;
   }
-  .alert-form .forms-input,
-  .alert-form .forms-select,
-  .alert-form .forms-select:focus {
+  .alert-form .input-field,
+  .alert-form .input-field-select,
+  .alert-form .input-field-select:focus {
     border-color: #000;
   }
-  .has-success.alert-form .forms-input,
-  .has-success.alert-form .forms-select,
-  .has-success.alert-form .forms-select:focus,
-  .has-info.alert-form .forms-input,
-  .has-info.alert-form .forms-select,
-  .has-info.alert-form .forms-select:focus,
-  .has-warning.alert-form .forms-input,
-  .has-warning.alert-form .forms-select,
-  .has-warning.alert-form .forms-select:focus,
-  .has-danger.alert-form .forms-input,
-  .has-danger.alert-form .forms-select,
-  .has-danger.alert-form .forms-select:focus {
+  .has-success.alert-form .input-field,
+  .has-success.alert-form .input-field-select,
+  .has-success.alert-form .input-field-select:focus,
+  .has-info.alert-form .input-field,
+  .has-info.alert-form .input-field-select,
+  .has-info.alert-form .input-field-select:focus,
+  .has-warning.alert-form .input-field,
+  .has-warning.alert-form .input-field-select,
+  .has-warning.alert-form .input-field-select:focus,
+  .has-danger.alert-form .input-field,
+  .has-danger.alert-form .input-field-select,
+  .has-danger.alert-form .input-field-select:focus {
     border-color: #000;
   }
 }
