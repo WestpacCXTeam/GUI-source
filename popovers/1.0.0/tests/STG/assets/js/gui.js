@@ -6,7 +6,9 @@ return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeTyp
 /*!popovers v1.0.0*/
 /***************************************************************************************************************************************************************
  *
- * Westpac GUI framework and settings
+ * Westpac GUI framework
+ *
+ * This base includes a debugging console and debounce and throttle functions.
  *
  **************************************************************************************************************************************************************/
 
@@ -25,10 +27,16 @@ var GUI = (function guiInit() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// Initiate GUI
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		init: function guiInit() {
+		init: function GuiInit() {
+			if( !window.console ) { //removing console.log from IE8
+				console = {
+					log: function() {}
+				};
+			}
+
 			if( GUI.DEBUG ) console.log('%cDEBUGGING INFORMATION', 'font-size: 25px;');
 
-			//remove fallback HTML
+			//remove fallback HTML class
 			$('html')
 				.removeClass('no-js')
 				.addClass('js');
@@ -39,9 +47,11 @@ var GUI = (function guiInit() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debounce function by _underscore.js
 		//
-		// func       [function]  Function to be executed
-		// wait       [integer]   Wait for next iteration for n in milliseconds
-		// immediate  [boolean]   Trigger the function on the leading edge, instead of the trailing
+		// @param   func       [function]  Function to be executed
+		// @param   wait       [integer]   Wait for next iteration for n in milliseconds
+		// @param   immediate  [boolean]   Trigger the function on the leading edge [true], instead of the trailing [false]
+		//
+		// @return  [function]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		debounce: function Debounce(func, wait, immediate) {
 			GUI.debugging( 'Base: Debounce called', 'report' );
@@ -75,10 +85,46 @@ var GUI = (function guiInit() {
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		// throttle function
+		//
+		// @param   func       [function]  Function to be executed
+		// @param   wait       [integer]   Run as much as possible without ever going more than once per [n in milliseconds] duration
+		//
+		// @return  [function]
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		throttle: function Throttle(func, wait) {
+			wait || (wait = 250);
+			var last;
+			var deferTimer;
+
+			return function() {
+				var context = this;
+				var now = +new Date;
+				var args = arguments;
+
+				if(last && now < last + wait) {
+					clearTimeout(deferTimer);
+
+					deferTimer = setTimeout(function() {
+						last = now;
+						func.apply(context, args);
+					}, wait);
+				}
+				else {
+					last = now;
+					func.apply(context, args);
+				}
+			};
+		},
+
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debugging prettiness
 		//
-		// text  [string]  Text to be printed to debugger
-		// code  [string]  The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
+		// @param   text  [string]  Text to be printed to debugger
+		// @param   code  [string]  The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
+		//
+		// @return  [none]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		debugging: function Debug( text, code ) {
 
@@ -116,7 +162,7 @@ GUI.init();
  *
  * popovers
  *
- * Description of module
+ * Open popovers and readjust position via style injection depending on proximity to outer browser frame.
  *
  **************************************************************************************************************************************************************/
 
@@ -132,86 +178,98 @@ GUI.init();
 		GUI.debugging( 'popovers: Initiating', 'report' );
 
 
-		$('.js-popover').on('click', function openPopover() {
-			GUI.debugging( 'popovers: popover button clicked', 'interaction' );
+		if( $('.js-popover').length ) {
+			GUI.debugging( 'popovers: Found instances', 'report' );
 
-			var $this = $(this);
-			var _isOpen = $this.hasClass('is-open');
-			var $popover = $this.find('.popover-popup');
-			var index = $('.js-popover').index( this );
+			// CLICK
+			$('.js-popover').on('click', function openPopover() {
+				GUI.debugging( 'popovers: popover button clicked', 'interaction' );
 
-			if( _isOpen ) {
-				GUI.debugging( 'popovers: closing popover', 'report' );
+				var $this = $(this);
+				var _isOpen = $this.hasClass('is-open');
+				var $popover = $this.find('.popover-popup');
+				var index = $('.js-popover').index( this );
 
-				$this
-					.removeClass('is-open');
+				// CLOSING POPOVER
+				if( _isOpen ) {
+					GUI.debugging( 'popovers: closing popover', 'report' );
 
-				$popover.attr('aria-hidden', 'true');
-			}
-			else {
-				GUI.debugging( 'popovers: opening popover', 'report' );
+					$this
+						.removeClass('is-open');
 
-				$('.js-popover-styles-' + index).remove();
-				$popover.attr('style', '');
-
-				$this
-					.removeClass('is-bottom')
-					.addClass('is-open');
-
-				$popover.attr('aria-hidden', 'false');
-
-				var top = parseInt( $popover.offset().top - $(window).scrollTop() );
-				var left = parseInt( $popover.offset().left );
-				var right = parseInt( $(window).width() - ( $popover.offset().left + $popover.width() ) );
-
-
-				if( top < 0 ) { //the popup is cut off on the top
-					GUI.debugging( 'popovers: top boundary detected', 'report' );
-
-					$this.addClass('is-bottom');
+					$popover.attr('aria-hidden', 'true');
 				}
+				else { // OPENING POPOVER
+					GUI.debugging( 'popovers: opening popover', 'report' );
+
+					$('.js-popover-styles-' + index).remove(); //remove all previous styles
+					$popover.attr('style', '');
+
+					$this
+						.removeClass('is-bottom')
+						.addClass('is-open');
+
+					$popover.attr('aria-hidden', 'false');
+
+					// get current positions
+					var top = parseInt( $popover.offset().top - $(window).scrollTop() );
+					var left = parseInt( $popover.offset().left );
+					var right = parseInt( $(window).width() - ( $popover.offset().left + $popover.width() ) );
 
 
-				if( left < 0 ) { //the popup is cut off on the left
-					GUI.debugging( 'popovers: left boundary detected', 'report' );
+					//the popup is cut off on the top
+					if( top < 0 ) {
+						GUI.debugging( 'popovers: top boundary detected', 'report' );
 
-					var className = 'js-popover-' + index;
-					var marginLeft = parseInt( $popover.css('marginLeft') );
-					var shift = left - 12;
+						$this.addClass('is-bottom');
+					}
 
-					$popover.css('marginLeft', ( marginLeft - shift ));
 
-					$this.addClass( className ).before(
-						'<span class="js-popover-styles-' + index + '" style="position:absolute;">' +
-						'	<style>' +
-						'		.popover.' + className + ' .popover-popup:before,' +
-						'		.popover.' + className + ' .popover-popup:after { margin-left: ' + ( shift - 21 ) + 'px; }' +
-						'	</style>' +
-						'</span>'
-					);
+					//the popup is cut off on the left
+					if( left < 0 ) {
+						GUI.debugging( 'popovers: left boundary detected', 'report' );
+
+						var className = 'js-popover-' + index;
+						var marginLeft = parseInt( $popover.css('marginLeft') );
+						var shift = left - 12;
+
+						$popover.css('marginLeft', ( marginLeft - shift ));
+
+
+						$this.addClass( className ).before( // STYLE INJECTION
+							'<span class="js-popover-styles-' + index + '" style="position:absolute;">' +
+							'	<style>' +
+							'		.popover.' + className + ' .popover-popup:before,' +
+							'		.popover.' + className + ' .popover-popup:after { margin-left: ' + ( shift - 21 ) + 'px; }' +
+							'	</style>' +
+							'</span>'
+						);
+					}
+
+
+					//the popup is cut off on the right
+					if( right < 0 ) {
+						GUI.debugging( 'popovers: right boundary detected', 'report' );
+
+						var className = 'js-popover-' + index;
+						var marginLeft = parseInt( $popover.css('marginLeft') );
+						var shift = right - 12;
+
+						$popover.css('marginLeft', ( marginLeft + shift ));
+
+
+						$this.addClass( className ).before( // STYLE INJECTION
+							'<span class="js-popover-styles-' + index + '" style="position:absolute;">' +
+							'	<style>' +
+							'		.popover.' + className + ' .popover-popup:before,' +
+							'		.popover.' + className + ' .popover-popup:after { margin-left: ' + ( (shift * -1) - 21 ) + 'px; }' +
+							'	</style>' +
+							'</span>'
+						);
+					}
 				}
-
-
-				if( right < 0 ) { //the popup is cut off on the right
-					GUI.debugging( 'popovers: right boundary detected', 'report' );
-
-					var className = 'js-popover-' + index;
-					var marginLeft = parseInt( $popover.css('marginLeft') );
-					var shift = right - 12;
-
-					$popover.css('marginLeft', ( marginLeft + shift ));
-
-					$this.addClass( className ).before(
-						'<span class="js-popover-styles-' + index + '" style="position:absolute;">' +
-						'	<style>' +
-						'		.popover.' + className + ' .popover-popup:before,' +
-						'		.popover.' + className + ' .popover-popup:after { margin-left: ' + ( (shift * -1) - 21 ) + 'px; }' +
-						'	</style>' +
-						'</span>'
-					);
-				}
-			}
-		});
+			});
+		}
 	};
 
 
