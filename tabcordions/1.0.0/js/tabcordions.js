@@ -16,9 +16,11 @@
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// public API function: collapsible
 	//
-	// target       [string]    Selector for target element to toggle is-open class
-	// _isAnimated  [boolean]   Wether or not to animate the height
-	// Callback     [function]  Callback function executed after completion
+	// @param   target       [string]    Selector for target element to toggle is-open class
+	// @param   _isAnimated  [boolean]   Wether or not to animate the height
+	// @param   Callback     [function]  Callback function executed after completion
+	//
+	// @return  [none]
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	api.toggle = function( target, _isAnimated, Callback ) {
 		GUI.debugging( 'collapsible: Toggle called', 'report' );
@@ -50,9 +52,11 @@
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// public API function: collapsible closing
 	//
-	// target       [string]    Selector for target element to toggle is-open class
-	// _isAnimated  [boolean]   Wether or not to animate the height
-	// Callback     [function]  Callback function executed after completion
+	// @param   target       [string]    Selector for target element to toggle is-open class
+	// @param   _isAnimated  [boolean]   Wether or not to animate the height
+	// @param   Callback     [function]  Callback function executed after completion
+	//
+	// @return  [none]
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	api.close = function closingCollapsible( target, _isAnimated, Callback ) {
 		GUI.debugging( 'collapsible: closing element "' + target + '"', 'report' );
@@ -95,9 +99,11 @@
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// public API function: collapsible opening
 	//
-	// target       [string]    Selector for target element to toggle is-open class
-	// _isAnimated  [boolean]   Whether or not to animate the height
-	// Callback     [function]  Callback function executed after completion
+	// @param   target       [string]    Selector for target element to toggle is-open class
+	// @param   _isAnimated  [boolean]   Whether or not to animate the height
+	// @param   Callback     [function]  Callback function executed after completion
+	//
+	// @return  [none]
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	api.open = function openingCollapsible( target, _isAnimated, Callback ) {
 		GUI.debugging( 'collapsible: opening element "' + target + '"', 'report' );

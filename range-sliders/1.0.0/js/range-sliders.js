@@ -3,7 +3,7 @@
  *
  * range-sliders
  *
- * Description of module
+ * Range slider with additional styling(style injections) as browser support is not good enough yet
  *
  **************************************************************************************************************************************************************/
 
@@ -15,8 +15,10 @@
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// private function: resize bubble shadow
 	//
-	// $wrapper  [jquery object]  The wrapper element
-	// index     [integer]        The index of that element
+	// @param   $wrapper  [jquery object]  The wrapper element
+	// @param   index     [integer]        The index of that element
+	//
+	// @return  [jquery object]  Style dom element for injection
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	function BubbleShadow( $wrapper, index ) {
 		GUI.debugging( 'range-sliders: Setting shadow ', 'report' );
@@ -48,7 +50,7 @@
 		if( $('.js-range-slider').length ) {
 			GUI.debugging( 'range-sliders: Found instance', 'report' );
 
-
+			//tag each instance
 			i = 0;
 			$('.js-range-slider').each(function iterateSliders() {
 				var $styles = BubbleShadow( $(this), i );
@@ -72,7 +74,7 @@
 				var _isPercentage = $this.hasClass('range-slider-percentage');
 				var value = this.value;
 
-				if( _isCurrency ) {
+				if( _isCurrency ) { //format in dollars
 					var c = isNaN(c = Math.abs(c)) ? 2 : c;
 					var t = ',';
 					var s = value < 0 ? '-' : '';
@@ -82,16 +84,16 @@
 					value = '$' + s + (j ? i.substr(0, j) + t : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + t);
 				}
 
-				if( _isPercentage ) {
+				if( _isPercentage ) { //format in percentage
 					value += '%';
 				}
 
-				$( '.js-rangestyle-' + index ).remove();
+				$( '.js-rangestyle-' + index ).remove(); //remove all previous styling
 
 				var $styles = BubbleShadow( $wrapper, index );
-				$styles.insertBefore( $this );
+				$styles.insertBefore( $this ); //STYLE INJECTION
 
-				var $styles = $('<style/>')
+				var $styles = $('<style/>') //STYLE INJECTION
 					.addClass('js-rangestyle-' + index)
 					.html(
 						' .js-range-slider-' + index + ' .range-slider::-webkit-slider-thumb:after { content: "' + value + '"; }' +

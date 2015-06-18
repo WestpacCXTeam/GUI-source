@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -416,6 +416,7 @@ th {
   font-weight: 400;
   font-style: italic;
 }
+.h1,
 h1 {
   font-size: 30px;
   color: #685ac0;
@@ -427,13 +428,16 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 768px) {
+  .h1,
   h1 {
     font-size: 36px;
   }
 }
+.h1.body-font,
 h1.body-font {
   font-weight: 700;
 }
+.h2,
 h2 {
   font-size: 24px;
   color: #685ac0;
@@ -445,13 +449,16 @@ h2 {
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 768px) {
+  .h2,
   h2 {
     font-size: 30px;
   }
 }
+.h2.body-font,
 h2.body-font {
   font-weight: 700;
 }
+.h3,
 h3 {
   font-size: 18px;
   color: #685ac0;
@@ -463,13 +470,16 @@ h3 {
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 768px) {
+  .h3,
   h3 {
     font-size: 24px;
   }
 }
+.h3.body-font,
 h3.body-font {
   font-weight: 700;
 }
+.h4,
 h4 {
   font-size: 16px;
   color: #685ac0;
@@ -481,13 +491,16 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 768px) {
+  .h4,
   h4 {
     font-size: 18px;
   }
 }
+.h4.body-font,
 h4.body-font {
   font-weight: 700;
 }
+.h5,
 h5 {
   font-size: 16px;
   color: #685ac0;
@@ -498,9 +511,11 @@ h5 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.h5.body-font,
 h5.body-font {
   font-weight: 700;
 }
+.h6,
 h6 {
   font-size: 14px;
   color: #685ac0;
@@ -511,6 +526,7 @@ h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.h6.body-font,
 h6.body-font {
   font-weight: 700;
 }

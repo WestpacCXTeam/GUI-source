@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -402,6 +402,7 @@ th {
   font-weight: 400;
   font-style: italic;
 }
+.h1,
 h1 {
   font-size: 30px;
   color: #365fb4;
@@ -413,10 +414,12 @@ h1 {
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 768px) {
+  .h1,
   h1 {
     font-size: 36px;
   }
 }
+.h2,
 h2 {
   font-size: 24px;
   color: #365fb4;
@@ -428,10 +431,12 @@ h2 {
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 768px) {
+  .h2,
   h2 {
     font-size: 30px;
   }
 }
+.h3,
 h3 {
   font-size: 18px;
   color: #365fb4;
@@ -443,10 +448,12 @@ h3 {
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 768px) {
+  .h3,
   h3 {
     font-size: 24px;
   }
 }
+.h4,
 h4 {
   font-size: 16px;
   color: #365fb4;
@@ -458,10 +465,12 @@ h4 {
   -moz-osx-font-smoothing: grayscale;
 }
 @media (min-width: 768px) {
+  .h4,
   h4 {
     font-size: 18px;
   }
 }
+.h5,
 h5 {
   font-size: 16px;
   color: #365fb4;
@@ -472,6 +481,7 @@ h5 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.h6,
 h6 {
   font-size: 14px;
   color: #365fb4;
@@ -555,8 +565,8 @@ a:hover {
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,

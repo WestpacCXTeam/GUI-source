@@ -3,7 +3,7 @@
  *
  * modals
  *
- * Description of module
+ * Toggeling classes and aria-hidden attr with public API or on click or ESC press
  *
  **************************************************************************************************************************************************************/
 
@@ -15,9 +15,11 @@
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// public API function: open / close a modal
 	//
-	// _isOpen  [boolean]        Whether to open or close the modal
-	// $modal   [jquery object]  The modal element
-	// target   [string]         Selector string to id the modal for opening only
+	// @param   _isOpen  [boolean]        Whether to open or close the modal
+	// @param   $modal   [jquery object]  The modal element
+	// @param   target   [string]         Selector string to id the modal for opening only
+	//
+	// @return  [none]
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.toggelModal = function toggelModal(_isOpen, $modal, target) {
 		GUI.debugging( 'modals: ' + ( _isOpen ? 'Closing' : 'Opening' ) + ' modal', 'report' );
