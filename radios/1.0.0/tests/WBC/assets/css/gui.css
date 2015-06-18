@@ -2,7 +2,7 @@
 /*
  * Base styles
  *
- * Colors, fonts and base HTML elements
+ * Colors, fonts, grid and base HTML elements
  *
  */
 /*
@@ -402,6 +402,7 @@ th {
   font-weight: 400;
   font-style: italic;
 }
+.h1,
 h1 {
   font-size: 30px;
   color: #621a4b;
@@ -411,13 +412,16 @@ h1 {
   font-weight: 700;
 }
 @media (min-width: 768px) {
+  .h1,
   h1 {
     font-size: 36px;
   }
 }
+.h1.body-font,
 h1.body-font {
   font-weight: 300;
 }
+.h2,
 h2 {
   font-size: 24px;
   color: #621a4b;
@@ -427,13 +431,16 @@ h2 {
   font-weight: 700;
 }
 @media (min-width: 768px) {
+  .h2,
   h2 {
     font-size: 30px;
   }
 }
+.h2.body-font,
 h2.body-font {
   font-weight: 300;
 }
+.h3,
 h3 {
   font-size: 18px;
   color: #621a4b;
@@ -443,13 +450,16 @@ h3 {
   font-weight: 700;
 }
 @media (min-width: 768px) {
+  .h3,
   h3 {
     font-size: 24px;
   }
 }
+.h3.body-font,
 h3.body-font {
   font-weight: 300;
 }
+.h4,
 h4 {
   font-size: 16px;
   color: #621a4b;
@@ -459,13 +469,16 @@ h4 {
   font-weight: 700;
 }
 @media (min-width: 768px) {
+  .h4,
   h4 {
     font-size: 18px;
   }
 }
+.h4.body-font,
 h4.body-font {
   font-weight: 400;
 }
+.h5,
 h5 {
   font-size: 16px;
   color: #621a4b;
@@ -474,9 +487,11 @@ h5 {
   margin-bottom: 6px;
   font-weight: 500;
 }
+.h5.body-font,
 h5.body-font {
   font-weight: 500;
 }
+.h6,
 h6 {
   font-size: 14px;
   color: #621a4b;
@@ -485,6 +500,7 @@ h6 {
   margin-bottom: 0px;
   font-weight: 700;
 }
+.h6.body-font,
 h6.body-font {
   font-weight: 700;
 }
@@ -564,8 +580,8 @@ a:hover {
   font-family: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 *,
-:after,
-:before {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 .container,

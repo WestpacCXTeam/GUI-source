@@ -6,7 +6,9 @@ return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeTyp
 /*!range-sliders v1.0.0*/
 /***************************************************************************************************************************************************************
  *
- * Westpac GUI framework and settings
+ * Westpac GUI framework
+ *
+ * This base includes a debugging console and debounce and throttle functions.
  *
  **************************************************************************************************************************************************************/
 
@@ -25,10 +27,16 @@ var GUI = (function guiInit() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// Initiate GUI
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		init: function guiInit() {
+		init: function GuiInit() {
+			if( !window.console ) { //removing console.log from IE8
+				console = {
+					log: function() {}
+				};
+			}
+
 			if( GUI.DEBUG ) console.log('%cDEBUGGING INFORMATION', 'font-size: 25px;');
 
-			//remove fallback HTML
+			//remove fallback HTML class
 			$('html')
 				.removeClass('no-js')
 				.addClass('js');
@@ -39,9 +47,11 @@ var GUI = (function guiInit() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debounce function by _underscore.js
 		//
-		// func       [function]  Function to be executed
-		// wait       [integer]   Wait for next iteration for n in milliseconds
-		// immediate  [boolean]   Trigger the function on the leading edge, instead of the trailing
+		// @param   func       [function]  Function to be executed
+		// @param   wait       [integer]   Wait for next iteration for n in milliseconds
+		// @param   immediate  [boolean]   Trigger the function on the leading edge [true], instead of the trailing [false]
+		//
+		// @return  [function]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		debounce: function Debounce(func, wait, immediate) {
 			GUI.debugging( 'Base: Debounce called', 'report' );
@@ -75,10 +85,46 @@ var GUI = (function guiInit() {
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		// throttle function
+		//
+		// @param   func       [function]  Function to be executed
+		// @param   wait       [integer]   Run as much as possible without ever going more than once per [n in milliseconds] duration
+		//
+		// @return  [function]
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		throttle: function Throttle(func, wait) {
+			wait || (wait = 250);
+			var last;
+			var deferTimer;
+
+			return function() {
+				var context = this;
+				var now = +new Date;
+				var args = arguments;
+
+				if(last && now < last + wait) {
+					clearTimeout(deferTimer);
+
+					deferTimer = setTimeout(function() {
+						last = now;
+						func.apply(context, args);
+					}, wait);
+				}
+				else {
+					last = now;
+					func.apply(context, args);
+				}
+			};
+		},
+
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// debugging prettiness
 		//
-		// text  [string]  Text to be printed to debugger
-		// code  [string]  The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
+		// @param   text  [string]  Text to be printed to debugger
+		// @param   code  [string]  The urgency as a string: ['report', 'error', 'interaction', 'send', 'receive']
+		//
+		// @return  [none]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		debugging: function Debug( text, code ) {
 
@@ -116,7 +162,7 @@ GUI.init();
  *
  * range-sliders
  *
- * Description of module
+ * Range slider with additional styling(style injections) as browser support is not good enough yet
  *
  **************************************************************************************************************************************************************/
 
@@ -128,8 +174,10 @@ GUI.init();
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// private function: resize bubble shadow
 	//
-	// $wrapper  [jquery object]  The wrapper element
-	// index     [integer]        The index of that element
+	// @param   $wrapper  [jquery object]  The wrapper element
+	// @param   index     [integer]        The index of that element
+	//
+	// @return  [jquery object]  Style dom element for injection
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	function BubbleShadow( $wrapper, index ) {
 		GUI.debugging( 'range-sliders: Setting shadow ', 'report' );
@@ -161,7 +209,7 @@ GUI.init();
 		if( $('.js-range-slider').length ) {
 			GUI.debugging( 'range-sliders: Found instance', 'report' );
 
-
+			//tag each instance
 			i = 0;
 			$('.js-range-slider').each(function iterateSliders() {
 				var $styles = BubbleShadow( $(this), i );
@@ -185,7 +233,7 @@ GUI.init();
 				var _isPercentage = $this.hasClass('range-slider-percentage');
 				var value = this.value;
 
-				if( _isCurrency ) {
+				if( _isCurrency ) { //format in dollars
 					var c = isNaN(c = Math.abs(c)) ? 2 : c;
 					var t = ',';
 					var s = value < 0 ? '-' : '';
@@ -195,16 +243,16 @@ GUI.init();
 					value = '$' + s + (j ? i.substr(0, j) + t : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + t);
 				}
 
-				if( _isPercentage ) {
+				if( _isPercentage ) { //format in percentage
 					value += '%';
 				}
 
-				$( '.js-rangestyle-' + index ).remove();
+				$( '.js-rangestyle-' + index ).remove(); //remove all previous styling
 
 				var $styles = BubbleShadow( $wrapper, index );
-				$styles.insertBefore( $this );
+				$styles.insertBefore( $this ); //STYLE INJECTION
 
-				var $styles = $('<style/>')
+				var $styles = $('<style/>') //STYLE INJECTION
 					.addClass('js-rangestyle-' + index)
 					.html(
 						' .js-range-slider-' + index + ' .range-slider::-webkit-slider-thumb:after { content: "' + value + '"; }' +
