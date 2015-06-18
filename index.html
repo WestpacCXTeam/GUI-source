@@ -74,9 +74,15 @@
 
 		.module {
 			float: left;
-			width: 50%;
+			width: 100%;
 			padding: 0;
 			margin: 0;
+		}
+
+		@media (min-width: 768px) {
+			.module {
+				width: 50%;
+			}
 		}
 
 		.module-headline {
