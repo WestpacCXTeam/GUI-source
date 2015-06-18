@@ -17,9 +17,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
 
-	<link rel="stylesheet" href="_base/1.0.0/tests/WBC/assets/css/gui.css">
+	<title>Testing icons-group5 v1.0.0 BSA</title>
 
-	<title>Testing the GUI</title>
+	<script>
+		/*! grunt-grunticon Stylesheet Loader - v2.1.7 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+		(function(e){function n(n,t,o,a){"use strict";var i=e.document.createElement("link"),r=t||e.document.getElementsByTagName("script")[0],d=e.document.styleSheets;return i.rel="stylesheet",i.href=n,i.media="only x",a&&(i.onload=a),r.parentNode.insertBefore(i,r),i.onloadcssdefined=function(e){for(var t,o=0;d.length>o;o++)d[o].href&&d[o].href.indexOf(n)>-1&&(t=!0);t?e():setTimeout(function(){i.onloadcssdefined(e)})},i.onloadcssdefined(function(){i.media=o||"all"}),i}function t(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}var o=function(a,i){"use strict";if(a&&3===a.length){var r=e.Image,d=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),c=new r;c.onerror=function(){o.method="png",o.href=a[2],n(a[2])},c.onload=function(){var e=1===c.width&&1===c.height,r=a[e&&d?0:e?1:2];o.method=e&&d?"svg":e?"datapng":"png",o.href=r,t(n(r),i)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};o.loadCSS=n,o.onloadCSS=t,e.grunticon=o})(this);(function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;t.length>d;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;n.length>d;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;r.length>d;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s})(grunticon,this);
+		grunticon(["assets/css/symbols.data.svg.css", "assets/css/symbols.data.png.css", "assets/css/symbols.fallback.css"], grunticon.svgLoadedCallback);
+	</script>
+	<noscript><link href="assets/css/symbols.fallback.css" rel="stylesheet"></noscript>
+	<link rel="stylesheet" href="assets/css/gui.css">
 
 	<style>
 		header {
@@ -38,128 +44,6 @@
 		main.container {
 			background-color: #fff;
 		}
-
-		.lead {
-			margin-bottom: 21px;
-			font-size: 16px;
-			font-weight: 300;
-			line-height: 1.4;
-		}
-		@media (min-width: 768px) {
-			.lead {
-				font-size: 18px;
-			}
-		}
-
-		.well {
-			padding: 12px;
-			margin-bottom: 18px;
-			background-color: #f4f3f0;
-			border: 1px solid #d7d2cb;
-			border-radius: 3px;
-		}
-
-		.category {
-			display: inline-block;
-			width: 100%;
-			border-top: 4px dotted #d7d2cb;
-			margin-top: 84px;
-			clear: both;
-		}
-
-		.category:first-child() {
-			border: 0 none;
-			margin: 0;
-		}
-
-		.module {
-			float: left;
-			width: 100%;
-			padding: 0;
-			margin: 0;
-		}
-
-		@media (min-width: 768px) {
-			.module {
-				width: 50%;
-			}
-		}
-
-		.module-headline {
-			margin-top: 0;
-		}
-
-		.module-wrapper {
-			padding: 12px;
-			margin: 12px;
-			background-color: #f4f3f0;
-			border: 1px solid #d7d2cb;
-			border-radius: 3px;
-		}
-
-		.description {
-			font-size: 14px;
-			font-family: Helvetica;
-			font-weight: normal;
-			color: #575f65;
-			display: block;
-			margin-top: 3px;
-		}
-
-		.category-list {
-			list-style: none;
-			padding: 0;
-			margin-bottom: 60px;
-		}
-
-		.category-list li {
-			display: inline-block;
-			margin-right: 12px;
-		}
-
-		.gui-list {
-			list-style: none;
-			padding: 0;
-			overflow: hidden;
-			margin-top: -80px;
-		}
-
-		.gui-list-version {
-			list-style: none;
-		}
-
-		.version-headline {
-			display: inline-block;
-		}
-
-		.gui-list-version-brand {
-			list-style: none;
-			display: inline-block;
-			padding: 0 5px;
-		}
-
-		.gui-list-version-brand > li {
-			display: inline-block;
-			padding: 0 5px;
-		}
-
-		.brand-link {
-			display: inline-block;
-			padding: 6px 6px 0 6px;
-			border-bottom: 2px solid transparent;
-		}
-		.brand-link.brand-link-bom {
-			border-color: #685ac0;
-		}
-		.brand-link.brand-link-bsa {
-			border-color: #365fb4;
-		}
-		.brand-link.brand-link-stg {
-			border-color: #78be20;
-		}
-		.brand-link.brand-link-wbc {
-			border-color: #621a4b;
-		}
 	</style>
 
 	<!--[if lt IE 9]>
@@ -177,51 +61,87 @@
 
 	<header>
 		<div class="container">
-			<h1 class="headline">GUI source</h1>
+			<a class="nav" href="../../../../">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline">Testing icons-group5 v1.0.0 BSA</h1>
 		</div>
 	</header>
 
 	<main class="container">
+<style>
+	.icon {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+	}
+	.icon.icon-size-sm {
+		background-size: 16px 16px;
+		width: 16px;
+		height: 16px;
+	}
+	.icon.icon-size-sm svg {
+		width: 16px;
+		height: 16px;
+	}
+	.icon.icon-size-lg {
+		background-size: 64px 64px;
+		width: 64px;
+		height: 64px;
+	}
+	.icon.icon-size-lg svg {
+		width: 64px;
+		height: 64px;
+	}
+	a .icon svg,
+	a .icon .icons-background {
+		fill: #d5002b;
+	}
+	@media print {
+		.icon svg,
+		.icon .icons-background {
+			fill: #000;
+		}
+		a  svg,
+		a  .icons-background {
+			fill: #000 !important;
+		}
+	}
+</style>
 
-		<p class="well lead">
-			This is the repository in which we develop each element of the GUI.
-			Each module is tested in isolation and can be seen below.<br>
-			For contribution, bugs or questions please go to the <a href="https://github.com/WestpacCXTeam/GUI-source">GitHub repo</a>.
-		</p>
+<h2>icons</h2>
+
+<span class="icon icon-size-md icon-alarm"></span>
+<span class="icon icon-size-md icon-australia"></span>
+<span class="icon icon-size-md icon-chat"></span>
+<span class="icon icon-size-md icon-clock"></span>
+<span class="icon icon-size-md icon-edit"></span>
+<span class="icon icon-size-md icon-email"></span>
+<span class="icon icon-size-md icon-id-card"></span>
+<span class="icon icon-size-md icon-padlock"></span>
+<span class="icon icon-size-md icon-print"></span>
+<span class="icon icon-size-md icon-sms"></span>
+<span class="icon icon-size-md icon-stopwatch"></span>
+<span class="icon icon-size-md icon-telephone"></span>
 
 
-<h2>Categories</h2><ul class="category-list"><li><a href="#_base">_fixed</a></li><li><a href="#icons-group5">Icons</a></li></ul><h2>Modules</h2><ul class="gui-list">
-	<li class="category" id="_base"><small>[_fixed]</small></li>	<li class="module"><div class="module-wrapper">
-		<h3 class="module-headline">_Base <small class="description">(Base styling and grid system)</small></h3>
-		<ul class="gui-list-version">
-			<li>
-				<h4 class="version-headline">v1.0.0</h4>
-				<ul class="gui-list-version-brand">
-					<li><a class="brand-link brand-link-bom" href="./_base/1.0.0/tests/BOM/">BOM</a></li>
-					<li><a class="brand-link brand-link-bsa" href="./_base/1.0.0/tests/BSA/">BSA</a></li>
-					<li><a class="brand-link brand-link-stg" href="./_base/1.0.0/tests/STG/">STG</a></li>
-					<li><a class="brand-link brand-link-wbc" href="./_base/1.0.0/tests/WBC/">WBC</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div></li>
-	<li class="category" id="icons-group5"><small>[Icons]</small></li>	<li class="module"><div class="module-wrapper">
-		<h3 class="module-headline">Icons-Group 5 <small class="description">(Icons-Group 5)</small></h3>
-		<ul class="gui-list-version">
-			<li>
-				<h4 class="version-headline">v1.0.0</h4>
-				<ul class="gui-list-version-brand">
-					<li><a class="brand-link brand-link-bom" href="./icons-group5/1.0.0/tests/BOM/">BOM</a></li>
-					<li><a class="brand-link brand-link-bsa" href="./icons-group5/1.0.0/tests/BSA/">BSA</a></li>
-					<li><a class="brand-link brand-link-stg" href="./icons-group5/1.0.0/tests/STG/">STG</a></li>
-					<li><a class="brand-link brand-link-wbc" href="./icons-group5/1.0.0/tests/WBC/">WBC</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div></li>
-</ul>
+<hr>
+<h2>icons embeded</h2>
 
+<span class="icon icon-size-md icon-alarm" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-australia" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-chat" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-clock" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-edit" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-email" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-id-card" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-padlock" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-print" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-sms" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-stopwatch" data-grunticon-embed></span>
+<span class="icon icon-size-md icon-telephone" data-grunticon-embed></span>
 	</main>
 
+	<script src="assets/js/gui.js"></script>
 </body>
 </html>
