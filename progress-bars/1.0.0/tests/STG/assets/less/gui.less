@@ -1449,8 +1449,20 @@
 		background-color: #fff;
 		border-radius: 1000px;
 		border: 1px solid @color-Border;
+		position: relative;
+
+		&:after {
+			content: '0%';
+			position: absolute;
+			left: 10px;
+			color: @color-Muted;
+			font-size: 14px;
+			font-weight: 700;
+			z-index: 1;
+		}
 
 		.progress-bar-indicator {
+			position: relative;
 			float: left;
 			width: 0;
 			height: 100%;
@@ -1462,6 +1474,8 @@
 			background-color: @color-B;
 			border-radius: 999px;
 			border: 1px solid #fff;
+			z-index: 2;
+			overflow: hidden;
 			transition: width 0.6s ease;
 
 			.progress-bar-text {
@@ -1472,9 +1486,15 @@
 		&.progress-bar-skinny {
 			height: 10px;
 
+			&:after {
+				display: none;
+			}
+
 			.progress-bar-text {
 				position: absolute;
 				opacity: 0;
+				height: 0;
+				overflow: hidden;
 			}
 		}
 	}
