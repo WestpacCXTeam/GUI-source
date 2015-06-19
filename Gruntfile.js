@@ -51,6 +51,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-wakeup');
 	grunt.loadNpmTasks('grunt-font');
 	grunt.loadNpmTasks('grunt-hub');
+	require('time-grunt')(grunt);
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -150,6 +151,36 @@ module.exports = function(grunt) {
 		//running tasks
 		grunt.config.set('replace', replace);
 		grunt.task.run('replace');
+	});
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// Custom grunt task to create list index
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	grunt.registerTask('mergeBase', 'Merge the base into all modules.', function() {
+
+		var hub = {};
+		var module = grunt.file.readJSON( 'GUI.json');
+
+		Object.keys( module ).forEach(function iterateCategories( category ) {
+			module[category].forEach(function iterateModules( module ) {
+
+				//gathering hub tasks
+				hub[ 'merge-' + module.ID ] = {
+					expand: false,
+					src: [
+						'./' + module.ID + '/Gruntfile.js',
+					],
+					tasks: ['buildVersions'],
+				};
+
+			});
+		});
+
+
+		//running tasks
+		grunt.config.set('hub', hub);
+		grunt.task.run('hub');
 	});
 
 
@@ -309,21 +340,6 @@ module.exports = function(grunt) {
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		// Grunt HUB
-		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		hub: {
-			all: {
-				expand: true,
-				src: [
-					'./*/Gruntfile.js',
-					'!./_base/Gruntfile.js',
-				],
-				tasks: ['buildVersions'],
-			},
-		},
-
-
-		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// Wakeup
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		wakeup: {
@@ -351,7 +367,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('merge', [ //merge base into all modules
 		'font:title',
 		'font:merge',
-		'hub',
+		'buildIndex',
+		'mergeBase',
 		'wakeup',
 	]);
 

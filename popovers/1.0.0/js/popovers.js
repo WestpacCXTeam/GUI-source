@@ -24,7 +24,7 @@
 
 			// CLICK
 			$('.js-popover').on('click', function openPopover() {
-				GUI.debugging( 'popovers: popover button clicked', 'interaction' );
+				GUI.debugging( 'popovers: Popover button clicked', 'interaction' );
 
 				var $this = $(this);
 				var _isOpen = $this.hasClass('is-open');
@@ -33,7 +33,7 @@
 
 				// CLOSING POPOVER
 				if( _isOpen ) {
-					GUI.debugging( 'popovers: closing popover', 'report' );
+					GUI.debugging( 'popovers: Closing popover', 'report' );
 
 					$this
 						.removeClass('is-open');
@@ -41,7 +41,7 @@
 					$popover.attr('aria-hidden', 'true');
 				}
 				else { // OPENING POPOVER
-					GUI.debugging( 'popovers: opening popover', 'report' );
+					GUI.debugging( 'popovers: Opening popover', 'report' );
 
 					$('.js-popover-styles-' + index).remove(); //remove all previous styles
 					$popover.attr('style', '');
@@ -60,7 +60,7 @@
 
 					//the popup is cut off on the top
 					if( top < 0 ) {
-						GUI.debugging( 'popovers: top boundary detected', 'report' );
+						GUI.debugging( 'popovers: Top boundary detected', 'report' );
 
 						$this.addClass('is-bottom');
 					}
@@ -68,7 +68,7 @@
 
 					//the popup is cut off on the left
 					if( left < 0 ) {
-						GUI.debugging( 'popovers: left boundary detected', 'report' );
+						GUI.debugging( 'popovers: Left boundary detected', 'report' );
 
 						var className = 'js-popover-' + index;
 						var marginLeft = parseInt( $popover.css('marginLeft') );
@@ -90,7 +90,7 @@
 
 					//the popup is cut off on the right
 					if( right < 0 ) {
-						GUI.debugging( 'popovers: right boundary detected', 'report' );
+						GUI.debugging( 'popovers: Right boundary detected', 'report' );
 
 						var className = 'js-popover-' + index;
 						var marginLeft = parseInt( $popover.css('marginLeft') );

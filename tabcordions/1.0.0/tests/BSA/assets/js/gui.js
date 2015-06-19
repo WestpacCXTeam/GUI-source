@@ -65,7 +65,7 @@ var GUI = (function guiInit() {
 					timeout = null;
 
 					if(!immediate) {
-						GUI.debugging( 'Base: Debounce executed', 'report' );
+						GUI.debugging( 'Base: Debounce executed (1)', 'report' );
 
 						func.apply(context, args);
 					}
@@ -76,7 +76,7 @@ var GUI = (function guiInit() {
 				timeout = setTimeout(later, wait);
 
 				if(callNow) {
-					GUI.debugging( 'Base: Debounce executed', 'report' );
+					GUI.debugging( 'Base: Debounce executed (2)', 'report' );
 
 					func.apply(context, args);
 				}
@@ -93,6 +93,8 @@ var GUI = (function guiInit() {
 		// @return  [function]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		throttle: function Throttle(func, wait) {
+			GUI.debugging( 'Base: Throttle called', 'report' );
+
 			wait || (wait = 250);
 			var last;
 			var deferTimer;
@@ -106,11 +108,15 @@ var GUI = (function guiInit() {
 					clearTimeout(deferTimer);
 
 					deferTimer = setTimeout(function() {
+						GUI.debugging( 'Base: Throttle executed (1)', 'report' );
+
 						last = now;
 						func.apply(context, args);
 					}, wait);
 				}
 				else {
+					GUI.debugging( 'Base: Throttle executed (2)', 'report' );
+
 					last = now;
 					func.apply(context, args);
 				}
@@ -218,7 +224,7 @@ GUI.init();
 	// @return  [none]
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	api.close = function closingCollapsible( target, _isAnimated, Callback ) {
-		GUI.debugging( 'collapsible: closing element "' + target + '"', 'report' );
+		GUI.debugging( 'collapsible: Closing element "' + target + '"', 'report' );
 
 		if( target instanceof jQuery ) {
 			var $target = target;
@@ -228,7 +234,7 @@ GUI.init();
 		}
 
 		if( !$target.length ) {
-			GUI.debugging( 'collapsible: no element found to close', 'error' );
+			GUI.debugging( 'collapsible: No element found to close', 'error' );
 			return;
 		}
 
@@ -265,7 +271,7 @@ GUI.init();
 	// @return  [none]
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	api.open = function openingCollapsible( target, _isAnimated, Callback ) {
-		GUI.debugging( 'collapsible: opening element "' + target + '"', 'report' );
+		GUI.debugging( 'collapsible: Opening element "' + target + '"', 'report' );
 
 		if( target instanceof jQuery ) {
 			var $target = target;
@@ -275,7 +281,7 @@ GUI.init();
 		}
 
 		if( !$target.length ) {
-			GUI.debugging( 'collapsible: no element found to open', 'error' );
+			GUI.debugging( 'collapsible: No element found to open', 'error' );
 			return;
 		}
 
@@ -316,10 +322,10 @@ GUI.init();
 		GUI.debugging( 'tabcordion-soft: Initiating', 'report' );
 
 		if( $('.js-collapsible').length ) {
-			GUI.debugging( 'tabcordion-soft: found instance', 'report' );
+			GUI.debugging( 'tabcordion-soft: Found instance', 'report' );
 
 			$('.js-collapsible').on('click', function clickCollapsible(e) {
-				GUI.debugging( 'collapsible: collapsible clicked', 'interaction' );
+				GUI.debugging( 'collapsible: Collapsible clicked', 'interaction' );
 				e.preventDefault();
 
 				var $this = $(this);
@@ -327,7 +333,7 @@ GUI.init();
 				var $tabcordion = $this.parents('.tabcordion')
 
 				if( $tabcordion.length ) {
-					GUI.debugging( 'collapsible: found to be inside tabcordion', 'report' );
+					GUI.debugging( 'collapsible: Found to be inside tabcordion', 'report' );
 
 					var $tabs = $this.parents('.tabcordion').find('.collapsible-body');
 					var _isMobile = parseInt( $('html').css('line-height') ) === 1; //responsive animations (requires responsive css on html)
@@ -365,7 +371,7 @@ GUI.init();
 
 				}
 				else {
-					GUI.debugging( 'collapsible: triggering pure toggle', 'report' );
+					GUI.debugging( 'collapsible: Triggering pure toggle', 'report' );
 
 					var mode = $this.attr('data-collapsible-mode');
 
