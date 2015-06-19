@@ -65,7 +65,7 @@ var GUI = (function guiInit() {
 					timeout = null;
 
 					if(!immediate) {
-						GUI.debugging( 'Base: Debounce executed', 'report' );
+						GUI.debugging( 'Base: Debounce executed (1)', 'report' );
 
 						func.apply(context, args);
 					}
@@ -76,7 +76,7 @@ var GUI = (function guiInit() {
 				timeout = setTimeout(later, wait);
 
 				if(callNow) {
-					GUI.debugging( 'Base: Debounce executed', 'report' );
+					GUI.debugging( 'Base: Debounce executed (2)', 'report' );
 
 					func.apply(context, args);
 				}
@@ -93,6 +93,8 @@ var GUI = (function guiInit() {
 		// @return  [function]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		throttle: function Throttle(func, wait) {
+			GUI.debugging( 'Base: Throttle called', 'report' );
+
 			wait || (wait = 250);
 			var last;
 			var deferTimer;
@@ -106,11 +108,15 @@ var GUI = (function guiInit() {
 					clearTimeout(deferTimer);
 
 					deferTimer = setTimeout(function() {
+						GUI.debugging( 'Base: Throttle executed (1)', 'report' );
+
 						last = now;
 						func.apply(context, args);
 					}, wait);
 				}
 				else {
+					GUI.debugging( 'Base: Throttle executed (2)', 'report' );
+
 					last = now;
 					func.apply(context, args);
 				}
@@ -221,7 +227,7 @@ GUI.init();
 
 			//open button click
 			$('.js-modal').on('click', function openModal() {
-				GUI.debugging( 'modals: open button clicked', 'interaction' );
+				GUI.debugging( 'modals: Open button clicked', 'interaction' );
 
 				var $this = $(this);
 				var target = $this.attr('data-modal');
@@ -234,7 +240,7 @@ GUI.init();
 
 			//close button click
 			$(document).on('click', '.js-modalclose', function openModal() {
-				GUI.debugging( 'modals: close button / backdrop clicked', 'interaction' );
+				GUI.debugging( 'modals: Close button / backdrop clicked', 'interaction' );
 
 				var $this = $(this);
 				var $modal = $('.modal');

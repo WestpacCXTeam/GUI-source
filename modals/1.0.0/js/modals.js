@@ -62,7 +62,7 @@
 
 			//open button click
 			$('.js-modal').on('click', function openModal() {
-				GUI.debugging( 'modals: open button clicked', 'interaction' );
+				GUI.debugging( 'modals: Open button clicked', 'interaction' );
 
 				var $this = $(this);
 				var target = $this.attr('data-modal');
@@ -75,7 +75,7 @@
 
 			//close button click
 			$(document).on('click', '.js-modalclose', function openModal() {
-				GUI.debugging( 'modals: close button / backdrop clicked', 'interaction' );
+				GUI.debugging( 'modals: Close button / backdrop clicked', 'interaction' );
 
 				var $this = $(this);
 				var $modal = $('.modal');
