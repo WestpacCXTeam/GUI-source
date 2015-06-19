@@ -1697,10 +1697,11 @@ a:hover {
   cursor: not-allowed;
 }
 .radio .radio-text {
-  font-size: 16px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 400;
   padding-left: 38px;
   min-height: 32px;
+  line-height: 1.2;
   display: inline-block;
   display: -webkit-flex;
   display: -ms-flexbox;
