@@ -60,7 +60,7 @@ var GUI = (function guiInit() {
 					timeout = null;
 
 					if(!immediate) {
-						GUI.debugging( 'Base: Debounce executed', 'report' );
+						GUI.debugging( 'Base: Debounce executed (1)', 'report' );
 
 						func.apply(context, args);
 					}
@@ -71,7 +71,7 @@ var GUI = (function guiInit() {
 				timeout = setTimeout(later, wait);
 
 				if(callNow) {
-					GUI.debugging( 'Base: Debounce executed', 'report' );
+					GUI.debugging( 'Base: Debounce executed (2)', 'report' );
 
 					func.apply(context, args);
 				}
@@ -88,6 +88,8 @@ var GUI = (function guiInit() {
 		// @return  [function]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		throttle: function Throttle(func, wait) {
+			GUI.debugging( 'Base: Throttle called', 'report' );
+
 			wait || (wait = 250);
 			var last;
 			var deferTimer;
@@ -101,11 +103,15 @@ var GUI = (function guiInit() {
 					clearTimeout(deferTimer);
 
 					deferTimer = setTimeout(function() {
+						GUI.debugging( 'Base: Throttle executed (1)', 'report' );
+
 						last = now;
 						func.apply(context, args);
 					}, wait);
 				}
 				else {
+					GUI.debugging( 'Base: Throttle executed (2)', 'report' );
+
 					last = now;
 					func.apply(context, args);
 				}

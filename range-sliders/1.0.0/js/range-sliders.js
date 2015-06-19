@@ -65,7 +65,7 @@
 
 
 			$('.js-range-slider .range-slider').on('mousedown input active focus touchstart', function showBubble() {
-				GUI.debugging( 'range-sliders: input changed', 'interaction' );
+				GUI.debugging( 'range-sliders: Input changed', 'interaction' );
 
 				var $this = $(this);
 				var $wrapper = $this.parent('.js-range-slider');

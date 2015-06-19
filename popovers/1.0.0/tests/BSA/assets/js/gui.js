@@ -65,7 +65,7 @@ var GUI = (function guiInit() {
 					timeout = null;
 
 					if(!immediate) {
-						GUI.debugging( 'Base: Debounce executed', 'report' );
+						GUI.debugging( 'Base: Debounce executed (1)', 'report' );
 
 						func.apply(context, args);
 					}
@@ -76,7 +76,7 @@ var GUI = (function guiInit() {
 				timeout = setTimeout(later, wait);
 
 				if(callNow) {
-					GUI.debugging( 'Base: Debounce executed', 'report' );
+					GUI.debugging( 'Base: Debounce executed (2)', 'report' );
 
 					func.apply(context, args);
 				}
@@ -93,6 +93,8 @@ var GUI = (function guiInit() {
 		// @return  [function]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		throttle: function Throttle(func, wait) {
+			GUI.debugging( 'Base: Throttle called', 'report' );
+
 			wait || (wait = 250);
 			var last;
 			var deferTimer;
@@ -106,11 +108,15 @@ var GUI = (function guiInit() {
 					clearTimeout(deferTimer);
 
 					deferTimer = setTimeout(function() {
+						GUI.debugging( 'Base: Throttle executed (1)', 'report' );
+
 						last = now;
 						func.apply(context, args);
 					}, wait);
 				}
 				else {
+					GUI.debugging( 'Base: Throttle executed (2)', 'report' );
+
 					last = now;
 					func.apply(context, args);
 				}
@@ -183,7 +189,7 @@ GUI.init();
 
 			// CLICK
 			$('.js-popover').on('click', function openPopover() {
-				GUI.debugging( 'popovers: popover button clicked', 'interaction' );
+				GUI.debugging( 'popovers: Popover button clicked', 'interaction' );
 
 				var $this = $(this);
 				var _isOpen = $this.hasClass('is-open');
@@ -192,7 +198,7 @@ GUI.init();
 
 				// CLOSING POPOVER
 				if( _isOpen ) {
-					GUI.debugging( 'popovers: closing popover', 'report' );
+					GUI.debugging( 'popovers: Closing popover', 'report' );
 
 					$this
 						.removeClass('is-open');
@@ -200,7 +206,7 @@ GUI.init();
 					$popover.attr('aria-hidden', 'true');
 				}
 				else { // OPENING POPOVER
-					GUI.debugging( 'popovers: opening popover', 'report' );
+					GUI.debugging( 'popovers: Opening popover', 'report' );
 
 					$('.js-popover-styles-' + index).remove(); //remove all previous styles
 					$popover.attr('style', '');
@@ -219,7 +225,7 @@ GUI.init();
 
 					//the popup is cut off on the top
 					if( top < 0 ) {
-						GUI.debugging( 'popovers: top boundary detected', 'report' );
+						GUI.debugging( 'popovers: Top boundary detected', 'report' );
 
 						$this.addClass('is-bottom');
 					}
@@ -227,7 +233,7 @@ GUI.init();
 
 					//the popup is cut off on the left
 					if( left < 0 ) {
-						GUI.debugging( 'popovers: left boundary detected', 'report' );
+						GUI.debugging( 'popovers: Left boundary detected', 'report' );
 
 						var className = 'js-popover-' + index;
 						var marginLeft = parseInt( $popover.css('marginLeft') );
@@ -249,7 +255,7 @@ GUI.init();
 
 					//the popup is cut off on the right
 					if( right < 0 ) {
-						GUI.debugging( 'popovers: right boundary detected', 'report' );
+						GUI.debugging( 'popovers: Right boundary detected', 'report' );
 
 						var className = 'js-popover-' + index;
 						var marginLeft = parseInt( $popover.css('marginLeft') );
