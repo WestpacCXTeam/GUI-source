@@ -18,6 +18,22 @@
 	<meta name="viewport" content="width=device-width">
 
 	<title>Testing responsive-embeds v1.0.0 STG</title>
+
+	<script type="text/javascript" sync>
+		var $html = document.documentElement;
+
+		if( $html.classList ) {
+			$html.classList.remove( 'no-js' );
+			$html.classList.add( 'js' );
+		}
+		else {
+			var className = 'no-js';
+
+			$html.className = $html.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+			$html.className += ' js';
+		}
+	</script>
+
 	<link rel="stylesheet" href="assets/css/gui.css">
 
 	<style>

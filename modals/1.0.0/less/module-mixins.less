@@ -40,9 +40,10 @@
 		border-radius: 3px;
 		border: 1px solid @color-Border;
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-		transition: all 0.3s ease;
+		transition: opacity 0.3s ease, top 0.3s ease, max-height 0.3s ease;
 		z-index: 12;
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
 		visibility: hidden;
 
 		@media (min-width: @screen-sm) {
@@ -65,7 +66,7 @@
 		}
 
 		&.is-open {
-			max-height: 70%;
+			max-height: 85%;
 			top: 30px;
 			opacity: 1;
 			visibility: visible;
@@ -87,6 +88,7 @@
 			.modal-header-close {
 				-webkit-appearance: none;
 				-moz-appearance: none;
+				appearance: none;
 				border: 0 none;
 				background-color: transparent;
 				padding: 0;
@@ -113,7 +115,7 @@
 
 			.modal-header-title {
 				font-size: 18px;
-				font-weight: 300;
+				font-weight: 700;
 				color: @headline-color;
 				padding: 2px 0;
 			}
@@ -134,6 +136,7 @@
 
 	.modal-backdrop {
 		position: fixed;
+		background-color: #000;
 		background-color: rgba(0, 0, 0, 0.5);
 		top: 0;
 		right: 0;

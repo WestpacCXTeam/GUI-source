@@ -33,6 +33,7 @@
 		font-size: 0;
 		display: inline-block;
 		vertical-align: middle;
+		white-space: nowrap;
 
 		.input-addon-label {
 
@@ -47,6 +48,9 @@
 			}
 
 			.input-addon-input {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
 				font-size: 16px;
 				font-weight: 400;
 				border: 1px solid @color-Border;
@@ -83,6 +87,8 @@
 			font-size: 16px;
 			font-weight: 400;
 			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
 			border: 0 none;
 			padding: 7px 8px 8px 8px;
 			margin: 0;
@@ -145,12 +151,21 @@
 				border-left: 7px solid transparent;
 			}
 
+			.ie8 &,
+			.ie9 & {
+
+				&:after {
+					display: none;
+				}
+			}
+
 			.input-addon-select {
 				position: relative;
 				z-index: 1;
 				background: transparent;
 				-webkit-appearance: none;
 				-moz-appearance: none;
+				appearance: none;
 				text-indent: 0.01px;
 				text-overflow: '';
 				height: 33px;
@@ -167,6 +182,14 @@
 				&:hover {
 					outline: none;
 				}
+
+				option {
+					background-color: @color-B;
+				}
+
+				&::-ms-expand {
+					display: none;
+				}
 			}
 
 			.input-addon-faint& { //faint
@@ -179,6 +202,10 @@
 
 				.input-addon-select {
 					color: @color-Muted;
+
+					option {
+						background-color: @color-J;
+					}
 				}
 			}
 		}

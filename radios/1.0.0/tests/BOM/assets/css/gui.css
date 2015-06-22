@@ -1662,7 +1662,7 @@ a:hover {
 /*
  * radios mixins
  *
- * Radios with flexbox enhancements
+ * Radios
  *
  */
 /*!radios v1.0.0 BOM*/
@@ -1677,7 +1677,8 @@ a:hover {
 	 *  SETTINGS
 	 */
 .radio {
-  display: inline-block;
+  display: inline-table;
+  min-height: 32px;
 }
 .radio .radio-input {
   opacity: 0;
@@ -1697,21 +1698,11 @@ a:hover {
   cursor: not-allowed;
 }
 .radio .radio-text {
-  font-size: 14px;
   font-weight: 400;
-  padding-left: 38px;
-  min-height: 32px;
   line-height: 1.2;
-  display: inline-block;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-left: 38px;
+  display: table-cell;
+  vertical-align: middle;
 }
 .radio .radio-text:hover {
   cursor: pointer;
@@ -1723,6 +1714,19 @@ a:hover {
 }
 .radio + .radio {
   margin-left: 18px;
+}
+.ie8 .radio {
+  min-height: 0;
+}
+.ie8 .radio .radio-input {
+  position: static;
+}
+.ie8 .radio .radio-text {
+  padding-left: 6px;
+  background: none;
+}
+.radio-flip.ie8 .radio .radio-text {
+  padding-right: 6px;
 }
 @media print {
   .radio .radio-input {

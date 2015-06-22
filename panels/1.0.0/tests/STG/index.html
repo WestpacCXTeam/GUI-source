@@ -18,6 +18,22 @@
 	<meta name="viewport" content="width=device-width">
 
 	<title>Testing panels v1.0.0 STG</title>
+
+	<script type="text/javascript" sync>
+		var $html = document.documentElement;
+
+		if( $html.classList ) {
+			$html.classList.remove( 'no-js' );
+			$html.classList.add( 'js' );
+		}
+		else {
+			var className = 'no-js';
+
+			$html.className = $html.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+			$html.className += ' js';
+		}
+	</script>
+
 	<link rel="stylesheet" href="assets/css/gui.css">
 
 	<style>
@@ -205,6 +221,15 @@
 					<td>Peter</td>
 					<td>Clancy</td>
 					<td><i>Pete has no twitter either... :(</i></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Someone else</td>
+					<td>[not disclosed]</td>
+					<td>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repudiandae, dolores, quam sapiente esse maxime dolor provident impedit
+						similique facilis reprehenderit. Provident voluptatem eum, ipsum illum quisquam quam beatae iste.
+					</td>
 				</tr>
 			</tbody>
 		</table>

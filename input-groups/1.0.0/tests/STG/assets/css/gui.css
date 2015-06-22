@@ -1689,6 +1689,8 @@ a:hover {
 }
 .input-group .input-group-input {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-radius: 0;
   border: 0 none;
   font-size: 16px;
