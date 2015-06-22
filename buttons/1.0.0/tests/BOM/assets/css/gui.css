@@ -1700,6 +1700,7 @@ a:hover {
           user-select: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   color: #716f7d;
   border-color: #c6c5cb;
   background-color: #f8f8f9;
@@ -1721,6 +1722,7 @@ a:hover {
 .btn.btn-link {
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   background: transparent;
   border-radius: 0;
   border: 0 none;
