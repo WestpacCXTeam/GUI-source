@@ -1677,6 +1677,7 @@ a:hover {
   font-size: 0;
   display: inline-block;
   vertical-align: middle;
+  white-space: nowrap;
 }
 .input-addon .input-addon-label:first-child .input-addon-input {
   border-left: 1px solid #c6c5cb;
@@ -1686,6 +1687,9 @@ a:hover {
   border-bottom-right-radius: 0;
 }
 .input-addon .input-addon-label .input-addon-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-size: 16px;
   font-weight: 400;
   border: 1px solid #c6c5cb;
@@ -1773,6 +1777,10 @@ a:hover {
   border-bottom: none;
   border-left: 7px solid transparent;
 }
+.ie8 .input-addon .input-addon-select-wrapper:after,
+.ie9 .input-addon .input-addon-select-wrapper:after {
+  display: none;
+}
 .input-addon .input-addon-select-wrapper .input-addon-select {
   position: relative;
   z-index: 1;
@@ -1795,6 +1803,12 @@ a:hover {
 .input-addon .input-addon-select-wrapper .input-addon-select:hover {
   outline: none;
 }
+.input-addon .input-addon-select-wrapper .input-addon-select option {
+  background-color: #685ac0;
+}
+.input-addon .input-addon-select-wrapper .input-addon-select::-ms-expand {
+  display: none;
+}
 .input-addon-faint.input-addon .input-addon-select-wrapper {
   background-color: #f8f8f8;
   border-color: #c6c5cb;
@@ -1804,6 +1818,9 @@ a:hover {
 }
 .input-addon-faint.input-addon .input-addon-select-wrapper .input-addon-select {
   color: #716f7d;
+}
+.input-addon-faint.input-addon .input-addon-select-wrapper .input-addon-select option {
+  background-color: #f8f8f8;
 }
 .input-addon.input-addon-xl .input-addon-label .input-addon-input,
 .input-addon.input-addon-xl .input-addon-btn {
