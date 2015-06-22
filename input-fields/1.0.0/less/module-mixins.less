@@ -48,9 +48,11 @@
 
 		textarea& {
 			min-height: 60px;
+			vertical-align: top;
 		}
 
-		& + .input-field {
+		& + .input-field,
+		& + .input-field-select-wrapper {
 			margin-top: 21px;
 		}
 
@@ -182,6 +184,14 @@
 			border-left: 7px solid transparent;
 		}
 
+		.ie8 &,
+		.ie9 & {
+
+			&:after {
+				display: none;
+			}
+		}
+
 		.input-field-select {
 			position: relative;
 			z-index: 1;
@@ -211,6 +221,10 @@
 				color: @color-Muted;
 				cursor: not-allowed;
 				padding-right: 8px;
+			}
+
+			&::-ms-expand {
+				display: none;
 			}
 		}
 
