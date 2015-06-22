@@ -1678,7 +1678,6 @@ a:hover {
   margin-bottom: 0;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
-  overflow: hidden;
 }
 .panel > .table-responsive .table caption,
 .panel > .table caption {
