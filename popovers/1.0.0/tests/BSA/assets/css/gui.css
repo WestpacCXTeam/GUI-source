@@ -1637,6 +1637,10 @@ a:hover {
 	 */
 .popover {
   position: relative;
+  overflow: hidden;
+}
+.popover.is-open {
+  overflow: visible;
 }
 .popover .popover-popup {
   position: absolute;
@@ -1650,7 +1654,7 @@ a:hover {
   border: 1px solid #707070;
   z-index: 3;
   background-color: #fff;
-  pointer-events: none;
+  pointer-events: all;
 }
 .popover .popover-popup:before,
 .popover .popover-popup:after {
@@ -1694,11 +1698,13 @@ a:hover {
   padding-bottom: 18px;
 }
 .js .popover .popover-popup {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
   opacity: 0;
-  visibility: none;
+  visibility: hidden;
   transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 .is-open.popover .popover-popup {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
   opacity: 1;
   visibility: visible;
 }

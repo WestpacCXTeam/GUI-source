@@ -1444,6 +1444,11 @@
 
 	.popover {
 		position: relative;
+		overflow: hidden;
+
+		&.is-open {
+			overflow: visible;
+		}
 
 		.popover-popup {
 			position: absolute;
@@ -1457,7 +1462,7 @@
 			border: 1px solid @color-Muted;
 			z-index: 3;
 			background-color: #fff;
-			pointer-events: none;
+			pointer-events: all;
 
 			&:before,
 			&:after {
@@ -1506,12 +1511,14 @@
 			}
 
 			.js & {
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
 				opacity: 0;
-				visibility: none;
+				visibility: hidden;
 				transition: opacity 0.2s ease, visibility 0.2s ease;
 			}
 
 			.is-open& {
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=100)";
 				opacity: 1;
 				visibility: visible;
 			}
