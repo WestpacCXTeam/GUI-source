@@ -1695,6 +1695,8 @@ a:hover {
   font-size: 16px;
   font-weight: 400;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 0 none;
   padding: 7px 8px 8px 8px;
   margin: 0;
@@ -1761,6 +1763,7 @@ a:hover {
   background: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   text-indent: 0.01px;
   text-overflow: '';
   height: 33px;

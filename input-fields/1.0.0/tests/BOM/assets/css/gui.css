@@ -1677,6 +1677,7 @@ a:hover {
   display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   font-size: 16px;
   font-weight: 400;
   color: #0d0d0d;
@@ -1761,6 +1762,7 @@ textarea.input-field-sm .input-field {
   background: transparent;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   text-indent: 0.01px;
   text-overflow: '';
   height: 36px;

@@ -1674,6 +1674,7 @@ a:hover {
           user-select: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   color: #575f65;
   border-color: #d7d2cb;
   background-color: #f4f3f0;
@@ -1695,6 +1696,7 @@ a:hover {
 .btn.btn-link {
   -webkit-appearance: none;
   -moz-appearance: none;
+  appearance: none;
   background: transparent;
   border-radius: 0;
   border: 0 none;
