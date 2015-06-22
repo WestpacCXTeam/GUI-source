@@ -31,6 +31,11 @@
 
 	.popover {
 		position: relative;
+		overflow: hidden;
+
+		&.is-open {
+			overflow: visible;
+		}
 
 		.popover-popup {
 			position: absolute;
@@ -44,7 +49,8 @@
 			border: 1px solid @color-Muted;
 			z-index: 3;
 			background-color: #fff;
-			pointer-events: none;
+			pointer-events: all;
+			transform: translateZ(0);
 
 			&:before,
 			&:after {
@@ -94,8 +100,8 @@
 
 			.js & {
 				opacity: 0;
-				visibility: none;
-				transition: opacity 0.2s ease, visibility 0.2s ease;
+				visibility: hidden;
+				transition: opacity 0.2s ease;
 			}
 
 			.is-open& {
@@ -174,8 +180,9 @@
 				&:before,
 				&:after {
 					bottom: auto;
-					top: -19px;
-					transform: rotate(180deg);
+					top: -36px;
+					border-top-color: transparent;
+					border-bottom: 18px solid @color-Muted;
 				}
 
 				&:after {
