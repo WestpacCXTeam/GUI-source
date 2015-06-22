@@ -1415,7 +1415,7 @@
 /*
  * radios mixins
  *
- * Radios with flexbox enhancements
+ * Radios
  *
  */
 
@@ -1443,7 +1443,8 @@
 
 
 	.radio {
-		display: inline-block;
+		display: inline-table;
+		min-height: 32px;
 
 		&:extend(.clearfix all);
 
@@ -1471,15 +1472,11 @@
 		}
 
 		.radio-text {
-			font-size: 14px;
 			font-weight: 400;
-			padding-left: 38px;
-			min-height: 32px;
 			line-height: 1.2;
-			display: inline-block;
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
+			padding-left: 38px;
+			display: table-cell;
+			vertical-align: middle;
 
 			&:hover {
 				cursor: pointer;
@@ -1494,6 +1491,25 @@
 
 		& + .radio {
 			margin-left: 18px;
+		}
+
+
+		//////////////////////////////////////| IE8 STYLE
+		.ie8 & {
+			min-height: 0;
+
+			.radio-input {
+				position: static;
+			}
+
+			.radio-text {
+				padding-left: 6px;
+				background: none;
+
+				.radio-flip& {
+					padding-right: 6px;
+				}
+			}
 		}
 	}
 
