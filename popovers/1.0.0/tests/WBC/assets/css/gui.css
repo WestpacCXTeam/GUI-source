@@ -1667,6 +1667,8 @@ a:hover {
   z-index: 3;
   background-color: #fff;
   pointer-events: all;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 .popover .popover-popup:before,
 .popover .popover-popup:after {
