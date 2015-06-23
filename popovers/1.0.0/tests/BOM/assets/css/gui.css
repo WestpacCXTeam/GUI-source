@@ -1690,7 +1690,7 @@ a:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   border: 1px solid #716f7d;
-  z-index: 3;
+  z-index: 105;
   background-color: #fff;
   pointer-events: all;
   -webkit-transform: translateZ(0);
@@ -1709,12 +1709,12 @@ a:hover {
   border-left: 12px solid transparent;
   font-size: 0;
   line-height: 0;
-  z-index: 3;
+  z-index: 105;
 }
 .popover .popover-popup:before {
   bottom: -19px;
   border-top-color: #716f7d;
-  z-index: 2;
+  z-index: 105;
 }
 .popover .popover-popup .popover-popup-title,
 .popover .popover-popup .popover-popup-body {
@@ -1749,7 +1749,7 @@ a:hover {
 .popover.popover-dismissible.is-open:after {
   content: " ";
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   right: 0;
   bottom: 0;
