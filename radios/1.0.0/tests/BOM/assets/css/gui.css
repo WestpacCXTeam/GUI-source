@@ -1703,6 +1703,7 @@ a:hover {
   padding-left: 38px;
   display: table-cell;
   vertical-align: middle;
+  white-space: normal;
 }
 .radio .radio-text:hover {
   cursor: pointer;
