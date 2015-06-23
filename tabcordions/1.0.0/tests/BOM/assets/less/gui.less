@@ -1449,12 +1449,14 @@
 			overflow: hidden;
 			opacity: 0;
 			visibility: hidden;
+			transform: translateZ(0);
 			transition: opacity 0.4s ease, visibility 0.4s ease;
 
 			&.is-open {
 				height: auto;
 				opacity: 1;
 				visibility: visible;
+				transition: opacity 0.4s ease; //ignored by modern browsers, needed for stock
 			}
 		}
 	}
