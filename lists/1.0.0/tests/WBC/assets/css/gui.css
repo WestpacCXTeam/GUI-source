@@ -1695,6 +1695,16 @@ a:hover {
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
+.ie8 .lists.lists-linklist > li:after {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-left: 7px solid #d5002b;
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-right: none;
+  top: 3px;
+}
 .lists.lists-tick > li {
   padding-left: 21px;
 }
