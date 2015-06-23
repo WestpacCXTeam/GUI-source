@@ -1686,7 +1686,7 @@ a:hover {
 .modal .modal-header {
   overflow: hidden;
   border-bottom: 1px solid #365fb4;
-  padding: 12px 12px 12px 18px;
+  padding: 15px 12px 6px 18px;
 }
 .modal .modal-header .modal-header-close {
   -webkit-appearance: none;
@@ -1716,7 +1716,6 @@ a:hover {
   font-size: 18px;
   font-weight: 700;
   color: #365fb4;
-  padding: 2px 0;
 }
 .modal .modal-body {
   padding: 24px 18px;
