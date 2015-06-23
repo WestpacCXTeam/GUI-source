@@ -1822,6 +1822,24 @@
 				border-top-right-radius: 6px;
 				border-bottom-right-radius: 6px;
 			}
+
+			.ie8 & {
+				.btn-group-input {
+					opacity: 1;
+					position: static;
+					vertical-align: middle;
+				}
+
+				.btn-group-text {
+					border: 0 none;
+					background: transparent;
+					padding: 0 12px 0 6px;
+
+					&:hover {
+						color: @color-Text;
+					}
+				}
+			}
 		}
 
 		& + .btn-group {
@@ -1854,7 +1872,15 @@
 			margin: 3px 0 0 0;
 			background-color: #fff;
 			border-radius: 3px;
-			min-width: 180px;
+			min-width: 190px;
+
+			&.dropdown-menu-sm {
+				min-width: 130px;
+			}
+
+			&.dropdown-menu-lg {
+				min-width: 250px;
+			}
 
 			li {
 				margin: 0;
@@ -1883,6 +1909,8 @@
 				.btn-dropdown-text {
 					padding-right: 18px;
 					vertical-align: middle;
+					white-space: normal;
+					display: table-cell;
 				}
 
 				.btn-link,
@@ -1893,13 +1921,37 @@
 					padding: 8px 6px;
 				}
 
-				.btn-dropdown-setting,
-				.btn-group {
+				.btn-dropdown-setting {
+					display: table;
+					width: 100%;
 					vertical-align: middle;
 				}
 
-				& > .checkbox {
+				.checkbox,
+				.radio {
+					display: table;
+					height: 48px; // ignored by modern devices, needed for 4.1.1 stock
+					min-height: 48px;
+
+					.ie8 & {
+						min-height: 0;
+					}
+				}
+
+				.btn-group {
+					display: table-cell;
+					text-align: right;
+					vertical-align: top;
+				}
+
+				.checkbox {
 					width: 100%;
+				}
+
+				.ie8 & {
+					.checkbox-input {
+						vertical-align: middle;
+					}
 				}
 			}
 

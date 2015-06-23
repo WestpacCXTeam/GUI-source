@@ -1684,8 +1684,10 @@ a:hover {
 }
 textarea.input-field {
   min-height: 60px;
+  vertical-align: top;
 }
-.input-field + .input-field {
+.input-field + .input-field,
+.input-field + .input-field-select-wrapper {
   margin-top: 21px;
 }
 .input-field:focus {
@@ -1749,6 +1751,10 @@ textarea.input-field-sm .input-field {
   border-bottom: none;
   border-left: 7px solid transparent;
 }
+.ie8 .input-field-select-wrapper:after,
+.ie9 .input-field-select-wrapper:after {
+  display: none;
+}
 .input-field-select-wrapper .input-field-select {
   position: relative;
   z-index: 1;
@@ -1777,6 +1783,9 @@ textarea.input-field-sm .input-field {
   color: #858370;
   cursor: not-allowed;
   padding-right: 8px;
+}
+.input-field-select-wrapper .input-field-select::-ms-expand {
+  display: none;
 }
 .input-field-select-wrapper.input-field-select-xl,
 .input-field-xl .input-field-select-wrapper {

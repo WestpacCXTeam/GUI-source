@@ -82,6 +82,17 @@
 				border-radius: 0;
 				background-color: transparent;
 				transform: rotate(-45deg);
+
+				.ie8 & {
+					border: none;
+					border-radius: 0;
+					background-color: transparent;
+					border-left: 7px solid @color-A;
+					border-bottom: 6px solid transparent;
+					border-top: 6px solid transparent;
+					border-right: none;
+					top: 3px;
+				}
 			}
 		}
 

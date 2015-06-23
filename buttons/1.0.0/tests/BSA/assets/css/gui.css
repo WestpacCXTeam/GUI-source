@@ -1986,6 +1986,19 @@ p > .btn.btn-link {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+.ie8 .btn-group .btn-group-item .btn-group-input {
+  opacity: 1;
+  position: static;
+  vertical-align: middle;
+}
+.ie8 .btn-group .btn-group-item .btn-group-text {
+  border: 0 none;
+  background: transparent;
+  padding: 0 12px 0 6px;
+}
+.ie8 .btn-group .btn-group-item .btn-group-text:hover {
+  color: #333333;
+}
 .btn-group + .btn-group {
   margin-top: 6px;
 }
@@ -2010,7 +2023,13 @@ p > .btn.btn-link {
   margin: 3px 0 0 0;
   background-color: #fff;
   border-radius: 3px;
-  min-width: 180px;
+  min-width: 190px;
+}
+.btn-dropdown .dropdown-menu.dropdown-menu-sm {
+  min-width: 130px;
+}
+.btn-dropdown .dropdown-menu.dropdown-menu-lg {
+  min-width: 250px;
 }
 .btn-dropdown .dropdown-menu li {
   margin: 0;
@@ -2037,6 +2056,8 @@ p > .btn.btn-link {
 .btn-dropdown .dropdown-menu li .btn-dropdown-text {
   padding-right: 18px;
   vertical-align: middle;
+  white-space: normal;
+  display: table-cell;
 }
 .btn-dropdown .dropdown-menu li .btn-link,
 .btn-dropdown .dropdown-menu li a,
@@ -2045,12 +2066,31 @@ p > .btn.btn-link {
 .btn-dropdown .dropdown-menu li .radio {
   padding: 8px 6px;
 }
-.btn-dropdown .dropdown-menu li .btn-dropdown-setting,
-.btn-dropdown .dropdown-menu li .btn-group {
+.btn-dropdown .dropdown-menu li .btn-dropdown-setting {
+  display: table;
+  width: 100%;
   vertical-align: middle;
 }
-.btn-dropdown .dropdown-menu li > .checkbox {
+.btn-dropdown .dropdown-menu li .checkbox,
+.btn-dropdown .dropdown-menu li .radio {
+  display: table;
+  height: 48px;
+  min-height: 48px;
+}
+.ie8 .btn-dropdown .dropdown-menu li .checkbox,
+.ie8 .btn-dropdown .dropdown-menu li .radio {
+  min-height: 0;
+}
+.btn-dropdown .dropdown-menu li .btn-group {
+  display: table-cell;
+  text-align: right;
+  vertical-align: top;
+}
+.btn-dropdown .dropdown-menu li .checkbox {
   width: 100%;
+}
+.ie8 .btn-dropdown .dropdown-menu li .checkbox-input {
+  vertical-align: middle;
 }
 .btn-dropdown .dropdown-menu .dropdown-menu-headline {
   border-top: 1px solid #333333;
