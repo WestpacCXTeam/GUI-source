@@ -2144,12 +2144,12 @@ p > .btn.btn-link {
   display: none;
   position: absolute;
   overflow: hidden;
-  z-index: 100;
+  z-index: 115;
 }
 .btn-dropdown.is-open > .btn:after {
   content: " ";
   position: fixed;
-  z-index: 90;
+  z-index: 110;
   top: 0;
   bottom: 0;
   left: 0;

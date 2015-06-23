@@ -104,7 +104,7 @@ module.exports = function(grunt) {
 
 					//add versioning to files
 					replaceStr += "\n" + '		<h3 class="module-headline">' + module.name +
-						' <small class="description">(' + module.description + ')</small></h3>' + "\n" +
+						' <small class="description">' + module.description + '</small></h3>' + "\n" +
 						'		<ul class="gui-list-version">' + "\n" +
 						'			<li>' + "\n" +
 						'				<h4 class="version-headline">v' + version + '</h4>' + "\n" +
