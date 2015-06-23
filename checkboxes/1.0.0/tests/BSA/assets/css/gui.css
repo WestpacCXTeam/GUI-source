@@ -1624,7 +1624,7 @@ a:hover {
 /*
  * checkboxes mixins
  *
- * checkboxes with flexbox enhancements
+ * checkboxes
  *
  */
 /*!checkboxes v1.0.0 BSA*/
@@ -1665,6 +1665,7 @@ a:hover {
   padding-left: 38px;
   display: table-cell;
   vertical-align: middle;
+  white-space: normal;
 }
 .checkbox .checkbox-text:hover {
   cursor: pointer;
