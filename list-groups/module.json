@@ -3,14 +3,12 @@
 	"name": "List-Groups",
 	"description": "A structured list for settings",
 	"category": "Lists",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "1f9dfa593861b8a952f434c46ea77499f759dc10"
 }

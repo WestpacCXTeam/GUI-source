@@ -3,14 +3,12 @@
 	"name": "Modals",
 	"description": "Popup modals with JS API",
 	"category": "Popovers",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "617ca5d883e5b0769e20562d36d0fd90cd616d6f"
 }

@@ -3,14 +3,12 @@
 	"name": "Labels",
 	"description": "Labels for callouts",
 	"category": "Other stuff",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "5ec4577e27a6887af94345d3a6607ba17b6d5ee1"
 }

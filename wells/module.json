@@ -3,14 +3,12 @@
 	"name": "Wells",
 	"description": "Wells for calling out a block",
 	"category": "Containers",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "80fe67404b5b39ba12acf171f539a78e4a57bbd2"
 }

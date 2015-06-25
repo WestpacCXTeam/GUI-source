@@ -8,7 +8,7 @@
 //                                    ██║   ██║ ██║   ██║ ██║       ╚════██║ ██║   ██║ ██║   ██║ ██╔══██╗ ██║      ██╔══╝
 //                                    ╚██████╔╝ ╚██████╔╝ ██║       ███████║ ╚██████╔╝ ╚██████╔╝ ██║  ██║ ╚██████╗ ███████╗
 //                                     ╚═════╝   ╚═════╝  ╚═╝       ╚══════╝  ╚═════╝   ╚═════╝  ╚═╝  ╚═╝  ╚═════╝ ╚══════╝
-//                                                                       Created by Westpac digital
+//                                                                       Created by Westpac Design Delivery Team
 // @desc     GUI source code for testing and maintance
 // @author   Dominik Wilkowski
 // @website  https://github.com/WestpacCXTeam/GUI-source
@@ -19,17 +19,18 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // External dependencies
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
-var fs = require('fs');
-var path = require('path');
+var Path = require('path');
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Custom functions
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*
- * handleize a string
+ * Handleize a string
  *
- * string  [string]  A string to be handelized
+ * @param   string  [string]  A string to be handelized
+ *
+ * @return  [string]  A handelized string
  */
 function Handleize( string ) {
 	return string.replace(/\W+/g, '-').toLowerCase();
@@ -77,18 +78,22 @@ module.exports = function(grunt) {
 			var newModule = {};
 			var module = grunt.file.readJSON( dir + '/' + 'module.json');
 
-			if( typeof(GUI[ module.category ]) === 'undefined' ) {
-				GUI[ module.category ] = [];
+			if( typeof(GUI.modules) === 'undefined' ) {
+				GUI.modules = {};
 			}
 
-			GUI[ module.category ].push( module );
+			if( typeof(GUI.modules[ module.category ]) === 'undefined' ) {
+				GUI.modules[ module.category ] = [];
+			}
+
+			GUI.modules[ module.category ].push( module );
 		});
 
 
 		//build index.html
-		Object.keys( GUI ).forEach(function iterateCategories( category ) {
+		Object.keys( GUI.modules ).forEach(function iterateCategories( category ) {
 
-			GUI[category].forEach(function iterateModules( module ) {
+			GUI.modules[category].forEach(function iterateModules( module ) {
 
 				if( oldCategory !== category ) {
 					replaceStr += '	<li class="category" id="' + module.ID + '"><small>[' + category + ']</small></li>';
@@ -162,8 +167,8 @@ module.exports = function(grunt) {
 		var hub = {};
 		var module = grunt.file.readJSON( 'GUI.json');
 
-		Object.keys( module ).forEach(function iterateCategories( category ) {
-			module[category].forEach(function iterateModules( module ) {
+		Object.keys( module.modules ).forEach(function iterateCategories( category ) {
+			module.modules[category].forEach(function iterateModules( module ) {
 
 				//gathering hub tasks
 				hub[ 'merge-' + module.ID ] = {
@@ -171,7 +176,10 @@ module.exports = function(grunt) {
 					src: [
 						'./' + module.ID + '/Gruntfile.js',
 					],
-					tasks: ['buildVersions'],
+					tasks: [
+						'buildVersions',
+						'createChecksum',
+					],
 				};
 
 			});
@@ -181,6 +189,8 @@ module.exports = function(grunt) {
 		//running tasks
 		grunt.config.set('hub', hub);
 		grunt.task.run('hub');
+
+		grunt.task.run('buildIndex');
 	});
 
 
@@ -251,19 +261,19 @@ module.exports = function(grunt) {
 						//creating missing empty folders
 						grunt.registerTask('folders', 'Creating missing empty folders', function() {
 
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/font') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/img') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/svg') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/font') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/img') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/svg') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/font') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/img') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/svg') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/font') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/img') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/svg') );
-							grunt.file.mkdir( path.normalize( __dirname + '/' + name + '/1.0.0/tests') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/font') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/img') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/svg') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/font') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/img') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/svg') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/font') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/img') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/svg') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/font') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/img') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/svg') );
+							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/tests') );
 
 						});
 

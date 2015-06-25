@@ -3,14 +3,12 @@
 	"name": "Tooltips",
 	"description": "Tooltips for text",
 	"category": "Popovers",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "db644c11e27c0d445500746207c74cb9643e74e0"
 }

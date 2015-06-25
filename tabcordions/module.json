@@ -3,14 +3,12 @@
 	"name": "Tabcordions",
 	"description": "Accordion and Tab component",
 	"category": "Containers",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": true,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "cdebdade60f52500d05f3cae22f48dc6897dce3f"
 }

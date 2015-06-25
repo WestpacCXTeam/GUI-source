@@ -3,14 +3,12 @@
 	"name": "Checkboxes",
 	"description": "Form checkboxes with svg enhancements",
 	"category": "Forms",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": true
 		}
-
-	}
+	},
+	"hash": "0aeb10053279bb111a89a2b673746b110661be25"
 }

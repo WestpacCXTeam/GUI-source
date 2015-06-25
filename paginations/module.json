@@ -3,14 +3,12 @@
 	"name": "Paginations",
 	"description": "Paginations finite and infinite",
 	"category": "Navigation",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "39650a4a34686bef6c294b0c46f4e7acb7ea2ad6"
 }

@@ -8,7 +8,7 @@
 //                                             ██║   ██║ ██║   ██║ ██║          ██╔══██╗ ██╔══██║ ╚════██║ ██╔══╝
 //                                             ╚██████╔╝ ╚██████╔╝ ██║          ██████╔╝ ██║  ██║ ███████║ ███████╗
 //                                              ╚═════╝   ╚═════╝  ╚═╝          ╚═════╝  ╚═╝  ╚═╝ ╚══════╝ ╚══════╝
-//                                                                       Created by Westpac digital
+//                                                                       Created by Westpac Design Delivery Team
 // @desc     GUI source running base module
 // @author   Dominik Wilkowski
 // @website  https://github.com/WestpacCXTeam/GUI-source
@@ -19,23 +19,26 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // External dependencies
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
-var fs = require('fs');
-var path = require('path');
+var Dirsum = require('../node_modules/dirsum/lib/dirsum');
+var Path = require('path');
+var Fs = require('fs');
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Custom functions
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*
- * return latest base version
+ * Get latest base version
+ *
+ * @return  [string]  Version string for latest base version
  */
 function GetLastestBase() {
 	var dir = '../_base';
 	var result = '';
 
-	fs.readdirSync( dir ).some(function(name) {
-		var filePath = path.join(dir, name);
-		var stat = fs.statSync(filePath);
+	Fs.readdirSync( dir ).some(function(name) {
+		var filePath = Path.join(dir, name);
+		var stat = Fs.statSync(filePath);
 
 		if(stat.isDirectory() && name != 'node_modules') {
 			result = name;
@@ -75,6 +78,28 @@ module.exports = function(grunt) {
 	// Globals
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	moduleName: process.cwd().split('/')[( process.cwd().split('/').length - 1 )], //module name
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// Custom grunt task to build all files for each version
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	grunt.registerTask('createChecksum', 'Add a checksum of all folders to the module.json.', function() {
+		var done = this.async();
+
+		Dirsum.digest( './', 'sha1', function(err, hashes) {
+
+			var module = grunt.file.readJSON( 'module.json' );
+
+			module['hash'] = hashes.hash;
+
+			grunt.file.write( 'module.json', JSON.stringify( module, null, "\t" ) );
+
+			grunt.log.ok('Hash successfully generated');
+
+			done(true);
+		});
+
+	});
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -309,7 +334,7 @@ module.exports = function(grunt) {
 					// '../_base/' + baseVersion + '/**/*.*',
 				],
 				tasks: [
-					'build',
+					'_build',
 				],
 			};
 
@@ -410,11 +435,12 @@ module.exports = function(grunt) {
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	// Tasks breakdown
+	// Private tasks
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	grunt.registerTask('build', [
+	grunt.registerTask('_build', [
 		'lintspaces',
 		'buildVersions',
+		'createChecksum',
 		'wakeup',
 	]);
 
@@ -424,7 +450,7 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('default', [
 		'font',
-		'build',
+		'_build',
 		'connect',
 		'watchVersions',
 	]);
