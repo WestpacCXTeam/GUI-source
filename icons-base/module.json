@@ -3,14 +3,12 @@
 	"name": "Icons-Base",
 	"description": "Icon sizing and coloring",
 	"category": "Icons",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "bcc8644d7ca87b19b99c1825a670eb2c2984dfcf"
 }

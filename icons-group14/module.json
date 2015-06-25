@@ -3,14 +3,12 @@
 	"name": "Icons-Group 14",
 	"description": "Icons-Group 14",
 	"category": "Icons",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": true
 		}
-
-	}
+	},
+	"hash": "7f4e09148828828afff749627a35dff48a0c2703"
 }

@@ -3,14 +3,12 @@
 	"name": "Radios",
 	"description": "Radio buttons for forms",
 	"category": "Forms",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": true
 		}
-
-	}
+	},
+	"hash": "14243051d87efc575792f5a9d78ac3d99bdf815b"
 }

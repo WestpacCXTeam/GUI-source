@@ -3,14 +3,12 @@
 	"name": "Progress-Bars",
 	"description": "Progress-Bars as visual representation of progress",
 	"category": "Other stuff",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "bbcbf1e464ee00dda8f34bb06626a6280e41e7a9"
 }

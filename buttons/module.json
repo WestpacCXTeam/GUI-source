@@ -3,14 +3,12 @@
 	"name": "Buttons",
 	"description": "Buttons, Button-groups, Dropdown-buttons etc.",
 	"category": "Buttons",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": true,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "c84778ce4436f265a27ddd7cdf3c80d86e8f8fc7"
 }

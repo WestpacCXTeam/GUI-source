@@ -3,14 +3,12 @@
 	"name": "Popovers",
 	"description": "Popovers for buttons",
 	"category": "Popovers",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": true,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "c9b1485a5dbc657006835ea252710ec2fe715ced"
 }

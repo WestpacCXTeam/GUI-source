@@ -3,14 +3,12 @@
 	"name": "Alerts",
 	"description": "Alerts and contextual color classes",
 	"category": "Alerts",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "ff69a0bca2fec679ddf47fcde35b5bc184a1ebf1"
 }

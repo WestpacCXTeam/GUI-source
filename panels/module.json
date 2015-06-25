@@ -3,14 +3,12 @@
 	"name": "Panels",
 	"description": "Panel containers",
 	"category": "Containers",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "5cdf8cd751377ddcad054f5f1a3796a02f2e0de1"
 }
