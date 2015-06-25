@@ -3,14 +3,12 @@
 	"name": "Input-Groups",
 	"description": "Attachment to an input field",
 	"category": "Forms",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "efacdd13d8a58f4ccc9b8fdfd2206b08c80e5ecc"
 }

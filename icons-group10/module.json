@@ -3,14 +3,12 @@
 	"name": "Icons-Group 10",
 	"description": "Icons-Group 10",
 	"category": "Icons",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": true
 		}
-
-	}
+	},
+	"hash": "efc8ff102b741bd9e95e3d80259c1fb6ff1581ba"
 }

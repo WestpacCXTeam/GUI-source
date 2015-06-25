@@ -3,14 +3,12 @@
 	"name": "Breadcrumbs",
 	"description": "Navigational breadcrumbs",
 	"category": "Navigation",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "a183a55b7f4743c8370b705e8c9f37ebdeae5a33"
 }

@@ -3,14 +3,12 @@
 	"name": "_Base",
 	"description": "Base styling and grid system",
 	"category": "_fixed",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "e152cacf2250e12433461d6067d17959cd9c73a1"
 }

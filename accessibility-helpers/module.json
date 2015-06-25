@@ -3,14 +3,12 @@
 	"name": "Accessibility Helpers",
 	"description": "Accessibility classes",
 	"category": "Accessibility",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "cb01f4a69e072a2f4a88e55072792c5808dd7626"
 }

@@ -3,14 +3,12 @@
 	"name": "Symbols",
 	"description": "Multi-color symbols",
 	"category": "Symbols",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": true
 		}
-
-	}
+	},
+	"hash": "9cd77394e35954f2aa217aeeb39282d6cd725e60"
 }

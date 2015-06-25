@@ -3,14 +3,12 @@
 	"name": "Images",
 	"description": "Image classes",
 	"category": "Media",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "21be0d14c9802fb1e53dd0904526be3f1d8dc265"
 }

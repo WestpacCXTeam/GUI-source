@@ -3,14 +3,12 @@
 	"name": "Responsive-Embeds",
 	"description": "Responsive-Embeds are best for videos",
 	"category": "Media",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "e6908622b8db0021dc3f608ba58630e0dc3e75a9"
 }

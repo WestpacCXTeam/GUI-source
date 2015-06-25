@@ -3,14 +3,12 @@
 	"name": "Tables",
 	"description": "Tables in colors and responsive",
 	"category": "Tables",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "99c4ea61b35ec79b2fb43c5eeba1b3bfdc125d01"
 }

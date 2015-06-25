@@ -3,14 +3,12 @@
 	"name": "Input-Fields",
 	"description": "Text, email, password, number, date, textarea and selects",
 	"category": "Forms",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "e82aa3025bb7593f5b65f62c2d0949416d7dc8c4"
 }

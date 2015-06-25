@@ -3,14 +3,12 @@
 	"name": "Lists",
 	"description": "HTML lists in various colors",
 	"category": "Lists",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "8f72df27fdb037df82324694e6675177b2c9a399"
 }

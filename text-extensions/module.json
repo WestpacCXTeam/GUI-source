@@ -3,14 +3,12 @@
 	"name": "Text-extensions",
 	"description": "Text classes for additional formating",
 	"category": "Typography",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "189627d2eddb0fce82c23868b6efbe495e660da4"
 }

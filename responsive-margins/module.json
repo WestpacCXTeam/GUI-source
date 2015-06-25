@@ -3,14 +3,12 @@
 	"name": "Responsive-Margins",
 	"description": "Responsive-Margins adds vertical spacing responsively",
 	"category": "Layout",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": "84e77f2fe036784fbd11d109d716bce64c8015ff"
 }
