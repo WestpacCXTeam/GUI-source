@@ -5,10 +5,12 @@
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
-			"dependencies": [],
+			"dependencies": [
+				"icons-base"
+			],
 			"js": false,
 			"svg": true
 		}
 	},
-	"hash": "f04a7f87afd4bb30ffbb0e219def3ebea80bab35"
+	"hash": "f06e8a74fdc2a958f62da30bbca4c0207c93435c"
 }
