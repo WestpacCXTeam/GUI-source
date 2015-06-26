@@ -62,7 +62,9 @@ module.exports = function(grunt) {
 
 		var replace = {};
 		var replaceStr = '<h2>Modules</h2><ul class="gui-list">' + "\n";
-		var GUI = {};
+		var GUI = {
+			modules: {}
+		};
 		var oldCategory = '';
 		var categories = '<h2>Categories</h2><ul class="category-list">';
 
@@ -75,25 +77,23 @@ module.exports = function(grunt) {
 			'!./.git',
 		]).forEach(function(dir) {
 
-			var newModule = {};
 			var module = grunt.file.readJSON( dir + '/' + 'module.json');
 
-			if( typeof(GUI.modules) === 'undefined' ) {
-				GUI.modules = {};
+			if( typeof( GUI.modules[ module.category ] ) === 'undefined' ) {
+				GUI.modules[module.category] = {};
 			}
 
-			if( typeof(GUI.modules[ module.category ]) === 'undefined' ) {
-				GUI.modules[ module.category ] = [];
-			}
+			GUI.modules[ module.category ][ module.ID ] = module;
 
-			GUI.modules[ module.category ].push( module );
 		});
 
 
 		//build index.html
 		Object.keys( GUI.modules ).forEach(function iterateCategories( category ) {
 
-			GUI.modules[category].forEach(function iterateModules( module ) {
+			Object.keys( GUI.modules[category] ).forEach(function iterateModules( moduleKey ) {
+
+				var module = GUI.modules[category][moduleKey];
 
 				if( oldCategory !== category ) {
 					replaceStr += '	<li class="category" id="' + module.ID + '"><small>[' + category + ']</small></li>';
