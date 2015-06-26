@@ -1,16 +1,14 @@
 {
 	"ID": "[-Module-]",
 	"name": "[-Module-]",
-	"description": "",
+	"description": "s",
 	"category": "",
-
 	"versions": {
-
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"svg": false
 		}
-
-	}
+	},
+	"hash": ""
 }
