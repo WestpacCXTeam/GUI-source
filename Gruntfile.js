@@ -165,10 +165,13 @@ module.exports = function(grunt) {
 	grunt.registerTask('mergeBase', 'Merge the base into all modules.', function() {
 
 		var hub = {};
-		var module = grunt.file.readJSON( 'GUI.json');
+		var GUI = grunt.file.readJSON('GUI.json');
 
-		Object.keys( module.modules ).forEach(function iterateCategories( category ) {
-			module.modules[category].forEach(function iterateModules( module ) {
+		Object.keys( GUI.modules ).forEach(function iterateCategories( category ) {
+
+			Object.keys( GUI.modules[category] ).forEach(function iterateModules( moduleKey ) {
+
+				var module = GUI.modules[category][moduleKey];
 
 				//gathering hub tasks
 				hub[ 'merge-' + module.ID ] = {
