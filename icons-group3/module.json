@@ -9,7 +9,8 @@
 				"icons-base"
 			],
 			"js": false,
-			"svg": true
+			"svg": true,
+			"font": false
 		}
 	},
 	"hash": "022325449b500246915f9104d4b9c9c632532490"

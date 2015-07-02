@@ -7,7 +7,8 @@
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
-			"svg": false
+			"svg": false,
+			"font": false
 		}
 	},
 	"hash": "c2066b0a837fc8467763ee2cd325ffe8c412912b"
