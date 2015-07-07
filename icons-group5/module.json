@@ -6,7 +6,7 @@
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
-				"icons-base"
+				"icons-base:1.0.0"
 			],
 			"js": false,
 			"less": false,
