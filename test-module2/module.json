@@ -12,14 +12,18 @@
 			"font": false
 		},
 		"1.2.0": {
-			"dependencies": [],
+			"dependencies": [
+				"test-module"
+			],
 			"js": false,
 			"less": true,
 			"svg": false,
 			"font": false
 		},
 		"4.0.0": {
-			"dependencies": [],
+			"dependencies": [
+				"test-module:1.0.2"
+			],
 			"js": false,
 			"less": true,
 			"svg": false,
