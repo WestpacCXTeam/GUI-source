@@ -1,12 +1,12 @@
 {
-	"ID": "icons-group8",
+	"ID": "icons-group08",
 	"name": "Icons-Group 8",
 	"description": "Icons-Group 8",
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
-				"icons-base:1.0.0"
+				"icons-base"
 			],
 			"js": false,
 			"less": false,
