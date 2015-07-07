@@ -130,6 +130,7 @@
 
 		.version-headline {
 			display: inline-block;
+			min-width: 60px;
 		}
 
 		.gui-list-version-brand {
@@ -145,20 +146,44 @@
 
 		.brand-link {
 			display: inline-block;
-			padding: 6px 6px 0 6px;
+			padding: 6px 6px 3px 6px;
 			border-bottom: 2px solid transparent;
+			-webkit-transition: background 0.3s ease;
+			-moz-transition: background 0.3s ease;
+			-ms-user-transition: background 0.3s ease;
+			transition: background 0.3s ease;
 		}
 		.brand-link.brand-link-bom {
 			border-color: #685ac0;
 		}
+		.brand-link.brand-link-bom:hover {
+			background-color: #685ac0;
+			color: #fff;
+			text-decoration: none;
+		}
 		.brand-link.brand-link-bsa {
 			border-color: #365fb4;
+		}
+		.brand-link.brand-link-bsa:hover {
+			background-color: #365fb4;
+			color: #fff;
+			text-decoration: none;
 		}
 		.brand-link.brand-link-stg {
 			border-color: #78be20;
 		}
+		.brand-link.brand-link-stg:hover {
+			background-color: #78be20;
+			color: #004833;
+			text-decoration: none;
+		}
 		.brand-link.brand-link-wbc {
 			border-color: #621a4b;
+		}
+		.brand-link.brand-link-wbc:hover {
+			background-color: #621a4b;
+			color: #fff;
+			text-decoration: none;
 		}
 	</style>
 
@@ -177,7 +202,7 @@
 
 	<header>
 		<div class="container">
-			<h1 class="headline">GUI source</h1>
+			<h1 class="body-font headline">GUI source</h1>
 		</div>
 	</header>
 
