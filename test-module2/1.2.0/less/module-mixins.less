@@ -1,0 +1,35 @@
+/*![Module-Version-Brand]*/
+/*
+ * test-module2 mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| test-module2 STYLES
+._test-module2( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM version 1.2.0';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA version 1.2.0';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG version 1.2.0';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC version 1.2.0';
+	}
+	.getBrand();
+
+
+
+	.test-module2 {
+		content: @test;
+	}
+}
