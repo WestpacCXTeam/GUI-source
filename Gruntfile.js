@@ -61,12 +61,12 @@ module.exports = function(grunt) {
 	grunt.registerTask('buildIndex', 'Build an index html file to mapp all modules for gh-pages.', function() {
 
 		var replace = {};
-		var replaceStr = '<h2>Modules</h2><ul class="gui-list">' + "\n";
+		var replaceStr = '<h2 class="body-font">Modules</h2><ul class="gui-list">' + "\n";
 		var GUI = {
 			modules: {}
 		};
 		var oldCategory = '';
-		var categories = '<h2>Categories</h2><ul class="category-list">';
+		var categories = '<h2 class="body-font">Categories</h2><ul class="category-list">';
 
 
 		//build GUI.json
@@ -96,34 +96,33 @@ module.exports = function(grunt) {
 				var module = GUI.modules[category][moduleKey];
 
 				if( oldCategory !== category ) {
-					replaceStr += '	<li class="category" id="' + module.ID + '"><small>[' + category + ']</small></li>';
+					replaceStr += '	<li class="category" id="' + module.ID + '"><small>' + category + '</small></li>';
 
 					categories += '<li><a href="#' + module.ID + '">' + category + '</a></li>';
 				}
 
-				replaceStr += '	<li class="module"><div class="module-wrapper">';
+				replaceStr += '	<li class="module"><div class="module-wrapper">' + "\n" +
+					'		<h3 class="body-font module-headline">' + module.name + ' <small class="description">' + module.description + '</small></h3>' + "\n" +
+					'		<ul class="gui-list-version">' + "\n";
 
 				Object.keys( module.versions ).forEach(function interateVersions( version ) {
 
 					var subdir = './' + module.ID + '/' + version + '/tests/';
 
 					//add versioning to files
-					replaceStr += "\n" + '		<h3 class="module-headline">' + module.name +
-						' <small class="description">' + module.description + '</small></h3>' + "\n" +
-						'		<ul class="gui-list-version">' + "\n" +
-						'			<li>' + "\n" +
-						'				<h4 class="version-headline">v' + version + '</h4>' + "\n" +
+					replaceStr += '			<li>' + "\n" +
+						'				<h4 class="body-font version-headline">v' + version + '</h4>' + "\n" +
 						'				<ul class="gui-list-version-brand">' + "\n" +
 						'					<li><a class="brand-link brand-link-bom" href="' + subdir + 'BOM/">BOM</a></li>' + "\n" +
 						'					<li><a class="brand-link brand-link-bsa" href="' + subdir + 'BSA/">BSA</a></li>' + "\n" +
 						'					<li><a class="brand-link brand-link-stg" href="' + subdir + 'STG/">STG</a></li>' + "\n" +
 						'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'WBC/">WBC</a></li>' + "\n" +
 						'				</ul>' + "\n" +
-						'			</li>' + "\n" +
-						'		</ul>' + "\n";
-
-					replaceStr += '	</div></li>' + "\n";
+						'			</li>' + "\n";
 				});
+
+				replaceStr += '		</ul>' + "\n" +
+					'	</div></li>' + "\n";
 
 				oldCategory = category;
 

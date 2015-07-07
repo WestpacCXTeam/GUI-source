@@ -114,21 +114,22 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('buildVersions', 'Build all versions in this module.', function() {
 
+		var concat = {};
+		var less = {};
+		var copy = {};
+		var font = {};
+		var replace = {};
+		var imagemin = {};
+		var grunticon = {};
+		var clean = {};
+		var brands = ['BOM', 'BSA', 'STG', 'WBC'];
+
 		//iterate over all modules
 		grunt.file.expand({ filter: 'isDirectory' }, ['./*', '!./node_modules']).forEach(function(dir) {
 
 			var moduleName = process.cwd().split('/')[( process.cwd().split('/').length - 1 )];
 			var baseVersion = GetLastestBase();
 			var version = dir.substr( dir.lastIndexOf('/') + 1 );
-			var concat = {};
-			var less = {};
-			var copy = {};
-			var font = {};
-			var replace = {};
-			var imagemin = {};
-			var grunticon = {};
-			var clean = {};
-			var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
 
 			//concat files
@@ -286,34 +287,33 @@ module.exports = function(grunt) {
 				},
 			};
 
-
-
-			//running tasks
-			grunt.config.set('concat', concat);
-			grunt.task.run('concat');
-
-			grunt.config.set('replace', replace);
-			grunt.task.run('replace');
-
-			grunt.config.set('less', less);
-			grunt.task.run('less');
-
-			grunt.config.set('imagemin', imagemin);
-			grunt.task.run('imagemin');
-
-			grunt.config.set('grunticon', grunticon);
-			grunt.task.run('grunticon');
-
-			grunt.config.set('copy', copy);
-			grunt.task.run('copy');
-
-			grunt.config.set('clean', clean);
-			grunt.task.run('clean');
-
-			grunt.config.set('font', font);
-			grunt.task.run('font');
-
 		});
+
+		//running tasks
+		grunt.config.set('concat', concat);
+		grunt.task.run('concat');
+
+		grunt.config.set('replace', replace);
+		grunt.task.run('replace');
+
+		grunt.config.set('less', less);
+		grunt.task.run('less');
+
+		grunt.config.set('imagemin', imagemin);
+		grunt.task.run('imagemin');
+
+		grunt.config.set('grunticon', grunticon);
+		grunt.task.run('grunticon');
+
+		grunt.config.set('copy', copy);
+		grunt.task.run('copy');
+
+		grunt.config.set('clean', clean);
+		grunt.task.run('clean');
+
+		grunt.config.set('font', font);
+		grunt.task.run('font');
+
 	});
 
 
@@ -322,13 +322,14 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('watchVersions', 'Watch all files in each version.', function() {
 
+		var watch = {};
+		var brands = ['BOM', 'BSA', 'STG', 'WBC'];
+
 		grunt.file.expand({ filter: 'isDirectory' }, ['./*', '!./node_modules']).forEach(function(dir) {
 
 			var moduleName = process.cwd().split('/')[( process.cwd().split('/').length - 1 )];
 			var baseVersion = GetLastestBase();
 			var version = dir.substr( dir.lastIndexOf('/') + 1 );
-			var watch = {};
-			var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
 
 			//create the watch
@@ -343,13 +344,13 @@ module.exports = function(grunt) {
 				],
 			};
 
-
-
-			//running tasks
-			grunt.config.set('watch', watch);
-			grunt.task.run('watch');
-
 		});
+
+
+		//running tasks
+		grunt.config.set('watch', watch);
+		grunt.task.run('watch');
+
 	});
 
 

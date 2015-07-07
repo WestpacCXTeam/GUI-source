@@ -1,12 +1,13 @@
 {
 	"ID": "[-Module-]",
 	"name": "[-Module-]",
-	"description": "s",
+	"description": "",
 	"category": "",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [],
 			"js": false,
+			"less": true,
 			"svg": false,
 			"font": false
 		}

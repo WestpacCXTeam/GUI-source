@@ -9,9 +9,10 @@
 				"icons-base"
 			],
 			"js": false,
+			"less": false,
 			"svg": true,
 			"font": false
 		}
 	},
-	"hash": "f7565756336b4f3913ab3637ff34091084f77f79"
+	"hash": "faec1b90f246fc7588b575f26fb6fc4372ab6dd4"
 }
