@@ -34,7 +34,7 @@ var GUI = (function guiInit() {
 				};
 			}
 
-			if( GUI.DEBUG ) console.log('%cDEBUGGING INFORMATION', 'font-size: 25px;');
+			if( GUI.DEBUG ) console.log('%cGUI DEBUGGING INFORMATION', 'font-size: 25px;');
 
 			//remove fallback HTML class
 			$('html')
