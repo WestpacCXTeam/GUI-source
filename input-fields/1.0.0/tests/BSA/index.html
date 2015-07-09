@@ -15,11 +15,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width">
 
 	<title>Testing input-fields v1.0.0 BSA</title>
 
-	<script type="text/javascript" sync>
+	<script type="text/javascript">
 		var $html = document.documentElement;
 
 		if( $html.classList ) {
@@ -58,7 +57,7 @@
 	<!--[if lt IE 9]>
 		<script>
 			/* @preserve HTML5 Shiv 3.7.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed */
-			!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=y.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=y.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),y.elements=c+" "+a,j(b)}function f(a){var b=x[a[v]];return b||(b={},w++,a[v]=w,x[w]=b),b}function g(a,c,d){if(c||(c=b),q)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():u.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||t.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),q)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return y.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(y,b.frag)}function j(a){a||(a=b);var d=f(a);return!y.shivCSS||p||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),q||i(a,d),a}function k(a){for(var b,c=a.getElementsByTagName("*"),e=c.length,f=RegExp("^(?:"+d().join("|")+")$","i"),g=[];e--;)b=c[e],f.test(b.nodeName)&&g.push(b.applyElement(l(b)));return g}function l(a){for(var b,c=a.attributes,d=c.length,e=a.ownerDocument.createElement(A+":"+a.nodeName);d--;)b=c[d],b.specified&&e.setAttribute(b.nodeName,b.nodeValue);return e.style.cssText=a.style.cssText,e}function m(a){for(var b,c=a.split("{"),e=c.length,f=RegExp("(^|[\\s,>+~])("+d().join("|")+")(?=[[\\s,>+~#.:]|$)","gi"),g="$1"+A+"\\:$2";e--;)b=c[e]=c[e].split("}"),b[b.length-1]=b[b.length-1].replace(f,g),c[e]=b.join("}");return c.join("{")}function n(a){for(var b=a.length;b--;)a[b].removeNode()}function o(a){function b(){clearTimeout(g._removeSheetTimer),d&&d.removeNode(!0),d=null}var d,e,g=f(a),h=a.namespaces,i=a.parentWindow;return!B||a.printShived?a:("undefined"==typeof h[A]&&h.add(A),i.attachEvent("onbeforeprint",function(){b();for(var f,g,h,i=a.styleSheets,j=[],l=i.length,n=Array(l);l--;)n[l]=i[l];for(;h=n.pop();)if(!h.disabled&&z.test(h.media)){try{f=h.imports,g=f.length}catch(o){g=0}for(l=0;g>l;l++)n.push(f[l]);try{j.push(h.cssText)}catch(o){}}j=m(j.reverse().join("")),e=k(a),d=c(a,j)}),i.attachEvent("onafterprint",function(){n(e),clearTimeout(g._removeSheetTimer),g._removeSheetTimer=setTimeout(b,500)}),a.printShived=!0,a)}var p,q,r="3.7.2",s=a.html5||{},t=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,u=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,v="_html5shiv",w=0,x={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",p="hidden"in a,q=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){p=!0,q=!0}}();var y={elements:s.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:r,shivCSS:s.shivCSS!==!1,supportsUnknownElements:q,shivMethods:s.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=y,j(b);var z=/^$|\b(?:all|print)\b/,A="html5shiv",B=!q&&function(){var c=b.documentElement;return!("undefined"==typeof b.namespaces||"undefined"==typeof b.parentWindow||"undefined"==typeof c.applyElement||"undefined"==typeof c.removeNode||"undefined"==typeof a.attachEvent)}();y.type+=" print",y.shivPrint=o,o(b)}(this,document);
+			!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=y.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=y.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),y.elements=c+" "+a,j(b)}function f(a){var b=x[a[v]];return b||(b={},w++,a[v]=w,x[w]=b),b}function g(a,c,d){if(c||(c=b),q)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():u.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||t.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),q)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return y.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(y,b.frag)}function j(a){a||(a=b);var d=f(a);return!y.shivCSS||p||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),q||i(a,d),a}function k(a){for(var b,c=a.getElementsByTagName("*"),e=c.length,f=RegExp("^(?:"+d().join("|")+")$","i"),g=[];e-=1;)b=c[e],f.test(b.nodeName)&&g.push(b.applyElement(l(b)));return g}function l(a){for(var b,c=a.attributes,d=c.length,e=a.ownerDocument.createElement(A+":"+a.nodeName);d-=1;)b=c[d],b.specified&&e.setAttribute(b.nodeName,b.nodeValue);return e.style.cssText=a.style.cssText,e}function m(a){for(var b,c=a.split("{"),e=c.length,f=RegExp("(^|[\\s,>+~])("+d().join("|")+")(?=[[\\s,>+~#.:]|$)","gi"),g="$1"+A+"\\:$2";e-=1;)b=c[e]=c[e].split("}"),b[b.length-1]=b[b.length-1].replace(f,g),c[e]=b.join("}");return c.join("{")}function n(a){for(var b=a.length;b-=1;)a[b].removeNode()}function o(a){function b(){clearTimeout(g._removeSheetTimer),d&&d.removeNode(!0),d=null}var d,e,g=f(a),h=a.namespaces,i=a.parentWindow;return!B||a.printShived?a:("undefined"==typeof h[A]&&h.add(A),i.attachEvent("onbeforeprint",function(){b();for(var f,g,h,i=a.styleSheets,j=[],l=i.length,n=Array(l);l-=1;)n[l]=i[l];for(;h=n.pop();)if(!h.disabled&&z.test(h.media)){try{f=h.imports,g=f.length}catch(o){g=0}for(l=0;g>l;l++)n.push(f[l]);try{j.push(h.cssText)}catch(o){}}j=m(j.reverse().join("")),e=k(a),d=c(a,j)}),i.attachEvent("onafterprint",function(){n(e),clearTimeout(g._removeSheetTimer),g._removeSheetTimer=setTimeout(b,500)}),a.printShived=!0,a)}var p,q,r="3.7.2",s=a.html5||{},t=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,u=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,v="_html5shiv",w=0,x={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",p="hidden"in a,q=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){p=!0,q=!0}}();var y={elements:s.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:r,shivCSS:s.shivCSS!==!1,supportsUnknownElements:q,shivMethods:s.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=y,j(b);var z=/^$|\b(?:all|print)\b/,A="html5shiv",B=!q&&function(){var c=b.documentElement;return!("undefined"==typeof b.namespaces||"undefined"==typeof b.parentWindow||"undefined"==typeof c.applyElement||"undefined"==typeof c.removeNode||"undefined"==typeof a.attachEvent)}();y.type+=" print",y.shivPrint=o,o(b)}(this,document);
 		</script>
 		<script>
 			/* Respond.js v1.4.2: min/max-width media query polyfill * Copyright 2013 Scott Jehl Licensed under https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT */
@@ -82,25 +81,32 @@
 
 <p><strong>default</strong></p>
 
-<input type="text" class="input-field" placeholder="I'm a default text input">
+<label for="ex70">Some label</label>
+<input type="text" id="ex70" class="input-field" placeholder="I'm a default text input">
 
 <p><strong>sizing</strong></p>
 
-<input type="text" class="input-field input-field-xl" placeholder="I'm a xl text input">
+<label for="ex2">Some label</label>
+<input type="text" id="ex2" class="input-field input-field-xl" placeholder="I'm a xl text input">
 
-<input type="text" class="input-field input-field-lg" placeholder="I'm a lg text input">
+<label for="ex3">Some label</label>
+<input type="text" id="ex3" class="input-field input-field-lg" placeholder="I'm a lg text input">
 
-<input type="text" class="input-field input-field-sm" placeholder="I'm a sm text input">
+<label for="ex4">Some label</label>
+<input type="text" id="ex4" class="input-field input-field-sm" placeholder="I'm a sm text input">
 
 <p><strong>disabled</strong></p>
 
-<input type="text" class="input-field" placeholder="I'm a default text input" disabled>
+<label for="ex5">Some label</label>
+<input type="text" id="ex5" class="input-field" placeholder="I'm a default text input" disabled>
 
-<input type="text" class="input-field" placeholder="I'm a default text input" value="Disabled value" disabled>
+<label for="ex6">Some label</label>
+<input type="text" id="ex6" class="input-field" placeholder="I'm a default text input" value="Disabled value" disabled>
 
 <p><strong>readonly</strong></p>
 
-<input type="text" class="input-field" placeholder="I'm a default text input" value="Readonly value" readonly>
+<label for="ex7">Some label</label>
+<input type="text" id="ex7" class="input-field" placeholder="I'm a default text input" value="Readonly value" readonly>
 
 
 <hr>
@@ -108,25 +114,32 @@
 
 <p><strong>default</strong></p>
 
-<input type="email" class="input-field" placeholder="I'm a default email input">
+<label for="ex8">Some label</label>
+<input type="email" id="ex8" class="input-field" placeholder="I'm a default email input">
 
 <p><strong>sizing</strong></p>
 
-<input type="email" class="input-field input-field-xl" placeholder="I'm a xl email input">
+<label for="ex9">Some label</label>
+<input type="email" id="ex9" class="input-field input-field-xl" placeholder="I'm a xl email input">
 
-<input type="email" class="input-field input-field-lg" placeholder="I'm a lg email input">
+<label for="ex10">Some label</label>
+<input type="email" id="ex10" class="input-field input-field-lg" placeholder="I'm a lg email input">
 
-<input type="email" class="input-field input-field-sm" placeholder="I'm a sm email input">
+<label for="ex11">Some label</label>
+<input type="email" id="ex11" class="input-field input-field-sm" placeholder="I'm a sm email input">
 
 <p><strong>disabled</strong></p>
 
-<input type="email" class="input-field" placeholder="I'm a default email input" disabled>
+<label for="ex12">Some label</label>
+<input type="email" id="ex12" class="input-field" placeholder="I'm a default email input" disabled>
 
-<input type="email" class="input-field" placeholder="I'm a default email input" value="email@domain.tld" disabled>
+<label for="ex13">Some label</label>
+<input type="email" id="ex13" class="input-field" placeholder="I'm a default email input" value="email@domain.tld" disabled>
 
 <p><strong>readonly</strong></p>
 
-<input type="email" class="input-field" placeholder="I'm a default email input" value="email@domain.tld" readonly>
+<label for="ex14">Some label</label>
+<input type="email" id="ex14" class="input-field" placeholder="I'm a default email input" value="email@domain.tld" readonly>
 
 
 <hr>
@@ -134,25 +147,32 @@
 
 <p><strong>default</strong></p>
 
-<input type="password" class="input-field" placeholder="I'm a default password input">
+<label for="ex15">Some label</label>
+<input type="password" id="ex15" class="input-field" placeholder="I'm a default password input">
 
 <p><strong>sizing</strong></p>
 
-<input type="password" class="input-field input-field-xl" placeholder="I'm a xl password input">
+<label for="ex16">Some label</label>
+<input type="password" id="ex16" class="input-field input-field-xl" placeholder="I'm a xl password input">
 
-<input type="password" class="input-field input-field-lg" placeholder="I'm a lg password input">
+<label for="ex17">Some label</label>
+<input type="password" id="ex17" class="input-field input-field-lg" placeholder="I'm a lg password input">
 
-<input type="password" class="input-field input-field-sm" placeholder="I'm a sm password input">
+<label for="ex18">Some label</label>
+<input type="password" id="ex18" class="input-field input-field-sm" placeholder="I'm a sm password input">
 
 <p><strong>disabled</strong></p>
 
-<input type="password" class="input-field" placeholder="I'm a default password input" disabled>
+<label for="ex19">Some label</label>
+<input type="password" id="ex19" class="input-field" placeholder="I'm a default password input" disabled>
 
-<input type="password" class="input-field" placeholder="I'm a default password input" value="Disabled value" disabled>
+<label for="ex20">Some label</label>
+<input type="password" id="ex20" class="input-field" placeholder="I'm a default password input" value="Disabled value" disabled>
 
 <p><strong>readonly</strong></p>
 
-<input type="password" class="input-field" placeholder="I'm a default password input" value="Readonly value" readonly>
+<label for="ex21">Some label</label>
+<input type="password" id="ex21" class="input-field" placeholder="I'm a default password input" value="Readonly value" readonly>
 
 
 <hr>
@@ -160,25 +180,32 @@
 
 <p><strong>default</strong></p>
 
-<input type="number" class="input-field" placeholder="I'm a default number input">
+<label for="ex22">Some label</label>
+<input type="number" id="ex22" class="input-field" placeholder="I'm a default number input">
 
 <p><strong>sizing</strong></p>
 
-<input type="number" class="input-field input-field-xl" placeholder="I'm a xl number input">
+<label for="ex23">Some label</label>
+<input type="number" id="ex23" class="input-field input-field-xl" placeholder="I'm a xl number input">
 
-<input type="number" class="input-field input-field-lg" placeholder="I'm a lg number input">
+<label for="ex24">Some label</label>
+<input type="number" id="ex24" class="input-field input-field-lg" placeholder="I'm a lg number input">
 
-<input type="number" class="input-field input-field-sm" placeholder="I'm a sm number input">
+<label for="ex25">Some label</label>
+<input type="number" id="ex25" class="input-field input-field-sm" placeholder="I'm a sm number input">
 
 <p><strong>disabled</strong></p>
 
-<input type="number" class="input-field" placeholder="I'm a default number input" disabled>
+<label for="ex26">Some label</label>
+<input type="number" id="ex26" class="input-field" placeholder="I'm a default number input" disabled>
 
-<input type="number" class="input-field" placeholder="I'm a default number input" value="1234567890" disabled>
+<label for="ex27">Some label</label>
+<input type="number" id="ex27" class="input-field" placeholder="I'm a default number input" value="1234567890" disabled>
 
 <p><strong>readonly</strong></p>
 
-<input type="number" class="input-field" placeholder="I'm a default number input" value="1234567890" readonly>
+<label for="ex28">Some label</label>
+<input type="number" id="ex28" class="input-field" placeholder="I'm a default number input" value="1234567890" readonly>
 
 
 <hr>
@@ -186,25 +213,32 @@
 
 <p><strong>default</strong></p>
 
-<input type="date" class="input-field" placeholder="I'm a default date input">
+<label for="ex29">Some label</label>
+<input type="date" id="ex29" class="input-field" placeholder="I'm a default date input">
 
 <p><strong>sizing</strong></p>
 
-<input type="date" class="input-field input-field-xl" placeholder="I'm a xl date input">
+<label for="ex30">Some label</label>
+<input type="date" id="ex30" class="input-field input-field-xl" placeholder="I'm a xl date input">
 
-<input type="date" class="input-field input-field-lg" placeholder="I'm a lg date input">
+<label for="ex31">Some label</label>
+<input type="date" id="ex31" class="input-field input-field-lg" placeholder="I'm a lg date input">
 
-<input type="date" class="input-field input-field-sm" placeholder="I'm a sm date input">
+<label for="ex32">Some label</label>
+<input type="date" id="ex32" class="input-field input-field-sm" placeholder="I'm a sm date input">
 
 <p><strong>disabled</strong></p>
 
-<input type="date" class="input-field" placeholder="I'm a default date input" disabled>
+<label for="ex33">Some label</label>
+<input type="date" id="ex33" class="input-field" placeholder="I'm a default date input" disabled>
 
-<input type="date" class="input-field" placeholder="I'm a default date input" value="1970-01-01" disabled>
+<label for="ex34">Some label</label>
+<input type="date" id="ex34" class="input-field" placeholder="I'm a default date input" value="1970-01-01" disabled>
 
 <p><strong>readonly</strong></p>
 
-<input type="date" class="input-field" placeholder="I'm a default date input" value="1970-01-01" readonly>
+<label for="ex35">Some label</label>
+<input type="date" id="ex35" class="input-field" placeholder="I'm a default date input" value="1970-01-01" readonly>
 
 
 <!-- <hr>
@@ -213,7 +247,8 @@
 <p><strong>default</strong></p>
 
 <div class="input-field-file js-formfiles">
-	<input type="file" class="input-field-file-item">
+	<label for="ex36">Some label</label>
+	<input type="file" id="ex36" class="input-field-file-item">
 	<div class="input-field-file-msg">
 		<span class="input-field-file-empty">Please select a file</span>
 		<span class="input-field-file-full">File has been selected</span>
@@ -223,7 +258,8 @@
 <p><strong>sizing</strong></p>
 
 <div class="input-field-file input-field-file-xl js-formfiles">
-	<input type="file" class="input-field-file-item">
+	<label for="ex36">Some label</label>
+	<input type="file" id="ex36" class="input-field-file-item">
 	<div class="input-field-file-msg">
 		<span class="input-field-file-empty">Please select a file</span>
 		<span class="input-field-file-full">File has been selected</span>
@@ -231,7 +267,8 @@
 </div>
 
 <div class="input-field-file input-field-file-lg js-formfiles">
-	<input type="file" class="input-field-file-item">
+	<label for="ex37">Some label</label>
+	<input type="file" id="ex37" class="input-field-file-item">
 	<div class="input-field-file-msg">
 		<span class="input-field-file-empty">Please select a file</span>
 		<span class="input-field-file-full">File has been selected</span>
@@ -239,7 +276,8 @@
 </div>
 
 <div class="input-field-file input-field-file-sm js-formfiles">
-	<input type="file" class="input-field-file-item">
+	<label for="ex38">Some label</label>
+	<input type="file" id="ex38" class="input-field-file-item">
 	<div class="input-field-file-msg">
 		<span class="input-field-file-empty">Please select a file</span>
 		<span class="input-field-file-full">File has been selected</span>
@@ -249,7 +287,8 @@
 <p><strong>disabled</strong></p>
 
 <div class="input-field-file input-field-file-xl js-formfiles">
-	<input type="file" class="input-field-file-item" disabled>
+	<label for="ex39">Some label</label>
+	<input type="file" id="ex39" class="input-field-file-item" disabled>
 	<div class="input-field-file-msg">
 		<span class="input-field-file-empty">Please select a file</span>
 		<span class="input-field-file-full">File has been selected</span>
@@ -262,25 +301,32 @@
 
 <p><strong>default</strong></p>
 
-<textarea class="input-field" placeholder="I'm a default textarea"></textarea>
+<label for="ex71">Some label</label>
+<textarea id="ex71" class="input-field" placeholder="I'm a default textarea"></textarea>
 
 <p><strong>sizing</strong></p>
 
-<textarea class="input-field input-field-xl" placeholder="I'm a xl textarea"></textarea>
+<label for="ex72">Some label</label>
+<textarea id="ex72" class="input-field input-field-xl" placeholder="I'm a xl textarea"></textarea>
 
-<textarea class="input-field input-field-lg" placeholder="I'm a lg textarea"></textarea>
+<label for="ex73">Some label</label>
+<textarea id="ex73" class="input-field input-field-lg" placeholder="I'm a lg textarea"></textarea>
 
-<textarea class="input-field input-field-sm" placeholder="I'm a sm textarea"></textarea>
+<label for="ex74">Some label</label>
+<textarea id="ex74" class="input-field input-field-sm" placeholder="I'm a sm textarea"></textarea>
 
 <p><strong>disabled</strong></p>
 
-<textarea class="input-field" placeholder="I'm a default textarea" disabled></textarea>
+<label for="ex75">Some label</label>
+<textarea id="ex75" class="input-field" placeholder="I'm a default textarea" disabled></textarea>
 
-<textarea class="input-field" placeholder="I'm a default textarea" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</textarea>
+<label for="ex76">Some label</label>
+<textarea id="ex76" class="input-field" placeholder="I'm a default textarea" disabled>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</textarea>
 
 <p><strong>readonly</strong></p>
 
-<textarea class="input-field" placeholder="I'm a default textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</textarea>
+<label for="ex77">Some label</label>
+<textarea id="ex77" class="input-field" placeholder="I'm a default textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</textarea>
 
 
 <hr>
@@ -288,8 +334,9 @@
 
 <p><strong>default</strong></p>
 
+<label for="ex85">Some label</label>
 <div class="input-field-select-wrapper">
-	<select class="input-field-select">
+	<select id="ex85" class="input-field-select">
 		<option>Please select</option>
 		<option>Option A</option>
 		<option>Option B</option>
@@ -303,8 +350,9 @@
 
 <p><strong>sizing</strong></p>
 
+<label for="ex86">Some label</label>
 <div class="input-field-select-wrapper input-field-select-xl">
-	<select class="input-field-select">
+	<select id="ex86" class="input-field-select">
 		<option>Please select</option>
 		<option>Option A</option>
 		<option>Option B</option>
@@ -316,8 +364,9 @@
 	</select>
 </div>
 
+<label for="ex87">Some label</label>
 <div class="input-field-select-wrapper input-field-select-lg">
-	<select class="input-field-select">
+	<select id="ex87" class="input-field-select">
 		<option>Please select</option>
 		<option>Option A</option>
 		<option>Option B</option>
@@ -329,8 +378,9 @@
 	</select>
 </div>
 
+<label for="ex88">Some label</label>
 <div class="input-field-select-wrapper input-field-select-sm">
-	<select class="input-field-select">
+	<select id="ex88" class="input-field-select">
 		<option>Please select</option>
 		<option>Option A</option>
 		<option>Option B</option>
@@ -344,8 +394,9 @@
 
 <p><strong>disabled</strong></p>
 
+<label for="ex89">Some label</label>
 <div class="input-field-select-wrapper">
-	<select class="input-field-select" disabled>
+	<select id="ex89" class="input-field-select" disabled>
 		<option>Please select</option>
 		<option>Option A</option>
 		<option>Option B</option>
@@ -368,37 +419,45 @@
 		<legend>Legend</legend>
 
 		<p>
-			<input type="text" class="input-field" placeholder="I'm a default text input">
+			<label for="ex40">Some label</label>
+			<input type="text" id="ex40" class="input-field" placeholder="I'm a default text input">
 		</p>
 
 		<p>
-			<input type="email" class="input-field" placeholder="I'm a default email input">
+			<label for="ex41">Some label</label>
+			<input type="email" id="ex41" class="input-field" placeholder="I'm a default email input">
 		</p>
 
 		<p>
-			<input type="password" class="input-field" placeholder="I'm a default password input">
+			<label for="ex42">Some label</label>
+			<input type="password" id="ex42" class="input-field" placeholder="I'm a default password input">
 		</p>
 
 		<p>
-			<input type="number" class="input-field" placeholder="I'm a default number input">
+			<label for="ex43">Some label</label>
+			<input type="number" id="ex43" class="input-field" placeholder="I'm a default number input">
 		</p>
 
 		<p>
-			<input type="date" class="input-field" placeholder="I'm a default date input">
+			<label for="ex44">Some label</label>
+			<input type="date" id="ex44" class="input-field" placeholder="I'm a default date input">
 		</p>
 
 		<!-- <div class="input-field-file js-formfiles">
-			<input type="file" class="input-field-file-item">
+			<label for="ex45">Some label</label>
+			<input type="file" id="ex45" class="input-field-file-item">
 			<div class="input-field-file-msg">
 				<span class="input-field-file-empty">Please select a file</span>
 				<span class="input-field-file-full">File has been selected</span>
 			</div>
 		</div> -->
 
-		<textarea class="input-field" placeholder="I'm a default textarea"></textarea>
+		<label for="ex78">Some label</label>
+		<textarea id="ex78" class="input-field" placeholder="I'm a default textarea"></textarea>
 
+		<label for="ex90">Some label</label>
 		<div class="input-field-select-wrapper">
-			<select class="input-field-select">
+			<select id="ex90" class="input-field-select">
 				<option>Please select</option>
 				<option>Option A</option>
 				<option>Option B</option>
@@ -420,37 +479,45 @@
 		<legend>Legend XL</legend>
 
 		<p>
-			<input type="text" class="input-field" placeholder="I'm a default text input">
+			<label for="ex46">Some label</label>
+			<input type="text" id="ex46" class="input-field" placeholder="I'm a default text input">
 		</p>
 
 		<p>
-			<input type="email" class="input-field" placeholder="I'm a default email input">
+			<label for="ex47">Some label</label>
+			<input type="email" id="ex47" class="input-field" placeholder="I'm a default email input">
 		</p>
 
 		<p>
-			<input type="password" class="input-field" placeholder="I'm a default password input">
+			<label for="ex48">Some label</label>
+			<input type="password" id="ex48" class="input-field" placeholder="I'm a default password input">
 		</p>
 
 		<p>
-			<input type="number" class="input-field" placeholder="I'm a default number input">
+			<label for="ex49">Some label</label>
+			<input type="number" id="ex49" class="input-field" placeholder="I'm a default number input">
 		</p>
 
 		<p>
-			<input type="date" class="input-field" placeholder="I'm a default date input">
+			<label for="ex50">Some label</label>
+			<input type="date" id="ex50" class="input-field" placeholder="I'm a default date input">
 		</p>
 
 		<!-- <div class="input-field-file js-formfiles">
-			<input type="file" class="input-field-file-item">
+			<label for="ex51">Some label</label>
+			<input type="file" id="ex51" class="input-field-file-item">
 			<div class="input-field-file-msg">
 				<span class="input-field-file-empty">Please select a file</span>
 				<span class="input-field-file-full">File has been selected</span>
 			</div>
 		</div> -->
 
-		<textarea class="input-field" placeholder="I'm a default textarea"></textarea>
+		<label for="ex79">Some label</label>
+		<textarea id="ex79" class="input-field" placeholder="I'm a default textarea"></textarea>
 
+		<label for="ex91">Some label</label>
 		<div class="input-field-select-wrapper">
-			<select class="input-field-select">
+			<select id="ex91" class="input-field-select">
 				<option>Please select</option>
 				<option>Option A</option>
 				<option>Option B</option>
@@ -470,37 +537,45 @@
 		<legend>Legend LG</legend>
 
 		<p>
-			<input type="text" class="input-field" placeholder="I'm a default text input">
+			<label for="ex52">Some label</label>
+			<input type="text" id="ex52" class="input-field" placeholder="I'm a default text input">
 		</p>
 
 		<p>
-			<input type="email" class="input-field" placeholder="I'm a default email input">
+			<label for="ex53">Some label</label>
+			<input type="email" id="ex53" class="input-field" placeholder="I'm a default email input">
 		</p>
 
 		<p>
-			<input type="password" class="input-field" placeholder="I'm a default password input">
+			<label for="ex54">Some label</label>
+			<input type="password" id="ex54" class="input-field" placeholder="I'm a default password input">
 		</p>
 
 		<p>
-			<input type="number" class="input-field" placeholder="I'm a default number input">
+			<label for="ex55">Some label</label>
+			<input type="number" id="ex55" class="input-field" placeholder="I'm a default number input">
 		</p>
 
 		<p>
-			<input type="date" class="input-field" placeholder="I'm a default date input">
+			<label for="ex56">Some label</label>
+			<input type="date" id="ex56" class="input-field" placeholder="I'm a default date input">
 		</p>
 
 		<!-- <div class="input-field-file js-formfiles">
-			<input type="file" class="input-field-file-item">
+			<label for="ex57">Some label</label>
+			<input type="file" id="ex57" class="input-field-file-item">
 			<div class="input-field-file-msg">
 				<span class="input-field-file-empty">Please select a file</span>
 				<span class="input-field-file-full">File has been selected</span>
 			</div>
 		</div> -->
 
-		<textarea class="input-field" placeholder="I'm a default textarea"></textarea>
+		<label for="ex80">Some label</label>
+		<textarea id="ex80" class="input-field" placeholder="I'm a default textarea"></textarea>
 
+		<label for="ex92">Some label</label>
 		<div class="input-field-select-wrapper">
-			<select class="input-field-select">
+			<select id="ex92" class="input-field-select">
 				<option>Please select</option>
 				<option>Option A</option>
 				<option>Option B</option>
@@ -521,37 +596,45 @@
 		<legend>Legend SM</legend>
 
 		<p>
-			<input type="text" class="input-field" placeholder="I'm a default text input">
+			<label for="ex58">Some label</label>
+			<input type="text" id="ex58" class="input-field" placeholder="I'm a default text input">
 		</p>
 
 		<p>
-			<input type="email" class="input-field" placeholder="I'm a default email input">
+			<label for="ex59">Some label</label>
+			<input type="email" id="ex59" class="input-field" placeholder="I'm a default email input">
 		</p>
 
 		<p>
-			<input type="password" class="input-field" placeholder="I'm a default password input">
+			<label for="ex60">Some label</label>
+			<input type="password" id="ex60" class="input-field" placeholder="I'm a default password input">
 		</p>
 
 		<p>
-			<input type="number" class="input-field" placeholder="I'm a default number input">
+			<label for="ex61">Some label</label>
+			<input type="number" id="ex61" class="input-field" placeholder="I'm a default number input">
 		</p>
 
 		<p>
-			<input type="date" class="input-field" placeholder="I'm a default date input">
+			<label for="ex62">Some label</label>
+			<input type="date" id="ex62" class="input-field" placeholder="I'm a default date input">
 		</p>
 
 		<!-- <div class="input-field-file js-formfiles">
-			<input type="file" class="input-field-file-item">
+			<label for="ex63">Some label</label>
+			<input type="file" id="ex63" class="input-field-file-item">
 			<div class="input-field-file-msg">
 				<span class="input-field-file-empty">Please select a file</span>
 				<span class="input-field-file-full">File has been selected</span>
 			</div>
 		</div> -->
 
-		<textarea class="input-field" placeholder="I'm a default textarea"></textarea>
+		<label for="ex81">Some label</label>
+		<textarea id="ex81" class="input-field" placeholder="I'm a default textarea"></textarea>
 
+		<label for="ex95">Some label</label>
 		<div class="input-field-select-wrapper">
-			<select class="input-field-select">
+			<select id="ex95" class="input-field-select">
 				<option>Please select</option>
 				<option>Option A</option>
 				<option>Option B</option>
@@ -574,37 +657,45 @@
 		<legend>Legend</legend>
 
 		<p>
-			<input type="text" class="input-field" placeholder="I'm a default text input">
+			<label for="ex64">Some label</label>
+			<input type="text" id="ex64" class="input-field" placeholder="I'm a default text input">
 		</p>
 
 		<p>
-			<input type="email" class="input-field" placeholder="I'm a default email input">
+			<label for="ex65">Some label</label>
+			<input type="email" id="ex65" class="input-field" placeholder="I'm a default email input">
 		</p>
 
 		<p>
-			<input type="password" class="input-field" placeholder="I'm a default password input">
+			<label for="ex66">Some label</label>
+			<input type="password" id="ex66" class="input-field" placeholder="I'm a default password input">
 		</p>
 
 		<p>
-			<input type="number" class="input-field" placeholder="I'm a default number input">
+			<label for="ex67">Some label</label>
+			<input type="number" id="ex67" class="input-field" placeholder="I'm a default number input">
 		</p>
 
 		<p>
-			<input type="date" class="input-field" placeholder="I'm a default date input">
+			<label for="ex68">Some label</label>
+			<input type="date" id="ex68" class="input-field" placeholder="I'm a default date input">
 		</p>
 
 		<!-- <div class="input-field-file js-formfiles">
-			<input type="file" class="input-field-file-item">
+			<label for="ex69">Some label</label>
+			<input type="file" id="ex69" class="input-field-file-item">
 			<div class="input-field-file-msg">
 				<span class="input-field-file-empty">Please select a file</span>
 				<span class="input-field-file-full">File has been selected</span>
 			</div>
 		</div> -->
 
-		<textarea class="input-field" placeholder="I'm a default textarea"></textarea>
+		<label for="ex82">Some label</label>
+		<textarea id="ex82" class="input-field" placeholder="I'm a default textarea"></textarea>
 
+		<label for="ex93">Some label</label>
 		<div class="input-field-select-wrapper">
-			<select class="input-field-select">
+			<select id="ex93" class="input-field-select">
 				<option>Please select</option>
 				<option>Option A</option>
 				<option>Option B</option>
