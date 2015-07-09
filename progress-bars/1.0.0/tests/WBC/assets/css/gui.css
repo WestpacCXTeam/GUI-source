@@ -1685,6 +1685,12 @@ a:hover {
 .progress-bar .progress-bar-indicator .progress-bar-text {
   margin: 0 12px;
 }
+.progress-bar .progress-bar-srtext {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
 .progress-bar.progress-bar-skinny {
   height: 10px;
 }
