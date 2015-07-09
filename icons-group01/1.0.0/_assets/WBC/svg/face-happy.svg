@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Happy face</title>
+
 <path fill="#2d373e" class="icons-background" d="M8 11c0-1.1 0.9-2 2-2s2 0.9 2 2-0.9 2-2 2c-1.1 0-2-0.9-2-2zM20 11c0 1.1 0.9 2 2 2s2-0.9 2-2-0.9-2-2-2c-1.1 0-2 0.9-2 2zM22 19.6c-1.2 2-3.5 3.4-6 3.4s-4.8-1.4-6-3.4l-2.6 1.5c1.8 3 5 4.9 8.6 4.9s6.8-1.9 8.6-4.9l-2.6-1.5zM16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16-7.2-16-16-16zM30 16c0 7.7-6.3 14-14 14s-14-6.3-14-14 6.3-14 14-14 14 6.3 14 14z"></path>
 </svg>
