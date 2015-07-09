@@ -1721,6 +1721,9 @@ a:hover {
   font-size: 0;
   z-index: 2;
 }
+.no-js .alert .alert-close {
+  display: none;
+}
 .alert .alert-close svg {
   width: 16px;
   height: 16px;
