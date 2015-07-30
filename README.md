@@ -1,6 +1,8 @@
 GUI-source
 ==========
 
+[![Join the chat at https://gitter.im/WestpacCXTeam/GUI-source](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/WestpacCXTeam/GUI-source?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > This is the repository in which we develop each element of the GUI.
 > Each module is tested in isolation and put into an JSON object that keeps track of all versions.
 
