@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1728,8 +1728,8 @@ a:hover {
 }
 .panel .panel-footer {
   padding: 10px 12px;
-  background-color: #f3f3f1;
-  border-top: 1px solid #cecdc6;
+  background-color: #f1f1ef;
+  border-top: 1px solid #d6d5d0;
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
 }
@@ -1739,11 +1739,11 @@ a:hover {
   }
 }
 .panel.panel-faint {
-  border-color: #cecdc6;
+  border-color: #d6d5d0;
 }
 .panel.panel-faint .panel-heading {
-  background-color: #f3f3f1;
-  border-bottom: 1px solid #cecdc6;
+  background-color: #f1f1ef;
+  border-bottom: 1px solid #d6d5d0;
 }
 .panel.panel-faint .panel-heading .panel-title {
   color: #004833;

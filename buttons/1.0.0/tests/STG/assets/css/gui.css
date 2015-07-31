@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1687,7 +1687,7 @@ a:hover {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   cursor: pointer;
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -1695,9 +1695,9 @@ a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  color: #858370;
-  border-color: #cecdc6;
-  background-color: #f9f9f8;
+  color: #757463;
+  border-color: #d6d5d0;
+  background-color: #f8f8f7;
   transition: background 0.2s ease, color 0.2s ease;
 }
 .btn .btn-text {
@@ -1753,38 +1753,38 @@ p > .btn.btn-link {
   font-weight: 400;
 }
 .btn-group-input:checked + .btn {
-  color: #858370;
-  border-color: #cecdc6;
-  background-color: #f9f9f8;
+  color: #757463;
+  border-color: #d6d5d0;
+  background-color: #f8f8f7;
 }
 .btn svg,
 .btn .icons-background {
-  fill: #858370;
+  fill: #757463;
 }
 .btn:hover {
-  color: #858370;
-  border-color: #cecdc6;
+  color: #757463;
+  border-color: #d6d5d0;
   background-color: #ffffff;
 }
 .btn-dropdown > .btn:hover .btn-dropdown-caret:after {
-  border-top-color: #858370;
+  border-top-color: #757463;
 }
 .btn:hover svg,
 .btn:hover .icons-background {
-  fill: #858370;
+  fill: #757463;
 }
 .btn:active {
-  color: #858370;
-  border-color: #cecdc6;
+  color: #757463;
+  border-color: #d6d5d0;
   background-color: #ffffff;
 }
 .btn:active svg,
 .btn:active .icons-background {
-  fill: #858370;
+  fill: #757463;
 }
 .btn-dropdown > .btn .btn-dropdown-caret:after {
   transition: border 0.2s ease;
-  border-top-color: #858370;
+  border-top-color: #757463;
 }
 .btn.disabled,
 .btn:disabled {
@@ -1794,9 +1794,9 @@ p > .btn.btn-link {
 .btn:disabled:active,
 .btn.disabled:hover,
 .btn:disabled:hover {
-  color: #858370;
-  border-color: #cecdc6;
-  background-color: #f9f9f8;
+  color: #757463;
+  border-color: #d6d5d0;
+  background-color: #f8f8f7;
   cursor: not-allowed;
 }
 .btn.btn-primary {
@@ -1907,14 +1907,14 @@ p > .btn.btn-link {
 }
 .btn.btn-neutral {
   color: #ffffff;
-  border-color: #858370;
-  background-color: #858370;
+  border-color: #757463;
+  background-color: #757463;
   transition: background 0.2s ease, color 0.2s ease;
 }
 .btn-group-input:checked + .btn.btn-neutral {
   color: #ffffff;
-  border-color: #858370;
-  background-color: #858370;
+  border-color: #757463;
+  background-color: #757463;
 }
 .btn.btn-neutral svg,
 .btn.btn-neutral .icons-background {
@@ -1922,8 +1922,8 @@ p > .btn.btn-link {
 }
 .btn.btn-neutral:hover {
   color: #ffffff;
-  border-color: #858370;
-  background-color: #aaa89b;
+  border-color: #757463;
+  background-color: #9e9e92;
 }
 .btn-dropdown > .btn.btn-neutral:hover .btn-dropdown-caret:after {
   border-top-color: #ffffff;
@@ -1934,8 +1934,8 @@ p > .btn.btn-link {
 }
 .btn.btn-neutral:active {
   color: #ffffff;
-  border-color: #858370;
-  background-color: #c2c1b8;
+  border-color: #757463;
+  background-color: #babab1;
 }
 .btn.btn-neutral:active svg,
 .btn.btn-neutral:active .icons-background {
@@ -1954,8 +1954,8 @@ p > .btn.btn-link {
 .btn.btn-neutral.disabled:hover,
 .btn.btn-neutral:disabled:hover {
   color: #ffffff;
-  border-color: #858370;
-  background-color: #858370;
+  border-color: #757463;
+  background-color: #757463;
   cursor: not-allowed;
 }
 .btn:focus {
@@ -2076,12 +2076,12 @@ p > .btn.btn-link {
   transition: background 0.2s ease;
 }
 .btn-dropdown .dropdown-menu li:hover {
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
 }
 .btn-dropdown .dropdown-menu li .btn-link,
 .btn-dropdown .dropdown-menu li a {
   display: block;
-  color: #858370;
+  color: #757463;
   width: 100%;
   text-align: left;
 }
@@ -2163,7 +2163,7 @@ p > .btn.btn-link {
 .btn-dropdown.is-open .dropdown-menu {
   display: block;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
   padding: 12px 6px;
 }
 @media print {

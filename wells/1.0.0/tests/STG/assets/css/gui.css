@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1669,8 +1669,8 @@ a:hover {
 .well {
   padding: 12px;
   margin-bottom: 18px;
-  background-color: #f3f3f1;
-  border: 1px solid #cecdc6;
+  background-color: #f1f1ef;
+  border: 1px solid #d6d5d0;
   border-radius: 3px;
 }
 @media (min-width: 768px) {

@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1675,7 +1675,7 @@ a:hover {
   vertical-align: baseline;
   white-space: nowrap;
   text-align: center;
-  background-color: #858370;
+  background-color: #757463;
   border-radius: 12px;
   font-weight: 700;
   font-size: 14px;
