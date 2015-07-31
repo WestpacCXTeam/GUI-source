@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1704,7 +1704,7 @@ a:hover {
 @-webkit-keyframes iconloading {
   0% {
     background: none;
-    border-color: #858370;
+    border-color: #757463;
     border-radius: 50%;
     -webkit-transform: scale(0.1);
             transform: scale(0.1);
@@ -1715,7 +1715,7 @@ a:hover {
   }
   100% {
     background: none;
-    border-color: #858370;
+    border-color: #757463;
     border-radius: 50%;
     -webkit-transform: scale(1);
             transform: scale(1);
@@ -1725,7 +1725,7 @@ a:hover {
 @keyframes iconloading {
   0% {
     background: none;
-    border-color: #858370;
+    border-color: #757463;
     border-radius: 50%;
     -webkit-transform: scale(0.1);
             transform: scale(0.1);
@@ -1736,7 +1736,7 @@ a:hover {
   }
   100% {
     background: none;
-    border-color: #858370;
+    border-color: #757463;
     border-radius: 50%;
     -webkit-transform: scale(1);
             transform: scale(1);

@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1700,7 +1700,7 @@ html {
   }
 }
 .tabcordion {
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
   border-bottom: 0 none;
   border-radius: 3px;
 }
@@ -1715,7 +1715,7 @@ html {
   border-radius: 0;
 }
 .tabcordion-accordion.tabcordion {
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
   border-bottom: 0 none;
   border-radius: 3px;
 }
@@ -1755,8 +1755,8 @@ html {
   display: inline-block;
   padding: 14px 18px 14px 18px;
   color: #004833;
-  background-color: #f9f9f8;
-  border: 1px solid #cecdc6;
+  background-color: #f8f8f7;
+  border: 1px solid #d6d5d0;
   border-bottom: 0 none;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -1771,7 +1771,7 @@ html {
 .tabcordion .tabcordion-tabs .tabcordion-tab a:hover {
   outline: none;
   text-decoration: none;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
 }
 .tabcordion .tabcordion-tabs .tabcordion-tab.is-active a {
   background-color: #fff;
@@ -1795,14 +1795,14 @@ html {
   color: #004833;
   margin-bottom: -1px;
   padding-bottom: 15px;
-  border-color: #cecdc6;
+  border-color: #d6d5d0;
 }
 .tabcordion .tabcordion-body-header {
   display: block;
   font-size: 16px;
   position: relative;
   z-index: 2;
-  border-bottom: 1px solid #cecdc6;
+  border-bottom: 1px solid #d6d5d0;
 }
 .tabcordion .tabcordion-body-header:last-child {
   border-bottom: 0 none;
@@ -1815,7 +1815,7 @@ html {
 }
 .tabcordion-accordion.tabcordion .tabcordion-body-header {
   display: block;
-  border-bottom: 1px solid #cecdc6;
+  border-bottom: 1px solid #d6d5d0;
 }
 .tabcordion .tabcordion-body-header .tabcordion-body-headline {
   display: block;
@@ -1823,7 +1823,7 @@ html {
   color: #004833;
   position: relative;
   transition: 0.3s ease;
-  background-color: #f9f9f8;
+  background-color: #f8f8f7;
 }
 .tabcordion .tabcordion-body-header .tabcordion-body-headline:before {
   content: " ";
@@ -1863,7 +1863,7 @@ html {
 .tabcordion .tabcordion-body-header .tabcordion-body-headline:hover {
   outline: none;
   text-decoration: none;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
 }
 .tabcordion .tabcordion-body-header .tabcordion-body-headline:active {
   text-decoration: none;
@@ -1879,7 +1879,7 @@ html {
   left: 42px;
   display: inline-block;
   vertical-align: middle;
-  border-top: 16px solid #cecdc6;
+  border-top: 16px solid #d6d5d0;
   border-top-style: solid;
   border-right: 12px solid transparent;
   border-bottom: none;
@@ -1894,21 +1894,21 @@ html {
   left: 42px;
   display: inline-block;
   vertical-align: middle;
-  border-top: 16px solid #f9f9f8;
+  border-top: 16px solid #f8f8f7;
   border-right: 12px solid transparent;
   border-bottom: none;
   border-left: 12px solid transparent;
   z-index: 2;
 }
 .tabcordion .tabcordion-body-header.is-active .tabcordion-body-headline:hover {
-  background-color: #f9f9f8;
+  background-color: #f8f8f7;
 }
 .tabcordion .tabcordion-body-header.is-active .tabcordion-body-headline:after {
   border-top-color: #fff;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header {
   transition: border 0.3s ease;
-  border-left: 12px solid #cecdc6;
+  border-left: 12px solid #d6d5d0;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header .tabcordion-body-headline {
   padding-left: 12px;
@@ -1928,14 +1928,14 @@ html {
   z-index: 1;
 }
 .tabcordion .collapsible-body .tabcordion-body {
-  border-top: 1px solid #cecdc6;
-  border-bottom: 1px solid #cecdc6;
+  border-top: 1px solid #d6d5d0;
+  border-bottom: 1px solid #d6d5d0;
   padding: 24px 3.22%;
 }
 @media (min-width: 768px) {
   .tabcordion .collapsible-body .tabcordion-body {
-    border-right: 1px solid #cecdc6;
-    border-left: 1px solid #cecdc6;
+    border-right: 1px solid #d6d5d0;
+    border-left: 1px solid #d6d5d0;
   }
 }
 .tabcordion-accordion.tabcordion .collapsible-body .tabcordion-body {
@@ -1943,8 +1943,8 @@ html {
   border-left: 0 none;
 }
 .tabcordion-tabs.tabcordion .collapsible-body .tabcordion-body {
-  border-right: 1px solid #cecdc6;
-  border-left: 1px solid #cecdc6;
+  border-right: 1px solid #d6d5d0;
+  border-left: 1px solid #d6d5d0;
 }
 .tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
   border-top: 0 none;
@@ -1953,7 +1953,7 @@ html {
 }
 @media (min-width: 768px) {
   .tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
-    border-top: 1px solid #cecdc6;
+    border-top: 1px solid #d6d5d0;
     padding-left: 3.22%;
   }
 }
@@ -1963,7 +1963,7 @@ html {
   padding-right: 24px;
 }
 .tabcordion-tabs.tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
-  border-top: 1px solid #cecdc6;
+  border-top: 1px solid #d6d5d0;
   padding-left: 3.22%;
 }
 @media print {

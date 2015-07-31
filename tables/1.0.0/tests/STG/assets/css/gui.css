@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1689,10 +1689,10 @@ a:hover {
 .table > tfoot > tr > td {
   padding: 12px;
   vertical-align: top;
-  border-top: 1px solid #cecdc6;
+  border-top: 1px solid #d6d5d0;
 }
 .table > tfoot {
-  color: #858370;
+  color: #757463;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -1715,27 +1715,27 @@ a:hover {
   transition: background 0.2s ease;
 }
 .table > tbody > tr:hover {
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
 }
 .table.table-striped > tbody > tr:nth-child(odd) {
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
 }
 .table.table-striped > tbody > tr:nth-child(odd):hover {
-  background-color: #e7e7e3;
+  background-color: #e5e5e1;
 }
 .table.table-bordered > thead > tr > td,
 .table.table-bordered > tbody > tr > td,
 .table.table-bordered > tfoot > tr > td {
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
 }
 .table.table-bordered > thead > tr > th,
 .table.table-bordered > tbody > tr > th,
 .table.table-bordered > tfoot > tr > th {
-  border-left: 1px solid #cecdc6;
-  border-right: 1px solid #cecdc6;
+  border-left: 1px solid #d6d5d0;
+  border-right: 1px solid #d6d5d0;
 }
 .table.table-bordered > caption + thead > tr:first-child > th {
-  border-top: 1px solid #cecdc6;
+  border-top: 1px solid #d6d5d0;
 }
 .table.table-bordered > thead > tr > th,
 .table.table-bordered > thead > tr > td {
@@ -1745,7 +1745,7 @@ a:hover {
 .table.table-bordered > tbody > tr > th.table-highlight + td.table-highlight,
 .table.table-bordered > tbody > tr > td.table-highlight + th.table-highlight,
 .table.table-bordered > tbody > tr > th.table-highlight + th.table-highlight {
-  border-left: 1px solid #cecdc6;
+  border-left: 1px solid #d6d5d0;
 }
 .table > tbody > tr.table-highlight {
   border-left: 6px solid #e30000;
@@ -1788,7 +1788,7 @@ table th[class*="col-"] {
     overflow-y: hidden;
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #cecdc6;
+    border: 1px solid #d6d5d0;
     -webkit-overflow-scrolling: touch;
   }
   .table-responsive > .table {
