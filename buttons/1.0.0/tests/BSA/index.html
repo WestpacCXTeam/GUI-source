@@ -113,11 +113,11 @@
 <script>
 	/*! grunt-grunticon Stylesheet Loader - v2.1.7 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
 	(function(e){function n(n,t,o,a){"use strict";var i=e.document.createElement("link"),r=t||e.document.getElementsByTagName("script")[0],d=e.document.styleSheets;return i.rel="stylesheet",i.href=n,i.media="only x",a&&(i.onload=a),r.parentNode.insertBefore(i,r),i.onloadcssdefined=function(e){for(var t,o=0;d.length>o;o++)d[o].href&&d[o].href.indexOf(n)>-1&&(t=!0);t?e():setTimeout(function(){i.onloadcssdefined(e)})},i.onloadcssdefined(function(){i.media=o||"all"}),i}function t(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}var o=function(a,i){"use strict";if(a&&3===a.length){var r=e.Image,d=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),c=new r;c.onerror=function(){o.method="png",o.href=a[2],n(a[2])},c.onload=function(){var e=1===c.width&&1===c.height,r=a[e&&d?0:e?1:2];o.method=e&&d?"svg":e?"datapng":"png",o.href=r,t(n(r),i)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};o.loadCSS=n,o.onloadCSS=t,e.grunticon=o})(this);(function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;t.length>d;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;n.length>d;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;r.length>d;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s})(grunticon,this);
-	grunticon(["../../../../icons-group1/1.0.0/tests/BSA/assets/css/symbols.data.svg.css", "../../../../icons-group1/1.0.0/tests/BSA/assets/css/symbols.data.png.css", "../../../../icons-group1/1.0.0/tests/BSA/assets/css/symbols.fallback.css"], grunticon.svgLoadedCallback);
+	grunticon(["../../../../icons-group01/1.0.0/tests/BSA/assets/css/symbols.data.svg.css", "../../../../icons-group01/1.0.0/tests/BSA/assets/css/symbols.data.png.css", "../../../../icons-group01/1.0.0/tests/BSA/assets/css/symbols.fallback.css"], grunticon.svgLoadedCallback);
 </script>
-<link rel="stylesheet" href="../../../../icons-group1/1.0.0/tests/BSA/assets/css/symbols.data.svg.css">
+<link rel="stylesheet" href="../../../../icons-group01/1.0.0/tests/BSA/assets/css/symbols.data.svg.css">
 <link rel="stylesheet" href="../../../../icons-base/1.0.0/tests/BSA/assets/css/gui.css">
-<link rel="stylesheet" href="../../../../icons-group1/1.0.0/tests/BSA/assets/css/gui.css">
+<link rel="stylesheet" href="../../../../icons-group01/1.0.0/tests/BSA/assets/css/gui.css">
 
 <button type="button" class="btn btn-primary">
 	<span class="btn-text">Primary</span>
@@ -289,10 +289,10 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-primary js-button-dropdown">
+	<button type="button" class="btn btn-primary js-button-dropdown" aria-label="Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
-	<ul class="dropdown-menu" role="menu">
+	<ul class="dropdown-menu" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
 		<li class="dropdown-menu-headline">Headline 1</li>
 		<li><a href="#url">Link 1</a></li>
 		<li><a href="#url">Another link</a></li>
@@ -308,10 +308,10 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-primary btn-soft js-button-dropdown">
+	<button type="button" class="btn btn-primary btn-soft js-button-dropdown" aria-label="Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
-	<ul class="dropdown-menu" role="menu">
+	<ul class="dropdown-menu" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
 		<li class="dropdown-menu-headline">Headline 1</li>
 		<li><a href="#url">Link 1</a></li>
 		<li><a href="#url">Another link</a></li>
@@ -330,10 +330,10 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-hero js-button-dropdown">
+	<button type="button" class="btn btn-hero js-button-dropdown" aria-label="Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
-	<ul class="dropdown-menu dropdown-menu-sm" role="menu">
+	<ul class="dropdown-menu dropdown-menu-sm" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
 		<li><button class="btn btn-link">Action 1</button></li>
 		<li><button class="btn btn-link">Another action</button></li>
 		<li class="dropdown-menu-divider"><button class="btn btn-link">Action 3</button></li>
@@ -343,10 +343,10 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-hero btn-soft js-button-dropdown">
+	<button type="button" class="btn btn-hero btn-soft js-button-dropdown" aria-label="Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
-	<ul class="dropdown-menu dropdown-menu-sm" role="menu">
+	<ul class="dropdown-menu dropdown-menu-sm" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
 		<li><button class="btn btn-link">Action 1</button></li>
 		<li><button class="btn btn-link">Another action</button></li>
 		<li class="dropdown-menu-divider"><button class="btn btn-link">Action 3</button></li>
@@ -358,22 +358,22 @@
 <hr>
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-neutral js-button-dropdown">
+	<button type="button" class="btn btn-neutral js-button-dropdown" aria-label="Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
-	<ul class="dropdown-menu dropdown-menu-lg" role="menu">
+	<ul class="dropdown-menu dropdown-menu-lg" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
 		<li>
 			<div class="btn-dropdown-setting">
-				<span class="btn-dropdown-text">Setting 1 with long test that breaks into another line</span>
+				<span class="btn-dropdown-text" id="label1">Setting 1 with long test that breaks into another line</span>
 
 				<div class="btn-group">
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label1">
 						<input class="btn-group-input" type="radio" name="options5">
 						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
 					</label>
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label1">
 						<input class="btn-group-input" type="radio" name="options5">
 						<span class="btn-group-text btn btn-hero btn-sm">No</span>
 					</label>
@@ -384,16 +384,16 @@
 		</li>
 		<li class="dropdown-menu-divider">
 			<div class="btn-dropdown-setting">
-				<span class="btn-dropdown-text">Setting 2</span>
+				<span class="btn-dropdown-text" id="label2">Setting 2</span>
 
 				<div class="btn-group">
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label2">
 						<input class="btn-group-input" type="radio" name="options6">
 						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
 					</label>
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label2">
 						<input class="btn-group-input" type="radio" name="options6">
 						<span class="btn-group-text btn btn-hero btn-sm">No</span>
 					</label>
@@ -404,16 +404,16 @@
 		</li>
 		<li>
 			<div class="btn-dropdown-setting">
-				<span class="btn-dropdown-text">Setting 3</span>
+				<span class="btn-dropdown-text" id="label3">Setting 3</span>
 
 				<div class="btn-group">
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label3">
 						<input class="btn-group-input" type="radio" name="options7">
 						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
 					</label>
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label3">
 						<input class="btn-group-input" type="radio" name="options7">
 						<span class="btn-group-text btn btn-hero btn-sm">No</span>
 					</label>
@@ -424,16 +424,16 @@
 		</li>
 		<li>
 			<div class="btn-dropdown-setting">
-				<span class="btn-dropdown-text">Setting 4</span>
+				<span class="btn-dropdown-text" id="label4">Setting 4</span>
 
 				<div class="btn-group">
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label4">
 						<input class="btn-group-input" type="radio" name="options8">
 						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
 					</label>
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label4">
 						<input class="btn-group-input" type="radio" name="options8">
 						<span class="btn-group-text btn btn-hero btn-sm">No</span>
 					</label>
@@ -447,22 +447,22 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-neutral btn-soft js-button-dropdown">
+	<button type="button" class="btn btn-neutral btn-soft js-button-dropdown" aria-label="Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
-	<ul class="dropdown-menu dropdown-menu-lg" role="menu">
+	<ul class="dropdown-menu dropdown-menu-lg" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
 		<li>
 			<div class="btn-dropdown-setting">
-				<span class="btn-dropdown-text">Setting 1</span>
+				<span class="btn-dropdown-text" id="label1a">Setting 1</span>
 
 				<div class="btn-group">
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label1a">
 						<input class="btn-group-input" type="radio" name="options5">
 						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
 					</label>
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label1a">
 						<input class="btn-group-input" type="radio" name="options5">
 						<span class="btn-group-text btn btn-hero btn-sm">No</span>
 					</label>
@@ -473,16 +473,16 @@
 		</li>
 		<li class="dropdown-menu-divider">
 			<div class="btn-dropdown-setting">
-				<span class="btn-dropdown-text">Setting 2</span>
+				<span class="btn-dropdown-text" id="label2a">Setting 2</span>
 
 				<div class="btn-group">
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label2a">
 						<input class="btn-group-input" type="radio" name="options6">
 						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
 					</label>
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label2a">
 						<input class="btn-group-input" type="radio" name="options6">
 						<span class="btn-group-text btn btn-hero btn-sm">No</span>
 					</label>
@@ -493,16 +493,16 @@
 		</li>
 		<li>
 			<div class="btn-dropdown-setting">
-				<span class="btn-dropdown-text">Setting 3 with long test that breaks into another line</span>
+				<span class="btn-dropdown-text" id="label3a">Setting 3 with long test that breaks into another line</span>
 
 				<div class="btn-group">
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label3a">
 						<input class="btn-group-input" type="radio" name="options7">
 						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
 					</label>
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label3a">
 						<input class="btn-group-input" type="radio" name="options7">
 						<span class="btn-group-text btn btn-hero btn-sm">No</span>
 					</label>
@@ -513,16 +513,16 @@
 		</li>
 		<li>
 			<div class="btn-dropdown-setting">
-				<span class="btn-dropdown-text">Setting 4</span>
+				<span class="btn-dropdown-text" id="label4a">Setting 4</span>
 
 				<div class="btn-group">
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label4a">
 						<input class="btn-group-input" type="radio" name="options8">
 						<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
 					</label>
 
-					<label class="btn-group-item">
+					<label class="btn-group-item" aria-describedby="label4a">
 						<input class="btn-group-input" type="radio" name="options8">
 						<span class="btn-group-text btn btn-hero btn-sm">No</span>
 					</label>
@@ -540,10 +540,10 @@
 <link rel="stylesheet" href="../../../../checkboxes/1.0.0/tests/BSA/assets/css/gui.css">
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-faint js-button-dropdown">
+	<button type="button" class="btn btn-faint js-button-dropdown" aria-label="Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
-	<ul class="dropdown-menu" role="menu">
+	<ul class="dropdown-menu" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
 		<li>
 			<label class="checkbox checkbox-flip">
 				<input class="checkbox-input" type="checkbox" name="option2">
@@ -573,10 +573,10 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-faint btn-soft js-button-dropdown">
+	<button type="button" class="btn btn-faint btn-soft js-button-dropdown" aria-label="Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
-	<ul class="dropdown-menu" role="menu">
+	<ul class="dropdown-menu" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
 		<li>
 			<label class="checkbox checkbox-flip">
 				<input class="checkbox-input" type="checkbox" name="option2">
