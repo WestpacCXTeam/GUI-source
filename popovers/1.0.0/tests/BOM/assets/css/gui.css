@@ -1696,6 +1696,10 @@ a:hover {
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
 }
+.popover .popover-popup:focus {
+  outline: 2px dotted #000;
+  outline-offset: 0.5rem;
+}
 .popover .popover-popup:before,
 .popover .popover-popup:after {
   content: " ";
