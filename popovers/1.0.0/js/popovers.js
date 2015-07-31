@@ -13,6 +13,12 @@
 	var module = {};
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// public vars
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	module.lastFocus = {};
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.init = function popoversInit() {
@@ -35,13 +41,15 @@
 				if( _isOpen ) {
 					GUI.debugging( 'popovers: Closing popover', 'report' );
 
-					$this
-						.removeClass('is-open');
+					GUI.popovers.lastFocus.focus();
 
+					$this.removeClass('is-open');
 					$popover.attr('aria-hidden', 'true');
 				}
 				else { // OPENING POPOVER
 					GUI.debugging( 'popovers: Opening popover', 'report' );
+
+					GUI.popovers.lastFocus = $(':focus');
 
 					$('.js-popover-styles-' + index).remove(); //remove all previous styles
 					$popover.attr('style', '');
@@ -50,7 +58,9 @@
 						.removeClass('is-bottom')
 						.addClass('is-open');
 
-					$popover.attr('aria-hidden', 'false');
+					$popover
+						.attr('aria-hidden', 'false')
+						.focus();
 
 					// get current positions
 					var top = parseInt( $popover.offset().top - $(window).scrollTop() );
@@ -108,6 +118,21 @@
 							'</span>'
 						);
 					}
+				}
+			});
+
+
+			//ESC button listener
+			$(document).keyup(function escapeKey(e) {
+				if(e.keyCode == 27) {
+					GUI.debugging( 'popovers: Esc button clicked', 'interaction' );
+
+					if( typeof GUI.popovers.lastFocus.focus !== 'undefined' ) {
+						GUI.popovers.lastFocus.focus();
+					}
+
+					$('.js-popover').removeClass('is-open');
+					$('.popover-popup').attr('aria-hidden', 'true');
 				}
 			});
 		}
