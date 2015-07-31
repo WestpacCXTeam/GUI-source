@@ -1461,6 +1461,16 @@
 				}
 			}
 
+			.input-addon-flip& {
+				.input-addon-input {
+					border: 1px solid @color-Border;
+					border-left: 0 none;
+					border-radius: 3px;
+					border-top-left-radius: 0;
+					border-bottom-left-radius: 0;
+				}
+			}
+
 			.input-addon-input {
 				-webkit-appearance: none;
 				-moz-appearance: none;
@@ -1504,7 +1514,7 @@
 			-moz-appearance: none;
 			appearance: none;
 			border: 0 none;
-			padding: 7px 8px 8px 8px;
+			padding: 7px 12px 8px 12px;
 			margin: 0;
 			color: @font-color;
 			background-color: @color-B;
@@ -1518,7 +1528,8 @@
 			border-top-left-radius: 0;
 			border-bottom-left-radius: 0;
 
-			&:first-child {
+			.input-addon-flip& {
+				float: left;
 				border-radius: 3px;
 				border-top-right-radius: 0;
 				border-bottom-right-radius: 0;
@@ -1587,7 +1598,7 @@
 				color: @font-color;
 				font-size: 16px;
 				font-weight: 400;
-				padding: 6px 30px 8px 8px;
+				padding: 6px 30px 8px 12px;
 
 				&:focus {
 				.outline();
