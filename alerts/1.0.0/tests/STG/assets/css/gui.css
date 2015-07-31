@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1673,7 +1673,7 @@ a:hover {
   color: #0074c4;
 }
 .text-warning {
-  color: #d06800;
+  color: #c53b00;
 }
 .text-danger {
   color: #c40000;
@@ -1682,8 +1682,8 @@ a:hover {
   position: relative;
   padding: 18px 36px 18px 18px;
   margin-bottom: 21px;
-  border-top: 1px solid #cecdc6;
-  border-bottom: 1px solid #cecdc6;
+  border-top: 1px solid #d6d5d0;
+  border-bottom: 1px solid #d6d5d0;
   overflow: hidden;
   z-index: 1;
   max-height: 500px;
@@ -1759,13 +1759,13 @@ a:hover {
   fill: #0074c4;
 }
 .alert.alert-warning {
-  color: #d06800;
-  border-color: #e8b480;
-  background-color: #fdf7f2;
+  color: #c53b00;
+  border-color: #e29d80;
+  background-color: #fcf5f2;
 }
 .alert.alert-warning .alert-close svg,
 .alert.alert-warning .alert-close .icons-background {
-  fill: #d06800;
+  fill: #c53b00;
 }
 .alert.alert-danger {
   color: #c40000;
@@ -1804,12 +1804,12 @@ a:hover {
   color: #fff;
 }
 .label.label-warning {
-  background-color: #d06800;
+  background-color: #c53b00;
   color: #fff;
 }
 .label.label-warning[href]:hover,
 .label.label-warning[href]:focus {
-  background-color: #e8b480;
+  background-color: #e29d80;
   color: #fff;
 }
 .label.label-danger {
@@ -1856,12 +1856,12 @@ a:hover {
   border-color: #0074c4;
 }
 .has-warning.alert-form .alert-form-msg {
-  color: #d06800;
+  color: #c53b00;
 }
 .has-warning.alert-form .input-field,
 .has-warning.alert-form .input-field-select,
 .has-warning.alert-form .input-field-select:focus {
-  border-color: #d06800;
+  border-color: #c53b00;
 }
 .has-danger.alert-form .alert-form-msg {
   color: #c40000;

@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1696,7 +1696,7 @@ a:hover {
   font-size: 16px;
   padding: 8px;
   vertical-align: middle;
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
   transition: border 0.2s ease;
   height: 36px;
 }
@@ -1714,7 +1714,7 @@ a:hover {
 }
 .input-group .input-group-addon {
   font-size: 14px;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   padding: 7px;
   vertical-align: middle;
   display: inline-block;
@@ -1723,13 +1723,13 @@ a:hover {
 .input-group .input-group-addon:nth-child(2) {
   border-bottom-left-radius: 3px;
   border-top-left-radius: 3px;
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
   border-right: 0 none;
 }
 .input-group .input-group-addon:last-child {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
   border-left: 0 none;
 }
 .input-group.input-group-xl .input-group-input {

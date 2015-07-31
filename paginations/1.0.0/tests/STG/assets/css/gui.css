@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1683,7 +1683,7 @@ a:hover {
   display: inline-block;
   padding: 6px 12px;
   color: #004833;
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
   margin-left: -1px;
   transition: background 0.2s ease;
   font-size: 14px;
@@ -1691,7 +1691,7 @@ a:hover {
 .pagination > li > a:hover,
 .pagination > li > span:hover {
   text-decoration: none;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
 }
 .pagination > li > a:focus,
 .pagination > li > span:focus {
@@ -1717,8 +1717,8 @@ a:hover {
 .pagination > li.is-disabled > a,
 .pagination > li.is-disabled > a:hover,
 .pagination > li.is-disabled > a:focus {
-  color: #858370;
-  background-color: #f9f9f8;
+  color: #757463;
+  background-color: #f8f8f7;
   cursor: not-allowed;
   opacity: 0.5;
 }

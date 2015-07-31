@@ -539,7 +539,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #004833;
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
@@ -1671,14 +1671,14 @@ a:hover {
   margin: 0;
   padding: 0;
   display: inline-block;
-  border: 1px solid #cecdc6;
+  border: 1px solid #d6d5d0;
   border-bottom: 0 none;
   border-radius: 3px;
 }
 .list-group > li {
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #cecdc6;
+  border-bottom: 1px solid #d6d5d0;
 }
 .list-group .list-group-item {
   padding: 12px;
@@ -1700,7 +1700,7 @@ a:hover {
   color: #004833;
 }
 .list-group a.list-group-item:hover {
-  background-color: #f3f3f1;
+  background-color: #f1f1ef;
   text-decoration: none;
 }
 @media print {

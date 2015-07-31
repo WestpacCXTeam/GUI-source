@@ -150,6 +150,14 @@ module.exports = function(grunt) {
 					dest: './' + version + '/tests/' + brand + '/assets/less/gui.less',
 				};
 
+				concat[ version + 'LessTest' + brand ] = { //less
+					src: [
+						'../_base/' + baseVersion + '/less/base-mixins.less',
+						'../_base/' + baseVersion + '/less/test.less',
+					],
+					dest: './' + version + '/tests/' + brand + '/assets/less/test.less',
+				};
+
 				concat[ version + 'HTML' + brand ] = { //html
 					src: [
 						'./' + version + '/html/header.html',
@@ -175,6 +183,20 @@ module.exports = function(grunt) {
 						'./' + version + '/tests/' + brand + '/assets/less/gui.less',
 					],
 					dest: './' + version + '/tests/' + brand + '/assets/css/gui.css',
+				};
+
+				less[ version + 'Less' + brand ] = {
+					options: {
+						cleancss: true,
+						compress: false,
+						ieCompat: true,
+						report: 'min',
+						plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
+					},
+					src: [
+						'./' + version + '/tests/' + brand + '/assets/less/test.less',
+					],
+					dest: './' + version + '/tests/' + brand + '/assets/css/test.css',
 				};
 			});
 
