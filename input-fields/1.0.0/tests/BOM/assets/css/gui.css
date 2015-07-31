@@ -1673,6 +1673,18 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
+::-webkit-input-placeholder {
+  font-weight: 300;
+}
+:-moz-placeholder {
+  font-weight: 300;
+}
+::-moz-placeholder {
+  font-weight: 300;
+}
+:-ms-input-placeholder {
+  font-weight: 300;
+}
 .input-field {
   display: inline-block;
   -webkit-appearance: none;
