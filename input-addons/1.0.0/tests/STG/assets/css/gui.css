@@ -1679,6 +1679,13 @@ a:hover {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
+.input-addon-flip.input-addon .input-addon-label .input-addon-input {
+  border: 1px solid #d6d5d0;
+  border-left: 0 none;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
 .input-addon .input-addon-label .input-addon-input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1717,7 +1724,7 @@ a:hover {
   -moz-appearance: none;
   appearance: none;
   border: 0 none;
-  padding: 7px 8px 8px 8px;
+  padding: 7px 12px 8px 12px;
   margin: 0;
   color: #004833;
   background-color: #78be20;
@@ -1731,7 +1738,8 @@ a:hover {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.input-addon .input-addon-btn:first-child {
+.input-addon-flip.input-addon .input-addon-btn {
+  float: left;
   border-radius: 3px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -1790,7 +1798,7 @@ a:hover {
   color: #004833;
   font-size: 16px;
   font-weight: 400;
-  padding: 6px 30px 8px 8px;
+  padding: 6px 30px 8px 12px;
 }
 .input-addon .input-addon-select-wrapper .input-addon-select:focus {
   outline: 2px dotted #000;
