@@ -2057,6 +2057,10 @@ p > .btn.btn-link {
   border-radius: 3px;
   min-width: 190px;
 }
+.btn-dropdown .dropdown-menu:focus {
+  outline: 2px dotted #000;
+  outline-offset: 0.5rem;
+}
 .btn-dropdown .dropdown-menu.dropdown-menu-sm {
   min-width: 130px;
 }
