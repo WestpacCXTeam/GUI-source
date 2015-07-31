@@ -200,6 +200,7 @@ GUI.init();
 				var $this = $(this);
 				var _isOpen = $this.hasClass('is-open');
 				var $popover = $this.find('.popover-popup');
+				var $body = $popover.find('.popover-popup-body');
 				var index = $('.js-popover').index( this );
 
 				// CLOSING POPOVER
@@ -210,6 +211,7 @@ GUI.init();
 
 					$this.removeClass('is-open');
 					$popover.attr('aria-hidden', 'true');
+					$body.attr('style', '');
 				}
 				else { // OPENING POPOVER
 					GUI.debugging( 'popovers: Opening popover', 'report' );
@@ -231,6 +233,8 @@ GUI.init();
 					var top = parseInt( $popover.offset().top - $(window).scrollTop() );
 					var left = parseInt( $popover.offset().left );
 					var right = parseInt( $(window).width() - ( $popover.offset().left + $popover.width() ) );
+					var bottom = parseInt( $popover.height() ) + parseInt( $this.position().top ) + 70;
+					var pageHeight = parseInt( $(document).height() );
 
 
 					//the popup is cut off on the top
@@ -238,6 +242,17 @@ GUI.init();
 						GUI.debugging( 'popovers: Top boundary detected', 'report' );
 
 						$this.addClass('is-bottom');
+
+						// if cut-off on the bottom
+						if( bottom > pageHeight ) {
+							var innerHeight = $body.height();
+							var dif = bottom - pageHeight;
+
+							$body.css({
+								height: ( innerHeight - dif ),
+								overflow: 'auto',
+							});
+						}
 					}
 
 
