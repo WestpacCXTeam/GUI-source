@@ -1715,6 +1715,12 @@ html {
 @media (min-width: 768px) {
   .tabcordion .tabcordion-tabs {
     display: table;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
   }
   .tabcordion .tabcordion-tabs.tabcordion-tabs-justified {
     width: 100%;
@@ -1722,9 +1728,18 @@ html {
 }
 .tabcordion-tabs.tabcordion .tabcordion-tabs {
   display: table;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 .tabcordion .tabcordion-tabs .tabcordion-tab {
   display: table-cell;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   text-align: left;
   padding-left: 2px;
   line-height: 1.2;
@@ -1734,6 +1749,12 @@ html {
 }
 .tabcordion .tabcordion-tabs .tabcordion-tab a {
   display: inline-block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 14px 18px 14px 18px;
   color: #2d373e;
   background-color: #f9f9f8;

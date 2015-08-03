@@ -1520,8 +1520,8 @@
 
 			@media (min-width: @screen-sm) {
 				display: table;
-				// display: flex;
-				// align-items: stretch;
+				display: flex;
+				align-items: stretch;
 
 				&.tabcordion-tabs-justified {
 					width: 100%;
@@ -1530,13 +1530,13 @@
 
 			.tabcordion-tabs& {
 				display: table;
-				// display: flex;
-				// align-items: stretch;
+				display: flex;
+				align-items: stretch;
 			}
 
 			.tabcordion-tab {
 				display: table-cell;
-				// display: flex;
+				display: flex;
 				text-align: left;
 				padding-left: 2px;
 				line-height: 1.2;
@@ -1547,6 +1547,8 @@
 
 				a {
 					display: inline-block;
+					display: flex;
+					align-items: flex-end;
 					padding: 14px 18px 14px 18px;
 					color: @color-Text;
 					background-color: @color-J;
