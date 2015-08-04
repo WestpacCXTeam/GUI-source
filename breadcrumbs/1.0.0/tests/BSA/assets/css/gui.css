@@ -1635,22 +1635,30 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.breadcrumb {
+.breadcrumb .breadcrumb-sronly {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.breadcrumb .breadcrumb-list {
   padding: 6px 18px;
   margin-bottom: 21px;
   list-style: none;
 }
-.breadcrumb > li {
+.breadcrumb .breadcrumb-list > li {
   display: inline-block;
 }
-.breadcrumb > li + li:before {
+.breadcrumb .breadcrumb-list > li + li:before {
   content: "/\00a0";
   padding: 0 6px;
   color: #333333;
 }
-.breadcrumb > .is-active {
+.breadcrumb .breadcrumb-list > .is-active {
   color: #333333;
 }
-.breadcrumb > .is-active a {
+.breadcrumb .breadcrumb-list > .is-active a {
   color: #333333;
 }

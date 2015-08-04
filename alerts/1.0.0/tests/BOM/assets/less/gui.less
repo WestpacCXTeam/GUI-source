@@ -151,6 +151,15 @@
 		outline-offset: 0.5rem;
 	}
 
+	.sr-only() {
+		position: absolute;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px 1px 1px 1px);
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+
 
 	//////////////////////////////////////| GRID
 	@screen-xs: 480px;
@@ -1486,6 +1495,8 @@
 			position: absolute;
 			top: 5px;
 			right: 5px;
+			width: 32px;
+			height: 32px;
 			overflow: hidden;
 			-webkit-appearance: none;
 			-moz-appearance: none;
@@ -1495,9 +1506,10 @@
 			border: 0 none;
 			background-color: transparent;
 			cursor: pointer;
-			opacity: 0.5;
+			opacity: 1;
 			transition: opacity 0.2s ease;
 			font-size: 0;
+			text-indent: -9999em;
 			z-index: 2;
 
 			.no-js & {
@@ -1515,7 +1527,7 @@
 
 			&:hover {
 				outline: none;
-				opacity: 1;
+				opacity: 0.5;
 			}
 
 		}

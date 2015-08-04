@@ -1643,13 +1643,11 @@ a:hover {
 }
 .input-group .input-group-text {
   position: absolute;
-  width: 1px;
   height: 1px;
-  margin: -1px;
-  padding: 0;
+  width: 1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0 none;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
 }
 .input-group .input-group-input,
 .input-group .input-group-addon {
