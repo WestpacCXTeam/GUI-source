@@ -9,8 +9,9 @@
 			"js": true,
 			"less": true,
 			"svg": false,
-			"font": false
+			"font": false,
+			"size": 3
 		}
 	},
-	"hash": "d69f88ed70c61459d58e2eceaf2f53cc9984213d"
+	"hash": "43d8f29e907ad4267dccfa495a5252f20a7d2d6f"
 }

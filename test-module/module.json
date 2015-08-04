@@ -9,7 +9,8 @@
 			"js": false,
 			"less": true,
 			"svg": false,
-			"font": false
+			"font": false,
+			"size": 6
 		},
 		"1.0.1": {
 			"dependencies": [
@@ -18,7 +19,8 @@
 			"js": false,
 			"less": true,
 			"svg": true,
-			"font": false
+			"font": false,
+			"size": 24
 		},
 		"1.0.2": {
 			"dependencies": [
@@ -27,15 +29,17 @@
 			"js": false,
 			"less": true,
 			"svg": true,
-			"font": true
+			"font": true,
+			"size": 250
 		},
 		"1.1.0": {
 			"dependencies": [],
 			"js": true,
 			"less": true,
 			"svg": true,
-			"font": true
+			"font": true,
+			"size": 251
 		}
 	},
-	"hash": "1016599b46ef7556759016cfc9975346081742d3"
+	"hash": "202733f989d8c400ddb0fa2233d3c1f7a9cbae1b"
 }

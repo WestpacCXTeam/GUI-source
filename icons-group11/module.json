@@ -11,8 +11,9 @@
 			"js": false,
 			"less": false,
 			"svg": true,
-			"font": false
+			"font": false,
+			"size": 19
 		}
 	},
-	"hash": "de8bc3b358552c43fdbb318b7183c73cefdf3a90"
+	"hash": "6137be6dc39f700267360fc4329731d6482673dc"
 }
