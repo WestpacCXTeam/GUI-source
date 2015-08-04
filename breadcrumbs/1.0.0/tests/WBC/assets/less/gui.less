@@ -151,6 +151,15 @@
 		outline-offset: 0.5rem;
 	}
 
+	.sr-only() {
+		position: absolute;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		clip: rect(1px 1px 1px 1px);
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+
 
 	//////////////////////////////////////| GRID
 	@screen-xs: 480px;
@@ -1444,25 +1453,31 @@
 
 
 	.breadcrumb {
-		padding: 6px 18px;
-		margin-bottom: 21px;
-		list-style: none;
-
-		> li {
-			display: inline-block;
-
-			+ li:before {
-				content: "/\00a0";
-				padding: 0 6px;
-				color: @color-Text;
-			}
+		.breadcrumb-sronly {
+			.sr-only();
 		}
 
-		> .is-active {
-			color: @color-Text;
+		.breadcrumb-list {
+			padding: 6px 18px;
+			margin-bottom: 21px;
+			list-style: none;
 
-			a {
+			> li {
+				display: inline-block;
+
+				+ li:before {
+					content: "/\00a0";
+					padding: 0 6px;
+					color: @color-Text;
+				}
+			}
+
+			> .is-active {
 				color: @color-Text;
+
+				a {
+					color: @color-Text;
+				}
 			}
 		}
 	}
