@@ -6,11 +6,11 @@
 	"versions": {
 		"1.0.0": {
 			"dependencies": [],
-			"js": false,
+			"js": true,
 			"less": true,
 			"svg": false,
 			"font": false
 		}
 	},
-	"hash": "407cb0e0172beeaba450359004967b74429bd0ef"
+	"hash": "7b5b9fa205a42a80be81b2eb12caebfbf17230fa"
 }
