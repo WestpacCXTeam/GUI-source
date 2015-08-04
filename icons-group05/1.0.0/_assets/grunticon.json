@@ -1,5 +1,4 @@
 {
-	"alarm": [".icon-alarm"],
 	"australia": [".icon-australia"],
 	"chat": [".icon-chat"],
 	"clock": [".icon-clock"],
@@ -10,5 +9,6 @@
 	"print": [".icon-print"],
 	"sms": [".icon-sms"],
 	"stopwatch": [".icon-stopwatch"],
-	"telephone": [".icon-telephone"]
+	"telephone": [".icon-telephone"],
+	"tick": [".icon-tick"]
 }
