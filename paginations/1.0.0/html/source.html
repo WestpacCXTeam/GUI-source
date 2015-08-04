@@ -1,40 +1,79 @@
 <h2>pagination finite</h2>
-<ul class="pagination">
-	<li class="is-disabled">
-		<span href="#prev">Back</span>
-	</li>
-	<li class="is-active">
-		<a href="#page-1">1</a>
-	</li>
-	<li class="is-disabled">
-		<span href="#next">Next</span>
-	</li>
-</ul>
+
+<div class="pagination">
+	<span class="pagination-sronly">Pagination:</span>
+
+	<ul class="pagination-list">
+		<li class="is-disabled">
+			<span class="pagination-sronly">Step</span>
+			<span class="pagination-page" href="#prev">Back</span>
+			<span class="pagination-sronly">one page is disabled</span>
+		</li>
+		<li class="is-active">
+			<a class="pagination-page" href="#page-1">
+				<span class="pagination-sronly">Go to page</span>
+				1
+			</a>
+		</li>
+		<li class="is-disabled">
+			<span class="pagination-sronly">Step to the</span>
+			<span class="pagination-page" href="#next">Next</span>
+			<span class="pagination-sronly">page is disabled</span>
+		</li>
+	</ul>
+</div>
 
 
 <hr>
 <h2>pagination infinite</h2>
 
-<ul class="pagination">
-	<li>
-		<a href="#prev" rel="prev">Back</a>
-	</li>
-	<li>
-		<a href="#page-1">1</a>
-	</li>
-	<li class="is-active">
-		<a href="#page-2">2</a>
-	</li>
-	<li>
-		<a href="#page-3">3</a>
-	</li>
-	<li>
-		<a href="#page-4">4</a>
-	</li>
-	<li>
-		<a href="#page-5">5</a>
-	</li>
-	<li>
-		<a href="#next" rel="next">Next</a>
-	</li>
-</ul>
+<div class="pagination">
+	<span class="pagination-sronly">Pagination:</span>
+
+	<ul class="pagination-list">
+		<li>
+			<a class="pagination-page" href="#prev" rel="prev">
+				<span class="pagination-sronly">Step</span>
+				Back
+				<span class="pagination-sronly">one page</span>
+			</a>
+		</li>
+		<li>
+			<a class="pagination-page" href="#page-1">
+				<span class="pagination-sronly">Go to page</span>
+				1
+			</a>
+		</li>
+		<li class="is-active">
+			<a class="pagination-page" href="#page-2">
+				<span class="pagination-sronly">You are currently reading page</span>
+				2
+			</a>
+		</li>
+		<li>
+			<a class="pagination-page" href="#page-3">
+				<span class="pagination-sronly">Go to page</span>
+				3
+			</a>
+		</li>
+		<li>
+			<a class="pagination-page" href="#page-4">
+				<span class="pagination-sronly">Go to page</span>
+				4
+			</a>
+		</li>
+		<li>
+			<a class="pagination-page" href="#page-5">
+				<span class="pagination-sronly">Go to page</span>
+				5
+			</a>
+		</li>
+		<li>
+			<a class="pagination-page" href="#next" rel="next">
+				<span class="pagination-sronly">Step to the</span>
+				Next
+				<span class="pagination-sronly">page</span>
+			</a>
+		</li>
+	</ul>
+</div>

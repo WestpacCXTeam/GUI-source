@@ -1635,7 +1635,15 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
-.pagination {
+.pagination .pagination-sronly {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+.pagination .pagination-list {
   display: inline-block;
   padding-left: 0;
   margin: 21px 0;
@@ -1643,11 +1651,10 @@ a:hover {
   list-style: none;
   font-size: 0;
 }
-.pagination > li {
+.pagination .pagination-list > li {
   display: inline-block;
 }
-.pagination > li > a,
-.pagination > li > span {
+.pagination .pagination-list > li > .pagination-page {
   position: relative;
   display: inline-block;
   padding: 6px 12px;
@@ -1657,48 +1664,39 @@ a:hover {
   transition: background 0.2s ease;
   font-size: 14px;
 }
-.pagination > li > a:hover,
-.pagination > li > span:hover {
+.pagination .pagination-list > li > .pagination-page:hover {
   text-decoration: none;
   background-color: #ebebeb;
 }
-.pagination > li > a:focus,
-.pagination > li > span:focus {
+.pagination .pagination-list > li > .pagination-page:focus {
   text-decoration: none;
   outline: 2px dotted #000;
   outline-offset: 0.5rem;
 }
-.pagination > li.is-active > a,
-.pagination > li.is-active > span {
+.pagination .pagination-list > li.is-active > .pagination-page {
   z-index: 2;
   color: #ffffff;
   background-color: #365fb4;
   border-color: #365fb4;
 }
-.pagination > li.is-active > a:hover,
-.pagination > li.is-active > span:hover {
+.pagination .pagination-list > li.is-active > .pagination-page:hover {
   color: #ffffff;
   background-color: #365fb4;
 }
-.pagination > li.is-disabled > span,
-.pagination > li.is-disabled > span:hover,
-.pagination > li.is-disabled > span:focus,
-.pagination > li.is-disabled > a,
-.pagination > li.is-disabled > a:hover,
-.pagination > li.is-disabled > a:focus {
+.pagination .pagination-list > li.is-disabled > .pagination-page,
+.pagination .pagination-list > li.is-disabled > .pagination-page:hover,
+.pagination .pagination-list > li.is-disabled > .pagination-page:focus {
   color: #707070;
   background-color: #f5f5f5;
   cursor: not-allowed;
   opacity: 0.5;
 }
-.pagination > li:first-child > a,
-.pagination > li:first-child > span {
+.pagination .pagination-list > li:first-child > .pagination-page {
   margin-left: 0;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-.pagination > li:last-child > a,
-.pagination > li:last-child > span {
+.pagination .pagination-list > li:last-child > .pagination-page {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
