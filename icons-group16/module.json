@@ -1,0 +1,19 @@
+{
+	"ID": "icons-group16",
+	"name": "Icons-Group 16",
+	"description": "Icons-Group 16",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 30
+		}
+	},
+	"hash": "2fde603f9ffbf693526ddf9a629d773bdab11e76"
+}

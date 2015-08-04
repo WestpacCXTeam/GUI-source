@@ -1,36 +1,18 @@
-.icon-book,
-.symbol-book { background-image: url('../img/book.png'); background-repeat: no-repeat; }
+.icon-download,
+.symbol-download { background-image: url('../img/download.png'); background-repeat: no-repeat; }
 
-.icon-compass,
-.symbol-compass { background-image: url('../img/compass.png'); background-repeat: no-repeat; }
+.icon-new-window,
+.symbol-new-window { background-image: url('../img/new-window.png'); background-repeat: no-repeat; }
 
-.icon-contacts,
-.symbol-contacts { background-image: url('../img/contacts.png'); background-repeat: no-repeat; }
+.icon-refresh,
+.symbol-refresh { background-image: url('../img/refresh.png'); background-repeat: no-repeat; }
 
-.icon-cross,
-.symbol-cross { background-image: url('../img/cross.png'); background-repeat: no-repeat; }
+.icon-search,
+.symbol-search { background-image: url('../img/search.png'); background-repeat: no-repeat; }
 
-.icon-cube,
-.symbol-cube { background-image: url('../img/cube.png'); background-repeat: no-repeat; }
+.icon-upload,
+.symbol-upload { background-image: url('../img/upload.png'); background-repeat: no-repeat; }
 
-.icon-global,
-.symbol-global { background-image: url('../img/global.png'); background-repeat: no-repeat; }
-
-.icon-idea,
-.symbol-idea { background-image: url('../img/idea.png'); background-repeat: no-repeat; }
-
-.icon-key,
-.symbol-key { background-image: url('../img/key.png'); background-repeat: no-repeat; }
-
-.icon-more,
-.symbol-more { background-image: url('../img/more.png'); background-repeat: no-repeat; }
-
-.icon-tick,
-.symbol-tick { background-image: url('../img/tick.png'); background-repeat: no-repeat; }
-
-.icon-umbrella,
-.symbol-umbrella { background-image: url('../img/umbrella.png'); background-repeat: no-repeat; }
-
-.icon-wallet,
-.symbol-wallet { background-image: url('../img/wallet.png'); background-repeat: no-repeat; }
+.icon-write,
+.symbol-write { background-image: url('../img/write.png'); background-repeat: no-repeat; }
 

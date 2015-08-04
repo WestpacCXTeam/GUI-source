@@ -10,10 +10,10 @@
 			],
 			"js": false,
 			"less": false,
-			"svg": false,
+			"svg": true,
 			"font": false,
-			"size": 11
+			"size": 34
 		}
 	},
-	"hash": "8012ee95940f95fe3c812122ab6d8fb3be23b320"
+	"hash": "ebaf66523f0aec4885c226fa13766fe98f9a817c"
 }

@@ -1,7 +1,7 @@
 {
 	"ID": "icons-group01",
 	"name": "Icons-Group 1",
-	"description": "Icons-Group 1",
+	"description": "Icons-Group 01",
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
@@ -10,10 +10,10 @@
 			],
 			"js": false,
 			"less": false,
-			"svg": true,
+			"svg": false,
 			"font": false,
-			"size": 30
+			"size": 11
 		}
 	},
-	"hash": "2fbdedeae19e2e4431187a54d782e5282ca709af"
+	"hash": "e92410b5c261192cbb8f1d7c29477222cadaf3a5"
 }
