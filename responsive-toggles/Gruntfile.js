@@ -19,6 +19,7 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // External dependencies
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
+var FsUtils = require('nodejs-fs-utils');
 var Path = require('path');
 var Fs = require('fs');
 
@@ -110,6 +111,41 @@ module.exports = function(grunt) {
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// Custom grunt task to calculate the size of each version
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	grunt.registerTask('calculateSize', 'Calculate the size of each version and add it to the module.json.', function() {
+
+		//iterate over all versions
+		grunt.file.expand({ filter: 'isDirectory' }, ['./*', '!./node_modules']).forEach(function(dir) {
+			var version = dir.substr( dir.lastIndexOf('/') + 1 );
+			var baseVersion = GetLastestBase();
+
+			var sizeTest = FsUtils.fsizeSync('./' + version + '/tests/WBC/assets/');
+			var sizeLess = FsUtils.fsizeSync('./' + version + '/tests/WBC/assets/less/');
+
+			var sizeBaseCss = FsUtils.fsizeSync('../_base/' + baseVersion + '/tests/WBC/assets/css/gui.css');
+			var sizeBaseFonts = FsUtils.fsizeSync('../_base/' + baseVersion + '/tests/WBC/assets/font/');
+			var sizeBaseJs = FsUtils.fsizeSync('../_base/' + baseVersion + '/tests/WBC/assets/js/');
+
+			var size = ( ( sizeTest - sizeLess - sizeBaseCss - sizeBaseFonts - sizeBaseJs ) / 1024 ).toFixed(2);
+
+			if( size < 1 ) {
+				size = 1;
+			}
+
+			var module = grunt.file.readJSON( 'module.json' );
+
+			module.versions[version]['size'] = parseInt( size );
+			grunt.file.write( 'module.json', JSON.stringify( module, null, "\t" ) );
+
+			grunt.log.ok('Size successfully calculated');
+
+		});
+
+	});
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Custom grunt task to build all files for each version
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('buildVersions', 'Build all versions in this module.', function() {
@@ -124,7 +160,7 @@ module.exports = function(grunt) {
 		var clean = {};
 		var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
-		//iterate over all modules
+		//iterate over all versions
 		grunt.file.expand({ filter: 'isDirectory' }, ['./*', '!./node_modules']).forEach(function(dir) {
 
 			var moduleName = process.cwd().split('/')[( process.cwd().split('/').length - 1 )];
@@ -289,6 +325,7 @@ module.exports = function(grunt) {
 
 		});
 
+
 		//running tasks
 		grunt.config.set('concat', concat);
 		grunt.task.run('concat');
@@ -310,6 +347,8 @@ module.exports = function(grunt) {
 
 		grunt.config.set('clean', clean);
 		grunt.task.run('clean');
+
+		grunt.task.run('calculateSize');
 
 		grunt.config.set('font', font);
 		grunt.task.run('font');
