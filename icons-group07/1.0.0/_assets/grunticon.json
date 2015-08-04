@@ -3,16 +3,13 @@
 	"calculator": [".icon-calculator"],
 	"calendar": [".icon-calendar"],
 	"camera": [".icon-camera"],
-	"filter": [".icon-filter"],
 	"message": [".icon-message"],
 	"mobile-pay": [".icon-mobile-pay"],
 	"notification": [".icon-notification"],
 	"paypass": [".icon-paypass"],
 	"quick-balance": [".icon-quick-balance"],
-	"search": [".icon-search"],
 	"service-bell": [".icon-service-bell"],
 	"settings": [".icon-settings"],
 	"shelf-menu": [".icon-shelf-menu"],
-	"to-mobile": [".icon-to-mobile"],
-	"trash": [".icon-trash"]
+	"to-mobile": [".icon-to-mobile"]
 }

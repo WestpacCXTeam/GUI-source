@@ -1,6 +1,3 @@
-.icon-alarm,
-.symbol-alarm { background-image: url('../img/alarm.png'); background-repeat: no-repeat; }
-
 .icon-australia,
 .symbol-australia { background-image: url('../img/australia.png'); background-repeat: no-repeat; }
 
@@ -33,4 +30,7 @@
 
 .icon-telephone,
 .symbol-telephone { background-image: url('../img/telephone.png'); background-repeat: no-repeat; }
+
+.icon-tick,
+.symbol-tick { background-image: url('../img/tick.png'); background-repeat: no-repeat; }
 

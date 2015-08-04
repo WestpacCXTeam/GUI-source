@@ -10,9 +10,6 @@
 .icon-camera,
 .symbol-camera { background-image: url('../img/camera.png'); background-repeat: no-repeat; }
 
-.icon-filter,
-.symbol-filter { background-image: url('../img/filter.png'); background-repeat: no-repeat; }
-
 .icon-message,
 .symbol-message { background-image: url('../img/message.png'); background-repeat: no-repeat; }
 
@@ -28,9 +25,6 @@
 .icon-quick-balance,
 .symbol-quick-balance { background-image: url('../img/quick-balance.png'); background-repeat: no-repeat; }
 
-.icon-search,
-.symbol-search { background-image: url('../img/search.png'); background-repeat: no-repeat; }
-
 .icon-service-bell,
 .symbol-service-bell { background-image: url('../img/service-bell.png'); background-repeat: no-repeat; }
 
@@ -42,7 +36,4 @@
 
 .icon-to-mobile,
 .symbol-to-mobile { background-image: url('../img/to-mobile.png'); background-repeat: no-repeat; }
-
-.icon-trash,
-.symbol-trash { background-image: url('../img/trash.png'); background-repeat: no-repeat; }
 
