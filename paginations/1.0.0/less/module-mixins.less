@@ -30,83 +30,82 @@
 
 
 	.pagination {
-		display: inline-block;
-		padding-left: 0;
-		margin: 21px 0;
-		border-radius: 3px;
-		list-style: none;
-		font-size: 0;
+		.pagination-sronly {
+			.sr-only();
+		}
 
-		> li {
+		.pagination-list {
 			display: inline-block;
+			padding-left: 0;
+			margin: 21px 0;
+			border-radius: 3px;
+			list-style: none;
+			font-size: 0;
 
-			> a,
-			> span {
-				position: relative;
+			> li {
 				display: inline-block;
-				padding: 6px 12px;
-				color: @color-Text;
-				border: 1px solid @color-Border;
-				margin-left: -1px;
-				transition: background 0.2s ease;
-				font-size: 14px;
 
-				&:hover {
-					text-decoration: none;
-					background-color: @color-Background;
-				}
-
-				&:focus {
-					text-decoration: none;
-					.outline();
-				}
-			}
-
-			&.is-active {
-				> a,
-				> span {
-					z-index: 2;
-					color: @pagination-color;
-					background-color: @color-B;
-					border-color: @color-B;
+				> .pagination-page {
+					position: relative;
+					display: inline-block;
+					padding: 6px 12px;
+					color: @color-Text;
+					border: 1px solid @color-Border;
+					margin-left: -1px;
+					transition: background 0.2s ease;
+					font-size: 14px;
 
 					&:hover {
+						text-decoration: none;
+						background-color: @color-Background;
+					}
+
+					&:focus {
+						text-decoration: none;
+						.outline();
+					}
+				}
+
+				&.is-active {
+					> .pagination-page {
+						z-index: 2;
 						color: @pagination-color;
 						background-color: @color-B;
+						border-color: @color-B;
+
+						&:hover {
+							color: @pagination-color;
+							background-color: @color-B;
+						}
+					}
+				}
+
+				&.is-disabled {
+					> .pagination-page,
+					> .pagination-page:hover,
+					> .pagination-page:focus {
+						color: @color-Muted;
+						background-color: @color-J;
+						cursor: not-allowed;
+						opacity: 0.5;
+					}
+				}
+
+				&:first-child {
+					> .pagination-page {
+						margin-left: 0;
+						border-top-left-radius: 3px;
+						border-bottom-left-radius: 3px;
+					}
+				}
+				&:last-child {
+					> .pagination-page {
+						border-top-right-radius: 3px;
+						border-bottom-right-radius: 3px;
 					}
 				}
 			}
 
-			&.is-disabled {
-				> span,
-				> span:hover,
-				> span:focus,
-				> a,
-				> a:hover,
-				> a:focus {
-					color: @color-Muted;
-					background-color: @color-J;
-					cursor: not-allowed;
-					opacity: 0.5;
-				}
-			}
-
-			&:first-child {
-				> a,
-				> span {
-					margin-left: 0;
-					border-top-left-radius: 3px;
-					border-bottom-left-radius: 3px;
-				}
-			}
-			&:last-child {
-				> a,
-				> span {
-					border-top-right-radius: 3px;
-					border-bottom-right-radius: 3px;
-				}
-			}
 		}
-
 	}
 }
