@@ -1653,6 +1653,7 @@ a:hover {
 .radio {
   display: inline-table;
   min-height: 32px;
+  vertical-align: middle;
 }
 .radio .radio-input {
   opacity: 0;
