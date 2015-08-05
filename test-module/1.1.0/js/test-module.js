@@ -23,10 +23,10 @@
 	};
 
 
-	GUI.test-module = module;
+	GUI.testModule = module;
 
 
 	// run module
-	GUI.test-module.init();
+	GUI.testModule.init();
 
 }(GUI));
