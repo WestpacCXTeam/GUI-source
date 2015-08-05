@@ -1679,6 +1679,7 @@ a:hover {
 .checkbox {
   display: inline-table;
   min-height: 32px;
+  vertical-align: middle;
 }
 .checkbox .checkbox-input {
   opacity: 0;
