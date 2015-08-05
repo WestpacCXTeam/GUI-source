@@ -41,7 +41,10 @@
 			"size": 1
 		},
 		"10.15.56": {
-			"dependencies": [],
+			"dependencies": [
+				"test-module",
+				"tables:1.0.0"
+			],
 			"js": false,
 			"less": true,
 			"svg": false,
