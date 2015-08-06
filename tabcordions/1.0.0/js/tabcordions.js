@@ -166,10 +166,10 @@
 	// module init method
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	tabcordion.init = function initTabcodions() {
-		GUI.debugging( 'tabcordion-soft: Initiating', 'report' );
+		GUI.debugging( 'tabcordion: Initiating', 'report' );
 
 		if( $('.js-collapsible').length ) {
-			GUI.debugging( 'tabcordion-soft: Found instance', 'report' );
+			GUI.debugging( 'tabcordion: Found instance', 'report' );
 
 			$('.js-collapsible').on('click', function clickCollapsible(e) {
 				GUI.debugging( 'collapsible: Collapsible clicked', 'interaction' );

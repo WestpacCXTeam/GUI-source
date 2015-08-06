@@ -1999,6 +1999,7 @@ p > .btn.btn-link {
 .btn-group {
   display: inline-block;
   font-size: 0;
+  vertical-align: middle;
 }
 .btn-group .btn-group-input {
   opacity: 0;
@@ -2044,6 +2045,7 @@ p > .btn.btn-link {
 .btn-dropdown {
   position: relative;
   display: inline-block;
+  vertical-align: middle;
 }
 .btn-dropdown > .btn > .btn-dropdown-caret:after {
   content: " ";
