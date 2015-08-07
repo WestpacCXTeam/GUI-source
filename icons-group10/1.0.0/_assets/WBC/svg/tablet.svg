@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Tablet</title>
+
 <path fill="#2d373e" class="icons-background" d="M26 0h-20c-1 0-2 1-2 2v27c0 1.7 1.3 3 3 3h18c1.7 0 3-1.3 3-3v-27c0-1-1-2-2-2zM16 30c-0.6 0-1-0.4-1-1s0.4-1 1-1c0.6 0 1 0.4 1 1s-0.4 1-1 1zM26 26h-20v-22h20v22z"></path>
 </svg>
