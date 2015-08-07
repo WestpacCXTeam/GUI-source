@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Save</title>
+
 <path fill="#0d0d0d" class="icons-background" d="M26 0h-26v32h32v-26l-6-6zM14 4h4v8h-4v-8zM30 30h-28v-28h4v12h18v-12l6 6v22z"></path>
 </svg>
