@@ -1,7 +1,7 @@
 {
 	"ID": "icons-group09",
 	"name": "Icons-Group 9",
-	"description": "Icons-Group 9",
+	"description": "<span class='icon icon-size-sm icon-accessibility'></span> <span class='icon icon-size-sm icon-car'></span> <span class='icon icon-size-sm icon-geolocation'></span> <span class='icon icon-size-sm icon-map-pin'></span> <span class='icon icon-size-sm icon-map'></span> <span class='icon icon-size-sm icon-transport'></span> <span class='icon icon-size-sm icon-walk'></span>",
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
