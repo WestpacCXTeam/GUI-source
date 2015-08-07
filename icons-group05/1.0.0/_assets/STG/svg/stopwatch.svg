@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Stopwatch</title>
+
 <path fill="#004833" class="icons-background" d="M16 6v-2h4v-2c0-1.1-0.9-2-2-2h-6c-1.1 0-2 0.9-2 2v2h4v2c-6.7 0.5-12 6.2-12 13 0 7.2 5.8 13 13 13s13-5.8 13-13c0-6.8-5.3-12.5-12-13zM15 30c-6.1 0-11-4.9-11-11 0-6 4.9-10.9 10.9-11l-0.9 11.6c-0.1 1 0.4 1.4 1 1.4s1.1-0.4 1-1.4l-0.9-11.6c6 0.1 10.9 5 10.9 11 0 6.1-4.9 11-11 11z"></path>
 </svg>

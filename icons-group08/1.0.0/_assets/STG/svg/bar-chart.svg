@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Bar-chart</title>
+
 <path fill="#004833" class="icons-background" d="M0 26h32v4h-32v-4zM4 18h4v6h-4v-6zM10 10h4v14h-4v-14zM16 16h4v8h-4v-8zM22 2h4v22h-4v-22z"></path>
 </svg>

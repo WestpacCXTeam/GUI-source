@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Service-bell</title>
+
 <path fill="#333" class="icons-background" d="M19 9v1h-8v-1c1.6 0 3-1.2 3-2s-1-2-1-2v-1h-2c0 0 1.1-2 4-2s4 2 4 2h-2v1c0 0-1 1.2-1 2s1.4 2 3 2zM28 24c0 0-1-12-13-12s-13 12-13 12h26zM30 30c0-1-2-4-2-4h-26c0 0-2 3-2 4s1 2 2 2h26c1 0 2-1 2-2z"></path>
 </svg>
