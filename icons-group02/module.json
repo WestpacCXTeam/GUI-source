@@ -1,7 +1,7 @@
 {
 	"ID": "icons-group02",
 	"name": "Icons-Group 2",
-	"description": "Icons-Group 2",
+	"description": "<span class='icon icon-size-sm icon-credit-card'></span> <span class='icon icon-size-sm icon-dollar'></span> <span class='icon icon-size-sm icon-growth'></span> <span class='icon icon-size-sm icon-limit'></span> <span class='icon icon-size-sm icon-money-in'></span> <span class='icon icon-size-sm icon-money-out'></span> <span class='icon icon-size-sm icon-percent'></span> <span class='icon icon-size-sm icon-save'></span> <span class='icon icon-size-sm icon-super'></span> <span class='icon icon-size-sm icon-switch'></span>",
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
