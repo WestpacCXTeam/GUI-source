@@ -1,7 +1,7 @@
 {
 	"ID": "icons-group04",
 	"name": "Icons-Group 4",
-	"description": "<span class='icon icon-size-sm icon-house-b'></span> <span class='icon icon-size-sm icon-people'></span> <span class='icon icon-size-sm icon-person'></span>",
+	"description": "<span class='icon icon-size-sm icon-house'></span> <span class='icon icon-size-sm icon-people'></span> <span class='icon icon-size-sm icon-person'></span>",
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
