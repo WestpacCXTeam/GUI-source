@@ -209,8 +209,9 @@ GUI.init();
 				GUI.debugging( 'popovers: Popover button clicked', 'interaction' );
 
 				var $this = $(this);
-				var _isOpen = $this.hasClass('is-open');
-				var $popover = $this.find('.popover-popup');
+				var $parent = $this.parent();
+				var _isOpen = $parent.hasClass('is-open');
+				var $popover = $parent.find('.popover-popup');
 				var $body = $popover.find('.popover-popup-body');
 				var index = $('.js-popover').index( this );
 
@@ -220,19 +221,19 @@ GUI.init();
 
 					GUI.popovers.lastFocus.focus();
 
-					$this.removeClass('is-open');
+					$parent.removeClass('is-open');
 					$popover.attr('aria-hidden', 'true');
 					$body.attr('style', '');
 				}
 				else { // OPENING POPOVER
 					GUI.debugging( 'popovers: Opening popover', 'report' );
 
-					GUI.popovers.lastFocus = $(':focus');
+					GUI.popovers.lastFocus = $(':focus'); //save focus for when we close this thing
 
 					$('.js-popover-styles-' + index).remove(); //remove all previous styles
 					$popover.attr('style', '');
 
-					$this
+					$parent
 						.removeClass('is-bottom')
 						.addClass('is-open');
 
@@ -252,7 +253,7 @@ GUI.init();
 					if( top < 0 ) {
 						GUI.debugging( 'popovers: Top boundary detected', 'report' );
 
-						$this.addClass('is-bottom');
+						$parent.addClass('is-bottom');
 
 						// if cut-off on the bottom
 						if( bottom > pageHeight ) {
@@ -278,11 +279,11 @@ GUI.init();
 						$popover.css('marginLeft', ( marginLeft - shift ));
 
 
-						$this.addClass( className ).before( // STYLE INJECTION
+						$parent.addClass( className ).before( // STYLE INJECTION
 							'<span class="js-popover-styles-' + index + '" style="position:absolute;">' +
 							'	<style>' +
-							'		.popover.' + className + ' .popover-popup:before,' +
-							'		.popover.' + className + ' .popover-popup:after { margin-left: ' + ( shift - 21 ) + 'px; }' +
+							'		.popover-wrapper.' + className + ' .popover-popup:before,' +
+							'		.popover-wrapper.' + className + ' .popover-popup:after { margin-left: ' + ( shift - 21 ) + 'px; }' +
 							'	</style>' +
 							'</span>'
 						);
@@ -300,11 +301,11 @@ GUI.init();
 						$popover.css('marginLeft', ( marginLeft + shift ));
 
 
-						$this.addClass( className ).before( // STYLE INJECTION
+						$parent.addClass( className ).before( // STYLE INJECTION
 							'<span class="js-popover-styles-' + index + '" style="position:absolute;">' +
 							'	<style>' +
-							'		.popover.' + className + ' .popover-popup:before,' +
-							'		.popover.' + className + ' .popover-popup:after { margin-left: ' + ( (shift * -1) - 21 ) + 'px; }' +
+							'		.popover-wrapper.' + className + ' .popover-popup:before,' +
+							'		.popover-wrapper.' + className + ' .popover-popup:after { margin-left: ' + ( (shift * -1) - 21 ) + 'px; }' +
 							'	</style>' +
 							'</span>'
 						);
@@ -322,7 +323,7 @@ GUI.init();
 						GUI.popovers.lastFocus.focus();
 					}
 
-					$('.js-popover').removeClass('is-open');
+					$('.js-popover').parent().removeClass('is-open');
 					$('.popover-popup').attr('aria-hidden', 'true');
 				}
 			});
