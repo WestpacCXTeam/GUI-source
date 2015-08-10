@@ -1747,6 +1747,7 @@ a:hover {
   display: block;
   white-space: normal;
   padding: 10px 12px;
+  margin: 0;
   text-align: left;
   color: #0d0d0d;
   font-weight: 400;
