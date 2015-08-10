@@ -1740,6 +1740,7 @@ a:hover {
   display: block;
   white-space: normal;
   padding: 10px 12px;
+  margin: 0;
   text-align: left;
   color: #004833;
   font-weight: 400;
