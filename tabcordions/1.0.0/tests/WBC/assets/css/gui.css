@@ -1724,6 +1724,7 @@ html {
   }
   .tabcordion .tabcordion-tabs.tabcordion-tabs-justified {
     width: 100%;
+    display: table;
   }
 }
 .tabcordion-tabs.tabcordion .tabcordion-tabs {
@@ -1779,6 +1780,15 @@ html {
   background-color: #fff;
   margin-bottom: -1px;
   padding-bottom: 15px;
+}
+.tabcordion-tabs.tabcordion .tabcordion-tabs.tabcordion-tabs-justified {
+  display: table;
+}
+.tabcordion .tabcordion-tabs.tabcordion-tabs-justified .tabcordion-tab {
+  display: table-cell;
+}
+.tabcordion .tabcordion-tabs.tabcordion-tabs-justified .tabcordion-tab a {
+  display: inline-block;
 }
 .tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab a {
   background-color: #621a4b;

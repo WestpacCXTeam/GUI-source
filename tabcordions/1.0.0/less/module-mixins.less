@@ -111,6 +111,7 @@
 
 				&.tabcordion-tabs-justified {
 					width: 100%;
+					display: table;
 				}
 			}
 
@@ -161,6 +162,20 @@
 					background-color: #fff;
 					margin-bottom: -1px;
 					padding-bottom: 15px;
+				}
+			}
+
+			&.tabcordion-tabs-justified {
+				.tabcordion-tabs& {
+					display: table;
+				}
+
+				.tabcordion-tab {
+					display: table-cell;
+
+					a {
+						display: inline-block;
+					}
 				}
 			}
 
