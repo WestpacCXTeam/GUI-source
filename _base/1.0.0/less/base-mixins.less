@@ -12,8 +12,8 @@
 	._base-colors( @brand );
 	._base-normalizer();
 	._base-fonts( @brand );
-	._grid();
-	._headings( @brand );
+	._base-breakpoints();
+	._base-headings( @brand );
 
 
 	//////////////////////////////////////| BASE HTML STYLES
@@ -78,17 +78,17 @@
 
 	//////////////////////////////////////| CLEARFIX
 	.clearfix {
-		._clearfix();
+		._base-clearfix();
 	}
 
 
 	//////////////////////////////////////| ACCESSIBILITY
 	.outline() {
-		._outline();
+		._base-outline();
 	}
 
 	.sr-only() {
-		._sr-only();
+		._base-sr-only();
 	}
 
 
@@ -177,7 +177,7 @@
 
 
 //////////////////////////////////////| GRID
-._grid() {
+._base-breakpoints() {
 	@screen-xs: 480px;
 	@screen-sm: 768px;
 	@screen-md: 992px;
@@ -186,12 +186,12 @@
 
 
 //////////////////////////////////////| ACCESSIBILITY
-._outline() {
+._base-outline() {
 	outline: 2px dotted #000;
 	outline-offset: 0.5rem;
 }
 
-._sr-only() {
+._base-sr-only() {
 	position: absolute;
 	height: 1px;
 	width: 1px;
@@ -202,7 +202,7 @@
 
 
 //////////////////////////////////////| CLEARFIX
-._clearfix() {
+._base-clearfix() {
 	&:before,
 	&:after {
 		content: " ";
@@ -342,7 +342,7 @@
 
 
 //////////////////////////////////////| HEADINGS
-._headings( @brand ) {
+._base-headings( @brand ) {
 
 	.getBrand() when (@brand = BOM) { /////////////////////////////////////////////////////// BOM
 		.h1,
