@@ -9,74 +9,11 @@
 //////////////////////////////////////| BASE STYLES
 ._base( @brand ) {
 
-	//////////////////////////////////////| SETTINGS
-	.getBrand() when (@brand = BOM) {
-		@color-A: #d60c8c;
-		@color-B: #685ac0;
-		@color-C: #716f7d;
-		@color-D: #403489;
-		@color-E: #11b6af;
-		@color-F: #0d0d0d;
-		@color-G: #716f7d;
-		@color-H: #c6c5cb;
-		@color-I: #f1f1f2;
-		@color-J: #f8f8f8;
-
-		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-		@brand-fontfamily: "stag", "Roboto", Arial, sans-serif;
-	}
-	.getBrand() when (@brand = BSA) {
-		@color-A: #c0142e;
-		@color-B: #365fb4;
-		@color-C: #333;
-		@color-D: #36528a;
-		@color-E: #178bc4;
-		@color-F: #333;
-		@color-G: #707070;
-		@color-H: #c2c2c2;
-		@color-I: #ebebeb;
-		@color-J: #f5f5f5;
-
-		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-		@brand-fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-	}
-	.getBrand() when (@brand = STG) {
-		@color-A: #e30000;
-		@color-B: #78be20;
-		@color-C: #757463;
-		@color-D: #008739;
-		@color-E: #ffcd00;
-		@color-F: #004833;
-		@color-G: #757463;
-		@color-H: #d6d5d0;
-		@color-I: #f1f1ef;
-		@color-J: #f8f8f7;
-
-		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-		@brand-fontfamily: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
-	}
-	.getBrand() when (@brand = WBC) {
-		@color-A: #d5002b;
-		@color-B: #621a4b;
-		@color-C: #2d373e;
-		@color-D: #9f0029;
-		@color-E: #680000;
-		@color-F: #2d373e;
-		@color-G: #575f65;
-		@color-H: #d7d2cb;
-		@color-I: #f4f3f0;
-		@color-J: #f9f9f8;
-
-		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-		@brand-fontfamily: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
-	}
-	.getBrand();
-
-
-	._base-colors();
+	._base-colors( @brand );
 	._base-normalizer();
-	._base-fonts(@brand);
-	._headings(@brand);
+	._base-fonts( @brand );
+	._grid();
+	._headings( @brand );
 
 
 	//////////////////////////////////////| BASE HTML STYLES
@@ -147,25 +84,12 @@
 
 	//////////////////////////////////////| ACCESSIBILITY
 	.outline() {
-		outline: 2px dotted #000;
-		outline-offset: 0.5rem;
+		._outline();
 	}
 
 	.sr-only() {
-		position: absolute;
-		height: 1px;
-		width: 1px;
-		overflow: hidden;
-		clip: rect(1px 1px 1px 1px);
-		clip: rect(1px, 1px, 1px, 1px);
+		._sr-only();
 	}
-
-
-	//////////////////////////////////////| GRID
-	@screen-xs: 480px;
-	@screen-sm: 768px;
-	@screen-md: 992px;
-	@screen-lg: 1200px;
 
 
 	//////////////////////////////////////| FONTS
@@ -252,20 +176,52 @@
 }
 
 
+//////////////////////////////////////| GRID
+._grid() {
+	@screen-xs: 480px;
+	@screen-sm: 768px;
+	@screen-md: 992px;
+	@screen-lg: 1200px;
+}
 
 
+//////////////////////////////////////| ACCESSIBILITY
+._outline() {
+	outline: 2px dotted #000;
+	outline-offset: 0.5rem;
+}
+
+._sr-only() {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
 
 
-
-
-
-
+//////////////////////////////////////| CLEARFIX
+._clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
 
 
 //////////////////////////////////////| FONTS
-._base-fonts(@brand) {
+._base-fonts( @brand ) {
 
+	//////////////////////////////////////| SETTINGS
 	.getBrand() when (@brand = BOM) {
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "stag", "Roboto", Arial, sans-serif;
+
 		@font-face {
 			font-family: 'stag';
 			src: url('../font/Stag-Light.eot');
@@ -289,7 +245,15 @@
 		}
 	}
 
+	.getBrand() when (@brand = BSA) {
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+	}
+
 	.getBrand() when (@brand = STG) {
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
+
 		@font-face {
 			font-family: 'dragonbold';
 			src: url('../font/dragonbold-bold-webfont.eot');
@@ -301,6 +265,11 @@
 			font-weight: normal;
 			font-style: normal;
 		}
+	}
+
+	.getBrand() when (@brand = WBC) {
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
 	}
 	.getBrand();
 
@@ -785,7 +754,70 @@
 
 
 //////////////////////////////////////| COLORS
-._base-colors() {
+._base-colors( @brand ) {
+
+	//////////////////////////////////////| SETTINGS
+	.getBrand() when (@brand = BOM) {
+		@color-A: #d60c8c;
+		@color-B: #685ac0;
+		@color-C: #716f7d;
+		@color-D: #403489;
+		@color-E: #11b6af;
+		@color-F: #0d0d0d;
+		@color-G: #716f7d;
+		@color-H: #c6c5cb;
+		@color-I: #f1f1f2;
+		@color-J: #f8f8f8;
+
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "stag", "Roboto", Arial, sans-serif;
+	}
+	.getBrand() when (@brand = BSA) {
+		@color-A: #c0142e;
+		@color-B: #365fb4;
+		@color-C: #333;
+		@color-D: #36528a;
+		@color-E: #178bc4;
+		@color-F: #333;
+		@color-G: #707070;
+		@color-H: #c2c2c2;
+		@color-I: #ebebeb;
+		@color-J: #f5f5f5;
+
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+	}
+	.getBrand() when (@brand = STG) {
+		@color-A: #e30000;
+		@color-B: #78be20;
+		@color-C: #757463;
+		@color-D: #008739;
+		@color-E: #ffcd00;
+		@color-F: #004833;
+		@color-G: #757463;
+		@color-H: #d6d5d0;
+		@color-I: #f1f1ef;
+		@color-J: #f8f8f7;
+
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
+	}
+	.getBrand() when (@brand = WBC) {
+		@color-A: #d5002b;
+		@color-B: #621a4b;
+		@color-C: #2d373e;
+		@color-D: #9f0029;
+		@color-E: #680000;
+		@color-F: #2d373e;
+		@color-G: #575f65;
+		@color-H: #d7d2cb;
+		@color-I: #f4f3f0;
+		@color-J: #f9f9f8;
+
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
+	}
+	.getBrand();
 
 	//alert colors
 	@color-Success: #008000;
@@ -964,19 +996,6 @@
 	.written-by { //the proud parents
 		content: 'Dominik Wilkowski, Justin Spencer, Kate T MacDonald';
 		color: #BADA55;
-	}
-}
-
-
-//////////////////////////////////////| CLEARFIX
-._clearfix() {
-	&:before,
-	&:after {
-		content: " ";
-		display: table;
-	}
-	&:after {
-		clear: both;
 	}
 }
 
