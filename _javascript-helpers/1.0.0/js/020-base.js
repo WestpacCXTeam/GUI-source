@@ -3,7 +3,7 @@
  *
  * Westpac GUI framework
  *
- * This base includes a debugging console and debounce and throttle functions.
+ * This core library includes a debugging console, debounce and throttle functions.
  *
  **************************************************************************************************************************************************************/
 
