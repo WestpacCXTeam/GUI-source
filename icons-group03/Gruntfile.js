@@ -19,8 +19,8 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // External dependencies
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
-var FsUtils = require('nodejs-fs-utils');
 var Path = require('path');
+var Du = require('du');
 var Fs = require('fs');
 
 
@@ -28,12 +28,14 @@ var Fs = require('fs');
 // Custom functions
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 /*
- * Get latest base version
+ * Get latest version of a module
+ *
+ * @param   module  [string]  Module name
  *
  * @return  [string]  Version string for latest base version
  */
-function GetLastestBase() {
-	var dir = '../_base';
+function GetLastest( module ) {
+	var dir = '../' + module;
 	var result = '';
 
 	Fs.readdirSync( dir ).some(function(name) {
@@ -48,6 +50,55 @@ function GetLastestBase() {
 
 	return result;
 }
+
+
+/*
+ * Get all core modules
+ *
+ * @param   grunt    [object]  Grunt object
+ * @param   exclude  [string]  ID of module to be excluded
+ *
+ * @return  [array]  All files needed
+ */
+function GetCore( grunt, exclude ) {
+	var GUI = grunt.file.readJSON( '../GUI.json' );
+	var core = {
+		js: [],
+		less: [],
+		BOMfont: [],
+		BSAfont: [],
+		STGfont: [],
+		WBCfont: [],
+		size: 0,
+	};
+
+	Object.keys( GUI.modules._core ).forEach(function iterateCore( module ) {
+
+		if( module !== exclude ) {
+			var version = GetLastest(module);
+
+			if( GUI.modules._core[module].versions[version].js ) {
+				core.js.push('../' + module + '/' + version + '/js/*.js');
+			}
+
+			if( GUI.modules._core[module].versions[version].less ) {
+				core.less.push('../' + module + '/' + version + '/less/module-mixins.less');
+			}
+
+			if( GUI.modules._core[module].versions[version].font ) {
+				core.BOMfont.push('../' + module + '/' + version + '/_assets/BOM/font');
+				core.BSAfont.push('../' + module + '/' + version + '/_assets/BSA/font');
+				core.STGfont.push('../' + module + '/' + version + '/_assets/STG/font');
+				core.WBCfont.push('../' + module + '/' + version + '/_assets/WBC/font');
+			}
+
+			core.size = parseInt( GUI.modules._core[module].versions[version].size );
+		}
+	});
+
+	return core;
+}
+
 
 /*
  * Copyright 2011 Mark Cavage <mcavage@gmail.com> All rights reserved. https://github.com/mcavage/node-dirsum
@@ -92,19 +143,25 @@ module.exports = function(grunt) {
 	// Custom grunt task to build all files for each version
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('createChecksum', 'Add a checksum of all folders to the module.json.', function() {
-		var done = this.async();
+		var sumDone = this.async();
+		var exclusion = ['module.json', 'Gruntfile.js', 'package.json']; //these are not relevant for the modules
+		var module = grunt.file.readJSON( 'module.json' );
 
-		Dirsum.digest( './', 'sha1', ['module.json'], function(err, hashes) {
+		//iterate over all versions
+		Object.keys( module.versions ).forEach(function iterateCore( version ) {
+			exclusion.push(version + '/tests/'); //exclude test folder as the core modules are compiled into them
+		});
+
+		//get checksum
+		Dirsum.digest( '.', 'sha1', exclusion, function(err, hashes) {
 
 			var module = grunt.file.readJSON( 'module.json' );
-
 			module['hash'] = hashes.hash;
 
 			grunt.file.write( 'module.json', JSON.stringify( module, null, "\t" ) );
+			grunt.log.ok( hashes.hash + ' hash successfully generated' );
 
-			grunt.log.ok('Hash successfully generated');
-
-			done(true);
+			sumDone(true);
 		});
 
 	});
@@ -114,31 +171,41 @@ module.exports = function(grunt) {
 	// Custom grunt task to calculate the size of each version
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('calculateSize', 'Calculate the size of each version and add it to the module.json.', function() {
+		var calDone = this.async();
+
+		var module = grunt.file.readJSON( 'module.json' );
+		var core = GetCore( grunt, module.ID );
+		var counter = Object.keys(module.versions).length;
 
 		//iterate over all versions
-		grunt.file.expand({ filter: 'isDirectory' }, ['./*', '!./node_modules']).forEach(function(dir) {
-			var version = dir.substr( dir.lastIndexOf('/') + 1 );
-			var baseVersion = GetLastestBase();
+		Object.keys( module.versions ).forEach(function iterateCore( version ) {
 
-			var sizeTest = FsUtils.fsizeSync('./' + version + '/tests/WBC/assets/');
-			var sizeLess = FsUtils.fsizeSync('./' + version + '/tests/WBC/assets/less/');
+			Du(version + '/tests/WBC/assets/', function(err, sizeAssets) {
 
-			var sizeBaseCss = FsUtils.fsizeSync('../_base/' + baseVersion + '/tests/WBC/assets/css/gui.css');
-			var sizeBaseFonts = FsUtils.fsizeSync('../_base/' + baseVersion + '/tests/WBC/assets/font/');
-			var sizeBaseJs = FsUtils.fsizeSync('../_base/' + baseVersion + '/tests/WBC/assets/js/');
+				Du(version + '/tests/WBC/assets/font/', function(err, sizeFont) {
 
-			var size = ( ( sizeTest - sizeLess - sizeBaseCss - sizeBaseFonts - sizeBaseJs ) / 1024 ).toFixed(2);
+					Du(version + '/tests/WBC/assets/less/', function(err, sizeLess) {
+						var size = Math.ceil( ( (sizeAssets - sizeLess - sizeFont - 96000) / 1000 ) - core.size ); //size of test/WBC folder minus core size
 
-			if( size < 1 ) {
-				size = 1;
-			}
+						if( size <= 0 ) {
+							size = 1;
+						}
 
-			var module = grunt.file.readJSON( 'module.json' );
+						var module = grunt.file.readJSON( 'module.json' );
 
-			module.versions[version]['size'] = parseInt( size );
-			grunt.file.write( 'module.json', JSON.stringify( module, null, "\t" ) );
+						module.versions[version]['size'] = parseInt( size );
+						grunt.file.write( 'module.json', JSON.stringify( module, null, "\t" ) );
 
-			grunt.log.ok('Size successfully calculated');
+						grunt.log.ok( size + 'kb size successfully calculated' );
+
+						counter--;
+
+						if( counter === 0 ) {
+							calDone(true);
+						}
+					});
+				});
+			});
 
 		});
 
@@ -150,6 +217,7 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('buildVersions', 'Build all versions in this module.', function() {
 
+		var srcFiles = {};
 		var concat = {};
 		var less = {};
 		var copy = {};
@@ -160,70 +228,50 @@ module.exports = function(grunt) {
 		var clean = {};
 		var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
+		var module = grunt.file.readJSON( 'module.json' );
+		var core = GetCore( grunt, module.ID );
+
 		//iterate over all versions
-		grunt.file.expand({ filter: 'isDirectory' }, ['./*', '!./node_modules']).forEach(function(dir) {
+		Object.keys( module.versions ).forEach(function iterateCore( version ) {
+			var moduleName = module.ID;
+			var svgselectors = grunt.file.readJSON(version + '/_assets/grunticon.json');
 
-			var moduleName = process.cwd().split('/')[( process.cwd().split('/').length - 1 )];
-			var baseVersion = GetLastestBase();
-			var version = dir.substr( dir.lastIndexOf('/') + 1 );
+			//create tasks for each brand
+			brands.forEach(function( brand ) {
 
+				//////////////////////////////////////| CONCAT FILES
+				srcFiles = core.js; //js
+				srcFiles.push(version + '/js/*.js');
 
-			//concat files
-			brands.forEach(function(brand) {
-				concat[ version + 'JS' + brand ] = { //js
-					src: [
-						'../_base/' + baseVersion + '/js/*.js',
-						'./' + version + '/js/*.js',
-					],
-					dest: './' + version + '/tests/' + brand + '/assets/js/gui.js',
+				concat[ version + 'JS' + brand ] = {
+					src: srcFiles,
+					dest: version + '/tests/' + brand + '/assets/js/gui.js',
 				};
 
-				concat[ version + 'Less' + brand ] = { //less
-					src: [
-						'../_base/' + baseVersion + '/less/base-mixins.less',
-						'../_base/' + baseVersion + '/less/settings.less',
-						'./' + version + '/less/module-mixins.less',
-						'./' + version + '/less/settings.less',
-					],
-					dest: './' + version + '/tests/' + brand + '/assets/less/gui.less',
+				srcFiles = core.less; //less
+				srcFiles.push(version + '/less/module-mixins.less');
+
+				concat[ version + 'Less' + brand ] = {
+					src: srcFiles,
+					dest: version + '/tests/' + brand + '/assets/less/gui.less',
 				};
 
 				concat[ version + 'HTML' + brand ] = { //html
 					src: [
-						'./' + version + '/html/header.html',
-						'./' + version + '/html/source.html',
-						'./' + version + '/html/footer.html',
+						version + '/html/header.html',
+						version + '/html/source.html',
+						version + '/html/footer.html',
 					],
-					dest: './' + version + '/tests/' + brand + '/index.html',
+					dest: version + '/tests/' + brand + '/index.html',
 				};
-			});
 
 
-			//compile less
-			brands.forEach(function(brand) {
-				less[ version + 'Less' + brand ] = {
-					options: {
-						cleancss: true,
-						compress: false,
-						ieCompat: true,
-						report: 'min',
-						plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
-					},
-					src: [
-						'./' + version + '/tests/' + brand + '/assets/less/gui.less',
-					],
-					dest: './' + version + '/tests/' + brand + '/assets/css/gui.css',
-				};
-			});
-
-
-			//add versioning to files
-			brands.forEach(function(brand) {
+				//////////////////////////////////////| ADD VERSIONING TO FILES
 				replace[ version + 'Replace' + brand ] = {
 					src: [
-						'./' + version + '/tests/' + brand + '/assets/js/*.js',
-						'./' + version + '/tests/' + brand + '/assets/less/*.less',
-						'./' + version + '/tests/' + brand + '/*.html',
+						version + '/tests/' + brand + '/assets/js/*.js',
+						version + '/tests/' + brand + '/assets/less/*.less',
+						version + '/tests/' + brand + '/*.html',
 					],
 					overwrite: true,
 					replacements: [{
@@ -240,53 +288,98 @@ module.exports = function(grunt) {
 						to: 'true',
 					}],
 				};
-			});
 
-
-			//copy font assets
-			brands.forEach(function(brand) {
-				copy[ version + 'BaseFont' + brand ] = {
-					expand: true,
-					cwd: '../_base/' + baseVersion + '/_assets/' + brand + '/font',
-					src: '*',
-					dest: './' + version + '/tests/' + brand + '/assets/font',
+				replace[ version + 'ReplaceTest' + brand ] = {
+					src: [
+						version + '/less/test.less',
+					],
+					overwrite: false,
+					dest: version + '/tests/' + brand + '/assets/less/test.less',
+					replacements: [{
+						from: '[Module-Version-Brand]',
+						to: moduleName + ' v' + version + ' ' + brand,
+					}, {
+						from: '[Module-Version]',
+						to: moduleName + ' v' + version,
+					}, {
+						from: '[Brand]',
+						to: brand,
+					}, {
+						from: '[Debug]',
+						to: 'true',
+					}],
 				};
+
+
+				//////////////////////////////////////| COMPILE LESS
+				less[ version + 'Less' + brand ] = {
+					options: {
+						cleancss: true,
+						compress: false,
+						ieCompat: true,
+						report: 'min',
+						plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
+					},
+					src: [
+						version + '/tests/' + brand + '/assets/less/gui.less',
+					],
+					dest: version + '/tests/' + brand + '/assets/css/gui.css',
+				};
+
+				less[ version + 'LessTest' + brand ] = {
+					options: {
+						cleancss: true,
+						compress: false,
+						ieCompat: true,
+						report: 'min',
+						plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
+					},
+					src: [
+						version + '/tests/' + brand + '/assets/less/test.less',
+					],
+					dest: version + '/tests/' + brand + '/assets/css/test.css',
+				};
+
+
+				//////////////////////////////////////| COPY FONT ASSETS
+				core[ brand + 'font' ].forEach(function( path ) {
+					copy[ version + 'CoreFont' + brand ] = {
+						expand: true,
+						cwd: path,
+						src: '*',
+						dest: version + '/tests/' + brand + '/assets/font',
+					};
+				});
 
 				copy[ version + 'Font' + brand ] = {
 					expand: true,
-					cwd: './' + version + '/_assets/' + brand + '/font',
+					cwd: version + '/_assets/' + brand + '/font',
 					src: '*',
-					dest: './' + version + '/tests/' + brand + '/assets/font',
+					dest: version + '/tests/' + brand + '/assets/font',
 				};
-			});
 
 
-			//optimise images
-			brands.forEach(function(brand) {
+				//////////////////////////////////////| OPTIMISE IMAGES
 				imagemin[ version + 'Images' + brand ] = {
 					options: {
 						optimizationLevel: 4,
 					},
 					files: [{
 						expand: true,
-						cwd: './' + version + '/_assets/' + brand + '/img/',
+						cwd: version + '/_assets/' + brand + '/img/',
 						src: ['**/*.{png,jpg,gif}'],
-						dest: './' + version + '/tests/' + brand + '/assets/img/',
+						dest: version + '/tests/' + brand + '/assets/img/',
 					}],
 				};
-			});
 
 
-			//handle svgs
-			var svgselectors = grunt.file.readJSON('./' + version + '/_assets/grunticon.json');
-
-			brands.forEach(function(brand) {
+				//////////////////////////////////////| HANDLE SVGS
 				grunticon[ version + 'SVG' + brand ] = {
 					files: [{
 						expand: true,
-						cwd: './' + version + '/_assets/' + brand + '/svg',
+						cwd: version + '/_assets/' + brand + '/svg',
 						src: '*.svg',
-						dest: './' + version + '/tests/' + brand + '/assets/css',
+						dest: version + '/tests/' + brand + '/assets/css',
 					}],
 
 					options: {
@@ -302,20 +395,20 @@ module.exports = function(grunt) {
 
 				copy[ version + 'SVG' + brand ] = {
 					expand: true,
-					cwd: './' + version + '/tests/' + brand + '/assets/css/png',
+					cwd: version + '/tests/' + brand + '/assets/css/png',
 					src: '*.png',
-					dest: './' + version + '/tests/' + brand + '/assets/img',
+					dest: version + '/tests/' + brand + '/assets/img',
 				};
 
 				clean[ version + 'SVG' + brand ] = [
-					'./' + version + '/tests/' + brand + '/assets/css/preview.html',
-					'./' + version + '/tests/' + brand + '/assets/css/grunticon.loader.js',
-					'./' + version + '/tests/' + brand + '/assets/css/png/',
+					version + '/tests/' + brand + '/assets/css/preview.html',
+					version + '/tests/' + brand + '/assets/css/grunticon.loader.js',
+					version + '/tests/' + brand + '/assets/css/png/',
 				];
 			});
 
 
-			//show current version build
+			//////////////////////////////////////| SHOW CURRENT VERSION BUILD
 			font[ version ] = {
 				text: moduleName + '|' + version,
 				options: {
@@ -349,6 +442,7 @@ module.exports = function(grunt) {
 		grunt.task.run('clean');
 
 		grunt.task.run('calculateSize');
+		grunt.task.run('createChecksum');
 
 		grunt.config.set('font', font);
 		grunt.task.run('font');
@@ -362,21 +456,17 @@ module.exports = function(grunt) {
 	grunt.registerTask('watchVersions', 'Watch all files in each version.', function() {
 
 		var watch = {};
-		var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
-		grunt.file.expand({ filter: 'isDirectory' }, ['./*', '!./node_modules']).forEach(function(dir) {
+		var module = grunt.file.readJSON( 'module.json' );
 
-			var moduleName = process.cwd().split('/')[( process.cwd().split('/').length - 1 )];
-			var baseVersion = GetLastestBase();
-			var version = dir.substr( dir.lastIndexOf('/') + 1 );
-
+		//iterate over all versions
+		Object.keys( module.versions ).forEach(function iterateCore( version ) {
 
 			//create the watch
 			watch[ version ] = {
 				files: [
 					'./' + version + '/**/*.*',
 					'!./' + version + '/tests/**/*.*',
-					'../_base/' + baseVersion + '/**/*.*',
 				],
 				tasks: [
 					'_build',
@@ -485,8 +575,13 @@ module.exports = function(grunt) {
 	grunt.registerTask('_build', [
 		'lintspaces',
 		'buildVersions',
-		'createChecksum',
+		// 'createChecksum',
 		'wakeup',
+	]);
+
+	grunt.registerTask('_ubergrunt', [
+		'buildVersions',
+		// 'createChecksum',
 	]);
 
 

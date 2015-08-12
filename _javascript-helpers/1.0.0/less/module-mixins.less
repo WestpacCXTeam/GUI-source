@@ -1,0 +1,26 @@
+/*![Module-Version-Brand]*/
+
+
+//////////////////////////////////////| JAVASCRIPT HELPERS MIXIN
+._javascript-helpers( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+}
+
+//////////////////////////////////////| JAVASCRIPT HELPERS
+._javascript-helpers([Brand]);

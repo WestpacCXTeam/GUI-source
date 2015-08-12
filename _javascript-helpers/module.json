@@ -1,0 +1,18 @@
+{
+	"ID": "_javascript-helpers",
+	"name": "Javascript Helpers",
+	"description": "TBA",
+	"category": "Helpers",
+	"core": true,
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"less": false,
+			"svg": false,
+			"font": false,
+			"size": 43
+		}
+	},
+	"hash": "093228864d2af4782dc9d46999910b0a24d1c316"
+}

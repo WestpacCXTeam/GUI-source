@@ -1,6 +1,6 @@
 {
 	"ID": "text-extensions",
-	"name": "Text-extensions",
+	"name": "Text Extensions",
 	"description": "Text classes for additional formating",
 	"category": "Typography",
 	"versions": {
@@ -13,5 +13,5 @@
 			"size": 1
 		}
 	},
-	"hash": "67e2dacac8765d95616636af62616956a26b7b12"
+	"hash": "cc6715166c9555bc966026435435e0348708b7d3"
 }

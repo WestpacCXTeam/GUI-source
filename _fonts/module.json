@@ -1,0 +1,18 @@
+{
+	"ID": "_fonts",
+	"name": "Fonts",
+	"description": "TBA",
+	"category": "Typography",
+	"core": true,
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": true,
+			"size": 43
+		}
+	},
+	"hash": "39db04b67b39b89dfb0b815d6df9f38babba2dda"
+}
