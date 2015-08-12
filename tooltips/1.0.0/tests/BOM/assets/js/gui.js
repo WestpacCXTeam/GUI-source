@@ -8,7 +8,7 @@ return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeTyp
  *
  * Westpac GUI framework
  *
- * This base includes a debugging console and debounce and throttle functions.
+ * This core library includes a debugging console, debounce and throttle functions.
  *
  **************************************************************************************************************************************************************/
 

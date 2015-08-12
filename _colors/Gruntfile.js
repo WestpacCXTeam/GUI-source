@@ -32,7 +32,7 @@ var Fs = require('fs');
  *
  * @param   module  [string]  Module name
  *
- * @return  [string]  Version string for latest base version
+ * @return  [string]  Version string for latest version
  */
 function GetLastest( module ) {
 	var dir = '../' + module;
