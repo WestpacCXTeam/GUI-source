@@ -1,1 +1,1 @@
-include: ['_foundations']
+include: ['_colors', '_fonts', '_grid', '_javascript-helpers', '_text-styling']
