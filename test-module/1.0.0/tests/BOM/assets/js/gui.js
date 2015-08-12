@@ -52,6 +52,19 @@ var GUI = (function guiInit() {
 				.removeClass('no-js')
 				.addClass('js');
 
+			//detecting tab key press
+			$('body').on('keydown', function(e) {
+				var keyCode = e.keyCode || e.which;
+
+				if(keyCode == 9) {
+					GUI.debugging( 'GUI: Tab detected', 'report' );
+
+					$('html').addClass('is-keyboarduser');
+
+					$('body').off('keydown');
+				}
+			});
+
 		},
 
 
@@ -174,3 +187,35 @@ var GUI = (function guiInit() {
 
 //run GUI
 GUI.init();
+/*!test-module v1.0.0*/
+/***************************************************************************************************************************************************************
+ *
+ * test-module
+ *
+ * Description of module
+ *
+ **************************************************************************************************************************************************************/
+
+
+(function(GUI) {
+
+	var module = {};
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// module init method
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	module.init = function() {
+		GUI.debugging( 'test-module: Initiating', 'report' );
+
+
+		// some js stuff
+	};
+
+
+	GUI.testModule = module;
+
+
+	// run module
+	GUI.testModule.init();
+
+}(GUI));

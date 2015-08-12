@@ -63,8 +63,11 @@ module.exports = function(grunt) {
 		var replace = {};
 		var replaceStr = '<h2 class="body-font">Modules</h2><ul class="gui-list">' + "\n";
 		var GUI = {
-			modules: {}
+			modules: {
+				_core: {},
+			},
 		};
+		var core = {};
 		var oldCategory = '';
 		var categories = '<h2 class="body-font">Categories</h2><ul class="category-list">';
 
@@ -85,6 +88,10 @@ module.exports = function(grunt) {
 
 			GUI.modules[ module.category ][ module.ID ] = module;
 
+			if( module.core ) {
+				GUI.modules._core[ module.ID ] = module;
+			}
+
 		});
 
 
@@ -95,36 +102,43 @@ module.exports = function(grunt) {
 
 				var module = GUI.modules[category][moduleKey];
 
-				if( oldCategory !== category ) {
-					replaceStr += '	<li class="category" id="' + module.ID + '"><small>' + category + '</small></li>';
+				if( core[ module.ID ] !== true ) {
 
-					categories += '<li><a href="#' + module.ID + '">' + category + '</a></li>';
+					if( oldCategory !== category ) {
+						replaceStr += '	<li class="category" id="' + module.ID + '"><small>' + category + '</small></li>';
+
+						categories += '<li><a href="#' + module.ID + '">' + category + '</a></li>';
+					}
+
+					replaceStr += '	<li class="module"><div class="module-wrapper">' + "\n" +
+						'		<h3 class="body-font module-headline">' + module.name + ' <small class="description">' + module.description + '</small></h3>' + "\n" +
+						'		<ul class="gui-list-version">' + "\n";
+
+					Object.keys( module.versions ).forEach(function interateVersions( version ) {
+
+						var subdir = './' + module.ID + '/' + version + '/tests/';
+
+						//add versioning to files
+						replaceStr += '			<li>' + "\n" +
+							'				<h4 class="body-font version-headline">v' + version + '</h4>' + "\n" +
+							'				<ul class="gui-list-version-brand">' + "\n" +
+							'					<li><a class="brand-link brand-link-bom" href="' + subdir + 'BOM/">BOM</a></li>' + "\n" +
+							'					<li><a class="brand-link brand-link-bsa" href="' + subdir + 'BSA/">BSA</a></li>' + "\n" +
+							'					<li><a class="brand-link brand-link-stg" href="' + subdir + 'STG/">STG</a></li>' + "\n" +
+							'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'WBC/">WBC</a></li>' + "\n" +
+							'				</ul>' + "\n" +
+							'			</li>' + "\n";
+					});
+
+					replaceStr += '		</ul>' + "\n" +
+						'	</div></li>' + "\n";
+
+					oldCategory = category;
 				}
 
-				replaceStr += '	<li class="module"><div class="module-wrapper">' + "\n" +
-					'		<h3 class="body-font module-headline">' + module.name + ' <small class="description">' + module.description + '</small></h3>' + "\n" +
-					'		<ul class="gui-list-version">' + "\n";
-
-				Object.keys( module.versions ).forEach(function interateVersions( version ) {
-
-					var subdir = './' + module.ID + '/' + version + '/tests/';
-
-					//add versioning to files
-					replaceStr += '			<li>' + "\n" +
-						'				<h4 class="body-font version-headline">v' + version + '</h4>' + "\n" +
-						'				<ul class="gui-list-version-brand">' + "\n" +
-						'					<li><a class="brand-link brand-link-bom" href="' + subdir + 'BOM/">BOM</a></li>' + "\n" +
-						'					<li><a class="brand-link brand-link-bsa" href="' + subdir + 'BSA/">BSA</a></li>' + "\n" +
-						'					<li><a class="brand-link brand-link-stg" href="' + subdir + 'STG/">STG</a></li>' + "\n" +
-						'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'WBC/">WBC</a></li>' + "\n" +
-						'				</ul>' + "\n" +
-						'			</li>' + "\n";
-				});
-
-				replaceStr += '		</ul>' + "\n" +
-					'	</div></li>' + "\n";
-
-				oldCategory = category;
+				if( module.core ) {
+					core[ module.ID ] = true;
+				}
 
 			});
 
@@ -161,7 +175,7 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Custom grunt task to create list index
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	grunt.registerTask('mergeBase', 'Merge the base into all modules.', function() {
+	grunt.registerTask('mergeBase', 'Merge the core into all modules.', function() {
 
 		var hub = {};
 		var GUI = grunt.file.readJSON('GUI.json');
@@ -179,8 +193,7 @@ module.exports = function(grunt) {
 						'./' + module.ID + '/Gruntfile.js',
 					],
 					tasks: [
-						'buildVersions',
-						'createChecksum',
+						'_ubergrunt',
 					],
 				};
 
@@ -328,7 +341,7 @@ module.exports = function(grunt) {
 					maxLength: 30,
 					colors: ['magenta'],
 				},
-				text: ' merging base',
+				text: ' merging core',
 			},
 
 			index: {
@@ -376,7 +389,7 @@ module.exports = function(grunt) {
 		'wakeup',
 	]);
 
-	grunt.registerTask('merge', [ //merge base into all modules
+	grunt.registerTask('merge', [ //merge core into all modules
 		'font:title',
 		'font:merge',
 		'buildIndex',

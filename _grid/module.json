@@ -1,0 +1,18 @@
+{
+	"ID": "_grid",
+	"name": "Grid",
+	"description": "TBA",
+	"category": "Layout",
+	"core": true,
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 43
+		}
+	},
+	"hash": "a649934e851816c657ac25917062b9d29b73f04a"
+}
