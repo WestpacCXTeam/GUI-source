@@ -1,0 +1,18 @@
+{
+	"ID": "_text-styling",
+	"name": "Text Styling",
+	"description": "TBA",
+	"category": "Typography",
+	"core": true,
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 43
+		}
+	},
+	"hash": "ba806c4d60155a2596806e33d5abfbbcea30a82e"
+}

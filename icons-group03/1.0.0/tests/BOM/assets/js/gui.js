@@ -52,6 +52,19 @@ var GUI = (function guiInit() {
 				.removeClass('no-js')
 				.addClass('js');
 
+			//detecting tab key press
+			$('body').on('keydown', function(e) {
+				var keyCode = e.keyCode || e.which;
+
+				if(keyCode == 9) {
+					GUI.debugging( 'GUI: Tab detected', 'report' );
+
+					$('html').addClass('is-keyboarduser');
+
+					$('body').off('keydown');
+				}
+			});
+
 		},
 
 

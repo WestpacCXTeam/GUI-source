@@ -2,7 +2,7 @@
 	"ID": "accessibility-helpers",
 	"name": "Accessibility Helpers",
 	"description": "Accessibility classes",
-	"category": "Accessibility",
+	"category": "Helpers",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [],
@@ -13,5 +13,5 @@
 			"size": 1
 		}
 	},
-	"hash": "93a2104b4048a10dafb16beb473fbcd169b42a58"
+	"hash": "f597a68562b366c483abbd231a65736337ff9241"
 }

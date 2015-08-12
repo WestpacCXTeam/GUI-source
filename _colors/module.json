@@ -1,0 +1,18 @@
+{
+	"ID": "_colors",
+	"name": "Colors",
+	"description": "TBA",
+	"category": "Colors",
+	"core": true,
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 43
+		}
+	},
+	"hash": "38b6f95a5df94faf6ef011f7425facc9c99f0b28"
+}
