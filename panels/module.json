@@ -1,7 +1,7 @@
 {
 	"ID": "panels",
 	"name": "Panels",
-	"description": "Panel containers",
+	"description": "Containers with headers and optional footers for grouping elements and text.",
 	"category": "Containers",
 	"versions": {
 		"1.0.0": {

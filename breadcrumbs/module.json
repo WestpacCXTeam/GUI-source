@@ -1,7 +1,7 @@
 {
 	"ID": "breadcrumbs",
 	"name": "Breadcrumbs",
-	"description": "Navigational breadcrumbs",
+	"description": "Styled navigational links used to indicate a user journey or path.",
 	"category": "Navigation",
 	"versions": {
 		"1.0.0": {

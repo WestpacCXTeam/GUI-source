@@ -1,7 +1,7 @@
 {
 	"ID": "lists",
 	"name": "Lists",
-	"description": "HTML lists in various colors",
+	"description": "Styled bullet lists in various colours.",
 	"category": "Lists",
 	"versions": {
 		"1.0.0": {

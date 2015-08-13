@@ -1,7 +1,7 @@
 {
 	"ID": "list-groups",
 	"name": "List-Groups",
-	"description": "A structured list for settings",
+	"description": "Complex lists with custom content.",
 	"category": "Lists",
 	"versions": {
 		"1.0.0": {

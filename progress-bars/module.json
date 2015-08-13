@@ -1,7 +1,7 @@
 {
 	"ID": "progress-bars",
 	"name": "Progress-Bars",
-	"description": "Progress-Bars as visual representation of progress",
+	"description": "Visual representation of progress",
 	"category": "Other stuff",
 	"versions": {
 		"1.0.0": {

@@ -1,7 +1,7 @@
 {
 	"ID": "tables",
 	"name": "Tables",
-	"description": "Tables in colors and responsive",
+	"description": "Responsive tables, including various styling options.",
 	"category": "Tables",
 	"versions": {
 		"1.0.0": {

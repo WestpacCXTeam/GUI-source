@@ -1,7 +1,7 @@
 {
 	"ID": "input-fields",
 	"name": "Input-Fields",
-	"description": "Text, email, password, number, date, textarea and selects",
+	"description": "Styled input fields including, text, email, date, textarea and selects etc.",
 	"category": "Forms",
 	"versions": {
 		"1.0.0": {

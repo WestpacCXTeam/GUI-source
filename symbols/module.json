@@ -1,7 +1,7 @@
 {
 	"ID": "symbols",
 	"name": "Symbols",
-	"description": "Multi-color symbols",
+	"description": "Multi-colour, SVG symbols.",
 	"category": "Symbols",
 	"versions": {
 		"1.0.0": {

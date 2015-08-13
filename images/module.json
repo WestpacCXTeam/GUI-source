@@ -1,7 +1,7 @@
 {
 	"ID": "images",
 	"name": "Images",
-	"description": "Image classes",
+	"description": "Classes to style image boxes.",
 	"category": "Media",
 	"versions": {
 		"1.0.0": {

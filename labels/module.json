@@ -1,7 +1,7 @@
 {
 	"ID": "labels",
 	"name": "Labels",
-	"description": "Labels for callouts",
+	"description": "Styled element to highlight a word.",
 	"category": "Other stuff",
 	"versions": {
 		"1.0.0": {
