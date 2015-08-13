@@ -5,10 +5,9 @@
 ._fonts( @brand ) {
 
 	//////////////////////////////////////| SETTINGS
-	.getBrand() when (@brand = BOM) {
-		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-		@brand-fontfamily: "stag", "Roboto", Arial, sans-serif;
+	._fonts-family( @brand );
 
+	.getBrand() when (@brand = BOM) {
 		@font-face {
 			font-family: 'stag';
 			src: url('../font/Stag-Light.eot');
@@ -32,15 +31,9 @@
 		}
 	}
 
-	.getBrand() when (@brand = BSA) {
-		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-		@brand-fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-	}
+	.getBrand() when (@brand = BSA) {}
 
 	.getBrand() when (@brand = STG) {
-		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-		@brand-fontfamily: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
-
 		@font-face {
 			font-family: 'dragonbold';
 			src: url('../font/dragonbold-bold-webfont.eot');
@@ -54,10 +47,7 @@
 		}
 	}
 
-	.getBrand() when (@brand = WBC) {
-		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
-		@brand-fontfamily: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
-	}
+	.getBrand() when (@brand = WBC) {}
 	.getBrand();
 
 	@font-face {
@@ -134,6 +124,28 @@
 	.brand-font {
 		font-family: @brand-fontfamily;
 	}
+}
+
+
+//////////////////////////////////////| BREAKPOINTS
+._fonts-family( @brand ) {
+	.getBrand() when (@brand = BOM) {
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "stag", "Roboto", Arial, sans-serif;
+	}
+	.getBrand() when (@brand = BSA) {
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+	}
+	.getBrand() when (@brand = STG) {
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
+	}
+	.getBrand() when (@brand = WBC) {
+		@fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
+	}
+	.getBrand();
 }
 
 
