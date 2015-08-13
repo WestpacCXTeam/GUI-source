@@ -192,6 +192,11 @@ module.exports = function(grunt) {
 					Du(version + '/tests/WBC/assets/font/', function(err, sizeFont) {
 
 						Du(version + '/tests/WBC/assets/less/', function(err, sizeLess) {
+							sizeTest = sizeTest || 0;
+							sizeAssets = sizeAssets || 0;
+							sizeLess = sizeLess || 0;
+							sizeFont = sizeFont || 0;
+
 							var size = Math.ceil( ( (sizeAssets - sizeLess - sizeFont - sizeTest - 96000) / 1000 ) ); //size of test/WBC folder minus core size
 
 							var module = grunt.file.readJSON( 'module.json' );
