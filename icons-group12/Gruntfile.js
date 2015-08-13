@@ -207,6 +207,10 @@ module.exports = function(grunt) {
 				Du(version + '/tests/WBC/assets/font/', function(err, sizeFont) {
 
 					Du(version + '/tests/WBC/assets/less/', function(err, sizeLess) {
+						sizeAssets = sizeAssets || 0;
+						sizeLess = sizeLess || 0;
+						sizeFont = sizeFont || 0;
+
 						var size = Math.ceil( ( (sizeAssets - sizeLess - sizeFont - 96000) / 1000 ) - core.size ); //size of test/WBC folder minus core size
 
 						if( size <= 0 ) {
