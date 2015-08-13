@@ -10,7 +10,7 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 1
+			"size": null
 		},
 		"1.2.0": {
 			"dependencies": [
@@ -20,7 +20,7 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 1
+			"size": null
 		},
 		"4.0.0": {
 			"dependencies": [
@@ -30,7 +30,7 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 1
+			"size": null
 		},
 		"5.6.0": {
 			"dependencies": [],
@@ -38,7 +38,7 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 1
+			"size": null
 		},
 		"10.15.56": {
 			"dependencies": [
@@ -49,8 +49,8 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 1
+			"size": null
 		}
 	},
-	"hash": "c5a74b01b10650328a576336fb2c3cd3243af8c3"
+	"hash": "6d9976e8040f2dec1252d48ea2a07159"
 }
