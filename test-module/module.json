@@ -10,7 +10,7 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 2
+			"size": null
 		},
 		"1.0.1": {
 			"dependencies": [
@@ -20,7 +20,7 @@
 			"less": true,
 			"svg": true,
 			"font": false,
-			"size": 21
+			"size": null
 		},
 		"1.0.2": {
 			"dependencies": [
@@ -30,7 +30,7 @@
 			"less": true,
 			"svg": true,
 			"font": true,
-			"size": 21
+			"size": null
 		},
 		"1.1.0": {
 			"dependencies": [],
@@ -38,8 +38,8 @@
 			"less": true,
 			"svg": true,
 			"font": true,
-			"size": 21
+			"size": null
 		}
 	},
-	"hash": "31d234ee84783322bf9c3bf9657ca614f1bf1974"
+	"hash": "b90b5adfafd5fabc6471bfa22e9040b3"
 }

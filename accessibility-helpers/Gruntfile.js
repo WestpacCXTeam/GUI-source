@@ -19,6 +19,8 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // External dependencies
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
+var MultiStream = require('multistream')
+var Crypto = require('crypto');
 var Path = require('path');
 var Du = require('du');
 var Fs = require('fs');
@@ -101,12 +103,20 @@ function GetCore( grunt, exclude ) {
 
 
 /*
- * Copyright 2011 Mark Cavage <mcavage@gmail.com> All rights reserved. https://github.com/mcavage/node-dirsum
+ * Create a checksum for a string
+ *
+ * @param   str        [string]  String to be decoded
+ * @param   algorithm  [string]  Algorithm to be used, Default: sha1
+ * @param   encoding   [string]  Encoding to be used, Default: hex
+ *
+ * @return  [array]  All files needed
  */
-function _summarize(e,r){var t=Object.keys(r);t.sort();var i={};i.files=r;for(var o=crypto.createHash(e),n=0;n<t.length;n++)"string"==typeof r[t[n]]?o.update(r[t[n]]):"object"==typeof r[t[n]]?o.update(r[t[n]].hash):console.error("Unknown type found in hash: "+typeof r[t[n]]);return i.hash=o.digest("hex"),i}function digest(e,r,t,i){if(!e||"string"!=typeof e)throw new TypeError("root is required (string)");if(!r)throw new TypeError("callback is required (function)");if("string"==typeof r){if("function"==typeof t)i=t,t=[];else if("object"!=typeof t)throw new TypeError("exclude must be an object")}else{if("function"!=typeof r)throw new TypeError("hash must be a string");i=r,r="md5",t=[]}if(!i)throw new TypeError("callback is required (function)");var o={};fs.readdir(e,function(n,f){if(n)return i(n);if(t.forEach(function(e){var r=f.indexOf(e);-1!=r&&f.splice(r,1)}),0===f.length)return i(void 0,{hash:"",files:{}});var s=0;f.forEach(function(t){var n=e+"/"+t;fs.stat(n,function(e,u){if(e)return i(e);if(u.isDirectory())return digest(n,r,function(e,n){return e?n:(o[t]=n,++s>=f.length?i(void 0,_summarize(r,o)):void 0)});if(u.isFile())fs.readFile(n,"utf8",function(e,n){if(e)return i(e);var u=crypto.createHash(r);return u.update(n),o[t]=u.digest("hex"),++s>=f.length?i(void 0,_summarize(r,o)):void 0});else if(console.error("Skipping hash of %s",t),++s>f.length)return i(void 0,_summarize(r,o))})})})}var crypto=require("crypto"),fs=require("fs");
-var Dirsum = {
-	digest: digest
-};
+function checksum(str, algorithm, encoding) {
+	return crypto
+		.createHash(algorithm || 'sha1')
+		.update(str, 'utf8')
+		.digest(encoding || 'hex');
+}
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -144,25 +154,37 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('createChecksum', 'Add a checksum of all folders to the module.json.', function() {
 		var sumDone = this.async();
-		var exclusion = ['module.json', 'Gruntfile.js', 'package.json']; //these are not relevant for the modules
+		var hasher = Crypto.createHash('md5');
 		var module = grunt.file.readJSON( 'module.json' );
+		var streams = [];
 
 		//iterate over all versions
 		Object.keys( module.versions ).forEach(function iterateCore( version ) {
-			exclusion.push(version + '/tests/'); //exclude test folder as the core modules are compiled into them
+
+			grunt.file.expand({ filter: 'isFile' }, [
+					version + '/**/*',
+					'!' + version + '/html/**/*',
+					'!' + version + '/tests/**/*',
+				]).forEach(function( file ) {
+					streams.push( Fs.createReadStream( file ) ); //get all relevant files
+			});
+
 		});
 
-		//get checksum
-		Dirsum.digest( '.', 'sha1', exclusion, function(err, hashes) {
+		MultiStream( streams )
+			.on('data', function( data ) {
+				hasher.update(data, 'utf8'); //pipe content to hasher
+			})
+			.on('end', function() {
+				var hash = hasher.digest('hex'); //get checksum
 
-			var module = grunt.file.readJSON( 'module.json' );
-			module['hash'] = hashes.hash;
+				module['hash'] = hash;
 
-			grunt.file.write( 'module.json', JSON.stringify( module, null, "\t" ) );
-			grunt.log.ok( hashes.hash + ' hash successfully generated' );
+				grunt.file.write( 'module.json', JSON.stringify( module, null, "\t" ) );
+				grunt.log.ok( hash + ' hash successfully generated' );
 
-			sumDone(true);
-		});
+				sumDone(true);
+			});
 
 	});
 
