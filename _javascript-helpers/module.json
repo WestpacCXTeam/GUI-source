@@ -1,7 +1,7 @@
 {
 	"ID": "_javascript-helpers",
 	"name": "Javascript Helpers",
-	"description": "JavaScript framework, with de-bugging, throttling and debouncing.",
+	"description": "JavaScript framework, with debugging, throttling and debouncing.",
 	"category": "Helpers",
 	"core": true,
 	"versions": {
