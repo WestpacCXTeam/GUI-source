@@ -1,7 +1,7 @@
 {
 	"ID": "text-extensions",
 	"name": "Text Extensions",
-	"description": "Text classes for additional formating",
+	"description": "Classes for additional text formatting.",
 	"category": "Typography",
 	"versions": {
 		"1.0.0": {

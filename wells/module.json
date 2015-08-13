@@ -1,7 +1,7 @@
 {
 	"ID": "wells",
 	"name": "Wells",
-	"description": "Wells for calling out a block",
+	"description": "Similar to panels, without the header or footer.",
 	"category": "Containers",
 	"versions": {
 		"1.0.0": {

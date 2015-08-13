@@ -1,7 +1,7 @@
 {
 	"ID": "_fonts",
 	"name": "Fonts",
-	"description": "TBA",
+	"description": "Brand and body fonts with the font stack.",
 	"category": "Typography",
 	"core": true,
 	"versions": {

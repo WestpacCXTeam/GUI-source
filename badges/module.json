@@ -1,7 +1,7 @@
 {
 	"ID": "badges",
 	"name": "Badges",
-	"description": "Badges display a count or number as indicators",
+	"description": "Styled element to highlight a number.",
 	"category": "Other stuff",
 	"versions": {
 		"1.0.0": {

@@ -1,7 +1,7 @@
 {
 	"ID": "popovers",
 	"name": "Popovers",
-	"description": "Popovers for buttons",
+	"description": "Small overlay elements with simple text and links.",
 	"category": "Popovers",
 	"versions": {
 		"1.0.0": {
