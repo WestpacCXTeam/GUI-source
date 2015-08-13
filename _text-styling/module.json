@@ -1,7 +1,7 @@
 {
 	"ID": "_text-styling",
 	"name": "Text Styling",
-	"description": "TBA",
+	"description": "Core HTML text elements.",
 	"category": "Typography",
 	"core": true,
 	"versions": {

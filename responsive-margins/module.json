@@ -1,7 +1,7 @@
 {
 	"ID": "responsive-margins",
 	"name": "Responsive-Margins",
-	"description": "Responsive-Margins adds vertical spacing responsively",
+	"description": "Classes for vertical spacing between elements.",
 	"category": "Layout",
 	"versions": {
 		"1.0.0": {

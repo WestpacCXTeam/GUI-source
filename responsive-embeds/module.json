@@ -1,7 +1,7 @@
 {
 	"ID": "responsive-embeds",
 	"name": "Responsive-Embeds",
-	"description": "Responsive-Embeds are best for videos",
+	"description": "Classes to embed responsive video content.",
 	"category": "Media",
 	"versions": {
 		"1.0.0": {

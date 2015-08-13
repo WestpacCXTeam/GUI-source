@@ -1,7 +1,7 @@
 {
 	"ID": "input-groups",
 	"name": "Input-Groups",
-	"description": "Attachment to an input field",
+	"description": "Styled input fields with attached attributes ie $ or %.",
 	"category": "Forms",
 	"versions": {
 		"1.0.0": {

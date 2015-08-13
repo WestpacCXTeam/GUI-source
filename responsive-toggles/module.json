@@ -1,7 +1,7 @@
 {
 	"ID": "responsive-toggles",
 	"name": "Responsive-Toggles",
-	"description": "Responsive-Toggles can hide and show elements responsively",
+	"description": "Classes to hide and show elements based on break point and print style.",
 	"category": "Layout",
 	"versions": {
 		"1.0.0": {

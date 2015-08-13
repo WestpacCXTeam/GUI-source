@@ -1,7 +1,7 @@
 {
 	"ID": "accessibility-helpers",
 	"name": "Accessibility Helpers",
-	"description": "Accessibility classes",
+	"description": "Classes for 'skip links' and 'screen-reader only' text etc.",
 	"category": "Helpers",
 	"versions": {
 		"1.0.0": {

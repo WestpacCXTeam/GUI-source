@@ -1,7 +1,7 @@
 {
 	"ID": "paginations",
 	"name": "Paginations",
-	"description": "Paginations finite and infinite",
+	"description": "Styled links to navigate within a set of related views.",
 	"category": "Navigation",
 	"versions": {
 		"1.0.0": {

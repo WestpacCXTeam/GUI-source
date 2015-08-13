@@ -1,7 +1,7 @@
 {
 	"ID": "radios",
 	"name": "Radios",
-	"description": "Radio buttons for forms",
+	"description": "Styled radio buttons with SVG enhancements.",
 	"category": "Forms",
 	"versions": {
 		"1.0.0": {

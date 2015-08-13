@@ -1,7 +1,7 @@
 {
 	"ID": "tabcordions",
 	"name": "Tabcordions",
-	"description": "Accordion and Tab component",
+	"description": "Tabs, accordions and a tab set that changes to an accordion based on break point.",
 	"category": "Containers",
 	"versions": {
 		"1.0.0": {
