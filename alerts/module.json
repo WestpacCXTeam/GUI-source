@@ -1,7 +1,7 @@
 {
 	"ID": "alerts",
 	"name": "Alerts",
-	"description": "Alerts and contextual color classes",
+	"description": "Contextual messaging panels and text - alerts, errors, info etc.",
 	"category": "Alerts",
 	"versions": {
 		"1.0.0": {

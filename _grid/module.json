@@ -1,7 +1,7 @@
 {
 	"ID": "_grid",
 	"name": "Grid",
-	"description": "TBA",
+	"description": "12 column, responsive grid system.",
 	"category": "Layout",
 	"core": true,
 	"versions": {

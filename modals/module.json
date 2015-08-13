@@ -1,7 +1,7 @@
 {
 	"ID": "modals",
 	"name": "Modals",
-	"description": "Popup modals with JS API",
+	"description": "Popup modals in various sizes with JavaScript API.",
 	"category": "Popovers",
 	"versions": {
 		"1.0.0": {

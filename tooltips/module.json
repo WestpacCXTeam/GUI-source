@@ -1,7 +1,7 @@
 {
 	"ID": "tooltips",
 	"name": "Tooltips",
-	"description": "Tooltips for text",
+	"description": "Little black boxes for simple messaging.",
 	"category": "Popovers",
 	"versions": {
 		"1.0.0": {

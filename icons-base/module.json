@@ -1,7 +1,7 @@
 {
 	"ID": "icons-base",
 	"name": "Icons-Base",
-	"description": "Icon sizing and coloring",
+	"description": "Classes to manage icon size and embedding.",
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
