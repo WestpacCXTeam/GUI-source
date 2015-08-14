@@ -1514,7 +1514,15 @@
 				opacity: 1;
 				visibility: visible;
 				transition: opacity 0.4s ease; //ignored by modern browsers, needed for stock
+
+				&:focus {
+					.outline();
+				}
 			}
+		}
+
+		&.is-open:focus {
+			.outline();
 		}
 	}
 
