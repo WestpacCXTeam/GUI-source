@@ -1636,6 +1636,20 @@ a:hover {
   visibility: visible;
   transition: opacity 0.4s ease;
 }
+.js .collapsible-body.is-open:focus {
+  outline: none;
+}
+.is-keyboarduser .js .collapsible-body.is-open:focus {
+  outline: 2px dotted #000;
+  outline-offset: 0.5rem;
+}
+.collapsible-body.is-open:focus {
+  outline: none;
+}
+.is-keyboarduser .collapsible-body.is-open:focus {
+  outline: 2px dotted #000;
+  outline-offset: 0.5rem;
+}
 html {
   line-height: 1px;
 }
