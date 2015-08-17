@@ -1633,6 +1633,9 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
+.logo {
+  display: inline-block;
+}
 .logo.logo-bom-alt {
   width: 180px;
   height: 65px;
