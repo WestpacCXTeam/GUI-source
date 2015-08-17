@@ -1659,6 +1659,9 @@ a:hover {
 /*
 	 *  SETTINGS
 	 */
+.symbol {
+  display: inline-block;
+}
 .symbol.symbol-add-account {
   width: 42px;
   height: 42px;
