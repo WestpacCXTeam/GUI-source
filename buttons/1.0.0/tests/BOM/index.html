@@ -183,10 +183,14 @@
 <hr>
 <h2>block buttons</h2>
 
-<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-hero btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-neutral btn-lg btn-block">Block level button</button>
-<button type="button" class="btn btn-faint btn-lg btn-block">Block level button</button>
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+		<button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+		<button type="button" class="btn btn-hero btn-lg btn-block">Block level button</button>
+		<button type="button" class="btn btn-neutral btn-lg btn-block">Block level button</button>
+		<button type="button" class="btn btn-faint btn-lg btn-block">Block level button</button>
+	</div>
+</div>
 
 <hr>
 <h2>button-groups toggle</h2>
@@ -208,6 +212,35 @@
 		<span class="btn-group-text btn btn-primary">Right</span>
 	</label>
 
+</div>
+
+
+<hr>
+<h2>block button-groups</h2>
+
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+
+		<div class="btn-group btn-block">
+
+			<label class="btn-group-item">
+				<input class="btn-group-input" type="radio" name="options-block">
+				<span class="btn-group-text btn btn-primary">Left</span>
+			</label>
+
+			<label class="btn-group-item">
+				<input class="btn-group-input" type="radio" name="options-block">
+				<span class="btn-group-text btn btn-primary">Middle</span>
+			</label>
+
+			<label class="btn-group-item">
+				<input class="btn-group-input" type="radio" name="options-block">
+				<span class="btn-group-text btn btn-primary">Right</span>
+			</label>
+
+		</div>
+
+	</div>
 </div>
 
 
@@ -299,7 +332,7 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-primary js-button-dropdown" aria-label="Hit enter to open dropdown">
+	<button type="button" class="btn btn-primary js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
@@ -318,7 +351,7 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-primary btn-soft js-button-dropdown" aria-label="Hit enter to open dropdown">
+	<button type="button" class="btn btn-primary btn-soft js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
@@ -340,7 +373,7 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-hero js-button-dropdown" aria-label="Hit enter to open dropdown">
+	<button type="button" class="btn btn-hero js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu dropdown-menu-sm" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
@@ -353,7 +386,7 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-hero btn-soft js-button-dropdown" aria-label="Hit enter to open dropdown">
+	<button type="button" class="btn btn-hero btn-soft js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu dropdown-menu-sm" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
@@ -368,7 +401,7 @@
 <hr>
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-neutral js-button-dropdown" aria-label="Hit enter to open dropdown">
+	<button type="button" class="btn btn-neutral js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu dropdown-menu-lg" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
@@ -457,7 +490,7 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-neutral btn-soft js-button-dropdown" aria-label="Hit enter to open dropdown">
+	<button type="button" class="btn btn-neutral btn-soft js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu dropdown-menu-lg" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
@@ -550,7 +583,7 @@
 <link rel="stylesheet" href="../../../../checkboxes/1.0.0/tests/BOM/assets/css/gui.css">
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-faint js-button-dropdown" aria-label="Hit enter to open dropdown">
+	<button type="button" class="btn btn-faint js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
@@ -583,7 +616,7 @@
 
 
 <div class="btn-dropdown" aria-haspopup="true">
-	<button type="button" class="btn btn-faint btn-soft js-button-dropdown" aria-label="Hit enter to open dropdown">
+	<button type="button" class="btn btn-faint btn-soft js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 		<span class="btn-dropdown-caret">Dropdown</span>
 	</button>
 	<ul class="dropdown-menu" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
@@ -612,6 +645,35 @@
 			</label>
 		</li>
 	</ul>
+</div>
+
+
+<hr>
+<h2>block dropdown buttons</h2>
+
+
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+
+		<div class="btn-dropdown btn-block" aria-haspopup="true">
+			<button type="button" class="btn btn-primary js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
+				<span class="btn-dropdown-caret">Dropdown</span>
+			</button>
+			<ul class="dropdown-menu" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<li class="dropdown-menu-headline">Headline 1</li>
+				<li><a href="#url">Link 1</a></li>
+				<li><a href="#url">Another link</a></li>
+				<li class="dropdown-menu-headline">Headline 2</li>
+				<li><a href="#url">Another link</a></li>
+				<li><a href="#url">Another link</a></li>
+				<li class="dropdown-menu-divider"><a href="#url">Another link</a></li>
+				<li><a href="#url">Another link</a></li>
+				<li><a href="#url">Another link</a></li>
+				<li><a href="#url">Last link</a></li>
+			</ul>
+		</div>
+
+	</div>
 </div>
 
 

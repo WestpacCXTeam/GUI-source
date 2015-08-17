@@ -32,6 +32,10 @@
 	.tooltip {
 		position: relative;
 
+		&:focus {
+			.outline();
+		}
+
 		&:after {
 			content: " (" attr(title) ")";
 			display: inline-block;
