@@ -1640,6 +1640,10 @@ a:hover {
   border: 1px solid #d7d2cb;
   border-radius: 3px;
 }
+.well .well {
+  background-color: #fff;
+  margin: 12px 0;
+}
 @media (min-width: 768px) {
   .well-responsive.well {
     padding: 24px;
