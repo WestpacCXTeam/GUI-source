@@ -33,6 +33,8 @@
 		if( !_isOpen ) { //opening dropdown
 			GUI.buttons.lastFocus = $(':focus');
 
+			toggelDropdown(true, $('.btn-dropdown'), $('.dropdown-menu')); //close all open dropdowns
+
 			$parent.addClass('is-open');
 			$menu
 				.attr('aria-hidden', 'false')

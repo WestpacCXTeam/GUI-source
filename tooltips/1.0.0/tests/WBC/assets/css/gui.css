@@ -1636,6 +1636,13 @@ a:hover {
 .tooltip {
   position: relative;
 }
+.tooltip:focus {
+  outline: none;
+}
+.is-keyboarduser .tooltip:focus {
+  outline: 2px dotted #000;
+  outline-offset: 0.5rem;
+}
 .tooltip:after {
   content: " (" attr(title) ")";
   display: inline-block;

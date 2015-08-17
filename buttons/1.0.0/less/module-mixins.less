@@ -199,7 +199,6 @@
 	//////////////////////////////////////| BUTTONS
 	.btn {
 		padding: 6px 12px;
-		margin: 3px 0;
 		border-radius: 6px;
 		font-size: 16px;
 		font-weight: 400;
@@ -434,6 +433,23 @@
 		& + .btn-group {
 			margin-top: 6px;
 		}
+
+		&.btn-block {
+			display: table;
+			width: 100%;
+
+			.btn-group-item {
+				display: table-cell;
+
+				.btn-group-text {
+					width: 100%;
+
+					.ie8 & {
+						width: auto;
+					}
+				}
+			}
+		}
 	}
 
 	//////////////////////////////////////| BUTTON DROPDOWNS
@@ -442,17 +458,28 @@
 		display: inline-block;
 		vertical-align: middle;
 
-		& > .btn > .btn-dropdown-caret {
-			&:after {
-				content: " ";
-				margin-left: 6px;
-				display: inline-block;
-				vertical-align: middle;
-				border-top-width: 8px;
-				border-top-style: solid;
-				border-right: 7px solid transparent;
-				border-bottom: none;
-				border-left: 7px solid transparent;
+		& > .btn {
+			position: relative;
+
+			& > .btn-dropdown-caret {
+				margin-right: 26px;
+
+				&:after {
+					content: " ";
+					position: absolute;
+					display: block;
+					vertical-align: middle;
+					border-top-width: 8px;
+					border-top-style: solid;
+					border-right: 7px solid transparent;
+					border-bottom: none;
+					border-left: 7px solid transparent;
+					position: absolute;
+					right: 12px;
+					top: 44%;
+					height: 8px;
+					width: 14px;
+				}
 			}
 		}
 
@@ -577,6 +604,8 @@
 				position: absolute;
 				overflow: hidden;
 				z-index: 115;
+				left: 0;
+				right: 0;
 			}
 		}
 
@@ -596,6 +625,21 @@
 				box-shadow: 0 6px 12px rgba(0,0,0,.175);
 				border: 1px solid @color-Border;
 				padding: 12px 6px;
+			}
+		}
+
+		&.btn-block {
+			width: 100%;
+
+			.btn {
+				display: block;
+				width: 100%;
+
+				.btn-dropdown-caret {
+					width: 100%;
+					display: inline-block;
+					text-align: left;
+				}
 			}
 		}
 	}
