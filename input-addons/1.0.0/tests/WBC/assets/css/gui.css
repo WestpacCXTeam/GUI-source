@@ -1738,7 +1738,7 @@ a:hover {
 .input-addon .input-addon-select-wrapper:after {
   position: absolute;
   top: 43%;
-  right: 6px;
+  right: 12px;
   z-index: 0;
   content: " ";
   margin-left: 6px;
@@ -1766,7 +1766,7 @@ a:hover {
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
-  padding: 6px 30px 8px 12px;
+  padding: 6px 36px 8px 12px;
 }
 .input-addon .input-addon-select-wrapper .input-addon-select:focus {
   outline: none;
@@ -1808,7 +1808,7 @@ a:hover {
 }
 .input-addon.input-addon-xl .input-addon-select-wrapper .input-addon-select {
   height: 45px;
-  padding: 13px 30px 13px 8px;
+  padding: 13px 36px 13px 8px;
 }
 .input-addon.input-addon-lg .input-addon-label .input-addon-input,
 .input-addon.input-addon-lg .input-addon-btn {
@@ -1821,7 +1821,7 @@ a:hover {
 }
 .input-addon.input-addon-lg .input-addon-select-wrapper .input-addon-select {
   height: 39px;
-  padding: 10px 30px 9px 8px;
+  padding: 10px 36px 9px 8px;
 }
 .input-addon.input-addon-sm .input-addon-label .input-addon-input,
 .input-addon.input-addon-sm .input-addon-btn {
@@ -1835,7 +1835,7 @@ a:hover {
 }
 .input-addon.input-addon-sm .input-addon-select-wrapper .input-addon-select {
   height: 27px;
-  padding: 5px 30px 3px 8px;
+  padding: 5px 36px 3px 8px;
   font-size: 14px;
 }
 @media print {
