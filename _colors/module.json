@@ -2,7 +2,7 @@
 	"ID": "_colors",
 	"name": "Colors",
 	"description": "Core colour system used in the digital brand.",
-	"category": "Colors",
+	"category": "Colours",
 	"core": true,
 	"versions": {
 		"1.0.0": {
