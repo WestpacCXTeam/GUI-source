@@ -33,24 +33,68 @@ var Fs = require('fs');
  * Get latest version of a module
  *
  * @param   module  [string]  Module name
+ * @param   grunt   [object]  Grunt object
  *
- * @return  [string]  Version string for latest version
+ * @return  [string]  Version string of latest version
  */
-function GetLastest( module ) {
-	var dir = '../' + module;
-	var result = '';
+function GetLastest( module, grunt ) {
+	var GUI = grunt.file.readJSON( '../GUI.json' );
+	var latestVersion = '1.0.0';
 
-	Fs.readdirSync( dir ).some(function(name) {
-		var filePath = Path.join(dir, name);
-		var stat = Fs.statSync(filePath);
+	Object.keys( GUI.modules ).forEach(function iterateCategories( category ) {
 
-		if(stat.isDirectory() && name != 'node_modules') {
-			result = name;
-			return;
-		}
+		Object.keys( GUI.modules[category] ).forEach(function iterateModules( moduleKey ) {
+
+			var mod = GUI.modules[category][moduleKey];
+
+			if( module === mod.ID ) {
+
+				//iterate over all versions
+				Object.keys( mod.versions ).forEach(function iterateCore( version ) {
+					latestVersion = version;
+				});
+
+				return;
+			}
+		});
 	});
 
-	return result;
+	return latestVersion;
+}
+
+
+/*
+ * Get next version of this module
+ *
+ * @param   grunt  [object]  Grunt object
+ *
+ * @return  [string]  Version string of latest version
+ */
+function GetNextVersion( grunt ) {
+	var module = grunt.file.readJSON( 'module.json' );
+	var newVersion = GetLastest( module.ID, grunt ).split(".");
+
+	newVersion[ (newVersion.length - 1) ] = parseInt( newVersion[ (newVersion.length - 1) ] ) + 1;
+
+	return newVersion.join(".");
+}
+
+
+/*
+ * Get latest version of this module
+ *
+ * @param   grunt  [object]  Grunt object
+ *
+ * @return  [string]  Version string of latest version
+ */
+function GetThisVersion( grunt ) {
+	var module = grunt.file.readJSON( 'module.json' );
+	var latestVersion = GetLastest( module.ID, grunt );
+	var options = module.versions[ latestVersion ];
+
+	options.thisVersion = latestVersion;
+
+	return options;
 }
 
 
@@ -77,7 +121,7 @@ function GetCore( grunt, exclude ) {
 	Object.keys( GUI.modules._core ).forEach(function iterateCore( module ) {
 
 		if( module !== exclude ) {
-			var version = GetLastest(module);
+			var version = GetLastest( module, grunt );
 
 			if( GUI.modules._core[module].versions[version].js ) {
 				core.js.push('../' + module + '/' + version + '/js/*.js');
@@ -139,8 +183,9 @@ module.exports = function(grunt) {
 	grunt.recursivelyLoadTasks('grunt-text-replace', '../node_modules');
 	grunt.recursivelyLoadTasks('grunt-lintspaces', '../node_modules');
 	grunt.recursivelyLoadTasks('grunt-grunticon', '../node_modules');
-	grunt.recursivelyLoadTasks('grunt-font', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-prompt', '../node_modules');
 	grunt.recursivelyLoadTasks('grunt-wakeup', '../node_modules');
+	grunt.recursivelyLoadTasks('grunt-font', '../node_modules');
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -266,7 +311,7 @@ module.exports = function(grunt) {
 			brands.forEach(function( brand ) {
 
 				//////////////////////////////////////| CONCAT FILES
-				srcFiles = core.js; //js
+				srcFiles = core.js.slice(0); //js
 				srcFiles.push(version + '/js/*.js');
 
 				concat[ version + 'JS' + brand ] = {
@@ -274,7 +319,7 @@ module.exports = function(grunt) {
 					dest: version + '/tests/' + brand + '/assets/js/gui.js',
 				};
 
-				srcFiles = core.less; //less
+				srcFiles = core.less.slice(0); //less
 				srcFiles.push(version + '/less/module-mixins.less');
 
 				concat[ version + 'Less' + brand ] = {
@@ -516,6 +561,141 @@ module.exports = function(grunt) {
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		// GLOBALS
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		latestVersion: GetThisVersion( grunt ),
+
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		// ADD NEW VERSION
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		prompt: {
+			addNew: { //setup questionnaire
+				options: {
+					questions: [
+						{
+							config: 'version',
+							type: 'list',
+							message: "\n\n" + '		What version would you like to call this?'.magenta + "\n\n",
+							choices: [
+								{
+									value: GetNextVersion( grunt ),
+									name: 'Version: ' + GetNextVersion( grunt ).yellow,
+								},
+								{
+									value: 'custom',
+									name: 'Version: ' + '?.?.?'.yellow,
+								},
+							]
+						},
+						{
+							when: function promptCustomversion( answers ) {
+								return answers['version'] === 'custom';
+							},
+							config: 'version',
+							type: 'input',
+							message: "\n\n" + '		What specific version(?.?.?) would you like it to be?'.magenta + "\n\n",
+						},
+						{
+							config: 'options',
+							type: 'checkbox',
+							message: "\n\n" + '		What is in your new version?'.magenta + "\n\n",
+							choices: [
+								{
+									value: 'js',
+									name: 'Does this version come with ' + 'JS?'.yellow,
+									checked: '<%= latestVersion.js %>',
+								},
+								{
+									value: 'less',
+									name: 'Does this version come with ' + 'Less?'.yellow,
+									checked: '<%= latestVersion.less %>',
+								},
+								{
+									value: 'svg',
+									name: 'Does this version come with ' + 'SVGs?'.yellow,
+									checked: '<%= latestVersion.svg %>',
+								},
+								{
+									value: 'font',
+									name: 'Does this version come with ' + 'webfonts?'.yellow,
+									checked: '<%= latestVersion.font %>',
+								},
+							]
+						},
+						{
+							config: 'dependencies',
+							type: 'input',
+							message: "\n\n" + '		Does this new version have any new dependencies?'.magenta + "\n\n",
+						},
+					],
+					then: function promptThen( results ) {
+						var module = grunt.file.readJSON('module.json');
+						var latestVersion = GetLastest( module.ID, grunt );
+
+						// BUILD THE JSON ENTRY
+						var options = module.versions[ latestVersion ];
+						var dep = options.dependencies;
+						var optionJS = options.js;
+						var optionLESS = options.less;
+						var optionSVG = options.svg;
+						var optionFONT = options.font;
+
+						if( results['dependencies'] ) {
+							dep.push( results['dependencies'] );
+						}
+
+						results['options'].forEach(function iterateOptions( option ) {
+							if( option === 'js' ) {
+								optionJS = true;
+							}
+
+							if( option === 'less' ) {
+								optionLESS = true;
+							}
+
+							if( option === 'svg' ) {
+								optionSVG = true;
+							}
+
+							if( option === 'font' ) {
+								optionFONT = true;
+							}
+						});
+
+						module.versions[ results['version'] ] = {
+							'dependencies': dep,
+							'js': optionJS,
+							'less': optionLESS,
+							'svg': optionSVG,
+							'font': optionFONT,
+							'size': 1,
+						}
+
+						grunt.file.write( 'module.json', JSON.stringify( module, null, "\t" ) );
+						grunt.log.ok( 'Module.json modified.' );
+
+
+						// COPY FILES
+						var copy = {};
+
+						copy[ 'addVersion' ] = {
+							expand: true,
+							cwd: latestVersion,
+							src: '**/*',
+							dest: results['version'],
+						};
+
+						grunt.config.set('copy', copy);
+						grunt.task.run( 'copy' );
+
+					},
+				},
+			},
+		},
+
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// LINT SPACES
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		lintspaces: {
@@ -616,6 +796,14 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('default', [
 		'font',
+		'_build',
+		'connect',
+		'watchVersions',
+	]);
+
+	grunt.registerTask('add', [
+		'font',
+		'prompt',
 		'_build',
 		'connect',
 		'watchVersions',
