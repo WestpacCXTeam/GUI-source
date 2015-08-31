@@ -70,6 +70,7 @@ module.exports = function(grunt) {
 		var core = {};
 		var oldCategory = '';
 		var categories = '<h2 class="body-font">Categories</h2><ul class="category-list">';
+		var modulePos = 1;
 
 
 		//build GUI.json
@@ -101,6 +102,11 @@ module.exports = function(grunt) {
 			Object.keys( GUI.modules[category] ).forEach(function iterateModules( moduleKey ) {
 
 				var module = GUI.modules[category][moduleKey];
+				modulePos++;
+
+				if( modulePos > 2 ) {
+					modulePos = 1;
+				}
 
 				if( core[ module.ID ] !== true ) {
 
@@ -108,9 +114,11 @@ module.exports = function(grunt) {
 						replaceStr += '	<li class="category" id="' + module.ID + '"><small>' + category + '</small></li>';
 
 						categories += '<li><a href="#' + module.ID + '">' + category + '</a></li>';
+
+						modulePos = 1;
 					}
 
-					replaceStr += '	<li class="module"><div class="module-wrapper">' + "\n" +
+					replaceStr += '	<li class="module module-' + modulePos + '"><div class="module-wrapper">' + "\n" +
 						'		<h3 class="body-font module-headline">' + module.name + ' <small class="description">' + module.description + '</small></h3>' + "\n" +
 						'		<ul class="gui-list-version">' + "\n";
 

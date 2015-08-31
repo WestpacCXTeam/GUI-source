@@ -1,7 +1,7 @@
 {
 	"ID": "icons-group12",
 	"name": "Icons-Group 12",
-	"description": "<span class='icon icon-size-sm icon-dropbox'></span> <span class='icon icon-size-sm icon-facebook'></span> <span class='icon icon-size-sm icon-google-plus'></span> <span class='icon icon-size-sm icon-linkedin'></span> <span class='icon icon-size-sm icon-rss'></span> <span class='icon icon-size-sm icon-share'></span> <span class='icon icon-size-sm icon-star1'></span> <span class='icon icon-size-sm icon-star2'></span> <span class='icon icon-size-sm icon-star3'></span> <span class='icon icon-size-sm icon-twitter'></span> <span class='icon icon-size-sm icon-youtube'></span>",
+	"description": "<span class='icon icon-size-sm icon-dropbox'></span> <span class='icon icon-size-sm icon-facebook'></span> <span class='icon icon-size-sm icon-github'></span> <span class='icon icon-size-sm icon-google-plus'></span> <span class='icon icon-size-sm icon-linkedin'></span> <span class='icon icon-size-sm icon-rss'></span> <span class='icon icon-size-sm icon-share'></span> <span class='icon icon-size-sm icon-star1'></span> <span class='icon icon-size-sm icon-star2'></span> <span class='icon icon-size-sm icon-star3'></span> <span class='icon icon-size-sm icon-twitter'></span> <span class='icon icon-size-sm icon-youtube'></span>",
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
@@ -13,7 +13,17 @@
 			"svg": true,
 			"font": false,
 			"size": 37
+		},
+		"1.0.1": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 42
 		}
 	},
-	"hash": "5d16f2f7797cc4e04c30f25f50a2b4bc"
+	"hash": "98710b80e7e0b4bf125749954e4bc524"
 }
