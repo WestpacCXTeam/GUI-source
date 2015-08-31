@@ -1,0 +1,14 @@
+{
+	"dropbox": [".icon-dropbox"],
+	"facebook": [".icon-facebook"],
+	"github": [".icon-github"],
+	"google-plus": [".icon-google-plus"],
+	"linkedin": [".icon-linkedin"],
+	"rss": [".icon-rss"],
+	"share": [".icon-share"],
+	"star1": [".icon-star1"],
+	"star2": [".icon-star2"],
+	"star3": [".icon-star3"],
+	"twitter": [".icon-twitter"],
+	"youtube": [".icon-youtube"]
+}
