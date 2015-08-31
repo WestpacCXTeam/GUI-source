@@ -79,6 +79,10 @@
 			margin: 0;
 		}
 
+		.module.module-1 {
+			clear: left;
+		}
+
 		@media (min-width: 768px) {
 			.module {
 				width: 50%;
@@ -127,6 +131,14 @@
 
 		.gui-list-version {
 			list-style: none;
+		}
+
+		.gui-list-version > li {
+			padding: 0 12px;
+		}
+
+		.gui-list-version > li:nth-child(2n) {
+			background-color: rgba(100,100,100,0.1);
 		}
 
 		.version-headline {
