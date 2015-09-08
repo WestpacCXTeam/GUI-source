@@ -9,7 +9,7 @@
 				"icons-base"
 			],
 			"js": false,
-			"less": false,
+			"less": true,
 			"svg": false,
 			"font": false,
 			"size": 12
