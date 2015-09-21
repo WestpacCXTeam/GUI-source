@@ -1997,6 +1997,9 @@ p > .btn.btn-link {
   background-color: #fff;
   color: #0d0d0d;
 }
+.btn-group-item {
+  display: inline-block;
+}
 .btn-block + .btn-block {
   margin-top: 6px;
 }

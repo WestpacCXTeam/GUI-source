@@ -1990,6 +1990,9 @@ p > .btn.btn-link {
   background-color: #fff;
   color: #004833;
 }
+.btn-group-item {
+  display: inline-block;
+}
 .btn-block + .btn-block {
   margin-top: 6px;
 }
