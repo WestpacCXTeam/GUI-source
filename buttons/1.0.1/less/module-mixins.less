@@ -379,10 +379,6 @@
 		}
 	}
 
-	.btn-group-item {
-		display: inline-block;
-	}
-
 
 	//////////////////////////////////////| BLOCK BUTTONS
 	.btn-block + .btn-block {
@@ -410,6 +406,12 @@
 		}
 
 		.btn-group-item {
+			display: inline-block;
+
+			.ie8 & {
+				display: inline;
+			}
+
 			.btn {
 				border-right-width: 0;
 				border-radius: 0;
@@ -437,6 +439,7 @@
 					border: 0 none;
 					background: transparent;
 					padding: 0 12px 0 6px;
+					height: auto;
 
 					&:hover {
 						color: @color-Text;
@@ -466,6 +469,7 @@
 			}
 		}
 	}
+
 
 	//////////////////////////////////////| BUTTON DROPDOWNS
 	.btn-dropdown {

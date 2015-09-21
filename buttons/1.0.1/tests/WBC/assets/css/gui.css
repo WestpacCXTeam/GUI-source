@@ -1971,9 +1971,6 @@ p > .btn.btn-link {
   background-color: #fff;
   color: #2d373e;
 }
-.btn-group-item {
-  display: inline-block;
-}
 .btn-block + .btn-block {
   margin-top: 6px;
 }
@@ -1997,6 +1994,12 @@ p > .btn.btn-link {
 .btn-group .btn-group-input:hover + .btn {
   outline: none;
 }
+.btn-group .btn-group-item {
+  display: inline-block;
+}
+.ie8 .btn-group .btn-group-item {
+  display: inline;
+}
 .btn-group .btn-group-item .btn {
   border-right-width: 0;
   border-radius: 0;
@@ -2019,6 +2022,7 @@ p > .btn.btn-link {
   border: 0 none;
   background: transparent;
   padding: 0 12px 0 6px;
+  height: auto;
 }
 .ie8 .btn-group .btn-group-item .btn-group-text:hover {
   color: #2d373e;
