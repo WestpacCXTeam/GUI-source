@@ -1937,6 +1937,13 @@ p > .btn.btn-link {
   background-color: #fff;
   color: #333333;
 }
+.btn-group-item .btn svg,
+.btn.btn-soft svg,
+.btn-group-item .btn .icons-background,
+.btn.btn-soft .icons-background {
+  fill: #333333;
+  transition: fill 0.3s ease;
+}
 .btn-dropdown > .btn-group-item .btn .btn-dropdown-caret:after,
 .btn-dropdown > .btn.btn-soft .btn-dropdown-caret:after {
   border-top-color: #333333;
