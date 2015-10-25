@@ -31,7 +31,7 @@
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module render method
 	//
-	// You can run the render method if you want to bypass the length check
+	// You can run the render method if you want to bypass the length check or render elements added dynamically to the DOM after loading
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.render = function alertsRender() {
 		GUI.debugging( 'alerts: Rendering', 'report' );
@@ -39,7 +39,7 @@
 		$('.js-alertclose').not('.js-rendered').on('click', function closeAlert() {
 			GUI.debugging( 'alerts: Closing alert', 'interaction' );
 
-			var $parent = $(this).parent('.alert');
+			var $parent = $(this).parents('.js-alert');
 
 			$parent
 				.addClass('is-closed')

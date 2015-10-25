@@ -213,7 +213,6 @@ GUI.init();
 			GUI.debugging( 'alerts: Found instance', 'report' );
 
 			GUI.alerts.render();
-
 		}
 	};
 
@@ -221,15 +220,15 @@ GUI.init();
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module render method
 	//
-	// Run this method if you inject your DOM
+	// You can run the render method if you want to bypass the length check
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.render = function alertsRender() {
-		GUI.debugging( 'alerts: Render', 'report' );
+		GUI.debugging( 'alerts: Rendering', 'report' );
 
 		$('.js-alertclose').not('.js-rendered').on('click', function closeAlert() {
 			GUI.debugging( 'alerts: Closing alert', 'interaction' );
 
-			var $parent = $(this).parent('.alert');
+			var $parent = $(this).parents('.js-alert');
 
 			$parent
 				.addClass('is-closed')

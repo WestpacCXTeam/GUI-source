@@ -344,17 +344,17 @@ GUI.init();
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module render method
 	//
-	// You can run the render method if you want to bypass the length check
+	// You can run the render method if you want to bypass the length check or render elements added dynamically to the DOM after loading
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.render = function popoversRender() {
-		GUI.debugging( 'popovers: Render', 'report' );
+		GUI.debugging( 'popovers: Rendering', 'report' );
 
 		// CLICK
 		$('.js-popover').not('.js-rendered').on('click', function popoverClick() {
 			GUI.debugging( 'popovers: Popover button clicked', 'interaction' );
 
 			var $this = $(this);
-			var $parent = $this.parent();
+			var $parent = $this.parents('.js-popover-wrapper');
 			var _isOpen = $parent.hasClass('is-open');
 			var $popover = $parent.find('.popover-popup');
 			var $body = $popover.find('.js-popoverbody');
@@ -378,7 +378,7 @@ GUI.init();
 					GUI.popovers.lastFocus.focus();
 				}
 
-				$('.js-popover').parent().removeClass('is-open');
+				$('.js-popover').parents('.js-popover-wrapper').removeClass('is-open');
 				$('.popover-popup').attr('aria-hidden', 'true');
 			}
 		}).addClass('js-rendered');

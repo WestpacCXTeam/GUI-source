@@ -260,10 +260,10 @@ GUI.init();
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module render method
 	//
-	// You can run the render method if you want to bypass the length check
+	// You can run the render method if you want to bypass the length check or render elements added dynamically to the DOM after loading
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.render = function buttonsRender() {
-		GUI.debugging( 'buttons: Render', 'report' );
+		GUI.debugging( 'buttons: Rendering', 'report' );
 
 		$('.dropdown-menu').attr('aria-hidden', 'true');
 
@@ -272,12 +272,13 @@ GUI.init();
 			GUI.debugging( 'buttons: dropdown button clicked', 'interaction' );
 
 			var $this = $(this);
-			var $parent = $this.parent('div');
+			var $parent = $this.parents('.js-dropdown');
 			var $menu = $this.next('.dropdown-menu');
 			var _isOpen = $parent.hasClass('is-open');
 
 			toggelDropdown(_isOpen, $parent, $menu);
 		}).addClass('js-rendered');
+
 
 		//ESC button listener
 		$('.js-button-dropdownbody').not('.js-rendered').keyup(function escapeKey(e) {

@@ -370,10 +370,10 @@ GUI.init();
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module render method
 	//
-	// You can run the render method if you want to bypass the length check
+	// You can run the render method if you want to bypass the length check or render elements added dynamically to the DOM after loading
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	tabcordion.render = function tabcodionsRender() {
-		GUI.debugging( 'tabcordion: Render', 'report' );
+		GUI.debugging( 'tabcordion: Rendering', 'report' );
 
 		$('.js-collapsible').not('.js-rendered').on('click', function clickCollapsible(e) {
 			GUI.debugging( 'collapsible: Collapsible clicked', 'interaction' );
@@ -417,9 +417,15 @@ GUI.init();
 				}
 
 				//adding active states to tabs and headers
-				$tabcordion.find('.js-collapsible').parent().removeClass('is-active');
-				$tabcordion.find('.js-collapsible[data-collapsible="' + target + '"], .js-collapsible[href="' + target + '"]').parent().addClass('is-active');
+				$tabcordion
+					.find('.js-collapsible')
+					.parents('.js-collapsible-tab')
+					.removeClass('is-active');
 
+				$tabcordion
+					.find('.js-collapsible[data-collapsible="' + target + '"], .js-collapsible[href="' + target + '"]')
+					.parents('.js-collapsible-tab')
+					.addClass('is-active');
 			}
 			else {
 				GUI.debugging( 'collapsible: Triggering pure toggle', 'report' );
