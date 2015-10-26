@@ -1,0 +1,28 @@
+GUI Modals
+==========
+
+> Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. Modals should be easy to digest so that the
+> user can quickly get back to what they were doing. Set the initial width of your modal depending on the amount of content you are showing.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### Release History
+
+* v1.0.1 - `LESS/CSS` `JS` `HTML`
+	* xxx
+* v1.0.0 - Initial port
+
+**[⬆ back to top](#content)**
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### License
+
+Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+
+**[⬆ back to top](#content)**
+
+# };
