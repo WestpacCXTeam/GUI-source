@@ -9,9 +9,14 @@ GUI Buttons
 
 ### Release History
 
-* v1.0.2 - ~~`LESS/CSS`~~ `JS` `HTML`
+* v1.0.2 - `LESS/CSS` `JS` `HTML`
 	* We got word that using our JavaScript in dynamic DOM application was a bit... clunky. Clunky wasn't good enough for us so we refactored all Javascript
 		modules to unclunk all the things. Beware though, some JavaScript classes had to be injected to keep the modules clunk-free.
+		[#140](https://github.com/WestpacCXTeam/GUI-source/issues/140)
+	* Differently sized buttons couldn't handle differently sized icons. We thought differently and made it work.
+		[#141](https://github.com/WestpacCXTeam/GUI-source/issues/141)
+	* We are proud to introduce a very handy(we hope) new feature for buttons. Responsive sizes. You can now resize your buttons according to a breakpoint. Now
+		go off and ersize those buttons.
 * v1.0.1 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
 	* All our buttons have a specific height to abide to. When you added an icon in a button however, the buttons seized the opportunity to go rouge and
 		added two pixels. We sat down with them and had a heart-to-heart. Now they know better. [#131](https://github.com/WestpacCXTeam/GUI-source/issues/131)

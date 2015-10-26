@@ -1665,6 +1665,11 @@ a:hover {
  * create buttons for each version with active, hover and disabled styles
  */
 /*
+ * BUTTONS SIZES
+ *
+ * Spit out the width, size and margin of a button for a spesified size
+ */
+/*
 	 *  SETTINGS
 	 */
 .btn {
@@ -1694,17 +1699,30 @@ a:hover {
   transition: background 0.2s ease, color 0.2s ease;
 }
 .btn .btn-text {
-  vertical-align: middle;
+  vertical-align: top;
   display: inline-block;
+  line-height: 0;
+  margin-top: 11px;
 }
 .btn .btn-icon {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   margin-left: 12px;
+  margin-top: 3px;
 }
 .btn .btn-icon.btn-icon-left {
   margin-left: 0;
   margin-right: 3px;
+}
+.btn .btn-icon.icon-size-md,
+.btn .btn-icon.icon-size-lg {
+  width: 16px;
+  height: 16px;
+}
+.btn .btn-icon.icon-size-md svg,
+.btn .btn-icon.icon-size-lg svg {
+  width: 16px;
+  height: 16px;
 }
 .btn.btn-link {
   -webkit-appearance: none;
@@ -1731,23 +1749,261 @@ p > .btn.btn-link {
   display: block;
   width: 100%;
 }
-.btn.btn-xl {
+.btn.btn-xl,
+.btn.btn-xl-xs {
   font-size: 18px;
   padding: 13px 14px;
   line-height: 1.11111111;
   height: 48px;
 }
-.btn.btn-lg {
+.btn.btn-xl .btn-text,
+.btn.btn-xl-xs .btn-text {
+  margin-top: 11px;
+}
+.btn.btn-xl .btn-icon.icon-size-md,
+.btn.btn-xl-xs .btn-icon.icon-size-md,
+.btn.btn-xl .btn-icon.icon-size-lg,
+.btn.btn-xl-xs .btn-icon.icon-size-lg {
+  width: 32px;
+  height: 32px;
+  margin-top: -6px;
+  vertical-align: top;
+}
+.btn.btn-xl .btn-icon.icon-size-md svg,
+.btn.btn-xl-xs .btn-icon.icon-size-md svg,
+.btn.btn-xl .btn-icon.icon-size-lg svg,
+.btn.btn-xl-xs .btn-icon.icon-size-lg svg {
+  width: 32px;
+  height: 32px;
+}
+.btn.btn-lg,
+.btn.btn-lg-xs {
   padding: 10px 14px 9px 14px;
   line-height: 1.33;
   height: 42px;
 }
-.btn.btn-sm {
+.btn.btn-lg .btn-text,
+.btn.btn-lg-xs .btn-text {
+  margin-top: 10px;
+}
+.btn.btn-sm,
+.btn.btn-sm-xs {
   padding: 4px 10px 3px 10px;
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
   height: 30px;
+}
+.btn.btn-sm .btn-text,
+.btn.btn-sm-xs .btn-text {
+  margin-top: 10px;
+}
+@media (min-width: 768px) {
+  .btn.btn-sm-sm {
+    padding: 4px 10px 3px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    height: 30px;
+  }
+  .btn.btn-sm-sm .btn-text {
+    margin-top: 10px;
+  }
+  .btn.btn-md-sm {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid #c6c5cb;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 36px;
+  }
+  .btn.btn-md-sm .btn-text {
+    vertical-align: top;
+    display: inline-block;
+    line-height: 0;
+    margin-top: 11px;
+  }
+  .btn.btn-lg-sm {
+    padding: 10px 14px 9px 14px;
+    line-height: 1.33;
+    height: 42px;
+  }
+  .btn.btn-lg-sm .btn-text {
+    margin-top: 10px;
+  }
+  .btn.btn-xl-sm {
+    font-size: 18px;
+    padding: 13px 14px;
+    line-height: 1.11111111;
+    height: 48px;
+  }
+  .btn.btn-xl-sm .btn-text {
+    margin-top: 11px;
+  }
+  .btn.btn-xl-sm .btn-icon.icon-size-md,
+  .btn.btn-xl-sm .btn-icon.icon-size-lg {
+    width: 32px;
+    height: 32px;
+    margin-top: -6px;
+    vertical-align: top;
+  }
+  .btn.btn-xl-sm .btn-icon.icon-size-md svg,
+  .btn.btn-xl-sm .btn-icon.icon-size-lg svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .btn.btn-sm-md {
+    padding: 4px 10px 3px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    height: 30px;
+  }
+  .btn.btn-sm-md .btn-text {
+    margin-top: 10px;
+  }
+  .btn.btn-md-md {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid #c6c5cb;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 36px;
+  }
+  .btn.btn-md-md .btn-text {
+    vertical-align: top;
+    display: inline-block;
+    line-height: 0;
+    margin-top: 11px;
+  }
+  .btn.btn-lg-md {
+    padding: 10px 14px 9px 14px;
+    line-height: 1.33;
+    height: 42px;
+  }
+  .btn.btn-lg-md .btn-text {
+    margin-top: 10px;
+  }
+  .btn.btn-xl-md {
+    font-size: 18px;
+    padding: 13px 14px;
+    line-height: 1.11111111;
+    height: 48px;
+  }
+  .btn.btn-xl-md .btn-text {
+    margin-top: 11px;
+  }
+  .btn.btn-xl-md .btn-icon.icon-size-md,
+  .btn.btn-xl-md .btn-icon.icon-size-lg {
+    width: 32px;
+    height: 32px;
+    margin-top: -6px;
+    vertical-align: top;
+  }
+  .btn.btn-xl-md .btn-icon.icon-size-md svg,
+  .btn.btn-xl-md .btn-icon.icon-size-lg svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .btn.btn-sm-lg {
+    padding: 4px 10px 3px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    height: 30px;
+  }
+  .btn.btn-sm-lg .btn-text {
+    margin-top: 10px;
+  }
+  .btn.btn-md-lg {
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid #c6c5cb;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 36px;
+  }
+  .btn.btn-md-lg .btn-text {
+    vertical-align: top;
+    display: inline-block;
+    line-height: 0;
+    margin-top: 11px;
+  }
+  .btn.btn-lg-lg {
+    padding: 10px 14px 9px 14px;
+    line-height: 1.33;
+    height: 42px;
+  }
+  .btn.btn-lg-lg .btn-text {
+    margin-top: 10px;
+  }
+  .btn.btn-xl-lg {
+    font-size: 18px;
+    padding: 13px 14px;
+    line-height: 1.11111111;
+    height: 48px;
+  }
+  .btn.btn-xl-lg .btn-text {
+    margin-top: 11px;
+  }
+  .btn.btn-xl-lg .btn-icon.icon-size-md,
+  .btn.btn-xl-lg .btn-icon.icon-size-lg {
+    width: 32px;
+    height: 32px;
+    margin-top: -6px;
+    vertical-align: top;
+  }
+  .btn.btn-xl-lg .btn-icon.icon-size-md svg,
+  .btn.btn-xl-lg .btn-icon.icon-size-lg svg {
+    width: 32px;
+    height: 32px;
+  }
 }
 .btn-group-input:checked + .btn {
   color: #716f7d;

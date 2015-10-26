@@ -1686,19 +1686,33 @@
 		height: 36px;
 
 		.btn-text {
-			vertical-align: middle;
+			vertical-align: top;
 			display: inline-block;
+			line-height: 0;
+			margin-top: 11px;
 		}
 
 		//btn icons
 		.btn-icon {
 			display: inline-block;
-			vertical-align: middle;
+			vertical-align: top;
 			margin-left: 12px;
+			margin-top: 3px;
 
 			&.btn-icon-left {
 				margin-left: 0;
 				margin-right: 3px;
+			}
+
+			&.icon-size-md,
+			&.icon-size-lg {
+				width: 16px;
+				height: 16px;
+
+				svg {
+					width: 16px;
+					height: 16px;
+				}
 			}
 		}
 
@@ -1734,25 +1748,75 @@
 		}
 
 		//btn sizing
-		&.btn-xl {
-			font-size: 18px;
-			padding: 13px 14px;
-			line-height: 1.11111111;
-			height: 48px;
+		&.btn-xl,
+		&.btn-xl-xs {
+			._buttons-size( xl )
 		}
 
-		&.btn-lg {
-			padding: 10px 14px 9px 14px;
-			line-height: 1.33;
-			height: 42px;
+		&.btn-lg,
+		&.btn-lg-xs {
+			._buttons-size( lg )
 		}
 
-		&.btn-sm {
-			padding: 4px 10px 3px 10px;
-			font-size: 14px;
-			line-height: 1.5;
-			font-weight: 400;
-			height: 30px;
+		&.btn-sm,
+		&.btn-sm-xs {
+			._buttons-size( sm )
+		}
+
+		//responsive sizes
+		@media (min-width: @screen-sm) { //////////////////////////////////////|  SM
+			&.btn-sm-sm {
+				._buttons-size( sm );
+			}
+
+			&.btn-md-sm {
+				._buttons-size( md );
+			}
+
+			&.btn-lg-sm {
+				._buttons-size( lg );
+			}
+
+			&.btn-xl-sm {
+				._buttons-size( xl );
+			}
+
+		}
+
+		@media (min-width: @screen-md) { //////////////////////////////////////|  MD
+			&.btn-sm-md {
+				._buttons-size( sm )
+			}
+
+			&.btn-md-md {
+				._buttons-size( md )
+			}
+
+			&.btn-lg-md {
+				._buttons-size( lg )
+			}
+
+			&.btn-xl-md {
+				._buttons-size( xl )
+			}
+		}
+
+		@media (min-width: @screen-lg) { //////////////////////////////////////|  LG
+			&.btn-sm-lg {
+				._buttons-size( sm )
+			}
+
+			&.btn-md-lg {
+				._buttons-size( md )
+			}
+
+			&.btn-lg-lg {
+				._buttons-size( lg )
+			}
+
+			&.btn-xl-lg {
+				._buttons-size( xl )
+			}
 		}
 
 		//all btn color versions
@@ -2244,6 +2308,87 @@
 			cursor: not-allowed;
 		}
 	}
+}
+
+
+/*
+ * BUTTONS SIZES
+ *
+ * Spit out the width, size and margin of a button for a spesified size
+ */
+._buttons-size( @size ) {
+	.getSize() when (@size = sm) {
+		padding: 4px 10px 3px 10px;
+		font-size: 14px;
+		line-height: 1.5;
+		font-weight: 400;
+		height: 30px;
+
+		.btn-text {
+			margin-top: 10px;
+		}
+	}
+
+	.getSize() when (@size = md) {
+		padding: 5px 12px;
+		border-radius: 6px;
+		font-size: 16px;
+		font-weight: 400;
+		white-space: nowrap;
+		display: inline-block;
+		text-align: center;
+		vertical-align: middle;
+		touch-action: manipulation;
+		cursor: pointer;
+		border: 1px solid @faint-bordercolor;
+		user-select: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		height: 36px;
+
+		.btn-text {
+			vertical-align: top;
+			display: inline-block;
+			line-height: 0;
+			margin-top: 11px;
+		}
+	}
+
+	.getSize() when (@size = lg) {
+		padding: 10px 14px 9px 14px;
+		line-height: 1.33;
+		height: 42px;
+
+		.btn-text {
+			margin-top: 10px;
+		}
+	}
+
+	.getSize() when (@size = xl) {
+		font-size: 18px;
+		padding: 13px 14px;
+		line-height: 1.11111111;
+		height: 48px;
+
+		.btn-text {
+			margin-top: 11px;
+		}
+
+		.btn-icon.icon-size-md,
+		.btn-icon.icon-size-lg {
+			width: 32px;
+			height: 32px;
+			margin-top: -6px;
+			vertical-align: top;
+
+			svg {
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+	.getSize();
 }
 
 
