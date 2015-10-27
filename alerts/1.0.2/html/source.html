@@ -1,0 +1,172 @@
+<script>
+	/*! grunt-grunticon Stylesheet Loader - v2.1.7 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+	(function(e){function n(n,t,o,a){"use strict";var i=e.document.createElement("link"),r=t||e.document.getElementsByTagName("script")[0],d=e.document.styleSheets;return i.rel="stylesheet",i.href=n,i.media="only x",a&&(i.onload=a),r.parentNode.insertBefore(i,r),i.onloadcssdefined=function(e){for(var t,o=0;d.length>o;o++)d[o].href&&d[o].href.indexOf(n)>-1&&(t=!0);t?e():setTimeout(function(){i.onloadcssdefined(e)})},i.onloadcssdefined(function(){i.media=o||"all"}),i}function t(e,n){e.onload=function(){e.onload=null,n&&n.call(e)},"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}var o=function(a,i){"use strict";if(a&&3===a.length){var r=e.Image,d=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===navigator.userAgent.indexOf("Chrome")||-1!==navigator.userAgent.indexOf("Series40")),c=new r;c.onerror=function(){o.method="png",o.href=a[2],n(a[2])},c.onload=function(){var e=1===c.width&&1===c.height,r=a[e&&d?0:e?1:2];o.method=e&&d?"svg":e?"datapng":"png",o.href=r,t(n(r),i)},c.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};o.loadCSS=n,o.onloadCSS=t,e.grunticon=o})(this);(function(e,n){"use strict";var t=n.document,o="grunticon:",r=function(e){if(t.attachEvent?"complete"===t.readyState:"loading"!==t.readyState)e();else{var n=!1;t.addEventListener("readystatechange",function(){n||(n=!0,e())},!1)}},a=function(e){return n.document.querySelector('link[href$="'+e+'"]')},i=function(e){var n,t,r,a,i,c,s={};if(n=e.sheet,!n)return s;t=n.cssRules?n.cssRules:n.rules;for(var d=0;t.length>d;d++)r=t[d].cssText,a=o+t[d].selectorText,i=r.split(");")[0].match(/US\-ASCII\,([^"']+)/),i&&i[1]&&(c=decodeURIComponent(i[1]),s[a]=c);return s},c=function(e){var n,r,a,i;a="data-grunticon-embed";for(var c in e){i=c.slice(o.length);try{n=t.querySelectorAll(i)}catch(s){continue}r=[];for(var d=0;n.length>d;d++)null!==n[d].getAttribute(a)&&r.push(n[d]);if(r.length)for(d=0;r.length>d;d++)r[d].innerHTML=e[c],r[d].style.backgroundImage="none",r[d].removeAttribute(a)}return r},s=function(n){"svg"===e.method&&r(function(){c(i(a(e.href))),"function"==typeof n&&n()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=s,e.embedSVG=s})(grunticon,this);
+	grunticon(["../../../../icons-group15/1.0.0/tests/[Brand]/assets/css/symbols.data.svg.css", "../../../../icons-group15/1.0.0/tests/[Brand]/assets/css/symbols.data.png.css", "../../../../icons-group15/1.0.0/tests/[Brand]/assets/css/symbols.fallback.css"], grunticon.svgLoadedCallback);
+</script>
+<link rel="stylesheet" href="../../../../icons-group15/1.0.0/tests/[Brand]/assets/css/symbols.data.svg.css">
+<link rel="stylesheet" href="../../../../icons-base/1.0.0/tests/[Brand]/assets/css/gui.css">
+
+<h2>alerts in text</h2>
+
+<p class="text-success">
+	I'm text-success. I'm accessible.
+</p>
+
+<p class="text-info">
+	I'm text-info. I'm accessible. Please don't use me for anything else.
+</p>
+
+<p class="text-warning">
+	I'm text-warning. I'm accessible. Don't use me for anything else either.
+</p>
+
+<p class="text-danger">
+	I'm text-danger. I'm accessible too
+</p>
+
+
+<hr>
+<h2>alerts boxes with buttons</h2>
+
+<div class="alert alert-success js-alert" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-cross" data-grunticon-embed>close</button>
+
+	<strong>Well done!</strong> You successfully read this important alert message.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor provident quasi nisi officia tempore fuga autem, animi iste molestiae, qui omnis
+	doloribus aliquid ipsam rem fugiat veniam voluptatem accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, unde quis, molestias nisi
+	quae voluptates nemo quaerat nihil, consequuntur nobis ratione rerum asperiores eveniet dicta maiores quia nostrum. Pariatur, natus.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, magnam illum harum consequatur, quo sunt impedit quam minus eaque saepe voluptas
+	corrupti voluptatum, sapiente dolor sequi tempore maxime? Neque, obcaecati.
+</div>
+
+<div class="alert alert-info js-alert" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-cross" data-grunticon-embed>close</button>
+
+	<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+
+<div class="alert alert-warning js-alert" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-cross" data-grunticon-embed>close</button>
+
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+
+<div class="alert alert-danger js-alert" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-cross" data-grunticon-embed>close</button>
+
+	<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<div class="alert alert-system js-alert" role="alert">
+	<button type="button" class="alert-close js-alertclose icon icon-cross" data-grunticon-embed>close</button>
+
+	<strong>System Error 8942:</strong> The server is no responding. Please try again later. Sorry for the inconvenience.
+</div>
+
+
+<hr>
+<h2>alerts boxes without buttons</h2>
+
+<div class="alert alert-success" role="alert">
+	<strong>Well done!</strong> You successfully read this important alert message.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo dolor provident quasi nisi officia tempore fuga autem, animi iste molestiae, qui omnis
+	doloribus aliquid ipsam rem fugiat veniam voluptatem accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, unde quis, molestias nisi
+	quae voluptates nemo quaerat nihil, consequuntur nobis ratione rerum asperiores eveniet dicta maiores quia nostrum. Pariatur, natus.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, magnam illum harum consequatur, quo sunt impedit quam minus eaque saepe voluptas
+	corrupti voluptatum, sapiente dolor sequi tempore maxime? Neque, obcaecati.
+</div>
+
+<div class="alert alert-info" role="alert">
+	<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+</div>
+
+<div class="alert alert-warning" role="alert">
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</div>
+
+<div class="alert alert-danger" role="alert">
+	<strong>Oh snap!</strong> Change a few things up and try submitting again.
+</div>
+
+<div class="alert alert-system" role="alert">
+	<strong>System Error 8942:</strong> The server is no responding. Please try again later. Sorry for the inconvenience.
+</div>
+
+
+<hr>
+<h2>alerts in labels</h2>
+<link rel="stylesheet" href="../../../../labels/1.0.0/tests/[Brand]/assets/css/gui.css">
+
+<a href="#link" class="label label-success">Success</a>
+<a href="#link" class="label label-info">Info</a>
+<a href="#link" class="label label-warning">Warning</a>
+<a href="#link" class="label label-danger">Danger</a>
+
+<br><br>
+
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+
+
+<hr>
+<h2>alerts in forms</h2>
+<link rel="stylesheet" href="../../../../input-fields/1.0.0/tests/[Brand]/assets/css/gui.css">
+
+
+<label for="ex1">Some label</label>
+<div class="alert-form">
+	<input type="text" id="ex1" class="input-field" placeholder="I'm a xl text input" aria-describedby="txt1">
+	<p id="txt1" class="alert-form-msg">This should not show g h f.</p>
+</div>
+
+<label for="ex2">Some label</label>
+<div class="alert-form has-success">
+	<input type="text" id="ex2" class="input-field input-field-xl" placeholder="I'm a xl text input" aria-describedby="txt2">
+	<p id="txt2" class="alert-form-msg">Success! We can approve this amount g h f.</p>
+</div>
+
+<label for="ex3">Some label</label>
+<div class="alert-form has-info">
+	<input type="password" id="ex3" class="input-field input-field-lg" placeholder="I'm a lg text input" aria-describedby="txt3">
+	<p id="txt3" class="alert-form-msg">Info! At least 10 characters g h f</p>
+</div>
+
+<label for="ex4">Some label</label>
+<div class="alert-form has-warning">
+	<input type="text" id="ex4" class="input-field" placeholder="I'm a default text input" aria-describedby="txt4">
+	<p id="txt4" class="alert-form-msg">Warning! Are you sure this is your name g h f?</p>
+</div>
+
+<label for="ex5">Some label</label>
+<div class="alert-form has-danger">
+	<input type="text" id="ex5" class="input-field input-field-sm" placeholder="I'm a sm text input" aria-describedby="txt5">
+	<p id="txt5" class="alert-form-msg">Danger! Your email address has an error in it g h f.</p>
+</div>
+
+<label for="ex6">Some label</label>
+<div class="alert-form has-danger">
+	<textarea class="input-field" id="ex6" placeholder="I'm a default textarea" aria-describedby="txt6"></textarea>
+	<p id="txt6" class="alert-form-msg">We can approve this amount g h f.</p>
+</div>
+
+<label for="ex7">Some label</label>
+<div class="alert-form has-danger">
+	<div class="input-field-select-wrapper">
+		<select class="input-field-select" id="ex7" aria-describedby="txt7">
+			<option>Please select g h f</option>
+			<option>Option A</option>
+			<option>Option B</option>
+			<option>Option C</option>
+			<option>Option D</option>
+			<option>Option E</option>
+			<option>Option F</option>
+			<option>Option G</option>
+		</select>
+	</div>
+
+	<p id="txt7" class="alert-form-msg">We can approve this amount g h f.</p>
+</div>
+
+<br><br><br><br><br><br><br><br>
