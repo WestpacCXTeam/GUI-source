@@ -1,0 +1,176 @@
+/*![Module-Version-Brand]*/
+/*
+ * popovers mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| popovers mixin
+._popovers( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.popover-wrapper {
+		display: inline-block;
+		position: relative;
+	}
+
+	.is-open {
+		//////////////////////////////////////| DISMISSIBLE
+		.popover.popover-dismissible {
+			&:after {
+				content: " ";
+				position: fixed;
+				z-index: 100;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: transparent;
+			}
+		}
+
+		//////////////////////////////////////| POSITIONING
+		&.is-bottom {
+			.popover-popup {
+				bottom: auto;
+				top: 100%;
+				margin-top: 23px;
+
+				&:before,
+				&:after {
+					bottom: auto;
+					top: -36px;
+					border-top-color: transparent;
+					border-bottom: 18px solid @color-Muted;
+				}
+
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.popover-popup {
+		position: absolute;
+		display: block;
+		left: 50%;
+		bottom: 100%;
+		width: 282px;
+		margin: 0 0 21px -131px;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 3px;
+		border: 1px solid @color-Muted;
+		z-index: 105;
+		background-color: #fff;
+		pointer-events: all;
+		transform: translateZ(0);
+
+		&:focus {
+			.outline();
+		}
+
+		&:before,
+		&:after {
+			content: " ";
+			position: absolute;
+			bottom: -17px;
+			left: 50%;
+			margin-left: -21px;
+			width: 0;
+			border-top: 18px solid #fff;
+			border-right: 12px solid transparent;
+			border-left: 12px solid transparent;
+			font-size: 0;
+			line-height: 0;
+			z-index: 105;
+		}
+
+		&:before {
+			bottom: -19px;
+			border-top-color: @color-Muted;
+			z-index: 105;
+		}
+
+		.popover-popup-title,
+		.popover-popup-body {
+			display: block;
+			white-space: normal;
+			padding: 10px 12px;
+			margin: 0;
+			text-align: left;
+			color: @color-Text;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 1.428571429;
+		}
+
+		.popover-popup-title {
+			background-color: @color-Muted;
+			color: #fff;
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		.popover-popup-body {
+			min-height: 60px;
+			padding-bottom: 18px;
+		}
+
+		.js & {
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.2s ease;
+		}
+
+		.no-js & {
+			position: static;
+			margin-left: 12px;
+			box-shadow: none;
+			float: right;
+
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+
+		.is-open & {
+			opacity: 1;
+			visibility: visible;
+		}
+
+	}
+
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.popover-popup-title {
+			border-bottom: 1px solid #000;
+		}
+	}
+}
+
+
+//////////////////////////////////////| popovers
+._popovers( [Brand] );
