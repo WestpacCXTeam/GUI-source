@@ -1,0 +1,17 @@
+{
+	"ID": "switches",
+	"name": "Switches",
+	"description": "Switch buttons for on/off, yes/no settings.",
+	"category": "Buttons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 5
+		}
+	},
+	"hash": "6eb0f3dab53b71f401baf302d8293814"
+}
