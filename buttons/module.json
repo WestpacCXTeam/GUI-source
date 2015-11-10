@@ -27,14 +27,6 @@
 			"svg": false,
 			"font": false,
 			"size": 23
-		},
-		"1.0.3": {
-			"dependencies": [],
-			"js": true,
-			"less": true,
-			"svg": false,
-			"font": false,
-			"size": 23
 		}
 	},
 	"hash": "4d969293ebe460c542ac7ac016d0ee5a"
