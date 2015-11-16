@@ -10,8 +10,8 @@ GUI Text-styling
 
 ### Release History
 
-* v1.0.1 - Being all accessible means we highlight links when they are focused for better readablitity. We still do it but now only for keyboard users.
-	We also added styling for text selection. Now more trendy and more brandy.
+* v1.0.1 - Being all accessible means we highlight links when they are focused for better readability. We still do it but now only for keyboard users.
+	We also added styling for text selection. Now more trendy, more brandy.
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
