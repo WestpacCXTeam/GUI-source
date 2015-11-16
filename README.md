@@ -156,7 +156,7 @@ The `module.json` file that is then compiled into the GUI.json file is the engin
       "size": 27
     }
   },
-  "hash": "f718a7d02eab6d114b8375aca7c23d98"    //hashsum of this module
+  "hash": "f718a7d02eab6d114b8375aca7c23d98"    #hashsum of this module
 }
 ```
 
