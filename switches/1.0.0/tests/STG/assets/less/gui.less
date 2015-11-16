@@ -1601,77 +1601,74 @@
 
 
 		//sizes
-		&.switch-sm {
-			height: 30px;
-			width: 70px;
+		&.switch-sm,
+		&.switch-sm-xs {
+			._switches-size(sm);
+		}
 
-			.switch-text {
-				height: 30px;
-				padding: 3px 0;
-				font-size: 14px;
+		&.switch-lg,
+		&.switch-lg-xs {
+			._switches-size(lg);
+		}
 
-				.switch-text-off,
-				.switch-text-on {
-					width: 40px;
-				}
+		&.switch-xl,
+		&.switch-xl-xs {
+			._switches-size(xl);
+		}
 
-				&:after {
-					width: 26px;
-					height: 26px;
-				}
+		//responsive sizes
+		@media (min-width: @screen-sm) { //////////////////////////////////////|  SM
+			&.switch-sm-sm {
+				._switches-size( sm );
 			}
 
-			.switch-input:checked + .switch-text:after {
-				left: 42px;
+			&.switch-md-sm {
+				._switches-size( md );
+			}
+
+			&.switch-lg-sm {
+				._switches-size( lg );
+			}
+
+			&.switch-xl-sm {
+				._switches-size( xl );
+			}
+
+		}
+
+		@media (min-width: @screen-md) { //////////////////////////////////////|  MD
+			&.switch-sm-md {
+				._switches-size( sm );
+			}
+
+			&.switch-md-md {
+				._switches-size( md );
+			}
+
+			&.switch-lg-md {
+				._switches-size( lg );
+			}
+
+			&.switch-xl-md {
+				._switches-size( xl );
 			}
 		}
 
-		&.switch-lg {
-			height: 42px;
-			width: 89px;
-
-			.switch-text {
-				height: 42px;
-				padding: 9px 0;
-
-				.switch-text-off,
-				.switch-text-on {
-					width: 47px;
-				}
-
-				&:after {
-					width: 38px;
-					height: 38px;
-				}
+		@media (min-width: @screen-lg) { //////////////////////////////////////|  LG
+			&.switch-sm-lg {
+				._switches-size( sm );
 			}
 
-			.switch-input:checked + .switch-text:after {
-				left: 49px;
-			}
-		}
-
-		&.switch-xl {
-			height: 48px;
-			width: 96px;
-
-			.switch-text {
-				height: 48px;
-				padding: 10px 0;
-				font-size: 18px;
-
-				.switch-text-off,
-				.switch-text-on {
-					width: 48px;
-				}
-
-				&:after {
-					width: 44px;
-					height: 44px;
-				}
+			&.switch-md-lg {
+				._switches-size( md );
 			}
 
-			.switch-input:checked + .switch-text:after {
-				left: 50px;
+			&.switch-lg-lg {
+				._switches-size( lg );
+			}
+
+			&.switch-xl-lg {
+				._switches-size( xl );
 			}
 		}
 
@@ -1704,6 +1701,110 @@
 			}
 		}
 	}
+}
+
+
+/*
+ * SWITCH SIZES
+ *
+ * Spit out the width, size and margin of a switch for a spesified size
+ */
+._switches-size( @size ) {
+	.getSize() when (@size = sm) { //SMALL
+		height: 30px;
+		width: 70px;
+
+		.switch-text {
+			height: 30px;
+			padding: 3px 0;
+			font-size: 14px;
+
+			.switch-text-off,
+			.switch-text-on {
+				width: 40px;
+			}
+
+			&:after {
+				width: 26px;
+				height: 26px;
+			}
+		}
+
+		.switch-input:checked + .switch-text:after {
+			left: 42px;
+		}
+	}
+
+	.getSize() when (@size = md) { //MEDIUM
+		width: 80px;
+		height: 36px;
+
+		.switch-text {
+			height: 36px;
+			padding: 6px 0;
+			font-size: 16px;
+
+			.switch-text-off,
+			.switch-text-on {
+				width: 44px;
+			}
+
+			&:after {
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+
+	.getSize() when (@size = lg) { //LARGE
+		height: 42px;
+		width: 89px;
+
+		.switch-text {
+			height: 42px;
+			padding: 9px 0;
+
+			.switch-text-off,
+			.switch-text-on {
+				width: 47px;
+			}
+
+			&:after {
+				width: 38px;
+				height: 38px;
+			}
+		}
+
+		.switch-input:checked + .switch-text:after {
+			left: 49px;
+		}
+	}
+
+	.getSize() when (@size = xl) { //EXTRA LARGE
+		height: 48px;
+		width: 96px;
+
+		.switch-text {
+			height: 48px;
+			padding: 10px 0;
+			font-size: 18px;
+
+			.switch-text-off,
+			.switch-text-on {
+				width: 48px;
+			}
+
+			&:after {
+				width: 44px;
+				height: 44px;
+			}
+		}
+
+		.switch-input:checked + .switch-text:after {
+			left: 50px;
+		}
+	}
+	.getSize();
 }
 
 

@@ -1631,6 +1631,11 @@ a:hover {
  *
  */
 /*
+ * SWITCH SIZES
+ *
+ * Spit out the width, size and margin of a switch for a spesified size
+ */
+/*
 	 *  SETTINGS
 	 */
 .switch {
@@ -1718,64 +1723,316 @@ a:hover {
   left: 46px;
   box-shadow: -3px 0px 6px 0px rgba(0, 0, 0, 0.3);
 }
-.switch.switch-sm {
+.switch.switch-sm,
+.switch.switch-sm-xs {
   height: 30px;
   width: 70px;
 }
-.switch.switch-sm .switch-text {
+.switch.switch-sm .switch-text,
+.switch.switch-sm-xs .switch-text {
   height: 30px;
   padding: 3px 0;
   font-size: 14px;
 }
 .switch.switch-sm .switch-text .switch-text-off,
-.switch.switch-sm .switch-text .switch-text-on {
+.switch.switch-sm-xs .switch-text .switch-text-off,
+.switch.switch-sm .switch-text .switch-text-on,
+.switch.switch-sm-xs .switch-text .switch-text-on {
   width: 40px;
 }
-.switch.switch-sm .switch-text:after {
+.switch.switch-sm .switch-text:after,
+.switch.switch-sm-xs .switch-text:after {
   width: 26px;
   height: 26px;
 }
-.switch.switch-sm .switch-input:checked + .switch-text:after {
+.switch.switch-sm .switch-input:checked + .switch-text:after,
+.switch.switch-sm-xs .switch-input:checked + .switch-text:after {
   left: 42px;
 }
-.switch.switch-lg {
+.switch.switch-lg,
+.switch.switch-lg-xs {
   height: 42px;
   width: 89px;
 }
-.switch.switch-lg .switch-text {
+.switch.switch-lg .switch-text,
+.switch.switch-lg-xs .switch-text {
   height: 42px;
   padding: 9px 0;
 }
 .switch.switch-lg .switch-text .switch-text-off,
-.switch.switch-lg .switch-text .switch-text-on {
+.switch.switch-lg-xs .switch-text .switch-text-off,
+.switch.switch-lg .switch-text .switch-text-on,
+.switch.switch-lg-xs .switch-text .switch-text-on {
   width: 47px;
 }
-.switch.switch-lg .switch-text:after {
+.switch.switch-lg .switch-text:after,
+.switch.switch-lg-xs .switch-text:after {
   width: 38px;
   height: 38px;
 }
-.switch.switch-lg .switch-input:checked + .switch-text:after {
+.switch.switch-lg .switch-input:checked + .switch-text:after,
+.switch.switch-lg-xs .switch-input:checked + .switch-text:after {
   left: 49px;
 }
-.switch.switch-xl {
+.switch.switch-xl,
+.switch.switch-xl-xs {
   height: 48px;
   width: 96px;
 }
-.switch.switch-xl .switch-text {
+.switch.switch-xl .switch-text,
+.switch.switch-xl-xs .switch-text {
   height: 48px;
   padding: 10px 0;
   font-size: 18px;
 }
 .switch.switch-xl .switch-text .switch-text-off,
-.switch.switch-xl .switch-text .switch-text-on {
+.switch.switch-xl-xs .switch-text .switch-text-off,
+.switch.switch-xl .switch-text .switch-text-on,
+.switch.switch-xl-xs .switch-text .switch-text-on {
   width: 48px;
 }
-.switch.switch-xl .switch-text:after {
+.switch.switch-xl .switch-text:after,
+.switch.switch-xl-xs .switch-text:after {
   width: 44px;
   height: 44px;
 }
-.switch.switch-xl .switch-input:checked + .switch-text:after {
+.switch.switch-xl .switch-input:checked + .switch-text:after,
+.switch.switch-xl-xs .switch-input:checked + .switch-text:after {
   left: 50px;
+}
+@media (min-width: 768px) {
+  .switch.switch-sm-sm {
+    height: 30px;
+    width: 70px;
+  }
+  .switch.switch-sm-sm .switch-text {
+    height: 30px;
+    padding: 3px 0;
+    font-size: 14px;
+  }
+  .switch.switch-sm-sm .switch-text .switch-text-off,
+  .switch.switch-sm-sm .switch-text .switch-text-on {
+    width: 40px;
+  }
+  .switch.switch-sm-sm .switch-text:after {
+    width: 26px;
+    height: 26px;
+  }
+  .switch.switch-sm-sm .switch-input:checked + .switch-text:after {
+    left: 42px;
+  }
+  .switch.switch-md-sm {
+    width: 80px;
+    height: 36px;
+  }
+  .switch.switch-md-sm .switch-text {
+    height: 36px;
+    padding: 6px 0;
+    font-size: 16px;
+  }
+  .switch.switch-md-sm .switch-text .switch-text-off,
+  .switch.switch-md-sm .switch-text .switch-text-on {
+    width: 44px;
+  }
+  .switch.switch-md-sm .switch-text:after {
+    width: 32px;
+    height: 32px;
+  }
+  .switch.switch-lg-sm {
+    height: 42px;
+    width: 89px;
+  }
+  .switch.switch-lg-sm .switch-text {
+    height: 42px;
+    padding: 9px 0;
+  }
+  .switch.switch-lg-sm .switch-text .switch-text-off,
+  .switch.switch-lg-sm .switch-text .switch-text-on {
+    width: 47px;
+  }
+  .switch.switch-lg-sm .switch-text:after {
+    width: 38px;
+    height: 38px;
+  }
+  .switch.switch-lg-sm .switch-input:checked + .switch-text:after {
+    left: 49px;
+  }
+  .switch.switch-xl-sm {
+    height: 48px;
+    width: 96px;
+  }
+  .switch.switch-xl-sm .switch-text {
+    height: 48px;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .switch.switch-xl-sm .switch-text .switch-text-off,
+  .switch.switch-xl-sm .switch-text .switch-text-on {
+    width: 48px;
+  }
+  .switch.switch-xl-sm .switch-text:after {
+    width: 44px;
+    height: 44px;
+  }
+  .switch.switch-xl-sm .switch-input:checked + .switch-text:after {
+    left: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .switch.switch-sm-md {
+    height: 30px;
+    width: 70px;
+  }
+  .switch.switch-sm-md .switch-text {
+    height: 30px;
+    padding: 3px 0;
+    font-size: 14px;
+  }
+  .switch.switch-sm-md .switch-text .switch-text-off,
+  .switch.switch-sm-md .switch-text .switch-text-on {
+    width: 40px;
+  }
+  .switch.switch-sm-md .switch-text:after {
+    width: 26px;
+    height: 26px;
+  }
+  .switch.switch-sm-md .switch-input:checked + .switch-text:after {
+    left: 42px;
+  }
+  .switch.switch-md-md {
+    width: 80px;
+    height: 36px;
+  }
+  .switch.switch-md-md .switch-text {
+    height: 36px;
+    padding: 6px 0;
+    font-size: 16px;
+  }
+  .switch.switch-md-md .switch-text .switch-text-off,
+  .switch.switch-md-md .switch-text .switch-text-on {
+    width: 44px;
+  }
+  .switch.switch-md-md .switch-text:after {
+    width: 32px;
+    height: 32px;
+  }
+  .switch.switch-lg-md {
+    height: 42px;
+    width: 89px;
+  }
+  .switch.switch-lg-md .switch-text {
+    height: 42px;
+    padding: 9px 0;
+  }
+  .switch.switch-lg-md .switch-text .switch-text-off,
+  .switch.switch-lg-md .switch-text .switch-text-on {
+    width: 47px;
+  }
+  .switch.switch-lg-md .switch-text:after {
+    width: 38px;
+    height: 38px;
+  }
+  .switch.switch-lg-md .switch-input:checked + .switch-text:after {
+    left: 49px;
+  }
+  .switch.switch-xl-md {
+    height: 48px;
+    width: 96px;
+  }
+  .switch.switch-xl-md .switch-text {
+    height: 48px;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .switch.switch-xl-md .switch-text .switch-text-off,
+  .switch.switch-xl-md .switch-text .switch-text-on {
+    width: 48px;
+  }
+  .switch.switch-xl-md .switch-text:after {
+    width: 44px;
+    height: 44px;
+  }
+  .switch.switch-xl-md .switch-input:checked + .switch-text:after {
+    left: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .switch.switch-sm-lg {
+    height: 30px;
+    width: 70px;
+  }
+  .switch.switch-sm-lg .switch-text {
+    height: 30px;
+    padding: 3px 0;
+    font-size: 14px;
+  }
+  .switch.switch-sm-lg .switch-text .switch-text-off,
+  .switch.switch-sm-lg .switch-text .switch-text-on {
+    width: 40px;
+  }
+  .switch.switch-sm-lg .switch-text:after {
+    width: 26px;
+    height: 26px;
+  }
+  .switch.switch-sm-lg .switch-input:checked + .switch-text:after {
+    left: 42px;
+  }
+  .switch.switch-md-lg {
+    width: 80px;
+    height: 36px;
+  }
+  .switch.switch-md-lg .switch-text {
+    height: 36px;
+    padding: 6px 0;
+    font-size: 16px;
+  }
+  .switch.switch-md-lg .switch-text .switch-text-off,
+  .switch.switch-md-lg .switch-text .switch-text-on {
+    width: 44px;
+  }
+  .switch.switch-md-lg .switch-text:after {
+    width: 32px;
+    height: 32px;
+  }
+  .switch.switch-lg-lg {
+    height: 42px;
+    width: 89px;
+  }
+  .switch.switch-lg-lg .switch-text {
+    height: 42px;
+    padding: 9px 0;
+  }
+  .switch.switch-lg-lg .switch-text .switch-text-off,
+  .switch.switch-lg-lg .switch-text .switch-text-on {
+    width: 47px;
+  }
+  .switch.switch-lg-lg .switch-text:after {
+    width: 38px;
+    height: 38px;
+  }
+  .switch.switch-lg-lg .switch-input:checked + .switch-text:after {
+    left: 49px;
+  }
+  .switch.switch-xl-lg {
+    height: 48px;
+    width: 96px;
+  }
+  .switch.switch-xl-lg .switch-text {
+    height: 48px;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .switch.switch-xl-lg .switch-text .switch-text-off,
+  .switch.switch-xl-lg .switch-text .switch-text-on {
+    width: 48px;
+  }
+  .switch.switch-xl-lg .switch-text:after {
+    width: 44px;
+    height: 44px;
+  }
+  .switch.switch-xl-lg .switch-input:checked + .switch-text:after {
+    left: 50px;
+  }
 }
 .ie8 .switch {
   width: auto;
