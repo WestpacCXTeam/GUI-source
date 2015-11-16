@@ -238,7 +238,7 @@ module.exports = function(grunt) {
 		var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
 		var module = grunt.file.readJSON( 'module.json' );
-		var core = GetCore( grunt );
+		var core = GetCore( grunt, module.ID );
 
 		//iterate over all versions
 		Object.keys( module.versions ).forEach(function iterateCore( version ) {
@@ -249,16 +249,28 @@ module.exports = function(grunt) {
 			brands.forEach(function( brand ) {
 
 				//////////////////////////////////////| CONCAT FILES
-				srcFiles = core.js; //js
-				// srcFiles.push(version + '/js/*.js');
+				var srcFiles = [];
+				var srcCore = core.js; //js
+
+				srcCore.forEach(function( coreMod ) {
+					srcFiles.push( coreMod );
+				});
+
+				srcFiles.push(version + '/js/*.js');
 
 				concat[ version + 'JS' + brand ] = {
 					src: srcFiles,
 					dest: version + '/tests/' + brand + '/assets/js/gui.js',
 				};
 
-				srcFiles = core.less; //less
-				// srcFiles.push(version + '/less/module-mixins.less');
+				var srcFiles = [];
+				var srcCore = core.less; //less
+
+				srcCore.forEach(function( coreMod ) {
+					srcFiles.push( coreMod );
+				});
+
+				srcFiles.push(version + '/less/module-mixins.less');
 
 				concat[ version + 'Less' + brand ] = {
 					src: srcFiles,
@@ -360,12 +372,12 @@ module.exports = function(grunt) {
 					};
 				});
 
-				// copy[ version + 'Font' + brand ] = {
-				// 	expand: true,
-				// 	cwd: version + '/_assets/' + brand + '/font',
-				// 	src: '*',
-				// 	dest: version + '/tests/' + brand + '/assets/font',
-				// };
+				copy[ version + 'Font' + brand ] = {
+					expand: true,
+					cwd: version + '/_assets/' + brand + '/font',
+					src: '*',
+					dest: version + '/tests/' + brand + '/assets/font',
+				};
 
 
 				//////////////////////////////////////| OPTIMISE IMAGES
