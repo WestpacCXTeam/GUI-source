@@ -124,39 +124,39 @@ grunt add
 
 The `module.json` file that is then compiled into the GUI.json file is the engine of the GUI modular system.
 
-```json
+```shell
 {
-	"ID": "moduleID",                             //the unique ID of the module
-	"name": "Module name",                        //the name of the module
-	"description": "some text",                   //description used in the blender
-	"category": "cateogry",                       //category for blender and doc pages
-	"versions": {
-		"1.0.0": {                                  //listing of all versions
-			"dependencies": [],                       //dependencies on any other modules?
-			"js": true,                               //does this module include javascript
-			"less": true,                             //does this module include less
-			"svg": false,                             //does this module include svgs
-			"font": false,                            //does this module include web fonts
-			"size": 12                                //what's the estimated file size
-		},
-		"1.0.1": {
-			"dependencies": [],
-			"js": true,
-			"less": true,
-			"svg": true,
-			"font": false,
-			"size": 13
-		},
-		"1.0.2": {
-			"dependencies": [],
-			"js": true,
-			"less": true,
-			"svg": true,
-			"font": true,
-			"size": 27
-		}
-	},
-	"hash": "f718a7d02eab6d114b8375aca7c23d98"    //hashsum of this module
+  "ID": "moduleID",                             #the unique ID of the module
+  "name": "Module name",                        #the name of the module
+  "description": "some text",                   #description used in the blender
+  "category": "cateogry",                       #category for blender and doc pages
+  "versions": {
+    "1.0.0": {                                  #listing of all versions
+      "dependencies": [],                       #dependencies on any other modules?
+      "js": true,                               #does this module include javascript
+      "less": true,                             #does this module include less
+      "svg": false,                             #does this module include svgs
+      "font": false,                            #does this module include web fonts
+      "size": 12                                #what's the estimated file size
+    },
+    "1.0.1": {
+      "dependencies": [],
+      "js": true,
+      "less": true,
+      "svg": true,
+      "font": false,
+      "size": 13
+    },
+    "1.0.2": {
+      "dependencies": [],
+      "js": true,
+      "less": true,
+      "svg": true,
+      "font": true,
+      "size": 27
+    }
+  },
+  "hash": "f718a7d02eab6d114b8375aca7c23d98"    //hashsum of this module
 }
 ```
 
