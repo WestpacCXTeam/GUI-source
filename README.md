@@ -1,8 +1,6 @@
 GUI-source
 ==========
 
-[![Join the chat at https://gitter.im/WestpacCXTeam/GUI-source](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/WestpacCXTeam/GUI-source?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
 > This is the repository in which we develop each element of the GUI.
 > Each module is tested in isolation and put into an JSON object that keeps track of all versions.
 
@@ -13,6 +11,7 @@ GUI-source
 * [Testing ingredient](#testing-ingredient)
 * [Versioning](#versioning)
 * [Adding ingredient](#adding-ingredient)
+* [The module.json](#the-module-json)
 * [Release History](#release-history)
 * [License](#license)
 
@@ -51,6 +50,13 @@ We call each module `GUI Ingredient` and a compiled mix `GUI Blend`. The `GUI Bl
 To add a new version to an `Ingredient`, just duplicate the version folder and register your new version in the `module.json`. Grunt does the rest.
 (Do run `grunt` in the root folder though to generate a new version of the `GUI.json` and `index.html`)
 
+We got a grunt task to automate this:
+
+```shell
+cd [module folder]
+grunt add
+```
+
 **[⬆ back to top](#content)**
 
 
@@ -82,6 +88,10 @@ you have grunt installed globally.
 
 > Each `Ingredient` version has a `tests` folder that contains various html files to be tested.
 
+You can see the tests [here](http://WestpacCXTeam.github.io/GUI-source). Note that those tests are for stress testing only. Find documentation for the GUI
+[here](http://gel.westpacgroup.com.au/).
+
+
 **[⬆ back to top](#content)**
 
 
@@ -97,7 +107,59 @@ A new folder with the the name you chose will be generated with a base template 
 you may not need. The less files come with a basic setup that account for multibranding and the mixin setup. Make sure you don;t leave the namespacing in less
 to not _contaminate_ other modules.
 
+We got a grunt task to automate this:
+
+```shell
+cd [root]
+grunt add
+```
+
 **[⬆ back to top](#content)**
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+### The module.json
+
+The `module.json` file that is then compiled into the GUI.json file is the engine of the GUI modular system.
+
+```shell
+{
+  "ID": "moduleID",                             #the unique ID of the module
+  "name": "Module name",                        #the name of the module
+  "description": "some text",                   #description used in the blender
+  "category": "cateogry",                       #category for blender and doc pages
+  "versions": {
+    "1.0.0": {                                  #listing of all versions
+      "dependencies": [],                       #dependencies on any other modules?
+      "js": true,                               #does this module include javascript
+      "less": true,                             #does this module include less
+      "svg": false,                             #does this module include svgs
+      "font": false,                            #does this module include web fonts
+      "size": 12                                #what's the estimated file size
+    },
+    "1.0.1": {
+      "dependencies": [],
+      "js": true,
+      "less": true,
+      "svg": true,
+      "font": false,
+      "size": 13
+    },
+    "1.0.2": {
+      "dependencies": [],
+      "js": true,
+      "less": true,
+      "svg": true,
+      "font": true,
+      "size": 27
+    }
+  },
+  "hash": "f718a7d02eab6d114b8375aca7c23d98"    #checksum of this module
+}
+```
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------

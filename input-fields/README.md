@@ -9,6 +9,9 @@ GUI Input-field
 
 ### Release History
 
+* v1.0.1 - Somewhere at Microsoft a person decided that placeholder text should look like input text. Making it less placeholder text and more just... text.
+	We were sure there was logic in there somwhere but we couldn't find it so we made it a tint in all browsers (including the elusive IE) to match the default
+	styling of sensible browsers.
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
