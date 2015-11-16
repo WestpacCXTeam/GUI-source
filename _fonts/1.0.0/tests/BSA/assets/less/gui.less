@@ -366,9 +366,11 @@
 
 		&:focus {
 			.outline();
-			background-color: #fff;
 			color: @color-A;
-			display: inline-block;
+
+			.is-keyboarduser & {
+				background-color: #fff;
+			}
 		}
 
 		&:hover {

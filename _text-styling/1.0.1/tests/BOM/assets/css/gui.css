@@ -22,7 +22,7 @@
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 .brand-font {
-  font-family: "stag", "Roboto", Arial, sans-serif;
+  font-family: "stag", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 /*!_text-styling v1.0.1 BOM*/
 .clearfix:before,

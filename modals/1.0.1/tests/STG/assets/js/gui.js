@@ -273,10 +273,10 @@ GUI.init();
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// module render method
 	//
-	// You can run the render method if you want to bypass the length check
+	// You can run the render method if you want to bypass the length check or render elements added dynamically to the DOM after loading
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	module.render = function modalsRender() {
-		GUI.debugging( 'modals: Render', 'report' );
+		GUI.debugging( 'modals: Rendering', 'report' );
 
 		//open button click
 		$('.js-modal').not('.js-rendered').on('click', function openModal() {

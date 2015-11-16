@@ -1517,13 +1517,14 @@ a:focus {
 }
 a:focus {
   outline: none;
-  background-color: #fff;
   color: #d5002b;
-  display: inline-block;
 }
 .is-keyboarduser a:focus {
   outline: 2px dotted #000;
   outline-offset: 0.5rem;
+}
+.is-keyboarduser a:focus {
+  background-color: #fff;
 }
 a:hover {
   outline: none;

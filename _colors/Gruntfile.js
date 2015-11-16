@@ -266,11 +266,11 @@ module.exports = function(grunt) {
 				var srcFiles = [];
 				var srcCore = core.less; //less
 
+				srcFiles.push(version + '/less/module-mixins.less');
+
 				srcCore.forEach(function( coreMod ) {
 					srcFiles.push( coreMod );
 				});
-
-				srcFiles.push(version + '/less/module-mixins.less');
 
 				concat[ version + 'Less' + brand ] = {
 					src: srcFiles,

@@ -15,7 +15,7 @@
   font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 .brand-font {
-  font-family: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
+  font-family: "dragonbold", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 }
 /*!_text-styling v1.0.1 STG*/
 .clearfix:before,

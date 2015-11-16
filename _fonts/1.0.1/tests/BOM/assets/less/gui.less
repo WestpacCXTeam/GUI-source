@@ -366,9 +366,11 @@
 
 		&:focus {
 			.outline();
-			background-color: #fff;
 			color: @color-A;
-			display: inline-block;
+
+			.is-keyboarduser & {
+				background-color: #fff;
+			}
 		}
 
 		&:hover {
@@ -1398,19 +1400,19 @@
 ._fonts-family( @brand ) {
 	.getBrand() when (@brand = BOM) {
 		@fontfamily: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-		@brand-fontfamily: "stag", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "stag", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 	}
 	.getBrand() when (@brand = BSA) {
 		@fontfamily: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-		@brand-fontfamily: "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 	}
 	.getBrand() when (@brand = STG) {
 		@fontfamily: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-		@brand-fontfamily: "dragonbold", "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "dragonbold", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 	}
 	.getBrand() when (@brand = WBC) {
 		@fontfamily: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-		@brand-fontfamily: "Times New Roman", "Times", "Helvetica Neue", "Roboto", Arial, sans-serif;
+		@brand-fontfamily: "Times New Roman", "Times", -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 	}
 	.getBrand();
 }
