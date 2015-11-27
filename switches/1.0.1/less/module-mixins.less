@@ -1,0 +1,345 @@
+/*![Module-Version-Brand]*/
+/*
+ * switches mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| switches mixin
+._switches( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.switch {
+		display: inline-block;
+		width: 80px;
+		height: 36px;
+		position: relative;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		.switch-text {
+			display: inline-block;
+			text-indent: -999999em;
+			border: 2px solid @color-Border;
+			background-color: #fff;
+			overflow: hidden;
+			width: 100%;
+			height: 36px;
+			padding: 6px 0;
+			font-size: 16px;
+			border-radius: 24px;
+			transition: border 0.3s ease, background 0.3s ease;
+
+			.switch-buff& {
+				background-color: @color-Light;
+			}
+
+			.switch-text-off,
+			.switch-text-on {
+				text-indent: 0;
+				color: @color-Text;
+				position: absolute;
+				width: 44px;
+				right: 3px;
+				text-align: center;
+				transition: opacity 0.3s ease;
+			}
+
+			.switch-text-on {
+				right: auto;
+				left: 3px;
+				opacity: 0;
+			}
+
+			&:after {
+				content: ' ';
+				display: block;
+				position: absolute;
+				left: 2px;
+				top: 2px;
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				background-color: @color-B;
+				transition: left 0.3s ease, box-shadow 0.3s ease;
+
+				.switch-buff& {
+					background-color: #fff;
+					box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.3);
+				}
+			}
+		}
+
+		.switch-input {
+			opacity: 0;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 1px;
+			height: 1px;
+
+			&:focus {
+				& + .switch-text {
+					.outline();
+				}
+			}
+
+			&:checked {
+				& + .switch-text {
+					.switch-buff& {
+						border-color: @color-B;
+						background-color: @color-B;
+					}
+
+					.switch-text-off {
+						opacity: 0;
+					}
+
+					.switch-text-on {
+						opacity: 1;
+					}
+
+					&:after {
+						left: 46px;
+
+						.switch-buff& {
+							box-shadow: -3px 0px 6px 0px rgba(0, 0, 0, 0.3);
+						}
+					}
+				}
+			}
+		}
+
+
+		//sizes
+		&.switch-sm,
+		&.switch-sm-xs {
+			._switches-size(sm);
+		}
+
+		&.switch-lg,
+		&.switch-lg-xs {
+			._switches-size(lg);
+		}
+
+		&.switch-xl,
+		&.switch-xl-xs {
+			._switches-size(xl);
+		}
+
+		//responsive sizes
+		@media (min-width: @screen-sm) { //////////////////////////////////////|  SM
+			&.switch-sm-sm {
+				._switches-size( sm );
+			}
+
+			&.switch-md-sm {
+				._switches-size( md );
+			}
+
+			&.switch-lg-sm {
+				._switches-size( lg );
+			}
+
+			&.switch-xl-sm {
+				._switches-size( xl );
+			}
+
+		}
+
+		@media (min-width: @screen-md) { //////////////////////////////////////|  MD
+			&.switch-sm-md {
+				._switches-size( sm );
+			}
+
+			&.switch-md-md {
+				._switches-size( md );
+			}
+
+			&.switch-lg-md {
+				._switches-size( lg );
+			}
+
+			&.switch-xl-md {
+				._switches-size( xl );
+			}
+		}
+
+		@media (min-width: @screen-lg) { //////////////////////////////////////|  LG
+			&.switch-sm-lg {
+				._switches-size( sm );
+			}
+
+			&.switch-md-lg {
+				._switches-size( md );
+			}
+
+			&.switch-lg-lg {
+				._switches-size( lg );
+			}
+
+			&.switch-xl-lg {
+				._switches-size( xl );
+			}
+		}
+
+
+		// IE stuff
+		.ie8 & {
+			width: auto;
+			height: auto;
+
+			.switch-text {
+				border: 0 none;
+				text-indent: 0;
+				display: inline;
+
+				&:after {
+					display: none;
+				}
+
+				.switch-text-off,
+				.switch-text-on {
+					position: static;
+				}
+			}
+
+			.switch-input {
+				opacity: 1;
+				position: static;
+				width: auto;
+				height: auto;
+			}
+		}
+	}
+}
+
+
+/*
+ * SWITCH SIZES
+ *
+ * Spit out the width, size and margin of a switch for a spesified size
+ */
+._switches-size( @size ) {
+	.getSize() when (@size = sm) { //SMALL
+		height: 30px;
+		width: 70px;
+
+		.switch-text {
+			height: 30px;
+			padding: 3px 0;
+			font-size: 14px;
+
+			.switch-text-off,
+			.switch-text-on {
+				width: 40px;
+			}
+
+			&:after {
+				width: 26px;
+				height: 26px;
+			}
+		}
+
+		.switch-input:checked + .switch-text:after {
+			left: 42px;
+		}
+	}
+
+	.getSize() when (@size = md) { //MEDIUM
+		width: 80px;
+		height: 36px;
+
+		.switch-text {
+			height: 36px;
+			padding: 6px 0;
+			font-size: 16px;
+
+			.switch-text-off,
+			.switch-text-on {
+				width: 44px;
+			}
+
+			&:after {
+				width: 32px;
+				height: 32px;
+			}
+		}
+	}
+
+	.getSize() when (@size = lg) { //LARGE
+		height: 42px;
+		width: 89px;
+
+		.switch-text {
+			height: 42px;
+			padding: 9px 0;
+
+			.switch-text-off,
+			.switch-text-on {
+				width: 47px;
+			}
+
+			&:after {
+				width: 38px;
+				height: 38px;
+			}
+		}
+
+		.switch-input:checked + .switch-text:after {
+			left: 49px;
+		}
+	}
+
+	.getSize() when (@size = xl) { //EXTRA LARGE
+		height: 48px;
+		width: 96px;
+
+		.switch-text {
+			height: 48px;
+			padding: 10px 0;
+			font-size: 18px;
+
+			.switch-text-off,
+			.switch-text-on {
+				width: 48px;
+			}
+
+			&:after {
+				width: 44px;
+				height: 44px;
+			}
+		}
+
+		.switch-input:checked + .switch-text:after {
+			left: 50px;
+		}
+	}
+	.getSize();
+}
+
+
+//////////////////////////////////////| switches
+._switches([Brand]);
