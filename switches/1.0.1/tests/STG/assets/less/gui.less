@@ -1436,16 +1436,16 @@
 	 *  SETTINGS
 	 */
 	.getBrand() when (@brand = BOM) {
-		@test: 'BOM';
+		@text: #fff;
 	}
 	.getBrand() when (@brand = BSA) {
-		@test: 'BSA';
+		@text: #fff;
 	}
 	.getBrand() when (@brand = STG) {
-		@test: 'STG';
+		@text: @color-F;
 	}
 	.getBrand() when (@brand = WBC) {
-		@test: 'WBC';
+		@text: #fff;
 	}
 	.getBrand();
 
@@ -1465,7 +1465,7 @@
 			display: inline-block;
 			text-indent: -999999em;
 			border: 2px solid @color-Border;
-			background-color: #fff;
+			background-color: @color-Light;
 			overflow: hidden;
 			width: 100%;
 			height: 36px;
@@ -1473,10 +1473,6 @@
 			font-size: 16px;
 			border-radius: 24px;
 			transition: border 0.3s ease, background 0.3s ease;
-
-			.switch-buff& {
-				background-color: @color-Light;
-			}
 
 			.switch-text-off,
 			.switch-text-on {
@@ -1493,6 +1489,7 @@
 				right: auto;
 				left: 3px;
 				opacity: 0;
+				color: @text;
 			}
 
 			&:after {
@@ -1504,13 +1501,9 @@
 				width: 32px;
 				height: 32px;
 				border-radius: 50%;
-				background-color: @color-B;
+				background-color: #fff;
+				box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.3);
 				transition: left 0.3s ease, box-shadow 0.3s ease;
-
-				.switch-buff& {
-					background-color: #fff;
-					box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.3);
-				}
 			}
 		}
 
@@ -1530,10 +1523,8 @@
 
 			&:checked {
 				& + .switch-text {
-					.switch-buff& {
-						border-color: @color-B;
-						background-color: @color-B;
-					}
+					border-color: @color-B;
+					background-color: @color-B;
 
 					.switch-text-off {
 						opacity: 0;
@@ -1545,13 +1536,19 @@
 
 					&:after {
 						left: 46px;
-
-						.switch-buff& {
-							box-shadow: -3px 0px 6px 0px rgba(0, 0, 0, 0.3);
-						}
+						box-shadow: -3px 0px 6px 0px rgba(0, 0, 0, 0.3);
 					}
 				}
 			}
+
+			//disabled
+			&:disabled {
+				& + .switch-text {
+					opacity: .5;
+					cursor: not-allowed;
+				}
+			}
+
 		}
 
 

@@ -1613,7 +1613,7 @@ a:hover {
   display: inline-block;
   text-indent: -999999em;
   border: 2px solid #c2c2c2;
-  background-color: #fff;
+  background-color: #f5f5f5;
   overflow: hidden;
   width: 100%;
   height: 36px;
@@ -1621,9 +1621,6 @@ a:hover {
   font-size: 16px;
   border-radius: 24px;
   transition: border 0.3s ease, background 0.3s ease;
-}
-.switch-buff.switch .switch-text {
-  background-color: #f5f5f5;
 }
 .switch .switch-text .switch-text-off,
 .switch .switch-text .switch-text-on {
@@ -1639,6 +1636,7 @@ a:hover {
   right: auto;
   left: 3px;
   opacity: 0;
+  color: #ffffff;
 }
 .switch .switch-text:after {
   content: ' ';
@@ -1649,12 +1647,9 @@ a:hover {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #365fb4;
-  transition: left 0.3s ease, box-shadow 0.3s ease;
-}
-.switch-buff.switch .switch-text:after {
   background-color: #fff;
   box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.3);
+  transition: left 0.3s ease, box-shadow 0.3s ease;
 }
 .switch .switch-input {
   opacity: 0;
@@ -1671,7 +1666,7 @@ a:hover {
   outline: 2px dotted #000;
   outline-offset: 0.5rem;
 }
-.switch-buff.switch .switch-input:checked + .switch-text {
+.switch .switch-input:checked + .switch-text {
   border-color: #365fb4;
   background-color: #365fb4;
 }
@@ -1683,9 +1678,11 @@ a:hover {
 }
 .switch .switch-input:checked + .switch-text:after {
   left: 46px;
-}
-.switch-buff.switch .switch-input:checked + .switch-text:after {
   box-shadow: -3px 0px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.switch .switch-input:disabled + .switch-text {
+  opacity: .5;
+  cursor: not-allowed;
 }
 .switch.switch-sm,
 .switch.switch-sm-xs {
