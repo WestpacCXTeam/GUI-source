@@ -1384,7 +1384,7 @@ th {
 .h1,
 h1 {
   font-size: 30px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -1405,7 +1405,7 @@ h1.body-font {
 .h2,
 h2 {
   font-size: 24px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1426,7 +1426,7 @@ h2.body-font {
 .h3,
 h3 {
   font-size: 18px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1447,7 +1447,7 @@ h3.body-font {
 .h4,
 h4 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1468,7 +1468,7 @@ h4.body-font {
 .h5,
 h5 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 6px;
@@ -1483,7 +1483,7 @@ h5.body-font {
 .h6,
 h6 {
   font-size: 14px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
@@ -1509,13 +1509,13 @@ html {
 body {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #0d0d0d;
-  background-color: #f1f1f2;
+  color: #20262d;
+  background-color: #f0f1f2;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #0d0d0d;
+  border-bottom: 1px dotted #20262d;
 }
 address {
   font-style: normal;
@@ -1525,32 +1525,32 @@ blockquote {
   font-weight: 300;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 a {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: underline;
 }
 a:focus {
   outline: none;
-  color: #d60c8c;
+  color: #b45c38;
 }
 .is-keyboarduser a:focus {
   outline: 2px dotted #000;
@@ -1640,7 +1640,7 @@ a:hover {
   white-space: nowrap;
 }
 .input-addon .input-addon-label:first-child .input-addon-input {
-  border-left: 1px solid #c6c5cb;
+  border-left: 1px solid #d2d5d8;
   border-right: 0 none;
   border-radius: 3px;
   border-top-right-radius: 0;
@@ -1650,7 +1650,7 @@ a:hover {
   float: right;
 }
 .input-addon-flip.input-addon .input-addon-label .input-addon-input {
-  border: 1px solid #c6c5cb;
+  border: 1px solid #d2d5d8;
   border-left: 0 none;
   border-radius: 3px;
   border-top-left-radius: 0;
@@ -1662,7 +1662,7 @@ a:hover {
   appearance: none;
   font-size: 16px;
   font-weight: 400;
-  border: 1px solid #c6c5cb;
+  border: 1px solid #d2d5d8;
   border-left: 0 none;
   padding: 8px;
   transition: border 0.2s ease;
@@ -1675,7 +1675,7 @@ a:hover {
 }
 .input-addon .input-addon-label .input-addon-input:focus {
   outline: none;
-  border-color: #685ac0;
+  border-color: #444f5e;
 }
 .input-addon .input-addon-text {
   position: absolute;
@@ -1695,9 +1695,9 @@ a:hover {
   padding: 7px 12px 8px 12px;
   margin: 0;
   color: #ffffff;
-  background-color: #685ac0;
+  background-color: #444f5e;
   line-height: 1.3;
-  border: 1px solid #685ac0;
+  border: 1px solid #444f5e;
   vertical-align: middle;
   height: 36px;
   position: relative;
@@ -1727,8 +1727,8 @@ a:hover {
   vertical-align: middle;
   height: 36px;
   display: inline-block;
-  background-color: #685ac0;
-  border: 1px solid #685ac0;
+  background-color: #444f5e;
+  border: 1px solid #444f5e;
   border-radius: 3px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -1782,23 +1782,23 @@ a:hover {
   outline: none;
 }
 .input-addon .input-addon-select-wrapper .input-addon-select option {
-  background-color: #685ac0;
+  background-color: #444f5e;
 }
 .input-addon .input-addon-select-wrapper .input-addon-select::-ms-expand {
   display: none;
 }
 .input-addon-faint.input-addon .input-addon-select-wrapper {
-  background-color: #f8f8f8;
-  border-color: #c6c5cb;
+  background-color: #f7f8f9;
+  border-color: #d2d5d8;
 }
 .input-addon-faint.input-addon .input-addon-select-wrapper:after {
-  border-top-color: #716f7d;
+  border-top-color: #69727e;
 }
 .input-addon-faint.input-addon .input-addon-select-wrapper .input-addon-select {
-  color: #716f7d;
+  color: #69727e;
 }
 .input-addon-faint.input-addon .input-addon-select-wrapper .input-addon-select option {
-  background-color: #f8f8f8;
+  background-color: #f7f8f9;
 }
 .input-addon.input-addon-xl .input-addon-label .input-addon-input,
 .input-addon.input-addon-xl .input-addon-btn {

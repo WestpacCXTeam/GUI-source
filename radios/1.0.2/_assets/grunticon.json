@@ -1,0 +1,6 @@
+{
+	"radio-off": [".radio-input + .radio-text"],
+	"radio-off-disabled": [".radio-input:disabled + .radio-text"],
+	"radio-on": [".radio-input:checked + .radio-text"],
+	"radio-on-disabled": [".radio-input:disabled:checked + .radio-text"]
+}

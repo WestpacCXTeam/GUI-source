@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Super</title>
+
+<path fill="#333" class="icons-background" d="M31.5 15.1c0.3 0.9 0.5 1.9 0.5 2.9 0 6.6-7.2 12-16 12s-16-5.4-16-12c0-1 0.2-2 0.5-2.9 1.7 4.5 8 7.9 15.5 7.9s13.8-3.4 15.5-7.9zM30 13c0 3.9-6.3 7-14 7s-14-3.1-14-7c0-2.8 3.4-5.3 8.2-6.4 1.7-2.7 3.8-4.6 5.8-4.6s4.1 1.9 5.8 4.6c4.8 1.1 8.2 3.6 8.2 6.4zM23.6 16.8c-1.1-5.9-5-12.7-7.6-12.7s-6.4 6.9-7.6 12.7c2 0.7 4.5 1.2 7.6 1.2s5.6-0.5 7.6-1.2z"></path>
+</svg>

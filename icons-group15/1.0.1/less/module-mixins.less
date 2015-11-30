@@ -1,0 +1,33 @@
+/*![Module-Version-Brand]*/
+/*
+ * icons-group15 mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| icons-group15 mixin
+._icons-group15( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+}
+
+
+//////////////////////////////////////| icons-group15
+._icons-group15( [Brand] );

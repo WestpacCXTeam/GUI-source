@@ -11,6 +11,9 @@ GUI Icons-group12
 
 ### Release History
 
+* v1.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* 
+		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
 * v1.0.1 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
 	* While preaching about collaboration and open source and asking developers to come to our GitHub repository to check out what we have done we were
 		blissfully unaweare of the missing GitHub icon in our icon sets. Take this as yet another nudge towards the awesome super-powers of open source,

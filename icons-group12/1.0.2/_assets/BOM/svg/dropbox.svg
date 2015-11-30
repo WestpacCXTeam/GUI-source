@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Dropbox</title>
+
+<path fill="#20262d" class="icons-background" d="M9.4 1l-9.4 6.2 6.5 5.2 9.5-5.9z"></path>
+<path fill="#20262d" class="icons-background" d="M0 17.7l9.4 6.2 6.6-5.5-9.5-6z"></path>
+<path fill="#20262d" class="icons-background" d="M16 18.4l6.6 5.5 9.4-6.2-6.5-5.3z"></path>
+<path fill="#20262d" class="icons-background" d="M32 7.2l-9.4-6.2-6.6 5.5 9.5 5.9z"></path>
+<path fill="#20262d" class="icons-background" d="M16 19.5l-6.6 5.6-2.8-1.9v2.1l9.4 5.7 9.5-5.7v-2.1l-2.9 1.9z"></path>
+</svg>

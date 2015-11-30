@@ -10,7 +10,7 @@ GUI Fonts
 
 ### Release History
 
-* v1.0.1 - We removed the Roboto webfont as system font's have now gotten much better and our reliance on a body font is not necessary anymore.
+* v1.0.1 - We removed the Roboto webfont as more recent versions of windows Segoe UI now support numerical values in the font weight property.
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**

@@ -1,0 +1,18 @@
+.icon-account,
+.symbol-account { background-image: url('../img/account.png'); background-repeat: no-repeat; }
+
+.icon-bpay,
+.symbol-bpay { background-image: url('../img/bpay.png'); background-repeat: no-repeat; }
+
+.icon-history-clock,
+.symbol-history-clock { background-image: url('../img/history-clock.png'); background-repeat: no-repeat; }
+
+.icon-move-from,
+.symbol-move-from { background-image: url('../img/move-from.png'); background-repeat: no-repeat; }
+
+.icon-move-to,
+.symbol-move-to { background-image: url('../img/move-to.png'); background-repeat: no-repeat; }
+
+.icon-transfer,
+.symbol-transfer { background-image: url('../img/transfer.png'); background-repeat: no-repeat; }
+

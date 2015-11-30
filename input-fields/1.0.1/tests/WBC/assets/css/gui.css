@@ -1656,6 +1656,11 @@ textarea.input-field {
   color: #575f65;
   cursor: not-allowed;
 }
+.input-field:-moz-read-only {
+  background-color: #f9f9f8;
+  color: #2d373e;
+  cursor: not-allowed;
+}
 .input-field:read-only {
   background-color: #f9f9f8;
   color: #2d373e;

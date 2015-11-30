@@ -1384,7 +1384,7 @@ th {
 .h1,
 h1 {
   font-size: 30px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -1405,7 +1405,7 @@ h1.body-font {
 .h2,
 h2 {
   font-size: 24px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1426,7 +1426,7 @@ h2.body-font {
 .h3,
 h3 {
   font-size: 18px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1447,7 +1447,7 @@ h3.body-font {
 .h4,
 h4 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1468,7 +1468,7 @@ h4.body-font {
 .h5,
 h5 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 6px;
@@ -1483,7 +1483,7 @@ h5.body-font {
 .h6,
 h6 {
   font-size: 14px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
@@ -1509,13 +1509,13 @@ html {
 body {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #0d0d0d;
-  background-color: #f1f1f2;
+  color: #20262d;
+  background-color: #f0f1f2;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #0d0d0d;
+  border-bottom: 1px dotted #20262d;
 }
 address {
   font-style: normal;
@@ -1525,32 +1525,32 @@ blockquote {
   font-weight: 300;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 a {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: underline;
 }
 a:focus {
   outline: none;
-  color: #d60c8c;
+  color: #b45c38;
 }
 .is-keyboarduser a:focus {
   outline: 2px dotted #000;
@@ -1652,9 +1652,9 @@ a:hover {
   appearance: none;
   font-size: 16px;
   font-weight: 400;
-  color: #0d0d0d;
+  color: #20262d;
   background-color: #fff;
-  border: 1px solid #c6c5cb;
+  border: 1px solid #d2d5d8;
   border-radius: 3px;
   transition: border 0.2s ease;
   padding: 6px 12px;
@@ -1670,17 +1670,22 @@ textarea.input-field {
   margin-top: 21px;
 }
 .input-field:focus {
-  border-color: #685ac0;
+  border-color: #444f5e;
   outline: none;
 }
 .input-field:disabled {
-  background-color: #f8f8f8;
-  color: #716f7d;
+  background-color: #f7f8f9;
+  color: #69727e;
+  cursor: not-allowed;
+}
+.input-field:-moz-read-only {
+  background-color: #f7f8f9;
+  color: #20262d;
   cursor: not-allowed;
 }
 .input-field:read-only {
-  background-color: #f8f8f8;
-  color: #0d0d0d;
+  background-color: #f7f8f9;
+  color: #20262d;
   cursor: not-allowed;
 }
 .input-field.input-field-xl,
@@ -1725,7 +1730,7 @@ textarea.input-field-sm .input-field {
   content: " ";
   margin-left: 6px;
   display: inline-block;
-  border-top: 8px solid #0d0d0d;
+  border-top: 8px solid #20262d;
   border-right: 7px solid transparent;
   border-bottom: none;
   border-left: 7px solid transparent;
@@ -1745,21 +1750,21 @@ textarea.input-field-sm .input-field {
   text-overflow: '';
   height: 36px;
   border: none;
-  color: #0d0d0d;
+  color: #20262d;
   font-size: 16px;
   font-weight: 400;
   padding: 6px 36px 6px 8px;
-  border: 1px solid #c6c5cb;
+  border: 1px solid #d2d5d8;
   border-radius: 3px;
   transition: border 0.2s ease;
 }
 .input-field-select-wrapper .input-field-select:focus {
-  border-color: #685ac0;
+  border-color: #444f5e;
   outline: none;
 }
 .input-field-select-wrapper .input-field-select:disabled {
-  background-color: #f8f8f8;
-  color: #716f7d;
+  background-color: #f7f8f9;
+  color: #69727e;
   cursor: not-allowed;
   padding-right: 8px;
 }
@@ -1808,9 +1813,9 @@ fieldset legend {
   margin-bottom: 21px;
   font-size: 21px;
   line-height: inherit;
-  color: #716f7d;
+  color: #69727e;
   border: 0;
-  border-bottom: 1px solid #c6c5cb;
+  border-bottom: 1px solid #d2d5d8;
 }
 @media print {
   .input-field-select-wrapper:after {

@@ -1,0 +1,8 @@
+{
+	"download": [".icon-download"],
+	"new-window": [".icon-new-window"],
+	"refresh": [".icon-refresh"],
+	"search": [".icon-search"],
+	"upload": [".icon-upload"],
+	"write": [".icon-write"]
+}

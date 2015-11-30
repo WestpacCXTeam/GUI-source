@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Person</title>
+
+<path fill="#2d373e" class="icons-background" d="M19.5 22c-0.7-0.1-0.7-2-0.7-2s2-2 2.5-4.7c1.2 0 1.9-2.9 0.7-3.9 0-1.1 1.5-8.4-6-8.4s-6 7.3-6 8.4c-1.2 1-0.5 3.9 0.7 3.9 0.4 2.7 2.5 4.7 2.5 4.7s0 1.9-0.7 2c-2.2 0.3-10.5 4-10.5 8h28c0-4-8.3-7.7-10.5-8z"></path>
+</svg>

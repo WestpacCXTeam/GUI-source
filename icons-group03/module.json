@@ -13,6 +13,17 @@
 			"svg": true,
 			"font": false,
 			"size": 10
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 10
 		}
 	},
 	"hash": "02cec88cef61a51194cb44d1dbd9f8b8"
