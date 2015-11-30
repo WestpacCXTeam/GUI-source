@@ -232,6 +232,39 @@
 			}
 		}
 	}
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.switch {
+			height: auto !important;
+
+			.switch-text:after {
+				display: none;
+			}
+
+			.switch-input {
+				opacity: 1;
+				position: static;
+				width: auto;
+				height: auto;
+			}
+
+			.switch-text {
+				display: inline;
+				border: 0 none;
+				font-size: 0 !important;
+
+				.switch-text-off,
+				.switch-text-on {
+					font-size: 14px;
+					left: 14px;
+					right: auto;
+					top: 0;
+				}
+			}
+
+		}
+	}
 }
 
 

@@ -2030,3 +2030,29 @@ a:hover {
   width: auto;
   height: auto;
 }
+@media print {
+  .switch {
+    height: auto !important;
+  }
+  .switch .switch-text:after {
+    display: none;
+  }
+  .switch .switch-input {
+    opacity: 1;
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  .switch .switch-text {
+    display: inline;
+    border: 0 none;
+    font-size: 0 !important;
+  }
+  .switch .switch-text .switch-text-off,
+  .switch .switch-text .switch-text-on {
+    font-size: 14px;
+    left: 14px;
+    right: auto;
+    top: 0;
+  }
+}
