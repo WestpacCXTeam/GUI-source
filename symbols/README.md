@@ -10,6 +10,9 @@ GUI Symbols
 
 ### Release History
 
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* 
+		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
