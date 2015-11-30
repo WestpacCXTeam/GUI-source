@@ -1,0 +1,100 @@
+/*![Module-Version-Brand]*/
+/*
+ * logos mixins
+ *
+ * doc comment with stuff and stuff
+ *
+ */
+
+
+//////////////////////////////////////| logos mixin
+._logos( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		@test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		@test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		@test: 'WBC';
+	}
+	.getBrand();
+
+
+
+	.logo {
+		display: inline-block;
+
+		&.logo-bom-alt {
+			width: 180px;
+			height: 65px;
+		}
+
+		&.logo-bom-phone {
+			width: 88px;
+			height: 42px;
+		}
+
+		&.logo-bom-tablet {
+			width: 180px;
+			height: 65px;
+		}
+
+		&.logo-bsa-alt {
+			width: 180px;
+			height: 65px;
+		}
+
+		&.logo-bsa-phone {
+			width: 88px;
+			height: 42px;
+		}
+
+		&.logo-bsa-tablet {
+			width: 180px;
+			height: 65px;
+		}
+
+		&.logo-stg-alt {
+			width: 180px;
+			height: 65px;
+		}
+
+		&.logo-stg-phone {
+			width: 88px;
+			height: 42px;
+		}
+
+		&.logo-stg-tablet {
+			width: 180px;
+			height: 65px;
+		}
+
+		&.logo-wbc-alt {
+			width: 180px;
+			height: 65px;
+		}
+
+		&.logo-wbc-phone {
+			width: 88px;
+			height: 42px;
+		}
+
+		&.logo-wbc-tablet {
+			width: 180px;
+			height: 65px;
+		}
+
+	}
+}
+
+
+//////////////////////////////////////| logos
+._logos( [Brand] );

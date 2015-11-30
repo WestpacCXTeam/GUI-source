@@ -11,6 +11,11 @@ GUI Icon-group05
 
 ### Release History
 
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* We removed the waves around the telephone icon because that was just so... retro. (What telephone isn't wireless these days? Seriously? We want to know)
+		[#160](https://github.com/WestpacCXTeam/GUI-source/issues/160)
+	* 
+		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**

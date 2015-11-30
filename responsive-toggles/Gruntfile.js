@@ -751,6 +751,7 @@ module.exports = function(grunt) {
 			wakeme: {
 				options: {
 					randomize: true,
+					notifications: true,
 				},
 			},
 		},

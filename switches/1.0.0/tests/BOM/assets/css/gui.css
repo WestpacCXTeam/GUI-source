@@ -1384,7 +1384,7 @@ th {
 .h1,
 h1 {
   font-size: 30px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -1405,7 +1405,7 @@ h1.body-font {
 .h2,
 h2 {
   font-size: 24px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1426,7 +1426,7 @@ h2.body-font {
 .h3,
 h3 {
   font-size: 18px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1447,7 +1447,7 @@ h3.body-font {
 .h4,
 h4 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1468,7 +1468,7 @@ h4.body-font {
 .h5,
 h5 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 6px;
@@ -1483,7 +1483,7 @@ h5.body-font {
 .h6,
 h6 {
   font-size: 14px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
@@ -1509,13 +1509,13 @@ html {
 body {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #0d0d0d;
-  background-color: #f1f1f2;
+  color: #20262d;
+  background-color: #f0f1f2;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #0d0d0d;
+  border-bottom: 1px dotted #20262d;
 }
 address {
   font-style: normal;
@@ -1525,32 +1525,32 @@ blockquote {
   font-weight: 300;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 a {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: underline;
 }
 a:focus {
   outline: none;
-  color: #d60c8c;
+  color: #b45c38;
 }
 .is-keyboarduser a:focus {
   outline: 2px dotted #000;
@@ -1650,7 +1650,7 @@ a:hover {
 .switch .switch-text {
   display: inline-block;
   text-indent: -999999em;
-  border: 2px solid #c6c5cb;
+  border: 2px solid #d2d5d8;
   background-color: #fff;
   overflow: hidden;
   width: 100%;
@@ -1661,12 +1661,12 @@ a:hover {
   transition: border 0.3s ease, background 0.3s ease;
 }
 .switch-buff.switch .switch-text {
-  background-color: #f8f8f8;
+  background-color: #f7f8f9;
 }
 .switch .switch-text .switch-text-off,
 .switch .switch-text .switch-text-on {
   text-indent: 0;
-  color: #0d0d0d;
+  color: #20262d;
   position: absolute;
   width: 44px;
   right: 3px;
@@ -1688,7 +1688,7 @@ a:hover {
   height: 32px;
   box-shadow: 3px 0px 6px 0px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
-  background-color: #685ac0;
+  background-color: #444f5e;
   transition: left 0.3s ease, box-shadow 0.3s ease;
 }
 .switch-buff.switch .switch-text:after {
@@ -1710,8 +1710,8 @@ a:hover {
   outline-offset: 0.5rem;
 }
 .switch-buff.switch .switch-input:checked + .switch-text {
-  border-color: #685ac0;
-  background-color: #685ac0;
+  border-color: #444f5e;
+  background-color: #444f5e;
 }
 .switch .switch-input:checked + .switch-text .switch-text-off {
   opacity: 0;

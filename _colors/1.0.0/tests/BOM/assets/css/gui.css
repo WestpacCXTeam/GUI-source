@@ -1384,7 +1384,7 @@ th {
 .h1,
 h1 {
   font-size: 30px;
-  color: #685ac0;
+  color: #11b6af;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -1405,7 +1405,7 @@ h1.body-font {
 .h2,
 h2 {
   font-size: 24px;
-  color: #685ac0;
+  color: #11b6af;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1426,7 +1426,7 @@ h2.body-font {
 .h3,
 h3 {
   font-size: 18px;
-  color: #685ac0;
+  color: #11b6af;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1447,7 +1447,7 @@ h3.body-font {
 .h4,
 h4 {
   font-size: 16px;
-  color: #685ac0;
+  color: #3d3d3d;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1468,7 +1468,7 @@ h4.body-font {
 .h5,
 h5 {
   font-size: 16px;
-  color: #685ac0;
+  color: #3d3d3d;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 6px;
@@ -1483,7 +1483,7 @@ h5.body-font {
 .h6,
 h6 {
   font-size: 14px;
-  color: #685ac0;
+  color: #3d3d3d;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
