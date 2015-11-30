@@ -3,5 +3,5 @@
 <svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
 <title id="title" lang="en">Tick</title>
 
-<path fill="#0d0d0d" class="icons-background" d="M0 16l13 16c0 0 11.9-23.5 19-32-8.9 4.3-20 20-20 20l-8-7-4 3z"></path>
+<path fill="#20262d" class="icons-background" d="M0 16l13 16c0 0 11.9-23.5 19-32-8.9 4.3-20 20-20 20l-8-7-4 3z"></path>
 </svg>

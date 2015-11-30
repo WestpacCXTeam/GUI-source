@@ -9,6 +9,9 @@ GUI Checkboxes
 
 ### Release History
 
+* v1.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* 
+		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
 * v1.0.1 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
 	* In some browsers the checkboxes appeared cut-off. That seemed a bit shy and insecure so we sent them to counselling. Now checkboxes
 		proudly present their bottoms as well. [#128](https://github.com/WestpacCXTeam/GUI-source/issues/128)

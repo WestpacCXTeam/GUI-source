@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Cube</title>
+
+<path fill="#2d373e" class="icons-background" d="M2 25l12 5v-14l-12-5v14zM18 16v14l12-5v-14l-12 5zM16 1l-14 6 14 6 14-6-14-6z"></path>
+</svg>

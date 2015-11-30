@@ -1384,7 +1384,7 @@ th {
 .h1,
 h1 {
   font-size: 30px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -1405,7 +1405,7 @@ h1.body-font {
 .h2,
 h2 {
   font-size: 24px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1426,7 +1426,7 @@ h2.body-font {
 .h3,
 h3 {
   font-size: 18px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1447,7 +1447,7 @@ h3.body-font {
 .h4,
 h4 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1468,7 +1468,7 @@ h4.body-font {
 .h5,
 h5 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 6px;
@@ -1483,7 +1483,7 @@ h5.body-font {
 .h6,
 h6 {
   font-size: 14px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
@@ -1509,13 +1509,13 @@ html {
 body {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #0d0d0d;
-  background-color: #f1f1f2;
+  color: #20262d;
+  background-color: #f0f1f2;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #0d0d0d;
+  border-bottom: 1px dotted #20262d;
 }
 address {
   font-style: normal;
@@ -1525,32 +1525,32 @@ blockquote {
   font-weight: 300;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 a {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: underline;
 }
 a:focus {
   outline: none;
-  color: #d60c8c;
+  color: #b45c38;
 }
 .is-keyboarduser a:focus {
   outline: 2px dotted #000;
@@ -1653,28 +1653,28 @@ a:hover {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 1px solid #d60c8c;
-  background-color: #d60c8c;
+  border: 1px solid #b45c38;
+  background-color: #b45c38;
 }
 .lists.lists-hero > li:after {
-  border-color: #685ac0;
-  background-color: #685ac0;
+  border-color: #444f5e;
+  background-color: #444f5e;
 }
 .lists.lists-neutral > li:after {
-  border-color: #716f7d;
-  background-color: #716f7d;
+  border-color: #69727e;
+  background-color: #69727e;
 }
 .lists > li > .lists > li:after {
   background-color: transparent;
 }
 .lists.lists-linklist > li > a {
-  color: #0d0d0d;
+  color: #20262d;
   display: block;
 }
 .lists.lists-linklist > li:after {
   border-top: 0 none;
   border-left: 0 none;
-  border-color: #d60c8c;
+  border-color: #b45c38;
   border-radius: 0;
   background-color: transparent;
   -webkit-transform: rotate(-45deg);
@@ -1685,7 +1685,7 @@ a:hover {
   border: none;
   border-radius: 0;
   background-color: transparent;
-  border-left: 7px solid #d60c8c;
+  border-left: 7px solid #b45c38;
   border-bottom: 6px solid transparent;
   border-top: 6px solid transparent;
   border-right: none;

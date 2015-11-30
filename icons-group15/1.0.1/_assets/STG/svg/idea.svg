@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+<title id="title" lang="en">Idea</title>
+
+<path fill="#004833" class="icons-background" d="M12 25c0.7 0.8 2 1 4 1s3.3-0.4 4-1v2.5c-1.2 0.4-2 0.5-4 0.5s-2.8-0.1-4-0.5v-2.5zM12 29c1.8 0.6 2.6 0.5 4 0.5s2.2 0.1 4-0.5c-0.2 0.9-0.8 3-4 3s-3.8-2.1-4-3zM16 0c6 0 10 4.2 10 9.5 0 2.6-2.1 5.9-3.8 8.8-1.7 3-0.2 5.7-6.2 5.7s-4.5-3.1-6.3-6.1c-1.8-3-3.7-5.8-3.7-8.4 0-5.3 4-9.5 10-9.5zM12.2 10c0-2.1 1.7-3.8 3.8-3.8 0.7 0 1.2-0.6 1.2-1.2s-0.5-1.2-1.2-1.2c-3.4 0-6.2 2.8-6.2 6.2 0 0.7 0.6 1.2 1.2 1.2s1.2-0.5 1.2-1.2z"></path>
+</svg>

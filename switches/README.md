@@ -11,10 +11,11 @@ GUI Switches
 
 * v1.0.1 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Being the new kid on the block, the switches needed a good talking to about the rules of the GUI street. All GUI kids need to be printable, have disabled
-		states and behave while playing with the others(speak: no shadows that make them look fuzzy). The switches promised to better and from now on hang
+		states and behave while playing with the others. The switches promised to better and from now on hang
 		around in the forms category where other like-minded GUI modules hang around. Proud parents here.
-		[#156](https://github.com/WestpacCXTeam/GUI-source/issues/156), [#156](https://github.com/WestpacCXTeam/GUI-source/issues/156),
+		[#155](https://github.com/WestpacCXTeam/GUI-source/issues/155), [#156](https://github.com/WestpacCXTeam/GUI-source/issues/156),
 		[#153](https://github.com/WestpacCXTeam/GUI-source/issues/153)
+	* We removed the buff flavour of the switches. The class sounded cool but making it look different caused more confusion than coolness.
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**

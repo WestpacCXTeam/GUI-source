@@ -1,0 +1,8 @@
+{
+	"alert": [".icon-alert"],
+	"face-happy": [".icon-face-happy"],
+	"face-hmm": [".icon-face-hmm"],
+	"face-sad": [".icon-face-sad"],
+	"help": [".icon-help"],
+	"info": [".icon-info"]
+}

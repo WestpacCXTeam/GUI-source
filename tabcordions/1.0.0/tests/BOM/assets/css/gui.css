@@ -1384,7 +1384,7 @@ th {
 .h1,
 h1 {
   font-size: 30px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 18px;
@@ -1405,7 +1405,7 @@ h1.body-font {
 .h2,
 h2 {
   font-size: 24px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1426,7 +1426,7 @@ h2.body-font {
 .h3,
 h3 {
   font-size: 18px;
-  color: #685ac0;
+  color: #7e7357;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1447,7 +1447,7 @@ h3.body-font {
 .h4,
 h4 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "stag", "Roboto", Arial, sans-serif;
   margin-top: 18px;
   margin-bottom: 12px;
@@ -1468,7 +1468,7 @@ h4.body-font {
 .h5,
 h5 {
   font-size: 16px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 6px;
@@ -1483,7 +1483,7 @@ h5.body-font {
 .h6,
 h6 {
   font-size: 14px;
-  color: #685ac0;
+  color: #4d5157;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
   margin-top: 12px;
   margin-bottom: 0px;
@@ -1509,13 +1509,13 @@ html {
 body {
   font-size: 14px;
   line-height: 1.428571429;
-  color: #0d0d0d;
-  background-color: #f1f1f2;
+  color: #20262d;
+  background-color: #f0f1f2;
   font-family: "Helvetica Neue", "Roboto", Arial, sans-serif;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #0d0d0d;
+  border-bottom: 1px dotted #20262d;
 }
 address {
   font-style: normal;
@@ -1525,32 +1525,32 @@ blockquote {
   font-weight: 300;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 ::-moz-selection {
-  background-color: #f7cee8;
+  background-color: #f0ded7;
 }
 a {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #d60c8c;
+  color: #b45c38;
   text-decoration: underline;
 }
 a:focus {
   outline: none;
-  color: #d60c8c;
+  color: #b45c38;
 }
 .is-keyboarduser a:focus {
   outline: 2px dotted #000;
@@ -1681,7 +1681,7 @@ html {
   }
 }
 .tabcordion {
-  border: 1px solid #c6c5cb;
+  border: 1px solid #d2d5d8;
   border-bottom: 0 none;
   border-radius: 3px;
 }
@@ -1696,7 +1696,7 @@ html {
   border-radius: 0;
 }
 .tabcordion-accordion.tabcordion {
-  border: 1px solid #c6c5cb;
+  border: 1px solid #d2d5d8;
   border-bottom: 0 none;
   border-radius: 3px;
 }
@@ -1757,9 +1757,9 @@ html {
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 14px 18px 14px 18px;
-  color: #0d0d0d;
-  background-color: #f8f8f8;
-  border: 1px solid #c6c5cb;
+  color: #20262d;
+  background-color: #f7f8f9;
+  border: 1px solid #d2d5d8;
   border-bottom: 0 none;
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
@@ -1777,7 +1777,7 @@ html {
 .tabcordion .tabcordion-tabs .tabcordion-tab a:hover {
   outline: none;
   text-decoration: none;
-  background-color: #f1f1f2;
+  background-color: #f0f1f2;
 }
 .tabcordion .tabcordion-tabs .tabcordion-tab.is-active a {
   background-color: #fff;
@@ -1794,30 +1794,30 @@ html {
   display: inline-block;
 }
 .tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab a {
-  background-color: #685ac0;
+  background-color: #444f5e;
   color: #ffffff;
   border-radius: 0;
   margin-bottom: 2px;
   padding-bottom: 12px;
-  border-color: #685ac0;
+  border-color: #444f5e;
   transition: background 0.3s ease, padding 0.3s ease, margin 0.3s ease;
 }
 .tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab a:hover {
-  background-color: #958cd3;
+  background-color: #7c848e;
 }
 .tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab.is-active a {
   background-color: #fff;
-  color: #0d0d0d;
+  color: #20262d;
   margin-bottom: -1px;
   padding-bottom: 15px;
-  border-color: #c6c5cb;
+  border-color: #d2d5d8;
 }
 .tabcordion .tabcordion-body-header {
   display: block;
   font-size: 16px;
   position: relative;
   z-index: 2;
-  border-bottom: 1px solid #c6c5cb;
+  border-bottom: 1px solid #d2d5d8;
 }
 .tabcordion .tabcordion-body-header:last-child {
   border-bottom: 0 none;
@@ -1830,15 +1830,15 @@ html {
 }
 .tabcordion-accordion.tabcordion .tabcordion-body-header {
   display: block;
-  border-bottom: 1px solid #c6c5cb;
+  border-bottom: 1px solid #d2d5d8;
 }
 .tabcordion .tabcordion-body-header .tabcordion-body-headline {
   display: block;
   padding: 13px 36px 13px 18px;
-  color: #0d0d0d;
+  color: #20262d;
   position: relative;
   transition: 0.3s ease;
-  background-color: #f8f8f8;
+  background-color: #f7f8f9;
 }
 .tabcordion .tabcordion-body-header .tabcordion-body-headline:before {
   content: " ";
@@ -1848,7 +1848,7 @@ html {
   right: 12px;
   display: inline-block;
   vertical-align: middle;
-  border-top: 8px solid #0d0d0d;
+  border-top: 8px solid #20262d;
   border-top-style: solid;
   border-right: 7px solid transparent;
   border-bottom: none;
@@ -1863,7 +1863,7 @@ html {
   right: 14px;
   display: inline-block;
   vertical-align: middle;
-  border-top: 6px solid #0d0d0d;
+  border-top: 6px solid #20262d;
   border-right: 5px solid transparent;
   border-bottom: none;
   border-left: 5px solid transparent;
@@ -1881,7 +1881,7 @@ html {
 .tabcordion .tabcordion-body-header .tabcordion-body-headline:hover {
   outline: none;
   text-decoration: none;
-  background-color: #f1f1f2;
+  background-color: #f0f1f2;
 }
 .tabcordion .tabcordion-body-header .tabcordion-body-headline:active {
   text-decoration: none;
@@ -1897,7 +1897,7 @@ html {
   left: 42px;
   display: inline-block;
   vertical-align: middle;
-  border-top: 16px solid #c6c5cb;
+  border-top: 16px solid #d2d5d8;
   border-top-style: solid;
   border-right: 12px solid transparent;
   border-bottom: none;
@@ -1912,27 +1912,27 @@ html {
   left: 42px;
   display: inline-block;
   vertical-align: middle;
-  border-top: 16px solid #f8f8f8;
+  border-top: 16px solid #f7f8f9;
   border-right: 12px solid transparent;
   border-bottom: none;
   border-left: 12px solid transparent;
   z-index: 2;
 }
 .tabcordion .tabcordion-body-header.is-active .tabcordion-body-headline:hover {
-  background-color: #f8f8f8;
+  background-color: #f7f8f9;
 }
 .tabcordion .tabcordion-body-header.is-active .tabcordion-body-headline:after {
   border-top-color: #fff;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header {
   transition: border 0.3s ease;
-  border-left: 12px solid #c6c5cb;
+  border-left: 12px solid #d2d5d8;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header .tabcordion-body-headline {
   padding-left: 12px;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header.is-active {
-  border-left-color: #685ac0;
+  border-left-color: #444f5e;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header.is-active .tabcordion-body-headline {
   background-color: #fff;
@@ -1946,14 +1946,14 @@ html {
   z-index: 1;
 }
 .tabcordion .collapsible-body .tabcordion-body {
-  border-top: 1px solid #c6c5cb;
-  border-bottom: 1px solid #c6c5cb;
+  border-top: 1px solid #d2d5d8;
+  border-bottom: 1px solid #d2d5d8;
   padding: 24px 3.22%;
 }
 @media (min-width: 768px) {
   .tabcordion .collapsible-body .tabcordion-body {
-    border-right: 1px solid #c6c5cb;
-    border-left: 1px solid #c6c5cb;
+    border-right: 1px solid #d2d5d8;
+    border-left: 1px solid #d2d5d8;
   }
 }
 .tabcordion-accordion.tabcordion .collapsible-body .tabcordion-body {
@@ -1961,8 +1961,8 @@ html {
   border-left: 0 none;
 }
 .tabcordion-tabs.tabcordion .collapsible-body .tabcordion-body {
-  border-right: 1px solid #c6c5cb;
-  border-left: 1px solid #c6c5cb;
+  border-right: 1px solid #d2d5d8;
+  border-left: 1px solid #d2d5d8;
 }
 .tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
   border-top: 0 none;
@@ -1971,7 +1971,7 @@ html {
 }
 @media (min-width: 768px) {
   .tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
-    border-top: 1px solid #c6c5cb;
+    border-top: 1px solid #d2d5d8;
     padding-left: 3.22%;
   }
 }
@@ -1981,7 +1981,7 @@ html {
   padding-right: 24px;
 }
 .tabcordion-tabs.tabcordion-lego.tabcordion .collapsible-body .tabcordion-body {
-  border-top: 1px solid #c6c5cb;
+  border-top: 1px solid #d2d5d8;
   padding-left: 3.22%;
 }
 @media print {

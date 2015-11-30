@@ -1,0 +1,9 @@
+{
+	"accessibility": [".icon-accessibility"],
+	"car": [".icon-car"],
+	"geolocation": [".icon-geolocation"],
+	"map-pin": [".icon-map-pin"],
+	"map": [".icon-map"],
+	"transport": [".icon-transport"],
+	"walk": [".icon-walk"]
+}
