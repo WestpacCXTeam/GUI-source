@@ -14,7 +14,7 @@ GUI Icon-group05
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* We removed the waves around the telephone icon because that was just so... retro. (What telephone isn't wireless these days? Seriously? We want to know)
 		[#160](https://github.com/WestpacCXTeam/GUI-source/issues/160)
-	* 
+	* BIG BOM brand change. All new colours, all new look, all new GUI. Brace yourselfs.
 		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
 * v1.0.0 - Initial port
 
