@@ -11,7 +11,7 @@ GUI Text-styling
 ### Release History
 
 * v1.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* 
+	* BIG BOM brand change. All new colours, all new look, all new GUI. Brace yourselfs.
 		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Being all accessible means we highlight links when they are focused for better readability. We still do it but now only for keyboard users.

@@ -11,7 +11,7 @@ GUI Symbols
 ### Release History
 
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* 
+	* BIG BOM brand change. All new colours, all new look, all new GUI. Brace yourselfs.
 		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
 * v1.0.0 - Initial port
 
