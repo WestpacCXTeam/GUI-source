@@ -1,6 +1,12 @@
 GUI Input-field
 ===============
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/input-fields/1.0.1/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/input-fields/1.0.1/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/input-fields/1.0.1/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/input-fields/1.0.1/tests/WBC/)
+
 > Inputs are the most common form controls. Text-based input fields include support for all HTML5 types: text, password, datetime, datetime-local, date, month,
 > time, week, number, email, url, search, tel, and colour. The date element triggers the date selector in compliant browsers.
 

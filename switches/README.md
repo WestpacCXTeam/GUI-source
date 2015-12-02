@@ -1,5 +1,11 @@
 GUI Switches
-===========
+============
+
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/switches/1.0.1/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/switches/1.0.1/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/switches/1.0.1/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/switches/1.0.1/tests/WBC/)
 
 > These are very simple toggle switches ideal for use in settings or preference screens. The switch can be blank or contain a simple string for example;
 > yes/no, on/off etc. Please note: These switches are a fixed width. They are not for use with longs text strings.

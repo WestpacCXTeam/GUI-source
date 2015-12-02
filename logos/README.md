@@ -1,6 +1,12 @@
 GUI Logos
 =========
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/logos/1.0.1/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/logos/1.0.1/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/logos/1.0.1/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/logos/1.0.1/tests/WBC/)
+
 > These symbols are commonly used in WBC user interfaces. They are implemented as scalable vector graphics (SVG’s) with png fallback’s for older browsers.
 > Using SVG’s ensures the highest quality rendering on all devices, allows us to style the symbols using code and also complies with AA accessibility
 > requirements.

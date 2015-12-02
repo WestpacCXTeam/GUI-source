@@ -1,6 +1,12 @@
 GUI Panels
 ==========
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/panels/1.0.0/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/panels/1.0.0/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/panels/1.0.0/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/panels/1.0.0/tests/WBC/)
+
 > Containers with headers and optional footers for grouping elements and text.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------

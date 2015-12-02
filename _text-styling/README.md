@@ -1,6 +1,12 @@
 GUI Text-styling
 ================
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/_text-styling/1.0.2/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/_text-styling/1.0.2/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/_text-styling/1.0.2/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/_text-styling/1.0.2/tests/WBC/)
+
 > All HTML headings, are available. h1 through to h6 classes are also available, for when you want to match the font styling of a heading while maintaining
 > inline display. The default spacing used in these headings may not be suitable in all cases. Use the margin classes to adjust spacing above and below
 > headings.

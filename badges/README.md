@@ -1,6 +1,12 @@
 GUI Badges
 ==========
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/badges/1.0.0/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/badges/1.0.0/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/badges/1.0.0/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/badges/1.0.0/tests/WBC/)
+
 > Styled element used to highlight a number. They can be used alone, with links or in buttons.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------

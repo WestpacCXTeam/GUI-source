@@ -1,6 +1,12 @@
 GUI Labels
 ==========
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/labels/1.0.1/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/labels/1.0.1/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/labels/1.0.1/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/labels/1.0.1/tests/WBC/)
+
 > Styled elements to highlight words or links.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
