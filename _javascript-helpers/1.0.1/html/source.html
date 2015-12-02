@@ -1,24 +1,163 @@
-<h2>stuff about the API...</h2>
+<h2>native - debounce - throttle</h2>
 
-<ul>
-	<li>GUI.debounce();</li>
-	<li>GUI.throttle();</li>
-	<li>GUI.debugging();</li>
-	<li>GUI.DEBUG= true;</li>
-</ul>
+<div style="overflow:hidden;">
+	<div class="area area-1">
+		<div class="inside inside-1">
+			<div class="content content-2"></div>
+			<div class="thing thing-1">Nothing</div>
+		</div>
+		<div class="count count-1">0</div>
+	</div>
 
-<p>jquery-trap-input...</p>
+	<div class="area area-2">
+		<div class="inside inside-2">
+			<div class="content content-2"></div>
+			<div class="thing thing-2">Throttled</div>
+		</div>
+		<div class="count count-2">0</div>
+	</div>
+
+	<div class="area area-3">
+		<div class="inside inside-3">
+			<div class="content content-3"></div>
+			<div class="thing thing-3">Debounced</div>
+		</div>
+		<div class="count count-3">0</div>
+	</div>
+</div>
+
+<style>
+	.area {
+		float: left;
+		width: 300px;
+		height: 200px;
+		margin: 20px;
+		background: #fff;
+		position: relative;
+		border: 2px solid #ccc;
+	}
+
+	.inside {
+		height: 200px;
+		position: relative;
+		overflow: auto;
+	}
+
+	.content {
+		height: 5000px;
+	}
+
+	.thing {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		background: #f06d06;
+		color: #fff;
+		padding: 10px;
+	}
+
+	.count {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+</style>
+
+<script>
+	// 1
+	var inside1 = $(".inside-1");
+	var thing1 = $(".thing-1");
+	var count1 = $(".count-1");
+	inside1.on('scroll', function() {
+		thing1.css("top", inside1[0].scrollTop);
+		count1.html(parseInt(count1.html())+1);
+	});
+
+	// 2
+	var inside2 = $(".inside-2");
+	var thing2 = $(".thing-2");
+	var count2 = $(".count-2");
+	inside2.on('scroll', GUI.throttle(function() {
+		thing2.css("top", inside2[0].scrollTop);
+		count2.html(parseInt(count2.html())+1);
+	}, 150));
+
+	// 3
+	var inside3 = $(".inside-3");
+	var thing3 = $(".thing-3");
+	var count3 = $(".count-3");
+	inside3.on('scroll', GUI.debounce(function() {
+		thing3.css("top", inside3[0].scrollTop);
+		count3.html(parseInt(count3.html())+1);
+	}, 100));
+</script>
+
+
+<hr>
+<h2>Debugging</h2>
+
+<button class="js-debugoff">Toggle debugger Off</button>
+<button class="js-debugon">Toggle debugger On</button>
+
+<hr>
+
+<button class="js-debugsend">report</button>
+<button class="js-debugsend">error</button>
+<button class="js-debugsend">interaction</button>
+<button class="js-debugsend">send</button>
+<button class="js-debugsend">receive</button>
+
+<script>
+	$('.js-debugoff').on('click', function() {
+		GUI.DEBUG = false;
+	});
+
+	$('.js-debugon').on('click', function() {
+		GUI.DEBUG = true;
+	});
+
+	$('.js-debugsend').on('click', function() {
+		var message = $( this ).text();
+
+		GUI.debugging( 'test reporting: ' + message, message );
+	});
+</script>
+
+
+<hr>
+<h2>jQuery trap plugin</h2>
+
+<div class="trap">
+	<a href="#">nothing</a>
+	<button>more nothing</button>
+</div>
+
+<script>
+	$(".trap").trap();
+</script>
+
+
+<hr>
+<h2>feature detection</h2>
 
 <p>
 	Animation support:
-	<script>
-		document.write( GUI.detectCSS('animation') );
-	</script>
+
+	<span style="color:red;font-weight:900;">
+		<script>
+			document.write( GUI.detectCSS('animation') );
+		</script>
+	</span>
 </p>
 
 <p>
-	Animation support:
-	<script>
-		document.write( GUI.detectCSS('grid-area') );
-	</script>
+	grid-area support:
+	<span style="color:red;font-weight:900;">
+		<script>
+			document.write( GUI.detectCSS('grid-area') );
+		</script>
+	</span>
 </p>
