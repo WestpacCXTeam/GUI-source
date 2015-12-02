@@ -1,6 +1,12 @@
 GUI Colors
 ==========
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/_colors/1.0.1/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/_colors/1.0.1/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/_colors/1.0.1/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/_colors/1.0.1/tests/WBC/)
+
 > The colours specified below should be used for all WBC user interfaces. It’s important to understand how the colour system works in a multi-brand
 > environment. It’s also very important to adhere to the accessibility guidelines.
 

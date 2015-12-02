@@ -1,6 +1,12 @@
 GUI Icon-group01
 ================
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/icons-group01/1.0.0/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/icons-group01/1.0.0/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/icons-group01/1.0.0/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/icons-group01/1.0.0/tests/WBC/)
+
 > This library of icons is intended for use across all of our brands and user interfaces. They are designed to aid navigation and legibility. The use of icons
 > purely as page embellishment is not recommended and in some cases will be off brand. These icons are implemented as scalable vector graphics (SVG’s) with
 > png fallback’s for older browsers. Using SVG’s ensures the highest quality rendering on all devices, allows us to style the icons using code and also
