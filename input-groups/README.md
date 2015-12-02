@@ -1,6 +1,12 @@
 GUI Input-groups
 ================
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/input-groups/1.0.0/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/input-groups/1.0.0/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/input-groups/1.0.0/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/input-groups/1.0.0/tests/WBC/)
+
 > Styled input fields with attached attributes ie $ or %.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------

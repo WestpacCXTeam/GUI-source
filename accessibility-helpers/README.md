@@ -1,6 +1,12 @@
 GUI Accessibility-helpers
 =========================
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/accessibility-helpers/1.0.0/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/accessibility-helpers/1.0.0/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/accessibility-helpers/1.0.0/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/accessibility-helpers/1.0.0/tests/WBC/)
+
 > Used mainly by screen reader users for bypassing or "skipping" over repetitive web page content.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------

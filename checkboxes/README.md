@@ -1,6 +1,12 @@
 GUI Checkboxes
 ==============
 
+➠
+[BOM](http://westpaccxteam.github.io/GUI-source/checkboxes/1.0.2/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-source/checkboxes/1.0.2/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-source/checkboxes/1.0.2/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-source/checkboxes/1.0.2/tests/WBC/)
+
 > Forms play an important role in our brand's products and services. All roads lead to a form so it’s important to get them right. These basic form
 > elements have been carefully crafted and rigorously tested. Use them as the foundation for any form creation.
 
