@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group13",
+	"name": "Icons-Group 13",
+	"description": "<span class='icon icon-size-sm icon-add-a'></span> <span class='icon icon-size-sm icon-add-b'></span> <span class='icon icon-size-sm icon-backspace'></span> <span class='icon icon-size-sm icon-close'></span> <span class='icon icon-size-sm icon-delete'></span> <span class='icon icon-size-sm icon-filter'></span> <span class='icon icon-size-sm icon-pause'></span> <span class='icon icon-size-sm icon-play'></span> <span class='icon icon-size-sm icon-remove'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 45
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 45
+		}
+	},
+	"hash": "65d759ebd7b755474d7e6a9afd433004"
+}

@@ -1,0 +1,25 @@
+{
+	"ID": "modals",
+	"name": "Modals",
+	"description": "Popup modals in various sizes with JavaScript API.",
+	"category": "Popovers",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 20
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 20
+		}
+	},
+	"hash": "50e86c6a944da3c2e6f87397ba3998de"
+}

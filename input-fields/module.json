@@ -1,0 +1,25 @@
+{
+	"ID": "input-fields",
+	"name": "Input-Fields",
+	"description": "Styled input fields including, text, email, date, textarea and selects etc.",
+	"category": "Forms",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 20
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 20
+		}
+	},
+	"hash": "7da7df2c6379207b7c968925fda28a09"
+}

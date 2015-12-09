@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group07",
+	"name": "Icons-Group 7",
+	"description": "<span class='icon icon-size-sm icon-atm'></span> <span class='icon icon-size-sm icon-calculator'></span> <span class='icon icon-size-sm icon-calendar'></span> <span class='icon icon-size-sm icon-camera'></span> <span class='icon icon-size-sm icon-message'></span> <span class='icon icon-size-sm icon-mobile-pay'></span> <span class='icon icon-size-sm icon-notification'></span> <span class='icon icon-size-sm icon-paypass'></span> <span class='icon icon-size-sm icon-quick-balance'></span> <span class='icon icon-size-sm icon-service-bell'></span> <span class='icon icon-size-sm icon-settings'></span> <span class='icon icon-size-sm icon-shelf-menu'></span> <span class='icon icon-size-sm icon-to-mobile'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 60
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 60
+		}
+	},
+	"hash": "7313a82783ac0146ee7c58021260e7cf"
+}

@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group15",
+	"name": "Icons-Group 15",
+	"description": "<span class='icon icon-size-sm icon-book'></span> <span class='icon icon-size-sm icon-compass'></span> <span class='icon icon-size-sm icon-cross'></span> <span class='icon icon-size-sm icon-cube'></span> <span class='icon icon-size-sm icon-global'></span> <span class='icon icon-size-sm icon-idea'></span> <span class='icon icon-size-sm icon-key'></span> <span class='icon icon-size-sm icon-more'></span> <span class='icon icon-size-sm icon-umbrella'></span> <span class='icon icon-size-sm icon-wallet'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 51
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 51
+		}
+	},
+	"hash": "f73f9c86907f884357155fc939a2f6bb"
+}

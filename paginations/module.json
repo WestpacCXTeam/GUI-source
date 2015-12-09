@@ -1,0 +1,17 @@
+{
+	"ID": "paginations",
+	"name": "Paginations",
+	"description": "Styled links to navigate within a set of related views.",
+	"category": "Navigation",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 18
+		}
+	},
+	"hash": "b3346dcf7c399a76aaabcd37dfb0e534"
+}

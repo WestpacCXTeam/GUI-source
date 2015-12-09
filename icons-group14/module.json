@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group14",
+	"name": "Icons-Group 14",
+	"description": "<span class='icon icon-size-sm icon-download'></span> <span class='icon icon-size-sm icon-new-window'></span> <span class='icon icon-size-sm icon-refresh'></span> <span class='icon icon-size-sm icon-search'></span> <span class='icon icon-size-sm icon-upload'></span> <span class='icon icon-size-sm icon-write'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 35
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 35
+		}
+	},
+	"hash": "fd06c9a6dc53af5a0cc37345a94c9af7"
+}

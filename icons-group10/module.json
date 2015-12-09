@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group10",
+	"name": "Icons-Group 10",
+	"description": "<span class='icon icon-size-sm icon-android'></span> <span class='icon icon-size-sm icon-apple'></span> <span class='icon icon-size-sm icon-desktop'></span> <span class='icon icon-size-sm icon-phone'></span> <span class='icon icon-size-sm icon-tablet'></span> <span class='icon icon-size-sm icon-windows-new'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 32
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 32
+		}
+	},
+	"hash": "6353336232829ab88a30031b4a78d937"
+}

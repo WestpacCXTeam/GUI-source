@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group08",
+	"name": "Icons-Group 8",
+	"description": "<span class='icon icon-size-sm icon-bar-chart'></span> <span class='icon icon-size-sm icon-invest'></span> <span class='icon icon-size-sm icon-pie-chart'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 24
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 24
+		}
+	},
+	"hash": "fb8f2cb270a7cb77503e7244009a2f05"
+}

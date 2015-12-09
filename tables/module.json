@@ -1,0 +1,17 @@
+{
+	"ID": "tables",
+	"name": "Tables",
+	"description": "Responsive tables, including various styling options.",
+	"category": "Tables",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 21
+		}
+	},
+	"hash": "3595b7135463908afaec5ca79d517153"
+}

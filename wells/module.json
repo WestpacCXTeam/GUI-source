@@ -1,0 +1,17 @@
+{
+	"ID": "wells",
+	"name": "Wells",
+	"description": "Similar to panels, without the header or footer.",
+	"category": "Containers",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 17
+		}
+	},
+	"hash": "5ae0552efc599bfd722d0024f04d3a43"
+}

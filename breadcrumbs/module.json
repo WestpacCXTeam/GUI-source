@@ -1,0 +1,17 @@
+{
+	"ID": "breadcrumbs",
+	"name": "Breadcrumbs",
+	"description": "Styled navigational links used to indicate a user journey or path.",
+	"category": "Navigation",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 17
+		}
+	},
+	"hash": "07948eb109bf9ed27c8764ca0513f85f"
+}

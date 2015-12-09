@@ -1,0 +1,17 @@
+{
+	"ID": "text-extensions",
+	"name": "Text Extensions",
+	"description": "Classes for additional text formatting.",
+	"category": "Typography",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 17
+		}
+	},
+	"hash": "f73a85e2cb4ec2a23788b029d94c5a0c"
+}

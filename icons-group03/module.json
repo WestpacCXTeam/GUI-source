@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group03",
+	"name": "Icons-Group 3",
+	"description": "<span class='icon icon-size-sm icon-business-person'></span> <span class='icon icon-size-sm icon-eftpos'></span> <span class='icon icon-size-sm icon-office'></span> <span class='icon icon-size-sm icon-shop'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 26
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 26
+		}
+	},
+	"hash": "d3a2f0efb2587ebe63ff70f3b0713e56"
+}

@@ -1,0 +1,25 @@
+{
+	"ID": "input-addons",
+	"name": "Input-Addons",
+	"description": "Styled input fields with attached selects or buttons.",
+	"category": "Forms",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 21
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 21
+		}
+	},
+	"hash": "032ccb85552035be4a3028017d24b348"
+}

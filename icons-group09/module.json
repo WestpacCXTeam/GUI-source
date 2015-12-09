@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group09",
+	"name": "Icons-Group 9",
+	"description": "<span class='icon icon-size-sm icon-accessibility'></span> <span class='icon icon-size-sm icon-car'></span> <span class='icon icon-size-sm icon-geolocation'></span> <span class='icon icon-size-sm icon-map-pin'></span> <span class='icon icon-size-sm icon-map'></span> <span class='icon icon-size-sm icon-transport'></span> <span class='icon icon-size-sm icon-walk'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 37
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 37
+		}
+	},
+	"hash": "44b41d67f504087ddd2ecede3dda0c0b"
+}

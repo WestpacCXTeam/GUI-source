@@ -1,0 +1,27 @@
+{
+	"ID": "logos",
+	"name": "Logos",
+	"description": "Westpac Group brand, SVG logos.",
+	"category": "Symbols",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 184
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1"
+			],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 183
+		}
+	},
+	"hash": "633917bbaa5bdc6e360c418a9933c337"
+}

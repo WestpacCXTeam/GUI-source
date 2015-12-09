@@ -1,0 +1,33 @@
+{
+	"ID": "alerts",
+	"name": "Alerts",
+	"description": "Contextual messaging panels and text - alerts, errors, info etc.",
+	"category": "Alerts",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 22
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 22
+		},
+		"1.0.2": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 22
+		}
+	},
+	"hash": "92ff803682f6b147cd6d9e9df947c2d3"
+}

@@ -1,0 +1,25 @@
+{
+	"ID": "tooltips",
+	"name": "Tooltips",
+	"description": "Little black boxes for simple messaging.",
+	"category": "Popovers",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 18
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 18
+		}
+	},
+	"hash": "42ee8f4c56256efeb1e94fd4cdffef3b"
+}

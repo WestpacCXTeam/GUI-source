@@ -1,0 +1,17 @@
+{
+	"ID": "labels",
+	"name": "Labels",
+	"description": "Styled element to highlight a word.",
+	"category": "Other stuff",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 17
+		}
+	},
+	"hash": "2ec54c0cb9009d4bece6f1f1737a3d12"
+}

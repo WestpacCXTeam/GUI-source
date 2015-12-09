@@ -1,0 +1,35 @@
+{
+	"ID": "checkboxes",
+	"name": "Checkboxes",
+	"description": "Styled checkboxes with SVG enhancements.",
+	"category": "Forms",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 31
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 31
+		},
+		"1.0.2": {
+			"dependencies": [
+				"_colors:1.0.1"
+			],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 31
+		}
+	},
+	"hash": "d317cf231527184b9fc3aac116b26088"
+}

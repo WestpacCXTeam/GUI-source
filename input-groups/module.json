@@ -1,0 +1,17 @@
+{
+	"ID": "input-groups",
+	"name": "Input-Groups",
+	"description": "Styled input fields with attached attributes ie $ or %.",
+	"category": "Forms",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 18
+		}
+	},
+	"hash": "e73b2f9ef323061e57416877aa1870f5"
+}

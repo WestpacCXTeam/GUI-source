@@ -1,0 +1,17 @@
+{
+	"ID": "responsive-margins",
+	"name": "Responsive-Margins",
+	"description": "Classes for vertical spacing between elements.",
+	"category": "Layout",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 21
+		}
+	},
+	"hash": "5c6f808f243a457784f62367a2a64340"
+}

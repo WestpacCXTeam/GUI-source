@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group16",
+	"name": "Icons-Group 16",
+	"description": "<span class='icon icon-size-sm icon-alert'></span> <span class='icon icon-size-sm icon-face-happy'></span> <span class='icon icon-size-sm icon-face-hmm'></span> <span class='icon icon-size-sm icon-face-sad'></span> <span class='icon icon-size-sm icon-help'></span> <span class='icon icon-size-sm icon-info'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 47
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 47
+		}
+	},
+	"hash": "ae60609c0ee6027c194990f7b4879b22"
+}

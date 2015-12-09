@@ -1,0 +1,17 @@
+{
+	"ID": "responsive-embeds",
+	"name": "Responsive-Embeds",
+	"description": "Classes to embed responsive video content.",
+	"category": "Media",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 17
+		}
+	},
+	"hash": "78256d1e30f9a2d43e0bfab1f4842820"
+}

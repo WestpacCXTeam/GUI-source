@@ -1,0 +1,25 @@
+{
+	"ID": "popovers",
+	"name": "Popovers",
+	"description": "Small overlay elements with simple text and links.",
+	"category": "Popovers",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 21
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 21
+		}
+	},
+	"hash": "61714e27cea0a6581d76eb776a8615a1"
+}

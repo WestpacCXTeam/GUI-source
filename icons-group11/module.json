@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group11",
+	"name": "Icons-Group 11",
+	"description": "<span class='icon icon-size-sm icon-account'></span> <span class='icon icon-size-sm icon-bpay'></span> <span class='icon icon-size-sm icon-history-clock'></span> <span class='icon icon-size-sm icon-move-from'></span> <span class='icon icon-size-sm icon-move-to'></span> <span class='icon icon-size-sm icon-transfer'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 37
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 37
+		}
+	},
+	"hash": "b55c94d226e31f62eb712cc41029e083"
+}

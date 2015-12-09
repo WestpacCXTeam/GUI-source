@@ -1,0 +1,17 @@
+{
+	"ID": "icons-base",
+	"name": "Icons-Base",
+	"description": "Classes to manage icon size and embedding.",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 17
+		}
+	},
+	"hash": "bbdc7b1266e0fec3ba0deda5b10ac953"
+}

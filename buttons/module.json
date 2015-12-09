@@ -1,0 +1,33 @@
+{
+	"ID": "buttons",
+	"name": "Buttons",
+	"description": "All buttons including button groups, dropdown-buttons etc.",
+	"category": "Buttons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 28
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 28
+		},
+		"1.0.2": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 33
+		}
+	},
+	"hash": "28cb90059190c7ea19b9d09a026d07b7"
+}

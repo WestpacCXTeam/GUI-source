@@ -1,0 +1,17 @@
+{
+	"ID": "panels",
+	"name": "Panels",
+	"description": "Containers with headers and optional footers for grouping elements and text.",
+	"category": "Containers",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 18
+		}
+	},
+	"hash": "81af05175915b20ba9ba63563ff66bc2"
+}

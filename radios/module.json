@@ -1,0 +1,35 @@
+{
+	"ID": "radios",
+	"name": "Radios",
+	"description": "Styled radio buttons with SVG enhancements.",
+	"category": "Forms",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 36
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 36
+		},
+		"1.0.2": {
+			"dependencies": [
+				"_colors:1.0.1"
+			],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 36
+		}
+	},
+	"hash": "08a79b96d6754e2b29e09db3f538bab3"
+}

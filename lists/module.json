@@ -1,0 +1,27 @@
+{
+	"ID": "lists",
+	"name": "Lists",
+	"description": "Styled bullet lists in various colours.",
+	"category": "Lists",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 20
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1"
+			],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 20
+		}
+	},
+	"hash": "7cf0cbcf7ca5200b1f370b19193911da"
+}

@@ -1,0 +1,26 @@
+{
+	"ID": "_fonts",
+	"name": "Fonts",
+	"description": "Brand and body fonts with the font stack.",
+	"category": "Typography",
+	"core": true,
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": true,
+			"size": 19
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": true,
+			"size": 16
+		}
+	},
+	"hash": "05fb3ea872816f6f4d4770cba7d8b33a"
+}

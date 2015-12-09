@@ -1,0 +1,30 @@
+{
+	"ID": "icons-group04",
+	"name": "Icons-Group 4",
+	"description": "<span class='icon icon-size-sm icon-house'></span> <span class='icon icon-size-sm icon-people'></span> <span class='icon icon-size-sm icon-person'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 25
+		},
+		"1.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 25
+		}
+	},
+	"hash": "f2af018b750943d10ce39e3413057bf5"
+}

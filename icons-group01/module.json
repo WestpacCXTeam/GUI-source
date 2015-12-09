@@ -1,0 +1,19 @@
+{
+	"ID": "icons-group01",
+	"name": "Icons-Group 1",
+	"description": "<span class='icon icon-size-sm icon-loading'></span>",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 27
+		}
+	},
+	"hash": "70580d006ac0ec9fc26d5b2c11c97b3b"
+}

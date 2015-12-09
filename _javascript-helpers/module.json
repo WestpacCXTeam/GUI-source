@@ -1,0 +1,26 @@
+{
+	"ID": "_javascript-helpers",
+	"name": "Javascript Helpers",
+	"description": "JavaScript framework, with debugging, throttling and debouncing.",
+	"category": "Helpers",
+	"core": true,
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": true,
+			"less": false,
+			"svg": false,
+			"font": false,
+			"size": 19
+		},
+		"1.0.1": {
+			"dependencies": [],
+			"js": true,
+			"less": false,
+			"svg": false,
+			"font": false,
+			"size": 20
+		}
+	},
+	"hash": "67caa17b1d6786f8c6a554b4c963c09c"
+}
