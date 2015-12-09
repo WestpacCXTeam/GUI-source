@@ -1,8 +1,0 @@
-{
-	"android": [".icon-android"],
-	"apple": [".icon-apple"],
-	"desktop": [".icon-desktop"],
-	"phone": [".icon-phone"],
-	"tablet": [".icon-tablet"],
-	"windows-new": [".icon-windows-new"]
-}

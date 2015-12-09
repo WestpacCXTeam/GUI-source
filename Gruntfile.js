@@ -73,6 +73,27 @@ module.exports = function(grunt) {
 		var modulePos = 1;
 
 
+		//copying readme and module.json
+		grunt.file.expand({ filter: 'isDirectory' }, [
+			'./*',
+			'!./node_modules',
+			'!./._templates',
+			'!./.git',
+		]).forEach(function(dir) {
+			var version = '1.0.0';
+
+			grunt.file.expand({ filter: 'isDirectory' }, [ //get latest version
+				dir + '/*',
+				'!./node_modules',
+			]).forEach(function( ver ) {
+				return version = ver;
+			});
+
+			grunt.file.copy( version + '/module.json', dir + '/module.json');
+			grunt.file.copy( version + '/README.md', dir + '/README.md');
+		});
+
+
 		//build GUI.json
 		grunt.file.expand({ filter: 'isDirectory' }, [
 			'./*',
@@ -181,152 +202,9 @@ module.exports = function(grunt) {
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	// Custom grunt task to create list index
-	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	grunt.registerTask('mergeBase', 'Merge the core into all modules.', function() {
-
-		var hub = {};
-		var GUI = grunt.file.readJSON('GUI.json');
-
-		Object.keys( GUI.modules ).forEach(function iterateCategories( category ) {
-
-			Object.keys( GUI.modules[category] ).forEach(function iterateModules( moduleKey ) {
-
-				var module = GUI.modules[category][moduleKey];
-
-				//gathering hub tasks
-				hub[ 'merge-' + module.ID ] = {
-					expand: false,
-					src: [
-						'./' + module.ID + '/Gruntfile.js',
-					],
-					tasks: [
-						'_ubergrunt',
-					],
-				};
-
-			});
-		});
-
-
-		//running tasks
-		grunt.config.set('hub', hub);
-		grunt.task.run('hub');
-
-		grunt.task.run('buildIndex');
-	});
-
-
-	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Grunt tasks
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.initConfig({
-
-
-		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		// Add a new module
-		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		prompt: {
-			setup: {
-				options: {
-					questions: [
-						{
-							config: 'module',
-							type: 'input',
-							message: "\n\n" + 'Please enter the name of the new module:'.yellow + "\n\n",
-							validate: function(value) {
-								var gui = grunt.file.readJSON('GUI.json');
-
-								var _isFound = gui[value] !== undefined;
-
-								return !_isFound || 'This module name already exists in the GUI namespace. Please choose another one.'.red;
-							},
-						},
-					],
-					then: function(results) {
-						var name = Handleize( results.module );
-						var copy = {};
-						var rename = {};
-						var replace = {};
-						var message = '';
-
-						//copy template
-						copy[ 'templateCopy' ] = {
-							expand: true,
-							cwd: './._template/module/',
-							src: '**',
-							dest: './' + name + '/',
-							rename: function(dest, src) {
-								if( src === '1.0.0/js/module.js' ) {
-									src = '1.0.0/js/' + name + '.js';
-								}
-
-								return dest + src;
-							},
-						};
-
-						//name it
-						replace[ 'templateReplace' ] = {
-							src: [
-								'./' + name + '/**/*.js',
-								'./' + name + '/**/*.json',
-								'./' + name + '/**/*.html',
-								'./' + name + '/**/*.less',
-							],
-							overwrite: true,
-							replacements: [{
-								from: '[-Module-]',
-								to: name,
-							}],
-						};
-
-
-						//creating missing empty folders
-						grunt.registerTask('folders', 'Creating missing empty folders', function() {
-
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/font') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/img') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BOM/svg') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/font') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/img') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/BSA/svg') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/font') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/img') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/STG/svg') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/font') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/img') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/_assets/WBC/svg') );
-							grunt.file.mkdir( Path.normalize( __dirname + '/' + name + '/1.0.0/tests') );
-
-						});
-
-
-						//report summary
-						grunt.registerTask('report', 'Report the summary', function() {
-							console.log("\n" + message + "\n\n");
-							grunt.log.ok('done');
-						});
-
-
-						//running tasks
-						grunt.config.set('copy', copy);
-						grunt.task.run('copy');
-
-						grunt.task.run('folders');
-
-						message += "\n" + '• Files copied to new module directory: '.green + './'.yellow + name.yellow + '/'.yellow;
-
-						grunt.config.set('replace', replace);
-						grunt.task.run('replace');
-
-						message += "\n" + '• Renamed files, mixins and methods into  '.green + name.yellow + ' namespace'.green;
-
-						grunt.task.run('report');
-
-					},
-				},
-			},
-		},
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -394,22 +272,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [ //build index and gui.json
 		'font:title',
 		'font:index',
-		'buildIndex',
-		'wakeup',
-	]);
-
-	grunt.registerTask('merge', [ //merge core into all modules
-		'font:title',
-		'font:merge',
-		'buildIndex',
-		'mergeBase',
-		'wakeup',
-	]);
-
-	grunt.registerTask('add', [ //add new module
-		'font:title',
-		'font:add',
-		'prompt',
 		'buildIndex',
 		'wakeup',
 	]);

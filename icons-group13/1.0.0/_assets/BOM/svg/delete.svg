@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-<title id="title" lang="en">Delete</title>
-
-<path fill="#0d0d0d" class="icons-background" d="M28 8c0-1-1-2-2-2s-4 0-4 0v-2c0-1-1-2-2-2h-8c-1 0-2 1-2 2v2c0 0-3 0-4 0s-2 1-2 2 0 2 0 2h2c0 0 0 19 0 20s1 2 2 2 15 0 16 0 2-1 2-2v-20h2c0 0 0-1 0-2zM12 4h8v2h-8v-2zM14 10h4v18h-4v-18zM8 10h4v18h-4v-18zM20 10h4v18h-4v-18z"></path>
-</svg>
