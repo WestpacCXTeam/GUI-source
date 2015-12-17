@@ -277,3 +277,6 @@
 [submodule "icons-group09/1.0.2"]
 	path = icons-group09/1.0.2
 	url = git@github.com:WestpacCXTeam/GUI-icons-group09.git
+[submodule "_text-styling/1.0.3"]
+	path = _text-styling/1.0.3
+	url = git@github.com:WestpacCXTeam/GUI_text-styling.git
