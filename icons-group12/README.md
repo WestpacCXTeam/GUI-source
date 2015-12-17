@@ -1,11 +1,14 @@
 GUI Icons-group12
 =================
 
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
+module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+
 ➠
-[BOM](http://westpaccxteam.github.io/GUI-source/icons-group12/1.0.2/tests/BOM/) |
-[BSA](http://westpaccxteam.github.io/GUI-source/icons-group12/1.0.2/tests/BSA/) |
-[STG](http://westpaccxteam.github.io/GUI-source/icons-group12/1.0.2/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-source/icons-group12/1.0.2/tests/WBC/)
+[BOM](http://westpaccxteam.github.io/GUI-icons-group12/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-icons-group12/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-icons-group12/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-icons-group12/tests/WBC/)
 
 > This library of icons is intended for use across all of our brands and user interfaces. They are designed to aid navigation and legibility. The use of
 > icons purely as page embellishment is not recommended and in some cases will be off brand. These icons are implemented as scalable vector graphics (SVG’s)

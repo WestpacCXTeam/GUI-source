@@ -1,11 +1,16 @@
 GUI Colors
 ==========
 
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
+module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ➠
-[BOM](http://westpaccxteam.github.io/GUI-source/_colors/1.0.1/tests/BOM/) |
-[BSA](http://westpaccxteam.github.io/GUI-source/_colors/1.0.1/tests/BSA/) |
-[STG](http://westpaccxteam.github.io/GUI-source/_colors/1.0.1/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-source/_colors/1.0.1/tests/WBC/)
+[BOM](http://westpaccxteam.github.io/GUI_colors/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI_colors/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI_colors/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI_colors/tests/WBC/)
 
 > The colours specified below should be used for all WBC user interfaces. It’s important to understand how the colour system works in a multi-brand
 > environment. It’s also very important to adhere to the accessibility guidelines.
@@ -28,7 +33,7 @@ GUI Colors
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_colors/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

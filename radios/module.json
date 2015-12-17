@@ -10,7 +10,7 @@
 			"less": true,
 			"svg": true,
 			"font": false,
-			"size": 20
+			"size": 12
 		},
 		"1.0.1": {
 			"dependencies": [],
@@ -18,7 +18,7 @@
 			"less": true,
 			"svg": true,
 			"font": false,
-			"size": 20
+			"size": 12
 		},
 		"1.0.2": {
 			"dependencies": [
@@ -28,8 +28,8 @@
 			"less": true,
 			"svg": true,
 			"font": false,
-			"size": 20
+			"size": 12
 		}
 	},
-	"hash": "9493b730d986fe6591e2b03242f32158"
+	"hash": "08a79b96d6754e2b29e09db3f538bab3"
 }

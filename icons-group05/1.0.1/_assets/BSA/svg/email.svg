@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-<title id="title" lang="en">Email</title>
-
-<path fill="#333" class="icons-background" d="M20.4 16.6l11.6 8v-18.5l-11.6 10.5zM0 6.1v18.5l11.6-8-11.6-10.5zM16 20.5l-2.8-2.5-13.2 8h32l-13.2-8-2.8 2.5zM31 6h-30l15 11.3 15-11.3z"></path>
-</svg>
