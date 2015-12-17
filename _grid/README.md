@@ -1,11 +1,16 @@
 GUI Grid
 ========
 
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
+module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ➠
-[BOM](http://westpaccxteam.github.io/GUI-source/_grid/1.0.0/tests/BOM/) |
-[BSA](http://westpaccxteam.github.io/GUI-source/_grid/1.0.0/tests/BSA/) |
-[STG](http://westpaccxteam.github.io/GUI-source/_grid/1.0.0/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-source/_grid/1.0.0/tests/WBC/)
+[BOM](http://westpaccxteam.github.io/GUI_grid/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI_grid/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI_grid/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI_grid/tests/WBC/)
 
 > It’s very important to pay attention to the layout and spacing of every element in the UI. The classes in this module provide a responsive grid for column
 > layout, methods to manipulate the visibility of elements and classes to space elements quickly and accurately using the design system. Using a 12 column
@@ -27,7 +32,7 @@ GUI Grid
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_grid/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

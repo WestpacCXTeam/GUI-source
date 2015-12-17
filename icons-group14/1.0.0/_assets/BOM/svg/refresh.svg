@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-<title id="title" lang="en">Refresh</title>
-
-<path fill="#0d0d0d" class="icons-background" d="M23.5,21l1.9,2.5C23.2,26.2,19.8,28,16,28C9.4,28,4,22.6,4,16c0-0.3,0-0.7,0.1-1H1l4.5-6l4.5,6H7.1 C7,15.3,7,15.7,7,16c0,5,4,9,9,9C19.1,25,21.9,23.4,23.5,21L23.5,21z M27.9,15C27.4,8.9,22.3,4,16,4c-3.3,0-6.4,1.4-8.6,3.6L9.3,10 c1.6-1.9,4-3,6.7-3c4.6,0,8.4,3.5,8.9,8H22l4.5,6l4.5-6H27.9z"></path>
-</svg>

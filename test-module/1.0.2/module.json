@@ -1,0 +1,45 @@
+{
+	"ID": "test-module",
+	"name": "test-module",
+	"description": "Test module to see multiple versions",
+	"category": "_testing",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 7
+		},
+		"1.0.1": {
+			"dependencies": [
+				"test-module2:4.0.0"
+			],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 25
+		},
+		"1.0.2": {
+			"dependencies": [
+				"test-module2:5.6.0"
+			],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": true,
+			"size": 25
+		},
+		"1.1.0": {
+			"dependencies": [],
+			"js": true,
+			"less": true,
+			"svg": true,
+			"font": true,
+			"size": 26
+		}
+	},
+	"hash": "b90b5adfafd5fabc6471bfa22e9040b3"
+}
