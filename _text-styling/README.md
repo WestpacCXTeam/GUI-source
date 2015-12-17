@@ -19,6 +19,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* The core two modules _fonts and _text-styling had a bit of a fight about who sets the font-family variable. This went on for a bit unnoticed
+		until we made them sit together in timeout. Now _text-styling totally understands that everything font should be handled by _fonts and they are best
+		buddys again. sheesh kids... right?!
+		[#163](https://github.com/WestpacCXTeam/GUI-source/issues/163)
 * v1.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* BIG BOM brand change. All new colours, all new look, all new GUI. Brace yourselfs.
 		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
