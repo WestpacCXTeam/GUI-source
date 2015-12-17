@@ -18,9 +18,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v1.0.1 - Somewhere at Microsoft a person decided that placeholder text should look like input text. Making it less placeholder text and more like... text.
-	We were sure there was logic in there somewhere but we couldn't find it so we made it a tint in all browsers (including the elusive IE) to match the default
-	styling of sensible browsers.
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Somewhere at Microsoft a person decided that placeholder text should look like input text. Making it less placeholder text and more like... text.
+		We were sure there was logic in there somewhere but we couldn't find it so we made it a tint in all browsers (including the elusive IE) to match the default
+		styling of sensible browsers.
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
