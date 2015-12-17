@@ -1,11 +1,14 @@
 GUI Text-styling
 ================
 
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
+module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+
 ➠
-[BOM](http://westpaccxteam.github.io/GUI-source/_text-styling/1.0.2/tests/BOM/) |
-[BSA](http://westpaccxteam.github.io/GUI-source/_text-styling/1.0.2/tests/BSA/) |
-[STG](http://westpaccxteam.github.io/GUI-source/_text-styling/1.0.2/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-source/_text-styling/1.0.2/tests/WBC/)
+[BOM](http://westpaccxteam.github.io/GUI_text-styling/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI_text-styling/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI_text-styling/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI_text-styling/tests/WBC/)
 
 > All HTML headings, are available. h1 through to h6 classes are also available, for when you want to match the font styling of a heading while maintaining
 > inline display. The default spacing used in these headings may not be suitable in all cases. Use the margin classes to adjust spacing above and below
@@ -32,7 +35,7 @@ GUI Text-styling
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_text-styling/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

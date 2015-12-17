@@ -1,11 +1,14 @@
 GUI Javascript-helper
 =====================
 
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
+module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+
 ➠
-[BOM](http://westpaccxteam.github.io/GUI-source/_javascript-helpers/1.0.1/tests/BOM/) |
-[BSA](http://westpaccxteam.github.io/GUI-source/_javascript-helpers/1.0.1/tests/BSA/) |
-[STG](http://westpaccxteam.github.io/GUI-source/_javascript-helpers/1.0.1/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-source/_javascript-helpers/1.0.1/tests/WBC/)
+[BOM](http://westpaccxteam.github.io/GUI_javascript-helpers/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI_javascript-helpers/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI_javascript-helpers/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI_javascript-helpers/tests/WBC/)
 
 > Smarts in the JavaScript framework to optimise page performance. For example de-bugging, throttling and debouncing.
 
@@ -28,7 +31,7 @@ GUI Javascript-helper
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_javascript-helpers/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

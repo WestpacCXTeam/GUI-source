@@ -2,10 +2,10 @@ GUI Buttons
 ===========
 
 ➠
-[BOM](http://westpaccxteam.github.io/GUI-source/buttons/1.0.2/tests/BOM/) |
-[BSA](http://westpaccxteam.github.io/GUI-source/buttons/1.0.2/tests/BSA/) |
-[STG](http://westpaccxteam.github.io/GUI-source/buttons/1.0.2/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-source/buttons/1.0.2/tests/WBC/)
+[BOM](http://westpaccxteam.github.io/GUI-buttons/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-buttons/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-buttons/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-buttons/tests/WBC/)
 
 > The button design system gives you the flexibility to choose from multiple styles, sizes and configurations depending on your needs. Use the button classes
 > to quickly create styled buttons, groups of buttons, dropdown buttons etc.
@@ -41,7 +41,7 @@ GUI Buttons
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-buttons/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

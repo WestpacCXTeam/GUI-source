@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg aria-labelledby="title" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-<title id="title" lang="en">Invest</title>
-
-<path fill="#20262d" class="icons-background" d="M0 24h6v8h-6v-8zM8 20h6v12h-6v-12zM16 18h6v14h-6v-14zM24 12h6v20h-6v-20zM30 0v9l-3.4-3.4-10.6 10.5-6-6-7.9 7.9h-2.1v-2.1l10-10 6 6 8.4-8.4-3.4-3.5h9z"></path>
-</svg>

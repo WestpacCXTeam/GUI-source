@@ -1,11 +1,14 @@
 GUI Labels
 ==========
 
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
+module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+
 ➠
-[BOM](http://westpaccxteam.github.io/GUI-source/labels/1.0.1/tests/BOM/) |
-[BSA](http://westpaccxteam.github.io/GUI-source/labels/1.0.1/tests/BSA/) |
-[STG](http://westpaccxteam.github.io/GUI-source/labels/1.0.1/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-source/labels/1.0.1/tests/WBC/)
+[BOM](http://westpaccxteam.github.io/GUI-labels/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-labels/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-labels/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-labels/tests/WBC/)
 
 > Styled elements to highlight words or links.
 
@@ -24,7 +27,7 @@ GUI Labels
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-labels/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

@@ -2,10 +2,10 @@ GUI Icon-group04
 ================
 
 ➠
-[BOM](http://westpaccxteam.github.io/GUI-source/icons-group04/1.0.1/tests/BOM/) |
-[BSA](http://westpaccxteam.github.io/GUI-source/icons-group04/1.0.1/tests/BSA/) |
-[STG](http://westpaccxteam.github.io/GUI-source/icons-group04/1.0.1/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-source/icons-group04/1.0.1/tests/WBC/)
+[BOM](http://westpaccxteam.github.io/GUI-icons-group04/tests/BOM/) |
+[BSA](http://westpaccxteam.github.io/GUI-icons-group04/tests/BSA/) |
+[STG](http://westpaccxteam.github.io/GUI-icons-group04/tests/STG/) |
+[WBC](http://westpaccxteam.github.io/GUI-icons-group04/tests/WBC/)
 
 > This library of icons is intended for use across all of our brands and user interfaces. They are designed to aid navigation and legibility. The use of icons
 > purely as page embellishment is not recommended and in some cases will be off brand. These icons are implemented as scalable vector graphics (SVG’s) with
@@ -30,7 +30,7 @@ GUI Icon-group04
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-icons-group04/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
