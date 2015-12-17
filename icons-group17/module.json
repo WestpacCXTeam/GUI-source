@@ -1,0 +1,17 @@
+{
+	"ID": "icons-group17",
+	"name": "Icons-Group 17",
+	"description": "<span class='icon icon-size-sm icon-accessibility'></span> <span class='icon icon-size-sm icon-car'></span>",
+	"category": "",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 25
+		}
+	},
+	"hash": "e0a2915a9fa6a14245531678d68adea3"
+}
