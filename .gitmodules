@@ -274,3 +274,6 @@
 [submodule "icons-group17/1.0.0"]
 	path = icons-group17/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-icons-group17.git
+[submodule "icons-group09/1.0.2"]
+	path = icons-group09/1.0.2
+	url = git@github.com:WestpacCXTeam/GUI-icons-group09.git
