@@ -271,3 +271,6 @@
 [submodule "wells/1.0.0"]
 	path = wells/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
+[submodule "icons-group17/1.0.0"]
+	path = icons-group17/1.0.0
+	url = git@github.com:WestpacCXTeam/GUI-icons-group17.git
