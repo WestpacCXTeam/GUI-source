@@ -44,18 +44,11 @@ We call each module `GUI Ingredient` and a compiled mix `GUI Blend`. The `GUI Bl
 
 ### Versioning
 
-> `Ingredient` get a new version when HTML changes. We try to keep HTML changes to the absolute minimum.
+> `Ingredient` get a new version when anything changes. We try to keep HTML changes to the absolute minimum.
 > Older versions will always be avaliable but might not be supported anymore.
 
-To add a new version to an `Ingredient`, just duplicate the version folder and register your new version in the `module.json`. Grunt does the rest.
-(Do run `grunt` in the root folder though to generate a new version of the `GUI.json` and `index.html`)
-
-We got a grunt task to automate this:
-
-```shell
-cd [module folder]
-grunt add
-```
+New versions are submodules pointing to a tag in the repository of the module. Each version must be referenced in the `module.json` and the latest version
+must be marked in the `package.json`. The changelog is maintained in the `Readme.md` file in each version.
 
 **[⬆ back to top](#content)**
 
@@ -65,18 +58,11 @@ grunt add
 
 ### Run the source
 
-> To run this repo first download and install all dependencies in the root.
-
-
-```shell
-cd [yourfolder]
-npm install
-```
+> To run this repo first download, install all dependencies in the root and initialize all submodules.
 
 To see an overview of all `Ingredient` you can run `grunt` in the root or visit the [GH-Pages](http://WestpacCXTeam.github.io/GUI-source) hosted by GitHub.
 
-To work on a module and watch its files you can run `grunt` in each `Ingredient` directory. There is no need for a dependency install in those folders provided
-you have grunt installed globally.
+To work on a module and watch its files you can run `grunt` in each repository. Please note that you cannot make changes to any module in this repo.
 
 **[⬆ back to top](#content)**
 
@@ -89,7 +75,7 @@ you have grunt installed globally.
 > Each `Ingredient` version has a `tests` folder that contains various html files to be tested.
 
 You can see the tests [here](http://WestpacCXTeam.github.io/GUI-source). Note that those tests are for stress testing only. Find documentation for the GUI
-[here](http://gel.westpacgroup.com.au/).
+on the [GEL pages](http://gel.westpacgroup.com.au/).
 
 
 **[⬆ back to top](#content)**
@@ -101,18 +87,10 @@ You can see the tests [here](http://WestpacCXTeam.github.io/GUI-source). Note th
 
 ### Adding ingredient
 
-> In the root directory run `grunt add` and follow the prompt. Grunt will watch the namespace for you and alter you about potential conflicts.
+> To include a new module, create a new repo and prefix it with `GUI-` or `GUI_` for core modules.
 
-A new folder with the the name you chose will be generated with a base template for you to start with. Make sure you edit the `module.json` and delete files
-you may not need. The less files come with a basic setup that account for multibranding and the mixin setup. Make sure you don;t leave the namespacing in less
-to not _contaminate_ other modules.
-
-We got a grunt task to automate this:
-
-```shell
-cd [root]
-grunt add
-```
+To add this new module into the source you have to create a new folder with the same name and include each version(tagged) in a version folder. All versions
+have to be noted in the `module.json`. See the boilderplate for a new module in the here: `._template/module`.
 
 **[⬆ back to top](#content)**
 
@@ -169,6 +147,7 @@ The `module.json` file that is then compiled into the GUI.json file is the engin
 
 > We are trying to make as little changes to the overall build as possible.
 
+* v1.0.1 - Moved all modules into submodules
 * v1.0.0 - Initial build system setup
 
 **[⬆ back to top](#content)**
