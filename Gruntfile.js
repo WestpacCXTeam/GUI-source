@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 	grunt.registerTask('buildIndex', 'Build an index html file to mapp all modules for gh-pages.', function() {
 
 		var replace = {};
-		var replaceStr = '<h2 class="body-font">Modules</h2><ul class="gui-list">' + "\n";
+		var replaceStr = '<h2 class="body-font">Modules</h2>' + "\n";
 		var GUI = {
 			modules: {
 				_core: {},
@@ -125,21 +125,23 @@ module.exports = function(grunt) {
 				var module = GUI.modules[category][moduleKey];
 				modulePos++;
 
-				if( modulePos > 2 ) {
-					modulePos = 1;
-				}
-
 				if( core[ module.ID ] !== true ) {
 
-					if( oldCategory !== category ) {
-						replaceStr += '	<li class="category" id="' + module.ID + '"><small>' + category + '</small></li>';
+					if( oldCategory !== category ) { //new category
+
+						if( oldCategory !== '' ) { //unless very first category
+							replaceStr += '</ul>' + "\n";
+						}
+
+						replaceStr += '<h3 class="category" id="' + module.ID + '"><small>' + category + '</small></h3>' + "\n" +
+							'<ul class="gui-list">' + "\n";
 
 						categories += '<li><a href="#' + module.ID + '">' + category + '</a></li>';
 
 						modulePos = 1;
 					}
 
-					replaceStr += '	<li class="module module-' + modulePos + '"><div class="module-wrapper">' + "\n" +
+					replaceStr += '	<li class="module"><div class="module-wrapper">' + "\n" +
 						'		<h3 class="body-font module-headline">' + module.name + ' <small class="description">' + module.description + '</small></h3>' + "\n" +
 						'		<ul class="gui-list-version">' + "\n";
 
