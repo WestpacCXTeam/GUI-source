@@ -63,8 +63,8 @@
 			display: inline-block;
 			width: 100%;
 			border-top: 4px dotted #d7d2cb;
-			margin-top: 84px;
 			clear: both;
+			font-weight: normal;
 		}
 
 		.category:first-child() {
@@ -73,20 +73,14 @@
 		}
 
 		.module {
-			float: left;
-			width: 100%;
+			display: block;
 			padding: 0;
 			margin: 0;
-		}
-
-		.module.module-1 {
-			clear: left;
-		}
-
-		@media (min-width: 768px) {
-			.module {
-				width: 50%;
-			}
+			-webkit-column-break-inside: avoid;
+			page-break-inside: avoid;
+			break-inside: avoid;
+			box-decoration-break: clone;
+			overflow: hidden;
 		}
 
 		.module-headline {
@@ -126,7 +120,12 @@
 			list-style: none;
 			padding: 0;
 			overflow: hidden;
-			margin-top: -80px;
+			-moz-column-count: 2;
+			-webkit-column-count: 2;
+			column-count: 2;
+			-moz-column-gap: 12px;
+			-webkit-column-gap: 12px;
+			column-gap: 12px;
 		}
 
 		.gui-list-version {
@@ -230,8 +229,10 @@
 		</p>
 
 
-<h2 class="body-font">Categories</h2><ul class="category-list"><li><a href="#_colors">_core</a></li><li><a href="#text-extensions">Typography</a></li><li><a href="#responsive-margins">Layout</a></li><li><a href="#accessibility-helpers">Helpers</a></li><li><a href="#alerts">Alerts</a></li><li><a href="#badges">Other stuff</a></li><li><a href="#breadcrumbs">Navigation</a></li><li><a href="#buttons">Buttons</a></li><li><a href="#checkboxes">Forms</a></li><li><a href="#icons-base">Icons</a></li><li><a href="#images">Media</a></li><li><a href="#list-groups">Lists</a></li><li><a href="#logos">Symbols</a></li><li><a href="#modals">Popovers</a></li><li><a href="#panels">Containers</a></li><li><a href="#tables">Tables</a></li><li><a href="#test-module">_testing</a></li></ul><h2 class="body-font">Modules</h2><ul class="gui-list">
-	<li class="category" id="_colors"><small>_core</small></li>	<li class="module module-1"><div class="module-wrapper">
+<h2 class="body-font">Categories</h2><ul class="category-list"><li><a href="#_colors">_core</a></li><li><a href="#text-extensions">Typography</a></li><li><a href="#responsive-margins">Layout</a></li><li><a href="#accessibility-helpers">Helpers</a></li><li><a href="#alerts">Alerts</a></li><li><a href="#badges">Other stuff</a></li><li><a href="#breadcrumbs">Navigation</a></li><li><a href="#buttons">Buttons</a></li><li><a href="#checkboxes">Forms</a></li><li><a href="#icons-base">Icons</a></li><li><a href="#images">Media</a></li><li><a href="#list-groups">Lists</a></li><li><a href="#logos">Symbols</a></li><li><a href="#modals">Popovers</a></li><li><a href="#panels">Containers</a></li><li><a href="#tables">Tables</a></li><li><a href="#test-module">_testing</a></li></ul><h2 class="body-font">Modules</h2>
+<h3 class="category" id="_colors"><small>_core</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Colors <small class="description">Core colour system used in the digital brand.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -254,7 +255,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Fonts <small class="description">Brand and body fonts with the font stack.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -277,7 +278,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Grid <small class="description">12 column, responsive grid system.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -291,7 +292,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Javascript Helpers <small class="description">JavaScript framework, with debugging, throttling and debouncing.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -314,7 +315,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Text Styling <small class="description">Core HTML text elements.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -355,7 +356,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="text-extensions"><small>Typography</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="text-extensions"><small>Typography</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Text Extensions <small class="description">Classes for additional text formatting.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -369,7 +373,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="responsive-margins"><small>Layout</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="responsive-margins"><small>Layout</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Responsive-Margins <small class="description">Classes for vertical spacing between elements.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -383,7 +390,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Responsive-Toggles <small class="description">Classes to hide and show elements based on break point and print style.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -397,7 +404,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="accessibility-helpers"><small>Helpers</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="accessibility-helpers"><small>Helpers</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Accessibility Helpers <small class="description">Classes for 'skip links' and 'screen-reader only' text etc.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -411,7 +421,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="alerts"><small>Alerts</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="alerts"><small>Alerts</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Alerts <small class="description">Contextual messaging panels and text - alerts, errors, info etc.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -443,7 +456,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="badges"><small>Other stuff</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="badges"><small>Other stuff</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Badges <small class="description">Styled element to highlight a number.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -457,7 +473,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Labels <small class="description">Styled element to highlight a word.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -471,7 +487,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Progress-Bars <small class="description">Visual representation of progress</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -485,7 +501,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="breadcrumbs"><small>Navigation</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="breadcrumbs"><small>Navigation</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Breadcrumbs <small class="description">Styled navigational links used to indicate a user journey or path.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -499,7 +518,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Paginations <small class="description">Styled links to navigate within a set of related views.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -513,7 +532,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="buttons"><small>Buttons</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="buttons"><small>Buttons</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Buttons <small class="description">All buttons including button groups, dropdown-buttons etc.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -545,7 +567,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="checkboxes"><small>Forms</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="checkboxes"><small>Forms</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Checkboxes <small class="description">Styled checkboxes with SVG enhancements.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -577,7 +602,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Input-Addons <small class="description">Styled input fields with attached selects or buttons.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -600,7 +625,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Input-Fields <small class="description">Styled input fields including, text, email, date, textarea and selects etc.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -623,7 +648,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Input-Groups <small class="description">Styled input fields with attached attributes ie $ or %.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -637,7 +662,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Radios <small class="description">Styled radio buttons with SVG enhancements.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -669,7 +694,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Switches <small class="description">Switch buttons for on/off, yes/no settings.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -692,7 +717,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="icons-base"><small>Icons</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="icons-base"><small>Icons</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Base <small class="description">Classes to manage icon size and embedding.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -706,7 +734,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 1 <small class="description"><span class='icon icon-size-sm icon-loading'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -720,7 +748,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 2 <small class="description"><span class='icon icon-size-sm icon-credit-card'></span> <span class='icon icon-size-sm icon-dollar'></span> <span class='icon icon-size-sm icon-growth'></span> <span class='icon icon-size-sm icon-limit'></span> <span class='icon icon-size-sm icon-money-in'></span> <span class='icon icon-size-sm icon-money-out'></span> <span class='icon icon-size-sm icon-percent'></span> <span class='icon icon-size-sm icon-save'></span> <span class='icon icon-size-sm icon-super'></span> <span class='icon icon-size-sm icon-switch'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -743,7 +771,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 3 <small class="description"><span class='icon icon-size-sm icon-business-person'></span> <span class='icon icon-size-sm icon-eftpos'></span> <span class='icon icon-size-sm icon-office'></span> <span class='icon icon-size-sm icon-shop'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -766,7 +794,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 4 <small class="description"><span class='icon icon-size-sm icon-house'></span> <span class='icon icon-size-sm icon-people'></span> <span class='icon icon-size-sm icon-person'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -789,7 +817,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 5 <small class="description"><span class='icon icon-size-sm icon-australia'></span> <span class='icon icon-size-sm icon-chat'></span> <span class='icon icon-size-sm icon-clock'></span> <span class='icon icon-size-sm icon-edit'></span> <span class='icon icon-size-sm icon-email'></span> <span class='icon icon-size-sm icon-id-card'></span> <span class='icon icon-size-sm icon-padlock'></span> <span class='icon icon-size-sm icon-print'></span> <span class='icon icon-size-sm icon-sms'></span> <span class='icon icon-size-sm icon-stopwatch'></span> <span class='icon icon-size-sm icon-telephone'></span> <span class='icon icon-size-sm icon-tick'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -812,7 +840,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 6 <small class="description"><span class='icon icon-size-sm icon-excel-file'></span> <span class='icon icon-size-sm icon-generic-file'></span> <span class='icon icon-size-sm icon-pdf-file'></span> <span class='icon icon-size-sm icon-word-file'></span> <span class='icon icon-size-sm icon-zip-file'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -835,7 +863,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 7 <small class="description"><span class='icon icon-size-sm icon-atm'></span> <span class='icon icon-size-sm icon-calculator'></span> <span class='icon icon-size-sm icon-calendar'></span> <span class='icon icon-size-sm icon-camera'></span> <span class='icon icon-size-sm icon-message'></span> <span class='icon icon-size-sm icon-mobile-pay'></span> <span class='icon icon-size-sm icon-notification'></span> <span class='icon icon-size-sm icon-paypass'></span> <span class='icon icon-size-sm icon-quick-balance'></span> <span class='icon icon-size-sm icon-service-bell'></span> <span class='icon icon-size-sm icon-settings'></span> <span class='icon icon-size-sm icon-shelf-menu'></span> <span class='icon icon-size-sm icon-to-mobile'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -858,7 +886,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 8 <small class="description"><span class='icon icon-size-sm icon-bar-chart'></span> <span class='icon icon-size-sm icon-invest'></span> <span class='icon icon-size-sm icon-pie-chart'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -881,7 +909,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 9 <small class="description"><span class='icon icon-size-sm icon-accessibility'></span> <span class='icon icon-size-sm icon-car'></span> <span class='icon icon-size-sm icon-geolocation'></span> <span class='icon icon-size-sm icon-map-pin'></span> <span class='icon icon-size-sm icon-map'></span> <span class='icon icon-size-sm icon-transport'></span> <span class='icon icon-size-sm icon-walk'></span> <span class='icon icon-size-sm icon-wheelchair'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -913,7 +941,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 10 <small class="description"><span class='icon icon-size-sm icon-android'></span> <span class='icon icon-size-sm icon-apple'></span> <span class='icon icon-size-sm icon-desktop'></span> <span class='icon icon-size-sm icon-phone'></span> <span class='icon icon-size-sm icon-tablet'></span> <span class='icon icon-size-sm icon-windows-new'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -936,7 +964,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 11 <small class="description"><span class='icon icon-size-sm icon-account'></span> <span class='icon icon-size-sm icon-bpay'></span> <span class='icon icon-size-sm icon-history-clock'></span> <span class='icon icon-size-sm icon-move-from'></span> <span class='icon icon-size-sm icon-move-to'></span> <span class='icon icon-size-sm icon-transfer'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -959,7 +987,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 12 <small class="description"><span class='icon icon-size-sm icon-dropbox'></span> <span class='icon icon-size-sm icon-facebook'></span> <span class='icon icon-size-sm icon-github'></span> <span class='icon icon-size-sm icon-google-plus'></span> <span class='icon icon-size-sm icon-linkedin'></span> <span class='icon icon-size-sm icon-rss'></span> <span class='icon icon-size-sm icon-share'></span> <span class='icon icon-size-sm icon-star1'></span> <span class='icon icon-size-sm icon-star2'></span> <span class='icon icon-size-sm icon-star3'></span> <span class='icon icon-size-sm icon-twitter'></span> <span class='icon icon-size-sm icon-youtube'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -991,7 +1019,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 13 <small class="description"><span class='icon icon-size-sm icon-add-a'></span> <span class='icon icon-size-sm icon-add-b'></span> <span class='icon icon-size-sm icon-backspace'></span> <span class='icon icon-size-sm icon-close'></span> <span class='icon icon-size-sm icon-delete'></span> <span class='icon icon-size-sm icon-filter'></span> <span class='icon icon-size-sm icon-pause'></span> <span class='icon icon-size-sm icon-play'></span> <span class='icon icon-size-sm icon-remove'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1014,7 +1042,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 14 <small class="description"><span class='icon icon-size-sm icon-download'></span> <span class='icon icon-size-sm icon-new-window'></span> <span class='icon icon-size-sm icon-refresh'></span> <span class='icon icon-size-sm icon-search'></span> <span class='icon icon-size-sm icon-upload'></span> <span class='icon icon-size-sm icon-write'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1037,7 +1065,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 15 <small class="description"><span class='icon icon-size-sm icon-book'></span> <span class='icon icon-size-sm icon-compass'></span> <span class='icon icon-size-sm icon-cross'></span> <span class='icon icon-size-sm icon-cube'></span> <span class='icon icon-size-sm icon-global'></span> <span class='icon icon-size-sm icon-idea'></span> <span class='icon icon-size-sm icon-key'></span> <span class='icon icon-size-sm icon-more'></span> <span class='icon icon-size-sm icon-umbrella'></span> <span class='icon icon-size-sm icon-wallet'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1060,7 +1088,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 16 <small class="description"><span class='icon icon-size-sm icon-alert'></span> <span class='icon icon-size-sm icon-face-happy'></span> <span class='icon icon-size-sm icon-face-hmm'></span> <span class='icon icon-size-sm icon-face-sad'></span> <span class='icon icon-size-sm icon-help'></span> <span class='icon icon-size-sm icon-info'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1083,7 +1111,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Icons-Group 17 <small class="description"><span class='icon icon-size-sm icon-accessibility'></span> <span class='icon icon-size-sm icon-car'></span></small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1097,7 +1125,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="images"><small>Media</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="images"><small>Media</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Images <small class="description">Classes to style image boxes.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1111,7 +1142,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Responsive-Embeds <small class="description">Classes to embed responsive video content.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1125,7 +1156,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="list-groups"><small>Lists</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="list-groups"><small>Lists</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">List-Groups <small class="description">Complex lists with custom content.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1139,7 +1173,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Lists <small class="description">Styled bullet lists in various colours.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1162,7 +1196,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="logos"><small>Symbols</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="logos"><small>Symbols</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Logos <small class="description">Westpac Group brand, SVG logos.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1185,7 +1222,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Symbols <small class="description">Multi-colour, SVG symbols.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1208,7 +1245,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="modals"><small>Popovers</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="modals"><small>Popovers</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Modals <small class="description">Popup modals in various sizes with JavaScript API.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1231,7 +1271,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Popovers <small class="description">Small overlay elements with simple text and links.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1254,7 +1294,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Tooltips <small class="description">Little black boxes for simple messaging.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1277,7 +1317,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="panels"><small>Containers</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="panels"><small>Containers</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Panels <small class="description">Containers with headers and optional footers for grouping elements and text.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1291,7 +1334,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Tabcordions <small class="description">Tabs, accordions and a tab set that changes to an accordion based on break point.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1314,7 +1357,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-1"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Wells <small class="description">Similar to panels, without the header or footer.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1328,7 +1371,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="tables"><small>Tables</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="tables"><small>Tables</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">Tables <small class="description">Responsive tables, including various styling options.</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1342,7 +1388,10 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="category" id="test-module"><small>_testing</small></li>	<li class="module module-1"><div class="module-wrapper">
+</ul>
+<h3 class="category" id="test-module"><small>_testing</small></h3>
+<ul class="gui-list">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">test-module <small class="description">Test module to see multiple versions</small></h3>
 		<ul class="gui-list-version">
 			<li>
@@ -1383,7 +1432,7 @@
 			</li>
 		</ul>
 	</div></li>
-	<li class="module module-2"><div class="module-wrapper">
+	<li class="module"><div class="module-wrapper">
 		<h3 class="body-font module-headline">test-module2 <small class="description">Another test module</small></h3>
 		<ul class="gui-list-version">
 			<li>
