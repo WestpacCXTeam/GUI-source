@@ -280,3 +280,6 @@
 [submodule "_text-styling/1.0.3"]
 	path = _text-styling/1.0.3
 	url = https://github.com/WestpacCXTeam/GUI_text-styling.git
+[submodule "alerts/1.0.3"]
+	path = alerts/1.0.3
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-alerts.git
