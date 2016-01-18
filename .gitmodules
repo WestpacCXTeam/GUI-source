@@ -283,3 +283,6 @@
 [submodule "alerts/1.0.3"]
 	path = alerts/1.0.3
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-alerts.git
+[submodule "input-fields/1.0.2"]
+	path = input-fields/1.0.2
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-fields.git
