@@ -15,6 +15,11 @@ GUI Alerts
 
 ### Release History
 
+* v1.0.3 - `HTML` `LESS/CSS` ~~`JS`~~
+	* You know the feeling when you're trying to buy a beer at the corner pub on a Friday afternoon after you've just finished a sprint that was particularly
+		difficult and the alert message says: "No more funds" and you know you left the other card at home and never got around to setup cardless cash?
+		Long story short: You now get to make that alert message a bit easier on the eyes by adding icons inside of it to help make Friday afternoons fun again.
+		[#177](https://github.com/WestpacCXTeam/GUI-source/issues/177)
 * v1.0.2 - `JS` `HTML` ~~`LESS/CSS`~~
 	* We got word that using our JavaScript in dynamic DOM application was a bit... clunky. Clunky wasn't good enough for us so we refactored all Javascript
 		modules to unclunk all the things. Beware though, some JavaScript classes had to be injected to keep the modules clunk-free.
