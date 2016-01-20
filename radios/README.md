@@ -18,6 +18,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Tune in to our radio buttons. We've added a no-image fallback to the them so when you're tired of seeing our beautiful designed artwork, you now have a
+		fallback to the old boring native radios, boooooo.
+		[#173](https://github.com/WestpacCXTeam/GUI-source/issues/173)
 * v1.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* BIG BOM brand change. All new colours, all new look, all new GUI. Brace yourselfs.
 		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
