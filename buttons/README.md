@@ -15,6 +15,13 @@ GUI Buttons
 
 ### Release History
 
+* v1.0.3 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
+	* The button-groups got disjointed when faced with the new system font for El Capitan. We loosened them up and stretched those tired legs and arms and now
+		all joints join where they should join.
+		[#191](https://github.com/WestpacCXTeam/GUI-source/issues/191)
+	* We integrated the new versions of checkboxes and radios into the dropdowns.
+	* We noticed that icons in button groups were not tinting the way they should. This, too, has been laid to rest in bug-heaven.
+		[#185](https://github.com/WestpacCXTeam/GUI-source/issues/185)
 * v1.0.2 - `LESS/CSS` `JS` `HTML`
 	* We got word that using our JavaScript in dynamic DOM application was a bit... clunky. Clunky wasn't good enough for us so we refactored all Javascript
 		modules to unclunk all the things. Beware though, some JavaScript classes had to be injected to keep the modules clunk-free.

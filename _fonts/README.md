@@ -21,7 +21,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v1.0.1 - We removed the Roboto webfont as more recent versions of windows Segoe UI now support numerical values in the font weight property.
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Chrome had a bug where the font weights weren't displaying correctly. No more.
+		[#187](https://github.com/WestpacCXTeam/GUI-source/issues/187)
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* We removed the Roboto webfont as more recent versions of windows Segoe UI now support numerical values in the font weight property.
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
