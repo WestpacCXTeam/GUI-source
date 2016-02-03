@@ -18,7 +18,12 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v1.0.2 - `HTML` `LESS/CSS` ~~`JS`~~
+* v1.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* We added a "block" class to the selects so they can stretch as wide as the input fields stretch. No stretch marks though.
+		[#186](https://github.com/WestpacCXTeam/GUI-source/issues/186)
+	* IE8 and IE9 got some visual love because we care, not because they deserved it.
+		[#193](https://github.com/WestpacCXTeam/GUI-source/issues/193)
+* v1.0.2 - `HTML` ~~`LESS/CSS`~~ ~~`JS`~~
 	* Our recent move to system fonts means we trust the system to take care of something as basic as the display of a font. Turns out you can't trust Microsoft
 		with such a task as they increase the size of the font rather than just the face. We fixed that and wrote an ~~angry~~ constructive letter to Redmond.
 		It's always important to vent your frustrations in a productive manner.

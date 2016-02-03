@@ -298,3 +298,27 @@
 [submodule "checkboxes/1.0.4"]
 	path = checkboxes/1.0.4
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-checkboxes.git
+[submodule "buttons/1.0.3"]
+	path = buttons/1.0.3
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-buttons.git
+[submodule "input-fields/1.0.3"]
+	path = input-fields/1.0.3
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-fields.git
+[submodule "lists/1.0.2"]
+	path = lists/1.0.2
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-lists.git
+[submodule "alerts/1.0.4"]
+	path = alerts/1.0.4
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-alerts.git
+[submodule "icons-base/1.0.1"]
+	path = icons-base/1.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-base.git
+[submodule "icons-group01/1.0.1"]
+	path = icons-group01/1.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group01.git
+[submodule "icons-group09/1.0.3"]
+	path = icons-group09/1.0.3
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group09.git
+[submodule "_fonts/1.0.2"]
+	path = _fonts/1.0.2
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_fonts.git

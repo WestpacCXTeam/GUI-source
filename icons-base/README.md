@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Icons in different sizes were looking fuzzy and didn't scale correctly in IE8. Now they just look fuzzy but that's a story for another time.
+		[#192](https://github.com/WestpacCXTeam/GUI-source/issues/192)
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**

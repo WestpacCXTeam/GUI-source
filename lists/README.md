@@ -17,6 +17,12 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* The linklist is now a normal list that can be mixed link and non-link.
+		[#181](https://github.com/WestpacCXTeam/GUI-source/issues/181)
+	* The linklist is now powered by an SVG rather than a CSS shape. This looks better on older browsers and low density displays.
+	* We introduced a new class for a larger list and aligned the spacing of the default.
+		[#183](https://github.com/WestpacCXTeam/GUI-source/issues/183)
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* BIG BOM brand change. All new colours, all new look, all new GUI. Brace yourselfs.
 		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
