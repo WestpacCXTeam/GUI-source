@@ -12,7 +12,7 @@ GUI-source
 * [Versioning](#versioning)
 * [Adding ingredient](#adding-ingredient)
 * [Workflow](#workflow)
-* [The module.json](#the-module-json)
+* [The module.json](#the-modulejson)
 * [Release History](#release-history)
 * [License](#license)
 
@@ -37,7 +37,7 @@ We call each module `GUI Ingredient` and a compiled mix `GUI Blend`. The `GUI Bl
 1. Collaboration has to abide to the [Styleguide](https://github.com/WestpacCXTeam/GUI-source/wiki/Styleguide).
 
 
-**[⬆ back to top](#content)**
+**[:point_up: back to top](#content)**
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -51,7 +51,7 @@ We call each module `GUI Ingredient` and a compiled mix `GUI Blend`. The `GUI Bl
 New versions are submodules pointing to a tag in the repository of the module. Each version must be referenced in the `module.json` and the latest version
 must be marked in the `package.json`. The changelog is maintained in the `Readme.md` file in each version.
 
-**[⬆ back to top](#content)**
+**[:point_up: back to top](#content)**
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -65,7 +65,7 @@ To see an overview of all `Ingredient` you can run `grunt` in the root or visit 
 
 To work on a module and watch its files you can run `grunt` in each repository. Please note that you cannot make changes to any module in this repo.
 
-**[⬆ back to top](#content)**
+**[:point_up: back to top](#content)**
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -79,7 +79,7 @@ You can see the tests [here](http://WestpacCXTeam.github.io/GUI-source). Note th
 on the [GEL pages](http://gel.westpacgroup.com.au/).
 
 
-**[⬆ back to top](#content)**
+**[:point_up: back to top](#content)**
 
 
 
@@ -95,7 +95,7 @@ have to be noted in the `module.json`. See the boilderplate for a new module in 
 
 See more in [Workflow](#workflow).
 
-**[⬆ back to top](#content)**
+**[:point_up: back to top](#content)**
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -128,7 +128,9 @@ See more in [Workflow](#workflow).
 	1. [x] `README.md` version bump
 	1. [x] make changes
 	1. [x] `README.md` whatsnew
-	1. [x] commit, merge `gh-pages` and `master`
+	1. [x] commit, merge `gh-pages` and `master`, reference issues with: `WestpacCXTeam/GUI-source#[issue number]`
+		or reference commits with: `WestpacCXTeam/[repo name]@[commit hash]`
+	1. [x] _Do the follwoing after email is sent out_
 	1. [x] tag, publish tag
 	1. [x] edit release on GitHub
 
@@ -227,7 +229,7 @@ The `module.json` file that is then compiled into the GUI.json file is the engin
 * v1.0.1 - Moved all modules into submodules
 * v1.0.0 - Initial build system setup
 
-**[⬆ back to top](#content)**
+**[:point_up: back to top](#content)**
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -237,6 +239,6 @@ The `module.json` file that is then compiled into the GUI.json file is the engin
 
 Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
 
-**[⬆ back to top](#content)**
+**[:point_up: back to top](#content)**
 
 # };
