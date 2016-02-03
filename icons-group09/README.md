@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* The newly added wheelchair icon did not abide to the dress code we have here at the GUI headquarters. It now does.
+		[#189](https://github.com/WestpacCXTeam/GUI-source/issues/189)
 * v1.0.2 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* We added a wheelchair icon into the group. Please use responsibly.
 		[#170](https://github.com/WestpacCXTeam/GUI-source/issues/170)

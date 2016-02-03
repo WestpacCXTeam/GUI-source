@@ -15,9 +15,16 @@ GUI Alerts
 
 ### Release History
 
+* v1.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fixed flexbox bug with a handy workaround.
+		[#194](https://github.com/WestpacCXTeam/GUI-source/issues/194)
+	* Worked on the no-js fallback and made usability of large alerts better. Not that you should use large alert messages. Let's keep those grumpy messages
+		as short as possible.
+	* Icons in those handy alert messages are now tinting the way they should have right from the start.
+		[#190](https://github.com/WestpacCXTeam/GUI-source/issues/190)
 * v1.0.3 - `HTML` `LESS/CSS` ~~`JS`~~
 	* You know the feeling when you're trying to buy a beer at the corner pub on a Friday afternoon after you've just finished a sprint that was particularly
-		difficult and the alert message says: "No more funds" and you know you left the other card at home and never got around to setup cardless cash?
+		difficult and the alert message says: "No more funds" and you know you left the other card at home and never got around to setting up cardless cash?
 		Long story short: You now get to make that alert message a bit easier on the eyes by adding icons inside of it to help make Friday afternoons fun again.
 		[#177](https://github.com/WestpacCXTeam/GUI-source/issues/177)
 * v1.0.2 - `JS` `HTML` ~~`LESS/CSS`~~

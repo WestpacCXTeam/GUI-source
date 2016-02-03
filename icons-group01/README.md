@@ -20,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fixed a bug in Firefox where the fallback loading gif and the loading animation would show both at the same time. That was a bit of an "overload" on
+		loading so we fixed that.
+		[#196](https://github.com/WestpacCXTeam/GUI-source/issues/196)
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
