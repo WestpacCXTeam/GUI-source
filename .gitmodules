@@ -292,3 +292,9 @@
 [submodule "radios/1.0.3"]
 	path = radios/1.0.3
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-radios.git
+[submodule "radios/1.0.4"]
+	path = radios/1.0.4
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-radios.git
+[submodule "checkboxes/1.0.4"]
+	path = checkboxes/1.0.4
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-checkboxes.git
