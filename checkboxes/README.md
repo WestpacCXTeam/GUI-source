@@ -18,6 +18,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* The checkboxes didn't flip anymore. Rather than flipping them off we taught them. Flipping awesome!
+		[#197](https://github.com/WestpacCXTeam/GUI-source/issues/197)
 * v1.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Check out our checkboxes. We've added a no-image fallback to the them so when you're tired of seeing our beautiful designed artwork, you now have a
 		fallback to the old boring native checkboxes, boooooo.
