@@ -125,8 +125,9 @@ See more in [Workflow](#workflow).
 1. change module
 	1. [x] `package.json` version bump
 	1. [x] `module.json` version bump
-	1. [x] `README.md` version bump and whatsnew
+	1. [x] `README.md` version bump
 	1. [x] make changes
+	1. [x] `README.md` whatsnew
 	1. [x] commit, merge `gh-pages` and `master`
 	1. [x] tag, publish tag
 	1. [x] edit release on GitHub
@@ -142,11 +143,12 @@ See more in [Workflow](#workflow).
 	1. [x] commit, merge `gh-pages` and `master`
 1. Gui-docs
 	1. [x] pull submodule
+	1. [x] update new submodules
 	1. [x] create `[version].liquid` in `_inludes/modules`
 	1. [x] add whatsnew and tweak example if necessary
 	1. [x] `grunt prod`
 1. upload blender files
-	1. [x] upload zip to .temp folder
+	1. [x] upload zip to .temp folder (check no version folders are empty)
 	1. [x] ssh into machine
 	1. [x] `unzip GUI.zip -d ../` or `grunt unzip:GUI`
 	1. [x] `forever list`
