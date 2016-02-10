@@ -78,126 +78,140 @@ module.exports = function(grunt) {
 					'!node_modules',
 				]).forEach(function( folder ) {
 
-					//////////////////////////////////////| DEV ROUND
-					exec[ 'dev-checkout' + folder ] = { //CHECKOUT
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git checkout dev',
-					};
+					// if( folder.substring(0, 15) === 'GUI-icons-group' && folder !== 'GUI-icons-group01' ) {
 
-					exec[ 'dev-add' + folder ] = { //ADD
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git add' +
-							' Gruntfile.js' +
-							' .editorconfig' +
-							' _core/less/*.less' +
-							' tests/BOM/assets/*' +
-							' tests/BSA/assets/*' +
-							' tests/STG/assets/*' +
-							' tests/WBC/assets/*',
-					};
+						//////////////////////////////////////| DEV ROUND
+						exec[ 'dev-checkout' + folder ] = { //CHECKOUT
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git checkout dev',
+						};
 
-					exec[ 'dev-commit' + folder ] = { //COMMIT
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git commit -m "_automated merging/commiting core/build"',
-					};
+						exec[ 'dev-add' + folder ] = { //ADD
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git add' +
+								' Gruntfile.js' +
+								' .editorconfig' +
+								' _core/less/*.less' +
+								' tests/BOM/assets/*' +
+								' tests/BSA/assets/*' +
+								' tests/STG/assets/*' +
+								' tests/WBC/assets/*',
+						};
 
-					exec[ 'dev-push' + folder ] = { //PUSH
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git push origin dev',
-					};
+						exec[ 'dev-commit' + folder ] = { //COMMIT
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: '_automated merging/commiting core/build"',
+						};
 
-					//////////////////////////////////////| GH-PAGES ROUND
-					exec[ 'gh-checkout' + folder ] = { //CHECKOUT
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git checkout gh-pages',
-					};
+						exec[ 'dev-push' + folder ] = { //PUSH
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git push origin dev',
+						};
 
-					exec[ 'gh-merge' + folder ] = { //MERGE
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git merge dev',
-					};
+						//////////////////////////////////////| GH-PAGES ROUND
+						exec[ 'gh-checkout' + folder ] = { //CHECKOUT
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git checkout gh-pages',
+						};
 
-					exec[ 'gh-push' + folder ] = { //PUSH
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git push origin gh-pages',
-					};
+						exec[ 'gh-merge' + folder ] = { //MERGE
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git merge dev',
+						};
 
-					//////////////////////////////////////| MASTER ROUND
-					exec[ 'master-checkout' + folder ] = { //CHECKOUT
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git checkout master',
-					};
+						exec[ 'gh-push' + folder ] = { //PUSH
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git push origin gh-pages',
+						};
 
-					exec[ 'master-merge' + folder ] = { //MERGE
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git merge dev',
-					};
+						//////////////////////////////////////| MASTER ROUND
+						exec[ 'master-checkout' + folder ] = { //CHECKOUT
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git checkout master',
+						};
 
-					exec[ 'master-push' + folder ] = { //PUSH
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git push origin master',
-					};
+						exec[ 'master-merge' + folder ] = { //MERGE
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git merge dev',
+						};
 
-					//////////////////////////////////////| DEFAULT ROUND
-					exec[ 'default-checkout' + folder ] = { //CHECKOUT
-						options: {
-							cwd: folder,
-							stdout: true,
-						},
-						command: 'git checkout dev',
-					};
+						exec[ 'master-push' + folder ] = { //PUSH
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git push origin master',
+						};
+
+						//////////////////////////////////////| DEFAULT ROUND
+						exec[ 'default-checkout' + folder ] = { //CHECKOUT
+							options: {
+								stderr: false,
+								cwd: folder,
+								stdout: true,
+							},
+							command: 'git checkout dev',
+						};
 
 
-					grunt.config.set('exec', exec);
+						grunt.config.set('exec', exec);
 
-					//////////////////////////////////////| DEV ROUND
-					grunt.task.run('exec:dev-checkout' + folder);
-					grunt.task.run('exec:dev-add' + folder);
-					grunt.task.run('exec:dev-commit' + folder);
-					grunt.task.run('exec:dev-push' + folder);
+						//////////////////////////////////////| DEV ROUND
+						grunt.task.run('exec:dev-checkout' + folder);
+						grunt.task.run('exec:dev-add' + folder);
+						grunt.task.run('exec:dev-commit' + folder);
+						grunt.task.run('exec:dev-push' + folder);
 
-					//////////////////////////////////////| GH-PAGES ROUND
-					grunt.task.run('exec:gh-checkout' + folder);
-					grunt.task.run('exec:gh-merge' + folder);
-					grunt.task.run('exec:gh-push' + folder);
+						//////////////////////////////////////| GH-PAGES ROUND
+						grunt.task.run('exec:gh-checkout' + folder);
+						grunt.task.run('exec:gh-merge' + folder);
+						grunt.task.run('exec:gh-push' + folder);
 
-					//////////////////////////////////////| MASTER ROUND
-					grunt.task.run('exec:master-checkout' + folder);
-					grunt.task.run('exec:master-merge' + folder);
-					grunt.task.run('exec:master-push' + folder);
+						//////////////////////////////////////| MASTER ROUND
+						grunt.task.run('exec:master-checkout' + folder);
+						grunt.task.run('exec:master-merge' + folder);
+						grunt.task.run('exec:master-push' + folder);
 
-					//////////////////////////////////////| DEFAULT ROUND
-					grunt.task.run('exec:default-checkout' + folder);
+						//////////////////////////////////////| DEFAULT ROUND
+						grunt.task.run('exec:default-checkout' + folder);
+					// }
 				});
 
 				grunt.task.run('font:finished');
