@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.2 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* All icons now display in the muted colour by default and fallback to text color in IE8.
+		[#198](https://github.com/WestpacCXTeam/GUI-source/issues/198)
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* We removed the waves around the telephone icon because that was just so... retro. (What telephone isn't wireless these days? Seriously? We want to know)
 		[#160](https://github.com/WestpacCXTeam/GUI-source/issues/160)

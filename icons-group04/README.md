@@ -17,6 +17,9 @@ GUI Icon-group04
 
 ### Release History
 
+* v1.0.2 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* All icons now display in the muted colour by default and fallback to text color in IE8.
+		[#198](https://github.com/WestpacCXTeam/GUI-source/issues/198)
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* BIG BOM brand change. All new colours, all new look, all new GUI. Brace yourselfs.
 		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
