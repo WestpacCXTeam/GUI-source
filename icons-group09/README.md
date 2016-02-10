@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.4 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* All icons now display in the muted colour by default and fallback to text color in IE8.
+		[#198](https://github.com/WestpacCXTeam/GUI-source/issues/198)
 * v1.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* The newly added wheelchair icon did not abide to the dress code we have here at the GUI headquarters. It now does.
 		[#189](https://github.com/WestpacCXTeam/GUI-source/issues/189)
