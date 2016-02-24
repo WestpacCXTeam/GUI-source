@@ -112,7 +112,7 @@ module.exports = function(grunt) {
 								cwd: folder,
 								stdout: true,
 							},
-							command: '_automated merging/commiting core/build"',
+							command: 'git commit -m "_automated merging/commiting core/build"',
 						};
 
 						exec[ 'dev-push' + folder ] = { //PUSH
