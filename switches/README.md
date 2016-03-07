@@ -18,6 +18,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
+		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
 * v1.0.1 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Being the new kid on the block, the switches needed a good talking to about the rules of the GUI street. All GUI kids need to be printable, have disabled
 		states and behave while playing with the others. The switches promised to better and from now on hang

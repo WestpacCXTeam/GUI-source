@@ -11,7 +11,15 @@
 			"svg": false,
 			"font": false,
 			"size": 3
+		},
+		"2.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 3
 		}
 	},
-	"hash": "9480574252211bfa2f88578c3b37c7da"
+	"hash": "1f2d101ac189d2c157372c68b066636f"
 }

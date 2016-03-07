@@ -18,6 +18,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.0 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
+		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
+	* All SVGs now come with a unique title ID. That may not sound like much but SVGs are very particular about their individualism.
+		[#204](https://github.com/WestpacCXTeam/GUI-source/issues/204)
 * v1.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The checkboxes didn't flip anymore. Rather than flipping them off we taught them. Flipping awesome!
 		[#197](https://github.com/WestpacCXTeam/GUI-source/issues/197)

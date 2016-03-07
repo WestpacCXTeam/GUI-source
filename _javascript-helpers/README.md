@@ -17,6 +17,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.0 - ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* Our debugging messages when switched on in the GUI can be quite noisy. To find zen in all the noise we added a filter to the debugger. Now you can only
+		tune into the module you want to debug. Read more about
+		[using the JavaScript framework](https://gel.westpacgroup.com.au/GUI/BOM/getting-started/javascript/).
 * v1.0.1 - `JS` ~~`LESS/CSS`~~ ~~`HTML`~~
 	* Sometimes we need to find out if a CSS property is supported by the current browser. Nosy as we are, like checking the Facebook profile of an
 		ex-boyfriend... We now have a feature detection method that handles very simple CSS properties. Go and detect, I'm sure CSS won't mind.
