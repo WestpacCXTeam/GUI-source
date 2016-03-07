@@ -51,6 +51,13 @@ We call each module `GUI Ingredient` and a compiled mix `GUI Blend`. The `GUI Bl
 New versions are submodules pointing to a tag in the repository of the module. Each version must be referenced in the `module.json` and the latest version
 must be marked in the `package.json`. The changelog is maintained in the `Readme.md` file in each version.
 
+The semantic versioning in the GUI follows this principle: `[HTML changes]`.`[JS changes]`.`[Less/SVG changes]` as of version `2.0.0`. New modules will start
+with version `2.0.0` to clearly communicate that they follow this version principle.
+The reason for this is our focus on updatability and maintainability. We want to make it easy for everyone to assess the impact of each change. HTML
+changes are most difficult to implement as these changes will typically be done in a database or another larger system. Javascript changes will be easier as
+you may only have to replace the `gui.min.js` file unless you integrated other js functionality with it. Lastly Less and SVG changes will be the easiest as
+this typically means you just have to replace the `gui.min.css` file. We hope this makes it easier to integrate with the GUI.
+
 **[:point_up: back to top](#content)**
 
 
@@ -147,7 +154,8 @@ See more in [Workflow](#workflow).
 	1. [x] pull submodule
 	1. [x] update new submodules
 	1. [x] create `[version].liquid` in `_inludes/modules`
-	1. [x] add whatsnew and tweak example if necessary
+	1. [x] create `[version]` folder in `_examples` with core and build
+	1. [x] add whatsnew
 	1. [x] `grunt prod`
 1. upload blender files
 	1. [x] upload zip to .temp folder (check no version folders are empty)
