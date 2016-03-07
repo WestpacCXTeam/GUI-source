@@ -35,7 +35,18 @@
 			"svg": true,
 			"font": false,
 			"size": 29
+		},
+		"2.0.0": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 29
 		}
 	},
-	"hash": "95665a784b88cc405916e9d35c388b6c"
+	"hash": "4054dabe988298d2482ad308d852ab98"
 }

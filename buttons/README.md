@@ -15,6 +15,9 @@ GUI Buttons
 
 ### Release History
 
+* v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
+		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
 * v1.0.3 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
 	* The button-groups got disjointed when faced with the new system font for El Capitan. We loosened them up and stretched those tired legs and arms and now
 		all joints join where they should join.
