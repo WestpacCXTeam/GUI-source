@@ -370,3 +370,159 @@
 [submodule "icons-group17/1.0.1"]
 	path = icons-group17/1.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group17.git
+[submodule "_colors/2.0.0"]
+	path = _colors/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_colors.git
+[submodule "_fonts/2.0.0"]
+	path = _fonts/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_fonts.git
+[submodule "_grid/2.0.0"]
+	path = _grid/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_grid.git
+[submodule "_javascript-helpers/2.0.0"]
+	path = _javascript-helpers/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_javascript-helpers.git
+[submodule "_text-styling/2.0.0"]
+	path = _text-styling/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_text-styling.git
+[submodule "accessibility-helpers/2.0.0"]
+	path = accessibility-helpers/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-accessibility-helpers.git
+[submodule "alerts/2.0.0"]
+	path = alerts/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-alerts.git
+[submodule "badges/2.0.0"]
+	path = badges/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-badges.git
+[submodule "breadcrumbs/2.0.0"]
+	path = breadcrumbs/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-breadcrumbs.git
+[submodule "buttons/2.0.0"]
+	path = buttons/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-buttons.git
+[submodule "checkboxes/2.0.0"]
+	path = checkboxes/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-checkboxes.git
+[submodule "icons-base/2.0.0"]
+	path = icons-base/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-base.git
+[submodule "icons-group01/2.0.0"]
+	path = icons-group01/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group01.git
+[submodule "icons-group02/2.0.0"]
+	path = icons-group02/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group02.git
+[submodule "icons-group03/2.0.0"]
+	path = icons-group03/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group03.git
+[submodule "icons-group04/2.0.0"]
+	path = icons-group04/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group04.git
+[submodule "icons-group05/2.0.0"]
+	path = icons-group05/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group05.git
+[submodule "icons-group07/2.0.0"]
+	path = icons-group07/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group07.git
+[submodule "icons-group08/2.0.0"]
+	path = icons-group08/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group08.git
+[submodule "icons-group09/2.0.0"]
+	path = icons-group09/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group09.git
+[submodule "icons-group10/2.0.0"]
+	path = icons-group10/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group10.git
+[submodule "icons-group11/2.0.0"]
+	path = icons-group11/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group11.git
+[submodule "icons-group12/2.0.0"]
+	path = icons-group12/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group12.git
+[submodule "icons-group13/2.0.0"]
+	path = icons-group13/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group13.git
+[submodule "icons-group14/2.0.0"]
+	path = icons-group14/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group14.git
+[submodule "icons-group15/2.0.0"]
+	path = icons-group15/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group15.git
+[submodule "icons-group16/2.0.0"]
+	path = icons-group16/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group16.git
+[submodule "icons-group17/2.0.0"]
+	path = icons-group17/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group17.git
+[submodule "images/2.0.0"]
+	path = images/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-images.git
+[submodule "input-addons/2.0.0"]
+	path = input-addons/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-addons.git
+[submodule "input-fields/2.0.0"]
+	path = input-fields/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-fields.git
+[submodule "input-groups/2.0.0"]
+	path = input-groups/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-groups.git
+[submodule "labels/2.0.0"]
+	path = labels/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-labels.git
+[submodule "list-groups/2.0.0"]
+	path = list-groups/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-list-groups.git
+[submodule "lists/2.0.0"]
+	path = lists/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-lists.git
+[submodule "logos/2.0.0"]
+	path = logos/2.0.0
+	url = https://github.com/WestpacCXTeam/GUI-logos.git
+[submodule "modals/2.0.0"]
+	path = modals/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-modals.git
+[submodule "paginations/2.0.0"]
+	path = paginations/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-paginations.git
+[submodule "panels/2.0.0"]
+	path = panels/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-panels.git
+[submodule "popovers/2.0.0"]
+	path = popovers/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-popovers.git
+[submodule "progress-bars/2.0.0"]
+	path = progress-bars/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-progress-bars.git
+[submodule "radios/2.0.0"]
+	path = radios/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-radios.git
+[submodule "responsive-embeds/2.0.0"]
+	path = responsive-embeds/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-responsive-embeds.git
+[submodule "responsive-margins/2.0.0"]
+	path = responsive-margins/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-responsive-margins.git
+[submodule "responsive-toggles/2.0.0"]
+	path = responsive-toggles/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-responsive-toggles.git
+[submodule "switches/2.0.0"]
+	path = switches/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-switches.git
+[submodule "symbols/2.0.0"]
+	path = symbols/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-symbols.git
+[submodule "tabcordions/2.0.0"]
+	path = tabcordions/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-tabcordions.git
+[submodule "tables/2.0.0"]
+	path = tables/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-tables.git
+[submodule "text-extensions/2.0.0"]
+	path = text-extensions/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-text-extensions.git
+[submodule "tooltips/2.0.0"]
+	path = tooltips/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-tooltips.git
+[submodule "wells/2.0.0"]
+	path = wells/2.0.0
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-wells.git
