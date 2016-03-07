@@ -57,6 +57,7 @@ The reason for this is our focus on updatability and maintainability. We want to
 changes are most difficult to implement as these changes will typically be done in a database or another larger system. Javascript changes will be easier as
 you may only have to replace the `gui.min.js` file unless you integrated other js functionality with it. Lastly Less and SVG changes will be the easiest as
 this typically means you just have to replace the `gui.min.css` file. We hope this makes it easier to integrate with the GUI.
+_(If we introduce a new feature that comes with a new class(you could argue an HTML change) we still keep to the smallest change: 2.0.`[change]`.)_
 
 **[:point_up: back to top](#content)**
 
