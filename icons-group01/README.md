@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
+		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
 * v1.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fixed a bug in Firefox where the fallback loading gif and the loading animation would show both at the same time. That was a bit of an "overload" on
 		loading so we fixed that.

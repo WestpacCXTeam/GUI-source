@@ -21,6 +21,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
+		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Chrome had a bug where the font weights weren't displaying correctly. No more.
 		[#187](https://github.com/WestpacCXTeam/GUI-source/issues/187)

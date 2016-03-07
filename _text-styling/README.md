@@ -19,6 +19,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
+		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
+	* We have added support to the lesser known, but still wildly attractive HTML5 tags `<mark>`, `<del>` and `<ins>`.
 * v1.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The core two modules _fonts and _text-styling had a bit of a fight about who sets the font-family variable. This went on for a bit unnoticed
 		until we made them sit together in timeout. Now _text-styling totally understands that everything font should be handled by _fonts and they are best

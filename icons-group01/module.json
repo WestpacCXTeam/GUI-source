@@ -23,7 +23,17 @@
 			"svg": false,
 			"font": false,
 			"size": 11
+		},
+		"2.0.0": {
+			"dependencies": [
+				"icons-base"
+			],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 11
 		}
 	},
-	"hash": "1f6f767854d4c2c3637325f8358fd934"
+	"hash": "014aba3c2d3f36e8157a7d96d03837f9"
 }
