@@ -20,14 +20,6 @@
 			"font": false,
 			"size": 5
 		},
-		"1.0.2": {
-			"dependencies": [],
-			"js": false,
-			"less": true,
-			"svg": false,
-			"font": false,
-			"size": 6
-		},
 		"2.0.0": {
 			"dependencies": [],
 			"js": false,
