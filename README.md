@@ -138,7 +138,7 @@ See more in [Workflow](#workflow).
 	1. [x] `README.md` whatsnew
 	1. [x] commit, merge `gh-pages` and `master`, reference issues with: `WestpacCXTeam/GUI-source#[issue number]`
 		or reference commits with: `WestpacCXTeam/[repo name]@[commit hash]`
-	1. [x] _Do the follwoing after email is sent out_
+	1. [x] -- _Do the follwoing after email is sent out_ --
 	1. [x] tag, publish tag
 	1. [x] edit release on GitHub
 
@@ -148,33 +148,34 @@ See more in [Workflow](#workflow).
 
 1. Gui-source
 	1. [x] add submodule in new version folder
+	1. [x] update submodule to pull files
 	1. [x] checkout tag
 	1. [x] `grunt`
 	1. [x] commit, merge `gh-pages` and `master`
 1. Gui-docs
 	1. [x] pull submodule
-	1. [x] update new submodules
+	1. [x] update new submodules to pull files
 	1. [x] create `[version].liquid` in `_inludes/modules`
 	1. [x] create `[version]` folder in `_examples` with core and build
 	1. [x] add whatsnew
+	1. [x] `grunt server`
+	1. [x] run blender locally
+	1. [x] check local copy and blend new blend if required
+	1. [x] install GUIs into the build (js, css, grunticon, img fallback)
+	1. [x] check new versions examples in all brands
 	1. [x] `grunt prod`
-1. upload blender files
-	1. [x] upload zip to .temp folder (check no version folders are empty)
+	1. [x] commit, merge `gh-pages` and `master`
+1. upload files
+	1. [x] upload `GUI.zip` and `docs.zip` to `.temp` folder (check no version folders are empty)
+	1. [x] upload blender files (`server.js`, `.template/`, `assets/` possibly `package.json`)
 	1. [x] ssh into machine
 	1. [x] `unzip GUI.zip -d ../` or `grunt unzip:GUI`
+	1. [x] possibly `npm i` in `blender/remote` folder
 	1. [x] `forever list`
-	1. [x] `forever restart 0` or `forever start file-server/server.js`
+	1. [x] `forever restart 0` or `forever start blender/remote/server.js`
 	1. [x] `forever list`
-1. Gui-docs
-	1. [x] check local copy and blend all modules latest version from all brands
-	1. [x] install GUIs into the build (js, css, grunticon, img fallback)
-	1. [x] check new versions examples
-	1. [x] commit, merge `gh-pages` and `master`
-1. upload doc files
 	1. [x] `rm -rf BOM` | `rm -rf BSA` | `rm -rf STG` | `rm -rf WBC`
-	1. [x] upload BOM, BSA, STG, WBC
-	1. [x] delete `.htaccess` files in all four folders
-	1. [x] after upload finishes add `.htaccess` files
+	1. [x] `unzip docs.zip -d ../`
 1. email
 	1. [x] get all change messages
 	1. [x] make it entertaining AND informative
