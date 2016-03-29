@@ -97,13 +97,22 @@ module.exports = function(grunt) {
 								stdout: true,
 							},
 							command: 'git add' +
-								' Gruntfile.js' +
-								' .editorconfig' +
-								' _core/less/*.less' +
-								' tests/BOM/assets/*' +
-								' tests/BSA/assets/*' +
-								' tests/STG/assets/*' +
-								' tests/WBC/assets/*',
+								// ' Gruntfile.js' +
+								// ' README.md',
+								// ' _core/*' +
+								// ' less/*.less' +
+								// ' tests/*' +
+								// ' .editorconfig' +
+								// ' _core/less/*.less' +
+								// ' tests/BOM/assets/*' +
+								// ' tests/BSA/assets/*' +
+								// ' tests/STG/assets/*' +
+								// ' tests/WBC/assets/*',
+								// ' .github/*',
+								// ' module.json' +
+								// ' README.md' +
+								// ' .guiconfig'
+								' _assets/_svgs/*.svg'
 						};
 
 						exec[ 'dev-commit' + folder ] = { //COMMIT
@@ -112,7 +121,7 @@ module.exports = function(grunt) {
 								cwd: folder,
 								stdout: true,
 							},
-							command: 'git commit -m "_automated merging/commiting core/build"',
+							command: 'git commit -m "_automated commiting svg automated color system"',
 						};
 
 						exec[ 'dev-push' + folder ] = { //PUSH
@@ -244,7 +253,7 @@ module.exports = function(grunt) {
 					concurrent: 1,
 				},
 				src: [
-					'*/Gruntfile.js',
+					'GUI*/Gruntfile.js',
 					'!node_modules',
 					'!Gruntfile.js',
 				],
