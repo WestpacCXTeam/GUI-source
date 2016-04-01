@@ -47,25 +47,12 @@ function checksum(str, algorithm, encoding) {
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
-// Seetings
+// GUI config
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
-var SETTINGS = function() {
-	return {
-		'colors': {
-			'BOM': {
-				'Color-Text': '#20262d',
-			},
-			'BSA': {
-				'Color-Text': '#333',
-			},
-			'STG': {
-				'Color-Text': '#004833',
-			},
-			'WBC': {
-				'Color-Text': '#2d373e',
-			},
-		},
-	};
+var SETTINGS = function(grunt) {
+	var guiconfig = grunt.file.readJSON( '.guiconfig' );
+
+	return guiconfig;
 };
 
 
@@ -231,7 +218,7 @@ module.exports = function(grunt) {
 		var imagemin = {};
 		var grunticon = {};
 		var clean = {};
-		var brands = ['BOM', 'BSA', 'STG', 'WBC'];
+		// var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
 		var module = grunt.file.readJSON( 'module.json' );
 		var moduleName = module.ID;
@@ -242,8 +229,25 @@ module.exports = function(grunt) {
 			version = ver; //getting latest version
 		});
 
+
+		//creating task queue
+		var tasks = (function() {
+			return {
+				queue: [],
+
+				add: function(stuff) {
+					tasks.queue.push( stuff );
+				},
+
+				get: function() {
+					return tasks.queue;
+				}
+			}
+		}());
+
+
 		//create tasks for each brand
-		brands.forEach(function( brand ) {
+		SETTINGS(grunt).brands.forEach(function( brand ) {
 
 			//////////////////////////////////////| UGLIFY JS
 			uglify[ 'uglify' + brand ] = {
@@ -257,6 +261,7 @@ module.exports = function(grunt) {
 					}
 				}],
 			};
+			tasks.add( 'uglify:uglify' + brand );
 
 
 			//////////////////////////////////////| CONCAT FILES
@@ -267,6 +272,7 @@ module.exports = function(grunt) {
 				src: srcFiles,
 				dest: 'tests/' + brand + '/assets/js/gui.js',
 			};
+			tasks.add( 'concat:JS' + brand );
 
 			var srcFiles = ['_core/less/core.less']; //less
 			srcFiles.push('less/module-mixins.less');
@@ -276,6 +282,7 @@ module.exports = function(grunt) {
 				src: srcFiles,
 				dest: 'tests/' + brand + '/assets/less/gui.less',
 			};
+			tasks.add( 'concat:Less' + brand );
 
 			if( module.core === true ) { //if this is a core module
 				if( module.ID === '_colors' ) {
@@ -296,6 +303,7 @@ module.exports = function(grunt) {
 				src: srcFiles,
 				dest: 'tests/' + brand + '/assets/less/coreSize.less',
 			};
+			tasks.add( 'concat:coreSize' + brand );
 
 			concat[ 'HTML' + brand ] = { //html
 				src: [
@@ -305,6 +313,7 @@ module.exports = function(grunt) {
 				],
 				dest: 'tests/' + brand + '/index.html',
 			};
+			tasks.add( 'concat:HTML' + brand );
 
 
 			//////////////////////////////////////| ADD VERSIONING TO FILES
@@ -329,6 +338,7 @@ module.exports = function(grunt) {
 					to: 'true',
 				}],
 			};
+			tasks.add( 'replace:Replace' + brand );
 
 			replace[ 'ReplaceTest' + brand ] = { //brand test files
 				src: [
@@ -350,6 +360,7 @@ module.exports = function(grunt) {
 					to: 'true',
 				}],
 			};
+			tasks.add( 'replace:ReplaceTest' + brand );
 
 			replace[ 'ReplaceSize' + brand ] = { //brand size files
 				src: [
@@ -370,6 +381,7 @@ module.exports = function(grunt) {
 					to: 'true',
 				}],
 			};
+			tasks.add( 'replace:ReplaceSize' + brand );
 
 
 			//////////////////////////////////////| COMPILE LESS
@@ -386,6 +398,7 @@ module.exports = function(grunt) {
 				],
 				dest: 'tests/' + brand + '/assets/css/gui.css',
 			};
+			tasks.add( 'less:Less' + brand );
 
 			less[ 'LessSize' + brand ] = { //minified css for size calculation
 				options: {
@@ -400,6 +413,7 @@ module.exports = function(grunt) {
 				],
 				dest: 'tests/' + brand + '/assets/size/size.css',
 			};
+			tasks.add( 'less:LessSize' + brand );
 
 			less[ 'CoreSize' + brand ] = { //minified core css for size calculation
 				options: {
@@ -414,6 +428,7 @@ module.exports = function(grunt) {
 				],
 				dest: 'tests/' + brand + '/assets/size/coreSize.css',
 			};
+			tasks.add( 'less:CoreSize' + brand );
 
 			less[ 'LessTest' + brand ] = {
 				options: {
@@ -428,28 +443,32 @@ module.exports = function(grunt) {
 				],
 				dest: 'tests/' + brand + '/assets/css/test.css',
 			};
+			tasks.add( 'less:LessTest' + brand );
 
 
 			//////////////////////////////////////| CLEAN SIZE FOLDER
 			clean[ 'cleanSize' + brand ] = [
 				'tests/' + brand + '/assets/size/sizeTemp.js',
 			];
+			tasks.add( 'clean:cleanSize' + brand );
 
 
 			//////////////////////////////////////| COPY FONT ASSETS
 			copy[ 'CoreFont' + brand ] = {
 				expand: true,
-				cwd: '_core/font/' + brand + '/*.*',
-				src: '*',
+				cwd: '_core/font/' + brand + '/',
+				src: '**.*',
 				dest: 'tests/' + brand + '/assets/font',
 			};
+			tasks.add( 'copy:CoreFont' + brand );
 
 			copy[ 'Font' + brand ] = {
 				expand: true,
-				cwd: '_assets/' + brand + '/font',
+				cwd: '_assets/' + brand + '/font/',
 				src: '*',
 				dest: 'tests/' + brand + '/assets/font',
 			};
+			tasks.add( 'copy:Font' + brand );
 
 
 			//////////////////////////////////////| OPTIMISE IMAGES
@@ -464,19 +483,21 @@ module.exports = function(grunt) {
 					dest: 'tests/' + brand + '/assets/img/',
 				}],
 			};
+			tasks.add( 'imagemin:Images' + brand );
 
 
-			//////////////////////////////////////| BRAND SVGS
+			//////////////////////////////////////| BRAND SVGS FOR IE8 FALLBACK
 			replace[ 'ReplaceSVG' + brand ] = {
 				src: [
 					'_assets/_svgs/*.svg',
 				],
 				dest: 'tests/' + brand + '/assets/svg/',
 				replacements: [{
-					from: '[Color-Text]',
-					to: SETTINGS().colors[brand]['Color-Text'],
+					from: '[svg-color]',
+					to: SETTINGS(grunt).colors[brand]['Color-Text'],
 				}],
 			};
+			tasks.add( 'replace:ReplaceSVG' + brand );
 
 
 			//////////////////////////////////////| COMPILE SVGS
@@ -498,21 +519,84 @@ module.exports = function(grunt) {
 					customselectors: svgselectors,
 				},
 			};
+			tasks.add( 'grunticon:SVG' + brand );
 
 
-			//////////////////////////////////////| COPY FALLBACK SVGS
+			//////////////////////////////////////| COPY FALLBACK PNGS
 			copy[ 'SVG' + brand ] = {
 				expand: true,
 				cwd: 'tests/' + brand + '/assets/css/png',
 				src: '*.png',
 				dest: 'tests/' + brand + '/assets/img',
 			};
+			tasks.add( 'copy:SVG' + brand );
 
+
+			//////////////////////////////////////| BRAND SVGS FOR REALZ NOW!
+			replace[ 'ReplaceSVGAgain' + brand ] = {
+				src: [
+					'_assets/_svgs/*.svg',
+				],
+				dest: 'tests/' + brand + '/assets/svg/',
+				replacements: [{
+					from: '[svg-color]',
+					to: SETTINGS(grunt).colors[brand]['Color-Muted'],
+				}, {
+					from: '[lists-link]',
+					to: SETTINGS(grunt).colors[brand]['lists-link'],
+				}, {
+					from: '[lists-tick]',
+					to: SETTINGS(grunt).colors[brand]['lists-tick'],
+				}, {
+					from: '[radcheck-active]',
+					to: SETTINGS(grunt).colors[brand]['radcheck-active'],
+				}, {
+					from: '[radcheck-disbaled-bg]',
+					to: SETTINGS(grunt).colors[brand]['radcheck-disbaled-bg'],
+				}, {
+					from: '[radcheck-disbaled-border]',
+					to: SETTINGS(grunt).colors[brand]['radcheck-disbaled-border'],
+				}],
+			};
+			tasks.add( 'replace:ReplaceSVGAgain' + brand );
+
+
+			//////////////////////////////////////| ADD UNIQUE TITLES TO SVGS
+			try {
+				Fs.statSync( '_assets/_svgs/' );
+				SVGfiles = '_assets/_svgs/*.svg';
+			}
+			catch(error) {
+				var SVGfiles = 'tests/' + brand + '/assets/svg/*.svg';
+			}
+
+			grunt.file.expand({ filter: 'isFile' }, SVGfiles).forEach(function( file ) {
+				var filename = Path.basename( file, '.svg' )
+
+				replace[ 'ReplaceSVG-' + brand + '-' + filename ] = {
+					src: [ 'tests/' + brand + '/assets/svg/' + filename + '.svg' ],
+					overwrite: true,
+					replacements: [{
+						from: '[Filename]',
+						to: '-' + filename,
+					}],
+				};
+
+				tasks.add( 'replace:ReplaceSVG-' + brand + '-' + filename );
+			});
+
+
+			//////////////////////////////////////| COMPILE SVGS AGAIN
+			tasks.add( 'grunticon:SVG' + brand );
+
+
+			//////////////////////////////////////| CLEANING UP
 			clean[ 'SVG' + brand ] = [
 				'tests/' + brand + '/assets/css/preview.html',
 				'tests/' + brand + '/assets/css/grunticon.loader.js',
 				'tests/' + brand + '/assets/css/png/',
 			];
+			tasks.add( 'clean:SVG' + brand );
 		});
 
 
@@ -525,30 +609,22 @@ module.exports = function(grunt) {
 		};
 
 
-		//running tasks
+		//assigning tasks
 		grunt.config.set('uglify', uglify);
-		grunt.task.run('uglify');
-
 		grunt.config.set('concat', concat);
-		grunt.task.run('concat');
-
 		grunt.config.set('replace', replace);
-		grunt.task.run('replace');
-
 		grunt.config.set('less', less);
-		grunt.task.run('less');
-
 		grunt.config.set('imagemin', imagemin);
-		grunt.task.run('imagemin');
-
 		grunt.config.set('grunticon', grunticon);
-		grunt.task.run('grunticon');
-
 		grunt.config.set('copy', copy);
-		grunt.task.run('copy');
-
 		grunt.config.set('clean', clean);
-		grunt.task.run('clean');
+
+		//running tasks in order
+		var allTasks = tasks.get();
+
+		allTasks.forEach(function iterateTasks( task ) {
+			grunt.task.run( task );
+		});
 
 		grunt.task.run('calculateSize');
 		grunt.task.run('createChecksum');
@@ -556,6 +632,30 @@ module.exports = function(grunt) {
 		grunt.config.set('font', font);
 		grunt.task.run('font');
 
+	});
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// Custom grunt task to copy symbole files
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	grunt.registerTask('copySymbole', 'Build this module.', function() {
+
+		var copy = {};
+
+		//create tasks for each brand
+		SETTINGS(grunt).brands.forEach(function( brand ) {
+
+			copy[ 'SVGfiles' + brand ] = {
+				expand: true,
+				cwd: '_assets/' + brand + '/svg',
+				src: '*.svg',
+				dest: 'tests/' + brand + '/assets/svg',
+			};
+
+		});
+
+		grunt.config.set('copy', copy);
+		grunt.task.run('copy');
 	});
 
 
@@ -609,37 +709,6 @@ module.exports = function(grunt) {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		clean: {
 			test: ['tests'],
-		},
-
-
-		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		// Copy symbole files
-		//----------------------------------------------------------------------------------------------------------------------------------------------------------
-		copy: {
-			'SVGfilesBOM': {
-				expand: true,
-				cwd: '_assets/BOM/svg',
-				src: '*.svg',
-				dest: 'tests/BOM/assets/svg',
-			},
-			'SVGfilesBSA': {
-				expand: true,
-				cwd: '_assets/BSA/svg',
-				src: '*.svg',
-				dest: 'tests/BSA/assets/svg',
-			},
-			'SVGfilesSTG': {
-				expand: true,
-				cwd: '_assets/STG/svg',
-				src: '*.svg',
-				dest: 'tests/STG/assets/svg',
-			},
-			'SVGfilesWBC': {
-				expand: true,
-				cwd: '_assets/WBC/svg',
-				src: '*.svg',
-				dest: 'tests/WBC/assets/svg',
-			},
 		},
 
 
@@ -719,14 +788,14 @@ module.exports = function(grunt) {
 	grunt.registerTask('_build', [
 		// 'lintspaces',
 		'clean',
-		'copy',
+		'copySymbole',
 		'buildVersions',
 		'wakeup',
 	]);
 
 	grunt.registerTask('_ubergrunt', [
 		'clean',
-		'copy',
+		'copySymbole',
 		'buildVersions',
 	]);
 

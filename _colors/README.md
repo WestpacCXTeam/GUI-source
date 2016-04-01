@@ -10,7 +10,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI_colors/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI_colors/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI_colors/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI_colors/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI_colors/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI_colors/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI_colors/tests/BT/)
 
 > The colours specified below should be used for all WBC user interfaces. It’s important to understand how the colour system works in a multi-brand
 > environment. It’s also very important to adhere to the accessibility guidelines.
@@ -20,6 +22,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fanfare, Drum roll … We're preparing for another brand. Coming soon, when that curtain-call comes.
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

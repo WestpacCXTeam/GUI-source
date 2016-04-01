@@ -10,7 +10,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI_fonts/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI_fonts/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI_fonts/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI_fonts/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI_fonts/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI_fonts/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI_fonts/tests/BT/)
 
 > The typography system caters for our multi-brand framework allowing us to implement brand specific web typography. Due to licensing issues we currently don’t
 > use many brand specific web fonts however we’re hoping to resolve this soon. The system will then help us to implement brand specific fonts very easily.
@@ -21,6 +23,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

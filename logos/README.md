@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-logos/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-logos/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-logos/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-logos/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-logos/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-logos/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-logos/tests/BT/)
 
 > These symbols are commonly used in WBC user interfaces. They are implemented as scalable vector graphics (SVG’s) with png fallback’s for older browsers.
 > Using SVG’s ensures the highest quality rendering on all devices, allows us to style the symbols using code and also complies with AA accessibility
@@ -19,6 +21,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
+	* In a cleaning-frenzy we removed duplicated logos and renamed them to more relevant names. Now all done and dusted!
 * v2.0.0 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

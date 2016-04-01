@@ -1,0 +1,66 @@
+{
+	"brands": [
+		"BOM",
+		"BSA",
+		"STG",
+		"WBC",
+		"WBG",
+		"BT"
+	],
+	"colors": {
+		"BOM": {
+			"Color-Text": "#20262d",
+			"Color-Muted": "#69727e",
+			"lists-link": "#b45c38",
+			"lists-tick": "#444f5e",
+			"radcheck-active": "#444f5e",
+			"radcheck-disbaled-bg": "#f7f8f9",
+			"radcheck-disbaled-border": "#d2d5d8"
+		},
+		"BSA": {
+			"Color-Text": "#333",
+			"Color-Muted": "#707070",
+			"lists-link": "#c0142e",
+			"lists-tick": "#365fb4",
+			"radcheck-active": "#365fb4",
+			"radcheck-disbaled-bg": "#f5f5f5",
+			"radcheck-disbaled-border": "#c2c2c2"
+		},
+		"STG": {
+			"Color-Text": "#004833",
+			"Color-Muted": "#757463",
+			"lists-link": "#e30000",
+			"lists-tick": "#78be20",
+			"radcheck-active": "#78be20",
+			"radcheck-disbaled-bg": "#f8f8f7",
+			"radcheck-disbaled-border": "#d6d5d0"
+		},
+		"WBC": {
+			"Color-Text": "#2d373e",
+			"Color-Muted": "#575F65",
+			"lists-link": "#d5002b",
+			"lists-tick": "#621a4b",
+			"radcheck-active": "#621a4b",
+			"radcheck-disbaled-bg": "#f9f9f8",
+			"radcheck-disbaled-border": "#d7d2cb"
+		},
+		"WBG": {
+			"Color-Text": "#000",
+			"Color-Muted": "#5b6871",
+			"lists-link": "#d5002b",
+			"lists-tick": "#495761",
+			"radcheck-active": "#495761",
+			"radcheck-disbaled-bg": "#f9fafb",
+			"radcheck-disbaled-border": "#cfd8dc"
+		},
+		"BT": {
+			"Color-Text": "#333",
+			"Color-Muted": "#666",
+			"lists-link": "#9e005d",
+			"lists-tick": "#2574a9",
+			"radcheck-active": "#2574a9",
+			"radcheck-disbaled-bg": "#fcfcfc",
+			"radcheck-disbaled-border": "#e0e0e0"
+		}
+	}
+}
