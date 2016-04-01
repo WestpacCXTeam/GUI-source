@@ -38,6 +38,16 @@ function Handleize( string ) {
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
+// GUI config
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
+var SETTINGS = function(grunt) {
+	var guiconfig = grunt.file.readJSON( '.guiconfig' );
+
+	return guiconfig;
+};
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // Grunt module
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 module.exports = function(grunt) {
@@ -75,10 +85,11 @@ module.exports = function(grunt) {
 
 		//copying readme and module.json
 		grunt.file.expand({ filter: 'isDirectory' }, [
-			'./*',
-			'!./node_modules',
-			'!./._templates',
-			'!./.git',
+			'*',
+			'!node_modules',
+			'!._templates',
+			'!.git',
+			'!.github',
 		]).forEach(function(dir) {
 			var version = '1.0.0';
 
@@ -150,18 +161,19 @@ module.exports = function(grunt) {
 
 						var subdir = './' + module.ID + '/' + version + '/tests/';
 
-						//add versioning to files
+						//adding the modules into the index
 						replaceStr += '			<li>' + "\n" +
 							'				<h4 class="body-font version-headline">v' + version + '</h4>' + "\n" +
-							'				<ul class="gui-list-version-brand">' + "\n" +
-							'					<li><a class="brand-link brand-link-bom" href="' + subdir + 'BOM/">BOM</a></li>' + "\n" +
-							'					<li><a class="brand-link brand-link-bsa" href="' + subdir + 'BSA/">BSA</a></li>' + "\n" +
-							'					<li><a class="brand-link brand-link-stg" href="' + subdir + 'STG/">STG</a></li>' + "\n" +
-							'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'WBC/">WBC</a></li>' + "\n" +
-							'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'WBG/">WBG</a></li>' + "\n" +
-							'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'BT/">BT</a></li>' + "\n" +
-							'				</ul>' + "\n" +
-							'			</li>' + "\n";
+							'				<ul class="gui-list-version-brand">' + "\n";
+
+						//adding brand links
+						SETTINGS(grunt).brands.forEach(function( brand ) {
+							replaceStr += '					<li><a class="brand-link brand-link-' + brand.toLowerCase() + '" href="' + subdir + brand.toUpperCase() + '/">' +
+								brand.toUpperCase() + '</a></li>' + "\n";
+						});
+
+						//closing the HTML
+						replaceStr += '				</ul>' + "\n" + '			</li>' + "\n";
 					});
 
 					replaceStr += '		</ul>' + "\n" +
