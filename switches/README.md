@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-switches/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-switches/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-switches/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-switches/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-switches/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-switches/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-switches/tests/BT/)
 
 > These are very simple toggle switches ideal for use in settings or preference screens. The switch can be blank or contain a simple string for example;
 > yes/no, on/off etc. Please note: These switches are a fixed width. They are not for use with longs text strings.
@@ -18,6 +20,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-tooltips/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-tooltips/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-tooltips/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-tooltips/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-tooltips/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-tooltips/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-tooltips/tests/BT/)
 
 > Tool tips display when a hover event is triggered. On small devices the information is displayed inline.
 
@@ -17,6 +19,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* When attaching tooltips to a button element the tooltip got cut off. We explained to buttons that interrupting a well articulated tooltip is rude. Now
+		tooltips won’t stop in the middle of
+		[#220](https://github.com/WestpacCXTeam/GUI-source/issues/220)
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

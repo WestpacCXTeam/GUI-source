@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-tables/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-tables/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-tables/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-tables/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-tables/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-tables/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-tables/tests/BT/)
 
 > Financial services use tables a lot. Tables should only be used for rendering data that belongs naturally in a grid, in other words where the data
 > describes a number of objects that have the same properties.
@@ -18,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
+	* The highlighting of the first cell would be cut off on mobile in bordered tables. We wanted to highlight that we fixed that.
+		[#210](https://github.com/WestpacCXTeam/GUI-source/issues/210)
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

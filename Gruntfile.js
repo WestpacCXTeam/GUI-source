@@ -96,10 +96,11 @@ module.exports = function(grunt) {
 
 		//build GUI.json
 		grunt.file.expand({ filter: 'isDirectory' }, [
-			'./*',
-			'!./node_modules',
-			'!./._templates',
-			'!./.git',
+			'*',
+			'!node_modules',
+			'!._templates',
+			'!.github',
+			'!.git',
 		]).forEach(function(dir) {
 
 			var module = grunt.file.readJSON( dir + '/' + 'module.json');
@@ -157,6 +158,8 @@ module.exports = function(grunt) {
 							'					<li><a class="brand-link brand-link-bsa" href="' + subdir + 'BSA/">BSA</a></li>' + "\n" +
 							'					<li><a class="brand-link brand-link-stg" href="' + subdir + 'STG/">STG</a></li>' + "\n" +
 							'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'WBC/">WBC</a></li>' + "\n" +
+							'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'WBG/">WBG</a></li>' + "\n" +
+							'					<li><a class="brand-link brand-link-wbc" href="' + subdir + 'BT/">BT</a></li>' + "\n" +
 							'				</ul>' + "\n" +
 							'			</li>' + "\n";
 					});

@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-checkboxes/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-checkboxes/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-checkboxes/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-checkboxes/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-checkboxes/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-checkboxes/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-checkboxes/tests/BT/)
 
 > Forms play an important role in our brand's products and services. All roads lead to a form so it’s important to get them right. These basic form
 > elements have been carefully crafted and rigorously tested. Use them as the foundation for any form creation.
@@ -18,6 +20,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

@@ -607,3 +607,27 @@
 [submodule "_grid/2.0.1"]
 	path = _grid/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_grid.git
+[submodule "wells/2.0.1"]
+	path = wells/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-wells.git
+[submodule "tooltips/2.0.1"]
+	path = tooltips/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-tooltips.git
+[submodule "text-extensions/2.0.1"]
+	path = text-extensions/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-text-extensions.git
+[submodule "tables/2.0.1"]
+	path = tables/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-tables.git
+[submodule "responsive-toggles/2.0.1"]
+	path = responsive-toggles/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-responsive-toggles.git
+[submodule "switches/2.0.1"]
+	path = switches/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-switches.git
+[submodule "symbols/2.0.1"]
+	path = symbols/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-symbols.git
+[submodule "tabcordions/2.0.1"]
+	path = tabcordions/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-tabcordions.git

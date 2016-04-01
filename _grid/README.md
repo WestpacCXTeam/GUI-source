@@ -10,7 +10,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI_grid/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI_grid/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI_grid/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI_grid/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI_grid/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI_grid/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI_grid/tests/BT/)
 
 > It’s very important to pay attention to the layout and spacing of every element in the UI. The classes in this module provide a responsive grid for column
 > layout, methods to manipulate the visibility of elements and classes to space elements quickly and accurately using the design system. Using a 12 column

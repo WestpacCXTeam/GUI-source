@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-paginations/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-paginations/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-paginations/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-paginations/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-paginations/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-paginations/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-paginations/tests/BT/)
 
 > Pagination is used to navigate within a set of related views. This element allows navigation within both finite (a set number) and infinite (unknown number)
 > of views. Lazy-load seems to have superseded pagination, however if you are working within technical restrictions then pagination is still an acceptable
@@ -19,6 +21,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

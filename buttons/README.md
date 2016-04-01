@@ -1,11 +1,16 @@
 GUI Buttons
 ===========
 
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
+module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-buttons/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-buttons/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-buttons/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-buttons/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-buttons/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-buttons/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-buttons/tests/BT/)
 
 > The button design system gives you the flexibility to choose from multiple styles, sizes and configurations depending on your needs. Use the button classes
 > to quickly create styled buttons, groups of buttons, dropdown buttons etc.
@@ -15,6 +20,11 @@ GUI Buttons
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Buttons can be links and links can be buttons. We are THAT progressive. It's just when a keyboard user focuses on a link the link-button would display it’s
+		text white on white background. That's the opposite of accessibility. Tis no more!
+		[#216](https://github.com/WestpacCXTeam/GUI-source/issues/216)
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

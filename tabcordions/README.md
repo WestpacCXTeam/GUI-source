@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-tabcordions/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-tabcordions/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-tabcordions/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-tabcordions/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-tabcordions/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-tabcordions/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-tabcordions/tests/BT/)
 
 > Sometimes you need to group elements either for visual structure or as a functional requirement so that you can manipulate the group. For those situations
 > we’ve created several containers to get you started.
@@ -18,6 +20,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
