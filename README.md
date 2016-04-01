@@ -147,9 +147,9 @@ See more in [Workflow](#workflow).
 > Run GUI-source and GUI-docs and upload to ubuntu server, install blender script and make sure we have 404 pages in place for transition
 
 1. Gui-source
-	1. [x] add submodule in new version folder
-	1. [x] update submodule to pull files
-	1. [x] checkout tag
+	1. [x] add submodule in new version folder `git submodule add https://github.com/WestpacCXTeam/GUI-[module].git [module]/[version]`
+	1. [x] update submodule to pull files (command above does that automatically)
+	1. [x] checkout tag (should always be the latest tag)
 	1. [x] `grunt`
 	1. [x] commit, merge `gh-pages` and `master`
 1. Gui-docs
@@ -166,8 +166,9 @@ See more in [Workflow](#workflow).
 	1. [x] `grunt prod`
 	1. [x] commit, merge `gh-pages` and `master`
 1. upload files
+	1. [x] rename `construction2.html` to `construction.html` to redirect traffic to this file with ngix
 	1. [x] upload `GUI.zip` and `docs.zip` to `.temp` folder (check no version folders are empty)
-	1. [x] upload blender files (`server.js`, `.template/`, `assets/` possibly `package.json`)
+	1. [x] upload blender files (`server.js`, `.template/`, `assets/` possibly `package.json` and `.guiconfig`)
 	1. [x] ssh into machine
 	1. [x] `unzip GUI.zip -d ../` or `grunt unzip:GUI`
 	1. [x] possibly `npm i` in `blender/remote` folder
@@ -176,6 +177,7 @@ See more in [Workflow](#workflow).
 	1. [x] `forever list`
 	1. [x] `rm -rf BOM` | `rm -rf BSA` | `rm -rf STG` | `rm -rf WBC`
 	1. [x] `unzip docs.zip -d ../`
+	1. [x] rename `construction.html` to `construction2.html` to direct traffic back to the site
 1. email
 	1. [x] get all change messages
 	1. [x] make it entertaining AND informative
@@ -236,6 +238,7 @@ The `module.json` file that is then compiled into the GUI.json file is the engin
 
 > We are trying to make as little changes to the overall build as possible.
 
+* v1.0.2 - Automated branding with the `.guiconfig` file
 * v1.0.1 - Moved all modules into submodules
 * v1.0.0 - Initial build system setup
 
