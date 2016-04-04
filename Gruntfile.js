@@ -167,7 +167,7 @@ module.exports = function(grunt) {
 							'				<ul class="gui-list-version-brand">' + "\n";
 
 						//adding brand links
-						SETTINGS(grunt).brands.forEach(function( brand ) {
+						module.versions[version].brands.forEach(function( brand ) {
 							replaceStr += '					<li><a class="brand-link brand-link-' + brand.toLowerCase() + '" href="' + subdir + brand.toUpperCase() + '/">' +
 								brand.toUpperCase() + '</a></li>' + "\n";
 						});

@@ -11,7 +11,8 @@
 			"less": true,
 			"svg": false,
 			"font": true,
-			"size": 4
+			"size": 4,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"1.0.1": {
 			"dependencies": [],
@@ -19,7 +20,8 @@
 			"less": true,
 			"svg": false,
 			"font": true,
-			"size": 1
+			"size": 1,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"1.0.2": {
 			"dependencies": [],
@@ -27,7 +29,8 @@
 			"less": true,
 			"svg": false,
 			"font": true,
-			"size": 1
+			"size": 1,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"2.0.0": {
 			"dependencies": [],
@@ -35,7 +38,8 @@
 			"less": true,
 			"svg": false,
 			"font": true,
-			"size": 1
+			"size": 1,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"2.0.1": {
 			"dependencies": [],
@@ -43,7 +47,8 @@
 			"less": true,
 			"svg": false,
 			"font": true,
-			"size": 1
+			"size": 1,
+			"brands": ["BOM", "BSA", "STG", "WBC", "WBG", "BT"]
 		}
 	},
 	"hash": "090588a0d88975bf5c06c49bf476ae48"

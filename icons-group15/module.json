@@ -12,7 +12,8 @@
 			"less": false,
 			"svg": true,
 			"font": false,
-			"size": 21
+			"size": 21,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"1.0.1": {
 			"dependencies": [
@@ -23,7 +24,8 @@
 			"less": false,
 			"svg": true,
 			"font": false,
-			"size": 21
+			"size": 21,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"1.0.2": {
 			"dependencies": [
@@ -34,7 +36,8 @@
 			"less": false,
 			"svg": true,
 			"font": false,
-			"size": 21
+			"size": 21,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"2.0.0": {
 			"dependencies": [
@@ -45,8 +48,9 @@
 			"less": false,
 			"svg": true,
 			"font": false,
-			"size": 21
+			"size": 21,
+			"brands": ["BOM", "BSA", "STG", "WBC", "WBG", "BT"]
 		}
 	},
-	"hash": "3eef8b1ffe2031f68d9c092f1b1f8eb6"
+	"hash": "ecc12715ed6953bf16647c0c9a1552c1"
 }

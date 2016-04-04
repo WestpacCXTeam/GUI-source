@@ -21,6 +21,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* new margin mixins
+		[#201](https://github.com/WestpacCXTeam/GUI-source/issues/201)
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
