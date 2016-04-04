@@ -631,3 +631,15 @@
 [submodule "tabcordions/2.0.1"]
 	path = tabcordions/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-tabcordions.git
+[submodule "icons-group16/2.0.1"]
+	path = icons-group16/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-icons-group16.git
+[submodule "input-groups/2.0.1"]
+	path = input-groups/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-groups.git
+[submodule "labels/2.0.1"]
+	path = labels/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-labels.git
+[submodule "progress-bars/2.0.1"]
+	path = progress-bars/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-progress-bars.git
