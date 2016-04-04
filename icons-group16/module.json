@@ -1,7 +1,7 @@
 {
 	"ID": "icons-group16",
 	"name": "Icons-Group 16",
-	"description": "<span class='icon icon-size-sm icon-alert'></span> <span class='icon icon-size-sm icon-face-happy'></span> <span class='icon icon-size-sm icon-face-hmm'></span> <span class='icon icon-size-sm icon-face-sad'></span> <span class='icon icon-size-sm icon-help'></span> <span class='icon icon-size-sm icon-info'></span>",
+	"description": "<span class='icon icon-size-sm icon-alert'></span> <span class='icon icon-size-sm icon-help'></span> <span class='icon icon-size-sm icon-info'></span>",
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
@@ -12,7 +12,8 @@
 			"less": false,
 			"svg": true,
 			"font": false,
-			"size": 18
+			"size": 18,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"1.0.1": {
 			"dependencies": [
@@ -23,7 +24,8 @@
 			"less": false,
 			"svg": true,
 			"font": false,
-			"size": 18
+			"size": 18,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"1.0.2": {
 			"dependencies": [
@@ -34,7 +36,8 @@
 			"less": false,
 			"svg": true,
 			"font": false,
-			"size": 18
+			"size": 18,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"2.0.0": {
 			"dependencies": [
@@ -45,8 +48,21 @@
 			"less": false,
 			"svg": true,
 			"font": false,
-			"size": 18
+			"size": 18,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
+		},
+		"2.0.1": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"icons-base"
+			],
+			"js": false,
+			"less": false,
+			"svg": true,
+			"font": false,
+			"size": 9,
+			"brands": ["BOM", "BSA", "STG", "WBC", "WBG", "BT"]
 		}
 	},
-	"hash": "a7a9a720b940d588c49293d14f27ad4a"
+	"hash": "faabb1846d774f96493b1feed6aa7aa7"
 }

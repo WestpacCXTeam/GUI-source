@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-progress-bars/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-progress-bars/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-progress-bars/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-progress-bars/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-progress-bars/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-progress-bars/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-progress-bars/tests/BT/)
 
 > A visual indication of progress. Use when loading content or to indicate how far along the user is in a journey.
 
@@ -17,6 +19,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

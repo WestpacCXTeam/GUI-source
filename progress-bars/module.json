@@ -10,7 +10,8 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 2
+			"size": 2,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
 		},
 		"2.0.0": {
 			"dependencies": [],
@@ -18,8 +19,18 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 2
+			"size": 2,
+			"brands": ["BOM", "BSA", "STG", "WBC"]
+		},
+		"2.0.1": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 2,
+			"brands": ["BOM", "BSA", "STG", "WBC", "WBG", "BT"]
 		}
 	},
-	"hash": "ab93093296db798a6ba55f370d9badfd"
+	"hash": "0243a25b3822a2c0044559988fddf3a8"
 }

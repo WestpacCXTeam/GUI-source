@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-icons-group16/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-icons-group16/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-icons-group16/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-icons-group16/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-icons-group16/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-icons-group16/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-icons-group16/tests/BT/)
 
 > This library of icons is intended for use across all of our brands and user interfaces. They are designed to aid navigation and legibility. The use of icons
 > purely as page embellishment is not recommended and in some cases will be off brand. These icons are implemented as scalable vector graphics (SVG’s) with
@@ -20,6 +22,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* It’s with great regret that we announce the removal of the sad face icon and it’s good friends happy and indifferent.
+		Due to circumstances beyond our control we’ve been asked to delete our emoji friends from the GUI.
+		Please spare a thought for these brave little characters. They brought sentiment, humanity and honesty to our interfaces and customers.
+		[#211](https://github.com/WestpacCXTeam/GUI-source/issues/211)
 * v2.0.0 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* All SVGs now come with a unique title ID. That may not sound like much but SVGs are very particular about their individualism.
 		[#204](https://github.com/WestpacCXTeam/GUI-source/issues/204)
