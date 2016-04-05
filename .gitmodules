@@ -640,3 +640,6 @@
 [submodule "progress-bars/2.0.1"]
 	path = progress-bars/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-progress-bars.git
+[submodule "input-fields/2.0.1"]
+	path = input-fields/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-fields.git
