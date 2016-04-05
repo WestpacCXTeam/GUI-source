@@ -568,8 +568,8 @@
 [submodule "input-addons/2.0.1"]
 	path = input-addons/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-addons.git
-[submodule "input-fields/2.0.git"]
-	path = input-fields/2.0.git
+[submodule "input-fields/2.0.1"]
+	path = input-fields/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-fields.git
 [submodule "list-groups/2.0.1"]
 	path = list-groups/2.0.1
