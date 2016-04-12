@@ -21,7 +21,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* new margin mixins
+	* We know all people (and projects for that matter) come in all forms and variation. We love the diversity and the new insights that this brings with it.
+		Unfortunately the responsive margins were not diverse at all only giving you seven options for spacing. We expanded it’s mind in a flower-power filled
+		group team-building exercise and now you have all kinds of margins. ALL KINDS!
 		[#201](https://github.com/WestpacCXTeam/GUI-source/issues/201)
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
