@@ -84,6 +84,7 @@ module.exports = function(grunt) {
 
 
 		//copying readme and module.json
+		grunt.verbose.writeln( 'Copying latest readme and module.json' );
 		grunt.file.expand({ filter: 'isDirectory' }, [
 			'*',
 			'!node_modules',
@@ -91,6 +92,8 @@ module.exports = function(grunt) {
 			'!.git',
 			'!.github',
 		]).forEach(function(dir) {
+			grunt.verbose.writeln( 'Reading directory: ' + dir );
+
 			var version = '1.0.0';
 
 			grunt.file.expand({ filter: 'isDirectory' }, [ //get latest version
@@ -106,6 +109,7 @@ module.exports = function(grunt) {
 
 
 		//build GUI.json
+		grunt.verbose.writeln( 'Building GUI.json' );
 		grunt.file.expand({ filter: 'isDirectory' }, [
 			'*',
 			'!node_modules',
@@ -113,6 +117,7 @@ module.exports = function(grunt) {
 			'!.github',
 			'!.git',
 		]).forEach(function(dir) {
+			grunt.verbose.writeln( 'Reading directory: ' + dir );
 
 			var module = grunt.file.readJSON( dir + '/' + 'module.json');
 
@@ -130,9 +135,12 @@ module.exports = function(grunt) {
 
 
 		//build index.html
+		grunt.verbose.writeln( 'Building index.html' );
 		Object.keys( GUI.modules ).forEach(function iterateCategories( category ) {
+			grunt.verbose.writeln( 'Iterating category: ' + category );
 
 			Object.keys( GUI.modules[category] ).forEach(function iterateModules( moduleKey ) {
+				grunt.verbose.writeln( 'Iterating module: ' + moduleKey );
 
 				var module = GUI.modules[category][moduleKey];
 				modulePos++;
@@ -158,6 +166,7 @@ module.exports = function(grunt) {
 						'		<ul class="gui-list-version">' + "\n";
 
 					Object.keys( module.versions ).forEach(function interateVersions( version ) {
+						grunt.verbose.writeln( 'Iterating version: ' + version );
 
 						var subdir = './' + module.ID + '/' + version + '/tests/';
 
@@ -168,6 +177,8 @@ module.exports = function(grunt) {
 
 						//adding brand links
 						module.versions[version].brands.forEach(function( brand ) {
+							grunt.verbose.writeln( 'Iterating brand: ' + brand );
+
 							replaceStr += '					<li><a class="brand-link brand-link-' + brand.toLowerCase() + '" href="' + subdir + brand.toUpperCase() + '/">' +
 								brand.toUpperCase() + '</a></li>' + "\n";
 						});
