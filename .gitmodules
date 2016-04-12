@@ -601,9 +601,6 @@
 [submodule "_fonts/2.0.1"]
 	path = _fonts/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_fonts.git
-[submodule "_grid/2.0.1"]
-	path = _grid/2.0.1
-	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_grid.git
 [submodule "wells/2.0.1"]
 	path = wells/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-wells.git
