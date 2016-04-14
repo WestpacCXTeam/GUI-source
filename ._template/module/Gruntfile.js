@@ -495,6 +495,21 @@ module.exports = function(grunt) {
 				replacements: [{
 					from: '[svg-color]',
 					to: SETTINGS(grunt).colors[brand]['Color-Text'],
+				}, {
+					from: '[lists-link]',
+					to: SETTINGS(grunt).colors[brand]['lists-link'],
+				}, {
+					from: '[lists-tick]',
+					to: SETTINGS(grunt).colors[brand]['lists-tick'],
+				}, {
+					from: '[radcheck-active]',
+					to: SETTINGS(grunt).colors[brand]['radcheck-active'],
+				}, {
+					from: '[radcheck-disabled-bg]',
+					to: SETTINGS(grunt).colors[brand]['radcheck-disabled-bg'],
+				}, {
+					from: '[radcheck-disabled-border]',
+					to: SETTINGS(grunt).colors[brand]['radcheck-disabled-border'],
 				}],
 			};
 			tasks.add( 'replace:ReplaceSVG' + brand );
@@ -551,11 +566,11 @@ module.exports = function(grunt) {
 					from: '[radcheck-active]',
 					to: SETTINGS(grunt).colors[brand]['radcheck-active'],
 				}, {
-					from: '[radcheck-disbaled-bg]',
-					to: SETTINGS(grunt).colors[brand]['radcheck-disbaled-bg'],
+					from: '[radcheck-disabled-bg]',
+					to: SETTINGS(grunt).colors[brand]['radcheck-disabled-bg'],
 				}, {
-					from: '[radcheck-disbaled-border]',
-					to: SETTINGS(grunt).colors[brand]['radcheck-disbaled-border'],
+					from: '[radcheck-disabled-border]',
+					to: SETTINGS(grunt).colors[brand]['radcheck-disabled-border'],
 				}],
 			};
 			tasks.add( 'replace:ReplaceSVGAgain' + brand );
