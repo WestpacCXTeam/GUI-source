@@ -8,9 +8,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-responsive-margins/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-responsive-margins/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-responsive-margins/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-responsive-margins/tests/WBC/) |
-[WBG](http://westpaccxteam.github.io/GUI-responsive-margins/tests/WBG/) |
-[BT](http://westpaccxteam.github.io/GUI-responsive-margins/tests/BT/)
+[WBC](http://westpaccxteam.github.io/GUI-responsive-margins/tests/WBC/)
 
 > Use these classes to add vertical spacing above elements based on the layout system. To maintain a visual rhythm and consistency in the UI we have a set of
 > classes that use multiples of 6 when applying vertical spacing between elements. The lead visual designer will stipulate which margin to use.
@@ -20,12 +18,6 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* We know all people (and projects for that matter) come in all forms and variation. We love the diversity and the new insights that this brings with it.
-		Unfortunately the responsive margins were not diverse at all only giving you seven options for spacing. We expanded it’s mind in a flower-power filled
-		group team-building exercise and now you have all kinds of margins. ALL KINDS!
-		[#201](https://github.com/WestpacCXTeam/GUI-source/issues/201)
-	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

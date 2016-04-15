@@ -11,7 +11,12 @@
 			"svg": true,
 			"font": false,
 			"size": 12,
-			"brands": ["BOM", "BSA", "STG", "WBC"]
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC"
+			]
 		},
 		"1.0.1": {
 			"dependencies": [],
@@ -20,7 +25,12 @@
 			"svg": true,
 			"font": false,
 			"size": 12,
-			"brands": ["BOM", "BSA", "STG", "WBC"]
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC"
+			]
 		},
 		"1.0.2": {
 			"dependencies": [
@@ -31,7 +41,12 @@
 			"svg": true,
 			"font": false,
 			"size": 12,
-			"brands": ["BOM", "BSA", "STG", "WBC"]
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC"
+			]
 		},
 		"1.0.3": {
 			"dependencies": [
@@ -42,7 +57,12 @@
 			"svg": true,
 			"font": false,
 			"size": 12,
-			"brands": ["BOM", "BSA", "STG", "WBC"]
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC"
+			]
 		},
 		"1.0.4": {
 			"dependencies": [
@@ -53,7 +73,12 @@
 			"svg": true,
 			"font": false,
 			"size": 12,
-			"brands": ["BOM", "BSA", "STG", "WBC"]
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC"
+			]
 		},
 		"2.0.0": {
 			"dependencies": [
@@ -64,7 +89,12 @@
 			"svg": true,
 			"font": false,
 			"size": 12,
-			"brands": ["BOM", "BSA", "STG", "WBC"]
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC"
+			]
 		},
 		"2.0.1": {
 			"dependencies": [
@@ -74,9 +104,16 @@
 			"less": true,
 			"svg": true,
 			"font": false,
-			"size": 10,
-			"brands": ["BOM", "BSA", "STG", "WBC", "WBG", "BT"]
+			"size": 12,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
 		}
 	},
-	"hash": "cf19f8b90a95b8d0e643b50afb6e541d"
+	"hash": "6463342729b6de3a0fe99532281671d2"
 }

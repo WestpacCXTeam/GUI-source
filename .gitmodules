@@ -595,9 +595,6 @@
 [submodule "responsive-embeds/2.0.1"]
 	path = responsive-embeds/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-responsive-embeds.git
-[submodule "responsive-margins/2.0.1"]
-	path = responsive-margins/2.0.1
-	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-responsive-margins.git
 [submodule "_fonts/2.0.1"]
 	path = _fonts/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_fonts.git
