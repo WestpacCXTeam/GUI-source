@@ -637,3 +637,6 @@
 [submodule "input-fields/2.0.1"]
 	path = input-fields/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-input-fields.git
+[submodule "responsive-margins/2.0.1"]
+	path = responsive-margins/2.0.1
+	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-responsive-margins.git
