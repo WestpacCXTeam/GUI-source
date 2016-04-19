@@ -21,8 +21,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Buttons can be links and links can be buttons. We are THAT progressive. It's just when a keyboard user focuses on a link the link-button would display it’s
-		text white on white background. That's the opposite of accessibility. Tis no more!
+	* Buttons can be links and links can be buttons. We are THAT progressive. It’s just when a keyboard user focuses on a link the link-button would display it’s
+		text white on white background. That’s the opposite of accessibility. Tis no more!
 		[#216](https://github.com/WestpacCXTeam/GUI-source/issues/216)
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
