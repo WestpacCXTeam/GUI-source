@@ -532,9 +532,6 @@
 [submodule "_colors/2.0.1"]
 	path = _colors/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_colors.git
-[submodule "_javascript-helpers/2.0.1"]
-	path = _javascript-helpers/2.0.1
-	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_javascript-helpers.git
 [submodule "_text-styling/2.0.1"]
 	path = _text-styling/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI_text-styling.git
