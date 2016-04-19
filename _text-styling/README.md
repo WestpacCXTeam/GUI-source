@@ -23,7 +23,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
-	* We've updated to normalizer 4.0 which comes with juicy new fixes and normalizations. (Yes! That’s a thing)
+	* We’ve updated to normalizer 4.0 which comes with juicy new fixes and normalizations. (Yes! That’s a thing)
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
