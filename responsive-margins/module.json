@@ -29,11 +29,25 @@
 				"BOM",
 				"BSA",
 				"STG",
+				"WBC"
+			]
+		},
+		"2.0.1": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 3,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
 				"WBC",
 				"WBG",
 				"BT"
 			]
 		}
 	},
-	"hash": "00c2f55ef79547eb13aabe397a3c0f64"
+	"hash": "f7582e08fae591d9a2228d602b8ad7ff"
 }
