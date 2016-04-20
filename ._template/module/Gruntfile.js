@@ -218,7 +218,6 @@ module.exports = function(grunt) {
 		var imagemin = {};
 		var grunticon = {};
 		var clean = {};
-		// var brands = ['BOM', 'BSA', 'STG', 'WBC'];
 
 		var module = grunt.file.readJSON( 'module.json' );
 		var moduleName = module.ID;
@@ -250,39 +249,39 @@ module.exports = function(grunt) {
 		SETTINGS(grunt).brands.forEach(function( brand ) {
 
 			//////////////////////////////////////| UGLIFY JS
-			uglify[ 'uglify' + brand ] = {
+			uglify[ 'uglify' + brand.ID ] = {
 				files: [{
 					expand: true,
 					cwd: 'js/',
 					src: '*.js',
-					dest: 'tests/' + brand + '/assets/size/',
+					dest: 'tests/' + brand.ID + '/assets/size/',
 					rename: function(path, src, options) {
 						return path + 'size.js';
 					}
 				}],
 			};
-			tasks.add( 'uglify:uglify' + brand );
+			tasks.add( 'uglify:uglify' + brand.ID );
 
 
 			//////////////////////////////////////| CONCAT FILES
 			var srcFiles = ['_core/js/*.js']; //js
 			srcFiles.push('js/*.js');
 
-			concat[ 'JS' + brand ] = {
+			concat[ 'JS' + brand.ID ] = {
 				src: srcFiles,
-				dest: 'tests/' + brand + '/assets/js/gui.js',
+				dest: 'tests/' + brand.ID + '/assets/js/gui.js',
 			};
-			tasks.add( 'concat:JS' + brand );
+			tasks.add( 'concat:JS' + brand.ID );
 
 			var srcFiles = ['_core/less/core.less']; //less
 			srcFiles.push('less/module-mixins.less');
 			srcFiles.push('_core/less/core-after.less');
 
-			concat[ 'Less' + brand ] = {
+			concat[ 'Less' + brand.ID ] = {
 				src: srcFiles,
-				dest: 'tests/' + brand + '/assets/less/gui.less',
+				dest: 'tests/' + brand.ID + '/assets/less/gui.less',
 			};
-			tasks.add( 'concat:Less' + brand );
+			tasks.add( 'concat:Less' + brand.ID );
 
 			if( module.core === true ) { //if this is a core module
 				if( module.ID === '_colors' ) {
@@ -299,93 +298,93 @@ module.exports = function(grunt) {
 				];
 			}
 
-			concat[ 'coreSize' + brand ] = { //coreSize
+			concat[ 'coreSize' + brand.ID ] = { //coreSize
 				src: srcFiles,
-				dest: 'tests/' + brand + '/assets/less/coreSize.less',
+				dest: 'tests/' + brand.ID + '/assets/less/coreSize.less',
 			};
-			tasks.add( 'concat:coreSize' + brand );
+			tasks.add( 'concat:coreSize' + brand.ID );
 
-			concat[ 'HTML' + brand ] = { //html
+			concat[ 'HTML' + brand.ID ] = { //html
 				src: [
 					'html/header.html',
 					'html/source.html',
 					'html/footer.html',
 				],
-				dest: 'tests/' + brand + '/index.html',
+				dest: 'tests/' + brand.ID + '/index.html',
 			};
-			tasks.add( 'concat:HTML' + brand );
+			tasks.add( 'concat:HTML' + brand.ID );
 
 
 			//////////////////////////////////////| ADD VERSIONING TO FILES
-			replace[ 'Replace' + brand ] = { //brand all files
+			replace[ 'Replace' + brand.ID ] = { //brand all files
 				src: [
-					'tests/' + brand + '/assets/js/*.js',
-					'tests/' + brand + '/assets/less/*.less',
-					'tests/' + brand + '/*.html',
+					'tests/' + brand.ID + '/assets/js/*.js',
+					'tests/' + brand.ID + '/assets/less/*.less',
+					'tests/' + brand.ID + '/*.html',
 				],
 				overwrite: true,
 				replacements: [{
 					from: '[Module-Version-Brand]',
-					to: moduleName + ' v' + version + ' ' + brand,
+					to: moduleName + ' v' + version + ' ' + brand.ID,
 				}, {
 					from: '[Module-Version]',
 					to: moduleName + ' v' + version,
 				}, {
 					from: '[Brand]',
-					to: brand,
+					to: brand.ID,
 				}, {
 					from: '[Debug]',
 					to: 'true',
 				}],
 			};
-			tasks.add( 'replace:Replace' + brand );
+			tasks.add( 'replace:Replace' + brand.ID );
 
-			replace[ 'ReplaceTest' + brand ] = { //brand test files
+			replace[ 'ReplaceTest' + brand.ID ] = { //brand test files
 				src: [
 					'less/test.less',
 				],
 				overwrite: false,
-				dest: 'tests/' + brand + '/assets/less/test.less',
+				dest: 'tests/' + brand.ID + '/assets/less/test.less',
 				replacements: [{
 					from: '[Module-Version-Brand]',
-					to: moduleName + ' v' + version + ' ' + brand,
+					to: moduleName + ' v' + version + ' ' + brand.ID,
 				}, {
 					from: '[Module-Version]',
 					to: moduleName + ' v' + version,
 				}, {
 					from: '[Brand]',
-					to: brand,
+					to: brand.ID,
 				}, {
 					from: '[Debug]',
 					to: 'true',
 				}],
 			};
-			tasks.add( 'replace:ReplaceTest' + brand );
+			tasks.add( 'replace:ReplaceTest' + brand.ID );
 
-			replace[ 'ReplaceSize' + brand ] = { //brand size files
+			replace[ 'ReplaceSize' + brand.ID ] = { //brand size files
 				src: [
-					'tests/' + brand + '/assets/less/coreSize.less'
+					'tests/' + brand.ID + '/assets/less/coreSize.less'
 				],
 				overwrite: true,
 				replacements: [{
 					from: '[Module-Version-Brand]',
-					to: moduleName + ' v' + version + ' ' + brand,
+					to: moduleName + ' v' + version + ' ' + brand.ID,
 				}, {
 					from: '[Module-Version]',
 					to: moduleName + ' v' + version,
 				}, {
 					from: '[Brand]',
-					to: brand,
+					to: brand.ID,
 				}, {
 					from: '[Debug]',
 					to: 'true',
 				}],
 			};
-			tasks.add( 'replace:ReplaceSize' + brand );
+			tasks.add( 'replace:ReplaceSize' + brand.ID );
 
 
 			//////////////////////////////////////| COMPILE LESS
-			less[ 'Less' + brand ] = {
+			less[ 'Less' + brand.ID ] = {
 				options: {
 					cleancss: true,
 					compress: false,
@@ -394,13 +393,13 @@ module.exports = function(grunt) {
 					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
 				},
 				src: [
-					'tests/' + brand + '/assets/less/gui.less',
+					'tests/' + brand.ID + '/assets/less/gui.less',
 				],
-				dest: 'tests/' + brand + '/assets/css/gui.css',
+				dest: 'tests/' + brand.ID + '/assets/css/gui.css',
 			};
-			tasks.add( 'less:Less' + brand );
+			tasks.add( 'less:Less' + brand.ID );
 
-			less[ 'LessSize' + brand ] = { //minified css for size calculation
+			less[ 'LessSize' + brand.ID ] = { //minified css for size calculation
 				options: {
 					cleancss: true,
 					compress: true,
@@ -409,13 +408,13 @@ module.exports = function(grunt) {
 					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
 				},
 				src: [
-					'tests/' + brand + '/assets/less/gui.less',
+					'tests/' + brand.ID + '/assets/less/gui.less',
 				],
-				dest: 'tests/' + brand + '/assets/size/size.css',
+				dest: 'tests/' + brand.ID + '/assets/size/size.css',
 			};
-			tasks.add( 'less:LessSize' + brand );
+			tasks.add( 'less:LessSize' + brand.ID );
 
-			less[ 'CoreSize' + brand ] = { //minified core css for size calculation
+			less[ 'CoreSize' + brand.ID ] = { //minified core css for size calculation
 				options: {
 					cleancss: true,
 					compress: true,
@@ -424,13 +423,13 @@ module.exports = function(grunt) {
 					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
 				},
 				src: [
-					'tests/' + brand + '/assets/less/coreSize.less',
+					'tests/' + brand.ID + '/assets/less/coreSize.less',
 				],
-				dest: 'tests/' + brand + '/assets/size/coreSize.css',
+				dest: 'tests/' + brand.ID + '/assets/size/coreSize.css',
 			};
-			tasks.add( 'less:CoreSize' + brand );
+			tasks.add( 'less:CoreSize' + brand.ID );
 
-			less[ 'LessTest' + brand ] = {
+			less[ 'LessTest' + brand.ID ] = {
 				options: {
 					cleancss: true,
 					compress: false,
@@ -439,89 +438,89 @@ module.exports = function(grunt) {
 					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
 				},
 				src: [
-					'tests/' + brand + '/assets/less/test.less',
+					'tests/' + brand.ID + '/assets/less/test.less',
 				],
-				dest: 'tests/' + brand + '/assets/css/test.css',
+				dest: 'tests/' + brand.ID + '/assets/css/test.css',
 			};
-			tasks.add( 'less:LessTest' + brand );
+			tasks.add( 'less:LessTest' + brand.ID );
 
 
 			//////////////////////////////////////| CLEAN SIZE FOLDER
-			clean[ 'cleanSize' + brand ] = [
-				'tests/' + brand + '/assets/size/sizeTemp.js',
+			clean[ 'cleanSize' + brand.ID ] = [
+				'tests/' + brand.ID + '/assets/size/sizeTemp.js',
 			];
-			tasks.add( 'clean:cleanSize' + brand );
+			tasks.add( 'clean:cleanSize' + brand.ID );
 
 
 			//////////////////////////////////////| COPY FONT ASSETS
-			copy[ 'CoreFont' + brand ] = {
+			copy[ 'CoreFont' + brand.ID ] = {
 				expand: true,
-				cwd: '_core/font/' + brand + '/',
+				cwd: '_core/font/' + brand.ID + '/',
 				src: '**.*',
-				dest: 'tests/' + brand + '/assets/font',
+				dest: 'tests/' + brand.ID + '/assets/font',
 			};
-			tasks.add( 'copy:CoreFont' + brand );
+			tasks.add( 'copy:CoreFont' + brand.ID );
 
-			copy[ 'Font' + brand ] = {
+			copy[ 'Font' + brand.ID ] = {
 				expand: true,
-				cwd: '_assets/' + brand + '/font/',
+				cwd: '_assets/' + brand.ID + '/font/',
 				src: '*',
-				dest: 'tests/' + brand + '/assets/font',
+				dest: 'tests/' + brand.ID + '/assets/font',
 			};
-			tasks.add( 'copy:Font' + brand );
+			tasks.add( 'copy:Font' + brand.ID );
 
 
 			//////////////////////////////////////| OPTIMISE IMAGES
-			imagemin[ 'Images' + brand ] = {
+			imagemin[ 'Images' + brand.ID ] = {
 				options: {
 					optimizationLevel: 4,
 				},
 				files: [{
 					expand: true,
-					cwd: '_assets/' + brand + '/img/',
+					cwd: '_assets/' + brand.ID + '/img/',
 					src: ['**/*.{png,jpg,gif}'],
-					dest: 'tests/' + brand + '/assets/img/',
+					dest: 'tests/' + brand.ID + '/assets/img/',
 				}],
 			};
-			tasks.add( 'imagemin:Images' + brand );
+			tasks.add( 'imagemin:Images' + brand.ID );
 
 
 			//////////////////////////////////////| BRAND SVGS FOR IE8 FALLBACK
-			replace[ 'ReplaceSVG' + brand ] = {
+			replace[ 'ReplaceSVG' + brand.ID ] = {
 				src: [
 					'_assets/_svgs/*.svg',
 				],
-				dest: 'tests/' + brand + '/assets/svg/',
+				dest: 'tests/' + brand.ID + '/assets/svg/',
 				replacements: [{
 					from: '[svg-color]',
-					to: SETTINGS(grunt).colors[brand]['Color-Text'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['Color-Text'],
 				}, {
 					from: '[lists-link]',
-					to: SETTINGS(grunt).colors[brand]['lists-link'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['lists-link'],
 				}, {
 					from: '[lists-tick]',
-					to: SETTINGS(grunt).colors[brand]['lists-tick'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['lists-tick'],
 				}, {
 					from: '[radcheck-active]',
-					to: SETTINGS(grunt).colors[brand]['radcheck-active'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['radcheck-active'],
 				}, {
 					from: '[radcheck-disabled-bg]',
-					to: SETTINGS(grunt).colors[brand]['radcheck-disabled-bg'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['radcheck-disabled-bg'],
 				}, {
 					from: '[radcheck-disabled-border]',
-					to: SETTINGS(grunt).colors[brand]['radcheck-disabled-border'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['radcheck-disabled-border'],
 				}],
 			};
-			tasks.add( 'replace:ReplaceSVG' + brand );
+			tasks.add( 'replace:ReplaceSVG' + brand.ID );
 
 
 			//////////////////////////////////////| COMPILE SVGS
-			grunticon[ 'SVG' + brand ] = {
+			grunticon[ 'SVG' + brand.ID ] = {
 				files: [{
 					expand: true,
-					cwd: 'tests/' + brand + '/assets/svg',
+					cwd: 'tests/' + brand.ID + '/assets/svg',
 					src: '*.svg',
-					dest: 'tests/' + brand + '/assets/css',
+					dest: 'tests/' + brand.ID + '/assets/css',
 				}],
 
 				options: {
@@ -534,46 +533,46 @@ module.exports = function(grunt) {
 					customselectors: svgselectors,
 				},
 			};
-			tasks.add( 'grunticon:SVG' + brand );
+			tasks.add( 'grunticon:SVG' + brand.ID );
 
 
 			//////////////////////////////////////| COPY FALLBACK PNGS
-			copy[ 'SVG' + brand ] = {
+			copy[ 'SVG' + brand.ID ] = {
 				expand: true,
-				cwd: 'tests/' + brand + '/assets/css/png',
+				cwd: 'tests/' + brand.ID + '/assets/css/png',
 				src: '*.png',
-				dest: 'tests/' + brand + '/assets/img',
+				dest: 'tests/' + brand.ID + '/assets/img',
 			};
-			tasks.add( 'copy:SVG' + brand );
+			tasks.add( 'copy:SVG' + brand.ID );
 
 
 			//////////////////////////////////////| BRAND SVGS FOR REALZ NOW!
-			replace[ 'ReplaceSVGAgain' + brand ] = {
+			replace[ 'ReplaceSVGAgain' + brand.ID ] = {
 				src: [
 					'_assets/_svgs/*.svg',
 				],
-				dest: 'tests/' + brand + '/assets/svg/',
+				dest: 'tests/' + brand.ID + '/assets/svg/',
 				replacements: [{
 					from: '[svg-color]',
-					to: SETTINGS(grunt).colors[brand]['Color-Muted'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['Color-Muted'],
 				}, {
 					from: '[lists-link]',
-					to: SETTINGS(grunt).colors[brand]['lists-link'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['lists-link'],
 				}, {
 					from: '[lists-tick]',
-					to: SETTINGS(grunt).colors[brand]['lists-tick'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['lists-tick'],
 				}, {
 					from: '[radcheck-active]',
-					to: SETTINGS(grunt).colors[brand]['radcheck-active'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['radcheck-active'],
 				}, {
 					from: '[radcheck-disabled-bg]',
-					to: SETTINGS(grunt).colors[brand]['radcheck-disabled-bg'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['radcheck-disabled-bg'],
 				}, {
 					from: '[radcheck-disabled-border]',
-					to: SETTINGS(grunt).colors[brand]['radcheck-disabled-border'],
+					to: SETTINGS(grunt).colors[ brand.ID ]['radcheck-disabled-border'],
 				}],
 			};
-			tasks.add( 'replace:ReplaceSVGAgain' + brand );
+			tasks.add( 'replace:ReplaceSVGAgain' + brand.ID );
 
 
 			//////////////////////////////////////| ADD UNIQUE TITLES TO SVGS
@@ -582,14 +581,14 @@ module.exports = function(grunt) {
 				SVGfiles = '_assets/_svgs/*.svg';
 			}
 			catch(error) {
-				var SVGfiles = 'tests/' + brand + '/assets/svg/*.svg';
+				var SVGfiles = 'tests/' + brand.ID + '/assets/svg/*.svg';
 			}
 
 			grunt.file.expand({ filter: 'isFile' }, SVGfiles).forEach(function( file ) {
 				var filename = Path.basename( file, '.svg' )
 
-				replace[ 'ReplaceSVG-' + brand + '-' + filename ] = {
-					src: [ 'tests/' + brand + '/assets/svg/' + filename + '.svg' ],
+				replace[ 'ReplaceSVG-' + brand.ID + '-' + filename ] = {
+					src: [ 'tests/' + brand.ID + '/assets/svg/' + filename + '.svg' ],
 					overwrite: true,
 					replacements: [{
 						from: '[Filename]',
@@ -597,21 +596,21 @@ module.exports = function(grunt) {
 					}],
 				};
 
-				tasks.add( 'replace:ReplaceSVG-' + brand + '-' + filename );
+				tasks.add( 'replace:ReplaceSVG-' + brand.ID + '-' + filename );
 			});
 
 
 			//////////////////////////////////////| COMPILE SVGS AGAIN
-			tasks.add( 'grunticon:SVG' + brand );
+			tasks.add( 'grunticon:SVG' + brand.ID );
 
 
 			//////////////////////////////////////| CLEANING UP
-			clean[ 'SVG' + brand ] = [
-				'tests/' + brand + '/assets/css/preview.html',
-				'tests/' + brand + '/assets/css/grunticon.loader.js',
-				'tests/' + brand + '/assets/css/png/',
+			clean[ 'SVG' + brand.ID ] = [
+				'tests/' + brand.ID + '/assets/css/preview.html',
+				'tests/' + brand.ID + '/assets/css/grunticon.loader.js',
+				'tests/' + brand.ID + '/assets/css/png/',
 			];
-			tasks.add( 'clean:SVG' + brand );
+			tasks.add( 'clean:SVG' + brand.ID );
 		});
 
 
@@ -660,11 +659,11 @@ module.exports = function(grunt) {
 		//create tasks for each brand
 		SETTINGS(grunt).brands.forEach(function( brand ) {
 
-			copy[ 'SVGfiles' + brand ] = {
+			copy[ 'SVGfiles' + brand.ID ] = {
 				expand: true,
-				cwd: '_assets/' + brand + '/svg',
+				cwd: '_assets/' + brand.ID + '/svg',
 				src: '*.svg',
-				dest: 'tests/' + brand + '/assets/svg',
+				dest: 'tests/' + brand.ID + '/assets/svg',
 			};
 
 		});
