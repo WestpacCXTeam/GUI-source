@@ -1,11 +1,29 @@
 {
 	"brands": [
-		"BOM",
-		"BSA",
-		"STG",
-		"WBC",
-		"WBG",
-		"BT"
+		{
+			"ID": "BOM",
+			"name": "Bank of Melbourne"
+		},
+		{
+			"ID": "BSA",
+			"name": "Bank SA"
+		},
+		{
+			"ID": "STG",
+			"name": "St.George"
+		},
+		{
+			"ID": "WBC",
+			"name": "Westpac"
+		},
+		{
+			"ID": "WBG",
+			"name": "Westpac Group"
+		},
+		{
+			"ID": "BT",
+			"name": "BT Financial Group"
+		}
 	],
 	"colors": {
 		"BOM": {

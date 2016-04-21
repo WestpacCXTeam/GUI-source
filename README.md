@@ -170,12 +170,12 @@ See more in [Workflow](#workflow).
 	1. [x] upload `GUI.zip` and `docs.zip` to `.temp` folder (check no version folders are empty)
 	1. [x] upload blender files (`server.js`, `.template/`, `assets/` possibly `package.json` and `.guiconfig`)
 	1. [x] ssh into machine
-	1. [x] `unzip GUI.zip -d ../` or `grunt unzip:GUI`
+	1. [x] `unzip gui.zip -d ../` or `grunt unzip:GUI`
 	1. [x] possibly `npm i` in `blender/remote` folder
 	1. [x] `forever list`
 	1. [x] `forever restart 0` or `forever start blender/remote/server.js`
 	1. [x] `forever list`
-	1. [x] `rm -rf BOM` | `rm -rf BSA` | `rm -rf STG` | `rm -rf WBC`
+	1. [x] `rm -rf BOM` | `rm -rf BSA` | `rm -rf STG` | `rm -rf WBC` | `rm -rf WBG` | `rm -rf BT`
 	1. [x] `unzip docs.zip -d ../`
 	1. [x] rename `construction.html` to `construction2.html` to direct traffic back to the site
 1. email
