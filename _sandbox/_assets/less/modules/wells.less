@@ -1,0 +1,60 @@
+/*! Wells v2.0.1 WBC*/
+/*
+ * wells mixins
+ *
+ */
+
+@brand: WBC;
+
+
+//////////////////////////////////////| wells mixin
+._wells( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		// @test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		// @test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		// @test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		// @test: 'WBC';
+	}
+	.getBrand() when (@brand = WBG) {
+		// @test: 'WBG';
+	}
+	.getBrand() when (@brand = BT) {
+		// @test: 'BT';
+	}
+	.getBrand();
+
+
+
+	.well {
+		padding: 12px;
+		margin-bottom: 18px;
+		background-color: @color-Background;
+		border: 1px solid @color-Border;
+		border-radius: 3px;
+
+		.well {
+			background-color: #fff;
+			margin: 12px 0;
+		}
+
+		.well-responsive& {
+			@media (min-width: @screen-sm) {
+				padding: 24px;
+			}
+		}
+	}
+}
+
+
+//////////////////////////////////////| wells
+._wells( @brand );

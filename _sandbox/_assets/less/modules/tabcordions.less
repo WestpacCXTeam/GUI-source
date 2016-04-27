@@ -1,0 +1,437 @@
+/*! Tabcordions v2.0.1 WBC*/
+/*
+ * tabcordion-soft mixins
+ *
+ */
+
+@brand: WBC;
+
+
+//////////////////////////////////////| tabcordion-soft mixin
+._tabcordions( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@font-color: #fff;
+	}
+	.getBrand() when (@brand = BSA) {
+		@font-color: #fff;
+	}
+	.getBrand() when (@brand = STG) {
+		@font-color: @color-Text;
+	}
+	.getBrand() when (@brand = WBC) {
+		@font-color: #fff;
+	}
+	.getBrand() when (@brand = WBG) {
+		@font-color: #fff;
+	}
+	.getBrand() when (@brand = BT) {
+		@font-color: #fff;
+	}
+	.getBrand();
+
+
+
+	//////////////////////////////////////| COLLAPSIBLE
+	.collapsible-body {
+		.js & {
+			height: 0;
+			overflow: hidden;
+			opacity: 0;
+			visibility: hidden;
+			transform: translateZ(0);
+			transition: opacity 0.4s ease, visibility 0.4s ease;
+
+			&.is-open {
+				height: auto;
+				opacity: 1;
+				visibility: visible;
+				transition: opacity 0.4s ease; //ignored by modern browsers, needed for stock
+
+				&:focus {
+					.outline();
+				}
+			}
+		}
+
+		&.is-open:focus {
+			.outline();
+		}
+	}
+
+
+	//////////////////////////////////////| JS BREAKPOINT SYNC
+	html {
+		line-height: 1px;
+
+		@media (min-width: @screen-sm) {
+			line-height: 2px;
+		}
+
+		@media (min-width: @screen-md) {
+			line-height: 3px;
+		}
+
+		@media (min-width: @screen-lg) {
+			line-height: 4px;
+		}
+	}
+
+
+	//////////////////////////////////////| TABCORDION
+	.tabcordion {
+		border: 1px solid @color-Border;
+		border-bottom: 0 none;
+		border-radius: 3px;
+
+		@media (min-width: @screen-sm) {
+			border: 0 none;
+			border-radius: 0;
+		}
+
+		.tabcordion-tabs& {
+			border: 0 none;
+			border-radius: 0;
+		}
+
+		.tabcordion-accordion& {
+			border: 1px solid @color-Border;
+			border-bottom: 0 none;
+			border-radius: 3px;
+		}
+
+		//LEGO STYLE
+		.tabcordion-lego& {
+			border-radius: 0;
+		}
+
+		//tabs
+		.tabcordion-tabs {
+			display: none;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			position: relative;
+			z-index: 2;
+
+			@media (min-width: @screen-sm) {
+				display: table;
+				display: flex;
+				align-items: stretch;
+
+				&.tabcordion-tabs-justified {
+					width: 100%;
+					display: table;
+				}
+			}
+
+			.tabcordion-tabs& {
+				display: table;
+				display: flex;
+				align-items: stretch;
+			}
+
+			.tabcordion-tab {
+				display: table-cell;
+				display: flex;
+				text-align: left;
+				padding-left: 2px;
+				line-height: 1.2;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				a {
+					display: inline-block;
+					display: flex;
+					align-items: flex-end;
+					padding: 14px 18px 14px 18px;
+					color: @color-Text;
+					background-color: @color-J;
+					border: 1px solid @color-Border;
+					border-bottom: 0 none;
+					border-top-right-radius: 6px;
+					border-top-left-radius: 6px;
+					transition: background 0.3s ease;
+					width: 100%;
+
+					&:focus {
+						.outline();
+						text-decoration: none;
+					}
+
+					&:hover {
+						outline: none;
+						text-decoration: none;
+						background-color: @color-Background;
+					}
+				}
+
+				&.is-active a {
+					background-color: #fff;
+					margin-bottom: -1px;
+					padding-bottom: 15px;
+				}
+			}
+
+			&.tabcordion-tabs-justified {
+				.tabcordion-tabs& {
+					display: table;
+				}
+
+				.tabcordion-tab {
+					display: table-cell;
+
+					a {
+						display: inline-block;
+					}
+				}
+			}
+
+			//LEGO STYLE
+			.tabcordion-lego& {
+				.tabcordion-tab a {
+					background-color: @color-B;
+					color: @font-color;
+					border-radius: 0;
+					margin-bottom: 2px;
+					padding-bottom: 12px;
+					border-color: @color-B;
+					transition: background 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+
+					&:hover {
+						background-color: @color-B-70;
+					}
+				}
+
+				.tabcordion-tab.is-active a {
+					background-color: #fff;
+					color: @color-Text;
+					margin-bottom: -1px;
+					padding-bottom: 15px;
+					border-color: @color-Border;
+				}
+			}
+		}
+
+		//header
+		.tabcordion-body-header {
+			display: block;
+			font-size: 16px;
+			position: relative;
+			z-index: 2;
+			border-bottom: 1px solid @color-Border;
+
+			&:last-child {
+				border-bottom: 0 none;
+			}
+
+			@media (min-width: @screen-sm) {
+				display: none;
+				border-bottom: 0 none;
+			}
+
+			.tabcordion-accordion& {
+				display: block;
+				border-bottom: 1px solid @color-Border;
+			}
+
+			.tabcordion-body-headline {
+				display: block;
+				padding: 13px 36px 13px 18px;
+				color: @color-Text;
+				position: relative;
+				transition: 0.3s ease;
+				background-color: @color-J;
+
+				&:before {
+					content: " ";
+					display: block;
+					position: absolute;
+					top: 19px;
+					right: 12px;
+					display: inline-block;
+					vertical-align: middle;
+					border-top: 8px solid @color-Text;
+					border-top-style: solid;
+					border-right: 7px solid transparent;
+					border-bottom: none;
+					border-left: 7px solid transparent;
+					z-index: 1;
+				}
+
+				&:after {
+					content: " ";
+					display: block;
+					position: absolute;
+					top: 20px;
+					right: 14px;
+					display: inline-block;
+					vertical-align: middle;
+					border-top: 6px solid @color-Text;
+					border-right: 5px solid transparent;
+					border-bottom: none;
+					border-left: 5px solid transparent;
+					z-index: 2;
+					transition: border 0.3s ease;
+				}
+
+				&:focus {
+					.outline();
+					text-decoration: none;
+				}
+
+				&:hover {
+					outline: none;
+					text-decoration: none;
+					background-color: @color-Background;
+				}
+
+				&:active {
+					text-decoration: none;
+				}
+			}
+
+
+			&.is-active {
+				border-bottom: 0 none;
+
+				&:before {
+					content: " ";
+					display: block;
+					position: absolute;
+					bottom: -16px;
+					left: 42px;
+					display: inline-block;
+					vertical-align: middle;
+					border-top: 16px solid @color-Border;
+					border-top-style: solid;
+					border-right: 12px solid transparent;
+					border-bottom: none;
+					border-left: 12px solid transparent;
+					z-index: 1;
+				}
+
+				&:after {
+					content: " ";
+					display: block;
+					position: absolute;
+					bottom: -15px;
+					left: 42px;
+					display: inline-block;
+					vertical-align: middle;
+					border-top: 16px solid @color-J;
+					border-right: 12px solid transparent;
+					border-bottom: none;
+					border-left: 12px solid transparent;
+					z-index: 2;
+				}
+
+				.tabcordion-body-headline {
+					&:hover {
+						background-color: @color-J;
+					}
+
+					&:after {
+						border-top-color: #fff;
+					}
+				}
+			}
+
+			//LEGO STYLE
+			.tabcordion-lego& {
+				transition: border 0.3s ease;
+				border-left: 12px solid @color-Border;
+
+				.tabcordion-body-headline {
+					padding-left: 12px;
+				}
+
+				&.is-active {
+					border-left-color: @color-B;
+
+					.tabcordion-body-headline {
+						background-color: #fff;
+					}
+
+					&:before,
+					&:after {
+						display: none;
+					}
+				}
+			}
+		}
+
+		//body
+		.collapsible-body {
+			position: relative;
+			z-index: 1;
+
+			.tabcordion-body {
+				border-top: 1px solid @color-Border;
+				border-bottom: 1px solid @color-Border;
+				padding: 24px 3.22%;
+
+				@media (min-width: @screen-sm) {
+					border-right: 1px solid @color-Border;
+					border-left: 1px solid @color-Border;
+				}
+
+				.tabcordion-accordion& {
+					border-right: 0 none;
+					border-left: 0 none;
+				}
+
+				.tabcordion-tabs& {
+					border-right: 1px solid @color-Border;
+					border-left: 1px solid @color-Border;
+				}
+
+			}
+
+			//LEGO STYLE
+			.tabcordion-lego& {
+				.tabcordion-body {
+					border-top: 0 none;
+					padding-left: 24px;
+					padding-right: 24px;
+
+					@media (min-width: @screen-sm) {
+						border-top: 1px solid @color-Border;
+						padding-left: 3.22%;
+					}
+
+					.tabcordion-accordion& {
+						border-top: 0 none;
+						padding-left: 24px;
+						padding-right: 24px;
+					}
+
+					.tabcordion-tabs& {
+						border-top: 1px solid @color-Border;
+						padding-left: 3.22%;
+					}
+				}
+			}
+
+		}
+
+	}
+
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.tabcordion .tabcordion-body-header.is-active:before {
+			border-top-color: #000;
+		}
+	}
+}
+
+
+//////////////////////////////////////| tabcordion-soft
+._tabcordions( @brand );

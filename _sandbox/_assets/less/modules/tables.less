@@ -1,0 +1,321 @@
+/*! Tables v2.0.1 WBC*/
+/*
+ * tables mixins
+ *
+ */
+
+@brand: WBC;
+
+
+//////////////////////////////////////| tables mixin
+._tables( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		@th-border: @color-B;
+		@th-color: @color-Text;
+		@tr-hover-bg: @color-Background;
+		@striped-bg: @color-Background;
+		@highlight-border: @color-A;
+	}
+	.getBrand() when (@brand = BSA) {
+		@th-border: @color-B;
+		@th-color: @color-Text;
+		@tr-hover-bg: @color-Background;
+		@striped-bg: @color-Background;
+		@highlight-border: @color-A;
+	}
+	.getBrand() when (@brand = STG) {
+		@th-border: @color-B;
+		@th-color: @color-Text;
+		@tr-hover-bg: @color-Background;
+		@striped-bg: @color-Background;
+		@highlight-border: @color-A;
+	}
+	.getBrand() when (@brand = WBC) {
+		@th-border: @color-B;
+		@th-color: @color-Text;
+		@tr-hover-bg: @color-Background;
+		@striped-bg: @color-Background;
+		@highlight-border: @color-A;
+	}
+	.getBrand() when (@brand = WBG) {
+		@th-border: @color-B;
+		@th-color: @color-Text;
+		@tr-hover-bg: @color-Background;
+		@striped-bg: @color-Background;
+		@highlight-border: @color-A;
+	}
+	.getBrand() when (@brand = BT) {
+		@th-border: @color-D;
+		@th-color: @color-Text;
+		@tr-hover-bg: @color-Background;
+		@striped-bg: @color-Background;
+		@highlight-border: @color-A;
+	}
+	.getBrand();
+
+
+
+	.table {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 21px;
+		background-color: #fff;
+		border-collapse: collapse;
+
+		caption {
+			font-weight: 300;
+			font-size: 18px;
+			text-align: left;
+			margin-bottom: 12px;
+		}
+
+		th {
+			text-align: left;
+		}
+
+		> thead,
+		> tbody,
+		> tfoot {
+			> tr {
+				> th,
+				> td {
+					padding: 12px;
+					vertical-align: top;
+					border-top: 1px solid @color-Border;
+				}
+			}
+		}
+
+		> tfoot {
+			color: @color-Muted;
+		}
+
+		> thead > tr > th {
+			vertical-align: bottom;
+			border-bottom: 3px solid @th-border;
+			font-weight: 500;
+			color: @th-color;
+		}
+
+		> caption + thead,
+		> colgroup + thead,
+		> thead:first-child {
+			> tr:first-child {
+				> th,
+				> td {
+					border-top: 0;
+				}
+			}
+		}
+
+		> tbody + tbody {
+			border-top: 2px solid @th-border;
+		}
+
+		> tbody > tr {
+			transition: background 0.2s ease;
+
+			&:hover {
+				background-color: @tr-hover-bg;
+			}
+		}
+
+
+		//////////////////////////////////////| TABLE STRIPED
+		&.table-striped {
+			> tbody > tr:nth-child(odd) {
+				background-color: @striped-bg;
+
+				&:hover {
+					background-color: darken(@striped-bg, 5%);
+				}
+			}
+		}
+
+
+		//////////////////////////////////////| TABLE BORDERED
+		&.table-bordered {
+
+			> thead,
+			> tbody,
+			> tfoot {
+				> tr {
+					> td {
+						border: 1px solid @color-Border;
+					}
+
+					> th {
+						border-left: 1px solid @color-Border;
+						border-right: 1px solid @color-Border;
+					}
+				}
+			}
+
+			> caption + thead > tr:first-child > th {
+				border-top: 1px solid @color-Border;
+			}
+
+			> thead > tr {
+				> th,
+				> td {
+					border-bottom-width: 2px;
+				}
+			}
+
+			> tbody {
+				> tr {
+					> td.table-highlight,
+					> th.table-highlight {
+						& + td.table-highlight,
+						& + th.table-highlight {
+							border-left: 1px solid @color-Border;
+						}
+					}
+				}
+			}
+		}
+
+
+		//////////////////////////////////////| TABLE HIGHLIGHT
+		> tbody {
+			> tr.table-highlight {
+				border-left: 6px solid @highlight-border;
+
+				> th,
+				> td {
+					border-bottom: 1px solid @highlight-border;
+				}
+			}
+
+			> tr {
+				> td.table-highlight,
+				> th.table-highlight {
+					border-left: 6px solid @highlight-border;
+					border-bottom: 1px solid @highlight-border;
+
+					& + td.table-highlight,
+					& + th.table-highlight {
+						border-left: 0 none;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: @screen-xs) {
+		.table-responsive > .table-bordered > tbody > tr > td:first-child.table-highlight,
+		.table-responsive > .table-bordered > tbody > tr > th:first-child.table-highlight {
+			border-left: 6px solid @highlight-border;
+		}
+	}
+
+
+	//////////////////////////////////////| FIREFOX HACK FOR RESPONSIVE TABLES
+	@-moz-document url-prefix() {
+		fieldset { display: table-cell; }
+	}
+
+
+	//////////////////////////////////////| Reset default table behavior
+	table col[class*="col-"] {
+		position: static;
+		float: none;
+		display: table-column;
+	}
+
+	table {
+		td,
+		th {
+			&[class*="col-"] {
+				position: static;
+				float: none;
+				display: table-cell;
+			}
+		}
+	}
+
+
+	//////////////////////////////////////| RESPONSIVE TABLE
+	.table-responsive {
+
+		@media screen and (max-width: @screen-xs) {
+			width: 100%;
+			margin-bottom: 18px;
+			overflow-y: hidden;
+			overflow-x: auto;
+			-ms-overflow-style: -ms-autohiding-scrollbar;
+			border: 1px solid @color-Border;
+			-webkit-overflow-scrolling: touch;
+
+			> .table {
+				margin-bottom: 0;
+
+				caption {
+					padding: 12px;
+				}
+
+				> thead,
+				> tbody,
+				> tfoot {
+					> tr {
+						> th,
+						> td {
+							white-space: nowrap;
+						}
+					}
+				}
+			}
+
+			> .table-bordered {
+				border: 0;
+
+				> thead,
+				> tbody,
+				> tfoot {
+					> tr {
+						> th,
+						> td {
+							&:first-child {
+								border-left: 0;
+							}
+						}
+
+						> th:last-child,
+						> td:last-child {
+							border-right: 0;
+						}
+					}
+				}
+
+				> tbody,
+				> tfoot {
+					> tr:last-child {
+						> th,
+						> td {
+							border-bottom: 0;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.table > tbody > tr > td.table-highlight,
+		.table > tbody > tr > th.table-highlight,
+		.table > tbody > tr.table-highlight > th,
+		.table > tbody > tr.table-highlight > td {
+			border-bottom-width: 2px;
+		}
+	}
+}
+
+
+//////////////////////////////////////| tables
+._tables( @brand );

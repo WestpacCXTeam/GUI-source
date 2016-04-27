@@ -1,0 +1,93 @@
+/*! List-Groups v2.0.1 WBC*/
+/*
+ * list-groups mixins
+ *
+ */
+
+@brand: WBC;
+
+
+//////////////////////////////////////| list-groups mixin
+._list-groups( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		// @test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		// @test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		// @test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		// @test: 'WBC';
+	}
+	.getBrand() when (@brand = WBG) {
+		// @test: 'WBG';
+	}
+	.getBrand() when (@brand = BT) {
+		// @test: 'BT';
+	}
+	.getBrand();
+
+
+
+	.list-group {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		border: 1px solid @color-Border;
+		border-bottom: 0 none;
+		border-radius: 3px;
+
+		> li {
+			margin: 0;
+			padding: 0;
+			border-bottom: 1px solid @color-Border;
+		}
+
+		.list-group-item {
+			padding: 12px;
+			display: table;
+			width: 100%;
+			vertical-align: middle;
+
+			.list-group-text,
+			.list-group-element {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+			.list-group-element {
+				text-align: right;
+				padding-left: 12px;
+			}
+		}
+
+		a.list-group-item {
+			transition: background 0.2s ease;
+			color: @color-Text;
+
+			&:hover {
+				background-color: @color-Background;
+				text-decoration: none;
+			}
+		}
+	}
+
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.list-group {
+			border-color: #000;
+		}
+	}
+}
+
+
+//////////////////////////////////////| list-groups
+._list-groups( @brand );

@@ -1,0 +1,54 @@
+/*! Images v2.0.1 WBC*/
+/*
+ * images mixins
+ *
+ */
+
+@brand: WBC;
+
+
+//////////////////////////////////////| images mixin
+._images( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		// @test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		// @test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		// @test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		// @test: 'WBC';
+	}
+	.getBrand() when (@brand = WBG) {
+		// @test: 'WBG';
+	}
+	.getBrand() when (@brand = BT) {
+		// @test: 'BT';
+	}
+	.getBrand();
+
+
+
+	.img-responsive {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.img-rounded {
+		border-radius: 3px;
+	}
+
+	.img-circle {
+		border-radius: 50%;
+	}
+}
+
+
+//////////////////////////////////////| images
+._images( @brand );

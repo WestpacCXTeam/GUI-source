@@ -1,0 +1,156 @@
+/*! Checkboxes v2.0.1 WBC*/
+/*
+ * checkboxes mixins
+ *
+ */
+
+@brand: WBC;
+
+
+//////////////////////////////////////| checkboxes mixin
+._checkboxes( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		// @test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		// @test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		// @test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		// @test: 'WBC';
+	}
+	.getBrand() when (@brand = WBG) {
+		// @test: 'WBG';
+	}
+	.getBrand() when (@brand = BT) {
+		// @test: 'BT';
+	}
+	.getBrand();
+
+
+
+	.checkbox {
+		display: inline-table;
+		height: 32px;
+		vertical-align: middle;
+		position: relative;
+
+		&:extend(.clearfix all);
+
+		.checkbox-input {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			z-index: 0;
+
+			.checkbox-flip& {
+				left: auto;
+				right: 10px;
+			}
+
+			&:focus + .checkbox-text {
+				.outline();
+			}
+
+			&:hover + .checkbox-text {
+				outline: none;
+			}
+
+			&:disabled {
+				& + .checkbox-text {
+					color: @color-Muted;
+
+					&:hover {
+						cursor: not-allowed;
+					}
+				}
+			}
+		}
+
+		.checkbox-text {
+			font-weight: 400;
+			line-height: 1.2;
+			padding-left: 38px;
+			display: table-cell;
+			vertical-align: middle;
+			white-space: normal;
+
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 32px;
+				height: 32px;
+				z-index: 1;
+			}
+
+			&:hover {
+				cursor: pointer;
+			}
+
+			.checkbox-flip& {
+				padding-left: 0;
+				padding-right: 38px;
+
+				&:after {
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+
+		& + .checkbox {
+			margin-left: 18px;
+		}
+
+
+		//////////////////////////////////////| IE8 STYLE
+		.ie8 & {
+			min-height: 0;
+			height: auto;
+
+			.checkbox-input {
+				position: static;
+			}
+
+			.checkbox-text {
+				padding-left: 6px;
+
+				&:after {
+					background: none;
+				}
+
+				.checkbox-flip& {
+					padding-right: 6px;
+				}
+			}
+		}
+	}
+
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		.checkbox {
+			.checkbox-input {
+				opacity: 1;
+				position: static;
+			}
+			.checkbox-text {
+				padding: 0;
+				display: inline;
+			}
+		}
+	}
+}
+
+
+//////////////////////////////////////| checkboxes
+._checkboxes( @brand );

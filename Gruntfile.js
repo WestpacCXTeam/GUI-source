@@ -56,12 +56,13 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Dependencies
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-text-replace');
-	grunt.loadNpmTasks('grunt-prompt');
+	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-wakeup');
 	grunt.loadNpmTasks('grunt-font');
-	grunt.loadNpmTasks('grunt-hub');
 	require('time-grunt')(grunt);
 
 
@@ -89,6 +90,7 @@ module.exports = function(grunt) {
 			'*',
 			'!node_modules',
 			'!._templates',
+			'!_sandbox',
 			'!.git',
 			'!.github',
 		]).forEach(function(dir) {
@@ -114,6 +116,7 @@ module.exports = function(grunt) {
 			'*',
 			'!node_modules',
 			'!._templates',
+			'!_sandbox',
 			'!.github',
 			'!.git',
 		]).forEach(function(dir) {
@@ -230,6 +233,248 @@ module.exports = function(grunt) {
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// Custom grunt task to create a page for all modules
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	grunt.registerTask('buildEverything', 'Build a page to test all the latest versions in one site.', function() {
+		var GUI = grunt.file.readJSON('GUI.json');
+		var lessIncludes = '@import "core.less";' + "\n";
+		var replace = {};
+		var concat = {};
+		var less = {};
+		var copy = {};
+
+		grunt.task.run('clean:sandboxLess'); //clean less/modules folder
+		grunt.task.run('clean:sandboxJS'); //clean js/modules folder
+
+		Object.keys( GUI.modules ).forEach(function iterateCategories( category ) {
+			Object.keys( GUI.modules[category] ).forEach(function iterateModules( module ) {
+
+				if( category != '_testing' && GUI.modules[category][module].core !== true ) { //exclude the _testing and _core category
+					var latestVersion = '1.0.0';
+
+					//getting latest version
+					Object.keys( GUI.modules[category][module].versions ).forEach(function interateVersions( version ) {
+						latestVersion = version;
+					});
+
+					grunt.log.oklns( 'Going through: ' + module + ':' + latestVersion );
+
+					//LESS
+					if( GUI.modules[category][module].versions[latestVersion].less ) {
+						grunt.verbose.writeln( 'LESS ENABLED' );
+
+						copy[ 'Less-' + module ] = {
+							files: [{
+								cwd: module + '/' + latestVersion + '/less/',
+								src: [
+									'module-mixins.less',
+								],
+								dest: '_sandbox/_assets/less/modules/',
+								rename: function(dest, src) {
+									return dest + '/' + module + '.less';
+								},
+								filter: 'isFile',
+								expand: true,
+							}],
+						};
+
+						replace[ 'Less-' + module ] = {
+							src: ['_sandbox/_assets/less/modules/' + module + '.less'],
+							overwrite: true,
+							replacements: [
+								{
+									from: '[Module-Version-Brand]',
+									to: ' ' + GUI.modules[category][module].name + ' v' + latestVersion + ' WBC',
+								},
+								{
+									from: '[Brand]',
+									to: 'WBC',
+								},
+							],
+						};
+
+						lessIncludes += '@import "modules/' + module + '.less";' + "\n"; //building less file to include all modules
+					}
+
+					//SVG
+					if( GUI.modules[category][module].versions[latestVersion].svg ) {
+						grunt.verbose.writeln( 'SVG ENABLED' );
+
+						SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
+							try {
+								var symbolsPNG = grunt.file.read( '_sandbox/' + brand.ID + '/assets/css/symbols.data.png.css' );
+								var symbolsSVG = grunt.file.read( '_sandbox/' + brand.ID + '/assets/css/symbols.data.svg.css' );
+								var symbolsFallback = grunt.file.read( '_sandbox/' + brand.ID + '/assets/css/symbols.fallback.css' );
+							}
+							catch(e) {
+								grunt.verbose.writeln( 'No SVG files found in sandbox folder. Starting from scratch!' );
+								var symbolsPNG = '';
+								var symbolsSVG = '';
+								var symbolsFallback = '';
+							}
+
+							symbolsPNG += grunt.file.read( module + '/' + latestVersion + '/tests/' + brand.ID + '/assets/css/symbols.data.png.css' );
+							symbolsSVG += grunt.file.read( module + '/' + latestVersion + '/tests/' + brand.ID + '/assets/css/symbols.data.svg.css' );
+							symbolsFallback += grunt.file.read( module + '/' + latestVersion + '/tests/' + brand.ID + '/assets/css/symbols.fallback.css' );
+
+							grunt.file.write( '_sandbox/' + brand.ID + '/assets/css/symbols.data.png.css', symbolsPNG );
+							grunt.file.write( '_sandbox/' + brand.ID + '/assets/css/symbols.data.svg.css', symbolsSVG );
+							grunt.file.write( '_sandbox/' + brand.ID + '/assets/css/symbols.fallback.css', symbolsFallback );
+
+							copy[ 'SVGFallback-' + module ] = {
+								files: [{
+									cwd: module + '/' + latestVersion + '/tests/' + brand.ID + '/assets/img/',
+									src: [
+										'*.png',
+									],
+									dest: '_sandbox/' + brand.ID + '/assets/img/',
+									filter: 'isFile',
+									expand: true,
+								}],
+							};
+						});
+					}
+
+					//JS
+					if( GUI.modules[category][module].versions[latestVersion].js ) {
+						grunt.verbose.writeln( 'JS ENABLED' );
+
+						copy[ 'js-' + module ] = {
+							files: [{
+								cwd: module + '/' + latestVersion + '/js/',
+								src: [
+									'*.js',
+								],
+								dest: '_sandbox/_assets/js/modules/',
+								filter: 'isFile',
+								expand: true,
+							}],
+						};
+
+						replace[ 'JS-' + module ] = {
+							src: ['_sandbox/_assets/js/modules/' + module + '.js'],
+							overwrite: true,
+							replacements: [
+								{
+									from: '[Module-Version]',
+									to: ' ' + GUI.modules[category][module].name + ' v' + latestVersion + ' ',
+								},
+							],
+						};
+					}
+
+					//FONT
+					if( GUI.modules[category][module].versions[latestVersion].font ) {
+						grunt.verbose.writeln( 'FONT ENABLED' );
+
+						SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
+							copy[ 'fonts-' + module + brand.ID ] = {
+								files: [{
+									cwd: module + '/' + latestVersion + '/_assets/' + brand.ID + '/font/',
+									src: [
+										'*.ttf',
+										'*.woff',
+										'*.woff2',
+										'*.eot',
+										'*.svg',
+									],
+									dest: '_sandbox/' + brand.ID + '/assets/font/',
+									filter: 'isFile',
+									expand: true,
+								}],
+							};
+						});
+					}
+
+				}
+			});
+		});
+
+		//LESS
+		grunt.file.write( '_sandbox/_assets/less/gui.less', lessIncludes ); //writing less file
+
+		SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
+			less[ 'sandbox' + brand.ID ] = {
+				options: {
+					cleancss: true,
+					compress: true,
+					ieCompat: true,
+					report: 'min',
+					modifyVars: {
+						'brand': brand.ID,
+					},
+					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
+				},
+				src: ['_sandbox/_assets/less/gui.less'],
+				dest: '_sandbox/' + brand.ID + '/assets/css/gui.min.css',
+			};
+		});
+
+		//JS
+		SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
+			concat[ 'js-' + brand.ID ] = {
+				src: [
+					'_sandbox/_assets/js/*.js',
+					'_sandbox/_assets/js/modules/*.js',
+				],
+				dest: '_sandbox/' + brand.ID + '/assets/js/gui.js',
+			};
+		});
+
+		//FONTS
+		SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
+			copy[ 'fontsCore-' + brand.ID ] = {
+				files: [{
+					cwd: '_sandbox/_assets/font/' + brand.ID + '/',
+					src: [
+						'*.ttf',
+						'*.woff',
+						'*.woff2',
+						'*.eot',
+						'*.svg',
+					],
+					dest: '_sandbox/' + brand.ID + '/assets/font/',
+					filter: 'isFile',
+					expand: true,
+				}],
+			};
+		});
+
+		//HTML
+		SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
+			replace[ 'html-' + brand.ID ] = {
+				src: ['_sandbox/_assets/html/index.html'],
+				dest: '_sandbox/' + brand.ID + '/index.html',
+				overwrite: false,
+				replacements: [
+					{
+						from: '[Brand]',
+						to: brand.ID.toUpperCase(),
+					},
+					{
+						from: '[brand]',
+						to: brand.ID.toLowerCase(),
+					},
+				],
+			};
+		});
+
+		//running tasks
+		grunt.config.set('copy', copy);
+		grunt.task.run('copy');
+
+		grunt.config.set('replace', replace);
+		grunt.task.run('replace');
+
+		grunt.config.set('less', less);
+		grunt.task.run('less');
+
+		grunt.config.set('concat', concat);
+		grunt.task.run('concat');
+	});
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Grunt tasks
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.initConfig({
@@ -279,6 +524,19 @@ module.exports = function(grunt) {
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		// Clean task
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
+		clean: {
+			sandboxLess: [
+				'_sandbox/_assets/less/modules/',
+			],
+			sandboxJS: [
+				'_sandbox/_assets/js/modules/',
+			],
+		},
+
+
+		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		// Wakeup
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		wakeup: {
@@ -301,6 +559,14 @@ module.exports = function(grunt) {
 		'font:title',
 		'font:index',
 		'buildIndex',
+		'wakeup',
+	]);
+
+	grunt.registerTask('all', [ //build index and gui.json
+		'font:title',
+		'font:index',
+		'buildIndex',
+		'buildEverything',
 		'wakeup',
 	]);
 

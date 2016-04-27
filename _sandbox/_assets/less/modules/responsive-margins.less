@@ -1,0 +1,164 @@
+/*! Responsive-Margins v2.0.1 WBC*/
+/*
+ * responsive-margins mixins
+ *
+ */
+
+@brand: WBC;
+
+
+//////////////////////////////////////| responsive-margins mixin
+._responsive-margins( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() when (@brand = BOM) {
+		// @test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		// @test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		// @test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		// @test: 'WBC';
+	}
+	.getBrand() when (@brand = WBG) {
+		// @test: 'WBG';
+	}
+	.getBrand() when (@brand = BT) {
+		// @test: 'BT';
+	}
+	.getBrand();
+
+
+	//classes
+	._responsive-margins-top( 1, 6px );
+	._responsive-margins-top( 2, 12px );
+	._responsive-margins-top( 3, 18px );
+	._responsive-margins-top( 4, 24px );
+	._responsive-margins-top( 5, 30px );
+	._responsive-margins-top( 6, 36px );
+	._responsive-margins-top( 7, 42px );
+
+	._responsive-margins-bottom( 1, 6px );
+	._responsive-margins-bottom( 2, 12px );
+	._responsive-margins-bottom( 3, 18px );
+	._responsive-margins-bottom( 4, 24px );
+	._responsive-margins-bottom( 5, 30px );
+	._responsive-margins-bottom( 6, 36px );
+	._responsive-margins-bottom( 7, 42px );
+
+
+	//collect all classes in one media query to avoid specificity issues
+	//////////////////////////////////////| XS
+	._responsive-margins-top-classes(xs);
+	.no-top-margin-xs {
+		margin-top: 0;
+	}
+
+	._responsive-margins-bottom-classes(xs);
+	.no-bottom-margin-xs {
+		margin-bottom: 0;
+	}
+
+	//////////////////////////////////////|  SM
+	@media (min-width: @screen-sm) {
+		._responsive-margins-top-classes(sm);
+		.no-top-margin-sm {
+			margin-top: 0;
+		}
+
+		._responsive-margins-bottom-classes(sm);
+		.no-bottom-margin-sm {
+			margin-bottom: 0;
+		}
+	}
+
+	//////////////////////////////////////|  MD
+	@media (min-width: @screen-md) {
+		._responsive-margins-top-classes(md);
+		.no-top-margin-md {
+			margin-top: 0;
+		}
+
+		._responsive-margins-bottom-classes(md);
+		.no-bottom-margin-md {
+			margin-bottom: 0;
+		}
+	}
+
+	//////////////////////////////////////|  LG
+	@media (min-width: @screen-lg) {
+		._responsive-margins-top-classes(lg);
+		.no-top-margin-lg {
+			margin-top: 0;
+		}
+
+		._responsive-margins-bottom-classes(lg);
+		.no-bottom-margin-lg {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+//////////////////////////////////////| MARGINGS MIXIN
+/*
+ * MARGINS-TOP
+ *
+ * @param  @el         {string}  Element name appendix, We use numbers
+ * @param  @space      {margin}  Space for this margin, We use px
+ * @param  @important  {sting}   Either omit or add 'important' to make margins important
+ */
+._responsive-margins-top(@el, @space, @important: 'nope') {
+	/*
+	 *  SETTINGS
+	 */
+	.getSetting() when (@important = 'nope') {
+		@value: @space;
+	}
+	.getSetting() when (@important = 'important') {
+		@value: @space !important;
+	}
+	.getSetting();
+
+	._responsive-margins-top-classes(@breakpoint) {
+		.top-margin@{el}-@{breakpoint} {
+			margin-top: @value;
+		}
+	}
+}
+
+
+/*
+ * MARGINS-BOTTOM
+ *
+ * @param  @el         {string}  Element name appendix, We use numbers
+ * @param  @space      {margin}  Space for this margin, We use px
+ * @param  @important  {sting}   Either omit or add 'important' to make margins important
+ */
+._responsive-margins-bottom(@el, @space, @important: 'nope') {
+	/*
+	 *  SETTINGS
+	 */
+	.getSetting() when (@important = 'nope') {
+		@value: @space;
+	}
+	.getSetting() when (@important = 'important') {
+		@value: @space !important;
+	}
+	.getSetting();
+
+	._responsive-margins-bottom-classes(@breakpoint) {
+		.bottom-margin@{el}-@{breakpoint} {
+			margin-bottom: @value;
+		}
+	}
+}
+
+
+//////////////////////////////////////| responsive-margins
+._responsive-margins( @brand );
