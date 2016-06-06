@@ -667,3 +667,6 @@
 [submodule "buttons/2.0.2"]
 	path = buttons/2.0.2
 	url = https://github.com/WestpacCXTeam/GUI-buttons.git
+[submodule "list-groups/3.0.0"]
+	path = list-groups/3.0.0
+	url = https://github.com/WestpacCXTeam/GUI-list-groups.git
