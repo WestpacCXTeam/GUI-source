@@ -637,3 +637,33 @@
 [submodule "responsive-margins/2.0.1"]
 	path = responsive-margins/2.0.1
 	url = https://dominikwilkowski@github.com/WestpacCXTeam/GUI-responsive-margins.git
+[submodule "input-addons/2.0.2"]
+	path = input-addons/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-input-addons.git
+[submodule "tabcordions/3.0.0"]
+	path = tabcordions/3.0.0
+	url = https://github.com/WestpacCXTeam/GUI-tabcordions.git
+[submodule "input-groups/2.0.2"]
+	path = input-groups/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-input-groups.git
+[submodule "logos/2.0.2"]
+	path = logos/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-logos.git
+[submodule "lists/2.0.2"]
+	path = lists/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-lists.git
+[submodule "symbols/2.0.2"]
+	path = symbols/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-symbols.git
+[submodule "_text-styling/3.0.0"]
+	path = _text-styling/3.0.0
+	url = https://github.com/WestpacCXTeam/GUI_text-styling.git
+[submodule "paginations/2.0.2"]
+	path = paginations/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-paginations.git
+[submodule "labels/2.0.2"]
+	path = labels/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-labels.git
+[submodule "buttons/2.0.2"]
+	path = buttons/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-buttons.git
