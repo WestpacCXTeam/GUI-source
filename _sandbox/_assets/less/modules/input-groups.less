@@ -1,4 +1,4 @@
-/*! Input-Groups v2.0.1 WBC*/
+/*! Input-Groups v2.0.2 WBC*/
 /*
  * input-groups mixins
  *
@@ -148,6 +148,44 @@
 			.input-group-addon {
 				height: 30px;
 				font-size: 14px;
+			}
+		}
+
+
+		//////////////////////////////////////| BLOCK
+		&.input-group-block {
+			display: table;
+			width: 100%;
+
+			.input-group-addon,
+			.input-group-input {
+				display: table-cell;
+				width: 100%;
+				vertical-align: top;
+			}
+
+			.input-group-addon {
+				width: 1%;
+				white-space: nowrap;
+			}
+
+			.input-group-input {
+				display: block;
+			}
+
+			&.input-group-xl .input-group-addon {
+				height: 46px;
+				padding: 12px;
+			}
+
+			&.input-group-lg .input-group-addon {
+				height: 40px;
+				padding: 9px;
+			}
+
+			&.input-group-sm .input-group-addon {
+				height: 28px;
+				padding: 3px 6px;
 			}
 		}
 

@@ -1,4 +1,4 @@
-/*! Input-Addons v2.0.1 WBC*/
+/*! Input-Addons v2.0.2 WBC*/
 /*
  * input-addons mixins
  *
@@ -194,7 +194,12 @@
 				color: @font-color;
 				font-size: 16px;
 				font-weight: 400;
-				padding: 6px 36px 8px 12px;
+				padding: 6px 36px 7px 12px;
+
+				.ie8 &,
+				.ie9 & {
+					padding-right: 6px;
+				}
 
 				&:focus {
 				.outline();
@@ -246,7 +251,12 @@
 
 				.input-addon-select {
 					height: 48px;
-					padding: 13px 36px 13px 8px;
+					padding: 13px 36px 11px 8px;
+
+					.ie8 &,
+					.ie9 & {
+						padding-right: 6px;
+					}
 				}
 			}
 		}
@@ -265,6 +275,11 @@
 				.input-addon-select {
 					height: 42px;
 					padding: 10px 36px 9px 8px;
+
+					.ie8 &,
+					.ie9 & {
+						padding-right: 6px;
+					}
 				}
 			}
 		}
@@ -285,7 +300,50 @@
 					height: 30px;
 					padding: 5px 36px 3px 8px;
 					font-size: 14px;
+
+					.ie8 &,
+					.ie9 & {
+						padding-right: 6px;
+					}
 				}
+			}
+		}
+
+
+		//////////////////////////////////////| BLOCK
+		&.input-addon-block {
+			display: table;
+			width: 100%;
+
+			.input-addon-label,
+			.input-addon-btn,
+			.input-addon-select-wrapper {
+				display: table-cell;
+				width: 100%;
+				vertical-align: top;
+			}
+
+			.input-addon-btn {
+				width: auto;
+			}
+
+			.input-addon-input {
+				display: block;
+				width: 100%;
+			}
+
+			&.input-addon-xl .input-addon-select-wrapper .input-addon-select {
+				height: 46px;
+				padding-bottom: 10px;
+			}
+
+			&.input-addon-lg .input-addon-select-wrapper .input-addon-select {
+				height: 40px;
+				padding-bottom: 7px;
+			}
+
+			&.input-addon-sm .input-addon-select-wrapper .input-addon-select {
+				height: 28px;
 			}
 		}
 	}

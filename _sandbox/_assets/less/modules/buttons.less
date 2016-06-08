@@ -1,4 +1,4 @@
-/*! Buttons v2.0.1 WBC*/
+/*! Buttons v3.0.0 WBC*/
 /*
  * buttons mixins
  *
@@ -304,6 +304,7 @@
 		-moz-appearance: none;
 		appearance: none;
 		height: 36px;
+		text-decoration: none;
 
 		.btn-text {
 			vertical-align: top;
@@ -349,6 +350,7 @@
 			font-size: 14px;
 			font-weight: 400;
 			height: auto;
+			text-decoration: underline;
 
 			p > & {
 				vertical-align: top;
@@ -624,6 +626,23 @@
 		}
 	}
 
+	.btn-group-wrapper { //button-groups with leading line
+		display: table;
+		width: 100%;
+		vertical-align: middle;
+
+		.btn-group-line,
+		.btn-group {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.btn-group {
+			text-align: right;
+			white-space: nowrap;
+		}
+	}
+
 
 	//////////////////////////////////////| BUTTON DROPDOWNS
 	.btn-dropdown {
@@ -656,13 +675,12 @@
 			}
 		}
 
-		.dropdown-menu {
-			list-style: none;
-			padding: 0;
-			margin: 3px 0 0 0;
+
+		.dropdown-menu { //dropdown menu
+			min-width: 190px;
 			background-color: #fff;
 			border-radius: 3px;
-			min-width: 190px;
+			margin: 3px 0 12px 0;
 
 			&:focus {
 				.outline();
@@ -676,123 +694,7 @@
 				min-width: 250px;
 			}
 
-			li {
-				margin: 0;
-				white-space: nowrap;
-				display: flex;
-				transition: background 0.2s ease;
-
-				&:extend(.clearfix all);
-
-				&:hover {
-					background-color: @color-Background;
-				}
-
-				.btn-link,
-				a {
-					display: block;
-					color: @color-Muted;
-					width: 100%;
-					text-align: left;
-
-					&:hover {
-						text-decoration: none;
-					}
-				}
-
-				.btn-dropdown-text {
-					padding-right: 18px;
-					vertical-align: middle;
-					white-space: normal;
-					display: table-cell;
-				}
-
-				.btn-link,
-				a,
-				.btn-dropdown-setting,
-				.checkbox,
-				.radio {
-					padding: 8px 6px;
-				}
-
-				.checkbox .checkbox-input {
-					top: 18px;
-					left: 16px;
-				}
-
-				.checkbox-input + .checkbox-text:after {
-					top: 8px;
-					left: 6px;
-				}
-
-				.checkbox.checkbox-flip .checkbox-input {
-					left: auto;
-					right: 16px;
-				}
-
-				.checkbox-flip .checkbox-input + .checkbox-text:after {
-					left: auto;
-					right: 6px;
-				}
-
-				.btn-dropdown-setting {
-					display: table;
-					width: 100%;
-					vertical-align: middle;
-				}
-
-				.checkbox,
-				.radio {
-					display: table;
-					height: 48px; // ignored by modern devices, needed for 4.1.1 stock
-					min-height: 48px;
-
-					.ie8 & {
-						min-height: 0;
-					}
-				}
-
-				.btn-group {
-					display: table-cell;
-					text-align: right;
-					vertical-align: top;
-				}
-
-				.checkbox {
-					width: 100%;
-				}
-
-				.ie8 & {
-					.checkbox-input {
-						vertical-align: middle;
-					}
-				}
-			}
-
-			.dropdown-menu-headline {
-				border-top: 1px solid @color-Text;
-				font-weight: 500;
-				font-size: 12px;
-				padding: 6px 3px;
-
-				&:hover {
-					background-color: transparent;
-				}
-			}
-
-			li:first-child {
-				&.dropdown-menu-headline {
-					border-top: 0 none;
-					margin-top: 0;
-					padding-top: 0;
-				}
-			}
-
-			.dropdown-menu-divider {
-				border-top: 1px solid @color-Text;
-			}
-
-			.js & {
+			.js & { //no-js fallback
 				display: none;
 				position: absolute;
 				overflow: hidden;
@@ -800,9 +702,57 @@
 				left: 0;
 				right: 0;
 			}
+
+			.dropdown-menu-headline { //headlines
+				background-color: @color-Background;
+				font-size: 12px;
+				font-weight: 500;
+				padding: 7px;
+				margin: 24px -6px 18px -6px;
+
+				&:first-child {
+					margin-top: -6px;
+				}
+			}
+
+			.checkbox, //radios, checkboxes
+			.radio {
+				display: table;
+				width: 100%;
+
+				& + .checkbox, //all following
+				& + .radio {
+					margin-left: 0;
+					margin-top: 12px;
+					padding-top: 12px;
+					border-top: 1px solid @color-Border;
+					height: 44px;
+
+					.checkbox-input,
+					.radio-input {
+						top: 22px;
+
+						& + .checkbox-text:after,
+						& + .radio-text:after {
+							top: 12px;
+						}
+					}
+				}
+			}
+
+			.lists-linklist a { //linklists
+				display: block;
+			}
+
+			.btn-group-wrapper + .btn-group-wrapper {
+				margin-top: 12px;
+				padding-top: 12px;
+				border-top: 1px solid @color-Border;
+			}
+
 		}
 
-		&.is-open {
+		&.is-open { //open dropdown
 			& > .btn:after {
 				content: " ";
 				position: fixed;
@@ -817,7 +767,7 @@
 				display: block;
 				box-shadow: 0 6px 12px rgba(0,0,0,.175);
 				border: 1px solid @color-Border;
-				padding: 12px 6px;
+				padding: 12px;
 			}
 		}
 
@@ -852,10 +802,6 @@
 					border-top-color: #000 !important;
 				}
 			}
-		}
-
-		.btn-dropdown .dropdown-menu {
-			background-color: #fff !important;
 		}
 
 		.btn-group-input:checked + .btn {
