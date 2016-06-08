@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* We removed the border around the modal. Why? Because you couldn't see it.
+		[#240](https://github.com/WestpacCXTeam/GUI-source/issues/240)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The headline in modals was hanging a bit low. We put it up again, tucked it’s shirt in and ironed it’s pants. Now the modal is presentable again.
 		[#219](https://github.com/WestpacCXTeam/GUI-source/issues/219)

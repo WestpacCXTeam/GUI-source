@@ -155,13 +155,13 @@ See more in [Workflow](#workflow).
 1. Gui-docs
 	1. [x] pull submodule
 	1. [x] update new submodules to pull files
-	1. [x] create `[version].liquid` in `_inludes/modules`
-	1. [x] create `[version]` folder in `_examples` with core and build
-	1. [x] add whatsnew
+	1. [x] run `grunt new-example` to add the missing `_inludes/modules` and copy the `_examples` folder
+	1. [x] adjust `_examples` and add whatsnew
+	1. [x] add email link to GUI mail archive in Getting started
 	1. [x] `grunt server`
 	1. [x] run blender locally
 	1. [x] check local copy and blend new blend if required
-	1. [x] install GUIs into the build (js, css, grunticon, img fallback)
+	1. [x] install new GUI module into the docs build (js, css, grunticon, img fallback)
 	1. [x] check new versions examples in all brands
 	1. [x] `grunt prod`
 	1. [x] commit, merge `gh-pages` and `master`
