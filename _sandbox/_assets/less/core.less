@@ -428,7 +428,7 @@
 //////////////////////////////////////| GRID
 ._grid( @brand );
 
-/*! _text-styling v2.0.1 */
+/*!_text-styling v3.0.0*/
 
 @brand: [Brand];
 
@@ -464,12 +464,8 @@
 
 
 	//////////////////////////////////////| HTML STYLES
-	html {
-		font-size: 6px;
-	}
-
 	body {
-		font-size: 14px;
+		font-size: 0.875em;
 		line-height: 1.428571429;
 		color: @color-Text;
 		background-color: @color-Background;
@@ -495,6 +491,10 @@
 		background-color: @selection;
 	}
 
+	p {
+		margin: 0.8571428572em 0;
+	}
+
 	dl {
 		dt {
 			font-weight: 700;
@@ -517,7 +517,7 @@
 	//////////////////////////////////////| LINKS
 	a {
 		color: @color-A;
-		text-decoration: none;
+		text-decoration: underline;
 
 		&:hover,
 		&:focus {
@@ -640,8 +640,7 @@
 ._text-styling-headings( @brand ) {
 
 	.getBrand() when (@brand = BOM) { /////////////////////////////////////////////////////// BOM
-		.h1,
-		h1 {
+		.h1 {
 			font-size: 30px;
 			color: @color-E;
 			font-family: @brand-fontfamily;
@@ -659,8 +658,7 @@
 				font-weight: 700;
 			}
 		}
-		.h2,
-		h2 {
+		.h2 {
 			font-size: 24px;
 			color: @color-E;
 			font-family: @brand-fontfamily;
@@ -678,8 +676,7 @@
 				font-weight: 700;
 			}
 		}
-		.h3,
-		h3 {
+		.h3 {
 			font-size: 18px;
 			color: @color-E;
 			font-family: @brand-fontfamily;
@@ -697,8 +694,7 @@
 				font-weight: 700;
 			}
 		}
-		.h4,
-		h4 {
+		.h4 {
 			font-size: 16px;
 			color: @color-F-80;
 			font-family: @brand-fontfamily;
@@ -716,8 +712,7 @@
 				font-weight: 700;
 			}
 		}
-		.h5,
-		h5 {
+		.h5 {
 			font-size: 16px;
 			color: @color-F-80;
 			font-family: @fontfamily;
@@ -731,8 +726,7 @@
 				font-weight: 700;
 			}
 		}
-		.h6,
-		h6 {
+		.h6 {
 			font-size: 14px;
 			color: @color-F-80;
 			font-family: @fontfamily;
@@ -749,8 +743,7 @@
 	}
 
 	.getBrand() when (@brand = BSA) { /////////////////////////////////////////////////////// BSA
-		.h1,
-		h1 {
+		.h1 {
 			font-size: 30px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -764,8 +757,7 @@
 				font-size: 36px;
 			}
 		}
-		.h2,
-		h2 {
+		.h2 {
 			font-size: 24px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -779,8 +771,7 @@
 				font-size: 30px;
 			}
 		}
-		.h3,
-		h3 {
+		.h3 {
 			font-size: 18px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -794,8 +785,7 @@
 				font-size: 24px;
 			}
 		}
-		.h4,
-		h4 {
+		.h4 {
 			font-size: 16px;
 			color: @color-B;
 			font-family: @fontfamily;
@@ -809,8 +799,7 @@
 				font-size: 18px;
 			}
 		}
-		.h5,
-		h5 {
+		.h5 {
 			font-size: 16px;
 			color: @color-B;
 			font-family: @fontfamily;
@@ -820,8 +809,7 @@
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
 		}
-		.h6,
-		h6 {
+		.h6 {
 			font-size: 14px;
 			color: @color-B;
 			font-family: @fontfamily;
@@ -834,8 +822,7 @@
 	}
 
 	.getBrand() when (@brand = STG) { /////////////////////////////////////////////////////// STG
-		.h1,
-		h1 {
+		.h1 {
 			font-size: 30px;
 			color: @color-F;
 			font-family: @brand-fontfamily;
@@ -853,8 +840,7 @@
 				font-weight: 700;
 			}
 		}
-		.h2,
-		h2 {
+		.h2 {
 			font-size: 24px;
 			color: @color-F;
 			font-family: @brand-fontfamily;
@@ -872,8 +858,7 @@
 				font-weight: 700;
 			}
 		}
-		.h3,
-		h3 {
+		.h3 {
 			font-size: 18px;
 			color: @color-F;
 			font-family: @brand-fontfamily;
@@ -891,8 +876,7 @@
 				font-weight: 700;
 			}
 		}
-		.h4,
-		h4 {
+		.h4 {
 			font-size: 16px;
 			color: @color-F;
 			font-family: @fontfamily;
@@ -910,8 +894,7 @@
 				font-weight: 700;
 			}
 		}
-		.h5,
-		h5 {
+		.h5 {
 			font-size: 16px;
 			color: @color-F;
 			font-family: @fontfamily;
@@ -925,8 +908,7 @@
 				font-weight: 700;
 			}
 		}
-		.h6,
-		h6 {
+		.h6 {
 			font-size: 14px;
 			color: @color-F;
 			font-family: @fontfamily;
@@ -943,8 +925,7 @@
 	}
 
 	.getBrand() when (@brand = WBC) { /////////////////////////////////////////////////////// WBC
-		.h1,
-		h1 {
+		.h1 {
 			font-size: 30px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -960,8 +941,7 @@
 				font-weight: 300;
 			}
 		}
-		.h2,
-		h2 {
+		.h2 {
 			font-size: 24px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -977,8 +957,7 @@
 				font-weight: 300;
 			}
 		}
-		.h3,
-		h3 {
+		.h3 {
 			font-size: 18px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -994,8 +973,7 @@
 				font-weight: 300;
 			}
 		}
-		.h4,
-		h4 {
+		.h4 {
 			font-size: 16px;
 			color: @color-B;
 			font-family: @brand-fontfamily;
@@ -1011,8 +989,7 @@
 				font-weight: 400;
 			}
 		}
-		.h5,
-		h5 {
+		.h5 {
 			font-size: 16px;
 			color: @color-B;
 			font-family: @fontfamily;
@@ -1024,8 +1001,7 @@
 				font-weight: 500;
 			}
 		}
-		.h6,
-		h6 {
+		.h6 {
 			font-size: 14px;
 			color: @color-B;
 			font-family: @fontfamily;
@@ -1040,8 +1016,7 @@
 	}
 
 	.getBrand() when (@brand = WBG) { /////////////////////////////////////////////////////// WBG
-		.h1,
-		h1 {
+		.h1 {
 			font-size: 30px;
 			color: @color-Text;
 			font-family: @brand-fontfamily;
@@ -1053,8 +1028,7 @@
 				font-size: 36px;
 			}
 		}
-		.h2,
-		h2 {
+		.h2 {
 			font-size: 24px;
 			color: @color-Text;
 			font-family: @brand-fontfamily;
@@ -1066,8 +1040,7 @@
 				font-size: 30px;
 			}
 		}
-		.h3,
-		h3 {
+		.h3 {
 			font-size: 18px;
 			color: @color-Text;
 			font-family: @brand-fontfamily;
@@ -1079,8 +1052,7 @@
 				font-size: 24px;
 			}
 		}
-		.h4,
-		h4 {
+		.h4 {
 			font-size: 16px;
 			color: @color-Text;
 			font-family: @brand-fontfamily;
@@ -1092,8 +1064,7 @@
 				font-size: 18px;
 			}
 		}
-		.h5,
-		h5 {
+		.h5 {
 			font-size: 16px;
 			color: @color-Text;
 			font-family: @brand-fontfamily;
@@ -1101,8 +1072,7 @@
 			margin-bottom: 6px;
 			font-weight: 700;
 		}
-		.h6,
-		h6 {
+		.h6 {
 			font-size: 14px;
 			color: @color-Text;
 			font-family: @brand-fontfamily;
@@ -1113,8 +1083,7 @@
 	}
 
 	.getBrand() when (@brand = BT) { /////////////////////////////////////////////////////// BT
-		.h1,
-		h1 {
+		.h1 {
 			font-size: 30px;
 			color: @color-Text;
 			font-family: @fontfamily;
@@ -1126,8 +1095,7 @@
 				font-size: 36px;
 			}
 		}
-		.h2,
-		h2 {
+		.h2 {
 			font-size: 24px;
 			color: @color-Text;
 			font-family: @fontfamily;
@@ -1139,8 +1107,7 @@
 				font-size: 30px;
 			}
 		}
-		.h3,
-		h3 {
+		.h3 {
 			font-size: 18px;
 			color: @color-Text;
 			font-family: @fontfamily;
@@ -1152,8 +1119,7 @@
 				font-size: 24px;
 			}
 		}
-		.h4,
-		h4 {
+		.h4 {
 			font-size: 16px;
 			color: @color-Text;
 			font-family: @fontfamily;
@@ -1165,8 +1131,7 @@
 				font-size: 18px;
 			}
 		}
-		.h5,
-		h5 {
+		.h5 {
 			font-size: 16px;
 			color: @color-Text;
 			font-family: @fontfamily;
@@ -1174,8 +1139,7 @@
 			margin-bottom: 6px;
 			font-weight: 500;
 		}
-		.h6,
-		h6 {
+		.h6 {
 			font-size: 14px;
 			color: @color-Text;
 			font-family: @fontfamily;

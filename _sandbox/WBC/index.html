@@ -505,21 +505,21 @@
 
 		<button type="button" class="btn btn-primary">
 			<span class="btn-text">Primary</span>
-			<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
+			<span class="btn-icon icon icon-size-sm icon-info"></span>
 		</button>
 
 		<button type="button" class="btn btn-hero">
-			<span class="btn-icon btn-icon-left icon icon-size-sm icon-info" data-grunticon-embed></span>
+			<span class="btn-icon btn-icon-left icon icon-size-sm icon-info"></span>
 			<span class="btn-text">Hero</span>
 		</button>
 
 		<button type="button" class="btn btn-neutral">
 			<span class="btn-text">Neutral</span>
-			<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
+			<span class="btn-icon icon icon-size-sm icon-info"></span>
 		</button>
 
 		<button type="button" class="btn btn-faint">
-			<span class="btn-icon btn-icon-left icon icon-size-sm icon-info" data-grunticon-embed></span>
+			<span class="btn-icon btn-icon-left icon icon-size-sm icon-info"></span>
 			<span class="btn-text">Faint</span>
 		</button>
 
@@ -714,6 +714,7 @@
 			</div>
 		</div>
 
+
 		<hr>
 		<h2>button-groups toggle</h2>
 
@@ -743,6 +744,36 @@
 				</span>
 			</label>
 
+		</div>
+
+
+		<hr>
+		<h2>button-groups with leading line</h2>
+
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3">
+				<div class="btn-group-wrapper">
+					<span class="btn-group-line" id="buttongroup1">Do you want daily email updates?</span>
+
+					<div class="btn-group">
+						<label class="btn-group-item" aria-describedby="buttongroup1">
+							<input class="btn-group-input" type="radio" name="options-leading">
+							<span class="btn-group-text btn btn-primary">
+								Yes
+								<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
+							</span>
+						</label>
+
+						<label class="btn-group-item" aria-describedby="buttongroup1">
+							<input class="btn-group-input" type="radio" name="options-leading">
+							<span class="btn-group-text btn btn-primary">
+								No
+								<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
+							</span>
+						</label>
+					</div>
+				</div>
+			</div>
 		</div>
 
 
@@ -904,50 +935,222 @@
 
 
 		<hr>
-		<h2>dropdown buttons</h2>
+		<h2>dropdown sizes</h2>
 
 
 		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
 			<button type="button" class="btn btn-primary js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 				<span class="btn-dropdown-caret">
-					Dropdown
+					sm
 					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
 				</span>
 			</button>
-			<ul class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
-				<li class="dropdown-menu-headline">Headline 1</li>
-				<li><a href="#url">Link 1</a></li>
-				<li><a href="#url">Another link</a></li>
-				<li class="dropdown-menu-headline">Headline 2</li>
-				<li><a href="#url">Another link</a></li>
-				<li><a href="#url">Another link</a></li>
-				<li class="dropdown-menu-divider"><a href="#url">Another link</a></li>
-				<li><a href="#url">Another link</a></li>
-				<li><a href="#url">Another link</a></li>
-				<li><a href="#url">Last link</a></li>
-			</ul>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
+
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
+			<button type="button" class="btn btn-primary js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
+				<span class="btn-dropdown-caret">
+					md
+					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
+				</span>
+			</button>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
+
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
+			<button type="button" class="btn btn-primary js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
+				<span class="btn-dropdown-caret">
+					lg
+					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
+				</span>
+			</button>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
+
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<hr>
+		<h2>dropdown buttons</h2>
+
+		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
+			<button type="button" class="btn btn-primary js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
+				<span class="btn-dropdown-caret">
+					Dropdown with everything
+					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
+				</span>
+			</button>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Checkboxes header</h3>
+
+				<label class="checkbox">
+					<input class="checkbox-input" type="checkbox" name="dropwdownSetting1">
+					<span class="checkbox-text">Setting 1 with long test that breaks into another line</span>
+				</label>
+
+				<label class="checkbox">
+					<input class="checkbox-input" type="checkbox" name="dropwdownSetting1">
+					<span class="checkbox-text">Setting 2</span>
+				</label>
+
+				<label class="checkbox">
+					<input class="checkbox-input" type="checkbox" name="dropwdownSetting1">
+					<span class="checkbox-text">Setting 3</span>
+				</label>
+
+				<h2 class="dropdown-menu-headline">Radios headergjIH1323</h2>
+
+				<label class="radio">
+					<input class="radio-input" type="radio" name="radioOptions" value="dropwdownOption1">
+					<span class="radio-text">Option 1</span>
+				</label>
+
+				<label class="radio">
+					<input class="radio-input" type="radio" name="radioOptions" value="dropwdownOption1">
+					<span class="radio-text">Option 2 with long test that breaks into another line</span>
+				</label>
+
+				<label class="radio">
+					<input class="radio-input" type="radio" name="radioOptions" value="dropwdownOption1">
+					<span class="radio-text">Option 3</span>
+				</label>
+
+				<h1 class="dropdown-menu-headline">linklist</h1>
+
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+					<li><a href="#url">Link 4</a></li>
+					<li><a href="#url">Link 5</a></li>
+				</ul>
+
+				<h4 class="dropdown-menu-headline">paragraphs</h4>
+
+				<p>
+					Lorem ipsum dolor sit amet, consectetur <a href="#url">inline link</a> adipisicing elit. Qui animi provident mollitia, molestiae dolorum iusto dicta
+					dolore blanditiis voluptate necessitatibus? Amet autem nobis tenetur soluta quo vero sit excepturi voluptate!
+				</p>
+
+				<h5 class="dropdown-menu-headline">btn-groups</h5>
+
+				<div class="btn-group-wrapper">
+					<span class="btn-group-line" id="dropdownLabel1">Setting 1 with long test that breaks into another line</span>
+
+					<div class="btn-group">
+						<label class="btn-group-item" aria-describedby="dropdownLabel1">
+							<input class="btn-group-input" type="radio" name="dropdownBtnGroup1">
+							<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+						</label>
+
+						<label class="btn-group-item" aria-describedby="dropdownLabel1">
+							<input class="btn-group-input" type="radio" name="dropdownBtnGroup1">
+							<span class="btn-group-text btn btn-hero btn-sm">No</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="btn-group-wrapper">
+					<span class="btn-group-line" id="dropdownLabel2">Setting 2</span>
+
+					<div class="btn-group">
+						<label class="btn-group-item" aria-describedby="dropdownLabel2">
+							<input class="btn-group-input" type="radio" name="dropdownBtnGroup2">
+							<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+						</label>
+
+						<label class="btn-group-item" aria-describedby="dropdownLabel2">
+							<input class="btn-group-input" type="radio" name="dropdownBtnGroup2">
+							<span class="btn-group-text btn btn-hero btn-sm">No</span>
+						</label>
+					</div>
+				</div>
+
+				<div class="btn-group-wrapper">
+					<span class="btn-group-line" id="dropdownLabel3">Setting 3</span>
+
+					<div class="btn-group">
+						<label class="btn-group-item" aria-describedby="dropdownLabel3">
+							<input class="btn-group-input" type="radio" name="dropdownBtnGroup3">
+							<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
+						</label>
+
+						<label class="btn-group-item" aria-describedby="dropdownLabel3">
+							<input class="btn-group-input" type="radio" name="dropdownBtnGroup3">
+							<span class="btn-group-text btn btn-hero btn-sm">No</span>
+						</label>
+					</div>
+				</div>
+
+				<h6 class="dropdown-menu-headline">checkbox-flip</h6>
+
+				<label class="checkbox checkbox-flip">
+					<input class="checkbox-input" type="checkbox" name="dropwdownSetting2">
+					<span class="checkbox-text">Setting 1</span>
+				</label>
+
+				<label class="checkbox checkbox-flip">
+					<input class="checkbox-input" type="checkbox" name="dropwdownSetting2">
+					<span class="checkbox-text">Setting 2 with long test that breaks into another line</span>
+				</label>
+
+				<h1 class="dropdown-menu-headline">radio-flip</h1>
+
+				<label class="radio radio-flip">
+					<input class="radio-input" type="radio" name="radioOptions" value="dropwdownOption2">
+					<span class="radio-text">Option 1 with long test that breaks into another line</span>
+				</label>
+
+				<label class="radio radio-flip">
+					<input class="radio-input" type="radio" name="radioOptions" value="dropwdownOption2">
+					<span class="radio-text">Option 2</span>
+				</label>
+
+			</div>
 		</div>
 
 
 		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
 			<button type="button" class="btn btn-primary btn-soft js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 				<span class="btn-dropdown-caret">
-					Dropdown
+					Dropdown primary soft
 					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
 				</span>
 			</button>
-			<ul class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
-				<li class="dropdown-menu-headline">Headline 1</li>
-				<li><a href="#url">Link 1</a></li>
-				<li><a href="#url">Another link</a></li>
-				<li class="dropdown-menu-headline">Headline 2</li>
-				<li><a href="#url">Another link</a></li>
-				<li><a href="#url">Another link</a></li>
-				<li class="dropdown-menu-divider"><a href="#url">Another link</a></li>
-				<li><a href="#url">Another link</a></li>
-				<li><a href="#url">Another link</a></li>
-				<li><a href="#url">Last link</a></li>
-			</ul>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
+
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
 		</div>
 
 
@@ -957,32 +1160,38 @@
 		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
 			<button type="button" class="btn btn-hero js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 				<span class="btn-dropdown-caret">
-					Dropdown
+					Dropdown hero
 					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
 				</span>
 			</button>
-			<ul class="dropdown-menu js-button-dropdownbody dropdown-menu-sm" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
-				<li><button class="btn btn-link">Action 1</button></li>
-				<li><button class="btn btn-link">Another action</button></li>
-				<li class="dropdown-menu-divider"><button class="btn btn-link">Action 3</button></li>
-				<li><button class="btn btn-link">Last action</button></li>
-			</ul>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
+
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
 		</div>
 
 
 		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
 			<button type="button" class="btn btn-hero btn-soft js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 				<span class="btn-dropdown-caret">
-					Dropdown
+					Dropdown hero soft
 					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
 				</span>
 			</button>
-			<ul class="dropdown-menu js-button-dropdownbody dropdown-menu-sm" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
-				<li><button class="btn btn-link">Action 1</button></li>
-				<li><button class="btn btn-link">Another action</button></li>
-				<li class="dropdown-menu-divider"><button class="btn btn-link">Action 3</button></li>
-				<li><button class="btn btn-link">Last action</button></li>
-			</ul>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
+
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
 		</div>
 
 
@@ -991,184 +1200,38 @@
 		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
 			<button type="button" class="btn btn-neutral js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 				<span class="btn-dropdown-caret">
-					Dropdown
+					Dropdown neutral
 					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
 				</span>
 			</button>
-			<ul class="dropdown-menu js-button-dropdownbody dropdown-menu-lg" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
-				<li>
-					<div class="btn-dropdown-setting">
-						<span class="btn-dropdown-text" id="label1">Setting 1 with long test that breaks into another line</span>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
 
-						<div class="btn-group">
-
-							<label class="btn-group-item" aria-describedby="label1">
-								<input class="btn-group-input" type="radio" name="options5">
-								<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
-							</label>
-
-							<label class="btn-group-item" aria-describedby="label1">
-								<input class="btn-group-input" type="radio" name="options5">
-								<span class="btn-group-text btn btn-hero btn-sm">No</span>
-							</label>
-
-						</div>
-					</div>
-
-				</li>
-				<li class="dropdown-menu-divider">
-					<div class="btn-dropdown-setting">
-						<span class="btn-dropdown-text" id="label2">Setting 2</span>
-
-						<div class="btn-group">
-
-							<label class="btn-group-item" aria-describedby="label2">
-								<input class="btn-group-input" type="radio" name="options6">
-								<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
-							</label>
-
-							<label class="btn-group-item" aria-describedby="label2">
-								<input class="btn-group-input" type="radio" name="options6">
-								<span class="btn-group-text btn btn-hero btn-sm">No</span>
-							</label>
-
-						</div>
-					</div>
-
-				</li>
-				<li>
-					<div class="btn-dropdown-setting">
-						<span class="btn-dropdown-text" id="label3">Setting 3</span>
-
-						<div class="btn-group">
-
-							<label class="btn-group-item" aria-describedby="label3">
-								<input class="btn-group-input" type="radio" name="options7">
-								<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
-							</label>
-
-							<label class="btn-group-item" aria-describedby="label3">
-								<input class="btn-group-input" type="radio" name="options7">
-								<span class="btn-group-text btn btn-hero btn-sm">No</span>
-							</label>
-
-						</div>
-					</div>
-
-				</li>
-				<li>
-					<div class="btn-dropdown-setting">
-						<span class="btn-dropdown-text" id="label4">Setting 4</span>
-
-						<div class="btn-group">
-
-							<label class="btn-group-item" aria-describedby="label4">
-								<input class="btn-group-input" type="radio" name="options8">
-								<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
-							</label>
-
-							<label class="btn-group-item" aria-describedby="label4">
-								<input class="btn-group-input" type="radio" name="options8">
-								<span class="btn-group-text btn btn-hero btn-sm">No</span>
-							</label>
-
-						</div>
-					</div>
-
-				</li>
-			</ul>
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
 		</div>
 
 
 		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
 			<button type="button" class="btn btn-neutral btn-soft js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 				<span class="btn-dropdown-caret">
-					Dropdown
+					Dropdown neutral soft
 					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
 				</span>
 			</button>
-			<ul class="dropdown-menu js-button-dropdownbody dropdown-menu-lg" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
-				<li>
-					<div class="btn-dropdown-setting">
-						<span class="btn-dropdown-text" id="label1a">Setting 1</span>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
 
-						<div class="btn-group">
-
-							<label class="btn-group-item" aria-describedby="label1a">
-								<input class="btn-group-input" type="radio" name="options5">
-								<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
-							</label>
-
-							<label class="btn-group-item" aria-describedby="label1a">
-								<input class="btn-group-input" type="radio" name="options5">
-								<span class="btn-group-text btn btn-hero btn-sm">No</span>
-							</label>
-
-						</div>
-					</div>
-
-				</li>
-				<li class="dropdown-menu-divider">
-					<div class="btn-dropdown-setting">
-						<span class="btn-dropdown-text" id="label2a">Setting 2</span>
-
-						<div class="btn-group">
-
-							<label class="btn-group-item" aria-describedby="label2a">
-								<input class="btn-group-input" type="radio" name="options6">
-								<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
-							</label>
-
-							<label class="btn-group-item" aria-describedby="label2a">
-								<input class="btn-group-input" type="radio" name="options6">
-								<span class="btn-group-text btn btn-hero btn-sm">No</span>
-							</label>
-
-						</div>
-					</div>
-
-				</li>
-				<li>
-					<div class="btn-dropdown-setting">
-						<span class="btn-dropdown-text" id="label3a">Setting 3 with long test that breaks into another line</span>
-
-						<div class="btn-group">
-
-							<label class="btn-group-item" aria-describedby="label3a">
-								<input class="btn-group-input" type="radio" name="options7">
-								<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
-							</label>
-
-							<label class="btn-group-item" aria-describedby="label3a">
-								<input class="btn-group-input" type="radio" name="options7">
-								<span class="btn-group-text btn btn-hero btn-sm">No</span>
-							</label>
-
-						</div>
-					</div>
-
-				</li>
-				<li>
-					<div class="btn-dropdown-setting">
-						<span class="btn-dropdown-text" id="label4a">Setting 4</span>
-
-						<div class="btn-group">
-
-							<label class="btn-group-item" aria-describedby="label4a">
-								<input class="btn-group-input" type="radio" name="options8">
-								<span class="btn-group-text btn btn-hero btn-sm">Yes</span>
-							</label>
-
-							<label class="btn-group-item" aria-describedby="label4a">
-								<input class="btn-group-input" type="radio" name="options8">
-								<span class="btn-group-text btn btn-hero btn-sm">No</span>
-							</label>
-
-						</div>
-					</div>
-
-				</li>
-			</ul>
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
 		</div>
 
 
@@ -1177,72 +1240,38 @@
 		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
 			<button type="button" class="btn btn-faint js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 				<span class="btn-dropdown-caret">
-					Dropdown
+					Dropdown faint
 					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
 				</span>
 			</button>
-			<ul class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
-				<li>
-					<label class="checkbox">
-						<input class="checkbox-input" type="checkbox" name="option2">
-						<span class="checkbox-text">Setting 1</span>
-					</label>
-				</li>
-				<li>
-					<label class="checkbox">
-						<input class="checkbox-input" type="checkbox" name="option2">
-						<span class="checkbox-text">Setting 2 with long test that breaks into another line</span>
-					</label>
-				</li>
-				<li class="dropdown-menu-divider">
-					<label class="checkbox">
-						<input class="checkbox-input" type="checkbox" name="option2">
-						<span class="checkbox-text">Setting 3</span>
-					</label>
-				</li>
-				<li>
-					<label class="checkbox">
-						<input class="checkbox-input" type="checkbox" name="option2">
-						<span class="checkbox-text">Setting 4</span>
-					</label>
-				</li>
-			</ul>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
+
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
 		</div>
 
 
 		<div class="btn-dropdown js-dropdown" aria-haspopup="true">
 			<button type="button" class="btn btn-faint btn-soft js-button-dropdown" aria-label="Dropdown. Hit enter to open dropdown">
 				<span class="btn-dropdown-caret">
-					Dropdown
+					Dropdown faint soft
 					<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
 				</span>
 			</button>
-			<ul class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
-				<li>
-					<label class="checkbox checkbox-flip">
-						<input class="checkbox-input" type="checkbox" name="option2">
-						<span class="checkbox-text">Setting 1</span>
-					</label>
-				</li>
-				<li>
-					<label class="checkbox checkbox-flip">
-						<input class="checkbox-input" type="checkbox" name="option2">
-						<span class="checkbox-text">Setting 2</span>
-					</label>
-				</li>
-				<li class="dropdown-menu-divider">
-					<label class="checkbox checkbox-flip">
-						<input class="checkbox-input" type="checkbox" name="option2">
-						<span class="checkbox-text">Setting 3 with long test that breaks into another line</span>
-					</label>
-				</li>
-				<li>
-					<label class="checkbox checkbox-flip">
-						<input class="checkbox-input" type="checkbox" name="option2">
-						<span class="checkbox-text">Setting 4</span>
-					</label>
-				</li>
-			</ul>
+			<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+				<h3 class="dropdown-menu-headline">Dropdown header</h3>
+
+				<ul class="lists lists-linklist">
+					<li><a href="#url">Link 1</a></li>
+					<li><a href="#url">Link 2</a></li>
+					<li><a href="#url">Link 3</a></li>
+				</ul>
+			</div>
 		</div>
 
 
@@ -1260,18 +1289,15 @@
 							<span class="btn-icon icon icon-size-sm icon-info" data-grunticon-embed></span>
 						</span>
 					</button>
-					<ul class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
-						<li class="dropdown-menu-headline">Headline 1</li>
-						<li><a href="#url">Link 1</a></li>
-						<li><a href="#url">Another link</a></li>
-						<li class="dropdown-menu-headline">Headline 2</li>
-						<li><a href="#url">Another link</a></li>
-						<li><a href="#url">Another link</a></li>
-						<li class="dropdown-menu-divider"><a href="#url">Another link</a></li>
-						<li><a href="#url">Another link</a></li>
-						<li><a href="#url">Another link</a></li>
-						<li><a href="#url">Last link</a></li>
-					</ul>
+					<div class="dropdown-menu js-button-dropdownbody" role="menu" aria-label="Hit the Esc key to close dropdown" tabindex="-1">
+						<h3 class="dropdown-menu-headline">Dropdown header</h3>
+
+						<ul class="lists lists-linklist">
+							<li><a href="#url">Link 1</a></li>
+							<li><a href="#url">Link 2</a></li>
+							<li><a href="#url">Link 3</a></li>
+						</ul>
+					</div>
 				</div>
 
 			</div>
@@ -2585,6 +2611,98 @@
 			</label>
 		</div>
 
+		<hr>
+		<h2>input-addon block</h2>
+
+		<p>
+			<div class="input-addon input-addon-block input-addon-xl">
+				<label class="input-addon-label">
+					<span class="input-addon-text">eMail:</span>
+					<input type="text" class="input-addon-input" placeholder="email">
+				</label>
+				<button type="submit" class="input-addon-btn">Go</button>
+			</div>
+		</p>
+
+		<p>
+			<div class="input-addon input-addon-block input-addon-lg">
+				<label class="input-addon-label">
+					<span class="input-addon-text">eMail:</span>
+					<input type="text" class="input-addon-input" placeholder="email">
+				</label>
+				<button type="submit" class="input-addon-btn">Go</button>
+			</div>
+		</p>
+
+		<p>
+			<div class="input-addon input-addon-block input-addon-sm">
+				<label class="input-addon-label">
+					<span class="input-addon-text">eMail:</span>
+					<input type="text" class="input-addon-input" placeholder="email">
+				</label>
+				<button type="submit" class="input-addon-btn">Go</button>
+			</div>
+		</p>
+
+		<hr>
+
+		<p>
+			<div class="input-addon input-addon-block input-addon-xl">
+				<label class="input-addon-label">
+					<span class="input-addon-text">Income:</span>
+					<input type="text" class="input-addon-input" placeholder="email">
+				</label>
+
+				<label class="input-addon-select-wrapper">
+					<span class="input-addon-text">Currency:</span>
+					<select class="input-addon-select">
+						<option>Please select g f h</option>
+						<option>AUS $ g f h</option>
+						<option>US $</option>
+						<option>GB &pound;</option>
+					</select>
+				</label>
+			</div>
+		</p>
+
+		<p>
+			<div class="input-addon input-addon-block input-addon-lg">
+				<label class="input-addon-label">
+					<span class="input-addon-text">Income:</span>
+					<input type="text" class="input-addon-input" placeholder="email">
+				</label>
+
+				<label class="input-addon-select-wrapper">
+					<span class="input-addon-text">Currency:</span>
+					<select class="input-addon-select">
+						<option>Please select g f h</option>
+						<option>AUS $ g f h</option>
+						<option>US $</option>
+						<option>GB &pound;</option>
+					</select>
+				</label>
+			</div>
+		</p>
+
+		<p>
+			<div class="input-addon input-addon-block input-addon-sm">
+				<label class="input-addon-label">
+					<span class="input-addon-text">Income:</span>
+					<input type="text" class="input-addon-input" placeholder="email">
+				</label>
+
+				<label class="input-addon-select-wrapper">
+					<span class="input-addon-text">Currency:</span>
+					<select class="input-addon-select">
+						<option>Please select g f h</option>
+						<option>AUS $ g f h</option>
+						<option>US $</option>
+						<option>GB &pound;</option>
+					</select>
+				</label>
+			</div>
+		</p>
+
 		<!-- *****************************************************************| input-fields |***************************************************************** -->
 		<h2>input text</h2>
 
@@ -2990,6 +3108,68 @@
 			<span class="input-group-addon">.00</span>
 		</label>
 
+
+		<hr>
+		<h2>input-group block</h2>
+
+		<p>
+			<label class="input-group input-group-block">
+				<span class="input-group-text">Username:</span>
+
+				<span class="input-group-addon">AUSgi $</span>
+				<input type="text" class="input-group-input" placeholder="Username">
+			</label>
+		</p>
+
+		<p>
+			<label class="input-group input-group-block">
+				<span class="input-group-text">Username:</span>
+
+				<input type="text" class="input-group-input" placeholder="Username">
+				<span class="input-group-addon">.00</span>
+			</label>
+		</p>
+
+		<p>
+			<label class="input-group input-group-block">
+				<span class="input-group-text">Username:</span>
+
+				<span class="input-group-addon">AUSgi $</span>
+				<input type="text" class="input-group-input" placeholder="Username">
+				<span class="input-group-addon">.00</span>
+			</label>
+		</p>
+
+		<p>
+			<label class="input-group input-group-block input-group-xl">
+				<span class="input-group-text">Username:</span>
+
+				<span class="input-group-addon">AUSgi $</span>
+				<input type="text" class="input-group-input" placeholder="Username">
+				<span class="input-group-addon">.00</span>
+			</label>
+		</p>
+
+		<p>
+			<label class="input-group input-group-block input-group-lg">
+				<span class="input-group-text">Username:</span>
+
+				<span class="input-group-addon">AUSgi $</span>
+				<input type="text" class="input-group-input" placeholder="Username">
+				<span class="input-group-addon">.00</span>
+			</label>
+		</p>
+
+		<p>
+			<label class="input-group input-group-block input-group-sm">
+				<span class="input-group-text">Username:</span>
+
+				<span class="input-group-addon">AUSgi $</span>
+				<input type="text" class="input-group-input" placeholder="Username">
+				<span class="input-group-addon">.00</span>
+			</label>
+		</p>
+
 		<!-- *********************************************************************| labels |******************************************************************** -->
 		<h2>label links</h2>
 
@@ -3392,7 +3572,7 @@
 					Close
 					<span class="modal-sronly">modal and return to test-page</span>
 				</button>
-				<button type="button" class="btn btn-hero">Save changes</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
 			</div>
 		</div>
 
@@ -3416,7 +3596,7 @@
 					Close
 					<span class="modal-sronly">modal and return to test-page</span>
 				</button>
-				<button type="button" class="btn btn-hero">Save changes</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
 			</div>
 		</div>
 
@@ -3451,7 +3631,7 @@
 					Close
 					<span class="modal-sronly">modal and return to test-page</span>
 				</button>
-				<button type="button" class="btn btn-hero">Save changes</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
 			</div>
 		</div>
 
@@ -4486,8 +4666,8 @@
 		<!-- ******************************************************************| tabcordions |***************************************************************** -->
 		<h2>Collapsible with buttons</h2>
 
-		<button class="js-collapsible" data-collapsible="#ex0-1">toggle below</button>
-		<div id="ex0-1" class="collapsible-body" aria-hidden="true" tabindex="-1">
+		<button id="ex0-1-button" class="js-collapsible" data-collapsible="#ex0-1">toggle below</button>
+		<div id="ex0-1" class="collapsible-body" tabindex="-1" aria-hidden="true" aria-labelledby="ex0-1-button">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias provident, maxime qui aut doloremque eligendi ab odio labore, alias, ad eius incidunt
 			quibusdam dolore quidem neque accusamus voluptatibus, quam deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, repellat autem
 			animi asperiores sed delectus consectetur optio repudiandae amet illo deleniti voluptas officiis, sapiente quo sequi iste qui, rem iure! Lorem ipsum dolor
@@ -4556,315 +4736,396 @@
 
 		<div class="row">
 			<div class="col-sm-6">
-					<h2>Tabcordion tabs alone</h2>
+				<h2>Tabcordion tabs alone</h2>
 
-					<div class="tabcordion tabcordion-tabs">
-						<ul class="tabcordion-tabs">
-							<li class="tabcordion-tab js-collapsible-tab is-active">
-								<a class="js-collapsible" href="#ex1-tab1">Tab 1</a>
-							</li>
-							<li class="tabcordion-tab js-collapsible-tab">
-								<a class="js-collapsible" href="#ex1-tab2">
-									Tab 2<br>
-									with line break
-								</a>
-							</li>
-							<li class="tabcordion-tab js-collapsible-tab">
-								<a class="js-collapsible" href="#ex1-tab3">Tab 3</a>
-							</li>
-						</ul>
-
-						<div id="ex1-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio saepe, voluptates sint, necessitatibus labore, ipsa iusto hic adipisci, reiciendis
-								aliquam unde nemo! Sunt, illum fuga quo in exercitationem accusantium dicta.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt cupiditate et vel sed, architecto qui inventore illum animi. Vel tenetur,
-								cumque. Alias doloremque reiciendis debitis assumenda temporibus laudantium distinctio.
-								Lorem ipsum dolor sit amet, co<a href="#url">nsectetur adipisicing elit. Quis</a> rerum reprehenderit commodi tenetur veritatis ducimus, consectetur quidem exercitationem
-								doloremque cupiditate et ut, omnis repellendus perferendis nisi vero architecto. Blanditiis, perspiciatis!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet debitis non voluptates eaque neque rerum perferendis eos, doloribus et sunt culpa
-								doloremque omnis beatae cumque nulla, deserunt hic excepturi!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit sunt non ex dicta voluptatibus repellendus fuga distinctio, accusantium
-								reprehenderit laboriosam alia<a href="#url">s consectetur, reiciendi</a>s iste illo sed quod similique natus!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores iste, incidunt veniam quidem culpa aut doloremque nesciunt quod ullam rerum
-								quia sed magnam necessitatibus quam molestias officia. Reprehenderit, natus.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem totam eum blanditiis quas nam, illo itaque officia commodi! Tenetur ducimus
-								eius itaque quasi a sed soluta ipsam, veritatis autem.
-							</div>
-						</div>
-						<div id="ex1-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa non, id tempore voluptatem temporibus eligendi minus fuga odit unde iste consequuntur
-								nulla modi, inventore suscipit, libero adipisci eos voluptate ad!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor accusantium, explicabo voluptatem impedit sapiente voluptatum, ut, laboriosam incidunt
-								dolores temporibus laudantium suscipit non libero soluta commodi architecto illo beatae maiores.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi odio, aliquam commodi doloribus iure omnis. Ratione id velit, nesciunt,
-								eius saepe totam nobis eos veniam odit optio laboriosam modi.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora architecto explicabo eaque pariatur et praesentium placeat! Similique doloremque
-								quia ea ab mollitia atque maxime quae quod necessitatibus, temporibus! Nobis, dicta.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto harum aliquid soluta molestiae, ducimus, atque quam eius pariatur voluptatum, dolores
-								necessitatibus ratione voluptates optio, neque quasi assumenda ullam sunt maxime.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi ipsam est doloremque voluptatem repellendus laboriosam quis! Ullam cumque,
-								quis culpa quam rerum odio vel dolore numquam, labore, eligendi possimus!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nihil laborum, qui deserunt accusantium atque harum! Ut rem recusandae quo, mollitia
-								labore. Quis quasi ipsum molestiae maiores alias sequi, facilis!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero quam ut aliquid eum doloribus, illum nam, quidem veritatis, molestiae atque labore
-								aspernatur! Velit distinctio molestiae eligendi, optio maiores eum.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus praesentium modi eaque, quasi eum quisquam reiciendis, voluptatibus unde non
-								deleniti. Perferendis possimus, inventore ipsa error ducimus vitae, alias illum.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo quam non, reprehenderit quo? Voluptate qui magni eum esse nobis ipsa
-								porro doloremque delectus, libero quam molestiae quibusdam illum nam.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vero asperiores unde libero vel mollitia similique, veritatis consequuntur ipsa
-								repudiandae amet nesciunt blanditiis cupiditate. Ipsa iste repellat ipsum quaerat praesentium.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus, ea! Ullam nisi iure eum assumenda, voluptatem, voluptas provident quos
-								ipsum vel at, nam tenetur animi adipisci nulla dolores, dolorum.
-							</div>
-						</div>
-						<div id="ex1-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit architecto assumenda qui excepturi deleniti dolorem ducimus obcaecati ad quae
-								consequatur, veniam nobis laudantium atque enim provident sint natus sit neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
-								aliquid! Ea aut illo, non similique quaerat cumque cupiditate dicta voluptatum mollitia, neque aliquid, temporibus quo odio dignissimos distinctio,
-								accusantium consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi officia, deserunt non nulla ex ea doloremque sapiente
-								unde, repudiandae nisi? Esse at suscipit quas dolorum sunt quisquam pariatur est.
-							</div>
-						</div>
-
-					</div>
-
-					<h2>Tabcordion tabs alone justified</h2>
-
-					<div class="tabcordion tabcordion-tabs">
-						<ul class="tabcordion-tabs tabcordion-tabs-justified">
-							<li class="tabcordion-tab js-collapsible-tab is-active">
-								<a class="js-collapsible" href="#ex2-tab1">Tab 1</a>
-							</li>
-							<li class="tabcordion-tab js-collapsible-tab">
-								<a class="js-collapsible" href="#ex2-tab2">Tab 2 with long text that goes a long way</a>
-							</li>
-							<li class="tabcordion-tab js-collapsible-tab">
-								<a class="js-collapsible" href="#ex2-tab3">Tab 3</a>
-							</li>
-						</ul>
-
-						<div id="ex2-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio saepe, voluptates sint, necessitatibus labore, ipsa iusto hic adipisci, reiciendis
-								aliquam unde nemo! Sunt, illum fuga quo in exercitationem accusantium dicta.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt cupiditate et vel sed, architecto qui inventore illum animi. Vel tenetur,
-								cumque. Alias doloremque reiciendis debitis assumenda temporibus laudantium distinctio.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rerum reprehenderit commodi tenetur veritatis ducimus, consectetur quidem exercitationem
-								doloremque cupiditate et ut, omnis repellendus perferendis nisi vero architecto. Blanditiis, perspiciatis!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet debitis non voluptates eaque neque rerum perferendis eos, doloribus et sunt culpa
-								doloremque omnis beatae cumque nulla, deserunt hic excepturi!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit sunt non ex dicta voluptatibus repellendus fuga distinctio, accusantium
-								reprehenderit laboriosam alias consectetur, reiciendis iste illo sed quod similique natus!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores iste, incidunt veniam quidem culpa aut doloremque nesciunt quod ullam rerum
-								quia sed magnam necessitatibus quam molestias officia. Reprehenderit, natus.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem totam eum blanditiis quas nam, illo itaque officia commodi! Tenetur ducimus
-								eius itaque quasi a sed soluta ipsam, veritatis autem.
-							</div>
-						</div>
-						<div id="ex2-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa non, id tempore voluptatem temporibus eligendi minus fuga odit unde iste consequuntur
-								nulla modi, inventore suscipit, libero adipisci eos voluptate ad!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor accusantium, explicabo voluptatem impedit sapiente voluptatum, ut, laboriosam incidunt
-								dolores temporibus laudantium suscipit non libero soluta commodi architecto illo beatae maiores.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi odio, aliquam commodi doloribus iure omnis. Ratione id velit, nesciunt,
-								eius saepe totam nobis eos veniam odit optio laboriosam modi.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora architecto explicabo eaque pariatur et praesentium placeat! Similique doloremque
-								quia ea ab mollitia atque maxime quae quod necessitatibus, temporibus! Nobis, dicta.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto harum aliquid soluta molestiae, ducimus, atque quam eius pariatur voluptatum, dolores
-								necessitatibus ratione voluptates optio, neque quasi assumenda ullam sunt maxime.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi ipsam est doloremque voluptatem repellendus laboriosam quis! Ullam cumque,
-								quis culpa quam rerum odio vel dolore numquam, labore, eligendi possimus!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nihil laborum, qui deserunt accusantium atque harum! Ut rem recusandae quo, mollitia
-								labore. Quis quasi ipsum molestiae maiores alias sequi, facilis!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero quam ut aliquid eum doloribus, illum nam, quidem veritatis, molestiae atque labore
-								aspernatur! Velit distinctio molestiae eligendi, optio maiores eum.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus praesentium modi eaque, quasi eum quisquam reiciendis, voluptatibus unde non
-								deleniti. Perferendis possimus, inventore ipsa error ducimus vitae, alias illum.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo quam non, reprehenderit quo? Voluptate qui magni eum esse nobis ipsa
-								porro doloremque delectus, libero quam molestiae quibusdam illum nam.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vero asperiores unde libero vel mollitia similique, veritatis consequuntur ipsa
-								repudiandae amet nesciunt blanditiis cupiditate. Ipsa iste repellat ipsum quaerat praesentium.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus, ea! Ullam nisi iure eum assumenda, voluptatem, voluptas provident quos
-								ipsum vel at, nam tenetur animi adipisci nulla dolores, dolorum.
-							</div>
-						</div>
-						<div id="ex2-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit architecto assumenda qui excepturi deleniti dolorem ducimus obcaecati ad quae
-								consequatur, veniam nobis laudantium atque enim provident sint natus sit neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
-								aliquid! Ea aut illo, non similique quaerat cumque cupiditate dicta voluptatum mollitia, neque aliquid, temporibus quo odio dignissimos distinctio,
-								accusantium consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi officia, deserunt non nulla ex ea doloremque sapiente
-								unde, repudiandae nisi? Esse at suscipit quas dolorum sunt quisquam pariatur est.
-							</div>
-						</div>
-
-					</div>
-
-
-					<h2>Tabcordion accordion alone</h2>
-
-					<div class="tabcordion tabcordion-accordion">
-						<div class="tabcordion-body-header js-collapsible-tab is-active">
-							<a href="#ex3-tab1" class="tabcordion-body-headline js-collapsible">Tab 1</a>
-						</div>
-						<div id="ex3-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio saepe, voluptates sint, necessitatibus labore, ipsa iusto hic adipisci, reiciendis
-								aliquam unde nemo! Sunt, illum fuga quo in exercitationem accusantium dicta.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt cupiditate et vel sed, architecto qui inventore illum animi. Vel tenetur,
-								cumque. Alias doloremque reiciendis debitis assumenda temporibus laudantium distinctio.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rerum reprehenderit commodi tenetur veritatis ducimus, consectetur quidem exercitationem
-								doloremque cupiditate et ut, omnis repellendus perferendis nisi vero architecto. Blanditiis, perspiciatis!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet debitis non voluptates eaque neque rerum perferendis eos, doloribus et sunt culpa
-								doloremque omnis beatae cumque nulla, deserunt hic excepturi!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit sunt non ex dicta voluptatibus repellendus fuga distinctio, accusantium
-								reprehenderit laboriosam alias consectetur, reiciendis iste illo sed quod similique natus!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores iste, incidunt veniam quidem culpa aut doloremque nesciunt quod ullam rerum
-								quia sed magnam necessitatibus quam molestias officia. Reprehenderit, natus.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem totam eum blanditiis quas nam, illo itaque officia commodi! Tenetur ducimus
-								eius itaque quasi a sed soluta ipsam, veritatis autem.
-							</div>
-						</div>
-
-						<div class="tabcordion-body-header js-collapsible-tab">
-							<a href="#ex3-tab2" class="tabcordion-body-headline js-collapsible">
+				<div class="tabcordion tabcordion-tabs">
+					<ul class="tabcordion-tabs" role="tablist">
+						<li class="tabcordion-tab js-collapsible-tab is-active" role="presentation">
+							<a class="js-collapsible" href="#ex1-tab1" aria-expanded="true" aria-selected="true" aria-controls="ex1-tab1" role="tab">Tab 1</a>
+						</li>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex1-tab2" aria-expanded="false" aria-selected="false" aria-controls="ex1-tab2" role="tab">
 								Tab 2<br>
 								with line break
 							</a>
-						</div>
-						<div id="ex3-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa non, id tempore voluptatem temporibus eligendi minus fuga odit unde iste consequuntur
-								nulla modi, inventore suscipit, libero adipisci eos voluptate ad!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor accusantium, explicabo voluptatem impedit sapiente voluptatum, ut, laboriosam incidunt
-								dolores temporibus laudantium suscipit non libero soluta commodi architecto illo beatae maiores.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi odio, aliquam commodi doloribus iure omnis. Ratione id velit, nesciunt,
-								eius saepe totam nobis eos veniam odit optio laboriosam modi.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora architecto explicabo eaque pariatur et praesentium placeat! Similique doloremque
-								quia ea ab mollitia atque maxime quae quod necessitatibus, temporibus! Nobis, dicta.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto harum aliquid soluta molestiae, ducimus, atque quam eius pariatur voluptatum, dolores
-								necessitatibus ratione voluptates optio, neque quasi assumenda ullam sunt maxime.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi ipsam est doloremque voluptatem repellendus laboriosam quis! Ullam cumque,
-								quis culpa quam rerum odio vel dolore numquam, labore, eligendi possimus!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nihil laborum, qui deserunt accusantium atque harum! Ut rem recusandae quo, mollitia
-								labore. Quis quasi ipsum molestiae maiores alias sequi, facilis!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero quam ut aliquid eum doloribus, illum nam, quidem veritatis, molestiae atque labore
-								aspernatur! Velit distinctio molestiae eligendi, optio maiores eum.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus praesentium modi eaque, quasi eum quisquam reiciendis, voluptatibus unde non
-								deleniti. Perferendis possimus, inventore ipsa error ducimus vitae, alias illum.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo quam non, reprehenderit quo? Voluptate qui magni eum esse nobis ipsa
-								porro doloremque delectus, libero quam molestiae quibusdam illum nam.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vero asperiores unde libero vel mollitia similique, veritatis consequuntur ipsa
-								repudiandae amet nesciunt blanditiis cupiditate. Ipsa iste repellat ipsum quaerat praesentium.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus, ea! Ullam nisi iure eum assumenda, voluptatem, voluptas provident quos
-								ipsum vel at, nam tenetur animi adipisci nulla dolores, dolorum.
-							</div>
-						</div>
+						</li>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex1-tab3" aria-expanded="false" aria-selected="false" aria-controls="ex1-tab3" role="tab">Tab 3</a>
+						</li>
+					</ul>
 
-						<div class="tabcordion-body-header js-collapsible-tab">
-							<a href="#ex3-tab3" class="tabcordion-body-headline js-collapsible">Tab 3 with long text and whatnot to see the wrapping of the text</a>
+					<div id="ex1-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio saepe, voluptates sint, necessitatibus labore, ipsa iusto hic adipisci, reiciendis
+							aliquam unde nemo! Sunt, illum fuga quo in exercitationem accusantium dicta.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt cupiditate et vel sed, architecto qui inventore illum animi. Vel tenetur,
+							cumque. Alias doloremque reiciendis debitis assumenda temporibus laudantium distinctio.
+							Lorem ipsum dolor sit amet, co<a href="#url">nsectetur adipisicing elit. Quis</a> rerum reprehenderit commodi tenetur veritatis ducimus, consectetur quidem exercitationem
+							doloremque cupiditate et ut, omnis repellendus perferendis nisi vero architecto. Blanditiis, perspiciatis!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet debitis non voluptates eaque neque rerum perferendis eos, doloribus et sunt culpa
+							doloremque omnis beatae cumque nulla, deserunt hic excepturi!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit sunt non ex dicta voluptatibus repellendus fuga distinctio, accusantium
+							reprehenderit laboriosam alia<a href="#url">s consectetur, reiciendi</a>s iste illo sed quod similique natus!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores iste, incidunt veniam quidem culpa aut doloremque nesciunt quod ullam rerum
+							quia sed magnam necessitatibus quam molestias officia. Reprehenderit, natus.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem totam eum blanditiis quas nam, illo itaque officia commodi! Tenetur ducimus
+							eius itaque quasi a sed soluta ipsam, veritatis autem.
 						</div>
-						<div id="ex3-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit architecto assumenda qui excepturi deleniti dolorem ducimus obcaecati ad quae
-								consequatur, veniam nobis laudantium atque enim provident sint natus sit neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
-								aliquid! Ea aut illo, non similique quaerat cumque cupiditate dicta voluptatum mollitia, neque aliquid, temporibus quo odio dignissimos distinctio,
-								accusantium consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi officia, deserunt non nulla ex ea doloremque sapiente
-								unde, repudiandae nisi? Esse at suscipit quas dolorum sunt quisquam pariatur est.
-							</div>
+					</div>
+					<div id="ex1-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa non, id tempore voluptatem temporibus eligendi minus fuga odit unde iste consequuntur
+							nulla modi, inventore suscipit, libero adipisci eos voluptate ad!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor accusantium, explicabo voluptatem impedit sapiente voluptatum, ut, laboriosam incidunt
+							dolores temporibus laudantium suscipit non libero soluta commodi architecto illo beatae maiores.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi odio, aliquam commodi doloribus iure omnis. Ratione id velit, nesciunt,
+							eius saepe totam nobis eos veniam odit optio laboriosam modi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora architecto explicabo eaque pariatur et praesentium placeat! Similique doloremque
+							quia ea ab mollitia atque maxime quae quod necessitatibus, temporibus! Nobis, dicta.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto harum aliquid soluta molestiae, ducimus, atque quam eius pariatur voluptatum, dolores
+							necessitatibus ratione voluptates optio, neque quasi assumenda ullam sunt maxime.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi ipsam est doloremque voluptatem repellendus laboriosam quis! Ullam cumque,
+							quis culpa quam rerum odio vel dolore numquam, labore, eligendi possimus!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nihil laborum, qui deserunt accusantium atque harum! Ut rem recusandae quo, mollitia
+							labore. Quis quasi ipsum molestiae maiores alias sequi, facilis!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero quam ut aliquid eum doloribus, illum nam, quidem veritatis, molestiae atque labore
+							aspernatur! Velit distinctio molestiae eligendi, optio maiores eum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus praesentium modi eaque, quasi eum quisquam reiciendis, voluptatibus unde non
+							deleniti. Perferendis possimus, inventore ipsa error ducimus vitae, alias illum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo quam non, reprehenderit quo? Voluptate qui magni eum esse nobis ipsa
+							porro doloremque delectus, libero quam molestiae quibusdam illum nam.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vero asperiores unde libero vel mollitia similique, veritatis consequuntur ipsa
+							repudiandae amet nesciunt blanditiis cupiditate. Ipsa iste repellat ipsum quaerat praesentium.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus, ea! Ullam nisi iure eum assumenda, voluptatem, voluptas provident quos
+							ipsum vel at, nam tenetur animi adipisci nulla dolores, dolorum.
 						</div>
-
+					</div>
+					<div id="ex1-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit architecto assumenda qui excepturi deleniti dolorem ducimus obcaecati ad quae
+							consequatur, veniam nobis laudantium atque enim provident sint natus sit neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+							aliquid! Ea aut illo, non similique quaerat cumque cupiditate dicta voluptatum mollitia, neque aliquid, temporibus quo odio dignissimos distinctio,
+							accusantium consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi officia, deserunt non nulla ex ea doloremque sapiente
+							unde, repudiandae nisi? Esse at suscipit quas dolorum sunt quisquam pariatur est.
+						</div>
 					</div>
 
+				</div>
 
-					<h2>Tabcordion responsive</h2>
+				<h2>Tabcordion tabs alone justified</h2>
 
-					<div class="tabcordion">
-						<ul class="tabcordion-tabs">
-							<li class="tabcordion-tab js-collapsible-tab is-active">
-								<a class="js-collapsible" href="#ex4-tab1">Tab 1</a>
-							</li>
-							<li class="tabcordion-tab js-collapsible-tab">
-								<a class="js-collapsible" href="#ex4-tab2">Tab 2</a>
-							</li>
-							<li class="tabcordion-tab js-collapsible-tab">
-								<a class="js-collapsible" href="#ex4-tab3">Tab 3</a>
-							</li>
-						</ul>
+				<div class="tabcordion tabcordion-tabs">
+					<ul class="tabcordion-tabs tabcordion-tabs-justified" role="tablist">
+						<li class="tabcordion-tab js-collapsible-tab is-active" role="presentation">
+							<a class="js-collapsible" href="#ex2-tab1" aria-expanded="true" aria-selected="true" aria-controls="ex2-tab1" role="tab">Tab 1</a>
+						</li>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex2-tab2" aria-expanded="false" aria-selected="false" aria-controls="ex2-tab2" role="tab">Tab 2 with really long text that goes a long way and then a bit</a>
+						</li>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex2-tab3" aria-expanded="false" aria-selected="false" aria-controls="ex2-tab3" role="tab">Tab 3</a>
+						</li>
+					</ul>
 
-						<div class="tabcordion-body-header js-collapsible-tab is-active">
-							<a href="#ex4-tab1" class="tabcordion-body-headline js-collapsible">Tab 1</a>
+					<div id="ex2-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio saepe, voluptates sint, necessitatibus labore, ipsa iusto hic adipisci, reiciendis
+							aliquam unde nemo! Sunt, illum fuga quo in exercitationem accusantium dicta.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt cupiditate et vel sed, architecto qui inventore illum animi. Vel tenetur,
+							cumque. Alias doloremque reiciendis debitis assumenda temporibus laudantium distinctio.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rerum reprehenderit commodi tenetur veritatis ducimus, consectetur quidem exercitationem
+							doloremque cupiditate et ut, omnis repellendus perferendis nisi vero architecto. Blanditiis, perspiciatis!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet debitis non voluptates eaque neque rerum perferendis eos, doloribus et sunt culpa
+							doloremque omnis beatae cumque nulla, deserunt hic excepturi!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit sunt non ex dicta voluptatibus repellendus fuga distinctio, accusantium
+							reprehenderit laboriosam alias consectetur, reiciendis iste illo sed quod similique natus!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores iste, incidunt veniam quidem culpa aut doloremque nesciunt quod ullam rerum
+							quia sed magnam necessitatibus quam molestias officia. Reprehenderit, natus.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem totam eum blanditiis quas nam, illo itaque officia commodi! Tenetur ducimus
+							eius itaque quasi a sed soluta ipsam, veritatis autem.
 						</div>
-						<div id="ex4-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio saepe, voluptates sint, necessitatibus labore, ipsa iusto hic adipisci, reiciendis
-								aliquam unde nemo! Sunt, illum fuga quo in exercitationem accusantium dicta.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt cupiditate et vel sed, architecto qui inventore illum animi. Vel tenetur,
-								cumque. Alias doloremque reiciendis debitis assumenda temporibus laudantium distinctio.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rerum reprehenderit commodi tenetur veritatis ducimus, consectetur quidem exercitationem
-								doloremque cupiditate et ut, omnis repellendus perferendis nisi vero architecto. Blanditiis, perspiciatis!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet debitis non voluptates eaque neque rerum perferendis eos, doloribus et sunt culpa
-								doloremque omnis beatae cumque nulla, deserunt hic excepturi!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit sunt non ex dicta voluptatibus repellendus fuga distinctio, accusantium
-								reprehenderit laboriosam alias consectetur, reiciendis iste illo sed quod similique natus!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores iste, incidunt veniam quidem culpa aut doloremque nesciunt quod ullam rerum
-								quia sed magnam necessitatibus quam molestias officia. Reprehenderit, natus.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem totam eum blanditiis quas nam, illo itaque officia commodi! Tenetur ducimus
-								eius itaque quasi a sed soluta ipsam, veritatis autem.
-							</div>
-						</div>
-
-						<div class="tabcordion-body-header js-collapsible-tab">
-							<a href="#ex4-tab2" class="tabcordion-body-headline js-collapsible">Tab 2</a>
-						</div>
-						<div id="ex4-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa non, id tempore voluptatem temporibus eligendi minus fuga odit unde iste consequuntur
-								nulla modi, inventore suscipit, libero adipisci eos voluptate ad!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor accusantium, explicabo voluptatem impedit sapiente voluptatum, ut, laboriosam incidunt
-								dolores temporibus laudantium suscipit non libero soluta commodi architecto illo beatae maiores.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi odio, aliquam commodi doloribus iure omnis. Ratione id velit, nesciunt,
-								eius saepe totam nobis eos veniam odit optio laboriosam modi.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora architecto explicabo eaque pariatur et praesentium placeat! Similique doloremque
-								quia ea ab mollitia atque maxime quae quod necessitatibus, temporibus! Nobis, dicta.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto harum aliquid soluta molestiae, ducimus, atque quam eius pariatur voluptatum, dolores
-								necessitatibus ratione voluptates optio, neque quasi assumenda ullam sunt maxime.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi ipsam est doloremque voluptatem repellendus laboriosam quis! Ullam cumque,
-								quis culpa quam rerum odio vel dolore numquam, labore, eligendi possimus!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nihil laborum, qui deserunt accusantium atque harum! Ut rem recusandae quo, mollitia
-								labore. Quis quasi ipsum molestiae maiores alias sequi, facilis!
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero quam ut aliquid eum doloribus, illum nam, quidem veritatis, molestiae atque labore
-								aspernatur! Velit distinctio molestiae eligendi, optio maiores eum.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus praesentium modi eaque, quasi eum quisquam reiciendis, voluptatibus unde non
-								deleniti. Perferendis possimus, inventore ipsa error ducimus vitae, alias illum.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo quam non, reprehenderit quo? Voluptate qui magni eum esse nobis ipsa
-								porro doloremque delectus, libero quam molestiae quibusdam illum nam.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vero asperiores unde libero vel mollitia similique, veritatis consequuntur ipsa
-								repudiandae amet nesciunt blanditiis cupiditate. Ipsa iste repellat ipsum quaerat praesentium.
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus, ea! Ullam nisi iure eum assumenda, voluptatem, voluptas provident quos
-								ipsum vel at, nam tenetur animi adipisci nulla dolores, dolorum.
-							</div>
-						</div>
-
-						<div class="tabcordion-body-header js-collapsible-tab">
-							<a href="#ex4-tab3" class="tabcordion-body-headline js-collapsible">Tab 3</a>
-						</div>
-						<div id="ex4-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
-							<div class="tabcordion-body">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit architecto assumenda qui excepturi deleniti dolorem ducimus obcaecati ad quae
-								consequatur, veniam nobis laudantium atque enim provident sint natus sit neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
-								aliquid! Ea aut illo, non similique quaerat cumque cupiditate dicta voluptatum mollitia, neque aliquid, temporibus quo odio dignissimos distinctio,
-								accusantium consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi officia, deserunt non nulla ex ea doloremque sapiente
-								unde, repudiandae nisi? Esse at suscipit quas dolorum sunt quisquam pariatur est.
-							</div>
-						</div>
-
 					</div>
+					<div id="ex2-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa non, id tempore voluptatem temporibus eligendi minus fuga odit unde iste consequuntur
+							nulla modi, inventore suscipit, libero adipisci eos voluptate ad!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor accusantium, explicabo voluptatem impedit sapiente voluptatum, ut, laboriosam incidunt
+							dolores temporibus laudantium suscipit non libero soluta commodi architecto illo beatae maiores.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi odio, aliquam commodi doloribus iure omnis. Ratione id velit, nesciunt,
+							eius saepe totam nobis eos veniam odit optio laboriosam modi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora architecto explicabo eaque pariatur et praesentium placeat! Similique doloremque
+							quia ea ab mollitia atque maxime quae quod necessitatibus, temporibus! Nobis, dicta.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto harum aliquid soluta molestiae, ducimus, atque quam eius pariatur voluptatum, dolores
+							necessitatibus ratione voluptates optio, neque quasi assumenda ullam sunt maxime.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi ipsam est doloremque voluptatem repellendus laboriosam quis! Ullam cumque,
+							quis culpa quam rerum odio vel dolore numquam, labore, eligendi possimus!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nihil laborum, qui deserunt accusantium atque harum! Ut rem recusandae quo, mollitia
+							labore. Quis quasi ipsum molestiae maiores alias sequi, facilis!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero quam ut aliquid eum doloribus, illum nam, quidem veritatis, molestiae atque labore
+							aspernatur! Velit distinctio molestiae eligendi, optio maiores eum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus praesentium modi eaque, quasi eum quisquam reiciendis, voluptatibus unde non
+							deleniti. Perferendis possimus, inventore ipsa error ducimus vitae, alias illum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo quam non, reprehenderit quo? Voluptate qui magni eum esse nobis ipsa
+							porro doloremque delectus, libero quam molestiae quibusdam illum nam.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vero asperiores unde libero vel mollitia similique, veritatis consequuntur ipsa
+							repudiandae amet nesciunt blanditiis cupiditate. Ipsa iste repellat ipsum quaerat praesentium.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus, ea! Ullam nisi iure eum assumenda, voluptatem, voluptas provident quos
+							ipsum vel at, nam tenetur animi adipisci nulla dolores, dolorum.
+						</div>
+					</div>
+					<div id="ex2-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit architecto assumenda qui excepturi deleniti dolorem ducimus obcaecati ad quae
+							consequatur, veniam nobis laudantium atque enim provident sint natus sit neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+							aliquid! Ea aut illo, non similique quaerat cumque cupiditate dicta voluptatum mollitia, neque aliquid, temporibus quo odio dignissimos distinctio,
+							accusantium consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi officia, deserunt non nulla ex ea doloremque sapiente
+							unde, repudiandae nisi? Esse at suscipit quas dolorum sunt quisquam pariatur est.
+						</div>
+					</div>
+
+				</div>
+
+
+				<h2>Tabcordion accordion alone</h2>
+
+				<div class="tabcordion tabcordion-accordion">
+					<div class="tabcordion-body-header js-collapsible-tab is-active">
+						<a href="#ex3-tab1" class="tabcordion-body-headline js-collapsible" aria-expanded="true" aria-selected="true" aria-controls="ex3-tab1">Tab 1</a>
+					</div>
+					<div id="ex3-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio saepe, voluptates sint, necessitatibus labore, ipsa iusto hic adipisci, reiciendis
+							aliquam unde nemo! Sunt, illum fuga quo in exercitationem accusantium dicta.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt cupiditate et vel sed, architecto qui inventore illum animi. Vel tenetur,
+							cumque. Alias doloremque reiciendis debitis assumenda temporibus laudantium distinctio.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rerum reprehenderit commodi tenetur veritatis ducimus, consectetur quidem exercitationem
+							doloremque cupiditate et ut, omnis repellendus perferendis nisi vero architecto. Blanditiis, perspiciatis!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet debitis non voluptates eaque neque rerum perferendis eos, doloribus et sunt culpa
+							doloremque omnis beatae cumque nulla, deserunt hic excepturi!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit sunt non ex dicta voluptatibus repellendus fuga distinctio, accusantium
+							reprehenderit laboriosam alias consectetur, reiciendis iste illo sed quod similique natus!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores iste, incidunt veniam quidem culpa aut doloremque nesciunt quod ullam rerum
+							quia sed magnam necessitatibus quam molestias officia. Reprehenderit, natus.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem totam eum blanditiis quas nam, illo itaque officia commodi! Tenetur ducimus
+							eius itaque quasi a sed soluta ipsam, veritatis autem.
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex3-tab2" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex3-tab2">
+							Tab 2<br>
+							with line break
+						</a>
+					</div>
+					<div id="ex3-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa non, id tempore voluptatem temporibus eligendi minus fuga odit unde iste consequuntur
+							nulla modi, inventore suscipit, libero adipisci eos voluptate ad!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor accusantium, explicabo voluptatem impedit sapiente voluptatum, ut, laboriosam incidunt
+							dolores temporibus laudantium suscipit non libero soluta commodi architecto illo beatae maiores.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi odio, aliquam commodi doloribus iure omnis. Ratione id velit, nesciunt,
+							eius saepe totam nobis eos veniam odit optio laboriosam modi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora architecto explicabo eaque pariatur et praesentium placeat! Similique doloremque
+							quia ea ab mollitia atque maxime quae quod necessitatibus, temporibus! Nobis, dicta.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto harum aliquid soluta molestiae, ducimus, atque quam eius pariatur voluptatum, dolores
+							necessitatibus ratione voluptates optio, neque quasi assumenda ullam sunt maxime.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi ipsam est doloremque voluptatem repellendus laboriosam quis! Ullam cumque,
+							quis culpa quam rerum odio vel dolore numquam, labore, eligendi possimus!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nihil laborum, qui deserunt accusantium atque harum! Ut rem recusandae quo, mollitia
+							labore. Quis quasi ipsum molestiae maiores alias sequi, facilis!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero quam ut aliquid eum doloribus, illum nam, quidem veritatis, molestiae atque labore
+							aspernatur! Velit distinctio molestiae eligendi, optio maiores eum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus praesentium modi eaque, quasi eum quisquam reiciendis, voluptatibus unde non
+							deleniti. Perferendis possimus, inventore ipsa error ducimus vitae, alias illum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo quam non, reprehenderit quo? Voluptate qui magni eum esse nobis ipsa
+							porro doloremque delectus, libero quam molestiae quibusdam illum nam.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vero asperiores unde libero vel mollitia similique, veritatis consequuntur ipsa
+							repudiandae amet nesciunt blanditiis cupiditate. Ipsa iste repellat ipsum quaerat praesentium.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus, ea! Ullam nisi iure eum assumenda, voluptatem, voluptas provident quos
+							ipsum vel at, nam tenetur animi adipisci nulla dolores, dolorum.
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex3-tab3" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex3-tab3">Tab 3 with long text and whatnot to see the wrapping of the text</a>
+					</div>
+					<div id="ex3-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit architecto assumenda qui excepturi deleniti dolorem ducimus obcaecati ad quae
+							consequatur, veniam nobis laudantium atque enim provident sint natus sit neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+							aliquid! Ea aut illo, non similique quaerat cumque cupiditate dicta voluptatum mollitia, neque aliquid, temporibus quo odio dignissimos distinctio,
+							accusantium consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi officia, deserunt non nulla ex ea doloremque sapiente
+							unde, repudiandae nisi? Esse at suscipit quas dolorum sunt quisquam pariatur est.
+						</div>
+					</div>
+
+				</div>
+
+
+				<h2>Tabcordion responsive</h2>
+
+				<div class="tabcordion">
+					<ul class="tabcordion-tabs" role="tablist">
+						<li class="tabcordion-tab js-collapsible-tab is-active" role="presentation">
+							<a class="js-collapsible" href="#ex4-tab1" aria-expanded="true" aria-selected="true" aria-controls="ex4-tab1" role="tab">Tab 1</a>
+						</li>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex4-tab2" aria-expanded="false" aria-selected="false" aria-controls="ex4-tab2" role="tab">Tab 2</a>
+						</li>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex4-tab3" aria-expanded="false" aria-selected="false" aria-controls="ex4-tab3" role="tab">Tab 3</a>
+						</li>
+					</ul>
+
+					<div class="tabcordion-body-header js-collapsible-tab is-active">
+						<a href="#ex4-tab1" class="tabcordion-body-headline js-collapsible" aria-expanded="true" aria-selected="true" aria-controls="ex4-tab1">Tab 1</a>
+					</div>
+					<div id="ex4-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio saepe, voluptates sint, necessitatibus labore, ipsa iusto hic adipisci, reiciendis
+							aliquam unde nemo! Sunt, illum fuga quo in exercitationem accusantium dicta.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam incidunt cupiditate et vel sed, architecto qui inventore illum animi. Vel tenetur,
+							cumque. Alias doloremque reiciendis debitis assumenda temporibus laudantium distinctio.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis rerum reprehenderit commodi tenetur veritatis ducimus, consectetur quidem exercitationem
+							doloremque cupiditate et ut, omnis repellendus perferendis nisi vero architecto. Blanditiis, perspiciatis!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error amet debitis non voluptates eaque neque rerum perferendis eos, doloribus et sunt culpa
+							doloremque omnis beatae cumque nulla, deserunt hic excepturi!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae odit sunt non ex dicta voluptatibus repellendus fuga distinctio, accusantium
+							reprehenderit laboriosam alias consectetur, reiciendis iste illo sed quod similique natus!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores iste, incidunt veniam quidem culpa aut doloremque nesciunt quod ullam rerum
+							quia sed magnam necessitatibus quam molestias officia. Reprehenderit, natus.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat autem totam eum blanditiis quas nam, illo itaque officia commodi! Tenetur ducimus
+							eius itaque quasi a sed soluta ipsam, veritatis autem.
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex4-tab2" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex4-tab2">Tab 2</a>
+					</div>
+					<div id="ex4-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa non, id tempore voluptatem temporibus eligendi minus fuga odit unde iste consequuntur
+							nulla modi, inventore suscipit, libero adipisci eos voluptate ad!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor accusantium, explicabo voluptatem impedit sapiente voluptatum, ut, laboriosam incidunt
+							dolores temporibus laudantium suscipit non libero soluta commodi architecto illo beatae maiores.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sequi odio, aliquam commodi doloribus iure omnis. Ratione id velit, nesciunt,
+							eius saepe totam nobis eos veniam odit optio laboriosam modi.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora architecto explicabo eaque pariatur et praesentium placeat! Similique doloremque
+							quia ea ab mollitia atque maxime quae quod necessitatibus, temporibus! Nobis, dicta.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto harum aliquid soluta molestiae, ducimus, atque quam eius pariatur voluptatum, dolores
+							necessitatibus ratione voluptates optio, neque quasi assumenda ullam sunt maxime.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente quasi ipsam est doloremque voluptatem repellendus laboriosam quis! Ullam cumque,
+							quis culpa quam rerum odio vel dolore numquam, labore, eligendi possimus!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex nihil laborum, qui deserunt accusantium atque harum! Ut rem recusandae quo, mollitia
+							labore. Quis quasi ipsum molestiae maiores alias sequi, facilis!
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vero quam ut aliquid eum doloribus, illum nam, quidem veritatis, molestiae atque labore
+							aspernatur! Velit distinctio molestiae eligendi, optio maiores eum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus praesentium modi eaque, quasi eum quisquam reiciendis, voluptatibus unde non
+							deleniti. Perferendis possimus, inventore ipsa error ducimus vitae, alias illum.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque explicabo quam non, reprehenderit quo? Voluptate qui magni eum esse nobis ipsa
+							porro doloremque delectus, libero quam molestiae quibusdam illum nam.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione vero asperiores unde libero vel mollitia similique, veritatis consequuntur ipsa
+							repudiandae amet nesciunt blanditiis cupiditate. Ipsa iste repellat ipsum quaerat praesentium.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur delectus, ea! Ullam nisi iure eum assumenda, voluptatem, voluptas provident quos
+							ipsum vel at, nam tenetur animi adipisci nulla dolores, dolorum.
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex4-tab3" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex4-tab3">Tab 3</a>
+					</div>
+					<div id="ex4-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit architecto assumenda qui excepturi deleniti dolorem ducimus obcaecati ad quae
+							consequatur, veniam nobis laudantium atque enim provident sint natus sit neque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil,
+							aliquid! Ea aut illo, non similique quaerat cumque cupiditate dicta voluptatum mollitia, neque aliquid, temporibus quo odio dignissimos distinctio,
+							accusantium consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi officia, deserunt non nulla ex ea doloremque sapiente
+							unde, repudiandae nisi? Esse at suscipit quas dolorum sunt quisquam pariatur est.
+						</div>
+					</div>
+
+				</div>
+
+				<h2>Tabcordion lego accordion alone with scroll offest by 100</h2>
+
+				<div class="tabcordion tabcordion-accordion" data-tabcordion-scroll="100">
+					<div class="tabcordion-body-header js-collapsible-tab is-active">
+						<a href="#ex11-tab1" class="tabcordion-body-headline js-collapsible" aria-expanded="true" aria-selected="true" aria-controls="ex11-tab1">Tab 1</a>
+					</div>
+					<div id="ex11-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex11-tab2" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex11-tab2">
+							Tab 2<br>
+							with line break
+						</a>
+					</div>
+					<div id="ex11-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex11-tab3" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex11-tab3">
+							Tab 3 with long text and whatnot to see the wrapping of the text
+						</a>
+					</div>
+					<div id="ex11-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex11-tab4" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex11-tab4">
+							Tab 4 with long text and whatnot to see the wrapping of the text
+						</a>
+					</div>
+					<div id="ex11-tab4" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+				</div>
+
+
+				<h2>Tabcordion lego responsive with scroll offset by 200</h2>
+
+				<div class="tabcordion" data-tabcordion-scroll="200">
+					<ul class="tabcordion-tabs" role="tablist">
+						<li class="tabcordion-tab js-collapsible-tab is-active" role="presentation">
+							<a class="js-collapsible" href="#ex12-tab1" aria-expanded="true" aria-selected="true" aria-controls="ex12-tab1" role="tab">Tab 1</a>
+						</li>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex12-tab2" aria-expanded="false" aria-selected="false" aria-controls="ex12-tab2" role="tab">Tab 2</a>
+						</li>
+					</ul>
+
+					<div class="tabcordion-body-header js-collapsible-tab is-active">
+						<a href="#ex12-tab1" class="tabcordion-body-headline js-collapsible" aria-expanded="true" aria-selected="true" aria-controls="ex12-tab1">Tab 1</a>
+					</div>
+					<div id="ex12-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex12-tab2" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex12-tab2">Tab 2</a>
+					</div>
+					<div id="ex12-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+				</div>
 			</div>
 
 
@@ -4872,18 +5133,18 @@
 				<h2>Tabcordion lego tabs alone</h2>
 
 				<div class="tabcordion tabcordion-lego tabcordion-tabs">
-					<ul class="tabcordion-tabs">
-						<li class="tabcordion-tab js-collapsible-tab is-active">
-							<a class="js-collapsible" href="#ex5-tab1">Tab 1</a>
+					<ul class="tabcordion-tabs" role="tablist">
+						<li class="tabcordion-tab js-collapsible-tab is-active" role="presentation">
+							<a class="js-collapsible" href="#ex5-tab1" aria-expanded="true" aria-selected="true" aria-controls="ex5-tab1" role="tab">Tab 1</a>
 						</li>
-						<li class="tabcordion-tab js-collapsible-tab">
-							<a class="js-collapsible" href="#ex5-tab2">
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex5-tab2" aria-expanded="false" aria-selected="false" aria-controls="ex5-tab2" role="tab">
 								Tab 2<br>
 								with line break
 							</a>
 						</li>
-						<li class="tabcordion-tab js-collapsible-tab">
-							<a class="js-collapsible" href="#ex5-tab3">Tab 3</a>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex5-tab3" aria-expanded="false" aria-selected="false" aria-controls="ex5-tab3" role="tab">Tab 3</a>
 						</li>
 					</ul>
 
@@ -4949,15 +5210,17 @@
 				<h2>Tabcordion lego tabs alone justified</h2>
 
 				<div class="tabcordion tabcordion-lego tabcordion-tabs">
-					<ul class="tabcordion-tabs tabcordion-tabs-justified">
-						<li class="tabcordion-tab js-collapsible-tab is-active">
-							<a class="js-collapsible" href="#ex6-tab1">Tab 1</a>
+					<ul class="tabcordion-tabs tabcordion-tabs-justified" role="tablist">
+						<li class="tabcordion-tab js-collapsible-tab is-active" role="presentation">
+							<a class="js-collapsible" href="#ex6-tab1" aria-expanded="true" aria-selected="true" aria-controls="ex6-tab1" role="tab">Tab 1</a>
 						</li>
-						<li class="tabcordion-tab js-collapsible-tab">
-							<a class="js-collapsible" href="#ex6-tab2">Tab 2 with long text that goes a long way</a>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex6-tab2" aria-expanded="false" aria-selected="false" aria-controls="ex6-tab2" role="tab">
+								Tab 2<br>with really long text
+							</a>
 						</li>
-						<li class="tabcordion-tab js-collapsible-tab">
-							<a class="js-collapsible" href="#ex6-tab3">Tab 3</a>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex6-tab3" aria-expanded="false" aria-selected="false" aria-controls="ex6-tab3" role="tab">Tab 3</a>
 						</li>
 					</ul>
 
@@ -5024,7 +5287,7 @@
 
 				<div class="tabcordion tabcordion-lego tabcordion-accordion">
 					<div class="tabcordion-body-header js-collapsible-tab is-active">
-						<a href="#ex7-tab1" class="tabcordion-body-headline js-collapsible">Tab 1</a>
+						<a href="#ex7-tab1" class="tabcordion-body-headline js-collapsible" aria-expanded="true" aria-selected="true" aria-controls="ex7-tab1">Tab 1</a>
 					</div>
 					<div id="ex7-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
 						<div class="tabcordion-body">
@@ -5046,7 +5309,7 @@
 					</div>
 
 					<div class="tabcordion-body-header js-collapsible-tab">
-						<a href="#ex7-tab2" class="tabcordion-body-headline js-collapsible">
+						<a href="#ex7-tab2" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex7-tab2">
 							Tab 2<br>
 							with line break
 						</a>
@@ -5081,7 +5344,9 @@
 					</div>
 
 					<div class="tabcordion-body-header js-collapsible-tab">
-						<a href="#ex7-tab3" class="tabcordion-body-headline js-collapsible">Tab 3 with long text and whatnot to see the wrapping of the text</a>
+						<a href="#ex7-tab3" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex7-tab3">
+							Tab 3 with long text and whatnot to see the wrapping of the text
+						</a>
 					</div>
 					<div id="ex7-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
 						<div class="tabcordion-body">
@@ -5099,20 +5364,20 @@
 				<h2>Tabcordion lego responsive</h2>
 
 				<div class="tabcordion tabcordion-lego">
-					<ul class="tabcordion-tabs">
-						<li class="tabcordion-tab js-collapsible-tab is-active">
-							<a class="js-collapsible" href="#ex8-tab1">Tab 1</a>
+					<ul class="tabcordion-tabs" role="tablist">
+						<li class="tabcordion-tab js-collapsible-tab is-active" role="presentation">
+							<a class="js-collapsible" href="#ex8-tab1" aria-expanded="true" aria-selected="true" aria-controls="ex8-tab1" role="tab">Tab 1</a>
 						</li>
-						<li class="tabcordion-tab js-collapsible-tab">
-							<a class="js-collapsible" href="#ex8-tab2">Tab 2</a>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex8-tab2" aria-expanded="false" aria-selected="false" aria-controls="ex8-tab2" role="tab">Tab 2</a>
 						</li>
-						<li class="tabcordion-tab js-collapsible-tab">
-							<a class="js-collapsible" href="#ex8-tab3">Tab 3</a>
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex8-tab3" aria-expanded="false" aria-selected="false" aria-controls="ex8-tab3" role="tab">Tab 3</a>
 						</li>
 					</ul>
 
 					<div class="tabcordion-body-header js-collapsible-tab is-active">
-						<a href="#ex8-tab1" class="tabcordion-body-headline js-collapsible">Tab 1</a>
+						<a href="#ex8-tab1" class="tabcordion-body-headline js-collapsible" aria-expanded="true" aria-selected="true" aria-controls="ex8-tab1">Tab 1</a>
 					</div>
 					<div id="ex8-tab1" class="collapsible-body is-open" aria-hidden="false" tabindex="-1">
 						<div class="tabcordion-body">
@@ -5134,7 +5399,7 @@
 					</div>
 
 					<div class="tabcordion-body-header js-collapsible-tab">
-						<a href="#ex8-tab2" class="tabcordion-body-headline js-collapsible">Tab 2</a>
+						<a href="#ex8-tab2" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex8-tab2">Tab 2</a>
 					</div>
 					<div id="ex8-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
 						<div class="tabcordion-body">
@@ -5166,7 +5431,7 @@
 					</div>
 
 					<div class="tabcordion-body-header js-collapsible-tab">
-						<a href="#ex8-tab3" class="tabcordion-body-headline js-collapsible">Tab 3</a>
+						<a href="#ex8-tab3" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex8-tab3">Tab 3</a>
 					</div>
 					<div id="ex8-tab3" class="collapsible-body" aria-hidden="true" tabindex="-1">
 						<div class="tabcordion-body">
@@ -5175,6 +5440,87 @@
 							aliquid! Ea aut illo, non similique quaerat cumque cupiditate dicta voluptatum mollitia, neque aliquid, temporibus quo odio dignissimos distinctio,
 							accusantium consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi officia, deserunt non nulla ex ea doloremque sapiente
 							unde, repudiandae nisi? Esse at suscipit quas dolorum sunt quisquam pariatur est.
+						</div>
+					</div>
+
+				</div>
+
+				<h2>Tabcordion lego accordion alone with scroll disabled</h2>
+
+				<div class="tabcordion tabcordion-lego tabcordion-accordion" data-tabcordion-scroll="none">
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex9-tab1" class="tabcordion-body-headline js-collapsible" aria-expanded="true" aria-selected="true" aria-controls="ex9-tab1">Tab 1</a>
+					</div>
+					<div id="ex9-tab1" class="collapsible-body" aria-hidden="false" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex9-tab2" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex9-tab2">
+							Tab 2<br>
+							with line break
+						</a>
+					</div>
+					<div id="ex9-tab2" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab is-active">
+						<a href="#ex9-tab3" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex9-tab3">
+							Tab 3 with long text and whatnot to see the wrapping of the text
+						</a>
+					</div>
+					<div id="ex9-tab3" class="collapsible-body is-open" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex9-tab4" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex9-tab4">
+							Tab 4 with long text and whatnot to see the wrapping of the text
+						</a>
+					</div>
+					<div id="ex9-tab4" class="collapsible-body" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+				</div>
+
+
+				<h2>Tabcordion lego responsive with scroll disabled</h2>
+
+				<div class="tabcordion tabcordion-lego" data-tabcordion-scroll="none">
+					<ul class="tabcordion-tabs" role="tablist">
+						<li class="tabcordion-tab js-collapsible-tab" role="presentation">
+							<a class="js-collapsible" href="#ex10-tab1" aria-expanded="true" aria-selected="true" aria-controls="ex10-tab1" role="tab">Tab 1</a>
+						</li>
+						<li class="tabcordion-tab js-collapsible-tab is-active" role="presentation">
+							<a class="js-collapsible" href="#ex10-tab2" aria-expanded="false" aria-selected="false" aria-controls="ex10-tab2" role="tab">Tab 2</a>
+						</li>
+					</ul>
+
+					<div class="tabcordion-body-header js-collapsible-tab">
+						<a href="#ex10-tab1" class="tabcordion-body-headline js-collapsible" aria-expanded="true" aria-selected="true" aria-controls="ex10-tab1">Tab 1</a>
+					</div>
+					<div id="ex10-tab1" class="collapsible-body" aria-hidden="false" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
+						</div>
+					</div>
+
+					<div class="tabcordion-body-header js-collapsible-tab is-active">
+						<a href="#ex10-tab2" class="tabcordion-body-headline js-collapsible" aria-expanded="false" aria-selected="false" aria-controls="ex10-tab2">Tab 2</a>
+					</div>
+					<div id="ex10-tab2" class="collapsible-body is-open" aria-hidden="true" tabindex="-1">
+						<div class="tabcordion-body">
+							Stuff
 						</div>
 					</div>
 

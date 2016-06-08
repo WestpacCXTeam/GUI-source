@@ -303,7 +303,7 @@ GUI.init();
 	GUI.alerts.init();
 
 }(GUI));
-/*! Buttons v2.0.1 */
+/*! Buttons v3.0.0 */
 /***************************************************************************************************************************************************************
  *
  * buttons
@@ -751,7 +751,7 @@ GUI.init();
 	GUI.popovers.init();
 
 }(GUI));
-/*! Tabcordions v2.0.1 */
+/*! Tabcordions v3.0.0 */
 /***************************************************************************************************************************************************************
  *
  * tabcordion-soft
@@ -946,6 +946,7 @@ GUI.init();
 			var $this = $(this);
 			var target = $this.attr('href') ? $this.attr('href') : $this.attr('data-collapsible');
 			var $tabcordion = $this.parents('.tabcordion')
+			var _hasScrollOffset = $tabcordion.attr('data-tabcordion-scroll') !== 'undefined' && $tabcordion.attr('data-tabcordion-scroll') !== 'none';
 
 			if( $tabcordion.length ) {
 				GUI.debugging( 'collapsible: Found to be inside tabcordion', 'report' );
@@ -969,10 +970,25 @@ GUI.init();
 				//animating transition
 				if( _isAccordion ) {
 					GUI.collapsible.close( $tabs.filter('.is-open'), true );
-					GUI.collapsible.open( $tabcordion.find( target ), true, function scrollToTab() {
-						//scroll to top
-						$('html, body').animate({ scrollTop: ( $this.offset().top - 60 ) }, 300);
-					}, false);
+
+					if( _hasScrollOffset ) {
+						GUI.debugging( 'collapsible: Open accordion with scroll-to-content', 'report' );
+
+						var scrollOffset = $tabcordion.attr('data-tabcordion-scroll');
+						if( scrollOffset === undefined ) {
+							scrollOffset = 0;
+						}
+
+						GUI.collapsible.open( $tabcordion.find( target ), true, function scrollToTab() {
+							//scroll to top
+							$('html, body').animate({ scrollTop: ( $this.offset().top - 60 - scrollOffset ) }, 300);
+						}, false);
+					}
+					else {
+						GUI.debugging( 'collapsible: Open accordion without scroll-to-content', 'report' );
+
+						GUI.collapsible.open( $tabcordion.find( target ), true, null, false);
+					}
 				}
 				else {
 					GUI.collapsible.close( $tabs.filter('.is-open'), false, function closingCallback() {
@@ -990,6 +1006,17 @@ GUI.init();
 					.find('.js-collapsible[data-collapsible="' + target + '"], .js-collapsible[href="' + target + '"]')
 					.parents('.js-collapsible-tab')
 					.addClass('is-active');
+
+				//changing aria attributes
+				$tabcordion
+					.find('.js-collapsible')
+					.attr('aria-selected', false)
+					.attr('aria-expanded', false);
+
+				$tabcordion
+					.find('.js-collapsible[data-collapsible="' + target + '"], .js-collapsible[href="' + target + '"]')
+					.attr('aria-selected', true)
+					.attr('aria-expanded', true);
 			}
 			else {
 				GUI.debugging( 'collapsible: Triggering pure toggle', 'report' );

@@ -21,6 +21,18 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+	* Headlines caused a lot of confusion. We showed tags in the examples, developers knew they should us the classes so we removed the tags from the selectors.
+		Less shenanigans, more classes.
+		[#251](https://github.com/WestpacCXTeam/GUI-source/issues/251)
+	* We nudged the spacing of the paragraphs ever so slightly. This should be better now. Definitely! Maybe.
+		[#253](https://github.com/WestpacCXTeam/GUI-source/issues/253)
+	* We made improvements to our A11Y. Now all links come with underlines so you can tell them apart by color AND shape. Also A11Y means "accessibility" for all
+		who were wondering.
+		[#247](https://github.com/WestpacCXTeam/GUI-source/issues/247)
+	* We started working on even better A11Y. Something we are passionate about. A11Y that is, not working in general.
+		[#214](https://github.com/WestpacCXTeam/GUI-source/issues/214)
+		[#241](https://github.com/WestpacCXTeam/GUI-source/issues/241)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 	* We’ve updated to normalizer 4.0 which comes with juicy new fixes and normalizations. (Yes! That’s a thing)

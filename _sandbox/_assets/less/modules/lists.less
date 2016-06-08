@@ -1,4 +1,4 @@
-/*! Lists v2.0.1 WBC*/
+/*! Lists v2.0.2 WBC*/
 /*
  * lists mixins
  *
@@ -92,6 +92,11 @@
 
 			& > a {
 				color: @color-Text;
+				text-decoration: none;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 
