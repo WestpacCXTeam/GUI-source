@@ -21,6 +21,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* Part of the STG logos where not showing. We really want all parts of the logos showing so we gave it a pep-talk.
+		[#254](https://github.com/WestpacCXTeam/GUI-source/issues/254)
 * v2.0.1 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 	* In a cleaning-frenzy we removed duplicated logos and renamed them to more relevant names. Now all done and dusted!

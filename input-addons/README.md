@@ -20,6 +20,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* The input-addons historically caused issues by refusing to dynamically size its width. Let’s not look back to those dark times but focus on the fact that
+		we’ve fixed it now.
+		[#239](https://github.com/WestpacCXTeam/GUI-source/issues/239)
+	* IE8 and IE9, although not our favorite browsers, received some love as well.
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

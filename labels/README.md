@@ -19,6 +19,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* We made improvements to our A11Y. Now all links come with underlines so you can tell them apart by color AND shape. Also A11Y means "accessibility" for all
+		who were wondering.
+		[#247](https://github.com/WestpacCXTeam/GUI-source/issues/247)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

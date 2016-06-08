@@ -19,6 +19,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+	* We removed the list-group links as it wasn’t accessible and never used.
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
