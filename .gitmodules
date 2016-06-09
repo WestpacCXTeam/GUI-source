@@ -670,3 +670,6 @@
 [submodule "list-groups/3.0.0"]
 	path = list-groups/3.0.0
 	url = https://github.com/WestpacCXTeam/GUI-list-groups.git
+[submodule "modals/2.0.2"]
+	path = modals/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-modals.git
