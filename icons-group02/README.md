@@ -22,6 +22,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.0 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* We removed the floppy disk save icon because, let’s face it, no-one remembers what a floppy disk is.
 * v2.0.0 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* All SVGs now come with a unique title ID. That may not sound like much but SVGs are very particular about their individualism.
 		[#204](https://github.com/WestpacCXTeam/GUI-source/issues/204)
