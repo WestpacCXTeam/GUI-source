@@ -163,7 +163,7 @@ See more in [Workflow](#workflow).
 	1. [x] check local copy and blend new blend if required
 	1. [x] install new GUI module into the docs build (js, css, grunticon, img fallback)
 	1. [x] check new versions examples in all brands
-	1. [x] `grunt prod`
+	1. [x] `grunt prod-all`
 	1. [x] commit, merge `gh-pages` and `master`
 1. upload files
 	1. [x] rename `construction2.html` to `construction.html` to redirect traffic to this file with ngix
