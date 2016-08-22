@@ -20,6 +20,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* The checkboxes slimmed down to 24px after a month of cardio and strict diet.
+		[#151](https://github.com/WestpacCXTeam/GUI-source/issues/151)
+	* Printing the checkboxes now looks every nicer
+	* Even IE8 got some love in this version
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

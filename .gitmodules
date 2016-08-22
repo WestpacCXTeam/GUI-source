@@ -676,3 +676,12 @@
 [submodule "icons-group02/3.0.0"]
 	path = icons-group02/3.0.0
 	url = https://github.com/WestpacCXTeam/GUI-icons-group02.git
+[submodule "buttons/3.0.1"]
+	path = buttons/3.0.1
+	url = https://github.com/WestpacCXTeam/GUI-buttons.git
+[submodule "checkboxes/2.0.2"]
+	path = checkboxes/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-checkboxes.git
+[submodule "radios/2.0.2"]
+	path = radios/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-radios.git

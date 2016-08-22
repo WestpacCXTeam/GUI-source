@@ -20,6 +20,14 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Link buttons did not like icons but icons liked buttons and wanted to make it work. After an intense couples therapy both now get along just fine.
+		[#264](https://github.com/WestpacCXTeam/GUI-source/issues/264)
+	* When we call a button faint and soft we might as well use the muted text color to show the full submissiveness of this variation.
+		[#265](https://github.com/WestpacCXTeam/GUI-source/issues/265)
+	* We found a little known behaviour difference between the HTML button tag and the HTML anchor tag. They take the same CSS but apply it differently.
+		Pixel perfect as we are, this has now been fixed after a three day pixel-pushing session. This kind of work is only possible in a design system. ✊
+		[#272](https://github.com/WestpacCXTeam/GUI-source/issues/272)
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* The dropdowns got an upgrade to uber-status. The Button-groups also got a new style for when you have a line of text preceding it. We are not sure which
 		of the two we are most excited about.
