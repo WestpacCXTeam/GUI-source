@@ -151,7 +151,7 @@ See more in [Workflow](#workflow).
 	1. [x] update submodule to pull files (command above does that automatically)
 	1. [x] checkout tag (should always be the latest tag)
 	1. [x] `grunt`
-	1. [x] commit, merge `gh-pages` and `master`
+	1. [x] commit and push `master` (`master` is what GitHub pages points to here)
 1. Gui-docs
 	1. [x] pull submodule
 	1. [x] update new submodules to pull files
@@ -165,6 +165,7 @@ See more in [Workflow](#workflow).
 	1. [x] check new versions examples in all brands
 	1. [x] `grunt prod-all`
 	1. [x] commit, merge `gh-pages` and `master`
+	1. [x] now make sure all modules have their tags published, GitHub releases submited
 1. upload files
 	1. [x] rename `construction2.html` to `construction.html` to redirect traffic to this file with ngix
 	1. [x] upload `GUI.zip` and `docs.zip` to `.temp` folder (check no version folders are empty)
