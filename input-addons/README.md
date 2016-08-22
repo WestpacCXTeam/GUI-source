@@ -12,7 +12,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-input-addons/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-input-addons/tests/BT/)
 
-> Forms play an important role in our brand's products and services. All roads lead to a form so it’s important to get them right. These basic form
+> Forms play an important role in our brand’s products and services. All roads lead to a form so it’s important to get them right. These basic form
 > elements have been carefully crafted and rigorously tested. Use them as the foundation for any form creation.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -486,7 +486,7 @@ module.exports = function(grunt) {
 		font: {
 			options: {
 				space: false,
-				maxLength: 11,
+				align: 'center',
 				colors: ['white', 'gray'],
 			},
 
