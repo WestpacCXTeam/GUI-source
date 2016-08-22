@@ -23,8 +23,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The radios slimmed down to 24px after a month of cardio and strict diet.
 		[#151](https://github.com/WestpacCXTeam/GUI-source/issues/151)
-	* Printing the radios now looks every nicer
-	* Even IE8 got some love in this version
+	* Printing the radios although not very functional, will now at least look good and make clear what selection was selected.
+	* Some love was given to IE8 though we can’t say the browser seems to return our affection.
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
