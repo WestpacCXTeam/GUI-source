@@ -20,7 +20,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+* v3.0.1 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Link buttons did not like icons but icons liked buttons and wanted to make it work. After an intense couples therapy both now get along just fine.
 		[#264](https://github.com/WestpacCXTeam/GUI-source/issues/264)
 	* When we call a button faint and soft we might as well use the muted text color to show the full submissiveness of this variation.
