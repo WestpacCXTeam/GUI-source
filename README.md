@@ -166,6 +166,8 @@ See more in [Workflow](#workflow).
 	1. [x] `grunt prod-all`
 	1. [x] commit, merge `gh-pages` and `master`
 	1. [x] now make sure all modules have their tags published, GitHub releases submited
+	1. [x] if fonts have changed make sure to upload the new webfont zip to
+		[the internal hosting site](https://sites.thewestpacgroup.com.au/sites/TS1206/SitePages/Home.aspx)
 1. upload files
 	1. [x] rename `construction2.html` to `construction.html` to redirect traffic to this file with ngix
 	1. [x] upload `GUI.zip` and `docs.zip` to `.temp` folder (check no version folders are empty)
@@ -174,8 +176,8 @@ See more in [Workflow](#workflow).
 	1. [x] `unzip gui.zip -d ../` or `grunt unzip:GUI`
 	1. [x] possibly `npm i` in `blender/remote` folder
 	1. [x] `forever list`
-	1. [x] `forever restart 0` or `forever start blender/remote/server.js`
-	1. [x] `forever list`
+	1. [x] `forever restart 0` or `forever start -l blender.log --append -o blenderOut.log -e blenderError.log server.js`
+	1. [x] `forever list` and blend something to test
 	1. [x] `rm -rf BOM` | `rm -rf BSA` | `rm -rf STG` | `rm -rf WBC` | `rm -rf WBG` | `rm -rf BT`
 	1. [x] `unzip docs.zip -d ../`
 	1. [x] rename `construction.html` to `construction2.html` to direct traffic back to the site
