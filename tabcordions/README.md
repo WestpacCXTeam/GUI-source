@@ -20,6 +20,12 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.0.0 - `LESS/CSS` `HTML` `JS`
+	* Tabcordions gain a helper. The WCAG has long been struggling with how to use arrow keys vs the tab key for keyboard users. This update is an attempt to
+		help both use cases while improving the overall usability of tabs.
+		[#283](https://github.com/WestpacCXTeam/GUI-source/issues/283)
+	* The body of the tabcordion was transparent. We don’t have casual Friday here at the GUI headquarter and put the tabcordion in the proper attire.
+		[#275](https://github.com/WestpacCXTeam/GUI-source/issues/275)
 * v3.0.0 - `LESS/CSS` `HTML` `JS`
 	* Tabcordions have this really neat class that makes all tabs equal heights which looks really rad! Unless it doesn’t work. Then it looks bad, less rad.
 		No more.

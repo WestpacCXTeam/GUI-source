@@ -21,6 +21,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* We added Westpacs 200 year birthday logo. Yes. We’re turning 200. 🎂🎉🎁 Feels just like yesterday when we started with this whole banking thing.
+		[#280](https://github.com/WestpacCXTeam/GUI-source/issues/280)
 * v2.0.2 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Part of the STG logos where not showing. We really want all parts of the logos showing so we gave it a pep-talk.
 		[#254](https://github.com/WestpacCXTeam/GUI-source/issues/254)

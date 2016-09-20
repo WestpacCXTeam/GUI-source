@@ -19,6 +19,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* We added some diversity to lists and are proud to introduce you to icon lists. You can now use any icons and add them to your list. PDF lists, padlock
+		lists, star lists, all now possible!
+		[#230](https://github.com/WestpacCXTeam/GUI-source/issues/230)
+	* Sometimes you want to list something in order. That’s where the HTML tag ol (ordered list) comes in. When using this tag with the lists class you now get
+		all the benefits of a GUI list without the bullets and the whole shebang.
+		[#248](https://github.com/WestpacCXTeam/GUI-source/issues/248)
+	* In link lists the chevron was a little too friendly with the text. We had a long talk about personal space and now we are all cool. More space.
+		[#268](https://github.com/WestpacCXTeam/GUI-source/issues/268)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* We made improvements to our A11Y. Now all links come with underlines so you can tell them apart by color AND shape. Also A11Y means "accessibility" for all
 		who were wondering.

@@ -21,6 +21,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+	* We have removed the classes for headlines. Wow. I know! The thing was, they were not really useful and more overwritten than used as is. Now you can go and
+		run your own headlines. Prettier, more your.
+		[#277](https://github.com/WestpacCXTeam/GUI-source/issues/277)
+	* Updated the normalize CSS to v4.2.0. (Everything is now even more normal)
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Headlines caused a lot of confusion. We showed tags in the examples, developers knew they should us the classes so we removed the tags from the selectors.
 		Less shenanigans, more classes.

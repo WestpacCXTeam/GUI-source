@@ -19,13 +19,17 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* The popover demanded space in the flow on initial page load. Really that didn’t make any sense as the popover was hidden at first and hidden things don’t
+		need no space in the flow. No more space flowing!
+		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
 * v1.0.1 - ~~`LESS/CSS`~~ `JS` `HTML`
-	* We got word that using our JavaScript in dynamic DOM application was a bit... clunky. Clunky wasn't good enough for us so we refactored all Javascript
+	* We got word that using our JavaScript in dynamic DOM application was a bit... clunky. Clunky wasn’t good enough for us so we refactored all Javascript
 		modules to unclunk all the things. Beware though, some JavaScript classes had to be injected to keep the modules clunk-free.
 		[#140](https://github.com/WestpacCXTeam/GUI-source/issues/140)
 * v1.0.0 - Initial port
