@@ -27,22 +27,22 @@
 	],
 	"colors": {
 		"BOM": {
-			"Color-Text": "#20262d",
+			"Color-Text": "#1f252c",
 			"Color-Muted": "#69727e",
 			"lists-link": "#b45c38",
-			"lists-tick": "#444f5e",
-			"radcheck-active": "#444f5e",
+			"lists-tick": "#1f252c",
+			"radcheck-active": "#1f252c",
 			"radcheck-disabled-bg": "#f7f8f9",
 			"radcheck-disabled-border": "#d2d5d8"
 		},
 		"BSA": {
 			"Color-Text": "#333",
-			"Color-Muted": "#707070",
-			"lists-link": "#c0142e",
-			"lists-tick": "#365fb4",
-			"radcheck-active": "#365fb4",
-			"radcheck-disabled-bg": "#f5f5f5",
-			"radcheck-disabled-border": "#c2c2c2"
+			"Color-Muted": "#6c7074",
+			"lists-link": "#d81b2b",
+			"lists-tick": "#002f6c",
+			"radcheck-active": "#002f6c",
+			"radcheck-disabled-bg": "#f0f1f1",
+			"radcheck-disabled-border": "#d3d4d5"
 		},
 		"STG": {
 			"Color-Text": "#004833",

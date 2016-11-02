@@ -706,3 +706,6 @@
 [submodule "tabcordions/4.0.0"]
 	path = tabcordions/4.0.0
 	url = https://github.com/WestpacCXTeam/GUI-tabcordions.git
+[submodule "_colors/2.0.2"]
+	path = _colors/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI_colors.git
