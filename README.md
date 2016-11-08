@@ -121,7 +121,7 @@ See more in [Workflow](#workflow).
 	1. [x] replace `[-Module-]` with module name in `README.md`, `module.json`, `package.json`, `less/module-mixin.less`, `js/module.js`
 	1. [x] make sure `core` is up to date
 	1. [x] create the module
-	1. [x] adjust `module.json` to relfect use of `js`, `less`, `svg` etc.
+	1. [x] adjust `module.json` to reflect use of `js`, `less`, `svg` etc.
 	1. [x] commit, merge `gh-pages` and `master`
 	1. [x] tag, publish tag
 	1. [x] edit release on GitHub
@@ -137,8 +137,8 @@ See more in [Workflow](#workflow).
 	1. [x] make changes
 	1. [x] `README.md` whatsnew
 	1. [x] commit, merge `gh-pages` and `master`, reference issues with: `WestpacCXTeam/GUI-source#[issue number]`
-		or reference commits with: `WestpacCXTeam/[repo name]@[commit hash]`
-	1. [x] -- _Do the follwoing after email is sent out_ --
+		or reference commits with: `WestpacCXTeam/[repo name]@[commit hash]` and fix issues via `fixed WestpacCXTeam/GUI-source#[issue number]`
+	1. [x] -- _Do the following after email is sent out_ --
 	1. [x] tag, publish tag
 	1. [x] edit release on GitHub
 
@@ -150,12 +150,13 @@ See more in [Workflow](#workflow).
 	1. [x] add submodule in new version folder `git submodule add https://github.com/WestpacCXTeam/GUI-[module].git [module]/[version]`
 	1. [x] update submodule to pull files (command above does that automatically)
 	1. [x] checkout tag (should always be the latest tag)
-	1. [x] `grunt`
+	1. [x] `grunt` to compile `index.html`, `GUI.json` and all READMEs
 	1. [x] commit and push `master` (`master` is what GitHub pages points to here)
 1. Gui-docs
-	1. [x] pull submodule
+	1. [x] pull submodule `GUI-source` and update to latest master release
 	1. [x] update new submodules to pull files
 	1. [x] run `grunt new-example` to add the missing `_inludes/modules` and copy the `_examples` folder
+	1. [x] make sure you have the new `_inludes/modules/[module]/[version].liquid` file and updated it's documentation
 	1. [x] adjust `_examples` and add whatsnew
 	1. [x] add email link to GUI mail archive in Getting started
 	1. [x] `grunt server`
@@ -163,21 +164,21 @@ See more in [Workflow](#workflow).
 	1. [x] check local copy and blend new blend if required
 	1. [x] install new GUI module into the docs build (js, css, grunticon, img fallback)
 	1. [x] check new versions examples in all brands
-	1. [x] `grunt prod-all`
+	1. [x] `grunt prod-all` to build the production files
 	1. [x] commit, merge `gh-pages` and `master`
-	1. [x] now make sure all modules have their tags published, GitHub releases submited
+	1. [x] now make sure all modules have their tags published, GitHub releases submitted
 	1. [x] if fonts have changed make sure to upload the new webfont zip to
 		[the internal hosting site](https://sites.thewestpacgroup.com.au/sites/TS1206/SitePages/Home.aspx)
 1. upload files
-	1. [x] rename `construction2.html` to `construction.html` to redirect traffic to this file with ngix
-	1. [x] upload `GUI.zip` and `docs.zip` to `.temp` folder (check no version folders are empty)
+	1. [x] upload `gui.zip` and `docs.zip` to `.temp` folder (check no version folders are empty)
 	1. [x] upload blender files (`server.js`, `.template/`, `assets/` possibly `package.json` and `.guiconfig`)
 	1. [x] ssh into machine
-	1. [x] `unzip gui.zip -d ../` or `grunt unzip:GUI`
 	1. [x] possibly `npm i` in `blender/remote` folder
+	1. [x] `unzip gui.zip -d ../` or `grunt unzip:GUI`
 	1. [x] `forever list`
 	1. [x] `forever restart 0` or `forever start -l blender.log --append -o blenderOut.log -e blenderError.log server.js`
 	1. [x] `forever list` and blend something to test
+	1. [x] rename `construction2.html` to `construction.html` to redirect traffic to this file with nginx
 	1. [x] `rm -rf BOM` | `rm -rf BSA` | `rm -rf STG` | `rm -rf WBC` | `rm -rf WBG` | `rm -rf BT`
 	1. [x] `unzip docs.zip -d ../`
 	1. [x] rename `construction.html` to `construction2.html` to direct traffic back to the site
