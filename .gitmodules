@@ -709,3 +709,12 @@
 [submodule "_colors/2.0.2"]
 	path = _colors/2.0.2
 	url = https://github.com/WestpacCXTeam/GUI_colors.git
+[submodule "labels/2.0.3"]
+	path = labels/2.0.3
+	url = https://github.com/WestpacCXTeam/GUI-labels.git
+[submodule "badges/2.0.2"]
+	path = badges/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-badges.git
+[submodule "tabcordions/4.1.0"]
+	path = tabcordions/4.1.0
+	url = https://github.com/WestpacCXTeam/GUI-tabcordions.git
