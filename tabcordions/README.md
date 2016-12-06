@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.1.0 - ~~`LESS/CSS`~~ ~~`HTML`~~ `JS`
+	* Added support for toggle functionality for tabcordion accordion's with a single item. Previously worked with 2 or more items only.
+		[#287](https://github.com/WestpacCXTeam/GUI-source/issues/287)
 * v4.0.0 - `LESS/CSS` `HTML` `JS`
 	* Tabcordions gain a helper. The WCAG has long been struggling with how to use arrow keys vs the tab key for keyboard users. This update is an attempt to
 		help both use cases while improving the overall usability of tabs.
