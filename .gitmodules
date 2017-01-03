@@ -721,3 +721,6 @@
 [submodule "buttons/3.0.2"]
 	path = buttons/3.0.2
 	url = https://github.com/WestpacCXTeam/GUI-buttons.git
+[submodule "symbols/2.0.3"]
+	path = symbols/2.0.3
+	url = https://github.com/WestpacCXTeam/GUI-symbols.git
