@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Resolved issue where radio/checkbox inputs were visible in dropdowns on iOS. Also resolved some minor alignment issues with radio/checkbox dropdowns.
+		[#299](https://github.com/WestpacCXTeam/GUI-source/issues/299)
 * v3.0.1 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Link buttons did not like icons but icons liked buttons and wanted to make it work. After an intense couples therapy both now get along just fine.
 		[#264](https://github.com/WestpacCXTeam/GUI-source/issues/264)

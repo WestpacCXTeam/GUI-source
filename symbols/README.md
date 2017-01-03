@@ -21,6 +21,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updating the Google Play badge.
+		[#293](https://github.com/WestpacCXTeam/GUI-source/issues/293)
+	* Adding full colour social network icons.
+		[#294](https://github.com/WestpacCXTeam/GUI-source/issues/294)
 * v2.0.2 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Part of the STG logos where not showing. We really want all parts of the logos showing so we gave it a pep-talk.
 		[#254](https://github.com/WestpacCXTeam/GUI-source/issues/254)
