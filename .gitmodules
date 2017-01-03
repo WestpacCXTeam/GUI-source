@@ -718,3 +718,6 @@
 [submodule "tabcordions/4.1.0"]
 	path = tabcordions/4.1.0
 	url = https://github.com/WestpacCXTeam/GUI-tabcordions.git
+[submodule "buttons/3.0.2"]
+	path = buttons/3.0.2
+	url = https://github.com/WestpacCXTeam/GUI-buttons.git
