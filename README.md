@@ -155,8 +155,8 @@ See more in [Workflow](#workflow).
 1. Gui-docs
 	1. [x] pull submodule `GUI-source` and update to latest master release
 	1. [x] update new submodules to pull files
-	1. [x] run `grunt new-example` to add the missing `_inludes/modules` and copy the `_examples` folder
-	1. [x] make sure you have the new `_inludes/modules/[module]/[version].liquid` file and updated it's documentation
+	1. [x] run `grunt new-example` to add the missing `_includes/modules` and copy the `_examples` folder
+	1. [x] make sure you have the new `_includes/modules/[module]/[version].liquid` file and updated it's documentation
 	1. [x] adjust `_examples` and add whatsnew
 	1. [x] add email link to GUI mail archive in Getting started
 	1. [x] `grunt server`
