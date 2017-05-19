@@ -724,3 +724,36 @@
 [submodule "symbols/2.0.3"]
 	path = symbols/2.0.3
 	url = https://github.com/WestpacCXTeam/GUI-symbols.git
+[submodule "_text-styling/4.0.1"]
+	path = _text-styling/4.0.1
+	url = https://github.com/WestpacCXTeam/GUI_text-styling.git
+[submodule "tables/2.0.2"]
+	path = tables/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-tables.git
+[submodule "tabcordions/4.1.1"]
+	path = tabcordions/4.1.1
+	url = https://github.com/WestpacCXTeam/GUI-tabcordions.git
+[submodule "symbols/2.0.4"]
+	path = symbols/2.0.4
+	url = https://github.com/WestpacCXTeam/GUI-symbols.git
+[submodule "panels/2.0.2"]
+	path = panels/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-panels.git
+[submodule "paginations/2.0.3"]
+	path = paginations/2.0.3
+	url = https://github.com/WestpacCXTeam/GUI-paginations.git
+[submodule "modals/2.0.3"]
+	path = modals/2.0.3
+	url = https://github.com/WestpacCXTeam/GUI-modals.git
+[submodule "input-groups/2.0.3"]
+	path = input-groups/2.0.3
+	url = https://github.com/WestpacCXTeam/GUI-input-groups.git
+[submodule "icons-group02/3.0.1"]
+	path = icons-group02/3.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group02.git
+[submodule "buttons/3.0.3"]
+	path = buttons/3.0.3
+	url = https://github.com/WestpacCXTeam/GUI-buttons.git
+[submodule "alerts/2.0.2"]
+	path = alerts/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-alerts.git
