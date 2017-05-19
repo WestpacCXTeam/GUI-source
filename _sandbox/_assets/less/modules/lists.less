@@ -1,4 +1,4 @@
-/*! Lists v2.0.2 WBC*/
+/*! Lists v2.0.3 WBC*/
 /*
  * lists mixins
  *
@@ -35,7 +35,7 @@
 
 
 
-	.lists {
+	ul.lists {
 		padding: 0;
 		margin: 0;
 		list-style: none;
@@ -60,10 +60,7 @@
 			}
 		}
 
-		&.lists-lg > li {
-			margin: 12px 0;
-		}
-
+		//bullet colors
 		&.lists-hero > li:after {
 			border-color: @color-B;
 			background-color: @color-B;
@@ -78,8 +75,9 @@
 			background-color: transparent;
 		}
 
+		//link lists
 		&.lists-linklist > li {
-			padding-left: 11px;
+			padding-left: 14px;
 
 			&:after {
 				border-radius: 0;
@@ -100,6 +98,7 @@
 			}
 		}
 
+		//tick lists
 		&.lists-tick > li {
 			padding-left: 21px;
 
@@ -111,6 +110,67 @@
 				height: 16px;
 				top: 1px;
 			}
+		}
+
+		//icon lists
+		&.lists-icon {
+			& > li {
+				padding-left: 21px;
+				position: relative;
+
+				& > .icon,
+				& > .icon svg {
+					background-size: 16px 16px;
+					width: 16px;
+					height: 16px;
+				}
+
+				& > .icon {
+					position: absolute;
+					left: 0;
+					top: 1px;
+				}
+
+				&:after {
+					display: none;
+				}
+			}
+
+			&.lists-primary > li {
+				& > .icon .icons-background,
+				& > .icon svg {
+					fill: @color-Primary;
+				}
+			}
+
+			&.lists-hero > li {
+				& > .icon .icons-background,
+				& > .icon svg {
+					fill: @color-Hero;
+				}
+			}
+
+			&.lists-neutral > li {
+				& > .icon .icons-background,
+				& > .icon svg {
+					fill: @color-Neutral;
+				}
+			}
+		}
+	}
+
+	//list size
+	.lists.lists-lg > li {
+		margin: 12px 0;
+	}
+
+	//ordered list style
+	ol.lists {
+		margin: 0;
+		padding: 0 0 0 1.9em;
+
+		& > li {
+			margin: 6px 0;
 		}
 	}
 

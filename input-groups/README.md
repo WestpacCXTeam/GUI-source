@@ -19,6 +19,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Changed addon background colour from @color-Background to @color-Light.
+		[#309](https://github.com/WestpacCXTeam/GUI-source/issues/309)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The input-groups historically caused issues by refusing to dynamically size its width. Let’s not look back to those dark times but focus on the fact that
 		we’ve fixed it now.

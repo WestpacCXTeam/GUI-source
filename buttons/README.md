@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Changed 'faint' button style background color from @color-Background to @color-Light.
+		[#311](https://github.com/WestpacCXTeam/GUI-source/issues/311)
 * v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Resolved issue where radio/checkbox inputs were visible in dropdowns on iOS. Also resolved some minor alignment issues with radio/checkbox dropdowns.
 		[#299](https://github.com/WestpacCXTeam/GUI-source/issues/299)

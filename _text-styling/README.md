@@ -21,6 +21,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Normalize was overriding the body font-family for button, input, textarea, select and optgroup by setting font-family to san-serif. The change applies the same font-family as body to these elements specifically to override normalize.
+		[#306](https://github.com/WestpacCXTeam/GUI-source/issues/306)
 * v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* We have removed the classes for headlines. Wow. I know! The thing was, they were not really useful and more overwritten than used as is. Now you can go and
 		run your own headlines. Prettier, more your.

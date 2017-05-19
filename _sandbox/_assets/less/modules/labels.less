@@ -1,4 +1,4 @@
-/*! Labels v2.0.2 WBC*/
+/*! Labels v2.0.3 WBC*/
 /*
  * labels mixins
  *
@@ -13,22 +13,52 @@
 	/*
 	 *  SETTINGS
 	 */
-	.getBrand() when (@brand = BOM) {
+
+	//////////////////////////////////////| PRIMARY
+	@primary-fontcolor: #fff;
+	@primary-backgroundcolor: @color-A;
+
+	//////////////////////////////////////| HERO
+	@hero-backgroundcolor: @color-B;
+
+	//////////////////////////////////////| NEUTRAL
+	@neutral-fontcolor: #fff;
+	@neutral-backgroundcolor: @color-C;
+
+	//////////////////////////////////////| FAINT
+	@faint-fontcolor: @color-Muted;
+	@faint-backgroundcolor: #fff;
+	@faint-bordercolor: @color-Border;
+	@faint-borderwidth: 1px;
+
+	//////////////////////////////////////| INFORMATION
+	@info-fontcolor: #fff;
+	@info-backgroundcolor: @color-Info;
+
+	//////////////////////////////////////| WARNING
+	@warning-fontcolor: #fff;
+	@warning-backgroundcolor: @color-Warning;
+
+	//////////////////////////////////////| DANGER
+	@danger-fontcolor: #fff;
+	@danger-backgroundcolor: @color-Danger;
+
+	.getBrand() when (@brand = BOM) { //////////////////////////////////////| BOM
 		@hero-fontcolor: #fff;
 	}
-	.getBrand() when (@brand = BSA) {
+	.getBrand() when (@brand = BSA) { //////////////////////////////////////| BSA
 		@hero-fontcolor: #fff;
 	}
-	.getBrand() when (@brand = STG) {
-		@hero-fontcolor: @color-Text;
+	.getBrand() when (@brand = STG) { //////////////////////////////////////| STG
+		@hero-fontcolor: @color-F;
 	}
-	.getBrand() when (@brand = WBC) {
+	.getBrand() when (@brand = WBC) { //////////////////////////////////////| WBC
 		@hero-fontcolor: #fff;
 	}
-	.getBrand() when (@brand = WBG) {
+	.getBrand() when (@brand = WBG) { //////////////////////////////////////| WBG
 		@hero-fontcolor: #fff;
 	}
-	.getBrand() when (@brand = BT) {
+	.getBrand() when (@brand = BT) { //////////////////////////////////////| BT
 		@hero-fontcolor: #fff;
 	}
 	.getBrand();
@@ -36,67 +66,64 @@
 
 
 	.label {
-		display: inline;
-		padding: 2px 6px;
-		font-size: 12px;
-		font-weight: 400;
-		line-height: 1;
-		color: #fff;
-		text-align: center;
-		white-space: nowrap;
-		vertical-align: baseline;
-		border-radius: 2px;
-		background-color: @color-A;
+		._labels-make-label(
+			#fff,
+			@color-A
+		);
 
-		&[href] {
-			&:hover,
-			&:focus {
-				background-color: mix(@color-A, white, 50%);
-			}
+		&.label-primary {
+			._labels-make-label(
+				@primary-fontcolor,
+				@primary-backgroundcolor
+			);
 		}
-
-		a& {
-			text-decoration: none;
-
-			&:hover,
-			&:focus {
-				color: #fff;
-				cursor: pointer;
-			}
-		}
-
-		&:empty {
-			display: none;
-		}
-
 
 		&.label-hero {
-			background-color: @color-B;
-			color: @hero-fontcolor;
-
-			&[href] {
-				&:hover,
-				&:focus {
-					background-color: mix(@color-B, white, 50%);
-					color: @hero-fontcolor;
-				}
-			}
-
+			._labels-make-label(
+				@hero-fontcolor,
+				@hero-backgroundcolor
+			);
 		}
 
-		// &.label-faint {
-		// 	background-color: @color-Background;
-		// 	color: @color-Text;
+		&.label-neutral {
+			._labels-make-label(
+				@neutral-fontcolor,
+				@neutral-backgroundcolor
+			);
+		}
 
-		// 	&[href] {
-		// 		&:hover,
-		// 		&:focus {
-		// 			background-color: darken(@color-Background, 20%);
-		// 			color: @color-Text;
-		// 		}
-		// 	}
-		// }
+		&.label-faint {
+			._labels-make-label(
+				@faint-fontcolor,
+				@faint-backgroundcolor,
+				@faint-bordercolor,
+				@faint-borderwidth
+			);
 
+			padding-top: 1px;
+			padding-bottom: 1px;
+		}
+
+		&.label-info {
+			._labels-make-label(
+				@info-fontcolor,
+				@info-backgroundcolor
+			);
+		}
+
+		&.label-warning {
+			._labels-make-label(
+				@warning-fontcolor,
+				@warning-backgroundcolor
+			);
+		}
+
+		&.label-danger {
+			._labels-make-label(
+				@danger-fontcolor,
+				@danger-backgroundcolor
+			);
+		}
 	}
 
 
@@ -115,6 +142,51 @@
 	}
 }
 
+/*
+ * MAKE LABELS
+ *
+ * create labels for each version
+ */
+._labels-make-label(
+	@fontcolor,
+	@backgroundcolor,
+	@bordercolor: transparent,
+	@borderwidth: 0
+) {
+	display: inline;
+	padding: 2px 6px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+	color: @fontcolor;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 2px;
+	background-color: @backgroundcolor;
+	border: @borderwidth solid @bordercolor;
+
+	&[href] {
+		&:hover,
+		&:focus {
+			background-color: mix(@backgroundcolor, white, 50%);
+		}
+	}
+
+	a& {
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: @fontcolor;
+			cursor: pointer;
+		}
+	}
+
+	&:empty {
+		display: none;
+	}
+}
 
 //////////////////////////////////////| labels
 ._labels( @brand );

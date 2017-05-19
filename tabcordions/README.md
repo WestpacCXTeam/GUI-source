@@ -20,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.1.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Tweaked border and fill styling of lego accordion
+		[#313](https://github.com/WestpacCXTeam/GUI-source/issues/313)
+	* Added `tabcordion-accordion-borderless` modifier class to remove outer border. Useful for instances where accordion is used within a panel or other container.
 * v4.1.0 - ~~`LESS/CSS`~~ ~~`HTML`~~ `JS`
 	* Added support for toggle functionality for tabcordion accordion's with a single item. Previously worked with 2 or more items only.
 		[#287](https://github.com/WestpacCXTeam/GUI-source/issues/287)

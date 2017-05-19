@@ -1,4 +1,4 @@
-/*! Tabcordions v3.0.0 WBC*/
+/*! Tabcordions v4.1.1 WBC*/
 /*
  * tabcordion-soft mixins
  *
@@ -108,6 +108,17 @@
 			border-radius: 0;
 		}
 
+		//borderless accordion
+		.tabcordion-accordion.tabcordion-accordion-borderless& {
+			border: 0;
+			border-radius: 0;
+		}
+
+		//helper
+		.tabcordion-tab-helper {
+			display: none;
+		}
+
 		//tabs
 		.tabcordion-tabs {
 			display: none;
@@ -142,6 +153,7 @@
 				}
 
 				a {
+					position: relative;
 					display: inline-block;
 					display: flex;
 					align-items: flex-end;
@@ -158,6 +170,40 @@
 
 					&:focus {
 						.outline();
+
+						.is-keyboarduser & {
+							.tabcordion-tab-helper {
+								display: block;
+								position: absolute;
+								bottom: 110%;
+								left: 50%;
+								margin: 0 0 6px -85px;
+								color: #fff;
+								background-color: #000;
+								padding: 7px;
+								width: 170px;
+								border-radius: 3px;
+								text-align: center;
+								white-space: normal;
+								pointer-events: none;
+								transition-delay: 100ms;
+								z-index: 100;
+
+								&:after {
+									content: " ";
+									margin-left: -10px;
+									width: 0;
+									border-top: 10px solid #000;
+									border-right: 10px solid transparent;
+									border-left: 10px solid transparent;
+									font-size: 0;
+									line-height: 0;
+									position: absolute;
+									bottom: -10px;
+									left: 50%;
+								}
+							}
+						}
 					}
 
 					&:hover {
@@ -212,7 +258,6 @@
 			font-size: 16px;
 			position: relative;
 			z-index: 2;
-			border-bottom: 1px solid @color-Border;
 
 			&:last-child {
 				border-bottom: 0 none;
@@ -225,7 +270,6 @@
 
 			.tabcordion-accordion& {
 				display: block;
-				border-bottom: 1px solid @color-Border;
 			}
 
 			.tabcordion-body-headline {
@@ -236,6 +280,7 @@
 				transition: 0.3s ease;
 				background-color: @color-J;
 				text-decoration: none;
+				border-bottom: 1px solid @color-Border;
 
 				&:before {
 					content: " ";
@@ -333,22 +378,31 @@
 			//LEGO STYLE
 			.tabcordion-lego& {
 				transition: border 0.3s ease;
-				border-left: 12px solid @color-Border;
+				border-left: 6px solid @color-B;
 
 				.tabcordion-body-headline {
 					padding-left: 12px;
 				}
 
 				&.is-active {
-					border-left-color: @color-B;
+					border-left-color: @color-Border;
 
 					.tabcordion-body-headline {
-						background-color: #fff;
+						background-color: @color-J;
 					}
 
 					&:before,
 					&:after {
 						display: none;
+					}
+				}
+			}
+
+			&.is-active {
+				.tabcordion-accordion& {
+					.tabcordion-body-headline {
+						border-bottom: 1px solid @color-Border;
+						background-color: @color-J;
 					}
 				}
 			}
@@ -360,11 +414,12 @@
 			z-index: 1;
 
 			.tabcordion-body {
-				border-top: 1px solid @color-Border;
 				border-bottom: 1px solid @color-Border;
 				padding: 24px 3.22%;
+				background-color: #fff;
 
 				@media (min-width: @screen-sm) {
+					border-top: 1px solid @color-Border;
 					border-right: 1px solid @color-Border;
 					border-left: 1px solid @color-Border;
 				}
@@ -372,9 +427,11 @@
 				.tabcordion-accordion& {
 					border-right: 0 none;
 					border-left: 0 none;
+					border-top: 0 none;
 				}
 
 				.tabcordion-tabs& {
+					border-top: 1px solid @color-Border;
 					border-right: 1px solid @color-Border;
 					border-left: 1px solid @color-Border;
 				}
@@ -387,21 +444,35 @@
 					border-top: 0 none;
 					padding-left: 24px;
 					padding-right: 24px;
+					border-left: 6px solid @color-Border;
 
 					@media (min-width: @screen-sm) {
 						border-top: 1px solid @color-Border;
 						padding-left: 3.22%;
+						border-left: 1px solid @color-Border;
 					}
 
 					.tabcordion-accordion& {
+						transition: border 0.3s ease;
+						border-left: 6px solid @color-Border;
 						border-top: 0 none;
 						padding-left: 24px;
 						padding-right: 24px;
+
 					}
 
 					.tabcordion-tabs& {
 						border-top: 1px solid @color-Border;
 						padding-left: 3.22%;
+						border-left: 1px solid @color-Border;
+					}
+				}
+
+				&[aria-hidden=false] {
+					.tabcordion-body {
+						.tabcordion-accordion& {
+							border-left-color: @color-Border;
+						}
 					}
 				}
 			}

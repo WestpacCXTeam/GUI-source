@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Changed modal header title text colour to default text colour.
+		[#317](https://github.com/WestpacCXTeam/GUI-source/issues/317)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* We removed the border around the modal. Why? Because you couldn’t see it.
 		[#240](https://github.com/WestpacCXTeam/GUI-source/issues/240)

@@ -21,6 +21,13 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.4 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updating the Google Plus icon.
+		[#322](https://github.com/WestpacCXTeam/GUI-source/issues/322)
+	* Removing the old and adding new Mastercard symbols.
+		[#307](https://github.com/WestpacCXTeam/GUI-source/issues/307)
+	* Updating the Visa symbol and adding 2 new Visa symbols.
+		[#324](https://github.com/WestpacCXTeam/GUI-source/issues/324)
 * v2.0.3 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updating the Google Play badge.
 		[#293](https://github.com/WestpacCXTeam/GUI-source/issues/293)

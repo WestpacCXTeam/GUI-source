@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* The striped styling option for tables has been modified to start on the second, rather than first, row of the table body.
+		[#314](https://github.com/WestpacCXTeam/GUI-source/issues/314)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 	* The highlighting of the first cell would be cut off on mobile in bordered tables. We wanted to highlight that we fixed that.

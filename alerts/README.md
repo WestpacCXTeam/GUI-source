@@ -17,6 +17,9 @@ GUI Alerts
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Tweaking has alert class to apply alert colour to input and textarea content so they are more visible.
+	[#315](https://github.com/WestpacCXTeam/GUI-source/issues/315)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

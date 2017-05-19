@@ -1,4 +1,4 @@
-/*! Buttons v3.0.0 WBC*/
+/*! Buttons v3.0.3 WBC*/
 /*
  * buttons mixins
  *
@@ -49,7 +49,7 @@
 
 		//////////////////////////////////////| FAINT
 		@faint-fontcolor: @color-Muted;
-		@faint-backgroundcolor: @color-I-50;
+		@faint-backgroundcolor: @color-J;
 		@faint-bordercolor: @color-Border;
 		@faint-active-fontcolor: @color-Muted;
 		@faint-active-backgroundcolor: #fff;
@@ -57,6 +57,9 @@
 		@faint-hover-fontcolor: @color-Muted;
 		@faint-hover-backgroundcolor: #fff;
 		@faint-hover-bordercolor: @color-Border;
+
+		//////////////////////////////////////| SOFT
+		@soft-faint-fontcolor: @color-Muted;
 	}
 	.getBrand() when (@brand = BSA) { //////////////////////////////////////| BSA
 		//////////////////////////////////////| PRIMARY
@@ -102,6 +105,9 @@
 		@faint-hover-fontcolor: @color-Muted;
 		@faint-hover-backgroundcolor: #fff;
 		@faint-hover-bordercolor: @color-Border;
+
+		//////////////////////////////////////| SOFT
+		@soft-faint-fontcolor: @color-Muted;
 	}
 	.getBrand() when (@brand = STG) { //////////////////////////////////////| STG
 		//////////////////////////////////////| PRIMARY
@@ -147,6 +153,9 @@
 		@faint-hover-fontcolor: @color-Muted;
 		@faint-hover-backgroundcolor: #fff;
 		@faint-hover-bordercolor: @color-Border;
+
+		//////////////////////////////////////| SOFT
+		@soft-faint-fontcolor: @color-Muted;
 	}
 	.getBrand() when (@brand = WBC) { //////////////////////////////////////| WBC
 		//////////////////////////////////////| PRIMARY
@@ -184,7 +193,7 @@
 
 		//////////////////////////////////////| FAINT
 		@faint-fontcolor: @color-Muted;
-		@faint-backgroundcolor: @color-I;
+		@faint-backgroundcolor: @color-J;
 		@faint-bordercolor: @color-Border;
 		@faint-active-fontcolor: @color-Muted;
 		@faint-active-backgroundcolor: #fff;
@@ -192,6 +201,9 @@
 		@faint-hover-fontcolor: @color-Muted;
 		@faint-hover-backgroundcolor: #fff;
 		@faint-hover-bordercolor: @color-Border;
+
+		//////////////////////////////////////| SOFT
+		@soft-faint-fontcolor: @color-Muted;
 	}
 	.getBrand() when (@brand = WBG) { //////////////////////////////////////| WBG
 		//////////////////////////////////////| PRIMARY
@@ -229,7 +241,7 @@
 
 		//////////////////////////////////////| FAINT
 		@faint-fontcolor: @color-Muted;
-		@faint-backgroundcolor: @color-I;
+		@faint-backgroundcolor: @color-J;
 		@faint-bordercolor: @color-Border;
 		@faint-active-fontcolor: @color-Muted;
 		@faint-active-backgroundcolor: #fff;
@@ -237,6 +249,9 @@
 		@faint-hover-fontcolor: @color-Muted;
 		@faint-hover-backgroundcolor: #fff;
 		@faint-hover-bordercolor: @color-Border;
+
+		//////////////////////////////////////| SOFT
+		@soft-faint-fontcolor: @color-Muted;
 	}
 	.getBrand() when (@brand = BT) { //////////////////////////////////////| BT
 		//////////////////////////////////////| PRIMARY
@@ -274,7 +289,7 @@
 
 		//////////////////////////////////////| FAINT
 		@faint-fontcolor: @color-Muted;
-		@faint-backgroundcolor: @color-I;
+		@faint-backgroundcolor: @color-J;
 		@faint-bordercolor: @color-Border;
 		@faint-active-fontcolor: @color-Muted;
 		@faint-active-backgroundcolor: #fff;
@@ -282,16 +297,20 @@
 		@faint-hover-fontcolor: @color-Muted;
 		@faint-hover-backgroundcolor: #fff;
 		@faint-hover-bordercolor: @color-Border;
+
+		//////////////////////////////////////| SOFT
+		@soft-faint-fontcolor: @color-Muted;
 	}
 	.getBrand();
 
 
 	//////////////////////////////////////| BUTTONS
 	.btn {
-		padding: 5px 12px;
+		padding: 7px 12px;
 		border-radius: 6px;
 		font-size: 16px;
 		font-weight: 400;
+		line-height: 1.33;
 		white-space: nowrap;
 		display: inline-block;
 		text-align: center;
@@ -310,7 +329,7 @@
 			vertical-align: top;
 			display: inline-block;
 			line-height: 0;
-			margin-top: 11px;
+			margin-top: 10px;
 		}
 
 		//btn icons
@@ -342,24 +361,51 @@
 			-webkit-appearance: none;
 			-moz-appearance: none;
 			appearance: none;
+			display: inline;
 			background: transparent;
 			border-radius: 0;
 			border: 0 none;
 			color: @color-A;
 			padding: 0;
+			margin: 0;
 			font-size: 14px;
+			line-height: 1.428571429;
 			font-weight: 400;
 			height: auto;
-			text-decoration: underline;
+			text-decoration: none;
+			user-select: text;
+
+			.btn-text {
+				text-decoration: underline;
+				margin-top: 0;
+				line-height: 1.428571429;
+				display: inline;
+			}
+
+			.btn-icon {
+				margin-left: 3px;
+
+				&.btn-icon-left {
+					margin-left: 0;
+					margin-right: 3px;
+				}
+			}
 
 			p > & {
 				vertical-align: top;
 			}
 
+			&.btn-xl,
+			&.btn-lg,
+			&.btn-sm {
+				padding: 0;
+				height: auto;
+			}
+
 			&:focus,
 			&:hover {
 				background: transparent;
-				text-decoration: underline;
+				text-decoration: none;
 				color: @color-A;
 			}
 		}
@@ -510,6 +556,10 @@
 		background-color: #fff;
 		color: @color-Text;
 
+		&.btn-faint {
+			color: @soft-faint-fontcolor;
+		}
+
 		svg,
 		.icons-background {
 			fill: @color-Text;
@@ -602,10 +652,6 @@
 					}
 				}
 			}
-		}
-
-		& + .btn-group {
-			margin-top: 6px;
 		}
 
 		&.btn-block {
@@ -726,11 +772,11 @@
 					margin-top: 12px;
 					padding-top: 12px;
 					border-top: 1px solid @color-Border;
-					height: 44px;
+					height: 37px;
 
 					.checkbox-input,
 					.radio-input {
-						top: 22px;
+						top: 15px;
 
 						& + .checkbox-text:after,
 						& + .radio-text:after {
@@ -910,19 +956,27 @@
  */
 ._buttons-size( @size ) {
 	.getSize() when (@size = sm) {
-		padding: 4px 10px 3px 10px;
+		padding: 3px 10px 3px 10px;
 		font-size: 14px;
 		line-height: 1.5;
 		font-weight: 400;
 		height: 30px;
 
+		button& {
+			padding-top: 2px;
+		}
+
+		a& {
+			padding-top: 3px;
+		}
+
 		.btn-text {
-			margin-top: 10px;
+			margin-top: 11px;
 		}
 	}
 
 	.getSize() when (@size = md) {
-		padding: 5px 12px;
+		padding: 7px 12px;
 		border-radius: 6px;
 		font-size: 16px;
 		font-weight: 400;
@@ -939,11 +993,20 @@
 		appearance: none;
 		height: 36px;
 
+		button&,
+		a& {
+			padding-top: 7px;
+		}
+
+		// a& {
+		// 	padding-top: 7px;
+		// }
+
 		.btn-text {
 			vertical-align: top;
 			display: inline-block;
 			line-height: 0;
-			margin-top: 11px;
+			margin-top: 10px;
 		}
 	}
 
@@ -952,6 +1015,11 @@
 		line-height: 1.33;
 		height: 42px;
 
+		button&,
+		a& {
+			padding-top: 10px;
+		}
+
 		.btn-text {
 			margin-top: 10px;
 		}
@@ -959,12 +1027,17 @@
 
 	.getSize() when (@size = xl) {
 		font-size: 18px;
-		padding: 13px 14px;
+		padding: 13px 14px 14px 14px;
 		line-height: 1.11111111;
 		height: 48px;
 
+		button&,
+		a& {
+			padding-top: 13px;
+		}
+
 		.btn-text {
-			margin-top: 11px;
+			margin-top: 10px;
 		}
 
 		.btn-icon.icon-size-md,

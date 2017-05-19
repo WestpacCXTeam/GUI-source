@@ -1,4 +1,4 @@
-/*! Radios v2.0.1 WBC*/
+/*! Radios v2.0.2 WBC*/
 /*
  * radios mixins
  *
@@ -37,7 +37,7 @@
 
 	.radio {
 		display: inline-table;
-		height: 32px;
+		height: 24px;
 		vertical-align: middle;
 		position: relative;
 
@@ -45,13 +45,13 @@
 
 		.radio-input {
 			position: absolute;
-			top: 10px;
-			left: 10px;
+			top: 6px;
+			left: 6px;
 			z-index: 0;
 
 			.radio-flip& {
 				left: auto;
-				right: 10px;
+				right: 6px;
 			}
 
 			&:focus + .radio-text {
@@ -76,7 +76,7 @@
 		.radio-text {
 			font-weight: 400;
 			line-height: 1.2;
-			padding-left: 38px;
+			padding-left: 30px;
 			display: table-cell;
 			vertical-align: middle;
 			white-space: normal;
@@ -87,8 +87,8 @@
 				position: absolute;
 				left: 0;
 				top: 0;
-				width: 32px;
-				height: 32px;
+				width: 24px;
+				height: 24px;
 				z-index: 1;
 			}
 
@@ -98,7 +98,7 @@
 
 			.radio-flip& {
 				padding-left: 0;
-				padding-right: 38px;
+				padding-right: 30px;
 
 				&:after {
 					left: auto;
@@ -122,14 +122,10 @@
 			}
 
 			.radio-text {
-				padding-left: 6px;
+				padding: 0 0 0 6px;
 
 				&:after {
-					background: none;
-				}
-
-				.radio-flip& {
-					padding-right: 6px;
+					display: none;
 				}
 			}
 		}
@@ -142,10 +138,15 @@
 			.radio-input {
 				opacity: 1;
 				position: static;
+				margin-right: 6px;
 			}
 			.radio-text {
 				padding: 0;
 				display: inline;
+
+				&:after {
+					display: none;
+				}
 			}
 		}
 	}

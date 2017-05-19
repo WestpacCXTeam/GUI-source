@@ -22,6 +22,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.1 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* Updated the super icon to a new design.
+		[#323](https://github.com/WestpacCXTeam/GUI-source/issues/323)
 * v3.0.0 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* We removed the floppy disk save icon because, let’s face it, no-one remembers what a floppy disk is.
 * v2.0.0 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~

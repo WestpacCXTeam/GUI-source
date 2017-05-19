@@ -1,4 +1,4 @@
-/*! Popovers v2.0.1 WBC*/
+/*! Popovers v2.0.2 WBC*/
 /*
  * popovers mixins
  *
@@ -144,9 +144,7 @@
 		}
 
 		.js & {
-			opacity: 0;
-			visibility: hidden;
-			transition: opacity 0.2s ease;
+			display: none;
 		}
 
 		.no-js & {
@@ -162,8 +160,7 @@
 		}
 
 		.is-open & {
-			opacity: 1;
-			visibility: visible;
+			display: block;
 		}
 
 	}
