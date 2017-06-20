@@ -757,3 +757,6 @@
 [submodule "alerts/2.0.2"]
 	path = alerts/2.0.2
 	url = https://github.com/WestpacCXTeam/GUI-alerts.git
+[submodule "icons-group12/2.0.1"]
+	path = icons-group12/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group12.git
