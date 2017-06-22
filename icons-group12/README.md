@@ -25,6 +25,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 * v2.0.1 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Share icon updated to a more generic design, familiar across all platforms.
 		[#329](https://github.com/WestpacCXTeam/GUI-source/issues/329)
+	* New Slack and Yammer social icons added.
+		[#330](https://github.com/WestpacCXTeam/GUI-source/issues/330)
 * v2.0.0 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* All SVGs now come with a unique title ID. That may not sound like much but SVGs are very particular about their individualism.
 		[#204](https://github.com/WestpacCXTeam/GUI-source/issues/204)
