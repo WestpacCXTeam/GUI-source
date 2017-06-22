@@ -27,6 +27,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 		[#329](https://github.com/WestpacCXTeam/GUI-source/issues/329)
 	* New Slack and Yammer social icons added.
 		[#330](https://github.com/WestpacCXTeam/GUI-source/issues/330)
+	* New Instagram social icon added.
+		[#260](https://github.com/WestpacCXTeam/GUI-source/issues/260)
+	* Social icons updated (facebook, google-plus, linkedin, rss, twitter, yammer, youtube).	
 * v2.0.0 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* All SVGs now come with a unique title ID. That may not sound like much but SVGs are very particular about their individualism.
 		[#204](https://github.com/WestpacCXTeam/GUI-source/issues/204)
