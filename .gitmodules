@@ -760,3 +760,6 @@
 [submodule "icons-group12/2.0.1"]
 	path = icons-group12/2.0.1
 	url = https://github.com/WestpacCXTeam/GUI-icons-group12.git
+[submodule "symbols/2.0.5"]
+	path = symbols/2.0.5
+	url = https://github.com/WestpacCXTeam/GUI-symbols.git
