@@ -21,6 +21,13 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.5 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* New Instagram, Slack and Yammer social symbols added
+		[#330](https://github.com/WestpacCXTeam/GUI-source/issues/330) 
+		[#260](https://github.com/WestpacCXTeam/GUI-source/issues/260)
+	* Social symbols updated (Facebook, Google Plus, LinkedIn, Twitter and YouTube)
+	* Renamed Mastercard (vertical) symbol ensuring legacy class name support
+	* Reverted to pre-v2.0.4 Mastercard symbol class names `.symbol-master-card` and `.symbol-master-card-*` (with dashes)
 * v2.0.4 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updating the Google Plus icon.
 		[#322](https://github.com/WestpacCXTeam/GUI-source/issues/322)
