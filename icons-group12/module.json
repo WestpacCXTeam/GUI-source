@@ -98,7 +98,7 @@
 			"less": false,
 			"svg": true,
 			"font": false,
-			"size": 35,
+			"size": 34,
 			"brands": [
 				"BOM",
 				"BSA",
@@ -109,5 +109,5 @@
 			]
 		}
 	},
-	"hash": "3119510191c34292ba3ea61044a3cadd"
+	"hash": "1567bfe44c19f468f640ce5f7f54259c"
 }

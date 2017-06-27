@@ -22,6 +22,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.2 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* Remove secondary `.symbol-*` prefix from all Icons. Icons use the `.icon-*` prefix and Symbols use the `.symbol-*` prefix exclusively.
 * v3.0.1 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Updated the super icon to a new design.
 		[#323](https://github.com/WestpacCXTeam/GUI-source/issues/323)

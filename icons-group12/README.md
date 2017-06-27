@@ -29,7 +29,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 		[#330](https://github.com/WestpacCXTeam/GUI-source/issues/330)
 	* New Instagram social icon added.
 		[#260](https://github.com/WestpacCXTeam/GUI-source/issues/260)
-	* Social icons updated (facebook, google-plus, linkedin, rss, twitter, yammer, youtube).	
+	* Social icons updated (facebook, google-plus, linkedin, rss, twitter, yammer, youtube).
+	* Remove secondary `.symbol-*` prefix from all Icons. Icons use the `.icon-*` prefix and Symbols use the `.symbol-*` prefix exclusively.
 * v2.0.0 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* All SVGs now come with a unique title ID. That may not sound like much but SVGs are very particular about their individualism.
 		[#204](https://github.com/WestpacCXTeam/GUI-source/issues/204)
