@@ -763,3 +763,54 @@
 [submodule "symbols/2.0.5"]
 	path = symbols/2.0.5
 	url = https://github.com/WestpacCXTeam/GUI-symbols.git
+[submodule "icons-base/2.0.2"]
+	path = icons-base/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-icons-base.git
+[submodule "icons-group01/2.0.2"]
+	path = icons-group01/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-icons-group01.git
+[submodule "icons-group02/3.0.2"]
+	path = icons-group02/3.0.2
+	url = https://github.com/WestpacCXTeam/GUI-icons-group02.git
+[submodule "icons-group03/2.0.1"]
+	path = icons-group03/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group03.git
+[submodule "icons-group04/2.0.1"]
+	path = icons-group04/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group04.git
+[submodule "icons-group05/2.0.1"]
+	path = icons-group05/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group05.git
+[submodule "icons-group06/2.0.1"]
+	path = icons-group06/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group06.git
+[submodule "icons-group08/2.0.1"]
+	path = icons-group08/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group08.git
+[submodule "icons-group09/2.0.1"]
+	path = icons-group09/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group09.git
+[submodule "icons-group10/2.0.1"]
+	path = icons-group10/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group10.git
+[submodule "icons-group11/2.0.1"]
+	path = icons-group11/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group11.git
+[submodule "icons-group13/2.0.1"]
+	path = icons-group13/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group13.git
+[submodule "icons-group14/2.0.1"]
+	path = icons-group14/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group14.git
+[submodule "icons-group15/2.0.1"]
+	path = icons-group15/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group15.git
+[submodule "icons-group16/2.0.2"]
+	path = icons-group16/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-icons-group16.git
+[submodule "icons-group17/2.0.1"]
+	path = icons-group17/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group17.git
+[submodule "logos/2.0.4"]
+	path = logos/2.0.4
+	url = https://github.com/WestpacCXTeam/GUI-logos.git
