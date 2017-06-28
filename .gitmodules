@@ -814,3 +814,6 @@
 [submodule "logos/2.0.4"]
 	path = logos/2.0.4
 	url = https://github.com/WestpacCXTeam/GUI-logos.git
+[submodule "icons-group07/2.0.1"]
+	path = icons-group07/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-icons-group07.git
