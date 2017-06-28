@@ -19,6 +19,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.4 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* Remove secondary `.symbol-*` prefix from linklist bullets (roll with `.icon-*` prefix for consistency)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* We added some diversity to lists and are proud to introduce you to icon lists. You can now use any icons and add them to your list. PDF lists, padlock
 		lists, star lists, all now possible!
