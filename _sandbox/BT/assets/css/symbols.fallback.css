@@ -11,16 +11,16 @@
 .icon-checkbox-on { background-image: url('../img/checkbox-on.png'); background-repeat: no-repeat; }
 
 .radio-input:disabled + .radio-text:after,
-.symbol-radio-off-disabled { background-image: url('../img/radio-off-disabled.png'); background-repeat: no-repeat; }
+.icon-radio-off-disabled { background-image: url('../img/radio-off-disabled.png'); background-repeat: no-repeat; }
 
 .radio-input + .radio-text:after,
-.symbol-radio-off { background-image: url('../img/radio-off.png'); background-repeat: no-repeat; }
+.icon-radio-off { background-image: url('../img/radio-off.png'); background-repeat: no-repeat; }
 
 .radio-input:disabled:checked + .radio-text:after,
-.symbol-radio-on-disabled { background-image: url('../img/radio-on-disabled.png'); background-repeat: no-repeat; }
+.icon-radio-on-disabled { background-image: url('../img/radio-on-disabled.png'); background-repeat: no-repeat; }
 
 .radio-input:checked + .radio-text:after,
-.symbol-radio-on { background-image: url('../img/radio-on.png'); background-repeat: no-repeat; }
+.icon-radio-on { background-image: url('../img/radio-on.png'); background-repeat: no-repeat; }
 
 .icon-credit-card { background-image: url('../img/credit-card.png'); background-repeat: no-repeat; }
 
