@@ -823,3 +823,6 @@
 [submodule "checkboxes/2.0.3"]
 	path = checkboxes/2.0.3
 	url = https://github.com/WestpacCXTeam/GUI-checkboxes.git
+[submodule "radios/2.0.3"]
+	path = radios/2.0.3
+	url = https://github.com/WestpacCXTeam/GUI-radios.git
