@@ -22,6 +22,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* Remove secondary `.symbol-*` prefix from all Icons. Icons use the `.icon-*` prefix and Symbols use the `.symbol-*` prefix exclusively.
 * v2.0.1 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* It’s with great regret that we announce the removal of the sad face icon and it’s good friends happy and indifferent.
 		Due to circumstances beyond our control we’ve been asked to delete our emoji friends from the GUI.

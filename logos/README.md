@@ -21,6 +21,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.4 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* Remove secondary `.symbol-*` prefix from all Logos. Logos use the `.logo-*` prefix and Symbols use the `.symbol-*` prefix exclusively.
 * v2.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* We added Westpacs 200 year birthday logo. Yes. We’re turning 200. 🎂🎉🎁 Feels just like yesterday when we started with this whole banking thing.
 		[#280](https://github.com/WestpacCXTeam/GUI-source/issues/280)

@@ -22,6 +22,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* Share icon updated to a more generic design, familiar across all platforms.
+		[#329](https://github.com/WestpacCXTeam/GUI-source/issues/329)
+	* New Slack and Yammer social icons added.
+		[#330](https://github.com/WestpacCXTeam/GUI-source/issues/330)
+	* New Instagram social icon added.
+		[#260](https://github.com/WestpacCXTeam/GUI-source/issues/260)
+	* Social icons updated (facebook, google-plus, linkedin, rss, twitter, yammer, youtube).
+	* Remove secondary `.symbol-*` prefix from all Icons. Icons use the `.icon-*` prefix and Symbols use the `.symbol-*` prefix exclusively.
 * v2.0.0 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* All SVGs now come with a unique title ID. That may not sound like much but SVGs are very particular about their individualism.
 		[#204](https://github.com/WestpacCXTeam/GUI-source/issues/204)
@@ -33,7 +42,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 		[#157](https://github.com/WestpacCXTeam/GUI-source/issues/157)
 * v1.0.1 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
 	* While preaching about collaboration and open source and asking developers to come to our GitHub repository to check out what we have done we were
-		blissfully unaweare of the missing GitHub icon in our icon sets. Take this as yet another nudge towards the awesome super-powers of open source,
+		blissfully unaware of the missing GitHub icon in our icon sets. Take this as yet another nudge towards the awesome super-powers of open source,
 		all packed into one small icon. :octocat:
 * v1.0.0 - Initial port
 
