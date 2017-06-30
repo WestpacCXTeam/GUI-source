@@ -136,8 +136,9 @@ See more in [Workflow](#workflow).
 	1. [x] `README.md` version bump
 	1. [x] make changes
 	1. [x] `README.md` whatsnew
-	1. [x] commit, merge `gh-pages` and `master`, reference issues with: `WestpacCXTeam/GUI-source#[issue number]`
-		or reference commits with: `WestpacCXTeam/[repo name]@[commit hash]` and fix issues via `fixed WestpacCXTeam/GUI-source#[issue number]`
+	1. [x] commit and push changes, reference issues with: `WestpacCXTeam/GUI-source#[issue number]`
+		or reference commits with: `WestpacCXTeam/[repo name]@[commit hash]` and fix issues with: `fixed WestpacCXTeam/GUI-source#[issue number]` (nb. `fixed` keyword will automatically close the issue once merged to `master`)
+	1. [x] merge `master` (`master` powers GitHub pages)
 	1. [x] -- _Do the following after email is sent out_ --
 	1. [x] tag, publish tag
 	1. [x] edit release on GitHub
@@ -146,21 +147,23 @@ See more in [Workflow](#workflow).
 
 > Run GUI-source and GUI-docs and upload to ubuntu server, install blender script and make sure we have 404 pages in place for transition
 
-1. Gui-source
+1. GUI-source
 	1. [x] add submodule in new version folder `git submodule add https://github.com/WestpacCXTeam/GUI-[module].git [module]/[version]`
 	1. [x] update submodule to pull files (command above does that automatically)
 	1. [x] checkout tag (should always be the latest tag)
 	1. [x] `grunt` to compile `index.html`, `GUI.json` and all READMEs
-	1. [x] commit and push `master` (`master` is what GitHub pages points to here)
-1. Gui-docs
-	1. [x] pull submodule `GUI-source` and update to latest master release
+	1. [x] _(optional)_ `grunt all` to compile `_sandbox` files
+	1. [x] commit and push `master` (`master` powers GitHub pages)
+1. GUI-docs
+	1. [x] pull submodule `GUI-source-master` and update to latest master release
 	1. [x] update new submodules to pull files
-	1. [x] run `grunt new-example` to add the missing `_includes/modules` and copy the `_examples` folder
-	1. [x] make sure you have the new `_includes/modules/[module]/[version].liquid` file and updated it's documentation
+	1. [x] run `grunt new-example` to automatically add the missing `_includes/modules` and `_examples` folders
+	1. [x] make sure you have the new `_includes/modules/[module]/[version].liquid` file and updated its documentation
 	1. [x] adjust `_examples` and add whatsnew
 	1. [x] add email link to GUI mail archive in Getting started
-	1. [x] `grunt server`
-	1. [x] run blender locally
+	1. [x] `grunt` to compile (current devBrand) and run server
+	1. [x] _(or)_ `grunt server` if you don't need to compile
+	1. [x] run blender locally `grunt remote/server-dev.js` from `/blender` (while GUI-docs server is running)
 	1. [x] check local copy and blend new blend if required
 	1. [x] install new GUI module into the docs build (js, css, grunticon, img fallback)
 	1. [x] check new versions examples in all brands
