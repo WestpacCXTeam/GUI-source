@@ -108,6 +108,12 @@
 			border-radius: 0;
 		}
 
+		.tabcordion-lego.tabcordion-accordion& {
+			border-radius: 0;
+			border-top: 0;
+			border-left: 0;
+		}
+
 		//borderless accordion
 		.tabcordion-accordion.tabcordion-accordion-borderless& {
 			border: 0;
@@ -382,6 +388,12 @@
 
 				.tabcordion-body-headline {
 					padding-left: 12px;
+				}
+
+				&:first-of-type {
+					.tabcordion-body-headline {
+						border-top: 1px solid @color-Border;
+					}
 				}
 
 				&.is-active {
