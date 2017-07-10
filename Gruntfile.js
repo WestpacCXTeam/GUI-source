@@ -479,9 +479,9 @@ module.exports = function(grunt) {
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	// Custom grunt task to commit all files
+	// Custom grunt task to update all the latest submodule versions
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
-	grunt.registerTask('updateSubmodulesLatest', 'Git pull the all latest submodules\' version.', function() {
+	grunt.registerTask('updateSubmodulesLatest', 'Git pull the all latest submodule versions.', function() {
 
 		var input = this.async();
 
