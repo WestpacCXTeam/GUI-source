@@ -524,7 +524,7 @@ module.exports = function(grunt) {
 
 						// console.log('latest: ' + submodule);
 
-						exec[ 'submodule-checkout' + folder ] = { //CHECKOUT
+						exec[ 'submodule-checkout' + submodule ] = { //CHECKOUT
 							options: {
 								stderr: false,
 								cwd: submodule,
@@ -532,7 +532,7 @@ module.exports = function(grunt) {
 							},
 							command: 'git checkout master',
 						};
-						exec[ 'submodule-pull' + folder ] = { //PULL
+						exec[ 'submodule-pull' + submodule ] = { //PULL
 							options: {
 								stderr: false,
 								cwd: submodule,
@@ -544,8 +544,8 @@ module.exports = function(grunt) {
 
 						grunt.config.set('exec', exec);
 
-						grunt.task.run('exec:submodule-checkout' + folder); //checkout master (HEAD likely detached before this)
-						grunt.task.run('exec:submodule-pull' + folder);
+						grunt.task.run('exec:submodule-checkout' + submodule); //checkout master (HEAD likely detached before this)
+						grunt.task.run('exec:submodule-pull' + submodule);
 					// }
 				});
 
