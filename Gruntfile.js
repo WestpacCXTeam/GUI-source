@@ -19,7 +19,10 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 // External dependencies
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
+var Prompt = require('prompt');
+var Chalk = require('chalk');
 var Path = require('path');
+var Fs = require('fs');
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -62,6 +65,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-text-replace');
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-wakeup');
+	grunt.loadNpmTasks('grunt-exec');
 	grunt.loadNpmTasks('grunt-font');
 	require('time-grunt')(grunt);
 
@@ -475,6 +479,87 @@ module.exports = function(grunt) {
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// Custom grunt task to commit all files
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	grunt.registerTask('updateSubmodulesLatest', 'Git pull the all latest submodules\' version.', function() {
+
+		var input = this.async();
+
+		Prompt.start();
+
+		Prompt.get({
+			properties: {
+				answer: {
+					description: '\n\n' + Chalk.bold.bgRed.white('\n  - Are you really sure you want this? - ') + '\n',
+					required: true,
+				},
+			}
+		}, function(err, result) {
+			if( result.answer === 'YES' ) {
+				input(true);
+
+				var exec = {};
+
+				//create tasks for each module
+				grunt.file.expand({ filter: 'isDirectory' }, [
+					'*',
+					'!node_modules',
+					'!._templates',
+					'!_sandbox',
+					'!.git',
+					'!.github',
+				]).forEach(function(folder) {
+
+					// if( folder === '_colors' ) {
+						grunt.verbose.writeln( 'Reading directory: ' + folder );
+
+						var submodule = folder + '/1.0.0'; //default
+
+						grunt.file.expand({ filter: 'isDirectory' }, [ //get latest version
+							folder + '/*',
+							'!./node_modules',
+						]).forEach(function( ver ) {
+							return submodule = ver;
+						});
+
+						// console.log('latest: ' + submodule);
+
+						exec[ 'submodule-checkout' + folder ] = { //CHECKOUT
+							options: {
+								stderr: false,
+								cwd: submodule,
+								stdout: true,
+							},
+							command: 'git checkout master',
+						};
+						exec[ 'submodule-pull' + folder ] = { //PULL
+							options: {
+								stderr: false,
+								cwd: submodule,
+								stdout: true,
+							},
+							command: 'git pull',
+						};
+
+
+						grunt.config.set('exec', exec);
+
+						grunt.task.run('exec:submodule-checkout' + folder); //checkout master (HEAD likely detached before this)
+						grunt.task.run('exec:submodule-pull' + folder);
+					// }
+				});
+
+				grunt.task.run('font:finished');
+			}
+			else {
+				console.log(' That\'s ok... :) ');
+				input(true);
+			}
+		});
+	});
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Grunt tasks
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.initConfig({
@@ -519,6 +604,10 @@ module.exports = function(grunt) {
 					colors: ['magenta'],
 				},
 				text: ' adding new module',
+			},
+
+			finished: {
+				text: 'finished',
 			},
 		},
 
