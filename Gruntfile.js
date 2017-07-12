@@ -247,8 +247,8 @@ module.exports = function(grunt) {
 		var less = {};
 		var copy = {};
 
-		grunt.task.run('clean:sandboxLess'); //clean less/modules folder
-		grunt.task.run('clean:sandboxJS'); //clean js/modules folder
+		// grunt.task.run('clean:sandboxLess'); //clean less/modules folder
+		// grunt.task.run('clean:sandboxJS'); //clean js/modules folder
 
 		Object.keys( GUI.modules ).forEach(function iterateCategories( category ) {
 			Object.keys( GUI.modules[category] ).forEach(function iterateModules( module ) {
@@ -257,9 +257,7 @@ module.exports = function(grunt) {
 					var latestVersion = '1.0.0';
 
 					//getting latest version
-					Object.keys( GUI.modules[category][module].versions ).forEach(function interateVersions( version ) {
-						latestVersion = version;
-					});
+					latestVersion = (latestVersion = Object.keys( GUI.modules[category][module].versions ))[latestVersion.length-1];
 
 					grunt.log.oklns( 'Going through: ' + module + ':' + latestVersion );
 
@@ -616,6 +614,10 @@ module.exports = function(grunt) {
 		// Clean task
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		clean: {
+			sandboxBrands: [
+				'_sandbox/**/*', //all subdirs (incl brand folders)
+				'!_sandbox/_assets/**' //except /_assets
+			],
 			sandboxLess: [
 				'_sandbox/_assets/less/modules/',
 			],
@@ -651,10 +653,11 @@ module.exports = function(grunt) {
 		'wakeup',
 	]);
 
-	grunt.registerTask('all', [ //build index and gui.json
+	grunt.registerTask('all', [ //build index, gui.json and _sandbox
 		'font:title',
 		'font:index',
 		'buildIndex',
+		'clean',
 		'buildEverything',
 		'wakeup',
 	]);
