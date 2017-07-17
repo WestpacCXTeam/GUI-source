@@ -10,7 +10,15 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 1
+			"size": 1,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
 		}
 	},
 	"hash": ""

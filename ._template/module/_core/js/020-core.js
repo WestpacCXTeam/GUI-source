@@ -1,4 +1,4 @@
-/*! _javascript-helpers v1.0.1 */
+/*! _javascript-helpers v2.0.0 */
 /***************************************************************************************************************************************************************
  *
  * Westpac GUI framework
@@ -28,6 +28,7 @@ var GUI = (function guiInit() {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	return {
 		DEBUG: [Debug], //debugging infos
+		DEBUGfilter: [], //filter debug messages
 
 
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -40,7 +41,9 @@ var GUI = (function guiInit() {
 				};
 			}
 
-			if( GUI.DEBUG ) console.log('%cGUI DEBUGGING INFORMATION', 'font-size: 25px;');
+			if( GUI.DEBUG ) {
+				console.log('%cGUI DEBUGGING INFORMATION', 'font-size: 25px;');
+			}
 
 			//remove fallback HTML class
 			$('html')
@@ -71,7 +74,7 @@ var GUI = (function guiInit() {
 		// @return  [boolean]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		detectCSS: function detectCSS( feature ) {
-			GUI.debugging( 'Base: detectCSS called with "' + feature + '"', 'report' );
+			GUI.debugging( 'Core: detectCSS called with "' + feature + '"', 'report' );
 
 			var _hasSupport = false; //assuming the worst
 			var browserPrefixes = ['Webkit', 'Moz', 'ms', 'O']; //browser prefixes
@@ -113,7 +116,7 @@ var GUI = (function guiInit() {
 		// @return  [function]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		debounce: function Debounce(func, wait, immediate) {
-			GUI.debugging( 'Base: Debounce called', 'report' );
+			GUI.debugging( 'Core: Debounce called', 'report' );
 
 			var timeout;
 			return function() {
@@ -124,7 +127,7 @@ var GUI = (function guiInit() {
 					timeout = null;
 
 					if(!immediate) {
-						GUI.debugging( 'Base: Debounce executed (1)', 'report' );
+						GUI.debugging( 'Core: Debounce executed (1)', 'report' );
 
 						func.apply(context, args);
 					}
@@ -135,7 +138,7 @@ var GUI = (function guiInit() {
 				timeout = setTimeout(later, wait);
 
 				if(callNow) {
-					GUI.debugging( 'Base: Debounce executed (2)', 'report' );
+					GUI.debugging( 'Core: Debounce executed (2)', 'report' );
 
 					func.apply(context, args);
 				}
@@ -152,7 +155,7 @@ var GUI = (function guiInit() {
 		// @return  [function]
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		throttle: function Throttle(func, wait) {
-			GUI.debugging( 'Base: Throttle called', 'report' );
+			GUI.debugging( 'Core: Throttle called', 'report' );
 
 			wait || (wait = 250);
 			var last;
@@ -167,14 +170,14 @@ var GUI = (function guiInit() {
 					clearTimeout(deferTimer);
 
 					deferTimer = setTimeout(function() {
-						GUI.debugging( 'Base: Throttle executed (1)', 'report' );
+						GUI.debugging( 'Core: Throttle executed (1)', 'report' );
 
 						last = now;
 						func.apply(context, args);
 					}, wait);
 				}
 				else {
-					GUI.debugging( 'Base: Throttle executed (2)', 'report' );
+					GUI.debugging( 'Core: Throttle executed (2)', 'report' );
 
 					last = now;
 					func.apply(context, args);
@@ -193,24 +196,39 @@ var GUI = (function guiInit() {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		debugging: function Debug( text, code ) {
 
-			if( code === 'report' ) {
-				if( GUI.DEBUG ) console.log('%c\u2611 ', 'color: green; font-size: 18px;', text);
+			if( GUI.DEBUGfilter.length > 0 ) {
+				var identifier = text.split(': ');
+				var output = '';
+
+				for(var i = GUI.DEBUGfilter.length - 1; i >= 0; i--) {
+					if( identifier[0] === GUI.DEBUGfilter[i] ) {
+						output = text;
+					}
+				};
+
+				text = output;
 			}
 
-			else if( code === 'error' ) {
-				if( GUI.DEBUG ) console.log('%c\u2612 ', 'color: red; font-size: 18px;', text);
-			}
+			if( GUI.DEBUG && text.length > 0 ) {
+				if( code === 'report' ) {
+					console.log('%c\u2611 ', 'color: green; font-size: 18px;', text);
+				}
 
-			else if( code === 'interaction' ) {
-				if( GUI.DEBUG ) console.log('%c\u261C ', 'color: blue; font-size: 18px;', text);
-			}
+				else if( code === 'error' ) {
+					console.log('%c\u2612 ', 'color: red; font-size: 18px;', text);
+				}
 
-			else if( code === 'send' ) {
-				if( GUI.DEBUG ) console.log('%c\u219D ', 'color: pink; font-size: 18px;', text);
-			}
+				else if( code === 'interaction' ) {
+					console.log('%c\u261C ', 'color: blue; font-size: 18px;', text);
+				}
 
-			else if( code === 'receive' ) {
-				if( GUI.DEBUG ) console.log('%c\u219C ', 'color: pink; font-size: 18px;', text);
+				else if( code === 'send' ) {
+					console.log('%c\u219D ', 'color: pink; font-size: 18px;', text);
+				}
+
+				else if( code === 'receive' ) {
+					console.log('%c\u219C ', 'color: pink; font-size: 18px;', text);
+				}
 			}
 
 		}

@@ -8,7 +8,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BOM](http://westpaccxteam.github.io/GUI-[-Module-]/tests/BOM/) |
 [BSA](http://westpaccxteam.github.io/GUI-[-Module-]/tests/BSA/) |
 [STG](http://westpaccxteam.github.io/GUI-[-Module-]/tests/STG/) |
-[WBC](http://westpaccxteam.github.io/GUI-[-Module-]/tests/WBC/)
+[WBC](http://westpaccxteam.github.io/GUI-[-Module-]/tests/WBC/) |
+[WBG](http://westpaccxteam.github.io/GUI-[-Module-]/tests/WBG/) |
+[BT](http://westpaccxteam.github.io/GUI-[-Module-]/tests/BT/)
 
 > Description
 

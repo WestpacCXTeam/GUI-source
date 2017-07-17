@@ -122,7 +122,7 @@ See more in [Workflow](#workflow).
 	1. [x] make sure `core` is up to date
 	1. [x] create the module
 	1. [x] adjust `module.json` to reflect use of `js`, `less`, `svg` etc.
-	1. [x] commit, merge `gh-pages` and `master`
+	1. [x] commit, merge `master`
 	1. [x] tag, publish tag
 	1. [x] edit release on GitHub
 
@@ -168,7 +168,7 @@ See more in [Workflow](#workflow).
 	1. [x] install new GUI module into the docs build (js, css, grunticon, img fallback)
 	1. [x] check new versions examples in all brands
 	1. [x] `grunt prod-all` to build the production files
-	1. [x] commit, merge `gh-pages` and `master`
+	1. [x] commit, merge `master`
 	1. [x] now make sure all modules have their tags published, GitHub releases submitted
 	1. [x] if fonts have changed make sure to upload the new webfont zip to
 		[the internal hosting site](https://sites.thewestpacgroup.com.au/sites/TS1206/SitePages/Home.aspx)
@@ -245,6 +245,7 @@ The `module.json` file that is then compiled into the GUI.json file is the engin
 
 > We are trying to make as little changes to the overall build as possible.
 
+* v1.0.3 - Clean _sandbox icon output pre build and update ._template files
 * v1.0.2 - Automated branding with the `.guiconfig` file
 * v1.0.1 - Moved all modules into submodules
 * v1.0.0 - Initial build system setup
@@ -257,7 +258,7 @@ The `module.json` file that is then compiled into the GUI.json file is the engin
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
 
 **[:point_up: back to top](#content)**
 
