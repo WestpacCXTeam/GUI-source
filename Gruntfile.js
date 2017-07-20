@@ -504,47 +504,46 @@ module.exports = function(grunt) {
 					'!node_modules',
 					'!._templates',
 					'!_sandbox',
+					'!test-*',
 					'!.git',
 					'!.github',
 				]).forEach(function(folder) {
+					
+					grunt.verbose.writeln( 'Reading directory: ' + folder );
 
-					// if( folder === '_colors' ) {
-						grunt.verbose.writeln( 'Reading directory: ' + folder );
+					var submodule = folder + '/1.0.0'; //default
 
-						var submodule = folder + '/1.0.0'; //default
+					grunt.file.expand({ filter: 'isDirectory' }, [ //get latest version
+						folder + '/*',
+						'!./node_modules',
+					]).forEach(function( ver ) {
+						return submodule = ver;
+					});
 
-						grunt.file.expand({ filter: 'isDirectory' }, [ //get latest version
-							folder + '/*',
-							'!./node_modules',
-						]).forEach(function( ver ) {
-							return submodule = ver;
-						});
+					// console.log('latest: ' + submodule);
 
-						// console.log('latest: ' + submodule);
-
-						exec[ 'submodule-checkout' + submodule ] = { //CHECKOUT
-							options: {
-								stderr: false,
-								cwd: submodule,
-								stdout: true,
-							},
-							command: 'git checkout master',
-						};
-						exec[ 'submodule-pull' + submodule ] = { //PULL
-							options: {
-								stderr: false,
-								cwd: submodule,
-								stdout: true,
-							},
-							command: 'git pull',
-						};
+					exec[ 'submodule-checkout' + submodule ] = { //CHECKOUT
+						options: {
+							stderr: false,
+							cwd: submodule,
+							stdout: true,
+						},
+						command: 'git checkout master',
+					};
+					exec[ 'submodule-pull' + submodule ] = { //PULL
+						options: {
+							stderr: false,
+							cwd: submodule,
+							stdout: true,
+						},
+						command: 'git pull',
+					};
 
 
-						grunt.config.set('exec', exec);
+					grunt.config.set('exec', exec);
 
-						grunt.task.run('exec:submodule-checkout' + submodule); //checkout master (HEAD likely detached before this)
-						grunt.task.run('exec:submodule-pull' + submodule);
-					// }
+					grunt.task.run('exec:submodule-checkout' + submodule); //checkout master (HEAD likely detached before this)
+					grunt.task.run('exec:submodule-pull' + submodule);
 				});
 
 				grunt.task.run('font:finished');
