@@ -12,8 +12,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-logos/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-logos/tests/BT/)
 
-> These symbols are commonly used in WBC user interfaces. They are implemented as scalable vector graphics (SVG’s) with png fallback’s for older browsers.
-> Using SVG’s ensures the highest quality rendering on all devices, allows us to style the symbols using code and also complies with AA accessibility
+> These symbols are commonly used in WBC user interfaces. They are implemented as scalable vector graphics (SVGs) with PNG fallbacks for older browsers.
+> Using SVGs ensures the highest quality rendering on all devices, allows us to style the symbols using code and also complies with AA accessibility
 > requirements.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -21,10 +21,13 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.0 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+	* New `.logo-multibrand-*` Multi-brand logos; brought over from the Symbols module with a new classing convention we’re going to be using going forward... 'xsmall/small/medium/large/xlarge' to denote appearance sizing and 'xs/sm/md/lg/xl' to denote breakpoint.
+		[#333](https://github.com/WestpacCXTeam/GUI-source/issues/333)
 * v2.0.4 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Remove secondary `.symbol-*` prefix from all Logos. Logos use the `.logo-*` prefix and Symbols use the `.symbol-*` prefix exclusively.
 * v2.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
-	* We added Westpacs 200 year birthday logo. Yes. We’re turning 200. 🎂🎉🎁 Feels just like yesterday when we started with this whole banking thing.
+	* We added Westpac’s 200 year birthday logo. Yes. We’re turning 200. 🎂🎉🎁 Feels just like yesterday when we started with this whole banking thing.
 		[#280](https://github.com/WestpacCXTeam/GUI-source/issues/280)
 * v2.0.2 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Part of the STG logos where not showing. We really want all parts of the logos showing so we gave it a pep-talk.
@@ -50,7 +53,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-logos/master/LICENSE).
+Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-logos/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

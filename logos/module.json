@@ -2,7 +2,7 @@
 	"ID": "logos",
 	"name": "Logos",
 	"description": "Westpac Group brand, SVG logos.",
-	"category": "Symbols",
+	"category": "Logos",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [],
@@ -112,7 +112,25 @@
 			"less": true,
 			"svg": true,
 			"font": false,
-			"size": 94,
+			"size": 99,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
+		},
+		"3.0.0": {
+			"dependencies": [
+				"_colors:1.0.1"
+			],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 99,
 			"brands": [
 				"BOM",
 				"BSA",
@@ -123,5 +141,5 @@
 			]
 		}
 	},
-	"hash": "6e487ca6048032e4e3170530c596c475"
+	"hash": "18199b1321e221605dc40d020c80f742"
 }

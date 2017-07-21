@@ -12,8 +12,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-symbols/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-symbols/tests/BT/)
 
-> These symbols are commonly used in WBC user interfaces. They are implemented as scalable vector graphics (SVG’s) with png fallback’s for older browsers.
-> Using SVG’s ensures the highest quality rendering on all devices, allows us to style the symbols using code and also complies with AA accessibility
+> These symbols are commonly used in WBC user interfaces. They are implemented as scalable vector graphics (SVGs) with PNG fallbacks for older browsers.
+> Using SVGs ensures the highest quality rendering on all devices, allows us to style the symbols using code and also complies with AA accessibility
 > requirements.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -21,6 +21,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.6 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* `.symbol-logo-alt` multi-brand logo depreciated
+	* Multi-brand logos moved to Logos module... now `.logo-multibrand-small` and `.logo-multibrand-large` 
+		[#333](https://github.com/WestpacCXTeam/GUI-source/issues/333)
+	* Symbols now shared between all brands (duplicate SVGs no longer maintained per brand)
 * v2.0.5 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New Instagram, Slack and Yammer social symbols added
 		[#330](https://github.com/WestpacCXTeam/GUI-source/issues/330) 
@@ -64,7 +69,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-symbols/master/LICENSE).
+Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-symbols/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
