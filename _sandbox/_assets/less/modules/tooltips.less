@@ -44,7 +44,11 @@
 
 		&:after {
 			content: " (" attr(title) ")";
-			display: inline-block;
+			display: inline;
+
+			.icon& {
+				display: inline-block;
+			}
 
 			.icon-size-sm& {
 				padding-left: 18px;
@@ -129,7 +133,7 @@
 		// 			opacity: 0.9;
 		// 		}
 		// 	}
-
+			&.icon:after,
 			&:after {
 				display: none;
 			}
