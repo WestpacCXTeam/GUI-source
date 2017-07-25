@@ -13,8 +13,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BT](http://westpaccxteam.github.io/GUI-icons-group14/tests/BT/)
 
 > This library of icons is intended for use across all of our brands and user interfaces. They are designed to aid navigation and legibility. The use of icons
-> purely as page embellishment is not recommended and in some cases will be off brand. These icons are implemented as scalable vector graphics (SVG’s) with
-> png fallback’s for older browsers. Using SVG’s ensures the highest quality rendering on all devices, allows us to style the icons using code and also
+> purely as page embellishment is not recommended and in some cases will be off brand. These icons are implemented as scalable vector graphics (SVGs) with
+> PNG fallbacks for older browsers. Using SVGs ensures the highest quality rendering on all devices, allows us to style the icons using code and also
 > complies with AA accessibility requirements.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -43,7 +43,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2015 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-icons-group14/master/LICENSE).
+Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-icons-group14/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
