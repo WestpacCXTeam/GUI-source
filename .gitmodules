@@ -195,6 +195,10 @@
 	path = checkboxes/2.0.3
 	url = https://github.com/WestpacCXTeam/GUI-checkboxes.git
 
+[submodule "icons/1.0.0"]
+	path = icons/1.0.0
+	url = git@github.com:WestpacCXTeam/GUI-icons.git
+
 [submodule "icons-base/1.0.0"]
 	path = icons-base/1.0.0
 	url = https://github.com/WestpacCXTeam/GUI-icons-base.git
