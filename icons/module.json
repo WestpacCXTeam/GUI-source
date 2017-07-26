@@ -1,0 +1,25 @@
+{
+	"ID": "icons",
+	"name": "Icons",
+	"description": "A collection of hand-crafted AA accessibile SVG icons with PNG fallbacks, designed to aid navigation and legibility.",
+	"category": "Icons",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 246,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
+		}
+	},
+	"hash": "33e73fe3543e5cc72c4e3f77becb66bb"
+}
