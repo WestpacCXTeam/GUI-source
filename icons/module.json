@@ -5,7 +5,9 @@
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
-			"dependencies": [],
+			"dependencies": [
+				"_colors:1.0.1"
+			],
 			"js": false,
 			"less": true,
 			"svg": true,

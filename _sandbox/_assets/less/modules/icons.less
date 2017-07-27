@@ -37,6 +37,8 @@
 	// Base
 	.icon {
 		display: inline-block;
+		
+		// Medium (default)
 		width: 32px;
 		height: 32px;
 
@@ -49,7 +51,7 @@
 	}
 
 	// Sizing
-	.icon-size-sm {
+	.icon-small {
 		background-size: 16px 16px;
 		width: 16px;
 		height: 16px;
@@ -64,17 +66,7 @@
 			height: 32px;
 		}
 	}
-	// &.icon-size-md {
-	// 	background-size: 32px 32px;
-	// 	width: 32px;
-	// 	height: 32px;
-
-	// 	svg {
-	// 		width: 32px;
-	// 		height: 32px;
-	// 	}
-	// }
-	.icon-size-lg {
+	.icon-large {
 		background-size: 64px 64px;
 		width: 64px;
 		height: 64px;
@@ -109,22 +101,20 @@
 
 			animation: fallback 1.2s ease-out;
 			animation-iteration-count: infinite;
-		}
 
-		&.icon-size-sm:after {
-			border-width: 2px;
-			background-size: 16px;
-			width: 16px;
-			height: 16px;
-		}
-
-		&.icon-size-md:after {
+			// Medium (default)
 			background-size: 32px;
 			width: 32px;
 			height: 32px;
 		}
 
-		&.icon-size-lg:after {
+		&.icon-small:after {
+			border-width: 2px;
+			background-size: 16px;
+			width: 16px;
+			height: 16px;
+		}
+		&.icon-large:after {
 			border-width: 6px;
 			background-size: 64px;
 			width: 64px;
