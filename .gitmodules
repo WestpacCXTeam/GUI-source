@@ -638,7 +638,7 @@
 	url = https://github.com/WestpacCXTeam/GUI-logos.git
 [submodule "logos/3.0.0"]
 	path = logos/3.0.0
-	url = git@github.com:WestpacCXTeam/GUI-logos.git
+	url = https://github.com/WestpacCXTeam/GUI-logos.git
 
 [submodule "modals/1.0.0"]
 	path = modals/1.0.0
@@ -814,7 +814,7 @@ url=https://github.com/WestpacCXTeam/GUI-panels.git
 	url = https://github.com/WestpacCXTeam/GUI-symbols.git
 [submodule "symbols/2.0.6"]
 	path = symbols/2.0.6
-	url = git@github.com:WestpacCXTeam/GUI-symbols.git
+	url = https://github.com/WestpacCXTeam/GUI-symbols.git
 
 [submodule "tabcordions/1.0.0"]
 	path = tabcordions/1.0.0
