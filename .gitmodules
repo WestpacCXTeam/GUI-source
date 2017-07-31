@@ -112,6 +112,9 @@
 [submodule "alerts/2.0.2"]
 	path = alerts/2.0.2
 	url = https://github.com/WestpacCXTeam/GUI-alerts.git
+[submodule "alerts/2.0.3"]
+	path = alerts/2.0.3
+	url = https://github.com/WestpacCXTeam/GUI-alerts.git
 
 [submodule "badges/1.0.0"]
 	path = badges/1.0.0
@@ -576,6 +579,9 @@
 [submodule "labels/2.0.3"]
 	path = labels/2.0.3
 	url = https://github.com/WestpacCXTeam/GUI-labels.git
+[submodule "labels/2.0.4"]
+	path = labels/2.0.4
+	url = https://github.com/WestpacCXTeam/GUI-labels.git
 
 [submodule "list-groups/1.0.0"]
 	path = list-groups/1.0.0
@@ -854,33 +860,32 @@ url=https://github.com/WestpacCXTeam/GUI-panels.git
 	path = tables/2.0.2
 	url = https://github.com/WestpacCXTeam/GUI-tables.git
 
-[submodule "text-extensions/1.0.0"]
-	path = text-extensions/1.0.0
+[submodule "text-extensions/2.0.0"]
+	path = text-extensions/2.0.0
 	url = https://github.com/WestpacCXTeam/GUI-text-extensions.git
+[submodule "text-extensions/2.0.1"]
+	path = text-extensions/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-text-extensions.git	
+
 [submodule "tooltips/1.0.0"]
 	path = tooltips/1.0.0
 	url = https://github.com/WestpacCXTeam/GUI-tooltips.git
 [submodule "tooltips/1.0.1"]
 	path = tooltips/1.0.1
 	url = https://github.com/WestpacCXTeam/GUI-tooltips.git
-[submodule "wells/1.0.0"]
-	path = wells/1.0.0
-	url = https://github.com/WestpacCXTeam/GUI-wells.git
-[submodule "text-extensions/2.0.0"]
-	path = text-extensions/2.0.0
-	url = https://github.com/WestpacCXTeam/GUI-text-extensions.git
 [submodule "tooltips/2.0.0"]
 	path = tooltips/2.0.0
 	url = https://github.com/WestpacCXTeam/GUI-tooltips.git
+[submodule "tooltips/2.0.1"]
+	path = tooltips/2.0.1
+	url = https://github.com/WestpacCXTeam/GUI-tooltips.git
+	
+[submodule "wells/1.0.0"]
+	path = wells/1.0.0
+	url = https://github.com/WestpacCXTeam/GUI-wells.git
 [submodule "wells/2.0.0"]
 	path = wells/2.0.0
 	url = https://github.com/WestpacCXTeam/GUI-wells.git
 [submodule "wells/2.0.1"]
 	path = wells/2.0.1
 	url = https://github.com/WestpacCXTeam/GUI-wells.git
-[submodule "tooltips/2.0.1"]
-	path = tooltips/2.0.1
-	url = https://github.com/WestpacCXTeam/GUI-tooltips.git
-[submodule "text-extensions/2.0.1"]
-	path = text-extensions/2.0.1
-	url = https://github.com/WestpacCXTeam/GUI-text-extensions.git
