@@ -1,4 +1,4 @@
-/*! Labels v2.0.3 WBC*/
+/*! Labels v2.0.4 WBC*/
 /*
  * labels mixins
  *
@@ -70,74 +70,69 @@
 			#fff,
 			@color-A
 		);
+	}
 
-		&.label-primary {
-			._labels-make-label(
-				@primary-fontcolor,
-				@primary-backgroundcolor
-			);
-		}
+	.label-primary {
+		._labels-make-label(
+			@primary-fontcolor,
+			@primary-backgroundcolor
+		);
+	}
 
-		&.label-hero {
-			._labels-make-label(
-				@hero-fontcolor,
-				@hero-backgroundcolor
-			);
-		}
+	.label-hero {
+		._labels-make-label(
+			@hero-fontcolor,
+			@hero-backgroundcolor
+		);
+	}
 
-		&.label-neutral {
-			._labels-make-label(
-				@neutral-fontcolor,
-				@neutral-backgroundcolor
-			);
-		}
+	.label-neutral {
+		._labels-make-label(
+			@neutral-fontcolor,
+			@neutral-backgroundcolor
+		);
+	}
 
-		&.label-faint {
-			._labels-make-label(
-				@faint-fontcolor,
-				@faint-backgroundcolor,
-				@faint-bordercolor,
-				@faint-borderwidth
-			);
+	.label-faint {
+		._labels-make-label(
+			@faint-fontcolor,
+			@faint-backgroundcolor,
+			@faint-bordercolor,
+			@faint-borderwidth
+		);
 
-			padding-top: 1px;
-			padding-bottom: 1px;
-		}
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
 
-		&.label-info {
-			._labels-make-label(
-				@info-fontcolor,
-				@info-backgroundcolor
-			);
-		}
+	.label-info {
+		._labels-make-label(
+			@info-fontcolor,
+			@info-backgroundcolor
+		);
+	}
 
-		&.label-warning {
-			._labels-make-label(
-				@warning-fontcolor,
-				@warning-backgroundcolor
-			);
-		}
+	.label-warning {
+		._labels-make-label(
+			@warning-fontcolor,
+			@warning-backgroundcolor
+		);
+	}
 
-		&.label-danger {
-			._labels-make-label(
-				@danger-fontcolor,
-				@danger-backgroundcolor
-			);
-		}
+	.label-danger {
+		._labels-make-label(
+			@danger-fontcolor,
+			@danger-backgroundcolor
+		);
 	}
 
 
 	//////////////////////////////////////| PRINT
 	@media print {
 		.label {
-			&,
-			&.label-primary,
-			&.label-hero,
-			&.label-faint {
-				color: #000;
-				background-color: #fff;
-				border: 1px solid #000;
-			}
+			color: #000;
+			background-color: #fff;
+			border: 1px solid #000;
 		}
 	}
 }
