@@ -17,6 +17,11 @@ GUI Alerts
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Reduce module modifier CSS over-specificity
+	* Remove duplicated alert label styling (already in Labels module)
+	[#364](https://github.com/WestpacCXTeam/GUI-source/issues/364)
+	* Update internal icon sizing classes to new naming convention
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Tweaking has alert class to apply alert colour to input and textarea content so they are more visible.
 	[#315](https://github.com/WestpacCXTeam/GUI-source/issues/315)
