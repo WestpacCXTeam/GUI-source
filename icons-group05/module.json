@@ -2,7 +2,7 @@
 	"ID": "icons-group05",
 	"name": "Icons-Group 5",
 	"description": "<span class='icon icon-size-sm icon-australia'></span> <span class='icon icon-size-sm icon-chat'></span> <span class='icon icon-size-sm icon-clock'></span> <span class='icon icon-size-sm icon-edit'></span> <span class='icon icon-size-sm icon-email'></span> <span class='icon icon-size-sm icon-id-card'></span> <span class='icon icon-size-sm icon-padlock'></span> <span class='icon icon-size-sm icon-print'></span> <span class='icon icon-size-sm icon-sms'></span> <span class='icon icon-size-sm icon-stopwatch'></span> <span class='icon icon-size-sm icon-telephone'></span> <span class='icon icon-size-sm icon-tick'></span>",
-	"category": "Icons",
+	"category": "Icons (Legacy)",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [

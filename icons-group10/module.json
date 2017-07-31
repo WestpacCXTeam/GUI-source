@@ -2,7 +2,7 @@
 	"ID": "icons-group10",
 	"name": "Icons-Group 10",
 	"description": "<span class='icon icon-size-sm icon-android'></span> <span class='icon icon-size-sm icon-apple'></span> <span class='icon icon-size-sm icon-desktop'></span> <span class='icon icon-size-sm icon-phone'></span> <span class='icon icon-size-sm icon-tablet'></span> <span class='icon icon-size-sm icon-windows-new'></span>",
-	"category": "Icons",
+	"category": "Icons (Legacy)",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [

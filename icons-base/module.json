@@ -2,7 +2,7 @@
 	"ID": "icons-base",
 	"name": "Icons-Base",
 	"description": "Classes to manage icon size and embedding.",
-	"category": "Icons",
+	"category": "Icons (Legacy)",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [],

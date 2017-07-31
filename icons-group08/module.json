@@ -2,7 +2,7 @@
 	"ID": "icons-group08",
 	"name": "Icons-Group 8",
 	"description": "<span class='icon icon-size-sm icon-bar-chart'></span> <span class='icon icon-size-sm icon-invest'></span> <span class='icon icon-size-sm icon-pie-chart'></span>",
-	"category": "Icons",
+	"category": "Icons (Legacy)",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [

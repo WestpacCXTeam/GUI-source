@@ -2,7 +2,7 @@
 	"ID": "icons-group11",
 	"name": "Icons-Group 11",
 	"description": "<span class='icon icon-size-sm icon-account'></span> <span class='icon icon-size-sm icon-bpay'></span> <span class='icon icon-size-sm icon-history-clock'></span> <span class='icon icon-size-sm icon-move-from'></span> <span class='icon icon-size-sm icon-move-to'></span> <span class='icon icon-size-sm icon-transfer'></span>",
-	"category": "Icons",
+	"category": "Icons (Legacy)",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
