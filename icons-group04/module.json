@@ -2,7 +2,8 @@
 	"ID": "icons-group04",
 	"name": "Icons-Group 4",
 	"description": "<span class='icon icon-size-sm icon-house'></span> <span class='icon icon-size-sm icon-people'></span> <span class='icon icon-size-sm icon-person'></span>",
-	"category": "Icons (Legacy)",
+	"category": "Icon Groups (Deprecated)",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [

@@ -2,7 +2,8 @@
 	"ID": "icons-group06",
 	"name": "Icons-Group 6",
 	"description": "<span class='icon icon-size-sm icon-excel-file'></span> <span class='icon icon-size-sm icon-generic-file'></span> <span class='icon icon-size-sm icon-pdf-file'></span> <span class='icon icon-size-sm icon-word-file'></span> <span class='icon icon-size-sm icon-zip-file'></span>",
-	"category": "Icons (Legacy)",
+	"category": "Icon Groups (Deprecated)",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [

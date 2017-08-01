@@ -2,7 +2,8 @@
 	"ID": "icons-group13",
 	"name": "Icons-Group 13",
 	"description": "<span class='icon icon-size-sm icon-add-a'></span> <span class='icon icon-size-sm icon-add-b'></span> <span class='icon icon-size-sm icon-backspace'></span> <span class='icon icon-size-sm icon-close'></span> <span class='icon icon-size-sm icon-delete'></span> <span class='icon icon-size-sm icon-filter'></span> <span class='icon icon-size-sm icon-pause'></span> <span class='icon icon-size-sm icon-play'></span> <span class='icon icon-size-sm icon-remove'></span>",
-	"category": "Icons (Legacy)",
+	"category": "Icon Groups (Deprecated)",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [

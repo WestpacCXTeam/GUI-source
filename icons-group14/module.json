@@ -2,7 +2,8 @@
 	"ID": "icons-group14",
 	"name": "Icons-Group 14",
 	"description": "<span class='icon icon-size-sm icon-download'></span> <span class='icon icon-size-sm icon-new-window'></span> <span class='icon icon-size-sm icon-refresh'></span> <span class='icon icon-size-sm icon-search'></span> <span class='icon icon-size-sm icon-upload'></span> <span class='icon icon-size-sm icon-write'></span>",
-	"category": "Icons (Legacy)",
+	"category": "Icon Groups (Deprecated)",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [

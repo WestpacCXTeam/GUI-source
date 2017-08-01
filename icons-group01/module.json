@@ -2,7 +2,8 @@
 	"ID": "icons-group01",
 	"name": "Icons-Group 1",
 	"description": "<span class='icon icon-size-sm icon-loading'></span>",
-	"category": "Icons (Legacy)",
+	"category": "Icon Groups (Deprecated)",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
