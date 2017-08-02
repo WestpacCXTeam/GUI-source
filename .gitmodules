@@ -607,9 +607,9 @@
 [submodule "logos/2.0.4"]
 	path = logos/2.0.4
 	url = https://github.com/WestpacCXTeam/GUI-logos.git
-[submodule "logos/3.0.0"]
-	path = logos/3.0.0
-	url = https://github.com/WestpacCXTeam/GUI-logos.git
+[submodule "logos/2.0.5"]
+	path = logos/2.0.5
+	url = http://github.com/WestpacCXTeam/GUI-logos.git
 [submodule "modals/1.0.0"]
 	path = modals/1.0.0
 	url = https://github.com/WestpacCXTeam/GUI-modals.git

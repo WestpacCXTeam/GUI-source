@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+.tmp
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.idea
+yarn.lock
