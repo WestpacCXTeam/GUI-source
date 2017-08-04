@@ -21,8 +21,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v2.0.6 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* `.symbol-logo-alt` multi-brand logo depreciated
+* v3.0.0 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+	* `.symbol-logo-alt` multi-brand logo deprecated
 	* Multi-brand logos moved to Logos module... now `.logo-multibrand-small` and `.logo-multibrand-large` 
 		[#333](https://github.com/WestpacCXTeam/GUI-source/issues/333)
 	* Symbols now shared between all brands (duplicate SVGs no longer maintained per brand)
