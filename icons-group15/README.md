@@ -12,10 +12,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-icons-group15/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-icons-group15/tests/BT/)
 
-> This library of icons is intended for use across all of our brands and user interfaces. They are designed to aid navigation and legibility. The use of icons
-> purely as page embellishment is not recommended and in some cases will be off brand. These icons are implemented as scalable vector graphics (SVGs) with
-> PNG fallbacks for older browsers. Using SVGs ensures the highest quality rendering on all devices, allows us to style the icons using code and also
-> complies with AA accessibility requirements.
+> ⚠️ **IMPORTANT!** This module is deprecated in favour of a consolidated single-module approach. Please refer to [GUI-icons](https://github.com/WestpacCXTeam/GUI-icons) for new projects.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
