@@ -769,9 +769,6 @@
 [submodule "symbols/2.0.5"]
 	path = symbols/2.0.5
 	url = https://github.com/WestpacCXTeam/GUI-symbols.git
-[submodule "symbols/2.0.6"]
-	path = symbols/2.0.6
-	url = https://github.com/WestpacCXTeam/GUI-symbols.git
 [submodule "tabcordions/1.0.0"]
 	path = tabcordions/1.0.0
 	url = https://github.com/WestpacCXTeam/GUI-tabcordions.git
