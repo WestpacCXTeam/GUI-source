@@ -253,7 +253,7 @@ module.exports = function(grunt) {
 		Object.keys( GUI.modules ).forEach(function iterateCategories( category ) {
 			Object.keys( GUI.modules[category] ).forEach(function iterateModules( module ) {
 
-				if( category != '_testing' && GUI.modules[category][module].core !== true ) { //exclude the _testing and _core category
+				if( category != '_testing' && GUI.modules[category][module].core !== true && GUI.modules[category][module].deprecated !== true) { //exclude _testing and _core categories, and deprecated modules
 					var latestVersion = '1.0.0';
 
 					//getting latest version
