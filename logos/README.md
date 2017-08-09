@@ -21,9 +21,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v2.0.5 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* New `.logo-multibrand-*` multi-brand logos; brought over from the Symbols module with a new classing convention we’re going to be using going forward... 'xsmall/small/medium/large/xlarge' to denote appearance sizing and 'xs/sm/md/lg/xl' to denote breakpoint.
+* v2.0.5 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+	* New `.logo-multibrand-*` multi-brand logos; brought over from the Symbols module and renamed for clarity.
 		[#333](https://github.com/WestpacCXTeam/GUI-source/issues/333)
+	* Reduce CSS over-specificity
 * v2.0.4 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Remove secondary `.symbol-*` prefix from all Logos. Logos use the `.logo-*` prefix and Symbols use the `.symbol-*` prefix exclusively.
 * v2.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~

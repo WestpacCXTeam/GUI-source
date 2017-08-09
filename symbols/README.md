@@ -26,6 +26,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 	* Multi-brand logos moved to Logos module... now `.logo-multibrand-small` and `.logo-multibrand-large` 
 		[#333](https://github.com/WestpacCXTeam/GUI-source/issues/333)
 	* Symbols now shared between all brands (duplicate SVGs no longer maintained per brand)
+	* Reduce CSS over-specificity
 * v2.0.5 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New Instagram, Slack and Yammer social symbols added
 		[#330](https://github.com/WestpacCXTeam/GUI-source/issues/330) 
