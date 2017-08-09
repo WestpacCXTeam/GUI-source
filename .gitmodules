@@ -841,3 +841,6 @@
 [submodule "symbols/3.0.0"]
 	path = symbols/3.0.0
 	url = https://github.com/WestpacCXTeam/GUI-symbols.git
+[submodule "tooltips/2.0.2"]
+	path = tooltips/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-tooltips.git
