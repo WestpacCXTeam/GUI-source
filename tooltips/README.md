@@ -19,6 +19,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Ensuring when Tooltip abbr title values are shown (for mobile) they don’t butt up against the abbr text.
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* When attaching tooltips to a button element the tooltip got cut off. We explained to buttons that interrupting a well articulated tooltip is rude. Now
 		tooltips won’t stop in the middle of
