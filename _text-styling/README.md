@@ -21,6 +21,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Remapping BT’s text selection colour as we’re deprecating the previous colour variable
 * v4.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Normalize was overriding the body font-family for button, input, textarea, select and optgroup by setting font-family to san-serif. The change applies the same font-family as body to these elements specifically to override normalize.
 		[#306](https://github.com/WestpacCXTeam/GUI-source/issues/306)
