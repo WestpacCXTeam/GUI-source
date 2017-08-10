@@ -37,8 +37,6 @@
 	// Base
 	.icon {
 		display: inline-block;
-		
-		// Medium (default)
 		width: 32px;
 		height: 32px;
 
@@ -51,7 +49,7 @@
 	}
 
 	// Sizing
-	.icon-small {
+	.icon-size-sm {
 		background-size: 16px 16px;
 		width: 16px;
 		height: 16px;
@@ -66,7 +64,17 @@
 			height: 32px;
 		}
 	}
-	.icon-large {
+	/*.icon-size-md {
+		background-size: 32px 32px;
+		width: 32px;
+		height: 32px;
+
+		svg {
+			width: 32px;
+			height: 32px;
+		}
+	}*/
+	.icon-size-lg {
 		background-size: 64px 64px;
 		width: 64px;
 		height: 64px;
@@ -108,13 +116,18 @@
 			height: 32px;
 		}
 
-		&.icon-small:after {
+		&.icon-size-sm:after {
 			border-width: 2px;
 			background-size: 16px;
 			width: 16px;
 			height: 16px;
 		}
-		&.icon-large:after {
+		&.icon-size-md:after {
+			background-size: 32px;
+			width: 32px;
+			height: 32px;
+		}
+		&.icon-size-lg:after {
 			border-width: 6px;
 			background-size: 64px;
 			width: 64px;
