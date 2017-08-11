@@ -1,10 +1,11 @@
-/*!_colors v2.0.2*/
+/*!_colors v3.0.0*/
 
 @brand: [Brand];
 
 
 //////////////////////////////////////| COLORS MIXIN
 ._colors( @brand ) {
+	@empty: #000; //empty slot
 
 	/*
 	 *  SETTINGS
@@ -13,8 +14,8 @@
 		@color-A: #b45c38;
 		@color-B: #1f252c;
 		@color-C: #69727e;
-		@color-D: #444f5e;
-		@color-E: #7e7357;
+		@color-D: @empty;
+		@color-E: #1f252c;
 		@color-F: #1f252c;
 		@color-G: #69727e;
 		@color-H: #d2d5d8;
@@ -25,8 +26,8 @@
 		@color-A: #d81b2b;
 		@color-B: #002f6c;
 		@color-C: #6c7074;
-		@color-D: #00204f;
-		@color-E: #00adbd;
+		@color-D: @empty;
+		@color-E: #002f6c;
 		@color-F: #333;
 		@color-G: #6c7074;
 		@color-H: #d3d4d5;
@@ -37,8 +38,8 @@
 		@color-A: #e30000;
 		@color-B: #78be20;
 		@color-C: #757463;
-		@color-D: #008739;
-		@color-E: #ffcd00;
+		@color-D: @empty;
+		@color-E: #004833;
 		@color-F: #004833;
 		@color-G: #757463;
 		@color-H: #d6d5d0;
@@ -49,8 +50,8 @@
 		@color-A: #d5002b;
 		@color-B: #621a4b;
 		@color-C: #2d373e;
-		@color-D: #9f0029;
-		@color-E: #680000;
+		@color-D: @empty;
+		@color-E: #621a4b;
 		@color-F: #2d373e;
 		@color-G: #575f65;
 		@color-H: #d7d2cb;
@@ -61,8 +62,8 @@
 		@color-A: #d5002b;
 		@color-B: #495761;
 		@color-C: #263238;
-		@color-D: #37474f;
-		@color-E: #455a64;
+		@color-D: @empty;
+		@color-E: #000;
 		@color-F: #000;
 		@color-G: #5b6871;
 		@color-H: #cfd8dc;
@@ -73,9 +74,9 @@
 		@color-A: #9e005d;
 		@color-B: #2574a9;
 		@color-C: #637b98;
-		@color-D: #00afd7;
-		@color-E: #00232b;
-		@color-F: #333;
+		@color-D: @empty;
+		@color-E: #2c2a29;
+		@color-F: #2c2a29;
 		@color-G: #666;
 		@color-H: #e0e0e0;
 		@color-I: #f9f9f9;
@@ -94,8 +95,7 @@
 	@color-Primary: @color-A;
 	@color-Hero: @color-B;
 	@color-Neutral: @color-C;
-	@color-Complimentary-A: @color-D;
-	@color-Complimentary-B: @color-E;
+	@color-Heading: @color-E;
 	@color-Text: @color-F;
 	@color-Muted: @color-G;
 	@color-Border: @color-H;
@@ -445,7 +445,7 @@
 //////////////////////////////////////| GRID
 ._grid( @brand );
 
-/*!_text-styling v4.0.1*/
+/*!_text-styling v4.0.2*/
 
 @brand: [Brand];
 
@@ -474,7 +474,7 @@
 		@selection: @color-A-20;
 	}
 	.getBrand() when (@brand = BT) {
-		@selection: @color-D-20;
+		@selection: @color-B-20;
 	}
 	.getBrand();
 
@@ -513,6 +513,15 @@
 
 	mark {
 		background-color: @selection;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: @color-Heading;
 	}
 
 	p {
