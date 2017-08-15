@@ -20,6 +20,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated the breadcrumb separator to a ‘greater-than sign’ SVG icon
+		[#256](https://github.com/WestpacCXTeam/GUI-source/issues/256)
+	* Removed standard link colour and underlining
+	* Removed `.is-active` class requirement
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

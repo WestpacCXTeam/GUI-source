@@ -23,8 +23,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v3.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Removing Complementary A & Complementary B colour variables
-	* Clearing swatch slots D & E; moving the (now unmapped) D & E colours to the Secondary Palette for reference
+	* Removed Complementary A & B colour variables.
+	* Cleared swatch slots D & E; moving the (now unmapped) D & E colours to the Secondary Palette for reference.
+	* Added a new `@color-Heading` variable allowing for heading colour styling.
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The BSA brand and BOM brand got a multibrand… upbrand, debrand, rebrand.💥
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
