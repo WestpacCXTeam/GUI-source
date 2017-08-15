@@ -33,7 +33,8 @@
 			"lists-tick": "#1f252c",
 			"radcheck-active": "#1f252c",
 			"radcheck-disabled-bg": "#f7f8f9",
-			"radcheck-disabled-border": "#d2d5d8"
+			"radcheck-disabled-border": "#d2d5d8",
+			"breadcrumb-crumb": "#b45c38"
 		},
 		"BSA": {
 			"Color-Text": "#333",
@@ -42,7 +43,8 @@
 			"lists-tick": "#002f6c",
 			"radcheck-active": "#002f6c",
 			"radcheck-disabled-bg": "#f0f1f1",
-			"radcheck-disabled-border": "#d3d4d5"
+			"radcheck-disabled-border": "#d3d4d5",
+			"breadcrumb-crumb": "#d81b2b"
 		},
 		"STG": {
 			"Color-Text": "#004833",
@@ -51,7 +53,8 @@
 			"lists-tick": "#78be20",
 			"radcheck-active": "#78be20",
 			"radcheck-disabled-bg": "#f8f8f7",
-			"radcheck-disabled-border": "#d6d5d0"
+			"radcheck-disabled-border": "#d6d5d0",
+			"breadcrumb-crumb": "#e30000"
 		},
 		"WBC": {
 			"Color-Text": "#2d373e",
@@ -60,7 +63,8 @@
 			"lists-tick": "#621a4b",
 			"radcheck-active": "#621a4b",
 			"radcheck-disabled-bg": "#f9f9f8",
-			"radcheck-disabled-border": "#d7d2cb"
+			"radcheck-disabled-border": "#d7d2cb",
+			"breadcrumb-crumb": "#d5002b"
 		},
 		"WBG": {
 			"Color-Text": "#000",
@@ -69,7 +73,8 @@
 			"lists-tick": "#495761",
 			"radcheck-active": "#495761",
 			"radcheck-disabled-bg": "#f9fafb",
-			"radcheck-disabled-border": "#cfd8dc"
+			"radcheck-disabled-border": "#cfd8dc",
+			"breadcrumb-crumb": "#d5002b"
 		},
 		"BT": {
 			"Color-Text": "#333",
@@ -78,7 +83,8 @@
 			"lists-tick": "#2574a9",
 			"radcheck-active": "#2574a9",
 			"radcheck-disabled-bg": "#fcfcfc",
-			"radcheck-disabled-border": "#e0e0e0"
+			"radcheck-disabled-border": "#e0e0e0",
+			"breadcrumb-crumb": "#9e005d"
 		}
 	}
 }
