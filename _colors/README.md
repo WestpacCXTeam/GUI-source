@@ -23,9 +23,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v3.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Removed Complementary A & B colour variables.
-	* Cleared swatch slots D & E; moving the (now unmapped) D & E colours to the Secondary Palette for reference.
-	* Added a new `@color-Heading` variable allowing for heading colour styling.
+	* Removed Complementary A & B colours from the Primary Palette; moved to Secondary Palette as required.
+		[#332](https://github.com/WestpacCXTeam/GUI-source/issues/332)
+	* Cleared swatch slot D (`@color-D`); now empty.
+		[#332](https://github.com/WestpacCXTeam/GUI-source/issues/332)
+	* Remapped swatch slot E (`@color-E`) to a new Heading Colour variable (`@color-Heading`).
+		[#320](https://github.com/WestpacCXTeam/GUI-source/issues/320)
+	* Updated STG brand Secondary Palette.
+		[#321](https://github.com/WestpacCXTeam/GUI-source/issues/321)
+	* Updated BT brand Primary Palette.
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The BSA brand and BOM brand got a multibrand… upbrand, debrand, rebrand.💥
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
