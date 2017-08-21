@@ -1,4 +1,4 @@
-/*! Breadcrumbs v2.0.1 WBC*/
+/*! Breadcrumbs v2.0.2 WBC*/
 /*
  * breadcrumbs mixins
  *
@@ -34,35 +34,57 @@
 	.getBrand();
 
 
+	@breadcrumb-gap: 8px;
+	@breadcrumb-separator-width: 7px;
+	@breadcrumb-separator-height: 12px;
+	@breadcrumb-separator-offset: (20px - @breadcrumb-separator-height) / 2;
 
-	.breadcrumb {
-		.breadcrumb-sronly {
-			.sr-only();
-		}
 
-		.breadcrumb-list {
-			padding: 6px 18px;
-			margin-bottom: 21px;
-			list-style: none;
 
-			> li {
-				display: inline-block;
 
-				+ li:before {
-					content: "/\00a0";
-					padding: 0 6px;
-					color: @color-Text;
-				}
+	.breadcrumb {}
+
+	.breadcrumb-sronly {
+		.sr-only();
+	}
+
+	.breadcrumb-list {
+		padding: 6px 18px;
+		margin-bottom: 21px;
+		list-style: none;
+		font-size: 13px;
+
+		> li {
+			display: inline-block;
+			position: relative;
+
+			+ li {
+				margin-left: @breadcrumb-gap - 2px;
+				padding-left: @breadcrumb-separator-width + @breadcrumb-gap;
+			}
+			
+			// separator
+			+ li:before {
+				content: '';
+				position: absolute;
+				display: block;
+				width: @breadcrumb-separator-width;
+				height: @breadcrumb-separator-height;
+				top: @breadcrumb-separator-offset;
+				left: 0;
 			}
 
-			> .is-active {
+			a {
 				color: @color-Text;
+				text-decoration: none;
 
-				a {
-					color: @color-Text;
+				&:hover,
+				&:focus {
+					text-decoration: underline;
 				}
 			}
 		}
+
 	}
 }
 

@@ -1,3 +1,6 @@
+.breadcrumb-list > li + li:before,
+.icon-breadcrumb { background-image: url('../img/icon-breadcrumb.png'); background-repeat: no-repeat; }
+
 .checkbox-input:disabled + .checkbox-text:after,
 .icon-checkbox-off-disabled { background-image: url('../img/icon-checkbox-off-disabled.png'); background-repeat: no-repeat; }
 

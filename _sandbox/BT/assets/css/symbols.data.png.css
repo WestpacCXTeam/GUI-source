@@ -1,3 +1,6 @@
+.breadcrumb-list > li + li:before,
+.icon-breadcrumb { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAYUlEQVQYla2QwQ2AIBAE56QhKqED+VgIWAg+LIEKaIGKzo8aI+fP/c4ku1kKMRdixsgEIGiyBFfpLeBF0BTwUunthgBfgrssS3DPjrcwWSvNFGLemHVY/iPgfEiRdWEf4AFnPDaSOmp5wQAAAABJRU5ErkJggg=='); background-repeat: no-repeat; }
+
 .checkbox-input:disabled + .checkbox-text:after,
 .icon-checkbox-off-disabled { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAnklEQVRIie3NsQ2DQBBE0ZlbkByBRERvdkQL1EEXUBciu2ilIyIZrVPL8YX3C/iP53m+zGyLiE9EDKgQyZvkLmntzGzr+36ZpullZjX+kDS4+wIAvK6rzPM81Jr/IMg5lxQR1ecAYGaIiDFVP//VgAY0oAENaAAAJJK3pOpjSSBZEsnd3Z+aiCS4+0Py6CStAJBzfkfEWAMgWUgektYv8JdMOvmDuToAAAAASUVORK5CYII='); background-repeat: no-repeat; }
 

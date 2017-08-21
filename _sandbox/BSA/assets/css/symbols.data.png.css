@@ -1,3 +1,6 @@
+.breadcrumb-list > li + li:before,
+.icon-breadcrumb { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAMCAYAAACulacQAAAACXBIWXMAAAsTAAALEwEAmpwYAAAATElEQVQYlWO4LqPTcF1Gp4EBC2BiYGBgYPz/vx6XAobrMjoNN6S1/1NPASM2BYz//9f/Z2RsZMJqBEn2UlGCARpC/xkZGzWfXMGQBACXLTZiG6ZBZgAAAABJRU5ErkJggg=='); background-repeat: no-repeat; }
+
 .checkbox-input:disabled + .checkbox-text:after,
 .icon-checkbox-off-disabled { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAqklEQVRIie3NsRGCQBBG4X/3ULgERylPIlqgDrrAukg1AEaS84LdNXWMN7xXwPtoWZYmpTypaW9mLRwiooOJ5xjrsUopT9X5NHS3axNC8PhDRNp124eUMlhNe885AIQQ0N2ujcHubGat5/wXUdULu5//KkABClCAAhQAAJiIDhFxH4sImPnNTDyv2/7xREQE67Z/CPSoYqzHlDKez9ddVS8eADO/CfSIsR6/Vj9K1wIG2V0AAAAASUVORK5CYII='); background-repeat: no-repeat; }
 
