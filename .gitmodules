@@ -853,3 +853,6 @@
 [submodule "breadcrumbs/2.0.2"]
 	path = breadcrumbs/2.0.2
 	url = https://github.com/WestpacCXTeam/GUI-breadcrumbs.git
+[submodule "tables/2.0.3"]
+	path = tables/2.0.3
+	url = https://github.com/WestpacCXTeam/GUI-tables.git
