@@ -1,44 +1,45 @@
-/*! _colors v2.0.1 */
+/*! _colors v3.0.0 */
 
 @brand: [Brand];
 
 
 //////////////////////////////////////| COLORS MIXIN
 ._colors( @brand ) {
+	@empty: #000; //empty slot
 
 	/*
 	 *  SETTINGS
 	 */
 	.getBrand() when (@brand = BOM) {
 		@color-A: #b45c38;
-		@color-B: #444f5e;
+		@color-B: #1f252c;
 		@color-C: #69727e;
-		@color-D: #446e61;
-		@color-E: #7e7357;
-		@color-F: #20262d;
+		@color-D: @empty;
+		@color-E: #1f252c;
+		@color-F: #1f252c;
 		@color-G: #69727e;
 		@color-H: #d2d5d8;
 		@color-I: #f0f1f2;
 		@color-J: #f7f8f9;
 	}
 	.getBrand() when (@brand = BSA) {
-		@color-A: #c0142e;
-		@color-B: #365fb4;
-		@color-C: #333;
-		@color-D: #36528a;
-		@color-E: #178bc4;
+		@color-A: #d81b2b;
+		@color-B: #002f6c;
+		@color-C: #6c7074;
+		@color-D: @empty;
+		@color-E: #002f6c;
 		@color-F: #333;
-		@color-G: #707070;
-		@color-H: #c2c2c2;
-		@color-I: #ebebeb;
-		@color-J: #f5f5f5;
+		@color-G: #6c7074;
+		@color-H: #d3d4d5;
+		@color-I: #f0f1f1;
+		@color-J: #f8f8f8;
 	}
 	.getBrand() when (@brand = STG) {
 		@color-A: #e30000;
 		@color-B: #78be20;
 		@color-C: #757463;
-		@color-D: #008739;
-		@color-E: #ffcd00;
+		@color-D: @empty;
+		@color-E: #004833;
 		@color-F: #004833;
 		@color-G: #757463;
 		@color-H: #d6d5d0;
@@ -49,8 +50,8 @@
 		@color-A: #d5002b;
 		@color-B: #621a4b;
 		@color-C: #2d373e;
-		@color-D: #9f0029;
-		@color-E: #680000;
+		@color-D: @empty;
+		@color-E: #621a4b;
 		@color-F: #2d373e;
 		@color-G: #575f65;
 		@color-H: #d7d2cb;
@@ -61,8 +62,8 @@
 		@color-A: #d5002b;
 		@color-B: #495761;
 		@color-C: #263238;
-		@color-D: #37474f;
-		@color-E: #455a64;
+		@color-D: @empty;
+		@color-E: #000;
 		@color-F: #000;
 		@color-G: #5b6871;
 		@color-H: #cfd8dc;
@@ -73,8 +74,8 @@
 		@color-A: #9e005d;
 		@color-B: #2574a9;
 		@color-C: #637b98;
-		@color-D: #00afd7;
-		@color-E: #00232b;
+		@color-D: @empty;
+		@color-E: #2574a9;
 		@color-F: #333;
 		@color-G: #666;
 		@color-H: #e0e0e0;
@@ -94,8 +95,7 @@
 	@color-Primary: @color-A;
 	@color-Hero: @color-B;
 	@color-Neutral: @color-C;
-	@color-Complimentary-A: @color-D;
-	@color-Complimentary-B: @color-E;
+	@color-Heading: @color-E;
 	@color-Text: @color-F;
 	@color-Muted: @color-G;
 	@color-Border: @color-H;
@@ -268,7 +268,7 @@
 //////////////////////////////////////| COLORS
 ._colors( @brand );
 
-/*! _fonts v2.0.1 */
+/*! _fonts v2.0.2 */
 
 @brand: [Brand];
 
@@ -283,29 +283,18 @@
 
 	.getBrand() when (@brand = BOM) {
 		@font-face {
-			font-family: 'stag';
-			src: url('../font/Stag-Light.eot');
-			src: url('../font/Stag-Light.eot?#iefix') format('embedded-opentype'),
-				url('../font/Stag-Light.woff') format('woff'),
-				url('../font/Stag-Light.ttf') format('truetype'),
-				url('../font/Stag-Light.svg#Stag-Light') format('svg');
-			font-weight: 300;
+			font-family: 'korolev-w01-cmp-bold';
+			src: url('../font/a0d7267a-60f5-405d-9c00-645ad5e3ab49.eot');
+			src: url('../font/a0d7267a-60f5-405d-9c00-645ad5e3ab49.eot?#iefix') format('embedded-opentype'),
+				url('../font/1bc7db59-291e-455a-8b7a-acf77d64e375.woff2') format('woff2'),
+				url('../font/0e1e43ea-da50-4758-9344-4b9f797e1722.woff') format('woff'),
+				url('../font/41083cb5-f18a-4f54-b1a5-cb2dcecc0c61.ttf') format('truetype'),
+				url('../font/07542238-f8a4-45bf-83b9-56347ceb1ddf.svg#07542238-f8a4-45bf-83b9-56347ceb1ddf') format('svg');
+			font-weight: normal;
 			font-style: normal;
 		}
 
-		@font-face {
-			font-family: 'stag';
-			src: url('../font/Stag-Medium.eot');
-			src: url('../font/Stag-Medium.eot?#iefix') format('embedded-opentype'),
-				url('../font/Stag-Medium.woff') format('woff'),
-				url('../font/Stag-Medium.ttf') format('truetype'),
-				url('../font/Stag-Medium.svg#Stag-Medium') format('svg');
-			font-weight: 500;
-			font-style: normal;
-		}
 	}
-
-	.getBrand() when (@brand = BSA) {}
 
 	.getBrand() when (@brand = STG) {
 		@font-face {
@@ -321,7 +310,21 @@
 		}
 	}
 
-	.getBrand() when (@brand = WBC) {}
+	.getBrand() when (@brand = WBC) {
+		@font-face {
+			font-family: 'chronicle-disp-semibold';
+			src: url('../font/7FF5B4E46E46717F5.eot');
+			src: url('../font/7FF5B4E46E46717F5.eot?#iefix') format('embedded-opentype'),
+				url('../font/7FF5B4E46E46717F5.woff2') format('woff2'),
+				url('../font/7FF5B4E46E46717F5.woff') format('woff'),
+				url('../font/7FF5B4E46E46717F5.ttf') format('truetype'),
+				url('../font/7FF5B4E46E46717F5.svg#ChronicleDisplay-Semi') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+	}
+
+	.getBrand() when (@brand = BSA) {}
 	.getBrand() when (@brand = WBG) {}
 	.getBrand() when (@brand = BT) {}
 	.getBrand();
@@ -332,6 +335,20 @@
 	}
 
 	.brand-font {
+		.getBrandForFont() when (@brand = BOM) {
+			font-weight: normal;
+		}
+		.getBrandForFont() when (@brand = BSA) {}
+		.getBrandForFont() when (@brand = STG) {
+			font-weight: normal;
+		}
+		.getBrandForFont() when (@brand = WBC) {
+			font-weight: normal;
+		}
+		.getBrandForFont() when (@brand = WBG) {}
+		.getBrandForFont() when (@brand = BT) {}
+		.getBrandForFont();
+
 		font-family: @brand-fontfamily;
 	}
 }
@@ -344,7 +361,7 @@
 	 */
 	.getBrand() when (@brand = BOM) {
 		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-		@brand-fontfamily: "stag", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+		@brand-fontfamily: "korolev-w01-cmp-bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	}
 	.getBrand() when (@brand = BSA) {
 		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -356,7 +373,7 @@
 	}
 	.getBrand() when (@brand = WBC) {
 		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-		@brand-fontfamily: "Times New Roman", "Times", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+		@brand-fontfamily: "chronicle-disp-semibold", "Times New Roman", "Times", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	}
 	.getBrand() when (@brand = WBG) {
 		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -428,7 +445,7 @@
 //////////////////////////////////////| GRID
 ._grid( @brand );
 
-/*!_text-styling v3.0.0*/
+/*!_text-styling v4.0.2*/
 
 @brand: [Brand];
 
@@ -437,7 +454,6 @@
 ._text-styling( @brand ) {
 
 	._text-styling-normalizer();
-	._text-styling-headings( @brand );
 
 	/*
 	 *  SETTINGS
@@ -458,7 +474,7 @@
 		@selection: @color-A-20;
 	}
 	.getBrand() when (@brand = BT) {
-		@selection: @color-D-20;
+		@selection: @color-B-20;
 	}
 	.getBrand();
 
@@ -487,8 +503,25 @@
 		font-weight: 300;
 	}
 
+	button,
+	input,
+	optgroup,
+	select,
+	textarea {
+		font-family: @fontfamily;
+	}
+
 	mark {
 		background-color: @selection;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: @color-Heading;
 	}
 
 	p {
@@ -636,545 +669,28 @@
 }
 
 
-//////////////////////////////////////| HEADINGS
-._text-styling-headings( @brand ) {
-
-	.getBrand() when (@brand = BOM) { /////////////////////////////////////////////////////// BOM
-		.h1 {
-			font-size: 30px;
-			color: @color-E;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 18px;
-			font-weight: 500;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 36px;
-			}
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h2 {
-			font-size: 24px;
-			color: @color-E;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 500;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 30px;
-			}
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h3 {
-			font-size: 18px;
-			color: @color-E;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 500;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 24px;
-			}
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h4 {
-			font-size: 16px;
-			color: @color-F-80;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 500;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 18px;
-			}
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h5 {
-			font-size: 16px;
-			color: @color-F-80;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 6px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h6 {
-			font-size: 14px;
-			color: @color-F-80;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 0px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-	}
-
-	.getBrand() when (@brand = BSA) { /////////////////////////////////////////////////////// BSA
-		.h1 {
-			font-size: 30px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 18px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 36px;
-			}
-		}
-		.h2 {
-			font-size: 24px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 30px;
-			}
-		}
-		.h3 {
-			font-size: 18px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 24px;
-			}
-		}
-		.h4 {
-			font-size: 16px;
-			color: @color-B;
-			font-family: @fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 18px;
-			}
-		}
-		.h5 {
-			font-size: 16px;
-			color: @color-B;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 6px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-		.h6 {
-			font-size: 14px;
-			color: @color-B;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 0px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-		}
-	}
-
-	.getBrand() when (@brand = STG) { /////////////////////////////////////////////////////// STG
-		.h1 {
-			font-size: 30px;
-			color: @color-F;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 18px;
-			font-weight: normal;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 36px;
-			}
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h2 {
-			font-size: 24px;
-			color: @color-F;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: normal;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 30px;
-			}
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h3 {
-			font-size: 18px;
-			color: @color-F;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: normal;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 24px;
-			}
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h4 {
-			font-size: 16px;
-			color: @color-F;
-			font-family: @fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			@media (min-width: @screen-sm) {
-				font-size: 18px;
-			}
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h5 {
-			font-size: 16px;
-			color: @color-F;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 6px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-		.h6 {
-			font-size: 14px;
-			color: @color-F;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 0px;
-			font-weight: 700;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale;
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-	}
-
-	.getBrand() when (@brand = WBC) { /////////////////////////////////////////////////////// WBC
-		.h1 {
-			font-size: 30px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 18px;
-			font-weight: 700;
-
-			@media (min-width: @screen-sm) {
-				font-size: 36px;
-			}
-
-			&.body-font {
-				font-weight: 300;
-			}
-		}
-		.h2 {
-			font-size: 24px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-
-			@media (min-width: @screen-sm) {
-				font-size: 30px;
-			}
-
-			&.body-font {
-				font-weight: 300;
-			}
-		}
-		.h3 {
-			font-size: 18px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-
-			@media (min-width: @screen-sm) {
-				font-size: 24px;
-			}
-
-			&.body-font {
-				font-weight: 300;
-			}
-		}
-		.h4 {
-			font-size: 16px;
-			color: @color-B;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-
-			@media (min-width: @screen-sm) {
-				font-size: 18px;
-			}
-
-			&.body-font {
-				font-weight: 400;
-			}
-		}
-		.h5 {
-			font-size: 16px;
-			color: @color-B;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 6px;
-			font-weight: 500;
-
-			&.body-font {
-				font-weight: 500;
-			}
-		}
-		.h6 {
-			font-size: 14px;
-			color: @color-B;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 0px;
-			font-weight: 700;
-
-			&.body-font {
-				font-weight: 700;
-			}
-		}
-	}
-
-	.getBrand() when (@brand = WBG) { /////////////////////////////////////////////////////// WBG
-		.h1 {
-			font-size: 30px;
-			color: @color-Text;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 18px;
-			font-weight: 700;
-
-			@media (min-width: @screen-sm) {
-				font-size: 36px;
-			}
-		}
-		.h2 {
-			font-size: 24px;
-			color: @color-Text;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-
-			@media (min-width: @screen-sm) {
-				font-size: 30px;
-			}
-		}
-		.h3 {
-			font-size: 18px;
-			color: @color-Text;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-
-			@media (min-width: @screen-sm) {
-				font-size: 24px;
-			}
-		}
-		.h4 {
-			font-size: 16px;
-			color: @color-Text;
-			font-family: @brand-fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 700;
-
-			@media (min-width: @screen-sm) {
-				font-size: 18px;
-			}
-		}
-		.h5 {
-			font-size: 16px;
-			color: @color-Text;
-			font-family: @brand-fontfamily;
-			margin-top: 12px;
-			margin-bottom: 6px;
-			font-weight: 700;
-		}
-		.h6 {
-			font-size: 14px;
-			color: @color-Text;
-			font-family: @brand-fontfamily;
-			margin-top: 12px;
-			margin-bottom: 0px;
-			font-weight: 700;
-		}
-	}
-
-	.getBrand() when (@brand = BT) { /////////////////////////////////////////////////////// BT
-		.h1 {
-			font-size: 30px;
-			color: @color-Text;
-			font-family: @fontfamily;
-			margin-top: 18px;
-			margin-bottom: 18px;
-			font-weight: 300;
-
-			@media (min-width: @screen-sm) {
-				font-size: 36px;
-			}
-		}
-		.h2 {
-			font-size: 24px;
-			color: @color-Text;
-			font-family: @fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 300;
-
-			@media (min-width: @screen-sm) {
-				font-size: 30px;
-			}
-		}
-		.h3 {
-			font-size: 18px;
-			color: @color-Text;
-			font-family: @fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 300;
-
-			@media (min-width: @screen-sm) {
-				font-size: 24px;
-			}
-		}
-		.h4 {
-			font-size: 16px;
-			color: @color-Text;
-			font-family: @fontfamily;
-			margin-top: 18px;
-			margin-bottom: 12px;
-			font-weight: 400;
-
-			@media (min-width: @screen-sm) {
-				font-size: 18px;
-			}
-		}
-		.h5 {
-			font-size: 16px;
-			color: @color-Text;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 6px;
-			font-weight: 500;
-		}
-		.h6 {
-			font-size: 14px;
-			color: @color-Text;
-			font-family: @fontfamily;
-			margin-top: 12px;
-			margin-bottom: 0px;
-			font-weight: 700;
-		}
-	}
-	.getBrand();
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		line-height: 1.1;
-	}
-}
-
-
 //////////////////////////////////////| NORMALIZER
 ._text-styling-normalizer() {
-	/*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+	/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 
 	/**
 	 * 1. Change the default font family in all browsers (opinionated).
-	 * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+	 * 2. Correct the line height in all browsers.
+	 * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
 	 */
+
+	/* Document
+		 ========================================================================== */
 
 	html {
 		font-family: sans-serif; /* 1 */
-		-ms-text-size-adjust: 100%; /* 2 */
-		-webkit-text-size-adjust: 100%; /* 2 */
+		line-height: 1.15; /* 2 */
+		-ms-text-size-adjust: 100%; /* 3 */
+		-webkit-text-size-adjust: 100%; /* 3 */
 	}
+
+	/* Sections
+		 ========================================================================== */
 
 	/**
 	 * Remove the margin in all browsers (opinionated).
@@ -1184,77 +700,83 @@
 		margin: 0;
 	}
 
-	/* HTML5 display definitions
-		 ========================================================================== */
-
 	/**
 	 * Add the correct display in IE 9-.
-	 * 1. Add the correct display in Edge, IE, and Firefox.
-	 * 2. Add the correct display in IE.
 	 */
 
 	article,
 	aside,
-	details, /* 1 */
-	figcaption,
-	figure,
 	footer,
 	header,
-	main, /* 2 */
-	menu,
 	nav,
-	section,
-	summary { /* 1 */
+	section {
 		display: block;
 	}
 
 	/**
-	 * Add the correct display in IE 9-.
+	 * Correct the font size and margin on `h1` elements within `section` and
+	 * `article` contexts in Chrome, Firefox, and Safari.
 	 */
 
-	audio,
-	canvas,
-	progress,
-	video {
-		display: inline-block;
+	h1 {
+		font-size: 2em;
+		margin: 0.67em 0;
 	}
 
-	/**
-	 * Add the correct display in iOS 4-7.
-	 */
-
-	audio:not([controls]) {
-		display: none;
-		height: 0;
-	}
-
-	/**
-	 * Add the correct vertical alignment in Chrome, Firefox, and Opera.
-	 */
-
-	progress {
-		vertical-align: baseline;
-	}
-
-	/**
-	 * Add the correct display in IE 10-.
-	 * 1. Add the correct display in IE.
-	 */
-
-	template, /* 1 */
-	[hidden] {
-		display: none;
-	}
-
-	/* Links
+	/* Grouping content
 		 ========================================================================== */
 
 	/**
-	 * Remove the gray background on active links in IE 10.
+	 * Add the correct display in IE 9-.
+	 * 1. Add the correct display in IE.
+	 */
+
+	figcaption,
+	figure,
+	main { /* 1 */
+		display: block;
+	}
+
+	/**
+	 * Add the correct margin in IE 8.
+	 */
+
+	figure {
+		margin: 1em 40px;
+	}
+
+	/**
+	 * 1. Add the correct box sizing in Firefox.
+	 * 2. Show the overflow in Edge and IE.
+	 */
+
+	hr {
+		box-sizing: content-box; /* 1 */
+		height: 0; /* 1 */
+		overflow: visible; /* 2 */
+	}
+
+	/**
+	 * 1. Correct the inheritance and scaling of font size in all browsers.
+	 * 2. Correct the odd `em` font sizing in all browsers.
+	 */
+
+	pre {
+		font-family: monospace, monospace; /* 1 */
+		font-size: 1em; /* 2 */
+	}
+
+	/* Text-level semantics
+		 ========================================================================== */
+
+	/**
+	 * 1. Remove the gray background on active links in IE 10.
+	 * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
 	 */
 
 	a {
-		background-color: transparent;
+		background-color: transparent; /* 1 */
+		-webkit-text-decoration-skip: objects; /* 2 */
 	}
 
 	/**
@@ -1266,9 +788,6 @@
 	a:hover {
 		outline-width: 0;
 	}
-
-	/* Text-level semantics
-		 ========================================================================== */
 
 	/**
 	 * 1. Remove the bottom border in Firefox 39-.
@@ -1300,21 +819,23 @@
 	}
 
 	/**
+	 * 1. Correct the inheritance and scaling of font size in all browsers.
+	 * 2. Correct the odd `em` font sizing in all browsers.
+	 */
+
+	code,
+	kbd,
+	samp {
+		font-family: monospace, monospace; /* 1 */
+		font-size: 1em; /* 2 */
+	}
+
+	/**
 	 * Add the correct font style in Android 4.3-.
 	 */
 
 	dfn {
 		font-style: italic;
-	}
-
-	/**
-	 * Correct the font size and margin on `h1` elements within `section` and
-	 * `article` contexts in Chrome, Firefox, and Safari.
-	 */
-
-	h1 {
-		font-size: 2em;
-		margin: 0.67em 0;
 	}
 
 	/**
@@ -1359,6 +880,24 @@
 		 ========================================================================== */
 
 	/**
+	 * Add the correct display in IE 9-.
+	 */
+
+	audio,
+	video {
+		display: inline-block;
+	}
+
+	/**
+	 * Add the correct display in iOS 4-7.
+	 */
+
+	audio:not([controls]) {
+		display: none;
+		height: 0;
+	}
+
+	/**
 	 * Remove the border on images inside links in IE 10-.
 	 */
 
@@ -1374,90 +913,38 @@
 		overflow: hidden;
 	}
 
-	/* Grouping content
-		 ========================================================================== */
-
-	/**
-	 * 1. Correct the inheritance and scaling of font size in all browsers.
-	 * 2. Correct the odd `em` font sizing in all browsers.
-	 */
-
-	code,
-	kbd,
-	pre,
-	samp {
-		font-family: monospace, monospace; /* 1 */
-		font-size: 1em; /* 2 */
-	}
-
-	/**
-	 * Add the correct margin in IE 8.
-	 */
-
-	figure {
-		margin: 1em 40px;
-	}
-
-	/**
-	 * 1. Add the correct box sizing in Firefox.
-	 * 2. Show the overflow in Edge and IE.
-	 */
-
-	hr {
-		box-sizing: content-box; /* 1 */
-		height: 0; /* 1 */
-		overflow: visible; /* 2 */
-	}
-
 	/* Forms
 		 ========================================================================== */
 
 	/**
-	 * Change font properties to `inherit` in all browsers (opinionated).
+	 * 1. Change the font styles in all browsers (opinionated).
+	 * 2. Remove the margin in Firefox and Safari.
 	 */
 
 	button,
 	input,
+	optgroup,
 	select,
 	textarea {
-		font: inherit;
-	}
-
-	/**
-	 * Restore the font weight unset by the previous rule.
-	 */
-
-	optgroup {
-		font-weight: bold;
+		font-family: sans-serif; /* 1 */
+		font-size: 100%; /* 1 */
+		line-height: 1.15; /* 1 */
+		margin: 0; /* 2 */
 	}
 
 	/**
 	 * Show the overflow in IE.
 	 * 1. Show the overflow in Edge.
-	 * 2. Show the overflow in Edge, Firefox, and IE.
 	 */
 
 	button,
-	input, /* 1 */
-	select { /* 2 */
+	input { /* 1 */
 		overflow: visible;
 	}
 
 	/**
-	 * Remove the margin in Safari.
-	 * 1. Remove the margin in Firefox and Safari.
-	 */
-
-	button,
-	input,
-	select,
-	textarea { /* 1 */
-		margin: 0;
-	}
-
-	/**
-	 * Remove the inheritence of text transform in Edge, Firefox, and IE.
-	 * 1. Remove the inheritence of text transform in Firefox.
+	 * Remove the inheritance of text transform in Edge, Firefox, and IE.
+	 * 1. Remove the inheritance of text transform in Firefox.
 	 */
 
 	button,
@@ -1466,28 +953,9 @@
 	}
 
 	/**
-	 * Change the cursor in all browsers (opinionated).
-	 */
-
-	button,
-	[type="button"],
-	[type="reset"],
-	[type="submit"] {
-		cursor: pointer;
-	}
-
-	/**
-	 * Restore the default cursor to disabled elements unset by the previous rule.
-	 */
-
-	[disabled] {
-		cursor: default;
-	}
-
-	/**
 	 * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
 	 *    controls in Android 4.
-	 * 2. Correct the inability to style clickable types in iOS.
+	 * 2. Correct the inability to style clickable types in iOS and Safari.
 	 */
 
 	button,
@@ -1502,8 +970,10 @@
 	 */
 
 	button::-moz-focus-inner,
-	input::-moz-focus-inner {
-		border: 0;
+	[type="button"]::-moz-focus-inner,
+	[type="reset"]::-moz-focus-inner,
+	[type="submit"]::-moz-focus-inner {
+		border-style: none;
 		padding: 0;
 	}
 
@@ -1512,7 +982,9 @@
 	 */
 
 	button:-moz-focusring,
-	input:-moz-focusring {
+	[type="button"]:-moz-focusring,
+	[type="reset"]:-moz-focusring,
+	[type="submit"]:-moz-focusring {
 		outline: 1px dotted ButtonText;
 	}
 
@@ -1540,6 +1012,16 @@
 		max-width: 100%; /* 1 */
 		padding: 0; /* 3 */
 		white-space: normal; /* 1 */
+	}
+
+	/**
+	 * 1. Add the correct display in IE 9-.
+	 * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+	 */
+
+	progress {
+		display: inline-block; /* 1 */
+		vertical-align: baseline; /* 2 */
 	}
 
 	/**
@@ -1571,21 +1053,83 @@
 	}
 
 	/**
-	 * Correct the odd appearance of search inputs in Chrome and Safari.
+	 * 1. Correct the odd appearance in Chrome and Safari.
+	 * 2. Correct the outline style in Safari.
 	 */
 
 	[type="search"] {
-		-webkit-appearance: textfield;
+		-webkit-appearance: textfield; /* 1 */
+		outline-offset: -2px; /* 2 */
 	}
 
 	/**
-	 * Remove the inner padding and cancel buttons in Chrome on OS X and
-	 * Safari on OS X.
+	 * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
 	 */
 
 	[type="search"]::-webkit-search-cancel-button,
 	[type="search"]::-webkit-search-decoration {
 		-webkit-appearance: none;
+	}
+
+	/**
+	 * 1. Correct the inability to style clickable types in iOS and Safari.
+	 * 2. Change font properties to `inherit` in Safari.
+	 */
+
+	::-webkit-file-upload-button {
+		-webkit-appearance: button; /* 1 */
+		font: inherit; /* 2 */
+	}
+
+	/* Interactive
+		 ========================================================================== */
+
+	/*
+	 * Add the correct display in IE 9-.
+	 * 1. Add the correct display in Edge, IE, and Firefox.
+	 */
+
+	details, /* 1 */
+	menu {
+		display: block;
+	}
+
+	/*
+	 * Add the correct display in all browsers.
+	 */
+
+	summary {
+		display: list-item;
+	}
+
+	/* Scripting
+		 ========================================================================== */
+
+	/**
+	 * Add the correct display in IE 9-.
+	 */
+
+	canvas {
+		display: inline-block;
+	}
+
+	/**
+	 * Add the correct display in IE.
+	 */
+
+	template {
+		display: none;
+	}
+
+	/* Hidden
+		 ========================================================================== */
+
+	/**
+	 * Add the correct display in IE 10-.
+	 */
+
+	[hidden] {
+		display: none;
 	}
 }
 
