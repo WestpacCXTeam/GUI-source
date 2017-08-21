@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Re-mapped BT brand’s table header border colour (previous variable is deprecated)
+		[#370](https://github.com/WestpacCXTeam/GUI-source/issues/370)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The striped styling option for tables has been modified to start on the second, rather than first, row of the table body.
 		[#314](https://github.com/WestpacCXTeam/GUI-source/issues/314)
