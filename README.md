@@ -163,7 +163,7 @@ See more in [Workflow](#workflow).
 	1. add email link to GUI mail archive in Getting started
 	1. `grunt` to compile (current devBrand) and run server
 	1. _(or)_ `grunt server` if you don't need to compile
-	1. run blender locally `grunt remote/server-dev.js` from `/blender` (while GUI-docs server is running)
+	1. run blender locally `node remote/server-dev.js` from `/blender` (while GUI-docs server is running)
 	1. check local copy and blend new blend if required
 	1. install new GUI module into the docs build (js, css, grunticon, img fallback)
 	1. check new versions examples in all brands
