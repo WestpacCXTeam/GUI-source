@@ -98,8 +98,8 @@ on the [GEL pages](http://gel.westpacgroup.com.au/).
 
 > To include a new module, create a new repo and prefix it with `GUI-` or `GUI_` for core modules.
 
-To add this new module into the source you have to create a new folder with the same name and include each version(tagged) in a version folder. All versions
-have to be noted in the `module.json`. See the boilderplate for a new module in the here: `._template/module`.
+To add this new module into the source you have to create a new folder with the same name and include each version (tagged) in a version folder. All versions
+have to be noted in the `module.json`. See the boilerplate for a new module in the here: `._template/module`.
 
 See more in [Workflow](#workflow).
 

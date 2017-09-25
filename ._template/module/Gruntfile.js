@@ -528,7 +528,7 @@ module.exports = function(grunt) {
 					datapngcss: 'symbols.data.png.css',
 					urlpngcss: 'symbols.fallback.css',
 					cssprefix: '.',
-					pngpath: '../img',
+					pngfolder: '../img',
 					enhanceSVG: true,
 					customselectors: svgselectors,
 				},
