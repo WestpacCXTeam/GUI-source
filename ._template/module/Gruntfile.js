@@ -536,16 +536,6 @@ module.exports = function(grunt) {
 			tasks.add( 'grunticon:SVG' + brand.ID );
 
 
-			//////////////////////////////////////| COPY FALLBACK PNGS
-			copy[ 'SVG' + brand.ID ] = {
-				expand: true,
-				cwd: 'tests/' + brand.ID + '/assets/css/png',
-				src: '*.png',
-				dest: 'tests/' + brand.ID + '/assets/img',
-			};
-			tasks.add( 'copy:SVG' + brand.ID );
-
-
 			//////////////////////////////////////| BRAND SVGS FOR REALZ NOW!
 			replace[ 'ReplaceSVGAgain' + brand.ID ] = {
 				src: [
