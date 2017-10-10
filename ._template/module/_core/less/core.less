@@ -293,9 +293,7 @@
 			font-weight: normal;
 			font-style: normal;
 		}
-
 	}
-
 	.getBrand() when (@brand = STG) {
 		@font-face {
 			font-family: 'dragonbold';
@@ -309,7 +307,6 @@
 			font-style: normal;
 		}
 	}
-
 	.getBrand() when (@brand = WBC) {
 		@font-face {
 			font-family: 'chronicle-disp-semibold';
@@ -323,7 +320,6 @@
 			font-style: normal;
 		}
 	}
-
 	.getBrand() when (@brand = BSA) {}
 	.getBrand() when (@brand = WBG) {}
 	.getBrand() when (@brand = BT) {}
@@ -359,28 +355,25 @@
 	/*
 	 *  SETTINGS
 	 */
+	@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+
 	.getBrand() when (@brand = BOM) {
-		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		@brand-fontfamily: "korolev-w01-cmp-bold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	}
 	.getBrand() when (@brand = BSA) {
-		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		@brand-fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	}
 	.getBrand() when (@brand = STG) {
-		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		@brand-fontfamily: "dragonbold", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	}
 	.getBrand() when (@brand = WBC) {
-		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		@brand-fontfamily: "chronicle-disp-semibold", "Times New Roman", "Times", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	}
 	.getBrand() when (@brand = WBG) {
-		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		@brand-fontfamily: "Times New Roman", "Times", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	}
 	.getBrand() when (@brand = BT) {
-		@fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 		@brand-fontfamily: Georgia, "Times New Roman", "Times", serif;
 	}
 	.getBrand();
@@ -445,7 +438,7 @@
 //////////////////////////////////////| GRID
 ._grid( @brand );
 
-/*!_text-styling v4.0.2*/
+/*!_text-styling v4.0.3*/
 
 @brand: [Brand];
 
@@ -458,21 +451,14 @@
 	/*
 	 *  SETTINGS
 	 */
-	.getBrand() when (@brand = BOM) {
+	.getBrand() {
 		@selection: @color-A-20;
 	}
-	.getBrand() when (@brand = BSA) {
-		@selection: @color-A-20;
-	}
-	.getBrand() when (@brand = STG) {
-		@selection: @color-A-20;
-	}
-	.getBrand() when (@brand = WBC) {
-		@selection: @color-A-20;
-	}
-	.getBrand() when (@brand = WBG) {
-		@selection: @color-A-20;
-	}
+	.getBrand() when (@brand = BOM) {}
+	.getBrand() when (@brand = BSA) {}
+	.getBrand() when (@brand = STG) {}
+	.getBrand() when (@brand = WBC) {}
+	.getBrand() when (@brand = WBG) {}
 	.getBrand() when (@brand = BT) {
 		@selection: @color-B-20;
 	}
@@ -484,7 +470,6 @@
 		font-size: 0.875em;
 		line-height: 1.428571429;
 		color: @color-Text;
-		background-color: @color-Background;
 		font-family: @fontfamily;
 	}
 
@@ -554,22 +539,11 @@
 
 		&:hover,
 		&:focus {
-			color: @color-A;
 			text-decoration: underline;
 		}
 
 		&:focus {
 			.outline();
-			color: @color-A;
-
-			.is-keyboarduser & {
-				background-color: #fff;
-			}
-		}
-
-		&:hover {
-			outline: none;
-			background-color: transparent;
 		}
 	}
 
