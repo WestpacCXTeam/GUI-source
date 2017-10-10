@@ -220,6 +220,9 @@
 [submodule "icons/1.0.0"]
 	path = icons/1.0.0
 	url = https://github.com/WestpacCXTeam/GUI-icons.git
+[submodule "icons/2.0.0"]
+	path = icons/2.0.0
+	url = https://github.com/WestpacCXTeam/GUI-icons.git
 [submodule "icons-base/1.0.0"]
 	path = icons-base/1.0.0
 	url = https://github.com/WestpacCXTeam/GUI-icons-base.git
