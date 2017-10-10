@@ -1,0 +1,30 @@
+{
+	"ID": "headers",
+	"name": "Headers",
+	"description": "Global header panels.",
+	"category": "Shell",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"logos:2.0.6",
+				"icons:2.0.0",
+				"buttons:4.0.0"
+			],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 3,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
+		}
+	},
+	"hash": "937cc5af0b2f7dd7126b9261924706d0"
+}

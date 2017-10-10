@@ -20,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Removed row hover styling for `.table-striped` tables. The row hover background colour fill is provided to help when scanning across the row, but striped 
+	tables provide this anyway without hovering.
+		[#377](https://github.com/WestpacCXTeam/GUI-source/issues/377)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Re-mapped BT brand’s table header border colour (previous variable is deprecated)
 		[#370](https://github.com/WestpacCXTeam/GUI-source/issues/370)

@@ -1,0 +1,28 @@
+{
+	"ID": "footers",
+	"name": "Footers",
+	"description": "Global footer panels.",
+	"category": "Shell",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"_colors:1.0.1",
+				"logos:2.0.6"
+			],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 2,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
+		}
+	},
+	"hash": "e1cc661b4ec9cae97c515f7c166c86f9"
+}

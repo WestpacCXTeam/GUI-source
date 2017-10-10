@@ -20,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+	* Changed the modal sizing classes to our new naming convention 
+		[#380](https://github.com/WestpacCXTeam/GUI-source/issues/380)
+	* Reduced CSS specificity
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Changed modal header title text colour to default text colour.
 		[#317](https://github.com/WestpacCXTeam/GUI-source/issues/317)

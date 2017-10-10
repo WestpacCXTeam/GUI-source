@@ -140,6 +140,24 @@
 			"less": true,
 			"svg": true,
 			"font": false,
+			"size": 9,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
+		},
+		"2.0.4": {
+			"dependencies": [
+				"_colors:1.0.1"
+			],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
 			"size": 10,
 			"brands": [
 				"BOM",
@@ -151,5 +169,5 @@
 			]
 		}
 	},
-	"hash": "13d5a20cb631b5dd70ea1516098bf0ed"
+	"hash": "503d2e4c18e767b9e8b5e235d675fa05"
 }

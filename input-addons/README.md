@@ -15,6 +15,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 > Forms play an important role in our brand’s products and services. All roads lead to a form so it’s important to get them right. These basic form
 > elements have been carefully crafted and rigorously tested. Use them as the foundation for any form creation.
 
+> ⚠️ **IMPORTANT!** This module is deprecated; styling merged into Input Groups. Please refer to [GUI-input-groups](https://github.com/WestpacCXTeam/GUI-input-groups) for new projects.
+
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 

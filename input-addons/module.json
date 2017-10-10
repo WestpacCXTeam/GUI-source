@@ -3,6 +3,7 @@
 	"name": "Input-Addons",
 	"description": "Styled input fields with attached selects or buttons.",
 	"category": "Forms",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [],
@@ -79,5 +80,5 @@
 			]
 		}
 	},
-	"hash": "d565003627a6880d9cfd16622ff25a37"
+	"hash": "de64048aaa1ca12f747f455749452c18"
 }

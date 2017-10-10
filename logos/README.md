@@ -21,6 +21,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.6 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+	* `.logo-multibrand-small` multi-brand logo has been resized; slightly taller and wider to 122&times;44px
+	* New `.logo-multibrand-small-center` and `.logo-multibrand-small-right` multi-brand logos (122&times;44px)
+	* WBC brand’s multi-brand logo now uses the 'Westpac 200' design
 * v2.0.5 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
 	* New `.logo-multibrand-*` multi-brand logos; brought over from the Symbols module and renamed for clarity.
 		[#333](https://github.com/WestpacCXTeam/GUI-source/issues/333)

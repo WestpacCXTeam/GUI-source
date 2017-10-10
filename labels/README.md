@@ -19,8 +19,12 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Added `.label-success` option
+  * Further optimised CSS 
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Reduced CSS over-specificity 
+	* Reduced CSS specificity
+    [#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Expanded the label styling to include neutral, faint, information, warning and danger colour schemes for each brand.
 		[#266](https://github.com/WestpacCXTeam/GUI-source/issues/266)

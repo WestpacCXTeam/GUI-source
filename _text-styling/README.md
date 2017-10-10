@@ -21,11 +21,17 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Removed `body` element `background-color` setting for simplicity; it was never our intention for GUI to enforce a website background colour. Removing this 
+		setting makes things clearer.
+		[#376](https://github.com/WestpacCXTeam/GUI-source/issues/376)
+	* Removed redundant `a` plain link `background-color` and text `color` styling 
 * v4.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Remapped BT’s text selection colour as we’re deprecating the previous colour variable
 	* Added colour styling of heading elements, utilising the Colors module’s new `@color-Heading` variable.
 * v4.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Normalize was overriding the body font-family for button, input, textarea, select and optgroup by setting font-family to san-serif. The change applies the same font-family as body to these elements specifically to override normalize.
+	* Normalize was overriding the body font-family for button, input, textarea, select and optgroup by setting font-family to san-serif. The change applies the 
+		same font-family as body to these elements specifically to override normalize.
 		[#306](https://github.com/WestpacCXTeam/GUI-source/issues/306)
 * v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* We have removed the classes for headlines. Wow. I know! The thing was, they were not really useful and more overwritten than used as is. Now you can go and
@@ -52,9 +58,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
 	* We have added support to the lesser known, but still wildly attractive HTML5 tags `<mark>`, `<del>` and `<ins>`.
 * v1.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* The core two modules _fonts and _text-styling had a bit of a fight about who sets the font-family variable. This went on for a bit unnoticed
-		until we made them sit together in timeout. Now _text-styling totally understands that everything font should be handled by _fonts and they are best
-		buddys again. sheesh kids... right?!
+	* The core two modules `_fonts` and `_text-styling` had a bit of a fight about who sets the font-family variable. This went on for a bit unnoticed until we 
+		made them sit together in timeout. Now `_text-styling` totally understands that everything font should be handled by `_fonts` and they are best buddys 
+		again. sheesh kids... right?!
 		[#163](https://github.com/WestpacCXTeam/GUI-source/issues/163)
 * v1.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* BIG BOM brand change. All new colours, all new look, all new GUI. Brace yourselfs.

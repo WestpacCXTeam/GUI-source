@@ -19,14 +19,24 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+  * Adjusted badge height
+    [#318](https://github.com/WestpacCXTeam/GUI-source/issues/318)
+  * Updated button sizing styling to our new naming convention (in Button v4.0.0)
+    [#380](https://github.com/WestpacCXTeam/GUI-source/issues/380)
+  * Removed `.badge-text` markup wrap requirement
+  * Ensured all badge/button type combinations are considered
+  * Added `.badge-success` option
+  * Reduced CSS specificity
+    [#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Expanded the badge styling to include primary, hero, faint, information, warning and danger colour schemes for each brand.
-		[#266](https://github.com/WestpacCXTeam/GUI-source/issues/266)
+  * Expanded the badge styling to include primary, hero, faint, information, warning and danger colour schemes for each brand.
+    [#266](https://github.com/WestpacCXTeam/GUI-source/issues/266)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
+  * Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
-		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
+  * To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
+    [#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**

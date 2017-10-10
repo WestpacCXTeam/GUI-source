@@ -19,6 +19,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Reduced the pointer triangle size
+		[#357](https://github.com/WestpacCXTeam/GUI-source/issues/357)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The popover demanded space in the flow on initial page load. Really that didn’t make any sense as the popover was hidden at first and hidden things don’t
 		need no space in the flow. No more space flowing!
