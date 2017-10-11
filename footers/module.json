@@ -2,7 +2,7 @@
 	"ID": "footers",
 	"name": "Footers",
 	"description": "Global footer panels.",
-	"category": "Shell",
+	"category": "Footers",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [

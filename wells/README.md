@@ -22,6 +22,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Changing Well background colour to `@color-Light`
 		[#375](https://github.com/WestpacCXTeam/GUI-source/issues/375)
+  * Reduced CSS specificity
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

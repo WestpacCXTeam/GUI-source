@@ -2,7 +2,7 @@
 	"ID": "headers",
 	"name": "Headers",
 	"description": "Global header panels.",
-	"category": "Shell",
+	"category": "Headers",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
