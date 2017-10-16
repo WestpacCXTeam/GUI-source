@@ -21,8 +21,12 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
-	* Changed the modal sizing classes to our new naming convention 
+	* Dependencies: Buttons v4.0.0, Icons v2.0.0
+	* Changed the modal sizing classes to our new naming convention
 		[#380](https://github.com/WestpacCXTeam/GUI-source/issues/380)
+	* Changed Modal close button markup structure for consistency; close icon now inside button
+	* Renamed `.modal-header-close` to `.modal-close`; implementation similar to Alert close button
+	* Adjusted modal padding and increased footer buttons gap
 	* Reduced CSS specificity
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Changed modal header title text colour to default text colour.

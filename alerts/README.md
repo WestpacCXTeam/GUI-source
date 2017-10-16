@@ -29,9 +29,9 @@ GUI Alerts
   * Alert body wraps around icon in XS; reducing unnecessary left-side whitespace
   * Alert body vertically aligns with icon if needed (small and xsmall disregard); also considers responsive icon sizing
   * Removed flex layout, max-height restrictions and scrolling
-  * Alert form (validation) messages now support icons
+  * Alert form (validation) messages now support icons, font-size decreased from 13px to 12px
   * Reduced CSS specificity
-    [#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)  
+    [#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
   * Reduce module modifier CSS over-specificity
     [#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
