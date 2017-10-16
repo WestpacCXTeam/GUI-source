@@ -22,29 +22,30 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 * v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Dependency: GUI-icons v2.0.0
-	* Reduced border radius; relative to font size, from 6px to 3px for default buttons (slightly more/less depending on button size)
-	* Increased horizontal padding; relative to font size
-	* Button link has underlining on :hover, now supports disabled state and is now inline-block (was inline)
-	* Button :focus styling removed (used to match :active styling)
-	* Changed the button sizing classes to our new naming convention, incl. Button groups and Button dropdowns
+	* Reduced border radius from 6px to 3px for all buttons
+	* Increased horizontal padding to suit button size; larger buttons have slightly more horizontal padding
+	* Link button (`.btn-link`) now has underlining on :hover, supports :disabled state and is `inline-block` (was `inline`). Note: these link buttons will no longer render as they used to with inline text.
+	* Button :focus styling removed (used to match :active styling)e
+	* Changed the button sizing classes to our new naming convention; was `.btn-size-[sm|lg|xl]`, now `.btn-[small|large|xlarge]` (incl. Button groups and Button dropdowns)
 		[#380](https://github.com/WestpacCXTeam/GUI-source/issues/380)
-	* Extended the `.btn-{size}-{breakpoint}` responsive 'sizing by breakpoint' implementation; now with a 'breakpoint only' option using `.btn-{size}-{breakpoint}-only` classes
+	* Extended the `.btn-{size}-{breakpoint}` responsive 'sizing by breakpoint' implementation; now with a 'breakpoint only' option using `.btn-{size}-{breakpoint}-only` classes.
+	* Added responsive block buttons using `.btn-block-{breakpoint}` and `.btn-block-{breakpoint}-only`
 		[#382](https://github.com/WestpacCXTeam/GUI-source/issues/382)
-	* Block buttons (`.btn-block`) with icons now have text and icons against the left/right edge (nb. must use `.btn-text` and `.btn-icon` classes)
+	* Block buttons (`.btn-block`) with icons now have text and icons against the left/right edge (Note: must use `.btn-text` and `.btn-icon` classes)
 		[#383](https://github.com/WestpacCXTeam/GUI-source/issues/383)
-	* Buttons now utlilise the new icon design sizes from Icons v2.0.0
+	* Buttons now utlilise the new icon sizes from Icons v2.0.0
 	* Button icon sizing options removed; icons are now sized automatically to suit the button size (using Icons v2.0.0)
-	* Buttons with icons must use `.btn-text` and `.btn-icon` classes; gap now consistent whether button is on left or right, alignment determined by markup order (nb. icon on the right is preferred)
-	* Adjusted button text/icon gap (nb. ensure there is a space between button icon and text spans for correct gap width)
+	* Buttons with icons must use `.btn-text` and `.btn-icon` classes; gap now consistent whether button is on left or right, alignment determined by markup order (Note: icon on the right is preferred)
+	* Adjusted button text/icon gap (Note: ensure there is a space or line break between `.btn-text` and `.btn-icon` spans for correct gap width)
 		[#378](https://github.com/WestpacCXTeam/GUI-source/issues/378)
-	* Optimised Dropdown button caret to work with default and block button dropdown alignment options, automatically coloured to match text color and removed
-	`.btn-dropdown-caret` span from markup (this element is no longer required)
+	* Optimised Dropdown button caret to work with default and block button dropdown alignment options, automatically coloured to match text color and removed `.btn-dropdown-caret` span from markup (this element is no longer required)
 	* Fixed `.btn-link` sizing/alignment; now consistent with other buttons
-	* New `.btn-tight` modifier which strips the horizontal padding of buttons, useful for `.btn-link` buttons
+	* New `.btn-trim` modifier class; strips the horizontal padding of buttons (useful for `.btn-link` buttons)
 	* Button group block and Button dropdown block classes now `.btn-group-block` and `.btn-dropdown-block` respectively; for naming consistency
 	* Button group CSS simplified; border radius managed by `.btn` class
-	* Button group leading line text class now `.btn-group-text` (was `.btn-group-line`) and padding gap added
+	* Button group leading line text class now `.btn-group-text` (was `.btn-group-line`) for consistency, padding gap added and button group vertically aligned top; as per radios/checkboxes/switches etc.
 	* All block buttons and leading line button groups (`.btn-group-wrapper`) can now be stacked; top margin used for separation
+	* Made block button group item widths a little more even
 	* Reduced CSS specificity
     [#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
 * v3.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
