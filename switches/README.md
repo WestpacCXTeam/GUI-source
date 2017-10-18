@@ -21,12 +21,12 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
-  * Introducing our new class size naming convention of `.switch-[small|large|xlarge]` (rather than `.switch-[sm|lg|xl]`). This approach frees up the 
+  * Introducing our new class size naming convention of `.switch-[small|large|xlarge]` (rather than `.switch-[sm|lg|xl]`). This approach frees up the
   'xs/sm/md/lg' abbreviations to refer solely to viewport breakpoint.
     [#360](https://github.com/WestpacCXTeam/GUI-source/issues/360), [#380](https://github.com/WestpacCXTeam/GUI-source/issues/380)
   * New responsive 'sizing by breakpoint' functionality (as per Buttons v4.0.0)
     [#382](https://github.com/WestpacCXTeam/GUI-source/issues/382)
-  * New `.switch-toggle` element required inside `.switch-text`; markup structure now matches Radios and Checkboxes with `.[radio|checkbox|switch]-text` class referring to the form control’s visible text. This visible `.switch-text` element lives inside the Switch bounds and can be styled as needed. Use a `.switch-sronly` wrapper to hide switch text if necessary.
+  * New `.switch-toggle` element required after `.switch-text`; markup structure now matches Radios and Checkboxes with `.[radio|checkbox|switch]-text` class referring to the form control’s visible text. This visible `.switch-text` element lives inside the Switch bounds and can be styled as needed. Use `.switch-sronly` class to hide switch text if necessary.
   * Optional Off/On element’s class `.switch-text-[off|on]` renamed; now`.switch-toggle-off` and `.switch-toggle-on`, now aligned correctly
   * New block level switches; in addition to `.switch-flip` option
   * Provided styling for :disabled and :checked states
