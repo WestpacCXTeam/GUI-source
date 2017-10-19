@@ -25,7 +25,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 		[#380](https://github.com/WestpacCXTeam/GUI-source/issues/380)
 	* Updated input sizing and added input line-height
 	* Select inputs are now block level by default as per other text inputs; use `.form-inline` wrapping for inline
-	* Simplified select input markup; wrapping element (`.input-field-select-wrapper`) no longer required and SVG caret supplied via Grunticon
+	* Restyled and simplified select input markup; wrapping element (`.input-field-select-wrapper`) no longer required, SVG caret supplied via Grunticon, removed Hero colour fill and `.input-addon-faint` modifier class
 	* Dropped the `.input-field-select`, `.input-field-select-{size}` and `.input-field-select-wrapper` classes; simply use the common `.input-field` and
 	`.input-field-{size}` classes on all input types (input, textarea and select)
 	* Removed fieldset sizing options; sizing already available per input via sizing classes `.input-field-{size}`

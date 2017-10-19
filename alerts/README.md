@@ -19,7 +19,7 @@ GUI Alerts
 
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
   * Dependencies: GUI-buttons v4.0.0, GUI-icons v2.0.0
-  * Alerts module consists of four alert types...
+  * Alerts module consists of three alert types...
     * Text (alert): simple inline text styling
     * Alert: structured (block) alert without icon text wrapping (maintains left text edge)
     * Alert form: validation styling for forms
