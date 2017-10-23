@@ -94,7 +94,7 @@
 			"dependencies": [],
 			"js": false,
 			"less": true,
-			"svg": false,
+			"svg": true,
 			"font": false,
 			"size": 4,
 			"brands": [
