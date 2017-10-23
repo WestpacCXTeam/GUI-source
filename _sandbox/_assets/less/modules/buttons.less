@@ -1,4 +1,4 @@
-/*! Buttons v3.0.3 WBC*/
+/*! Buttons v4.0.0 WBC*/
 /*
  * buttons mixins
  *
@@ -13,7 +13,7 @@
 	/*
 	 *  SETTINGS
 	 */
-	.getBrand() when (@brand = BOM) { //////////////////////////////////////| BOM
+	.getBrand() {
 		//////////////////////////////////////| PRIMARY
 		@primary-fontcolor: #fff;
 		@primary-backgroundcolor: @color-A;
@@ -58,259 +58,52 @@
 		@faint-hover-backgroundcolor: #fff;
 		@faint-hover-bordercolor: @color-Border;
 
+		//////////////////////////////////////| LINK
+		@link-fontcolor: @color-A;
+		@link-backgroundcolor: transparent;
+		@link-bordercolor: transparent;
+
+		@link-active-fontcolor: @link-fontcolor;
+		@link-active-backgroundcolor: @link-backgroundcolor;
+		@link-active-bordercolor: @link-bordercolor;
+		@link-hover-fontcolor: @link-fontcolor;
+		@link-hover-backgroundcolor: @link-backgroundcolor;
+		@link-hover-bordercolor: @link-bordercolor;
+
 		//////////////////////////////////////| SOFT
-		@soft-faint-fontcolor: @color-Muted;
+		@faint-soft-fontcolor: @color-Muted;
+		@faint-soft-hover-backgroundcolor: @color-J;
+
+		@buttons-IconGap: .25em; //relative to font size
+
+		@buttons-DropdownCaretWidth: 14px;
+		@buttons-DropdownCaretHeight: 8px;
+
+		@icon-SizeDefault: 24px;
 	}
-	.getBrand() when (@brand = BSA) { //////////////////////////////////////| BSA
-		//////////////////////////////////////| PRIMARY
-		@primary-fontcolor: #fff;
-		@primary-backgroundcolor: @color-A;
-		@primary-bordercolor: @color-A;
-		@primary-active-fontcolor: #fff;
-		@primary-active-backgroundcolor: @color-A-50;
-		@primary-active-bordercolor: @color-A;
-		@primary-hover-fontcolor: #fff;
-		@primary-hover-backgroundcolor: @color-A-70;
-		@primary-hover-bordercolor: @color-A;
-
-		//////////////////////////////////////| HERO
-		@hero-fontcolor: #fff;
-		@hero-backgroundcolor: @color-B;
-		@hero-bordercolor: @color-B;
-		@hero-active-fontcolor: #fff;
-		@hero-active-backgroundcolor: @color-B-50;
-		@hero-active-bordercolor: @color-B;
-		@hero-hover-fontcolor: #fff;
-		@hero-hover-backgroundcolor: @color-B-70;
-		@hero-hover-bordercolor: @color-B;
-
-		//////////////////////////////////////| NEUTRAL
-		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-C;
-		@neutral-bordercolor: @color-C;
-		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-C-50;
-		@neutral-active-bordercolor: @color-C;
-		@neutral-hover-fontcolor: #fff;
+	.getBrand() when (@brand = BOM) {}
+	.getBrand() when (@brand = BSA) {
 		@neutral-hover-backgroundcolor: @color-C;
-		@neutral-hover-bordercolor: @color-C;
-
-		//////////////////////////////////////| FAINT
-		@faint-fontcolor: @color-Muted;
-		@faint-backgroundcolor: @color-J;
-		@faint-bordercolor: @color-Border;
-		@faint-active-fontcolor: @color-Muted;
-		@faint-active-backgroundcolor: #fff;
-		@faint-active-bordercolor: @color-Border;
-		@faint-hover-fontcolor: @color-Muted;
-		@faint-hover-backgroundcolor: #fff;
-		@faint-hover-bordercolor: @color-Border;
-
-		//////////////////////////////////////| SOFT
-		@soft-faint-fontcolor: @color-Muted;
 	}
-	.getBrand() when (@brand = STG) { //////////////////////////////////////| STG
-		//////////////////////////////////////| PRIMARY
-		@primary-fontcolor: #fff;
-		@primary-backgroundcolor: @color-A;
-		@primary-bordercolor: @color-A;
-		@primary-active-fontcolor: #fff;
-		@primary-active-backgroundcolor: @color-A-50;
-		@primary-active-bordercolor: @color-A;
-		@primary-hover-fontcolor: #fff;
-		@primary-hover-backgroundcolor: @color-A-70;
-		@primary-hover-bordercolor: @color-A;
-
-		//////////////////////////////////////| HERO
+	.getBrand() when (@brand = STG) {
 		@hero-fontcolor: @color-Text;
-		@hero-backgroundcolor: @color-B;
-		@hero-bordercolor: @color-B;
 		@hero-active-fontcolor: @color-Text;
-		@hero-active-backgroundcolor: @color-B-50;
-		@hero-active-bordercolor: @color-B;
 		@hero-hover-fontcolor: @color-Text;
-		@hero-hover-backgroundcolor: @color-B-70;
-		@hero-hover-bordercolor: @color-B;
-
-		//////////////////////////////////////| NEUTRAL
-		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-C;
-		@neutral-bordercolor: @color-C;
-		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-C-50;
-		@neutral-active-bordercolor: @color-C;
-		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-C-70;
-		@neutral-hover-bordercolor: @color-C;
-
-		//////////////////////////////////////| FAINT
-		@faint-fontcolor: @color-Muted;
-		@faint-backgroundcolor: @color-J;
-		@faint-bordercolor: @color-Border;
-		@faint-active-fontcolor: @color-Muted;
-		@faint-active-backgroundcolor: #fff;
-		@faint-active-bordercolor: @color-Border;
-		@faint-hover-fontcolor: @color-Muted;
-		@faint-hover-backgroundcolor: #fff;
-		@faint-hover-bordercolor: @color-Border;
-
-		//////////////////////////////////////| SOFT
-		@soft-faint-fontcolor: @color-Muted;
 	}
-	.getBrand() when (@brand = WBC) { //////////////////////////////////////| WBC
-		//////////////////////////////////////| PRIMARY
-		@primary-fontcolor: #fff;
-		@primary-backgroundcolor: @color-A;
-		@primary-bordercolor: @color-A;
-		@primary-active-fontcolor: #fff;
-		@primary-active-backgroundcolor: @color-A-50;
-		@primary-active-bordercolor: @color-A;
-		@primary-hover-fontcolor: #fff;
-		@primary-hover-backgroundcolor: @color-A-70;
-		@primary-hover-bordercolor: @color-A;
-
-		//////////////////////////////////////| HERO
-		@hero-fontcolor: #fff;
-		@hero-backgroundcolor: @color-B;
-		@hero-bordercolor: @color-B;
-		@hero-active-fontcolor: #fff;
-		@hero-active-backgroundcolor: @color-B-50;
-		@hero-active-bordercolor: @color-B;
-		@hero-hover-fontcolor: #fff;
-		@hero-hover-backgroundcolor: @color-B-70;
-		@hero-hover-bordercolor: @color-B;
-
-		//////////////////////////////////////| NEUTRAL
-		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-C;
-		@neutral-bordercolor: @color-C;
-		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-C-50;
-		@neutral-active-bordercolor: @color-C;
-		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-C-70;
-		@neutral-hover-bordercolor: @color-C;
-
-		//////////////////////////////////////| FAINT
-		@faint-fontcolor: @color-Muted;
-		@faint-backgroundcolor: @color-J;
-		@faint-bordercolor: @color-Border;
-		@faint-active-fontcolor: @color-Muted;
-		@faint-active-backgroundcolor: #fff;
-		@faint-active-bordercolor: @color-Border;
-		@faint-hover-fontcolor: @color-Muted;
-		@faint-hover-backgroundcolor: #fff;
-		@faint-hover-bordercolor: @color-Border;
-
-		//////////////////////////////////////| SOFT
-		@soft-faint-fontcolor: @color-Muted;
-	}
-	.getBrand() when (@brand = WBG) { //////////////////////////////////////| WBG
-		//////////////////////////////////////| PRIMARY
-		@primary-fontcolor: #fff;
-		@primary-backgroundcolor: @color-A;
-		@primary-bordercolor: @color-A;
-		@primary-active-fontcolor: #fff;
-		@primary-active-backgroundcolor: @color-A-50;
-		@primary-active-bordercolor: @color-A;
-		@primary-hover-fontcolor: #fff;
-		@primary-hover-backgroundcolor: @color-A-70;
-		@primary-hover-bordercolor: @color-A;
-
-		//////////////////////////////////////| HERO
-		@hero-fontcolor: #fff;
-		@hero-backgroundcolor: @color-B;
-		@hero-bordercolor: @color-B;
-		@hero-active-fontcolor: #fff;
-		@hero-active-backgroundcolor: @color-B-50;
-		@hero-active-bordercolor: @color-B;
-		@hero-hover-fontcolor: #fff;
-		@hero-hover-backgroundcolor: @color-B-70;
-		@hero-hover-bordercolor: @color-B;
-
-		//////////////////////////////////////| NEUTRAL
-		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-C;
-		@neutral-bordercolor: @color-C;
-		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-C-50;
-		@neutral-active-bordercolor: @color-C;
-		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-C-70;
-		@neutral-hover-bordercolor: @color-C;
-
-		//////////////////////////////////////| FAINT
-		@faint-fontcolor: @color-Muted;
-		@faint-backgroundcolor: @color-J;
-		@faint-bordercolor: @color-Border;
-		@faint-active-fontcolor: @color-Muted;
-		@faint-active-backgroundcolor: #fff;
-		@faint-active-bordercolor: @color-Border;
-		@faint-hover-fontcolor: @color-Muted;
-		@faint-hover-backgroundcolor: #fff;
-		@faint-hover-bordercolor: @color-Border;
-
-		//////////////////////////////////////| SOFT
-		@soft-faint-fontcolor: @color-Muted;
-	}
-	.getBrand() when (@brand = BT) { //////////////////////////////////////| BT
-		//////////////////////////////////////| PRIMARY
-		@primary-fontcolor: #fff;
-		@primary-backgroundcolor: @color-A;
-		@primary-bordercolor: @color-A;
-		@primary-active-fontcolor: #fff;
-		@primary-active-backgroundcolor: @color-A-50;
-		@primary-active-bordercolor: @color-A;
-		@primary-hover-fontcolor: #fff;
-		@primary-hover-backgroundcolor: @color-A-70;
-		@primary-hover-bordercolor: @color-A;
-
-		//////////////////////////////////////| HERO
-		@hero-fontcolor: #fff;
-		@hero-backgroundcolor: @color-B;
-		@hero-bordercolor: @color-B;
-		@hero-active-fontcolor: #fff;
-		@hero-active-backgroundcolor: @color-B-50;
-		@hero-active-bordercolor: @color-B;
-		@hero-hover-fontcolor: #fff;
-		@hero-hover-backgroundcolor: @color-B-70;
-		@hero-hover-bordercolor: @color-B;
-
-		//////////////////////////////////////| NEUTRAL
-		@neutral-fontcolor: #fff;
-		@neutral-backgroundcolor: @color-C;
-		@neutral-bordercolor: @color-C;
-		@neutral-active-fontcolor: #fff;
-		@neutral-active-backgroundcolor: @color-C-50;
-		@neutral-active-bordercolor: @color-C;
-		@neutral-hover-fontcolor: #fff;
-		@neutral-hover-backgroundcolor: @color-C-70;
-		@neutral-hover-bordercolor: @color-C;
-
-		//////////////////////////////////////| FAINT
-		@faint-fontcolor: @color-Muted;
-		@faint-backgroundcolor: @color-J;
-		@faint-bordercolor: @color-Border;
-		@faint-active-fontcolor: @color-Muted;
-		@faint-active-backgroundcolor: #fff;
-		@faint-active-bordercolor: @color-Border;
-		@faint-hover-fontcolor: @color-Muted;
-		@faint-hover-backgroundcolor: #fff;
-		@faint-hover-bordercolor: @color-Border;
-
-		//////////////////////////////////////| SOFT
-		@soft-faint-fontcolor: @color-Muted;
-	}
+	.getBrand() when (@brand = WBC) {}
+	.getBrand() when (@brand = WBG) {}
+	.getBrand() when (@brand = BT) {}
 	.getBrand();
+
 
 
 	//////////////////////////////////////| BUTTONS
 	.btn {
-		padding: 7px 12px;
-		border-radius: 6px;
-		font-size: 16px;
+		._buttons-size( medium ); //default settings
+
+		border-radius: 3px;
 		font-weight: 400;
-		line-height: 1.33;
+		line-height: 1.5;
 		white-space: nowrap;
 		display: inline-block;
 		text-align: center;
@@ -319,176 +112,89 @@
 		cursor: pointer;
 		border: 1px solid @faint-bordercolor;
 		user-select: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
 		appearance: none;
-		height: 36px;
-		text-decoration: none;
 
-		.btn-text {
+		> .icon {
+			position: relative;
 			vertical-align: top;
 			display: inline-block;
-			line-height: 0;
-			margin-top: 10px;
+			line-height: 1;
 		}
 
-		//btn icons
-		.btn-icon {
-			display: inline-block;
-			vertical-align: top;
-			margin-left: 12px;
-			margin-top: 3px;
-
-			&.btn-icon-left {
-				margin-left: 0;
-				margin-right: 3px;
-			}
-
-			&.icon-size-md,
-			&.icon-size-lg {
-				width: 16px;
-				height: 16px;
-
-				svg {
-					width: 16px;
-					height: 16px;
-				}
-			}
-		}
-
-		//btn link
-		&.btn-link {
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			appearance: none;
-			display: inline;
-			background: transparent;
-			border-radius: 0;
-			border: 0 none;
-			color: @color-A;
-			padding: 0;
-			margin: 0;
-			font-size: 14px;
-			line-height: 1.428571429;
-			font-weight: 400;
-			height: auto;
+		&,
+		&:hover {
 			text-decoration: none;
-			user-select: text;
+		}
 
-			.btn-text {
-				text-decoration: underline;
-				margin-top: 0;
-				line-height: 1.428571429;
-				display: inline;
-			}
+		&:focus {
+			.outline();
+		}
 
-			.btn-icon {
-				margin-left: 3px;
+		&.disabled,
+		&:disabled {
+			opacity: 0.5;
 
-				&.btn-icon-left {
-					margin-left: 0;
-					margin-right: 3px;
-				}
-			}
-
-			p > & {
-				vertical-align: top;
-			}
-
-			&.btn-xl,
-			&.btn-lg,
-			&.btn-sm {
-				padding: 0;
-				height: auto;
-			}
-
-			&:focus,
+			&:active,
 			&:hover {
-				background: transparent;
-				text-decoration: none;
-				color: @color-A;
+				cursor: not-allowed;
 			}
 		}
+	}
 
-		//btn block
-		&.btn-block {
-			display: block;
-			width: 100%;
-		}
+	// Disabling of clicks on `<a>` elements
+	a.btn.disabled,
+		fieldset[disabled] a.btn {
+		pointer-events: none;
+	}
 
-		//btn sizing
-		&.btn-xl,
-		&.btn-xl-xs {
-			._buttons-size( xl );
-		}
+	// Icon/caret gap
+	.btn-icon + .btn-text,
+	.btn-text + .btn-icon,
+	.btn-dropdown > .btn:after {
+		margin-left: @buttons-IconGap;
+	}
 
-		&.btn-lg,
-		&.btn-lg-xs {
-			._buttons-size( lg );
-		}
-
-		&.btn-sm,
-		&.btn-sm-xs {
-			._buttons-size( sm );
-		}
-
-		//responsive sizes
-		@media (min-width: @screen-sm) { //////////////////////////////////////|  SM
-			&.btn-sm-sm {
-				._buttons-size( sm );
-			}
-
-			&.btn-md-sm {
-				._buttons-size( md );
-			}
-
-			&.btn-lg-sm {
-				._buttons-size( lg );
-			}
-
-			&.btn-xl-sm {
-				._buttons-size( xl );
-			}
-
-		}
-
-		@media (min-width: @screen-md) { //////////////////////////////////////|  MD
-			&.btn-sm-md {
-				._buttons-size( sm );
-			}
-
-			&.btn-md-md {
-				._buttons-size( md );
-			}
-
-			&.btn-lg-md {
-				._buttons-size( lg );
-			}
-
-			&.btn-xl-md {
-				._buttons-size( xl );
-			}
-		}
-
-		@media (min-width: @screen-lg) { //////////////////////////////////////|  LG
-			&.btn-sm-lg {
-				._buttons-size( sm );
-			}
-
-			&.btn-md-lg {
-				._buttons-size( md );
-			}
-
-			&.btn-lg-lg {
-				._buttons-size( lg );
-			}
-
-			&.btn-xl-lg {
-				._buttons-size( xl );
-			}
-		}
-
-		//all btn color versions
+	// Button types
+	.btn-primary {
+		._buttons-make-button(
+			@primary-fontcolor,
+			@primary-backgroundcolor,
+			@primary-bordercolor,
+			@primary-active-fontcolor,
+			@primary-active-backgroundcolor,
+			@primary-active-bordercolor,
+			@primary-hover-fontcolor,
+			@primary-hover-backgroundcolor,
+			@primary-hover-bordercolor
+		);
+	}
+	.btn-hero {
+		._buttons-make-button(
+			@hero-fontcolor,
+			@hero-backgroundcolor,
+			@hero-bordercolor,
+			@hero-active-fontcolor,
+			@hero-active-backgroundcolor,
+			@hero-active-bordercolor,
+			@hero-hover-fontcolor,
+			@hero-hover-backgroundcolor,
+			@hero-hover-bordercolor
+		);
+	}
+	.btn-neutral {
+		._buttons-make-button(
+			@neutral-fontcolor,
+			@neutral-backgroundcolor,
+			@neutral-bordercolor,
+			@neutral-active-fontcolor,
+			@neutral-active-backgroundcolor,
+			@neutral-active-bordercolor,
+			@neutral-hover-fontcolor,
+			@neutral-hover-backgroundcolor,
+			@neutral-hover-bordercolor
+		);
+	}
+	.btn-faint {
 		._buttons-make-button(
 			@faint-fontcolor,
 			@faint-backgroundcolor,
@@ -500,81 +206,67 @@
 			@faint-hover-backgroundcolor,
 			@faint-hover-bordercolor
 		);
+	}
+	.btn-link {
+		._buttons-make-button(
+			@link-fontcolor,
+			@link-backgroundcolor,
+			@link-bordercolor,
+			@link-active-fontcolor,
+			@link-active-backgroundcolor,
+			@link-active-bordercolor,
+			@link-hover-fontcolor,
+			@link-hover-backgroundcolor,
+			@link-hover-bordercolor
+		);
 
-		&.btn-primary {
-			._buttons-make-button(
-				@primary-fontcolor,
-				@primary-backgroundcolor,
-				@primary-bordercolor,
-				@primary-active-fontcolor,
-				@primary-active-backgroundcolor,
-				@primary-active-bordercolor,
-				@primary-hover-fontcolor,
-				@primary-hover-backgroundcolor,
-				@primary-hover-bordercolor
-			);
+		// Button link additional styling
+		border-radius: 0;
+
+		&:hover {
+			&,
+			.btn-text {
+				text-decoration: underline;
+			}
 		}
-
-		&.btn-hero {
-			._buttons-make-button(
-				@hero-fontcolor,
-				@hero-backgroundcolor,
-				@hero-bordercolor,
-				@hero-active-fontcolor,
-				@hero-active-backgroundcolor,
-				@hero-active-bordercolor,
-				@hero-hover-fontcolor,
-				@hero-hover-backgroundcolor,
-				@hero-hover-bordercolor
-			);
-		}
-
-		&.btn-neutral {
-			._buttons-make-button(
-				@neutral-fontcolor,
-				@neutral-backgroundcolor,
-				@neutral-bordercolor,
-				@neutral-active-fontcolor,
-				@neutral-active-backgroundcolor,
-				@neutral-active-bordercolor,
-				@neutral-hover-fontcolor,
-				@neutral-hover-backgroundcolor,
-				@neutral-hover-bordercolor
-			);
-		}
-
-		//////////////////////////////////////| FOCUS
-		&:focus {
-			.outline();
-			display: inline-block;
+		&:disabled {
+			&:hover {
+				&,
+				.btn-text {
+					text-decoration: none;
+				}
+			}
 		}
 	}
 
-	//btn soft and btn-group styles
-	.btn-group-item .btn,
-	.btn.btn-soft {
+
+	// Button soft and Button group button
+	.btn-soft,
+	.btn-group-item > .btn:not(:hover) {
 		background-color: #fff;
 		color: @color-Text;
 
-		&.btn-faint {
-			color: @soft-faint-fontcolor;
-		}
-
-		svg,
 		.icons-background {
 			fill: @color-Text;
-			transition: fill 0.3s ease;
 		}
+	}
 
-		.btn-dropdown > & {
-			.btn-dropdown-caret:after {
-				border-top-color: @color-Text;
+	// Tweak colors for Faint Soft buttons and Button groups (which look like Soft buttons)
+	.btn-soft,
+	.btn-group-item > .btn {
+
+		// Faint Soft buttons
+		&.btn-faint {
+			color: @faint-soft-fontcolor;
+
+			&:active,
+			&:hover {
+				background-color: @faint-soft-hover-backgroundcolor;
 			}
 		}
 
 		&.disabled,
 		&:disabled {
-
 			&:active,
 			&:hover {
 				background-color: #fff;
@@ -584,108 +276,248 @@
 	}
 
 
-	//////////////////////////////////////| BLOCK BUTTONS
-	.btn-block + .btn-block {
+
+	//////////////////////////////////////| BLOCK
+	// Block button option
+	.btn-block {
+		._buttons-block();
+	}
+
+	// Stacked block buttons: .btn-block, .btn-group-block, .btn-dropdown-block and .btn-group-wrapper
+	[class*="btn-"][class*="-block"] + [class*="btn-"][class*="-block"],
+	.btn-group-wrapper + .btn-group-wrapper {
 		margin-top: 6px;
+	}
+
+
+
+	//////////////////////////////////////| SIZING
+	.btn-small {
+		._buttons-size( small );
+	}
+	.btn-large {
+		._buttons-size( large );
+	}
+	.btn-xlarge {
+		._buttons-size( xlarge );
+	}
+
+	// This breakpoint and up
+	@media (min-width: @screen-sm) {
+		.btn-small-sm {
+			._buttons-size( small );
+		}
+		.btn-medium-sm {
+			._buttons-size( medium );
+		}
+		.btn-large-sm {
+			._buttons-size( large );
+		}
+		.btn-xlarge-sm {
+			._buttons-size( xlarge );
+		}
+		.btn-block-sm {
+			._buttons-block();
+		}
+	}
+	@media (min-width: @screen-md) {
+		.btn-small-md {
+			._buttons-size( small );
+		}
+		.btn-medium-md {
+			._buttons-size( medium );
+		}
+		.btn-large-md {
+			._buttons-size( large );
+		}
+		.btn-xlarge-md {
+			._buttons-size( xlarge );
+		}
+		.btn-block-md {
+			._buttons-block();
+		}
+	}
+	@media (min-width: @screen-lg) {
+		.btn-small-lg {
+			._buttons-size( small );
+		}
+		.btn-medium-lg {
+			._buttons-size( medium );
+		}
+		.btn-large-lg {
+			._buttons-size( large );
+		}
+		.btn-xlarge-lg {
+			._buttons-size( xlarge );
+		}
+		.btn-block-lg {
+			._buttons-block();
+		}
+	}
+
+	// This breakpoint only
+	@media (max-width: (@screen-sm - 1)) {
+		.btn-small-xs-only {
+			._buttons-size( small );
+		}
+		.btn-medium-xs-only {
+			._buttons-size( medium );
+		}
+		.btn-large-xs-only {
+			._buttons-size( large );
+		}
+		.btn-xlarge-xs-only {
+			._buttons-size( xlarge );
+		}
+		.btn-block-xs-only {
+			._buttons-block();
+		}
+	}
+	@media (min-width: @screen-sm) and (max-width: (@screen-md - 1)) {
+		.btn-small-sm-only {
+			._buttons-size( small );
+		}
+		.btn-medium-sm-only {
+			._buttons-size( medium );
+		}
+		.btn-large-sm-only {
+			._buttons-size( large );
+		}
+		.btn-xlarge-sm-only {
+			._buttons-size( xlarge );
+		}
+		.btn-block-sm-only {
+			._buttons-block();
+		}
+	}
+	@media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
+		.btn-small-md-only {
+			._buttons-size( small );
+		}
+		.btn-medium-md-only {
+			._buttons-size( medium );
+		}
+		.btn-large-md-only {
+			._buttons-size( large );
+		}
+		.btn-xlarge-md-only {
+			._buttons-size( xlarge );
+		}
+		.btn-block-md-only {
+			._buttons-block();
+		}
+	}
+
+
+	//////////////////////////////////////| TRIM
+	// Button trim option (no horiz. padding)
+	.btn-trim {
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 
 	//////////////////////////////////////| BUTTON GROUPS
 	.btn-group {
 		display: inline-block;
-		font-size: 0;
+		font-size: 0; //no spaces
 		vertical-align: middle;
 		font-family: sans-serif;
+	}
+	.btn-group-input {
+		position: absolute;
+		z-index: -1; //put the input behind the button
+		opacity: 0; //hide
 
-		.btn-group-input {
-			opacity: 0;
-			position: absolute;
-
-			&:focus + .btn {
-				.outline();
-				display: inline-block;
-			}
-			&:hover + .btn {
-				outline: none;
-			}
-		}
-
-		.btn-group-item {
+		&:focus + .btn {
+			.outline();
 			display: inline-block;
-			font-family: @fontfamily;
+		}
+		&:hover + .btn {
+			outline: none;
+		}
+	}
 
-			.ie8 & {
-				display: inline;
-			}
+	.btn-group-item {
+		display: inline-block;
+		font-family: @fontfamily;
+		margin-bottom: 0; //reset `label` bottom margin
+		vertical-align: middle;
 
-			.btn {
-				border-right-width: 0;
-				border-radius: 0;
-			}
-
-			&:first-child .btn {
-				border-top-left-radius: 6px;
-				border-bottom-left-radius: 6px;
-			}
-
-			&:last-child .btn {
-				border-right-width: 1px;
-				border-top-right-radius: 6px;
-				border-bottom-right-radius: 6px;
-			}
-
-			.ie8 & {
-				.btn-group-input {
-					opacity: 1;
-					position: static;
-					vertical-align: middle;
-				}
-
-				.btn-group-text {
-					border: 0 none;
-					background: transparent;
-					padding: 0 12px 0 6px;
-					height: auto;
-
-					&:hover {
-						color: @color-Text;
-					}
-				}
-			}
+		&:not(:last-child) > .btn {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+			border-right: none;
+		}
+		&:not(:first-child) > .btn {
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
 		}
 
-		&.btn-block {
-			display: table;
-			width: 100%;
+		.ie8 & {
+			display: inline;
 
-			.btn-group-item {
-				display: table-cell;
+			// Show and align radios
+			.btn-group-input {
+				position: static; //show
+				vertical-align: middle;
+			}
 
-				.btn-group-text {
-					width: 100%;
+			// Disable button 'look'
+			> .btn {
+				border: none;
+				opacity: 1;
+				background: none;
+				padding: 0 12px 0 6px;
+				height: auto;
+				vertical-align: middle !important;
 
-					.ie8 & {
-						width: auto;
-					}
+				&,
+				&:hover {
+					color: @color-Text;
 				}
 			}
 		}
 	}
 
-	.btn-group-wrapper { //button-groups with leading line
+	// Button group with leading line text
+	.btn-group-wrapper {
 		display: table;
 		width: 100%;
 		vertical-align: middle;
 
-		.btn-group-line,
+		.btn-group-text,
 		.btn-group {
 			display: table-cell;
+		}
+		.btn-group-text {
+			padding-right: 12px;
 			vertical-align: middle;
 		}
-
 		.btn-group {
 			text-align: right;
 			white-space: nowrap;
+			vertical-align: top;
+		}
+	}
+
+	// Button group block option
+	.btn-group-block {
+		display: table;
+		width: 100%;
+
+		.btn-group-item {
+			display: table-cell;
+			width: 1%; //the fit better trick
+
+			> .btn {
+				width: 100%;
+				vertical-align: top;
+
+				.ie8 & {
+					width: auto;
+				}
+			}
 		}
 	}
 
@@ -696,111 +528,30 @@
 		display: inline-block;
 		vertical-align: middle;
 
-		& > .btn {
+		> .btn {
+			text-align: left; //never centred as there will always be a caret (on the right)
+		}
+
+		// Caret
+		> .btn:after {
+			display: inline-block;
+			vertical-align: middle;
 			position: relative;
-
-			& > .btn-dropdown-caret {
-				margin-right: 26px;
-
-				&:after {
-					content: " ";
-					position: absolute;
-					display: block;
-					vertical-align: middle;
-					border-top-width: 8px;
-					border-top-style: solid;
-					border-right: 7px solid transparent;
-					border-bottom: none;
-					border-left: 7px solid transparent;
-					position: absolute;
-					right: 12px;
-					top: 44%;
-					height: 8px;
-					width: 14px;
-				}
-			}
+			content: '';
+			border-top: @buttons-DropdownCaretHeight solid; //nb. no border-color uses text `color` value
+			border-right: (@buttons-DropdownCaretWidth / 2) solid transparent;
+			border-left: (@buttons-DropdownCaretWidth / 2) solid transparent;
+			height: 0;
+			width: 0;
+			transition: border 0.2s ease;
+			top: -1px; //tweak
 		}
 
-
-		.dropdown-menu { //dropdown menu
-			min-width: 190px;
-			background-color: #fff;
-			border-radius: 3px;
-			margin: 3px 0 12px 0;
-
-			&:focus {
-				.outline();
-			}
-
-			&.dropdown-menu-sm {
-				min-width: 130px;
-			}
-
-			&.dropdown-menu-lg {
-				min-width: 250px;
-			}
-
-			.js & { //no-js fallback
-				display: none;
-				position: absolute;
-				overflow: hidden;
-				z-index: 115;
-				left: 0;
-				right: 0;
-			}
-
-			.dropdown-menu-headline { //headlines
-				background-color: @color-Background;
-				font-size: 12px;
-				font-weight: 500;
-				padding: 7px;
-				margin: 24px -6px 18px -6px;
-
-				&:first-child {
-					margin-top: -6px;
-				}
-			}
-
-			.checkbox, //radios, checkboxes
-			.radio {
-				display: table;
-				width: 100%;
-
-				& + .checkbox, //all following
-				& + .radio {
-					margin-left: 0;
-					margin-top: 12px;
-					padding-top: 12px;
-					border-top: 1px solid @color-Border;
-					height: 37px;
-
-					.checkbox-input,
-					.radio-input {
-						top: 15px;
-
-						& + .checkbox-text:after,
-						& + .radio-text:after {
-							top: 12px;
-						}
-					}
-				}
-			}
-
-			.lists-linklist a { //linklists
-				display: block;
-			}
-
-			.btn-group-wrapper + .btn-group-wrapper {
-				margin-top: 12px;
-				padding-top: 12px;
-				border-top: 1px solid @color-Border;
-			}
-
-		}
-
-		&.is-open { //open dropdown
-			& > .btn:after {
-				content: " ";
+		// Open dropdown
+		&.is-open {
+			// Clickable overlay
+			> .btn:before {
+				content: '';
 				position: fixed;
 				z-index: 110;
 				top: 0;
@@ -816,38 +567,133 @@
 				padding: 12px;
 			}
 		}
+	}
 
-		&.btn-block {
+	// Button dropdown block option
+	.btn-dropdown-block {
+		display: block;
+		width: 100%;
+
+		> .btn {
+			display: block;
 			width: 100%;
 
-			.btn {
-				display: block;
-				width: 100%;
+			// Caret
+			&:after {
+				float: right;
+				height: 100%;
+				transform: translateY(50%);
+				margin-top: -(@buttons-DropdownCaretHeight / 2);
+				top: 0; //reset tweak
 
-				.btn-dropdown-caret {
-					width: 100%;
-					display: inline-block;
-					text-align: left;
+				.ie8 & {
+					transform: none;
+					margin-top: auto; //reset
+					top: 8px; //tweak
 				}
 			}
 		}
 	}
 
+	// Dropdown menu
+	.dropdown-menu {
+		@item-gap: 12px;
+
+		min-width: 190px;
+		background-color: #fff;
+		border-radius: 3px;
+		margin: 3px 0 12px 0;
+
+		&:focus {
+			.outline();
+		}
+
+		.js & { //no-js fallback
+			display: none;
+			position: absolute;
+			overflow: hidden;
+			z-index: 115;
+			left: 0;
+			right: 0;
+		}
+
+		.dropdown-menu-headline { //headlines
+			background-color: @color-Background;
+			font-size: 12px;
+			font-weight: 500;
+			padding: 7px;
+			margin: 24px -6px 18px -6px;
+
+			&:first-child {
+				margin-top: -6px;
+			}
+		}
+
+		// Checkbox, radio & switch controls
+		.checkbox,
+		.radio,
+		.switch {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: @item-gap;
+
+			&-text {
+				width: 100%; //required for IE8, let's just apply for all
+			}
+
+			// Subsequent controls
+			+ .checkbox,
+			+ .radio,
+			+ .switch {
+				margin-top: @item-gap;
+
+				// Divider line
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: -@item-gap;
+					left: 0;
+					right: 0;
+					border-top: 1px solid @color-Border;
+				}
+
+				&:last-child {
+					margin-bottom: 0; //reset
+				}
+			}
+		}
+
+		.lists-linklist a { //linklists
+			display: block;
+		}
+
+		.btn-group-wrapper + .btn-group-wrapper {
+			margin-top: @item-gap;
+			padding-top: @item-gap;
+			border-top: 1px solid @color-Border;
+		}
+	}
+
+	.dropdown-menu-small {
+		min-width: 130px;
+	}
+	.dropdown-menu-large {
+		min-width: 250px;
+	}
+
+
+
 	//////////////////////////////////////| PRINT
 	@media print {
 		.btn {
-			svg,
 			.icons-background {
 				fill: #000 !important;
 			}
 		}
 
-		.btn-dropdown {
-			& > .btn > .btn-dropdown-caret {
-				&:after {
-					border-top-color: #000 !important;
-				}
-			}
+		.btn-dropdown > .btn:after {
+			border-top-color: #000 !important;
 		}
 
 		.btn-group-input:checked + .btn {
@@ -875,13 +721,37 @@
 	@hover-backgroundcolor,
 	@hover-bordercolor
 ) {
-
 	color: @fontcolor;
 	border-color: @bordercolor;
 	background-color: @backgroundcolor;
 	transition: background 0.2s ease, color 0.2s ease;
 
-	.btn-group-input:checked + & {
+	&:hover {
+		color: @hover-fontcolor;
+		border-color: @hover-bordercolor;
+		background-color: @hover-backgroundcolor;
+
+		.icons-background {
+			fill: @hover-fontcolor;
+		}
+	}
+
+	&:active {
+		color: @active-fontcolor;
+		border-color: @active-bordercolor;
+		background-color: @active-backgroundcolor;
+
+		.icons-background {
+			fill: @active-fontcolor;
+		}
+	}
+
+	.icons-background {
+		fill: @fontcolor;
+	}
+
+	// Specificity required
+	.btn-group .btn-group-input:checked + & {
 		color: @fontcolor;
 		border-color: @bordercolor;
 		background-color: @backgroundcolor;
@@ -891,59 +761,13 @@
 		}
 	}
 
-	svg,
-	.icons-background {
-		fill: @fontcolor;
-	}
-
-	&:hover {
-		color: @hover-fontcolor;
-		border-color: @hover-bordercolor;
-		background-color: @hover-backgroundcolor;
-		text-decoration: none;
-
-		.btn-dropdown > & {
-			.btn-dropdown-caret:after {
-				border-top-color: @hover-fontcolor;
-			}
-		}
-
-		svg,
-		.icons-background {
-			fill: @hover-fontcolor;
-		}
-	}
-
-	&:focus,
-	&:active {
-		color: @active-fontcolor;
-		border-color: @active-bordercolor;
-		background-color: @active-backgroundcolor;
-		text-decoration: none;
-
-		svg,
-		.icons-background {
-			fill: @active-fontcolor;
-		}
-	}
-
-	.btn-dropdown > & {
-		.btn-dropdown-caret:after {
-			transition: border 0.2s ease;
-			border-top-color: @fontcolor;
-		}
-	}
-
 	&.disabled,
 	&:disabled {
-		opacity: 0.5;
-
 		&:active,
 		&:hover {
 			color: @fontcolor;
 			border-color: @bordercolor;
 			background-color: @backgroundcolor;
-			cursor: not-allowed;
 		}
 	}
 }
@@ -952,108 +776,103 @@
 /*
  * BUTTONS SIZES
  *
- * Spit out the width, size and margin of a button for a spesified size
+ * Spit out the width, size and margin of a button for a specified size
  */
 ._buttons-size( @size ) {
-	.getSize() when (@size = sm) {
-		padding: 3px 10px 3px 10px;
+	.getSize() when (@size = small) {
+		padding: 3px 9px 4px;
 		font-size: 14px;
-		line-height: 1.5;
-		font-weight: 400;
 		height: 30px;
 
-		button& {
-			padding-top: 2px;
-		}
+		> .icon {
+			@size: 12px;
 
-		a& {
-			padding-top: 3px;
-		}
+			font-size: @size;
+			width: @size;
+			height: @size;
+			top: 5px; //tweak
 
-		.btn-text {
-			margin-top: 11px;
+			.ie8 & {
+				zoom: unit(@size / @icon-SizeDefault);
+			}
 		}
 	}
-
-	.getSize() when (@size = md) {
-		padding: 7px 12px;
-		border-radius: 6px;
+	.getSize() when (@size = medium) {
+		padding: 5px 12px;
 		font-size: 16px;
-		font-weight: 400;
-		white-space: nowrap;
-		display: inline-block;
-		text-align: center;
-		vertical-align: middle;
-		touch-action: manipulation;
-		cursor: pointer;
-		border: 1px solid @faint-bordercolor;
-		user-select: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
 		height: 36px;
 
-		button&,
-		a& {
-			padding-top: 7px;
-		}
+		> .icon {
+			@size: 18px;
 
-		// a& {
-		// 	padding-top: 7px;
-		// }
+			font-size: @size;
+			height: @size;
+			width: @size;
+			top: 3px; //tweak
 
-		.btn-text {
-			vertical-align: top;
-			display: inline-block;
-			line-height: 0;
-			margin-top: 10px;
+			.ie8 & {
+				zoom: unit(@size / @icon-SizeDefault);
+			}
 		}
 	}
-
-	.getSize() when (@size = lg) {
-		padding: 10px 14px 9px 14px;
-		line-height: 1.33;
+	.getSize() when (@size = large) {
+		padding: 8px 15px;
+		font-size: 16px;
 		height: 42px;
 
-		button&,
-		a& {
-			padding-top: 10px;
-		}
+		> .icon {
+			@size: 24px;
 
-		.btn-text {
-			margin-top: 10px;
+			font-size: @size;
+			width: @size;
+			height: @size;
+			top: 0; //tweak
+
+			.ie8 & {
+				zoom: unit(@size / @icon-SizeDefault);
+			}
 		}
 	}
-
-	.getSize() when (@size = xl) {
+	.getSize() when (@size = xlarge) {
+		padding: 9px 18px 10px;
 		font-size: 18px;
-		padding: 13px 14px 14px 14px;
-		line-height: 1.11111111;
 		height: 48px;
 
-		button&,
-		a& {
-			padding-top: 13px;
-		}
+		> .icon {
+			@size: 24px;
 
-		.btn-text {
-			margin-top: 10px;
-		}
+			font-size: @size;
+			width: @size;
+			height: @size;
+			top: 2px; //tweak
 
-		.btn-icon.icon-size-md,
-		.btn-icon.icon-size-lg {
-			width: 32px;
-			height: 32px;
-			margin-top: -6px;
-			vertical-align: top;
-
-			svg {
-				width: 32px;
-				height: 32px;
+			.ie8 & {
+				zoom: unit(@size / @icon-SizeDefault);
 			}
 		}
 	}
 	.getSize();
+}
+
+/*
+ * BLOCK BUTTON
+ *
+ * Fit to parent container
+ */
+._buttons-block() {
+	display: block;
+	width: 100%;
+	overflow-x: hidden; //trim text if wider than col
+	text-align: center;
+
+	.btn-icon,
+	.btn-text {
+		float: left;
+	}
+	.btn-icon + .btn-text,
+	.btn-text + .btn-icon {
+		float: right
+	}
 }
 
 

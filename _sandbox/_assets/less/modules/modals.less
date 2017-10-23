@@ -1,4 +1,4 @@
-/*! Modals v2.0.3 WBC*/
+/*! Modals v3.0.0 WBC*/
 /*
  * modals mixins
  *
@@ -13,22 +13,20 @@
 	/*
 	 *  SETTINGS
 	 */
-	.getBrand() when (@brand = BOM) {
+	.getBrand() {
 		@headline-color: @color-B;
 		@headline-border: @color-B;
+
+		@modal-PaddingHoriz: 24px;
+		@modal-PaddingVert: 18px;
 	}
-	.getBrand() when (@brand = BSA) {
-		@headline-color: @color-B;
-		@headline-border: @color-B;
-	}
+	.getBrand() when (@brand = BOM) {}
+	.getBrand() when (@brand = BSA) {}
 	.getBrand() when (@brand = STG) {
 		@headline-color: @color-Text;
 		@headline-border: @color-B;
 	}
-	.getBrand() when (@brand = WBC) {
-		@headline-color: @color-B;
-		@headline-border: @color-B;
-	}
+	.getBrand() when (@brand = WBC) {}
 	.getBrand() when (@brand = WBG) {
 		@headline-color: @color-Text;
 		@headline-border: @color-B;
@@ -62,18 +60,6 @@
 			left: 50%;
 			right: auto;
 			margin-left: -300px;
-
-			.modal-lg& {
-				@media (min-width: @screen-md) {
-					width: 900px;
-					margin-left: -450px;
-				}
-			}
-
-			.modal-sm& {
-				width: 300px;
-				margin-left: -150px;
-			}
 		}
 
 		&.is-open {
@@ -90,65 +76,67 @@
 		&:hover {
 			outline: none;
 		}
-
-		.modal-header {
-			overflow: hidden;
-			border-bottom: 1px solid @headline-border;
-			padding: 16px 12px 12px 18px;
-
-			.modal-header-close {
-				-webkit-appearance: none;
-				-moz-appearance: none;
-				appearance: none;
-				border: 0 none;
-				background-color: transparent;
-				padding: 0;
-				margin: 0;
-				float: right;
-				overflow: hidden;
-				text-indent: -9999999em;
-				opacity: 1;
-				transition: opacity 0.2s ease;
-
-				&:hover {
-					cursor: pointer;
-					opacity: 0.5;
-				}
-
-				&:focus {
-					.outline();
-				}
-
-				svg,
-				.icons-background {
-					fill: @color-Text;
-				}
-			}
-
-			.modal-header-title {
-				font-size: 18px;
-				font-weight: 700;
-				color: @color-Text;
-			}
-		}
-
-		.modal-body {
-			padding: 24px 18px;
-		}
-
-		.modal-footer {
-			background-color: @color-Background;
-			border-top: 1px solid @color-Border;
-			text-align: right;
-			padding: 12px 18px;
-		}
-
 	}
 
+	// Header
+	.modal-header {
+		overflow: hidden;
+		border-bottom: 1px solid @headline-border;
+		padding: 16px @modal-PaddingHoriz 12px;
+	}
+	.modal-header-title {
+		font-size: 18px;
+		font-weight: 700;
+		color: @color-Text;
+	}
+
+	// Close
+	.modal-close {
+		position: relative;
+		margin-top: -(@modal-PaddingVert - 3px); //incl tweak
+		margin-right: -@modal-PaddingHoriz;
+		float: right;
+		opacity: 1;
+		transition: opacity 0.2s ease;
+
+		&:focus {
+			.outline();
+		}
+		&:hover {
+			outline: none;
+			opacity: 0.5;
+		}
+
+		// Icon
+		&,
+		&:hover {
+			.icon .icons-background {
+				fill: @color-Text;
+			}
+		}
+	}
+
+	// Body
+	.modal-body {
+		padding: @modal-PaddingVert @modal-PaddingHoriz;
+	}
+
+	// Footer
+	.modal-footer {
+		background-color: @color-Background;
+		border-top: 1px solid @color-Border;
+		text-align: right;
+		padding: 12px 18px;
+
+		.btn + .btn {
+			margin-left: 2px;
+		}
+	}
 	.modal-sronly {
 		.sr-only();
 	}
 
+	// Backdrop
 	.modal-backdrop {
 		position: fixed;
 		background-color: #000;
@@ -162,10 +150,25 @@
 	}
 
 
+	// Sizing options
+	.modal-large {
+		@media (min-width: @screen-md) {
+			width: 900px;
+			margin-left: -450px;
+		}
+	}
+	.modal-small {
+		@media (min-width: @screen-sm) {
+			width: 300px;
+			margin-left: -150px;
+		}
+	}
+
+
 	//////////////////////////////////////| PRINT
 	@media print {
-		.modal-header-close {
-			display: none;
+		.modal-close {
+			display: none; //hide
 		}
 	}
 }

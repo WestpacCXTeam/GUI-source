@@ -1,0 +1,209 @@
+/*! Headers v1.0.0 WBC*/
+/*
+ * headers mixins
+ *
+ */
+
+@brand: WBC;
+
+
+//////////////////////////////////////| headers mixin
+._headers( @brand ) {
+
+	/*
+	 *  SETTINGS
+	 */
+	.getBrand() {
+		// Header settings
+		@header-ButtonWidth: 42px;
+		@header-ButtonWidthSM: 60px;
+		@header-ButtonMarginVert: 3px;
+		@header-ButtonMarginVertSM: 6px;
+
+		// Basic header settings
+		@header-BasicHeight: 44px;
+		@header-BasicHeightSM: 65px;
+		@header-BasicPaddingHoriz: 12px;
+		@header-BasicPaddingHorizSM: 24px;
+		@header-BasicBorderWidth: 1px;
+	}
+	.getBrand() when (@brand = BOM) {
+		// @test: 'BOM';
+	}
+	.getBrand() when (@brand = BSA) {
+		// @test: 'BSA';
+	}
+	.getBrand() when (@brand = STG) {
+		// @test: 'STG';
+	}
+	.getBrand() when (@brand = WBC) {
+		// @test: 'WBC';
+	}
+	.getBrand() when (@brand = WBG) {
+		// @test: 'WBG';
+	}
+	.getBrand() when (@brand = BT) {
+		// @test: 'BT';
+	}
+	.getBrand();
+
+
+	//////////////////////////////////////| BASE
+	.header {
+		position: relative;
+		overflow: hidden;
+		display: flex;
+	}
+
+	//////////////////////////////////////| BASIC HEADER
+	.header-basic {
+		background-color: #fff;
+		border-bottom: @header-BasicBorderWidth solid @color-Border;
+		font-size: 0; //hack
+		text-align: left;
+		padding-left: @header-BasicPaddingHoriz;
+		padding-right: @header-BasicPaddingHoriz;
+		height: @header-BasicHeight + @header-BasicBorderWidth;
+
+		@media (min-width: @screen-sm) {
+			padding-left: @header-BasicPaddingHorizSM;
+			padding-right: @header-BasicPaddingHorizSM;
+			height: @header-BasicHeightSM + @header-BasicBorderWidth;
+		}
+
+		.btn {
+			+ .btn {
+				margin-left: 5px;
+			}
+		}
+
+
+		// Left/right areas
+		.header-left,
+		.header-right {
+			display: flex;
+			align-items: center; //vertical alignment
+		}
+		.header-right { margin-left: auto; } //auto push right
+
+
+		// Special header specific button element
+		.header-btn {
+			display: flex;
+			flex-direction: column;
+			justify-content: center; //vertical alignment
+			align-items: center; //horizontal alignment
+			align-self: stretch; //vertically stretch
+
+			margin-top: @header-ButtonMarginVert;
+			margin-bottom: @header-ButtonMarginVert;
+			min-width: @header-ButtonWidth;
+
+			@media (min-width: @screen-sm) {
+				margin-top: @header-ButtonMarginVertSM;
+				margin-bottom: @header-ButtonMarginVertSM;
+				min-width: @header-ButtonWidthSM;
+			}
+
+			.icons-background {
+				fill: @color-Text;
+			}
+		}
+
+
+		// Left side items
+		.header-left {
+			.header-btn {
+				border-right: 1px solid @color-Border; //divider
+
+				&:first-child {
+					margin-left: -@header-BasicPaddingHoriz; //pull out
+				}
+
+				@media (min-width: @screen-sm) {
+					&:first-child {
+						margin-left: -@header-BasicPaddingHorizSM; //pull out
+					}
+				}
+			}
+		}
+
+
+		// Right side items
+		.header-right {
+			.header-btn {
+				border-left: 1px solid @color-Border; //divider
+
+				&:last-child {
+					margin-right: -@header-BasicPaddingHoriz; //pull out
+				}
+
+				@media (min-width: @screen-sm) {
+					&:last-child {
+						margin-right: -@header-BasicPaddingHorizSM; //pull out
+					}
+				}
+			}
+			.btn + .header-btn {
+				margin-left: 10px;
+
+				@media (min-width: @screen-sm) {
+					margin-left: 15px;
+				}
+			}
+		}
+
+
+		// Logo
+		.header-logo {
+			display: inline-block;
+
+			@media (max-width: (@screen-sm - 1)) {
+				&.header-logo-center-xs {
+					._header-logo-center();
+				}
+			}
+		}
+		.header-left + .header-logo {
+			margin-left: 10px;
+			margin-right: 10px;
+
+			@media (min-width: @screen-sm) {
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+		}
+	}
+
+	//////////////////////////////////////| IE
+	// Header will function in IE8&9, but layout won't be correct
+	// (namely the vertical alignment of buttons etc.)
+	.ie8,
+	.ie9 {
+		.header {
+			display: block;
+		}
+		.header-logo,
+		.header-left {
+			float: left;
+		}
+		.header-right {
+			float: right;
+		}
+	}
+
+
+
+}
+
+._header-logo-center() {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+//////////////////////////////////////| headers
+._headers( @brand );

@@ -1,4 +1,4 @@
-/*! Badges v2.0.2 WBC*/
+/*! Badges v2.0.3 WBC*/
 /*
  * badges mixins
  *
@@ -14,142 +14,216 @@
 	 *  SETTINGS
 	 */
 
-	//////////////////////////////////////| PRIMARY
-	@primary-fontcolor: #fff;
-	@primary-backgroundcolor: @color-A;
-	@primary-inverted-fontcolor: @color-A;
-	@primary-inverted-backgroundcolor: #fff;
+	.getBrand() {
+		//////////////////////////////////////| PRIMARY
+		@primary-fontcolor: #fff;
+		@primary-backgroundcolor: @color-A;
+		@primary-bordercolor: @primary-backgroundcolor;
 
-	//////////////////////////////////////| HERO
-	@hero-backgroundcolor: @color-B;
-	@hero-inverted-fontcolor: @color-B;
-	@hero-inverted-backgroundcolor: #fff;
+		@primary-inverted-fontcolor: @color-A;
+		@primary-inverted-backgroundcolor: #fff;
+		@primary-inverted-bordercolor: @primary-inverted-backgroundcolor;
 
-	//////////////////////////////////////| NEUTRAL
-	@neutral-fontcolor: #fff;
-	@neutral-backgroundcolor: @color-C;
-	@neutral-inverted-fontcolor: @color-C;
-	@neutral-inverted-backgroundcolor: #fff;
 
-	//////////////////////////////////////| FAINT
-	@faint-fontcolor: @color-Muted;
-	@faint-backgroundcolor: #fff;
-	@faint-bordercolor: @color-Border;
-	@faint-borderwidth: 1px;
-	@faint-inverted-fontcolor: @color-Muted;
-	@faint-inverted-backgroundcolor: #fff;
-
-	//////////////////////////////////////| INFORMATION
-	@info-fontcolor: #fff;
-	@info-backgroundcolor: @color-Info;
-	@info-inverted-fontcolor: @color-Info;
-	@info-inverted-backgroundcolor: #fff;
-
-	//////////////////////////////////////| WARNING
-	@warning-fontcolor: #fff;
-	@warning-backgroundcolor: @color-Warning;
-	@warning-inverted-fontcolor: @color-Warning;
-	@warning-inverted-backgroundcolor: #fff;
-
-	//////////////////////////////////////| DANGER
-	@danger-fontcolor: #fff;
-	@danger-backgroundcolor: @color-Danger;
-	@danger-inverted-fontcolor: @color-Danger;
-	@danger-inverted-backgroundcolor: #fff;
-	
-	.getBrand() when (@brand = BOM) { //////////////////////////////////////| BOM
+		//////////////////////////////////////| HERO
 		@hero-fontcolor: #fff;
+		@hero-backgroundcolor: @color-B;
+		@hero-bordercolor: @hero-backgroundcolor;
+
+		@hero-inverted-fontcolor: @color-B;
+		@hero-inverted-backgroundcolor: #fff;
+		@hero-inverted-bordercolor: @hero-inverted-backgroundcolor;
+
+
+		//////////////////////////////////////| NEUTRAL
+		@neutral-fontcolor: #fff;
+		@neutral-backgroundcolor: @color-C;
+		@neutral-bordercolor: @neutral-backgroundcolor;
+
+		@neutral-inverted-fontcolor: @color-C;
+		@neutral-inverted-backgroundcolor: #fff;
+		@neutral-inverted-bordercolor: @neutral-inverted-backgroundcolor;
+
+
+		//////////////////////////////////////| FAINT
+		@faint-fontcolor: @color-Muted;
+		@faint-backgroundcolor: #fff;
+		@faint-bordercolor: @color-Border;
+
+		@faint-inverted-fontcolor: @color-Muted;
+		@faint-inverted-backgroundcolor: #fff;
+		@faint-inverted-bordercolor: @faint-inverted-backgroundcolor;
+
+
+		//////////////////////////////////////| SUCCESS
+		@success-fontcolor: #fff;
+		@success-backgroundcolor: @color-Success;
+		@success-bordercolor: @success-backgroundcolor;
+
+		@success-inverted-fontcolor: @color-Success;
+		@success-inverted-backgroundcolor: #fff;
+		@success-inverted-bordercolor: @info-inverted-backgroundcolor;
+
+
+		//////////////////////////////////////| INFORMATION
+		@info-fontcolor: #fff;
+		@info-backgroundcolor: @color-Info;
+		@info-bordercolor: @info-backgroundcolor;
+
+		@info-inverted-fontcolor: @color-Info;
+		@info-inverted-backgroundcolor: #fff;
+		@info-inverted-bordercolor: @info-inverted-backgroundcolor;
+
+
+		//////////////////////////////////////| WARNING
+		@warning-fontcolor: #fff;
+		@warning-backgroundcolor: @color-Warning;
+		@warning-bordercolor: @warning-backgroundcolor;
+
+		@warning-inverted-fontcolor: @color-Warning;
+		@warning-inverted-backgroundcolor: #fff;
+		@warning-inverted-bordercolor: @warning-inverted-backgroundcolor;
+
+
+		//////////////////////////////////////| DANGER
+		@danger-fontcolor: #fff;
+		@danger-backgroundcolor: @color-Danger;
+		@danger-bordercolor: @danger-backgroundcolor;
+
+		@danger-inverted-fontcolor: @color-Danger;
+		@danger-inverted-backgroundcolor: #fff;
+		@danger-inverted-bordercolor: @danger-inverted-backgroundcolor;		
 	}
-	.getBrand() when (@brand = BSA) { //////////////////////////////////////| BSA
-		@hero-fontcolor: #fff;
-	}
-	.getBrand() when (@brand = STG) { //////////////////////////////////////| STG
+	.getBrand() when (@brand = BOM) {}
+	.getBrand() when (@brand = BSA) {}
+	.getBrand() when (@brand = STG) {	
 		@hero-fontcolor: @color-F;
 	}
-	.getBrand() when (@brand = WBC) { //////////////////////////////////////| WBC
-		@hero-fontcolor: #fff;
-	}
-	.getBrand() when (@brand = WBG) { //////////////////////////////////////| WBG
-		@hero-fontcolor: #fff;
-	}
-	.getBrand() when (@brand = BT) { //////////////////////////////////////| BT
-		@hero-fontcolor: #fff;
-	}
+	.getBrand() when (@brand = WBC) {}
+	.getBrand() when (@brand = WBG) {}
+	.getBrand() when (@brand = BT) {}
 	.getBrand();
 
 
 	.badge {
+		display: inline-block;
+		min-width: 10px;
+		padding: 4px 7px;
+		line-height: 1;
+		vertical-align: baseline;
+		white-space: nowrap;
+		text-align: center;
+		border-radius: 12px;
+		font-weight: 700;
+		font-size: 14px;
+
+		// Default (no type) badge
 		._badges-make-badge(
 			#fff,
 			@color-C,
+			@color-C,
 			@color-Text,
+			#fff,
 			#fff
 		);
 
-		&.badge-primary {
-			._badges-make-badge(
-				@primary-fontcolor,
-				@primary-backgroundcolor,
-				@primary-inverted-fontcolor,
-				@primary-inverted-backgroundcolor,
-			);
+		&:empty {
+			display: none;
 		}
 
-		&.badge-hero {
-			._badges-make-badge(
-				@hero-fontcolor,
-				@hero-backgroundcolor,
-				@hero-inverted-fontcolor,
-				@hero-inverted-backgroundcolor
-			);
+		.badge-sronly {
+			.sr-only();
 		}
 
-		&.badge-neutral {
-			._badges-make-badge(
-				@neutral-fontcolor,
-				@neutral-backgroundcolor,
-				@neutral-inverted-fontcolor,
-				@neutral-inverted-backgroundcolor
-			);
+		.btn & {
+			position: relative;
+			vertical-align: top;
 		}
+		
+	}
 
-		&.badge-faint {
-			._badges-make-badge(
-				@faint-fontcolor,
-				@faint-backgroundcolor,
-				@faint-inverted-fontcolor,
-				@faint-inverted-backgroundcolor,
-				@faint-bordercolor,
-				@faint-borderwidth
-			);
-		}
+	// Types
+	.badge-primary {
+		._badges-make-badge(
+			@primary-fontcolor,
+			@primary-backgroundcolor,
+			@primary-bordercolor,
+			@primary-inverted-fontcolor,
+			@primary-inverted-backgroundcolor,
+			@primary-inverted-bordercolor
+		);
+	}
+	.badge-hero {
+		._badges-make-badge(
+			@hero-fontcolor,
+			@hero-backgroundcolor,
+			@hero-bordercolor,
+			@hero-inverted-fontcolor,
+			@hero-inverted-backgroundcolor,
+			@hero-inverted-bordercolor
+		);
+	}
+	.badge-neutral {
+		._badges-make-badge(
+			@neutral-fontcolor,
+			@neutral-backgroundcolor,
+			@neutral-bordercolor,
+			@neutral-inverted-fontcolor,
+			@neutral-inverted-backgroundcolor,
+			@neutral-inverted-bordercolor
+		);
+	}
+	.badge-faint {
+		._badges-make-badge(
+			@faint-fontcolor,
+			@faint-backgroundcolor,
+			@faint-bordercolor,
+			@faint-inverted-fontcolor,
+			@faint-inverted-backgroundcolor,
+			@faint-inverted-bordercolor
+		);
+	}
 
-		&.badge-info {
-			._badges-make-badge(
-				@info-fontcolor,
-				@info-backgroundcolor,
-				@info-inverted-fontcolor,
-				@info-inverted-backgroundcolor
-			);
-		}
-
-		&.badge-warning {
-			._badges-make-badge(
-				@warning-fontcolor,
-				@warning-backgroundcolor,
-				@warning-inverted-fontcolor,
-				@warning-inverted-backgroundcolor
-			);
-		}
-
-		&.badge-danger {
-			._badges-make-badge(
-				@danger-fontcolor,
-				@danger-backgroundcolor,
-				@danger-inverted-fontcolor,
-				@danger-inverted-backgroundcolor
-			);
-		}
+	// Alert types
+	.badge-success {
+		._badges-make-badge(
+			@success-fontcolor,
+			@success-backgroundcolor,
+			@success-bordercolor,
+			@success-inverted-fontcolor,
+			@success-inverted-backgroundcolor,
+			@success-inverted-bordercolor
+		);
+	}
+	.badge-info {
+		._badges-make-badge(
+			@info-fontcolor,
+			@info-backgroundcolor,
+			@info-bordercolor,
+			@info-inverted-fontcolor,
+			@info-inverted-backgroundcolor,
+			@info-inverted-bordercolor
+		);
+	}
+	.badge-warning {
+		._badges-make-badge(
+			@warning-fontcolor,
+			@warning-backgroundcolor,
+			@warning-bordercolor,
+			@warning-inverted-fontcolor,
+			@warning-inverted-backgroundcolor,
+			@warning-inverted-bordercolor
+		);
+	}
+	.badge-danger {
+		._badges-make-badge(
+			@danger-fontcolor,
+			@danger-backgroundcolor,
+			@danger-bordercolor,
+			@danger-inverted-fontcolor,
+			@danger-inverted-backgroundcolor,
+			@danger-inverted-bordercolor
+		);
 	}
 
 
@@ -173,56 +247,30 @@
 ._badges-make-badge(
 	@fontcolor,
 	@backgroundcolor,
+	@bordercolor,
 	@inverted-fontcolor,
 	@inverted-backgroundcolor,
-	@bordercolor: transparent,
-	@borderwidth: 0
+	@inverted-bordercolor
 ) {
-	display: inline-block;
-	min-width: 10px;
-	padding: 4px 7px;
 	color: @fontcolor;
-	line-height: 1;
-	vertical-align: baseline;
-	white-space: nowrap;
-	text-align: center;
 	background-color: @backgroundcolor;
-	border-radius: 12px;
-	font-weight: 700;
-	font-size: 14px;
-	border: @borderwidth solid @bordercolor;
-
-	.badge-sronly {
-		.sr-only();
-	}
-
-	&:empty {
-		display: none;
-	}
-
-	.btn &,
-	.btn-soft {
-		position: relative;
-		color: @fontcolor;
-		background-color: @backgroundcolor;
-		border: @borderwidth solid @bordercolor;
-		top: -(1px + @borderwidth);
-	}
-
-	.btn-primary &,
-	.btn-hero &,
-	.btn-neutral & {
+	border: 1px solid @bordercolor;
+	
+	// Inverse filled button badges
+	.btn-primary:not(.btn-soft) &,
+	.btn-hero:not(.btn-soft) &,
+	.btn-neutral:not(.btn-soft) & {
 		color: @inverted-fontcolor;
 		background-color: @inverted-backgroundcolor;
-		border: 0;
-		top: -1px;
+		border-color: @inverted-backgroundcolor;
 	}
 
-	.btn-sm &,
-	.btn-sm.btn-primary &,
-	.btn-sm.btn-hero &,
-	.btn-sm.btn-neutral & {
-		top: 0;
+	// Tweak alignment for badges in various sizes
+	.btn-small & {
+		top: -1px;
+	}
+	.btn-xlarge & {
+		top: 2px;
 	}
 
 	.lists & {

@@ -1,4 +1,4 @@
-/*! Radios v2.0.3 WBC*/
+/*! Radios v2.0.4 WBC*/
 /*
  * radios mixins
  *
@@ -13,6 +13,7 @@
 	/*
 	 *  SETTINGS
 	 */
+	.getBrand() {}
 	.getBrand() when (@brand = BOM) {
 		// @test: 'BOM';
 	}
@@ -34,123 +35,140 @@
 	.getBrand();
 
 
-
+	//////////////////////////////////////| BASE
 	.radio {
-		display: inline-table;
-		height: 24px;
-		vertical-align: middle;
-		position: relative;
-
 		&:extend(.clearfix all);
 
-		.radio-input {
+		position: relative;
+		display: inline-table;
+		vertical-align: middle;
+		margin-right: 18px;
+		min-height: 24px;
+	}
+
+	// Input
+	.radio-input {
+		position: absolute;
+		z-index: -1; //put the input behind the label
+		opacity: 0; //hide
+
+		// Focussed
+		&:focus + .radio-text {
+			.outline();
+		}
+
+		// Hovered
+		&:hover + .radio-text {
+			outline: none;
+		}
+	}
+
+	// Disabled
+	// - Nb. IE fieldset support (see grunticon.json)
+	.radio-input:disabled + .radio-text,
+	fieldset[disabled] .radio-text {
+		color: @color-Muted;
+		cursor: not-allowed;
+	}
+
+	// Text
+	.radio-text {
+		display: table-cell;
+		vertical-align: middle;
+		white-space: normal;
+		position: relative;
+		font-weight: 400;
+		padding-left: 30px;
+
+		// Radio icon
+		&:after {
+			content: '';
+			display: block;
 			position: absolute;
-			top: 6px;
-			left: 6px;
-			z-index: 0;
-
-			.radio-flip& {
-				left: auto;
-				right: 6px;
-			}
-
-			&:focus + .radio-text {
-				.outline();
-			}
-
-			&:hover + .radio-text {
-				outline: none;
-			}
-
-			&:disabled {
-				& + .radio-text {
-					color: @color-Muted;
-
-					&:hover {
-						cursor: not-allowed;
-					}
-				}
-			}
+			left: 0;
+			top: 0;
+			width: 24px;
+			height: 24px;
+			z-index: 1;
 		}
 
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+
+
+	//////////////////////////////////////| OPTIONS
+	// Radio input on right option
+	.radio-flip {
+		.radio-input {
+			left: auto;
+			right: 6px;
+		}
 		.radio-text {
-			font-weight: 400;
-			line-height: 1.2;
-			padding-left: 30px;
-			display: table-cell;
-			vertical-align: middle;
-			white-space: normal;
+			padding-left: 0;
+			padding-right: 30px;
 
+			// Radio icon
 			&:after {
-				content: '';
-				display: block;
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 24px;
-				height: 24px;
-				z-index: 1;
-			}
-
-			&:hover {
-				cursor: pointer;
-			}
-
-			.radio-flip& {
-				padding-left: 0;
-				padding-right: 30px;
-
-				&:after {
-					left: auto;
-					right: 0;
-				}
-			}
-		}
-
-		& + .radio {
-			margin-left: 18px;
-		}
-
-
-		//////////////////////////////////////| IE8 STYLE
-		.ie8 & {
-			min-height: 0;
-			height: auto;
-
-			.radio-input {
-				position: static;
-			}
-
-			.radio-text {
-				padding: 0 0 0 6px;
-
-				&:after {
-					display: none;
-				}
+				left: auto;
+				right: 0;
 			}
 		}
 	}
+
+	// Block level option
+	.radio-block {
+		width: 100%;
+		margin-right: 0; //reset
+
+		.radio-text {
+			width: 100%; //required for IE8, let's just apply for all
+		}
+	}
+
+
+
+	//////////////////////////////////////| IE8
+	.ie8 {
+		.radio {
+			min-height: 0; //reset
+			height: auto;
+		}
+		.radio-input {
+			opacity: 1; //show
+			position: static; //reset
+		}
+		.radio-text {
+			padding-left: 6px !important;
+			padding-right: 0 !important;
+
+			// Radio icon
+			&:after {
+				display: none; //hide
+			}
+		}
+	}
+
 
 
 	//////////////////////////////////////| PRINT
 	@media print {
-		.radio {
-			.radio-input {
-				opacity: 1;
-				position: static;
-				margin-right: 6px;
-			}
-			.radio-text {
-				padding: 0;
-				display: inline;
+		.radio-input {
+			opacity: 1; //show
+			position: static; //reset
+		}
+		.radio-text {
+			padding-left: 6px !important;
+			padding-right: 0 !important;
 
-				&:after {
-					display: none;
-				}
+			// Radio icon
+			&:after {
+				display: none; //hide
 			}
 		}
 	}
-
 }
 
 

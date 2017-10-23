@@ -1,4 +1,4 @@
-/*! Input-Groups v2.0.3 WBC*/
+/*! Input-Groups v3.0.0 WBC*/
 /*
  * input-groups mixins
  *
@@ -13,6 +13,9 @@
 	/*
 	 *  SETTINGS
 	 */
+	.getBrand() {
+		@input-group-BorderRadius: 3px;
+	}
 	.getBrand() when (@brand = BOM) {
 		// @test: 'BOM';
 	}
@@ -36,161 +39,164 @@
 
 
 	.input-group {
-		display: inline-block;
-		font-size: 0;
-		border-radius: 3px;
-		vertical-align: middle;
-		font-family: sans-serif;
-
-		.input-group-text {
-			.sr-only();
-		}
-
-		.input-group-input,
-		.input-group-addon {
-			color: @color-Text;
-			font-weight: 400;
-			font-family: @fontfamily;
-		}
-
-
-		.input-group-input {
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			appearance: none;
-			border-radius: 0;
-			border: 0 none;
-			font-size: 16px;
-			padding: 8px;
-			vertical-align: middle;
-			border: 1px solid @color-Border;
-			transition: border 0.2s ease;
-			height: 36px;
-
-			&:focus {
-				outline: none;
-				border: 1px solid @color-B;
-			}
-
-			&:nth-child(2) {
-				border-bottom-left-radius: 3px;
-				border-top-left-radius: 3px;
-			}
-
-			&:last-child {
-				border-bottom-right-radius: 3px;
-				border-top-right-radius: 3px;
-			}
-		}
-
-		.input-group-addon {
-			font-size: 14px;
-			background-color: @color-Light;
-			padding: 7px;
-			vertical-align: middle;
-			display: inline-block;
-			height: 36px;
-
-			&:nth-child(2) {
-				border-bottom-left-radius: 3px;
-				border-top-left-radius: 3px;
-				border: 1px solid @color-Border;
-				border-right: 0 none;
-			}
-
-			&:last-child {
-				border-bottom-right-radius: 3px;
-				border-top-right-radius: 3px;
-				border: 1px solid @color-Border;
-				border-left: 0 none;
-			}
-		}
-
-
-		//////////////////////////////////////| SIZING
-		&.input-group-xl {
-			.input-group-input {
-				padding: 14px;
-			}
-			.input-group-addon {
-				padding: 15px;
-			}
-
-			.input-group-input,
-			.input-group-addon {
-				height: 48px;
-			}
-		}
-
-		&.input-group-lg {
-			.input-group-input {
-				padding: 11px 14px;
-			}
-			.input-group-addon {
-				padding: 12px;
-			}
-
-			.input-group-input,
-			.input-group-addon {
-				height: 42px;
-			}
-		}
-
-		&.input-group-sm, {
-			.input-group-input {
-				padding: 5px 10px;
-			}
-			.input-group-addon {
-				padding: 4px 6px;
-			}
-
-			.input-group-input,
-			.input-group-addon {
-				height: 30px;
-				font-size: 14px;
-			}
-		}
-
-
-		//////////////////////////////////////| BLOCK
-		&.input-group-block {
-			display: table;
-			width: 100%;
-
-			.input-group-addon,
-			.input-group-input {
-				display: table-cell;
-				width: 100%;
-				vertical-align: top;
-			}
-
-			.input-group-addon {
-				width: 1%;
-				white-space: nowrap;
-			}
-
-			.input-group-input {
-				display: block;
-			}
-
-			&.input-group-xl .input-group-addon {
-				height: 46px;
-				padding: 12px;
-			}
-
-			&.input-group-lg .input-group-addon {
-				height: 40px;
-				padding: 9px;
-			}
-
-			&.input-group-sm .input-group-addon {
-				height: 28px;
-				padding: 3px 6px;
-			}
-		}
-
+		position: relative;
+		display: table;
+		border-collapse: separate;
 	}
+
+	// Input, text addon and button/select
+	.input-group > .input-field,
+	.input-group-addon,
+	.input-group-control {
+		display: table-cell;
+
+		// Internal bits
+		&:not(:first-child):not(:last-child) {
+			border-radius: 0;
+		}
+	}
+
+	// Input
+	.input-group .input-field {
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		margin-bottom: 0;
+
+		&:focus,
+		&:active {
+			z-index: 3;
+		}
+
+		// Handle side-by-side borders
+		+ .input-field,
+		+ .input-group-control .input-field {
+			margin-left: -1px;
+		}	
+	}
+	.input-group-control:not(:last-child) > select.input-field {
+		margin-right: -1px;
+	}
+
+	// Text and button/select addon
+	.input-group-addon,
+	.input-group-control {
+		width: 1%;
+		white-space: nowrap;
+		vertical-align: middle;
+	}
+
+	// Text addon
+	.input-group-addon {
+		background-color: @color-Light;
+		border: 1px solid @color-Border;
+		font-weight: 400;
+		color: @color-Text;
+		font-family: @fontfamily;
+		border-radius: @input-group-BorderRadius;
+		line-height: 1.5;
+		padding: 5px 12px;
+		font-size: 16px;
+		height: 36px;
+	}
+
+	// Button/select addon
+	.input-group-control {
+		position: relative;
+		// Jankily prevent input button groups from wrapping with `white-space` and
+		// `font-size` in combination with `inline-block` on buttons.
+		font-size: 0;
+		white-space: nowrap;
+
+		> .btn {
+			width: 100%; //fill required because of table-cell off-pixel thang
+		}
+		> .input-field {
+			width: auto; //select can size itself
+		}
+	}
+
+
+	//////////////////////////////////////| SIZING
+	.input-group-small {
+		.input-group-addon,
+		.input-group-control > .btn {
+			padding: 3px 9px 4px;
+			font-size: 14px;
+			height: 30px;
+		}
+	}
+	.input-group-large {
+		.input-group-addon,
+		.input-group-control > .btn {
+			padding: 8px 15px;
+			font-size: 16px;
+			height: 42px;
+		}
+	}
+	.input-group-xlarge {
+		.input-group-addon,
+		.input-group-control > .btn {
+			padding: 9px 18px 10px;
+			font-size: 18px;
+			height: 48px;
+		}
+	}
+
+
+	// Reset rounded corners
+	.input-group .input-field:not(:last-child),
+	.input-group-addon:not(:last-child),
+	.input-group-control:not(:last-child) > .btn,
+	.input-group-control:not(:last-child) > select.input-field,
+	.input-group-control:not(:last-child) > .btn-group > .btn,
+	.input-group-control:not(:first-child) > .btn-group:not(:last-child) > .btn {
+	  border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.input-group-addon:not(:last-child) {
+	  border-right: none;
+	}
+	.input-group .input-field:not(:first-child),
+	.input-group-addon:not(:first-child),
+	.input-group-control:not(:first-child) > .btn,
+	.input-group-control:not(:first-child) > select.input-field,
+	.input-group-control:not(:first-child) > .btn-group > .btn,
+	.input-group-control:not(:last-child) > .btn:not(:first-child),
+	.input-group-control:not(:last-child) > .btn-group:not(:first-child) > .btn {
+	  border-top-left-radius: 0;
+	  border-bottom-left-radius: 0;
+	}
+	.input-field + .input-group-addon:not(:first-child) {
+	  border-left: none;
+	}
+
+
+
+	//////////////////////////////////////| FORMS
+	// Inline forms
+	.form-inline {
+
+		// Kick in the inline
+		@media (min-width: @screen-sm) {
+			.input-group {
+				display: inline-block;
+				width: auto;
+				vertical-align: middle;
+				font-size: 0; //no spaces
+			}
+			.input-group > .input-field,
+			.input-group-addon,
+			.input-group-control {
+				display: inline-block;
+				width: auto;
+			}
+		}
+	}
+
 }
+
+
 
 
 //////////////////////////////////////| input-groups

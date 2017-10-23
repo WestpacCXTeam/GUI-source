@@ -1,4 +1,4 @@
-/*! Logos v2.0.5 WBC*/
+/*! Logos v2.0.6 WBC*/
 /*
  * logos mixins
  *
@@ -32,16 +32,22 @@
 		// @test: 'BT';
 	}
 	.getBrand();
+	
 
 
 	.logo {
 		display: inline-block;
+
+		svg {
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	// Multi-brand logos
-	.logo-multibrand-small {
-		width: 88px;
-		height: 42px;
+	[class*="logo-multibrand-small"] {
+		width: 122px;
+		height: 44px;
 	}
 	.logo-multibrand-large {
 		width: 180px;

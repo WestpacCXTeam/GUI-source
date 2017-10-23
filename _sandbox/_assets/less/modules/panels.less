@@ -13,24 +13,17 @@
 	/*
 	 *  SETTINGS
 	 */
-	.getBrand() when (@brand = BOM) {
+	.getBrand() {
 		@header-color: #fff;
 	}
-	.getBrand() when (@brand = BSA) {
-		@header-color: #fff;
-	}
+	.getBrand() when (@brand = BOM) {}
+	.getBrand() when (@brand = BSA) {}
 	.getBrand() when (@brand = STG) {
 		@header-color: @color-Text;
 	}
-	.getBrand() when (@brand = WBC) {
-		@header-color: #fff;
-	}
-	.getBrand() when (@brand = WBG) {
-		@header-color: #fff;
-	}
-	.getBrand() when (@brand = BT) {
-		@header-color: #fff;
-	}
+	.getBrand() when (@brand = WBC) {}
+	.getBrand() when (@brand = WBG) {}
+	.getBrand() when (@brand = BT) {}
 	.getBrand();
 
 

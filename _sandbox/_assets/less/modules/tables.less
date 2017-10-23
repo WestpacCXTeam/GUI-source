@@ -1,4 +1,4 @@
-/*! Tables v2.0.3 WBC*/
+/*! Tables v2.0.4 WBC*/
 /*
  * tables mixins
  *
@@ -13,48 +13,19 @@
 	/*
 	 *  SETTINGS
 	 */
-	.getBrand() when (@brand = BOM) {
+	.getBrand() {
 		@th-border: @color-B;
 		@th-color: @color-Text;
 		@tr-hover-bg: @color-Background;
 		@striped-bg: @color-Light;
 		@highlight-border: @color-A;
 	}
-	.getBrand() when (@brand = BSA) {
-		@th-border: @color-B;
-		@th-color: @color-Text;
-		@tr-hover-bg: @color-Background;
-		@striped-bg: @color-Light;
-		@highlight-border: @color-A;
-	}
-	.getBrand() when (@brand = STG) {
-		@th-border: @color-B;
-		@th-color: @color-Text;
-		@tr-hover-bg: @color-Background;
-		@striped-bg: @color-Light;
-		@highlight-border: @color-A;
-	}
-	.getBrand() when (@brand = WBC) {
-		@th-border: @color-B;
-		@th-color: @color-Text;
-		@tr-hover-bg: @color-Background;
-		@striped-bg: @color-Light;
-		@highlight-border: @color-A;
-	}
-	.getBrand() when (@brand = WBG) {
-		@th-border: @color-B;
-		@th-color: @color-Text;
-		@tr-hover-bg: @color-Background;
-		@striped-bg: @color-Light;
-		@highlight-border: @color-A;
-	}
-	.getBrand() when (@brand = BT) {
-		@th-border: @color-B;
-		@th-color: @color-Text;
-		@tr-hover-bg: @color-Background;
-		@striped-bg: @color-Light;
-		@highlight-border: @color-A;
-	}
+	.getBrand() when (@brand = BOM) {}
+	.getBrand() when (@brand = BSA) {}
+	.getBrand() when (@brand = STG) {}
+	.getBrand() when (@brand = WBC) {}
+	.getBrand() when (@brand = WBG) {}
+	.getBrand() when (@brand = BT) {}
 	.getBrand();
 
 
@@ -116,69 +87,13 @@
 			border-top: 2px solid @th-border;
 		}
 
-		> tbody > tr {
+		&:not(.table-striped) > tbody > tr {
 			transition: background 0.2s ease;
 
 			&:hover {
 				background-color: @tr-hover-bg;
 			}
 		}
-
-
-		//////////////////////////////////////| TABLE STRIPED
-		&.table-striped {
-			> tbody > tr:nth-child(even) {
-				background-color: @striped-bg;
-
-				&:hover {
-					background-color: darken(@striped-bg, 5%);
-				}
-			}
-		}
-
-
-		//////////////////////////////////////| TABLE BORDERED
-		&.table-bordered {
-
-			> thead,
-			> tbody,
-			> tfoot {
-				> tr {
-					> td {
-						border: 1px solid @color-Border;
-					}
-
-					> th {
-						border-left: 1px solid @color-Border;
-						border-right: 1px solid @color-Border;
-					}
-				}
-			}
-
-			> caption + thead > tr:first-child > th {
-				border-top: 1px solid @color-Border;
-			}
-
-			> thead > tr {
-				> th,
-				> td {
-					border-bottom-width: 2px;
-				}
-			}
-
-			> tbody {
-				> tr {
-					> td.table-highlight,
-					> th.table-highlight {
-						& + td.table-highlight,
-						& + th.table-highlight {
-							border-left: 1px solid @color-Border;
-						}
-					}
-				}
-			}
-		}
-
 
 		//////////////////////////////////////| TABLE HIGHLIGHT
 		> tbody {
@@ -205,6 +120,57 @@
 			}
 		}
 	}
+
+
+	//////////////////////////////////////| TABLE STRIPED
+	.table-striped {
+		> tbody > tr:nth-child(even) {
+			background-color: @striped-bg;
+		}
+	}
+
+
+	//////////////////////////////////////| TABLE BORDERED
+	.table-bordered {
+		> thead,
+		> tbody,
+		> tfoot {
+			> tr {
+				> td {
+					border: 1px solid @color-Border;
+				}
+
+				> th {
+					border-left: 1px solid @color-Border;
+					border-right: 1px solid @color-Border;
+				}
+			}
+		}
+
+		> caption + thead > tr:first-child > th {
+			border-top: 1px solid @color-Border;
+		}
+
+		> thead > tr {
+			> th,
+			> td {
+				border-bottom-width: 2px;
+			}
+		}
+
+		> tbody {
+			> tr {
+				> td.table-highlight,
+				> th.table-highlight {
+					& + td.table-highlight,
+					& + th.table-highlight {
+						border-left: 1px solid @color-Border;
+					}
+				}
+			}
+		}
+	}
+
 
 	@media screen and (max-width: @screen-xs) {
 		.table-responsive > .table-bordered > tbody > tr > td:first-child.table-highlight,

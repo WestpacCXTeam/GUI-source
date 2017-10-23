@@ -1,4 +1,4 @@
-/*! Checkboxes v2.0.3 WBC*/
+/*! Checkboxes v2.0.4 WBC*/
 /*
  * checkboxes mixins
  *
@@ -13,6 +13,7 @@
 	/*
 	 *  SETTINGS
 	 */
+	.getBrand() {}
 	.getBrand() when (@brand = BOM) {
 		// @test: 'BOM';
 	}
@@ -34,119 +35,141 @@
 	.getBrand();
 
 
-
+	//////////////////////////////////////| BASE
 	.checkbox {
-		display: inline-table;
-		height: 24px;
-		vertical-align: middle;
-		position: relative;
-
 		&:extend(.clearfix all);
 
-		.checkbox-input {
+		position: relative;
+		display: inline-table;
+		vertical-align: middle;
+		margin-right: 18px;
+		min-height: 24px;
+	}
+
+	// Input
+	.checkbox-input {
+		position: absolute;
+		z-index: -1; //put the input behind the label
+		opacity: 0; //hide
+
+		// Focussed
+		&:focus + .checkbox-text {
+			.outline();
+		}
+
+		// Hovered
+		&:hover + .checkbox-text {
+			outline: none;
+		}
+	}
+
+	// Disabled
+	// - Nb. IE fieldset support (see grunticon.json)
+	.checkbox-input:disabled + .checkbox-text,
+	fieldset[disabled] .checkbox-text {
+		color: @color-Muted;
+		cursor: not-allowed;
+	}
+
+	// Text
+	.checkbox-text {
+		display: table-cell;
+		vertical-align: middle;
+		white-space: normal;
+		position: relative;
+		font-weight: 400;
+		padding-left: 30px;
+
+		// Check icon
+		&:after {
+			content: '';
+			display: block;
 			position: absolute;
-			top: 6px;
-			left: 6px;
-			z-index: 0;
+			left: 0;
+			top: 0;
+			width: 24px;
+			height: 24px;
+			z-index: 1;
+		}
 
-			.checkbox-flip& {
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+
+
+	//////////////////////////////////////| OPTIONS
+	// Checkbox input on right option
+	.checkbox-flip {
+		.checkbox-input {
+			left: auto;
+			right: 6px;
+		}
+		.checkbox-text {
+			padding-left: 0;
+			padding-right: 30px;
+
+			// Check icon
+			&:after {
 				left: auto;
-				right: 6px;
-			}
-
-			&:focus + .checkbox-text {
-				.outline();
-			}
-
-			&:hover + .checkbox-text {
-				outline: none;
-			}
-
-			&:disabled {
-				& + .checkbox-text {
-					color: @color-Muted;
-
-					&:hover {
-						cursor: not-allowed;
-					}
-				}
+				right: 0;
 			}
 		}
+	}
+
+	// Block level option
+	.checkbox-block {
+		width: 100%;
+		margin-right: 0; //reset
 
 		.checkbox-text {
-			font-weight: 400;
-			line-height: 1.2;
-			padding-left: 30px;
-			display: table-cell;
-			vertical-align: middle;
-			white-space: normal;
+			width: 100%; //required for IE8, let's just apply for all
+		}
+	}
 
+
+
+	//////////////////////////////////////| IE8
+	.ie8 {
+		// Checkbox
+		.checkbox {
+			min-height: 0; //reset
+		}
+		// Input
+		.checkbox-input {
+			opacity: 1; //show
+			position: static; //reset
+		}
+		// Text
+		.checkbox-text {
+			padding-left: 6px !important;
+			padding-right: 0 !important;
+
+			// Check icon
 			&:after {
-				content: '';
-				display: block;
-				position: absolute;
-				left: 0;
-				top: 0;
-				width: 24px;
-				height: 24px;
-				z-index: 1;
-			}
-
-			&:hover {
-				cursor: pointer;
-			}
-
-			.checkbox-flip& {
-				padding-left: 0;
-				padding-right: 30px;
-
-				&:after {
-					left: auto;
-					right: 0;
-				}
-			}
-		}
-
-		& + .checkbox {
-			margin-left: 18px;
-		}
-
-
-		//////////////////////////////////////| IE8 STYLE
-		.ie8 & {
-			min-height: 0;
-			height: auto;
-
-			.checkbox-input {
-				position: static;
-			}
-
-			.checkbox-text {
-				padding: 0 0 0 6px;
-
-				&:after {
-					display: none;
-				}
+				display: none; //hide
 			}
 		}
 	}
 
 
+
 	//////////////////////////////////////| PRINT
 	@media print {
-		.checkbox {
-			.checkbox-input {
-				opacity: 1;
-				position: static;
-				margin-right: 6px;
-			}
-			.checkbox-text {
-				padding: 0;
-				display: inline;
+		// Input
+		.checkbox-input {
+			opacity: 1; //show
+			position: static; //reset
+		}
+		// Text
+		.checkbox-text {
+			padding-left: 6px !important;
+			padding-right: 0 !important;
 
-				&:after {
-					display: none;
-				}
+			// Check icon
+			&:after {
+				display: none; //hide
 			}
 		}
 	}

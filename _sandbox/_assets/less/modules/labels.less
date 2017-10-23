@@ -1,4 +1,4 @@
-/*! Labels v2.0.4 WBC*/
+/*! Labels v2.0.5 WBC*/
 /*
  * labels mixins
  *
@@ -31,6 +31,10 @@
 	@faint-bordercolor: @color-Border;
 	@faint-borderwidth: 1px;
 
+	//////////////////////////////////////| SUCCESS
+	@success-fontcolor: #fff;
+	@success-backgroundcolor: @color-Success;
+
 	//////////////////////////////////////| INFORMATION
 	@info-fontcolor: #fff;
 	@info-backgroundcolor: @color-Info;
@@ -43,82 +47,99 @@
 	@danger-fontcolor: #fff;
 	@danger-backgroundcolor: @color-Danger;
 
-	.getBrand() when (@brand = BOM) { //////////////////////////////////////| BOM
+
+	.getBrand() {
 		@hero-fontcolor: #fff;
 	}
-	.getBrand() when (@brand = BSA) { //////////////////////////////////////| BSA
-		@hero-fontcolor: #fff;
-	}
-	.getBrand() when (@brand = STG) { //////////////////////////////////////| STG
+	.getBrand() when (@brand = BOM) {}
+	.getBrand() when (@brand = BSA) {}
+	.getBrand() when (@brand = STG) {
 		@hero-fontcolor: @color-F;
 	}
-	.getBrand() when (@brand = WBC) { //////////////////////////////////////| WBC
-		@hero-fontcolor: #fff;
-	}
-	.getBrand() when (@brand = WBG) { //////////////////////////////////////| WBG
-		@hero-fontcolor: #fff;
-	}
-	.getBrand() when (@brand = BT) { //////////////////////////////////////| BT
-		@hero-fontcolor: #fff;
-	}
+	.getBrand() when (@brand = WBC) {}
+	.getBrand() when (@brand = WBG) {}
+	.getBrand() when (@brand = BT) {}
 	.getBrand();
 
 
 
 	.label {
+		display: inline;
+		padding: 1px 6px;
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 1;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: baseline;
+		border-radius: 2px;
+
+		// Default (no type) label
 		._labels-make-label(
 			#fff,
 			@color-A
 		);
+
+		&:empty {
+			display: none;
+		}
+
+		a& {
+			text-decoration: none;
+
+			&:hover,
+			&:focus {
+				cursor: pointer;
+			}
+		}
 	}
 
+	//  Types
 	.label-primary {
 		._labels-make-label(
 			@primary-fontcolor,
 			@primary-backgroundcolor
 		);
 	}
-
 	.label-hero {
 		._labels-make-label(
 			@hero-fontcolor,
 			@hero-backgroundcolor
 		);
 	}
-
 	.label-neutral {
 		._labels-make-label(
 			@neutral-fontcolor,
 			@neutral-backgroundcolor
 		);
 	}
-
 	.label-faint {
 		._labels-make-label(
 			@faint-fontcolor,
 			@faint-backgroundcolor,
-			@faint-bordercolor,
-			@faint-borderwidth
+			@faint-bordercolor
 		);
-
-		padding-top: 1px;
-		padding-bottom: 1px;
 	}
 
+	// Alert types
+	.label-success {
+		._labels-make-label(
+			@success-fontcolor,
+			@success-backgroundcolor
+		);
+	}
 	.label-info {
 		._labels-make-label(
 			@info-fontcolor,
 			@info-backgroundcolor
 		);
 	}
-
 	.label-warning {
 		._labels-make-label(
 			@warning-fontcolor,
 			@warning-backgroundcolor
 		);
 	}
-
 	.label-danger {
 		._labels-make-label(
 			@danger-fontcolor,
@@ -145,42 +166,25 @@
 ._labels-make-label(
 	@fontcolor,
 	@backgroundcolor,
-	@bordercolor: transparent,
-	@borderwidth: 0
-) {
-	display: inline;
-	padding: 2px 6px;
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 1;
+	@bordercolor: @backgroundcolor,
+) {	
 	color: @fontcolor;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: baseline;
-	border-radius: 2px;
 	background-color: @backgroundcolor;
-	border: @borderwidth solid @bordercolor;
+	border: 1px solid @bordercolor;
 
-	&[href] {
+	&[href]:not(.label-faint) {
 		&:hover,
 		&:focus {
 			background-color: mix(@backgroundcolor, white, 50%);
+			border-color: mix(@backgroundcolor, white, 50%);
 		}
 	}
-
 	a& {
-		text-decoration: none;
-
 		&:hover,
 		&:focus {
 			color: @fontcolor;
-			cursor: pointer;
 		}
-	}
-
-	&:empty {
-		display: none;
-	}
+	}	
 }
 
 //////////////////////////////////////| labels

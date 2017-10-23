@@ -1,4 +1,4 @@
-/*! Wells v2.0.1 WBC*/
+/*! Wells v2.0.2 WBC*/
 /*
  * wells mixins
  *
@@ -38,7 +38,7 @@
 	.well {
 		padding: 12px;
 		margin-bottom: 18px;
-		background-color: @color-Background;
+		background-color: @color-Light;
 		border: 1px solid @color-Border;
 		border-radius: 3px;
 
@@ -46,11 +46,11 @@
 			background-color: #fff;
 			margin: 12px 0;
 		}
+	}
 
-		.well-responsive& {
-			@media (min-width: @screen-sm) {
-				padding: 24px;
-			}
+	.well-responsive {
+		@media (min-width: @screen-sm) {
+			padding: 24px;
 		}
 	}
 }

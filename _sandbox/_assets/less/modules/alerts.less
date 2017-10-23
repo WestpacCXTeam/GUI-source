@@ -1,4 +1,4 @@
-/*! Alerts v2.0.3 WBC*/
+/*! Alerts v3.0.0 WBC*/
 /*
  * alerts mixins
  *
@@ -13,6 +13,9 @@
 	/*
 	 *  SETTINGS
 	 */
+	.getBrand() {
+		@alert-Padding: 18px;
+	}
 	.getBrand() when (@brand = BOM) {
 		// @test: 'BOM';
 	}
@@ -35,7 +38,16 @@
 
 
 
-	//////////////////////////////////////| TEXT COLORS
+	//////////////////////////////////////| TEXT
+	.text {
+		+ .text {
+			margin-top: 6px;
+		}
+	}
+	.text-icon {
+		margin-right: 6px;
+	}
+
 	.text-success {
 		color: @color-Success;
 
@@ -43,7 +55,6 @@
 			fill: @color-Success;
 		}
 	}
-
 	.text-info {
 		color: @color-Info;
 
@@ -51,7 +62,6 @@
 			fill: @color-Info;
 		}
 	}
-
 	.text-warning {
 		color: @color-Warning;
 
@@ -59,7 +69,6 @@
 			fill: @color-Warning;
 		}
 	}
-
 	.text-danger {
 		color: @color-Danger;
 
@@ -67,41 +76,38 @@
 			fill: @color-Danger;
 		}
 	}
+	.text-system {
+		color: #000;
+
+		.icons-background {
+			fill: #000;
+		}
+	}
+
 
 
 	//////////////////////////////////////| ALERT BOXES
 	.alert {
+		&:extend(.clearfix all);
+
 		position: relative;
-		padding: 18px 36px 18px 18px;
+		z-index: 1;
 		margin-bottom: 21px;
+		padding: @alert-Padding;
 		border-top: 1px solid @color-Border;
 		border-bottom: 1px solid @color-Border;
-		overflow: hidden;
-		z-index: 1;
 		opacity: 1;
-		display: flex;
-		align-items: center;
-		color: @color-Info;
-		border-color: @color-Info-50;
-		background-color: @color-Info-5;
 
 		> p,
 		> ul {
 			margin-bottom: 0;
 		}
-
 		> p + p {
-			margin-top: 5px;
+			margin-top: 6px;
 		}
 
 		.js & {
 			transition: all 0.15s ease;
-			max-height: 500px;
-
-			.alert-body {
-				max-height: 470px;
-				overflow: auto;
-			}
 		}
 
 		&.is-closed {
@@ -113,230 +119,267 @@
 		}
 	}
 
-	.alert-close {
-		position: absolute;
-		top: 5px;
-		right: 5px;
-		width: 32px;
-		height: 32px;
-		overflow: hidden;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-		padding: 7px;
-		margin: 0;
-		border: 0 none;
-		background-color: transparent;
-		cursor: pointer;
-		opacity: 1;
-		transition: opacity 0.2s ease;
-		font-size: 0;
-		text-indent: -9999em;
-		z-index: 2;
-
-		.no-js & {
-			display: none;
-		}
-
-		svg,
-		.icons-background {
-			fill: @color-Info;
-		}
-
-		svg {
-			width: 16px;
-			height: 16px;
-		}
-
-		&:focus {
-			.outline();
-		}
-
-		&:hover {
-			outline: none;
-			opacity: 0.5;
-		}
-	}
-
-	.alert-icon {
-		float: left;
-		margin-right: 12px;
-		align-self: flex-start;
-
-		&.icon-size-sm {
-			min-width: 16px;
-		}
-
-		&.icon-size-md {
-			min-width: 32px;
-		}
-
-		&.icon-size-lg {
-			min-width: 64px;
-		}
-
-		svg,
-		.icons-background {
-			fill: @color-Info;
-		}
-	}
-
+	// Alert types
 	.alert-success {
-		color: @color-Success;
 		border-color: @color-Success-50;
 		background-color: @color-Success-5;
 
-		.alert-close,
-		.alert-icon {
-			svg,
+		&,
+		.alert-body {
+			color: @color-Success;
+		}
+		.alert-icon,
+		.alert-close {
 			.icons-background {
 				fill: @color-Success;
 			}
 		}
 	}
-
 	.alert-info {
-		color: @color-Info;
 		border-color: @color-Info-50;
 		background-color: @color-Info-5;
 
-		.alert-close,
-		.alert-icon {
-			svg,
+		&,
+		.alert-body {
+			color: @color-Info;
+		}
+		.alert-icon,
+		.alert-close {
 			.icons-background {
 				fill: @color-Info;
 			}
 		}
 	}
-
 	.alert-warning {
-		color: @color-Warning;
 		border-color: @color-Warning-50;
 		background-color: @color-Warning-5;
 
-		.alert-close,
-		.alert-icon {
-			svg,
+		&,
+		.alert-body {
+			color: @color-Warning;
+		}
+		.alert-icon,
+		.alert-close {
 			.icons-background {
 				fill: @color-Warning;
 			}
 		}
 	}
-
 	.alert-danger {
-		color: @color-Danger;
 		border-color: @color-Danger-50;
 		background-color: @color-Danger-5;
 
-		.alert-close,
-		.alert-icon {
-			svg,
+		&,
+		.alert-body {
+			color: @color-Danger;
+		}
+		.alert-icon,
+		.alert-close {
 			.icons-background {
 				fill: @color-Danger;
 			}
 		}
 	}
-
 	.alert-system {
-		color: #000;
 		border-color: yellow;
 		background-color: yellow;
 
-		.alert-close,
-		.alert-icon {
-			svg,
+		&,
+		.alert-body {
+			color: #000;
+		}
+		.alert-icon,
+		.alert-close {
 			.icons-background {
 				fill: #000;
 			}
 		}
 	}
 
+	// Close button
+	.alert-close {
+		position: relative;
+		margin-top: -(@alert-Padding - 3px); //incl tweak
+		margin-right: -@alert-Padding;
+		float: right;
+		opacity: 1;
+		transition: opacity 0.2s ease;
+
+		.no-js & {
+			display: none; //hide
+		}
+
+		&:focus {
+			.outline();
+		}
+		&:hover {
+			outline: none;
+			opacity: 0.5;
+		}
+	}
+
+	// Icon
+	.alert-icon {
+		float: left;
+		margin-right: 6px;
+
+		@media (min-width: @screen-sm) {
+			margin-right: 12px;
+		}
+	}
+
+	// Body
+	.alert-body {
+		position: relative;
+
+		.alert-icon + & {
+			@media (min-width: @screen-sm) {
+				overflow: hidden; //no icon wrapping
+			}
+		}
+	}
+	// Body vertical alignment tweak, if after icon
+	.alert-icon {
+		@tweak: 2px;
+
+		&.icon-xsmall,
+		&.icon-small {
+			+ .alert-body { top: auto; } //reset
+		}
+		&, //default size
+		&.icon-large,
+		&.icon-xlarge {
+			+ .alert-body { top: @tweak; } //tweak
+		}
+
+		// Responsive icons
+		//  - yes this is hella complicated & messy, but unfortunately required
+		@media (min-width: @screen-sm) {
+			&.icon-xsmall-sm,
+			&.icon-small-sm {
+				+ .alert-body { top: auto; } //reset
+			}
+			&.icon-medium-sm,
+			&.icon-large-sm,
+			&.icon-xlarge-sm {
+				+ .alert-body { top: @tweak; } //tweak
+			}
+		}
+		@media (min-width: @screen-md) {
+			&.icon-xsmall-md,
+			&.icon-small-md {
+				+ .alert-body { top: auto; } //reset
+			}
+			&.icon-medium-md,
+			&.icon-large-md,
+			&.icon-xlarge-md {
+				+ .alert-body { top: @tweak; } //tweak
+			}
+		}
+		@media (min-width: @screen-lg) {
+			&.icon-xsmall-lg,
+			&.icon-small-lg {
+				+ .alert-body { top: auto; } //reset
+			}
+			&.icon-medium-lg,
+			&.icon-large-lg,
+			&.icon-xlarge-lg {
+				+ .alert-body { top: @tweak; } //tweak
+			}
+		}
+	}
+
+
 
 	//////////////////////////////////////| FORM VALIDATIONS
 	.alert-form {
 		margin-bottom: 21px;
+	}
+	.alert-form-msg {
+		display: none; //hide
+		font-size: 12px;
 
+		.has-success &,
+		.has-info &,
+		.has-warning &,
+		.has-danger & {
+			display: block; //show
+			margin: 6px 0 0;
+		}
+		.icon {
+			vertical-align: top;
+			margin-right: .25em;
+		}
+	}
+
+	// Validation states
+	.has-success {
 		.alert-form-msg {
-			display: none;
-			font-size: 13px;
+			color: @color-Success;
 
-			.has-success&,
-			.has-info&,
-			.has-warning&,
-			.has-danger& {
-				display: block;
-				margin: 4px 0 0 0;
+			.icons-background {
+				fill: @color-Success;
 			}
 		}
-
-		& > textarea.input-field + p.alert-form-msg {
-			margin-top: 0;
+		.input-field,
+		.input-field-select,
+		.input-field-select:focus {
+			border-color: @color-Success;
 		}
+		.input-field {
+			color: @color-Success;
+		}
+	}
+	.has-info {
+		.alert-form-msg {
+			color: @color-Info;
 
-		.has-success& {
-			.alert-form-msg {
-				color: @color-Success;
-			}
-
-			.input-field,
-			.input-field-select,
-			.input-field-select:focus {
-				border-color: @color-Success;
-			}
-
-			.input-field {
-				color: @color-Success;
+			.icons-background {
+				fill: @color-Info;
 			}
 		}
+		.input-field,
+		.input-field-select,
+		.input-field-select:focus {
+			border-color: @color-Info;
+		}
+		.input-field {
+			color: @color-Info;
+		}
+	}
+	.has-warning {
+		.alert-form-msg {
+			color: @color-Warning;
 
-		.has-info& {
-			.alert-form-msg {
-				color: @color-Info;
-			}
-
-			.input-field,
-			.input-field-select,
-			.input-field-select:focus {
-				border-color: @color-Info;
-			}
-
-			.input-field {
-				color: @color-Info;
+			.icons-background {
+				fill: @color-Warning;
 			}
 		}
+		.input-field,
+		.input-field-select,
+		.input-field-select:focus {
+			border-color: @color-Warning;
+		}
+		.input-field {
+			color: @color-Warning;
+		}
+	}
+	.has-danger {
+		.alert-form-msg {
+			color: @color-Danger;
 
-		.has-warning& {
-			.alert-form-msg {
-				color: @color-Warning;
-			}
-
-			.input-field,
-			.input-field-select,
-			.input-field-select:focus {
-				border-color: @color-Warning;
-			}
-
-			.input-field {
-				color: @color-Warning;
+			.icons-background {
+				fill: @color-Danger;
 			}
 		}
-
-		.has-danger& {
-			.alert-form-msg {
-				color: @color-Danger;
-			}
-
-			.input-field,
-			.input-field-select,
-			.input-field-select:focus {
-				border-color: @color-Danger;
-			}
-
-			.input-field {
-				color: @color-Danger;
-			}
+		.input-field,
+		.input-field-select,
+		.input-field-select:focus {
+			border-color: @color-Danger;
 		}
-
+		.input-field {
+			color: @color-Danger;
+		}
 	}
 
 

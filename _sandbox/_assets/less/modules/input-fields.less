@@ -1,4 +1,4 @@
-/*! Input-Fields v2.0.1 WBC*/
+/*! Input-Fields v3.0.0 WBC*/
 /*
  * input-fields mixins
  *
@@ -13,6 +13,9 @@
 	/*
 	 *  SETTINGS
 	 */
+	.getBrand() {
+		@input-field-BorderRadius: 3px;
+	}
 	.getBrand() when (@brand = BOM) {
 		// @test: 'BOM';
 	}
@@ -34,41 +37,28 @@
 	.getBrand();
 
 
+
 	//////////////////////////////////////| INPUTS
 	.input-field {
-		display: inline-block;
-		-webkit-appearance: none;
-		-moz-appearance: none;
+		display: block;
+		width: 100%;
 		appearance: none;
-		font-size: 16px;
+		line-height: 1.5;
 		font-weight: 400;
 		color: @color-Text;
 		background-color: #fff;
 		border: 1px solid @color-Border;
-		border-radius: 3px;
+		border-radius: @input-field-BorderRadius;
 		transition: border 0.2s ease;
-		padding: 6px 12px;
+		padding: 5px 12px;
+		font-size: 16px;
 		height: 36px;
-		width: 100%;
 
-		&::-webkit-input-placeholder {
+		// Placeholder
+	  &::placeholder {
 			font-weight: 300;
 			color: @color-F-50;
-		}
-
-		&:-moz-placeholder {
-			font-weight: 300;
-			color: @color-F-50;
-		}
-
-		&::-moz-placeholder {
-			font-weight: 300;
-			color: @color-F-50;
-		}
-
-		&:-ms-input-placeholder {
-			font-weight: 300;
-			color: @color-F-50;
+			opacity: 1; // Override Firefox's unusual default opacity
 		}
 
 		textarea& {
@@ -76,253 +66,85 @@
 			vertical-align: top;
 		}
 
-		& + .input-field,
-		& + .input-field-select-wrapper {
-			margin-top: 21px;
-		}
-
 		&:focus {
-			border-color: @color-B;
 			outline: none;
+			border-color: @color-B;
 		}
 
-		&:disabled {
+		// Disabled and read-only inputs
+		&:disabled,
+		&[readonly] {
 			background-color: @color-J;
 			color: @color-Muted;
 			cursor: not-allowed;
+			opacity: 1; // iOS fix for unreadable disabled content
 		}
+	}
 
-		&:read-only {
-			background-color: @color-J;
-			color: @color-Text;
-			cursor: not-allowed;
+	// Sizing
+	.input-field-small,
+	.input-group-small .input-field {
+		padding: 3px 9px 4px;
+		font-size: 14px;
+		height: 30px;
+
+		textarea& {
+			min-height: 54px;
 		}
+	}
+	.input-field-large,
+	.input-group-large .input-field {
+		padding: 8px 15px;
+		font-size: 16px;
+		height: 42px;
 
-		&.input-field-xl,
-		.input-field-xl & {
-			height: 48px;
-			padding: 13px 14px;
-
-			textarea& {
-				min-height: 72px;
-			}
+		textarea& {
+			min-height: 66px;
 		}
+	}
+	.input-field-xlarge,
+	.input-group-xlarge .input-field {
+		padding: 9px 18px 10px;
+		font-size: 18px;
+		height: 48px;
 
-		&.input-field-lg,
-		.input-field-lg & {
-			height: 42px;
-			padding: 10px 14px 9px 14px;
-
-			textarea& {
-				min-height: 66px;
-			}
-		}
-
-		&.input-field-sm,
-		.input-field-sm & {
-			height: 30px;
-			padding: 3px 10px 3px 10px;
-
-			textarea& {
-				min-height: 54px;
-			}
+		textarea& {
+			min-height: 72px;
 		}
 	}
 
 
-	//////////////////////////////////////| FILE UPLOAD
-	// .input-field-file {
-	// 	position: relative;
-	// 	display: block;
-	// 	border-radius: 3px;
-	// 	border: 1px solid @color-Border;
-
-	// 	& + .input-field-file {
-	// 		margin-top: 21px;
-	// 	}
-
-	// 	.input-field-file-item {
-	// 		position: absolute;
-	// 		width: 100%;
-	// 		height: 100%;
-	// 		top: 0;
-	// 		left: 0;
-	// 		right: 0;
-	// 		bottom: 0;
-	// 		opacity: 0;
-	// 		cursor: pointer;
-
-	// 		&:focus {
-	// 			& + .input-field-file-msg {
-	// 				.outline();
-	// 			}
-	// 		}
-
-	// 		&:hover {
-	// 			& + .input-field-file-msg {
-	// 				outline: none;
-	// 			}
-	// 		}
-	// 	}
-
-	// 	.input-field-file-msg {
-	// 		display: block;
-	// 		padding: 6px 12px;
-	// 	}
-
-	// 	.input-field-file-full {
-	// 		display: none;
-	// 	}
-
-	// 	.is-full& {
-
-	// 		.input-field-file-full {
-	// 			display: inline-block;
-	// 		}
-
-	// 		.input-field-file-empty {
-	// 			display: none;
-	// 		}
-	// 	}
-	// }
-
-
 	//////////////////////////////////////| SELECTS
-	.input-field-select-wrapper {
-		position: relative;
-		vertical-align: middle;
-		height: 36px;
-		display: inline-block;
-		background-color: #fff;
+	// Nb. Caret is supplied via Grunticon (see grunticon.json)
+	select.input-field {
+		._select-size( medium ); //default
 
-		&:after {
-			position: absolute;
-			top: 44%;
-			right: 12px;
-			z-index: 0;
-			content: " ";
-			margin-left: 6px;
-			display: inline-block;
-			border-top: 8px solid @color-Text;
-			border-right: 7px solid transparent;
-			border-bottom: none;
-			border-left: 7px solid transparent;
+		// Remove the caret on `<select>`s in IE10+.
+		&::-ms-expand {
+			display: none;
 		}
 
 		.ie8 &,
 		.ie9 & {
-
-			&:after {
-				display: none;
-			}
-		}
-
-		&.input-field-block {
-			display: block;
-
-			.input-field-select {
-				width: 100%;
-			}
-		}
-
-		.input-field-select {
-			position: relative;
-			z-index: 1;
-			background: transparent;
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			appearance: none;
-			text-indent: 0.01px;
-			text-overflow: '';
-			height: 36px;
-			border: none;
-			color: @color-Text;
-			font-size: 16px;
-			font-weight: 400;
-			padding: 0 36px 0 8px;
-			border: 1px solid @color-Border;
-			border-radius: 3px;
-			transition: border 0.2s ease;
-
-			&:focus {
-				border-color: @color-B;
-				outline: none;
-			}
-
-			&:disabled {
-				background-color: @color-J;
-				color: @color-Muted;
-				cursor: not-allowed;
-				padding-right: 8px;
-			}
-
-			&::-ms-expand {
-				display: none;
-			}
-
-			.ie8 & {
-				padding: 6px;
-			}
-
-			.ie9 & {
-				padding: 0;
-			}
-		}
-
-		&.input-field-select-xl,
-		.input-field-xl & {
-			height: 48px;
-
-			.input-field-select {
-				height: 48px;
-				padding: 0 36px 0 14px;
-
-				.ie8 & {
-					padding: 12px;
-				}
-
-				.ie9 & {
-					padding: 0 0 0 3px;
-				}
-			}
-		}
-
-		&.input-field-select-lg,
-		.input-field-lg & {
-			height: 42px;
-
-			.input-field-select {
-				height: 42px;
-				padding: 0 35px 0 14px;
-
-				.ie8 & {
-					padding: 10px;
-				}
-
-				.ie9 & {
-					padding: 0 0 0 3px;
-				}
-			}
-		}
-
-		&.input-field-select-sm,
-		.input-field-sm & {
-			height: 30px;
-
-			.input-field-select {
-				height: 30px;
-				padding: 0 34px 0 10px;
-
-				.ie8 & {
-					padding: 3px;
-				}
-
-				.ie9 & {
-					padding: 0 0 0 3px;
-				}
-			}
+			background-image: none; //remove caret
 		}
 	}
+
+	// Sizing
+	select.input-field-small,
+	.input-group-small select.input-field {
+		._select-size( small );
+	}
+	select.input-field-large,
+	.input-group-large select.input-field {
+		._select-size( large );
+	}
+	select.input-field-xlarge,
+	.input-group-xlarge select.input-field {
+		._select-size( xlarge );
+	}
+
+
 
 
 	//////////////////////////////////////| FIELDSET
@@ -348,21 +170,72 @@
 	}
 
 
-	//////////////////////////////////////| PRINT
-	@media print {
-		.input-field-select-wrapper {
-			&:after {
-				border-top-color: #000;
+
+
+	//////////////////////////////////////| FORMS
+	// Inline forms
+	.form-inline {
+
+		// Kick in the inline
+		@media (min-width: @screen-sm) {
+			.form-group,
+			.input-field {
+				display: inline-block;
+				vertical-align: middle;
 			}
-
-			.input-field-select {
-				background-color: transparent !important;
-
-				&:disabled {
-					background-color: #fff !important;
-				}
+			.form-group {
+				margin-bottom: 0; //reset
+			}
+			.input-field {
+				width: auto; //use default input element’s width
 			}
 		}
+	}
+
+	// Form row grouping; provides row gap for forms
+	.form-group {
+		margin-bottom: 18px;
+	}
+
+
+
+
+	//////////////////////////////////////| PRINT
+	@media print {
+		select.input-field {
+			background-color: transparent !important;
+
+			&:disabled {
+				background-color: #fff !important;
+			}
+		}
+	}
+}
+
+
+._select-size( @size ) {
+	.getSize() when (@size = small) {
+		._calc-caret( 9px );
+	}
+	.getSize() when (@size = medium) {
+		._calc-caret( 12px );
+	}
+	.getSize() when (@size = large) {
+		._calc-caret( 15px );
+	}
+	.getSize() when (@size = xlarge) {
+		._calc-caret( 18px );
+	}
+	.getSize();
+}
+
+._calc-caret( @padding, @gap: 8px, @caretwidth: 14px) {
+	background-position: right @padding center;
+	padding-right: @padding + @caretwidth + @gap;
+
+	.ie8 &,
+	.ie9 & {
+		padding-right: @padding;
 	}
 }
 

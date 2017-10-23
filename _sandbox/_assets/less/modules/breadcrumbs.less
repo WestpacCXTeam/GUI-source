@@ -13,6 +13,12 @@
 	/*
 	 *  SETTINGS
 	 */
+	@breadcrumb-gap: 8px;
+	@breadcrumb-separator-width: 7px;
+	@breadcrumb-separator-height: 12px;
+	@breadcrumb-separator-offset: (20px - @breadcrumb-separator-height) / 2;
+
+
 	.getBrand() when (@brand = BOM) {
 		// @test: 'BOM';
 	}
@@ -32,13 +38,6 @@
 		// @test: 'BT';
 	}
 	.getBrand();
-
-
-	@breadcrumb-gap: 8px;
-	@breadcrumb-separator-width: 7px;
-	@breadcrumb-separator-height: 12px;
-	@breadcrumb-separator-offset: (20px - @breadcrumb-separator-height) / 2;
-
 
 
 

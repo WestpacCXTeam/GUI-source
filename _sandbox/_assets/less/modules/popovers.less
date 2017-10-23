@@ -1,4 +1,4 @@
-/*! Popovers v2.0.2 WBC*/
+/*! Popovers v2.0.3 WBC*/
 /*
  * popovers mixins
  *
@@ -13,6 +13,15 @@
 	/*
 	 *  SETTINGS
 	 */
+	@popover-Width: 282px;
+	@popover-BorderWidth: 1px;
+	@popover-BorderRadius: 3px;
+	@popover-Gap: 3px;
+	@pointer-Width: 16px;
+	@pointer-Height: 12px;
+	@pointer-Stroke: 2px;
+
+	
 	.getBrand() when (@brand = BOM) {
 		// @test: 'BOM';
 	}
@@ -32,6 +41,7 @@
 		// @test: 'BT';
 	}
 	.getBrand();
+
 
 
 
@@ -60,14 +70,15 @@
 			.popover-popup {
 				bottom: auto;
 				top: 100%;
-				margin-top: 23px;
+				margin-top: (@pointer-Height + @popover-Gap);
+				margin-bottom: 0; //reset
 
 				&:before,
 				&:after {
 					bottom: auto;
-					top: -36px;
-					border-top-color: transparent;
-					border-bottom: 18px solid @color-Muted;
+					top: -(@pointer-Height + (@pointer-Stroke / 2));
+					border-top: none;
+					border-bottom: @pointer-Height solid @color-Muted;
 				}
 
 				&:after {
@@ -82,11 +93,12 @@
 		display: block;
 		left: 50%;
 		bottom: 100%;
-		width: 282px;
-		margin: 0 0 21px -131px;
+		width: @popover-Width;
+		margin-bottom: (@pointer-Height + @popover-Gap);
+		margin-left: -(@popover-Width / 2);
 		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-		border-radius: 3px;
-		border: 1px solid @color-Muted;
+		border-radius: @popover-BorderRadius;
+		border: @popover-BorderWidth solid @color-Muted;
 		z-index: 105;
 		background-color: #fff;
 		pointer-events: all;
@@ -95,25 +107,26 @@
 		&:focus {
 			.outline();
 		}
-
+		
+		// triangle
 		&:before,
 		&:after {
 			content: " ";
 			position: absolute;
-			bottom: -17px;
+			bottom: -(@pointer-Height - (@pointer-Stroke / 2));
 			left: 50%;
-			margin-left: -21px;
+			margin-left: -(@pointer-Width / 2);
 			width: 0;
-			border-top: 18px solid #fff;
-			border-right: 12px solid transparent;
-			border-left: 12px solid transparent;
+			border-top: @pointer-Height solid #fff;
+			border-right: (@pointer-Width / 2) solid transparent;
+			border-left: (@pointer-Width / 2) solid transparent;
 			font-size: 0;
 			line-height: 0;
 			z-index: 105;
 		}
 
 		&:before {
-			bottom: -19px;
+			bottom: -(@pointer-Height + (@pointer-Stroke / 2));
 			border-top-color: @color-Muted;
 			z-index: 105;
 		}
