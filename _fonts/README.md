@@ -23,6 +23,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+  * Simplified the brand-font stack, removing brand-font’s (body-font) fallbacks; already provided via `body` styling
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Westpac and BOM each got a shiny new web font, pushing forward the the digital brand experience. 🌟😎
 		[#269](https://github.com/WestpacCXTeam/GUI-source/issues/269)
