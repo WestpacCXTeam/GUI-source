@@ -6,10 +6,11 @@
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
-				"_colors:1.0.1",
-				"logos:2.0.6",
-				"icons:2.0.0",
-				"buttons:4.0.0"
+				"logos",
+				"icons",
+				"buttons",
+				"responsive-toggles",
+				"accessibility-helpers"
 			],
 			"js": false,
 			"less": true,

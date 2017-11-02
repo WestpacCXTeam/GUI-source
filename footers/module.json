@@ -6,8 +6,7 @@
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
-				"_colors:1.0.1",
-				"logos:2.0.6"
+				"logos"
 			],
 			"js": false,
 			"less": true,

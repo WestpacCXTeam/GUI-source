@@ -81,7 +81,9 @@
 			]
 		},
 		"3.0.0": {
-			"dependencies": [],
+			"dependencies": [
+				"input-fields"
+			],
 			"js": false,
 			"less": true,
 			"svg": false,

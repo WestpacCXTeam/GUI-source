@@ -95,7 +95,10 @@
 			]
 		},
 		"3.0.0": {
-			"dependencies": [],
+			"dependencies": [
+				"icons",
+				"buttons"
+			],
 			"js": true,
 			"less": true,
 			"svg": false,

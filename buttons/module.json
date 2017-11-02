@@ -155,9 +155,7 @@
 			]
 		},
 		"4.0.0": {
-			"dependencies": [
-				"icons:2.0.0"
-			],
+			"dependencies": [],
 			"js": true,
 			"less": true,
 			"svg": false,
