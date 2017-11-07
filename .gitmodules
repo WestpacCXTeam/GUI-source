@@ -922,3 +922,6 @@
 [submodule "icons/2.0.1"]
 	path = icons/2.0.1
 	url = https://github.com/WestpacCXTeam/GUI-icons.git
+[submodule "tabcordions/4.1.2"]
+	path = tabcordions/4.1.2
+	url = https://github.com/WestpacCXTeam/GUI-tabcordions.git
