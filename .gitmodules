@@ -916,3 +916,6 @@
 [submodule "_fonts/2.0.3"]
 	path = _fonts/2.0.3
 	url = https://github.com/WestpacCXTeam/GUI_fonts.git
+[submodule "symbols/3.0.1"]
+	path = symbols/3.0.1
+	url = https://github.com/WestpacCXTeam/GUI-symbols.git
