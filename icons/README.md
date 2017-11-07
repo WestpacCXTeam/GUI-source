@@ -22,10 +22,12 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Adding new pay icon
 * v2.0.0 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
 	* Updated the SVG icon design, including a number of brand new icons
   * Updated the `.icon-loading` and `.icon-loading-inverse` animated icons; IE8&9 now use a simple clock icon
-	* Introducing our new class size naming convention of `.icon-[xsmall|small|large|xlarge]` (rather than `.icon-size-[sm|md|lg]`). This approach frees up the 
+	* Introducing our new class size naming convention of `.icon-[xsmall|small|large|xlarge]` (rather than `.icon-size-[sm|md|lg]`). This approach frees up the
   'xs/sm/md/lg' abbreviations to refer solely to viewport breakpoint.
 		[#360](https://github.com/WestpacCXTeam/GUI-source/issues/360)
 	* New icon designs are designed for optimal rendering for the above sizes; snapping to the pixel grid where possible

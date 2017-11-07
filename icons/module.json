@@ -5,9 +5,7 @@
 	"category": "Icons",
 	"versions": {
 		"1.0.0": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -23,9 +21,7 @@
 			]
 		},
 		"2.0.0": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -39,7 +35,23 @@
 				"WBG",
 				"BT"
 			]
+		},
+		"2.0.1": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 287,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
 		}
 	},
-	"hash": "3a98ff722630d60e633f53509aaa5476"
+	"hash": "77ed139447cccbce3c36ebadaf8e2672"
 }

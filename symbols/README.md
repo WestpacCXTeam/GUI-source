@@ -21,15 +21,17 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.1 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated the Apple Store symbol and added an inversed option
 * v3.0.0 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
 	* `.symbol-logo-alt` multi-brand logo deprecated
-	* Multi-brand logos moved to Logos module... now `.logo-multibrand-small` and `.logo-multibrand-large` 
+	* Multi-brand logos moved to Logos module... now `.logo-multibrand-small` and `.logo-multibrand-large`
 		[#333](https://github.com/WestpacCXTeam/GUI-source/issues/333)
 	* Symbols now shared between all brands (duplicate SVGs no longer maintained per brand)
 	* Reduce CSS over-specificity
 * v2.0.5 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New Instagram, Slack and Yammer social symbols added
-		[#330](https://github.com/WestpacCXTeam/GUI-source/issues/330) 
+		[#330](https://github.com/WestpacCXTeam/GUI-source/issues/330)
 		[#260](https://github.com/WestpacCXTeam/GUI-source/issues/260)
 	* Social symbols updated (Facebook, Google Plus, LinkedIn, Twitter and YouTube)
 	* Renamed Mastercard (vertical) symbol ensuring legacy class name support
