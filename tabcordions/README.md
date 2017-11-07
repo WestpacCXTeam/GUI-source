@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.1.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updating border radius to 3px
+	[#392](https://github.com/WestpacCXTeam/GUI-source/issues/392)
 * v4.1.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Tweaked border and fill styling of lego accordion
 		[#313](https://github.com/WestpacCXTeam/GUI-source/issues/313)
