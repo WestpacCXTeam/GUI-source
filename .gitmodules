@@ -925,3 +925,6 @@
 [submodule "tabcordions/4.1.2"]
 	path = tabcordions/4.1.2
 	url = https://github.com/WestpacCXTeam/GUI-tabcordions.git
+[submodule "lists/3.0.0"]
+	path = lists/3.0.0
+	url = https://github.com/WestpacCXTeam/GUI-lists.git
