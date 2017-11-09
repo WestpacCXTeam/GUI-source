@@ -19,6 +19,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.0 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+	* Changed the lists sizing class to our new naming convention
+		[#380](https://github.com/WestpacCXTeam/GUI-source/issues/380)
+	* Updated the lists-tick and lists-linklist icons (to that of Icons v2.0.0)
+		[#345](https://github.com/WestpacCXTeam/GUI-source/issues/345)
+	* Bullet, tick and caret icons/graphics now all centred within consistent 16&times;16px canvas
+	* Increased left text padding and lists-icon icon size
+	* Reduced CSS specificity
+		[#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
 * v2.0.4 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Remove secondary `.symbol-*` prefix from linklist bullets (roll with `.icon-*` prefix for consistency)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

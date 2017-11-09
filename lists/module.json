@@ -19,9 +19,7 @@
 			]
 		},
 		"1.0.1": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -35,9 +33,7 @@
 			]
 		},
 		"1.0.2": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -51,9 +47,7 @@
 			]
 		},
 		"2.0.0": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -67,9 +61,7 @@
 			]
 		},
 		"2.0.1": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -85,9 +77,7 @@
 			]
 		},
 		"2.0.2": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -103,9 +93,7 @@
 			]
 		},
 		"2.0.3": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -121,9 +109,7 @@
 			]
 		},
 		"2.0.4": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -137,7 +123,23 @@
 				"WBG",
 				"BT"
 			]
+		},
+		"3.0.0": {
+			"dependencies": [],
+			"js": false,
+			"less": true,
+			"svg": true,
+			"font": false,
+			"size": 4,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
 		}
 	},
-	"hash": "9950c42e9c09a8b7e84e4724e2069a13"
+	"hash": "eb5e672573d0804ebda028f83cb4ef6c"
 }

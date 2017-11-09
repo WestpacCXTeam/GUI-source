@@ -33,9 +33,7 @@
 			]
 		},
 		"1.0.2": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -49,9 +47,7 @@
 			]
 		},
 		"1.0.3": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -65,9 +61,7 @@
 			]
 		},
 		"1.0.4": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -81,9 +75,7 @@
 			]
 		},
 		"2.0.0": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -97,9 +89,7 @@
 			]
 		},
 		"2.0.1": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -115,9 +105,7 @@
 			]
 		},
 		"2.0.2": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -133,9 +121,7 @@
 			]
 		},
 		"2.0.3": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
@@ -151,9 +137,7 @@
 			]
 		},
 		"2.0.4": {
-			"dependencies": [
-				"_colors:1.0.1"
-			],
+			"dependencies": [],
 			"js": false,
 			"less": true,
 			"svg": true,
