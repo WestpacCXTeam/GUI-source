@@ -22,7 +22,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v3.0.1 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Updated the Apple Store symbol and added an inversed option
+	* Updated the Apple Store symbol and added an inverse option
+	* New BPay symbols added... `.symbol-bpay-port` and `.symbol-bpay-land`
+	* Optimised CSS; combined symbol dimension settings where possible
 * v3.0.0 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
 	* `.symbol-logo-alt` multi-brand logo deprecated
 	* Multi-brand logos moved to Logos module... now `.logo-multibrand-small` and `.logo-multibrand-large`
