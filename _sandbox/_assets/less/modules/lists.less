@@ -1,4 +1,4 @@
-/*! Lists v2.0.4 WBC*/
+/*! Lists v3.0.0 WBC*/
 /*
  * lists mixins
  *
@@ -13,6 +13,13 @@
 	/*
 	 *  SETTINGS
 	 */
+	.getBrand() {
+		@lists-bulletsize: 8px; //dot size
+		@lists-graphicsize: 16px; //bullets, ticks and carets
+		@lists-iconsize: 18px;
+		@lists-paddingleft: 19px;
+		@lists-iconpaddingleft: 23px;
+	}
 	.getBrand() when (@brand = BOM) {
 		// @test: 'BOM';
 	}
@@ -35,60 +42,86 @@
 
 
 
+	// Ordered lists
+	ol.lists {
+		padding: 0 0 0 1.9em;
+	}
+
+
+	// Unordered lists
 	ul.lists {
 		padding: 0;
-		margin: 0;
 		list-style: none;
 
-		& > li {
+		> li {
 			display: block;
-			margin: 6px 0;
-			padding: 0px 0px 0px 15px;
+			padding-left: @lists-paddingleft;
 			position: relative;
 
+			// Bullet
 			&:after {
-				content: " ";
+				content: '';
 				position: absolute;
-				left: 0;
+				left: (@lists-graphicsize / 2) - (@lists-bulletsize / 2);
 				top: 6px;
 				display: block;
-				width: 8px;
-				height: 8px;
+				width: @lists-bulletsize;
+				height: @lists-bulletsize;
 				border-radius: 50%;
-				border: 1px solid @color-A;
-				background-color: @color-A;
+				border: 1px solid @color-Primary;
+				background-color: @color-Primary;
+			}
+
+			> .lists > li:after {
+				background-color: transparent; //no circle fill
 			}
 		}
 
-		//bullet colors
+		// Bullet colors
 		&.lists-hero > li:after {
-			border-color: @color-B;
-			background-color: @color-B;
+			border-color: @color-Hero;
+			background-color: @color-Hero;
 		}
-
 		&.lists-neutral > li:after {
-			border-color: @color-C;
-			background-color: @color-C;
+			border-color: @color-Neutral;
+			background-color: @color-Neutral;
+		}
+	}
+
+	// All lists
+	.lists {
+		margin: 0;
+
+		> li {
+			margin: 6px 0;
 		}
 
-		& > li > .lists > li:after {
-			background-color: transparent;
-		}
 
-		//link lists
-		&.lists-linklist > li {
-			padding-left: 14px;
+		// NB. The following are nested inside a `.lists` class to match `ul.lists` specificity
 
-			&:after {
-				border-radius: 0;
-				border: 0 none;
-				background-color: transparent;
-				width: 8px;
-				height: 13px;
-				top: 4px;
+		// Tick and Linklist
+		&.lists-tick,
+		&.lists-linklist {
+			> li {
+
+				// Graphic
+				&:after {
+					background-size: contain;
+					border-radius: 0; //reset
+					border: none; //reset
+					background-color: transparent; //reset
+					left: 0;
+					width: @lists-graphicsize;
+					height: @lists-graphicsize;
+					font-size: @lists-graphicsize;
+					top: 2px; //tweak
+				}
 			}
+		}
 
-			& > a {
+		// Link lists
+		&.lists-linklist {
+			> li a {
 				color: @color-Text;
 				text-decoration: none;
 
@@ -98,87 +131,61 @@
 			}
 		}
 
-		//tick lists
-		&.lists-tick > li {
-			padding-left: 21px;
-
-			&:after {
-				border-radius: 0;
-				border: 0 none;
-				background-color: transparent;
-				width: 16px;
-				height: 16px;
-				top: 1px;
-			}
-		}
-
-		//icon lists
+		// Icon lists
 		&.lists-icon {
-			& > li {
-				padding-left: 21px;
+			> li {
+				padding-left: @lists-iconpaddingleft;
 				position: relative;
 
-				& > .icon,
-				& > .icon svg {
-					background-size: 16px 16px;
-					width: 16px;
-					height: 16px;
-				}
-
-				& > .icon {
-					position: absolute;
-					left: 0;
-					top: 1px;
-				}
-
+				// Graphic
 				&:after {
-					display: none;
+					display: none; //hide normal graphic
+				}
+
+				// Icon
+				> .icon {
+					position: absolute;
+					width: @lists-iconsize;
+					height: @lists-iconsize;
+					font-size: @lists-iconsize;
+					background-size: contain;
+					left: 0;
+					top: 0;
 				}
 			}
 
 			&.lists-primary > li {
-				& > .icon .icons-background,
-				& > .icon svg {
+				> .icon .icons-background {
 					fill: @color-Primary;
 				}
 			}
-
 			&.lists-hero > li {
-				& > .icon .icons-background,
-				& > .icon svg {
+				> .icon .icons-background {
 					fill: @color-Hero;
 				}
 			}
-
 			&.lists-neutral > li {
-				& > .icon .icons-background,
-				& > .icon svg {
+				> .icon .icons-background {
 					fill: @color-Neutral;
 				}
 			}
 		}
 	}
 
-	//list size
-	.lists.lists-lg > li {
-		margin: 12px 0;
-	}
-
-	//ordered list style
-	ol.lists {
-		margin: 0;
-		padding: 0 0 0 1.9em;
-
-		& > li {
-			margin: 6px 0;
+	// Large option
+	.lists-large {
+		> li {
+			margin-top: 12px; //increase item gap
+			margin-bottom: 12px; //increase item gap
 		}
 	}
+
 
 
 	//////////////////////////////////////| PRINT
 	@media print {
 		.lists {
-			& > li:after,
+			> li:after,
 			&.lists-hero > li:after,
 			&.lists-neutral > li:after,
 			&.lists-linklist > li:after {
@@ -192,7 +199,7 @@
 
 			&.lists-tick > li:after {
 				background: none;
-				content: "\2713"
+				content: "\2713";
 			}
 		}
 	}

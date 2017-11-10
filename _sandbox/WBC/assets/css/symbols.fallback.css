@@ -228,6 +228,8 @@ fieldset[disabled] .radio-input:checked + .radio-text:after,
 
 .icon-pay-to-mobile { background-image: url('../img/icon-pay-to-mobile.png'); background-repeat: no-repeat; }
 
+.icon-pay { background-image: url('../img/icon-pay.png'); background-repeat: no-repeat; }
+
 .icon-paypass { background-image: url('../img/icon-paypass.png'); background-repeat: no-repeat; }
 
 .icon-pdf-file { background-image: url('../img/icon-pdf-file.png'); background-repeat: no-repeat; }
@@ -388,6 +390,10 @@ fieldset[disabled] .radio-input:checked + .radio-text:after,
 
 .symbol-american-express { background-image: url('../img/symbol-american-express.png'); background-repeat: no-repeat; }
 
+.symbol-bpay-land { background-image: url('../img/symbol-bpay-land.png'); background-repeat: no-repeat; }
+
+.symbol-bpay-port { background-image: url('../img/symbol-bpay-port.png'); background-repeat: no-repeat; }
+
 .symbol-facebook { background-image: url('../img/symbol-facebook.png'); background-repeat: no-repeat; }
 
 .symbol-google-plus { background-image: url('../img/symbol-google-plus.png'); background-repeat: no-repeat; }
@@ -403,6 +409,8 @@ fieldset[disabled] .radio-input:checked + .radio-text:after,
 .symbol-master-card { background-image: url('../img/symbol-master-card.png'); background-repeat: no-repeat; }
 
 .symbol-slack { background-image: url('../img/symbol-slack.png'); background-repeat: no-repeat; }
+
+.symbol-store-apple-inverse { background-image: url('../img/symbol-store-apple-inverse.png'); background-repeat: no-repeat; }
 
 .symbol-store-apple { background-image: url('../img/symbol-store-apple.png'); background-repeat: no-repeat; }
 
