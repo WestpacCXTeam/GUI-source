@@ -197,6 +197,18 @@ See more in [Workflow](#workflow).
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+### Bits & bobs
+
+The following are a few things to remember:
+
+* When adding a new **_fonts module** remember to add the new font zips to the shared network location (ref link in Blend index page)
+* **SVGs** require some manual editing to clean up XML (aria attributes, fill replace task text, title elements etc)
+* GUI-source **_sandbox** markup needs to be manually updated
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 ### The module.json
 
 The `module.json` file that is then compiled into the GUI.json file is the engine of the GUI modular system.
