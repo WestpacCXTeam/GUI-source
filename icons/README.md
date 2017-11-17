@@ -25,6 +25,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 * v2.0.1 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Added new pay icon
 	* Adjusted vertical positioning of icons inside links
+	* Adjusting specificity of icons inside links
 * v2.0.0 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
 	* Updated the SVG icon design, including a number of brand new icons
   * Updated the `.icon-loading` and `.icon-loading-inverse` animated icons; IE8&9 now use a simple clock icon
