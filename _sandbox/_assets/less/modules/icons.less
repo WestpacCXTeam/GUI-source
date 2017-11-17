@@ -39,7 +39,7 @@
 	@icon-SizeLarge: 36px; //1.5x
 	@icon-SizeXLarge: 48px; //2x
 
-	@icon-SizeDefault: @icon-SizeMedium;	
+	@icon-SizeDefault: @icon-SizeMedium;
 
 	@icon-LoadingPulseTime: 1.25s;
 	@icon-LoadingCircleWidth: .1em; //relative to the icon size’s font-size
@@ -62,14 +62,20 @@
 
 		// Icons inside links
 		a & {
-			.icons-background {
-				fill: @color-A;
-			}
+			position: relative;
+			top: -2px; //tweak
 		}
 
 		.ie8 & {
 			width: @icon-SizeDefault !important;
 			height: @icon-SizeDefault !important;
+		}
+	}
+
+	.icons-background {
+		// Icons inside links
+		a & {
+			fill: @color-A;
 		}
 	}
 
