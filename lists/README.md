@@ -26,6 +26,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 		[#345](https://github.com/WestpacCXTeam/GUI-source/issues/345)
 	* Bullet, tick and caret icons/graphics now all centred within consistent 16&times;16px canvas
 	* Increased left text padding and lists-icon icon size
+	* Ensured icons inside linklists are filled to match link colour
 	* Reduced CSS specificity
 		[#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
 * v2.0.4 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~

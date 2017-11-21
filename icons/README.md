@@ -23,7 +23,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v2.0.1 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Added new pay icon
+	* Added new pay, gift and image-square icons (`.icon-pay`, `.icon-gift` and `.icon-image-square`)
 	* Adjusted vertical positioning of icons inside links
 	* Adjusting specificity of icons inside links
 * v2.0.0 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
