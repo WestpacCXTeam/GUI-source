@@ -140,6 +140,8 @@ fieldset[disabled] .radio-input:checked + .radio-text:after,
 
 .icon-geolocation { background-image: url('../img/icon-geolocation.png'); background-repeat: no-repeat; }
 
+.icon-gift { background-image: url('../img/icon-gift.png'); background-repeat: no-repeat; }
+
 .icon-github { background-image: url('../img/icon-github.png'); background-repeat: no-repeat; }
 
 .icon-global { background-image: url('../img/icon-global.png'); background-repeat: no-repeat; }
@@ -161,6 +163,8 @@ fieldset[disabled] .radio-input:checked + .radio-text:after,
 .icon-house { background-image: url('../img/icon-house.png'); background-repeat: no-repeat; }
 
 .icon-id-card { background-image: url('../img/icon-id-card.png'); background-repeat: no-repeat; }
+
+.icon-image-square { background-image: url('../img/icon-image-square.png'); background-repeat: no-repeat; }
 
 .icon-info { background-image: url('../img/icon-info.png'); background-repeat: no-repeat; }
 
