@@ -928,3 +928,6 @@
 [submodule "lists/3.0.0"]
 	path = lists/3.0.0
 	url = https://github.com/WestpacCXTeam/GUI-lists.git
+[submodule "headers/1.0.1"]
+	path = headers/1.0.1
+	url = https://github.com/WestpacCXTeam/GUI-headers.git
