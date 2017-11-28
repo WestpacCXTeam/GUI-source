@@ -19,9 +19,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+* v2.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Fixed header button icon vertical alignment
 	* Added header contact module to support 'Call us' and 'LiveChat' CTAs
+	* Added new fixed header modifier option `.header-fixed`
+	* Added `.header-inner` wrapper; giving us more flexibility with new fixed header option
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**

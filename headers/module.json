@@ -26,7 +26,7 @@
 				"BT"
 			]
 		},
-		"1.0.1": {
+		"2.0.0": {
 			"dependencies": [
 				"logos",
 				"icons",
@@ -38,7 +38,7 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 3,
+			"size": 4,
 			"brands": [
 				"BOM",
 				"BSA",
@@ -49,5 +49,5 @@
 			]
 		}
 	},
-	"hash": "cfc091e756ef95f65ae12dbc2c1ad849"
+	"hash": "5721c51729a6301a6a6cf1edba338258"
 }
