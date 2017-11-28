@@ -1,4 +1,4 @@
-/*! Footers v1.0.0 WBC*/
+/*! Footers v1.0.1 WBC*/
 /*
  * footers mixins
  *
@@ -73,8 +73,10 @@
 		}
 
 		.footer-logo {
+			display: block;
 			float: right;
 			margin-top: 18px;
+			font-size: 0; //inline-block space hack
 
 			@media (min-width: @screen-sm) {
 				margin-top: 0;

@@ -1,4 +1,4 @@
-/*! Headers v1.0.0 WBC*/
+/*! Headers v1.0.1 WBC*/
 /*
  * headers mixins
  *
@@ -105,6 +105,9 @@
 				min-width: @header-ButtonWidthSM;
 			}
 
+			.icon {
+				top: 0; //reset tweak
+			}
 			.icons-background {
 				fill: @color-Text;
 			}
@@ -175,6 +178,56 @@
 		}
 	}
 
+
+	// Header 'Call us' module `<a>`
+	.header-contact {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+
+		color: @color-Text; //reset
+
+		&,
+		&:hover,
+		&:focus {
+			text-decoration: none; //reset underlining
+		}
+
+		// Icon
+		.icons-background {
+			fill: @color-Muted;
+		}
+		&:hover,
+		&:focus {
+			.header-contact-text-accent {
+				text-decoration: underline; //restore underling
+			}
+		}
+
+		// nb. specificity required
+		.icon {
+			@media (max-width: (@screen-sm - 1)) {
+				top: 0; //reset tweak
+			}
+		}
+	}
+	.header-contact-details {
+		padding-left: 8px; //gap
+		font-size: 14px;
+		line-height: 1.3; //slightly tighter than default
+	}
+	.header-contact-text-accent {
+		color: @color-A;
+	}
+
+
+
+
+
+
+
+
 	//////////////////////////////////////| IE
 	// Header will function in IE8&9, but layout won't be correct
 	// (namely the vertical alignment of buttons etc.)
@@ -190,10 +243,14 @@
 		.header-right {
 			float: right;
 		}
+
+		.header-contact-icon {
+			float: left;
+		}
+		.header-contact-details {
+			overflow: hidden;
+		}
 	}
-
-
-
 }
 
 ._header-logo-center() {
