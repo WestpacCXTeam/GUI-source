@@ -12,13 +12,16 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-headers/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-headers/tests/BT/)
 
-> Description
+> Our multi-brand, responsive header components provide a flexible, accessible solution for navigation and branding. Using these headers will help to maintain a consistent application of our brand marks (size, position etc) throughout the customer journey. It’s important to note that all header components use the multi-brand logos and flex box. This makes them extremely robust and versatile.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fixed header button icon vertical alignment
+	* Added header contact module to support 'Call us' and 'LiveChat' CTAs
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
