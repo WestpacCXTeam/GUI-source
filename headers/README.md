@@ -26,6 +26,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 	* Added header contact module to support 'Call us' and 'LiveChat' CTAs
 	* Added new fixed header modifier option `.header-fixed`
 	* Added `.header-inner` wrapper; giving us more flexibility with new fixed header option
+	* Updated logo and right button gap slightly
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
