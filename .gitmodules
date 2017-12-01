@@ -934,3 +934,9 @@
 [submodule "headers/2.0.0"]
 	path = headers/2.0.0
 	url = https://github.com/WestpacCXTeam/GUI-headers.git
+[submodule "_grid/3.0.0"]
+	path = _grid/3.0.0
+	url = https://github.com/WestpacCXTeam/GUI_grid.git
+[submodule "templates/1.0.0"]
+	path = templates/1.0.0
+	url = https://github.com/WestpacCXTeam/GUI-templates.git
