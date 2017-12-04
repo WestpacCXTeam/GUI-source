@@ -1,8 +1,8 @@
 {
 	"ID": "templates",
-	"name": "templates",
-	"description": "",
-	"category": "templates",
+	"name": "Templates",
+	"description": "Global page templates.",
+	"category": "Templates",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
@@ -14,7 +14,7 @@
 			],
 			"js": false,
 			"less": true,
-			"svg": true,
+			"svg": false,
 			"font": false,
 			"size": 1,
 			"brands": [
