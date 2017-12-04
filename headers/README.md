@@ -19,12 +19,13 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v2.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
-	* Fixed header button icon vertical alignment
-	* Fixed logo center option horizontal alignment and updated modifier class option to `.header-logo-center-xs-only` for consistency
-	* Added header contact module to support 'Call us' and 'LiveChat' CTAs
+* v2.0.0 - `LESS/CSS` `HTML` `JS`
+	* New header contact module to support 'Call us' and 'LiveChat' CTAs
+	* New JS dependency; providing drop shadow feature on window scroll (for fixed option)
 	* Added new fixed header modifier option `.header-fixed`
 	* Added `.header-inner` wrapper; giving us more flexibility with new fixed header option
+	* Fixed header button icon vertical alignment
+	* Fixed logo center option horizontal alignment and updated modifier class option to `.header-logo-center-xs-only` for consistency
 	* Updated logo and right button gap slightly
 * v1.0.0 - Initial port
 

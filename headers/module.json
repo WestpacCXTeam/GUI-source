@@ -34,11 +34,11 @@
 				"responsive-toggles",
 				"accessibility-helpers"
 			],
-			"js": false,
+			"js": true,
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 4,
+			"size": 6,
 			"brands": [
 				"BOM",
 				"BSA",
@@ -49,5 +49,5 @@
 			]
 		}
 	},
-	"hash": "bbd34966ab0b0ad9ab80b0ddc6fafd23"
+	"hash": "ac831baf809e614d9e35a653dd562159"
 }

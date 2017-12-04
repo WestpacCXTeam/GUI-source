@@ -2,7 +2,7 @@
 	"ID": "templates",
 	"name": "templates",
 	"description": "",
-	"category": "",
+	"category": "templates",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
@@ -16,7 +16,7 @@
 			"less": true,
 			"svg": true,
 			"font": false,
-			"size": 2,
+			"size": 1,
 			"brands": [
 				"BOM",
 				"BSA",
@@ -27,5 +27,5 @@
 			]
 		}
 	},
-	"hash": "c917035f910d21f9f0be7c8fae06d756"
+	"hash": "6ce765397d016834e20730942d7f5684"
 }
