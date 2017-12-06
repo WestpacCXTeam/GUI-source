@@ -24,6 +24,13 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+	* Updated the grid to allow for better whitespace against the viewport edge and support future page template/wrapper layout
+		[#319](https://github.com/WestpacCXTeam/GUI-source/issues/319)
+		* Add edge spacing to containers (per breakpoint); for both `.container` and `.container-fluid`
+		* Set a max width for `.container-fluid`
+	* Uncompress grid module Less, re-implementing Bootstrap v3 mixins to build grid classes
+	* 'Variable-ise' the grid settings giving us more control and better maintability
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
 		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)

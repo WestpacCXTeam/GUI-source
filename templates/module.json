@@ -6,6 +6,8 @@
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
+				"headers",
+				"footers",
 				"logos",
 				"icons",
 				"buttons",
@@ -27,5 +29,5 @@
 			]
 		}
 	},
-	"hash": "6ce765397d016834e20730942d7f5684"
+	"hash": "07ffd93b25761ad6a06816603b445e6e"
 }
