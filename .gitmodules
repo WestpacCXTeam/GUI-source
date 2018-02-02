@@ -940,3 +940,6 @@
 [submodule "templates/1.0.0"]
 	path = templates/1.0.0
 	url = https://github.com/WestpacCXTeam/GUI-templates.git
+[submodule "accessibility-helpers/2.0.2"]
+	path = accessibility-helpers/2.0.2
+	url = https://github.com/WestpacCXTeam/GUI-accessibility-helpers.git
