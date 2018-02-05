@@ -20,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+  * Fixing switch layout for Firefox
+    [#407](https://github.com/WestpacCXTeam/GUI-source/issues/407)
+  * Ensuring sibling switches are top aligned
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
   * Introducing our new class size naming convention of `.switch-[small|large|xlarge]` (rather than `.switch-[sm|lg|xl]`). This approach frees up the
   'xs/sm/md/lg' abbreviations to refer solely to viewport breakpoint.

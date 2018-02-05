@@ -20,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fixing checkbox layout for Firefox
+    [#407](https://github.com/WestpacCXTeam/GUI-source/issues/407)
+   * Ensuring sibling checkboxes are top aligned
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New `.checkbox-block` block level checkboxes; in addition to `.checkbox-flip` option
 	* Fixed `fieldset:disabled` support in IE

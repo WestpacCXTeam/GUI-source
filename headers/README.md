@@ -19,6 +19,13 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Increased mobile header height (from 44px to 54px - excl. bottom line), increase gap above/below header buttons for mobile and ensure header logo is vertically centre aligned
+		[#409](https://github.com/WestpacCXTeam/GUI-source/issues/409)
+	* Added an additional fixed header breakpoint option `.header-fixed-md`
+	* Made the header drop shadow styling reusable via a new mixin `._header-shadow()`
+	* Added the accessible `.sr-skiplink` element as per best practice
+	* Removed `.header-inner` inline-block hack (`font-size:0`) as it’s no longer needed
 * v2.0.0 - `LESS/CSS` `HTML` `JS`
 	* New header contact module to support 'Call us' and 'LiveChat' CTAs
 	* New JS dependency; providing drop shadow feature on window scroll (for fixed option)

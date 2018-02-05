@@ -20,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fixing radio layout for Firefox
+    [#407](https://github.com/WestpacCXTeam/GUI-source/issues/407)
+  * Ensuring sibling radios are top aligned
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New `.radio-block` block level radios; in addition to `.radio-flip` option
 	* Fixed `fieldset:disabled` support in IE
