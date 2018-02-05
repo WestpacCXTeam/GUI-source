@@ -943,3 +943,6 @@
 [submodule "accessibility-helpers/2.0.2"]
 	path = accessibility-helpers/2.0.2
 	url = https://github.com/WestpacCXTeam/GUI-accessibility-helpers.git
+[submodule "tabcordions/4.1.3"]
+	path = tabcordions/4.1.3
+	url = https://github.com/WestpacCXTeam/GUI-tabcordions.git
