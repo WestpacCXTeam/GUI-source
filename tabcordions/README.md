@@ -20,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.1.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updating the accordion toggle icon and removing the indicator arrow
+	[#402](https://github.com/WestpacCXTeam/GUI-source/issues/402)
+	* Removing top border from borderless lego accordion, as per borderless default (non-lego) accordion
 * v4.1.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updating border radius to 3px
 	[#392](https://github.com/WestpacCXTeam/GUI-source/issues/392)
