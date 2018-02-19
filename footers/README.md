@@ -20,8 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v1.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Adding syling for the footer padlock icon
+	* Adding styling for the footer padlock icon
 	[#410](https://github.com/WestpacCXTeam/GUI-source/issues/410)
+	* Branded divider line styling (currently WBC only) moved to an optional modifier class `.footer-divider-fancy`
+	[#412](https://github.com/WestpacCXTeam/GUI-source/issues/412)
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Upadated footer logo to allow for logo link
 * v1.0.0 - Initial port
