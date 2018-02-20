@@ -26,6 +26,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 	* Made the header drop shadow styling reusable via a new mixin `._header-shadow()`
 	* Added the accessible `.sr-skiplink` element as per best practice
 	* Removed `.header-inner` inline-block hack (`font-size:0`) as it’s no longer needed
+	* Ensure fixed header always has a bottom border for <=IE9 (as linear-gradient not available)
 * v2.0.0 - `LESS/CSS` `HTML` `JS`
 	* New header contact module to support 'Call us' and 'LiveChat' CTAs
 	* New JS dependency; providing drop shadow feature on window scroll (for fixed option)
