@@ -19,7 +19,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v1.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+* v2.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+	* Improved A11Y of graphic links; `.sr-only` text added to logo links
+	* Removed unnecessary embedded SVG setting (`data-grunticon-embed`) from logos. We are aiming to use the embedded option sparingly as per recommendation (see [Grunticon v2.0 What’s New!](https://github.com/filamentgroup/grunticon#version-20-is-out---heres-whats-new)). This option should only be used with SVGs requiring CSS styling.
 	* Adding styling for the footer padlock icon
 	[#410](https://github.com/WestpacCXTeam/GUI-source/issues/410)
 	* Branded divider line styling (currently WBC only) moved to an optional modifier class `.footer-divider-fancy`

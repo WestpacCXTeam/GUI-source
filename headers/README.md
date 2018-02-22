@@ -19,7 +19,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+* v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+	* Improved A11Y of graphic links; `.sr-only` text added to logo links
+	* Removed unnecessary embedded SVG setting (`data-grunticon-embed`) from logos. We are aiming to use the embedded option sparingly as per recommendation (see [Grunticon v2.0 What’s New!](https://github.com/filamentgroup/grunticon#version-20-is-out---heres-whats-new)). This option should only be used with SVGs requiring CSS styling.
 	* Increased mobile header height (from 44px to 54px - excl. bottom line), increase gap above/below header buttons for mobile and ensure header logo is vertically centre aligned
 		[#409](https://github.com/WestpacCXTeam/GUI-source/issues/409)
 	* Added an additional fixed header breakpoint option `.header-fixed-md`

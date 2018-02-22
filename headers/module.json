@@ -48,7 +48,7 @@
 				"BT"
 			]
 		},
-		"2.0.1": {
+		"3.0.0": {
 			"dependencies": [
 				"logos",
 				"icons",
