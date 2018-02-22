@@ -949,9 +949,6 @@
 [submodule "footers/1.0.2"]
 	path = footers/1.0.2
 	url = https://github.com/WestpacCXTeam/GUI-footers.git
-[submodule "headers/2.0.1"]
-	path = headers/2.0.1
-	url = https://github.com/WestpacCXTeam/GUI-headers.git
 [submodule "checkboxes/2.0.5"]
 	path = checkboxes/2.0.5
 	url = https://github.com/WestpacCXTeam/GUI-checkboxes.git
@@ -961,3 +958,6 @@
 [submodule "switches/3.0.1"]
 	path = switches/3.0.1
 	url = https://github.com/WestpacCXTeam/GUI-switches.git
+[submodule "headers/3.0.0"]
+	path = headers/3.0.0
+	url = https://github.com/WestpacCXTeam/GUI-headers.git
