@@ -961,3 +961,6 @@
 [submodule "footers/2.0.0"]
 	path = footers/2.0.0
 	url = https://github.com/WestpacCXTeam/GUI-footers.git
+[submodule "buttons/4.0.1"]
+	path = buttons/4.0.1
+	url = https://github.com/WestpacCXTeam/GUI-buttons.git
