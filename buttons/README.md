@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fixed block button internal scrollbar bug on legacy Chrome (Windows); was showing vertical scrollbars inside some buttons
+	* Added ellipsis truncation text overflow for block buttons (NB. this is not currently offered for block buttons with icons)
 * v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Dependency: GUI-icons v2.0.0
 	* Reduced border radius from 6px to 3px for all buttons
