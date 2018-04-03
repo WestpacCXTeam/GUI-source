@@ -967,3 +967,6 @@
 [submodule "_text-styling/4.0.4"]
 	path = _text-styling/4.0.4
 	url = https://github.com/WestpacCXTeam/GUI_text-styling.git
+[submodule "_fonts/2.0.4"]
+	path = _fonts/2.0.4
+	url = https://github.com/WestpacCXTeam/GUI_fonts.git
