@@ -970,3 +970,6 @@
 [submodule "_fonts/2.0.4"]
 	path = _fonts/2.0.4
 	url = https://github.com/WestpacCXTeam/GUI_fonts.git
+[submodule "templates/1.0.1"]
+	path = templates/1.0.1
+	url = https://github.com/WestpacCXTeam/GUI-templates.git
