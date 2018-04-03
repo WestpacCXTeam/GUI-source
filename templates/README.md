@@ -19,6 +19,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Removed `.main-fit` modifier styling; found to be unnecessary and easily misunderstood
+	* Added `.section` block styling; similar to `.main-padded` modifier styling
+	* Fixed undesirable `.wrapper` edge border effect; wrapper and header now utilise available width until 1920px. Borders appear from 1922px.
+	* White content panel (`.content-panel`) border-radius and border removed and top/bottom padding increased
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
