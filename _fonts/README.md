@@ -23,6 +23,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Exposed some new Less mixins to help when styling elements with brand and body text styling.
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Added BSA brand’s new font ‘Aller’
   * Simplified the brand-font stack, removing brand-font’s (body-font) fallbacks; already provided via `body` styling
