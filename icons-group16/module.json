@@ -2,7 +2,7 @@
 	"ID": "icons-group16",
 	"name": "Icons-Group 16",
 	"description": "<span class='icon icon-size-sm icon-alert'></span> <span class='icon icon-size-sm icon-help'></span> <span class='icon icon-size-sm icon-info'></span>",
-	"category": "Icon Groups (Deprecated)",
+	"category": "Deprecated",
 	"deprecated": true,
 	"versions": {
 		"1.0.0": {

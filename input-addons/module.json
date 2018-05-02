@@ -2,7 +2,7 @@
 	"ID": "input-addons",
 	"name": "Input-Addons",
 	"description": "Styled input fields with attached selects or buttons.",
-	"category": "Forms",
+	"category": "Deprecated",
 	"deprecated": true,
 	"versions": {
 		"1.0.0": {

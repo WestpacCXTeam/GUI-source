@@ -2,7 +2,7 @@
 	"ID": "icons-group03",
 	"name": "Icons-Group 3",
 	"description": "<span class='icon icon-size-sm icon-business-person'></span> <span class='icon icon-size-sm icon-eftpos'></span> <span class='icon icon-size-sm icon-office'></span> <span class='icon icon-size-sm icon-shop'></span>",
-	"category": "Icon Groups (Deprecated)",
+	"category": "Deprecated",
 	"deprecated": true,
 	"versions": {
 		"1.0.0": {

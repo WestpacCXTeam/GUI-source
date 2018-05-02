@@ -2,7 +2,7 @@
 	"ID": "icons-group15",
 	"name": "Icons-Group 15",
 	"description": "<span class='icon icon-size-sm icon-book'></span> <span class='icon icon-size-sm icon-compass'></span> <span class='icon icon-size-sm icon-cross'></span> <span class='icon icon-size-sm icon-cube'></span> <span class='icon icon-size-sm icon-global'></span> <span class='icon icon-size-sm icon-idea'></span> <span class='icon icon-size-sm icon-key'></span> <span class='icon icon-size-sm icon-more'></span> <span class='icon icon-size-sm icon-umbrella'></span> <span class='icon icon-size-sm icon-wallet'></span>",
-	"category": "Icon Groups (Deprecated)",
+	"category": "Deprecated",
 	"deprecated": true,
 	"versions": {
 		"1.0.0": {

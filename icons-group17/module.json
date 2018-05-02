@@ -2,7 +2,7 @@
 	"ID": "icons-group17",
 	"name": "Icons-Group 17",
 	"description": "<span class='icon icon-size-sm icon-accessibility'></span> <span class='icon icon-size-sm icon-car'></span>",
-	"category": "Icon Groups (Deprecated)",
+	"category": "Deprecated",
 	"deprecated": true,
 	"versions": {
 		"1.0.0": {
