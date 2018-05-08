@@ -93,6 +93,7 @@ module.exports = function(grunt) {
 		grunt.file.expand({ filter: 'isDirectory' }, [
 			'*',
 			'!node_modules',
+			'!docs',
 			'!._templates',
 			'!_sandbox',
 			'!.git',
@@ -119,6 +120,7 @@ module.exports = function(grunt) {
 		grunt.file.expand({ filter: 'isDirectory' }, [
 			'*',
 			'!node_modules',
+			'!docs',
 			'!._templates',
 			'!_sandbox',
 			'!.github',
@@ -137,7 +139,6 @@ module.exports = function(grunt) {
 			if( module.core ) {
 				GUI.modules._core[ module.ID ] = module;
 			}
-
 		});
 
 
@@ -221,7 +222,7 @@ module.exports = function(grunt) {
 			src: [
 				'./._template/index/index.html',
 			],
-			dest: './index.html',
+			dest: 'docs/index.html',
 			overwrite: false,
 			replacements: [{
 				from: '[Modules]',
@@ -233,6 +234,40 @@ module.exports = function(grunt) {
 		//running tasks
 		grunt.config.set('replace', replace);
 		grunt.task.run('replace');
+	});
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// Custom grunt task to copy all module/version tests to docs
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	grunt.registerTask('copyTests', 'Copy all submodule test folders to docs folder.', function() {
+		grunt.task.requires('clean:docs');
+
+		var copy = {};
+
+		//copying submodules to docs folder
+		grunt.verbose.writeln( 'Copying submodule tests to docs folder' );
+		copy[ 'Copy' ] = {
+			files: [{
+				expand: true,
+				src: [
+					'**/tests/*/index.html',
+					'**/tests/*/assets/css/*',
+					'**/tests/*/assets/js/*',
+					'!node_modules',
+					'!docs',
+					'!._templates',
+					'!_sandbox',
+					'!.git',
+					'!.github',
+				],
+				dest: 'docs',
+			}]
+		};
+
+		//running tasks
+		grunt.config.set('copy', copy);
+		grunt.task.run('copy');
 	});
 
 
@@ -271,7 +306,7 @@ module.exports = function(grunt) {
 								src: [
 									'module-mixins.less',
 								],
-								dest: '_sandbox/_assets/less/modules/',
+								dest: 'docs/_sandbox/_assets/less/modules/',
 								rename: function(dest, src) {
 									return dest + '/' + module + '.less';
 								},
@@ -281,7 +316,7 @@ module.exports = function(grunt) {
 						};
 
 						replace[ 'Less-' + module ] = {
-							src: ['_sandbox/_assets/less/modules/' + module + '.less'],
+							src: ['docs/_sandbox/_assets/less/modules/' + module + '.less'],
 							overwrite: true,
 							replacements: [
 								{
@@ -304,9 +339,9 @@ module.exports = function(grunt) {
 
 						SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
 							try {
-								var symbolsPNG = grunt.file.read( '_sandbox/' + brand.ID + '/assets/css/symbols.data.png.css' );
-								var symbolsSVG = grunt.file.read( '_sandbox/' + brand.ID + '/assets/css/symbols.data.svg.css' );
-								var symbolsFallback = grunt.file.read( '_sandbox/' + brand.ID + '/assets/css/symbols.fallback.css' );
+								var symbolsPNG = grunt.file.read( 'docs/_sandbox/' + brand.ID + '/assets/css/symbols.data.png.css' );
+								var symbolsSVG = grunt.file.read( 'docs/_sandbox/' + brand.ID + '/assets/css/symbols.data.svg.css' );
+								var symbolsFallback = grunt.file.read( 'docs/_sandbox/' + brand.ID + '/assets/css/symbols.fallback.css' );
 							}
 							catch(e) {
 								grunt.verbose.writeln( 'No SVG files found in sandbox folder. Starting from scratch!' );
@@ -319,9 +354,9 @@ module.exports = function(grunt) {
 							symbolsSVG += grunt.file.read( module + '/' + latestVersion + '/tests/' + brand.ID + '/assets/css/symbols.data.svg.css' );
 							symbolsFallback += grunt.file.read( module + '/' + latestVersion + '/tests/' + brand.ID + '/assets/css/symbols.fallback.css' );
 
-							grunt.file.write( '_sandbox/' + brand.ID + '/assets/css/symbols.data.png.css', symbolsPNG );
-							grunt.file.write( '_sandbox/' + brand.ID + '/assets/css/symbols.data.svg.css', symbolsSVG );
-							grunt.file.write( '_sandbox/' + brand.ID + '/assets/css/symbols.fallback.css', symbolsFallback );
+							grunt.file.write( 'docs/_sandbox/' + brand.ID + '/assets/css/symbols.data.png.css', symbolsPNG );
+							grunt.file.write( 'docs/_sandbox/' + brand.ID + '/assets/css/symbols.data.svg.css', symbolsSVG );
+							grunt.file.write( 'docs/_sandbox/' + brand.ID + '/assets/css/symbols.fallback.css', symbolsFallback );
 
 							copy[ 'SVGFallback-' + module ] = {
 								files: [{
@@ -329,7 +364,7 @@ module.exports = function(grunt) {
 									src: [
 										'*.png',
 									],
-									dest: '_sandbox/' + brand.ID + '/assets/img/',
+									dest: 'docs/_sandbox/' + brand.ID + '/assets/img/',
 									filter: 'isFile',
 									expand: true,
 								}],
@@ -347,14 +382,14 @@ module.exports = function(grunt) {
 								src: [
 									'*.js',
 								],
-								dest: '_sandbox/_assets/js/modules/',
+								dest: 'docs/_sandbox/_assets/js/modules/',
 								filter: 'isFile',
 								expand: true,
 							}],
 						};
 
 						replace[ 'JS-' + module ] = {
-							src: ['_sandbox/_assets/js/modules/' + module + '.js'],
+							src: ['docs/_sandbox/_assets/js/modules/' + module + '.js'],
 							overwrite: true,
 							replacements: [
 								{
@@ -380,7 +415,7 @@ module.exports = function(grunt) {
 										'*.eot',
 										'*.svg',
 									],
-									dest: '_sandbox/' + brand.ID + '/assets/font/',
+									dest: 'docs/_sandbox/' + brand.ID + '/assets/font/',
 									filter: 'isFile',
 									expand: true,
 								}],
@@ -393,7 +428,7 @@ module.exports = function(grunt) {
 		});
 
 		//LESS
-		grunt.file.write( '_sandbox/_assets/less/gui.less', lessIncludes ); //writing less file
+		grunt.file.write( 'docs/_sandbox/_assets/less/gui.less', lessIncludes ); //writing less file
 
 		SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
 			less[ 'sandbox' + brand.ID ] = {
@@ -407,8 +442,8 @@ module.exports = function(grunt) {
 					},
 					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
 				},
-				src: ['_sandbox/_assets/less/gui.less'],
-				dest: '_sandbox/' + brand.ID + '/assets/css/gui.min.css',
+				src: ['docs/_sandbox/_assets/less/gui.less'],
+				dest: 'docs/_sandbox/' + brand.ID + '/assets/css/gui.min.css',
 			};
 		});
 
@@ -416,10 +451,10 @@ module.exports = function(grunt) {
 		SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
 			concat[ 'js-' + brand.ID ] = {
 				src: [
-					'_sandbox/_assets/js/*.js',
-					'_sandbox/_assets/js/modules/*.js',
+					'docs/_sandbox/_assets/js/*.js',
+					'docs/_sandbox/_assets/js/modules/*.js',
 				],
-				dest: '_sandbox/' + brand.ID + '/assets/js/gui.js',
+				dest: 'docs/_sandbox/' + brand.ID + '/assets/js/gui.js',
 			};
 		});
 
@@ -427,7 +462,7 @@ module.exports = function(grunt) {
 		SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
 			copy[ 'fontsCore-' + brand.ID ] = {
 				files: [{
-					cwd: '_sandbox/_assets/font/' + brand.ID + '/',
+					cwd: 'docs/_sandbox/_assets/font/' + brand.ID + '/',
 					src: [
 						'*.ttf',
 						'*.woff',
@@ -435,7 +470,7 @@ module.exports = function(grunt) {
 						'*.eot',
 						'*.svg',
 					],
-					dest: '_sandbox/' + brand.ID + '/assets/font/',
+					dest: 'docs/_sandbox/' + brand.ID + '/assets/font/',
 					filter: 'isFile',
 					expand: true,
 				}],
@@ -445,8 +480,8 @@ module.exports = function(grunt) {
 		//HTML
 		SETTINGS( grunt ).brands.forEach(function iterateBrands( brand ) {
 			replace[ 'html-' + brand.ID ] = {
-				src: ['_sandbox/_assets/html/index.html'],
-				dest: '_sandbox/' + brand.ID + '/index.html',
+				src: ['docs/_sandbox/_assets/html/index.html'],
+				dest: 'docs/_sandbox/' + brand.ID + '/index.html',
 				overwrite: false,
 				replacements: [
 					{
@@ -502,13 +537,14 @@ module.exports = function(grunt) {
 				grunt.file.expand({ filter: 'isDirectory' }, [
 					'*',
 					'!node_modules',
+					'!docs',
 					'!._templates',
 					'!_sandbox',
 					'!test-*',
 					'!.git',
 					'!.github',
 				]).forEach(function(folder) {
-					
+
 					grunt.verbose.writeln( 'Reading directory: ' + folder );
 
 					var submodule = folder + '/1.0.0'; //default
@@ -594,6 +630,15 @@ module.exports = function(grunt) {
 				text: ' building index',
 			},
 
+			buildEverything: {
+				options: {
+					font: 'simple',
+					maxLength: 30,
+					colors: ['magenta'],
+				},
+				text: ' building all the things',
+			},
+
 			add: {
 				options: {
 					font: 'simple',
@@ -601,6 +646,24 @@ module.exports = function(grunt) {
 					colors: ['magenta'],
 				},
 				text: ' adding new module',
+			},
+
+			cleanDocs: {
+				options: {
+					font: 'simple',
+					maxLength: 30,
+					colors: ['magenta'],
+				},
+				text: ' cleaning docs',
+			},
+
+			copy: {
+				options: {
+					font: 'simple',
+					maxLength: 30,
+					colors: ['magenta'],
+				},
+				text: ' copying tests',
 			},
 
 			finished: {
@@ -614,15 +677,18 @@ module.exports = function(grunt) {
 		//----------------------------------------------------------------------------------------------------------------------------------------------------------
 		clean: {
 			sandboxBrands: [
-				'_sandbox/**/*', //all subdirs (incl brand folders)
-				'!_sandbox/_assets/**' //except /_assets
+				'docs/_sandbox/**/*', //all subdirs (incl brand folders)
+				'!docs/_sandbox/_assets/**' //except /_assets
 			],
 			sandboxLess: [
-				'_sandbox/_assets/less/modules/',
+				'docs/_sandbox/_assets/less/modules/',
 			],
 			sandboxJS: [
-				'_sandbox/_assets/js/modules/',
+				'docs/_sandbox/_assets/js/modules/',
 			],
+			docs: [
+				'docs/'
+			]
 		},
 
 
@@ -647,17 +713,36 @@ module.exports = function(grunt) {
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('default', [ //build index and gui.json
 		'font:title',
+
 		'font:index',
 		'buildIndex',
+
+		'font:cleanDocs',
+		'clean:docs',
+
+		'font:copy',
+		'copyTests',
+
+		'font:finished',
 		'wakeup',
 	]);
 
 	grunt.registerTask('all', [ //build index, gui.json and _sandbox
 		'font:title',
+
 		'font:index',
 		'buildIndex',
-		'clean',
+
+		'font:cleanDocs',
+		'clean:docs',
+
+		'font:buildEverything',
 		'buildEverything',
+
+		'font:copy',
+		'copyTests',
+
+		'font:finished',
 		'wakeup',
 	]);
 

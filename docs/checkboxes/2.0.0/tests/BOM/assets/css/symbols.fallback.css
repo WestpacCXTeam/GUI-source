@@ -1,0 +1,12 @@
+.checkbox-input:disabled + .checkbox-text:after,
+.symbol-checkbox-off-disabled { background-image: url('../img/checkbox-off-disabled.png'); background-repeat: no-repeat; }
+
+.checkbox-input + .checkbox-text:after,
+.symbol-checkbox-off { background-image: url('../img/checkbox-off.png'); background-repeat: no-repeat; }
+
+.checkbox-input:disabled:checked + .checkbox-text:after,
+.symbol-checkbox-on-disabled { background-image: url('../img/checkbox-on-disabled.png'); background-repeat: no-repeat; }
+
+.checkbox-input:checked + .checkbox-text:after,
+.symbol-checkbox-on { background-image: url('../img/checkbox-on.png'); background-repeat: no-repeat; }
+

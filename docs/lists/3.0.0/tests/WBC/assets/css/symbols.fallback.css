@@ -1,0 +1,6 @@
+.lists.lists-linklist > li:after,
+.icon-linklist { background-image: url('../img/icon-linklist.png'); background-repeat: no-repeat; }
+
+.lists.lists-tick > li:after,
+.icon-ticklist { background-image: url('../img/icon-ticklist.png'); background-repeat: no-repeat; }
+

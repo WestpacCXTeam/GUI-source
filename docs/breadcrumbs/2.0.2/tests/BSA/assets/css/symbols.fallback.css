@@ -1,0 +1,3 @@
+.breadcrumb-list > li + li:before,
+.icon-breadcrumb { background-image: url('../img/icon-breadcrumb.png'); background-repeat: no-repeat; }
+

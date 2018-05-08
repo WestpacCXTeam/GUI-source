@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]>
+	<html class="no-js lt-ie8 lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9 ie8" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Testing symbols v3.0.1 WBC</title>
+
+
+
+	<script type="text/javascript">
+		var $html = document.documentElement;
+
+		if( $html.classList ) {
+			$html.classList.remove( 'no-js' );
+			$html.classList.add( 'js' );
+		}
+		else {
+			var className = 'no-js';
+
+			$html.className = $html.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+			$html.className += ' js';
+		}
+	</script>
+
+	<link rel="stylesheet" href="assets/css/gui.css">
+
+	<style>
+		body {
+			background-color: #eee;
+		}
+		.header {
+			margin: 21px 0;
+		}
+		.nav {
+			float: left;
+		}
+		.headline {
+			text-align: right;
+			margin-top: 0;
+		}
+		main.container {
+			background-color: #fff;
+		}
+		.table-symbols {
+			width:  100%;
+			border-collapse: collapse;
+			table-layout: fixed;
+		}
+		.table-symbols td {
+			border: 1px solid #eee;
+			padding: 1rem;
+			text-align: center;
+		}
+		.table-symbols .logo {
+			vertical-align: middle;
+			border: 1px dashed lightblue;
+		}
+		h2 {
+			margin-bottom: 1em;
+		}
+		h3 {
+			margin-top: 2em;
+		}
+	</style>
+	<script>
+		/*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+		!function(){function e(e,t){function n(){!o&&t&&(o=!0,t.call(e))}var o;e.addEventListener&&e.addEventListener("load",n),e.attachEvent&&e.attachEvent("onload",n),"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(e){"use strict";var t=function(t,n,o){function r(e){if(c.body)return e();setTimeout(function(){r(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=o||"all"}var i,c=e.document,d=c.createElement("link");if(n)i=n;else{var l=(c.body||c.getElementsByTagName("head")[0]).childNodes;i=l[l.length-1]}var s=c.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",r(function(){i.parentNode.insertBefore(d,n?i:i.nextSibling)});var u=function(e){for(var t=d.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){u(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=u,u(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(t){var n=function(o,r){"use strict";if(o&&3===o.length){var a=t.navigator,i=t.document,c=t.Image,d=!(!i.createElementNS||!i.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!i.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),l=new c;l.onerror=function(){n.method="png",n.href=o[2],loadCSS(o[2])},l.onload=function(){var t=1===l.width&&1===l.height,a=o[t&&d?0:t?1:2];n.method=t&&d?"svg":t?"datapng":"png",n.href=a,e(loadCSS(a),r)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",i.documentElement.className+=" grunticon"}};n.loadCSS=loadCSS,n.onloadCSS=e,t.grunticon=n}(this),function(e,t){"use strict";var n,o=t.document,r=function(e){if(o.attachEvent?"complete"===o.readyState:"loading"!==o.readyState)e();else{var t=!1;o.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},i=function(e,t){if(n&&!t)return n;n={};var o,r,a,i,c,d;if(!(o=e.sheet))return n;r=o.cssRules?o.cssRules:o.rules;for(var l=0;l<r.length;l++)a=r[l].cssText,i="grunticon:"+r[l].selectorText,(c=a.split(");")[0].match(/US\-ASCII\,([^"']+)/))&&c[1]&&(d=decodeURIComponent(c[1]),n[i]=d);return n},c=function(e,t){var n,r,a,i,c;t?n=e:(t=e,n=o),i="data-grunticon-embed";for(var d in t){c=d.slice("grunticon:".length);try{r=n.querySelectorAll(c)}catch(e){continue}a=[];for(var l=0;l<r.length;l++)null!==r[l].getAttribute(i)&&a.push(r[l]);if(a.length)for(l=0;l<a.length;l++)a[l].innerHTML=t[d],a[l].style.backgroundImage="none",a[l].removeAttribute(i)}return a},d=function(t,n){"svg"===e.method&&r(function(){var o=i(a(e.href));"function"==typeof n?(c(t,o),n()):c(o),"function"==typeof t&&t()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=d,e.embedSVG=d}(grunticon,this)}();
+		grunticon(["assets/css/symbols.data.svg.css", "assets/css/symbols.data.png.css", "assets/css/symbols.fallback.css"], grunticon.svgLoadedCallback);
+	</script>
+	<noscript><link href="assets/css/symbols.fallback.css" rel="stylesheet"></noscript>
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<a class="nav" href="//westpaccxteam.github.io/GUI-source/">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline brand-font">Testing symbols v3.0.1 WBC</h1>
+		</div>
+	</header>
+
+	<main class="container">
+<h2>Background method</h2>
+
+<table class="table table-symbols">
+	<tr>
+		<td><span class="symbol symbol-master-card"></span></td>
+		<td><span class="symbol symbol-master-card-horizontal"></span></td>
+		<td><span class="symbol symbol-master-card-accepted"></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-visa"></span></td>
+		<td><span class="symbol symbol-visa-white"></span></td>
+		<td><span class="symbol symbol-visa-blue"></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-american-express"></span></td>
+		<td><span class="symbol symbol-store-apple"></span></td>
+		<td><span class="symbol symbol-store-apple-inverse"></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-bpay-port"></span></td>
+		<td><span class="symbol symbol-bpay-land"></span></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-store-google"></span></td>
+		<td><span class="symbol symbol-store-windows"></span></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-twitter"></span></td>
+		<td><span class="symbol symbol-facebook"></span></td>
+		<td><span class="symbol symbol-linkedin"></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-google-plus"></span></td>
+		<td><span class="symbol symbol-youtube"></span></td>
+		<td><span class="symbol symbol-instagram"></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-slack"></span></td>
+		<td><span class="symbol symbol-yammer"></span></td>
+		<td></td>
+	</tr>
+</table>
+
+<hr>
+
+<h2>Direct embedding method</h2>
+
+<table class="table table-symbols">
+	<tr>
+		<td><span class="symbol symbol-master-card" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-master-card-horizontal" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-master-card-accepted" data-grunticon-embed></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-visa" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-visa-white" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-visa-blue" data-grunticon-embed></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-american-express" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-store-apple" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-store-apple-inverse" data-grunticon-embed></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-bpay-port" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-bpay-land" data-grunticon-embed></span></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-store-google" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-store-windows" data-grunticon-embed></span></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-twitter" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-facebook" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-linkedin" data-grunticon-embed></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-google-plus" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-youtube" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-instagram" data-grunticon-embed></span></td>
+	</tr>
+	<tr>
+		<td><span class="symbol symbol-slack" data-grunticon-embed></span></td>
+		<td><span class="symbol symbol-yammer" data-grunticon-embed></span></td>
+		<td></td>
+	</tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+	</main>
+
+	<script src="assets/js/gui.js"></script>
+</body>
+</html>

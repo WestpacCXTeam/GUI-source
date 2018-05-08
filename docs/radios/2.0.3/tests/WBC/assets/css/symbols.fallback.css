@@ -1,0 +1,12 @@
+.radio-input:disabled + .radio-text:after,
+.icon-radio-off-disabled { background-image: url('../img/icon-radio-off-disabled.png'); background-repeat: no-repeat; }
+
+.radio-input + .radio-text:after,
+.icon-radio-off { background-image: url('../img/icon-radio-off.png'); background-repeat: no-repeat; }
+
+.radio-input:disabled:checked + .radio-text:after,
+.icon-radio-on-disabled { background-image: url('../img/icon-radio-on-disabled.png'); background-repeat: no-repeat; }
+
+.radio-input:checked + .radio-text:after,
+.icon-radio-on { background-image: url('../img/icon-radio-on.png'); background-repeat: no-repeat; }
+

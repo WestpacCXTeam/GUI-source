@@ -1,0 +1,27 @@
+.icon-add-a,
+.symbol-add-a { background-image: url('../img/add-a.png'); background-repeat: no-repeat; }
+
+.icon-add-b,
+.symbol-add-b { background-image: url('../img/add-b.png'); background-repeat: no-repeat; }
+
+.icon-backspace,
+.symbol-backspace { background-image: url('../img/backspace.png'); background-repeat: no-repeat; }
+
+.icon-close,
+.symbol-close { background-image: url('../img/close.png'); background-repeat: no-repeat; }
+
+.icon-delete,
+.symbol-delete { background-image: url('../img/delete.png'); background-repeat: no-repeat; }
+
+.icon-filter,
+.symbol-filter { background-image: url('../img/filter.png'); background-repeat: no-repeat; }
+
+.icon-pause,
+.symbol-pause { background-image: url('../img/pause.png'); background-repeat: no-repeat; }
+
+.icon-play,
+.symbol-play { background-image: url('../img/play.png'); background-repeat: no-repeat; }
+
+.icon-remove,
+.symbol-remove { background-image: url('../img/remove.png'); background-repeat: no-repeat; }
+

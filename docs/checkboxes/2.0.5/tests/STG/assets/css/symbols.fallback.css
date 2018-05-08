@@ -1,0 +1,14 @@
+fieldset[disabled] .checkbox-text:after,
+.checkbox-input:disabled + .checkbox-text:after,
+.icon-checkbox-off-disabled { background-image: url('../img/icon-checkbox-off-disabled.png'); background-repeat: no-repeat; }
+
+.checkbox-input + .checkbox-text:after,
+.icon-checkbox-off { background-image: url('../img/icon-checkbox-off.png'); background-repeat: no-repeat; }
+
+fieldset[disabled] .checkbox-input:checked + .checkbox-text:after,
+.checkbox-input:disabled:checked + .checkbox-text:after,
+.icon-checkbox-on-disabled { background-image: url('../img/icon-checkbox-on-disabled.png'); background-repeat: no-repeat; }
+
+.checkbox-input:checked + .checkbox-text:after,
+.icon-checkbox-on { background-image: url('../img/icon-checkbox-on.png'); background-repeat: no-repeat; }
+
