@@ -714,14 +714,14 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [ //build index and gui.json
 		'font:title',
 
-		'font:index',
-		'buildIndex',
-
 		'font:cleanDocs',
 		'clean:docs',
 
 		'font:copy',
 		'copyTests',
+
+		'font:index',
+		'buildIndex',
 
 		'font:finished',
 		'wakeup',
@@ -730,17 +730,17 @@ module.exports = function(grunt) {
 	grunt.registerTask('all', [ //build index, gui.json and _sandbox
 		'font:title',
 
-		'font:index',
-		'buildIndex',
-
 		'font:cleanDocs',
 		'clean:docs',
 
-		'font:buildEverything',
-		'buildEverything',
-
 		'font:copy',
 		'copyTests',
+
+		'font:index',
+		'buildIndex',
+
+		'font:buildEverything',
+		'buildEverything',
 
 		'font:finished',
 		'wakeup',
