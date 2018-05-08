@@ -1,6 +1,6 @@
 {
 	"name": "GUI-source",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"private": true,
 	"devDependencies": {
 		"chalk": "^2.0.1",
