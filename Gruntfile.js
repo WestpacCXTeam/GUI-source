@@ -688,7 +688,7 @@ module.exports = function(grunt) {
 				'docs/_sandbox/_assets/js/modules/',
 			],
 			docs: [
-				'docs/',
+				'docs/*',
 				'!docs/_config.yml'
 			]
 		},
