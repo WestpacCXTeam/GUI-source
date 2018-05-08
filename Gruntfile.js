@@ -254,6 +254,7 @@ module.exports = function(grunt) {
 					'**/tests/*/index.html',
 					'**/tests/*/assets/css/*',
 					'**/tests/*/assets/js/*',
+					'**/tests/*/assets/font/*',
 					'!node_modules',
 					'!docs',
 					'!._templates',
