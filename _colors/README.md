@@ -22,6 +22,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated STG brand‘s secondary palette colour ‘Access Green’.
+		[#418](https://github.com/WestpacCXTeam/GUI-source/issues/418)
 * v3.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Removed Complementary A & B colours from the Primary Palette; moved to Secondary Palette as required.
 		[#332](https://github.com/WestpacCXTeam/GUI-source/issues/332)
@@ -52,7 +55,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_colors/master/LICENSE).
+Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_colors/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
