@@ -973,3 +973,6 @@
 [submodule "wells/2.0.2"]
 	path = wells/2.0.2
 	url = https://github.com/WestpacCXTeam/GUI-wells.git
+[submodule "_colors/3.0.1"]
+	path = _colors/3.0.1
+	url = https://github.com/WestpacCXTeam/GUI_colors.git
