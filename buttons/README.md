@@ -20,6 +20,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Removed stacked block buttons styling; this can be implemented per breakpoint via use of Responsive-Margins classes (e.g. `.top-margin1-xs`)
 * v4.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fixed block button internal scrollbar bug on legacy Chrome (Windows); was showing vertical scrollbars inside some buttons
 	* Added ellipsis truncation text overflow for block buttons (NB. this is not currently offered for block buttons with icons)
