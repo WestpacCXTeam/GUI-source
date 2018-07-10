@@ -16,6 +16,9 @@
 [submodule "_colors/3.0.0"]
 	path = _colors/3.0.0
 	url = git@github.com:WestpacCXTeam/GUI_colors.git
+[submodule "_colors/3.0.1"]
+	path = _colors/3.0.1
+	url = git@github.com:WestpacCXTeam/GUI_colors.git
 [submodule "_fonts/1.0.0"]
 	path = _fonts/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI_fonts.git
@@ -198,6 +201,9 @@
 	url = git@github.com:WestpacCXTeam/GUI-buttons.git
 [submodule "buttons/4.0.1"]
 	path = buttons/4.0.1
+	url = git@github.com:WestpacCXTeam/GUI-buttons.git
+[submodule "buttons/4.0.2"]
+	path = buttons/4.0.2
 	url = git@github.com:WestpacCXTeam/GUI-buttons.git
 [submodule "checkboxes/1.0.0"]
 	path = checkboxes/1.0.0
@@ -973,6 +979,3 @@
 [submodule "wells/2.0.2"]
 	path = wells/2.0.2
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
-[submodule "_colors/3.0.1"]
-	path = _colors/3.0.1
-	url = git@github.com:WestpacCXTeam/GUI_colors.git
