@@ -1,0 +1,28 @@
+{
+	"ID": "progress-ropes",
+	"name": "Progress-Ropes",
+	"description": "A detailed visual indication of progress. Use to indicate how far along the user is in a journey. Progress-Ropes plays nicely with Templates.",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons",
+				"buttons",
+				"responsive-margins"
+			],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 8,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
+		}
+	},
+	"hash": "17ee3338ba91cf37ef4b80edb5836253"
+}

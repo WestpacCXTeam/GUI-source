@@ -19,6 +19,18 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+	* Fixed sticky footer functionality and fixed header center alignment in IE
+		[#423](https://github.com/WestpacCXTeam/GUI-source/issues/423)
+	* Moved the `.template` class from `<html>` down to `<body>` element; our new sticky footer implementation no longer requires access to `<html>` (Note: This is in the only HTML update)
+		[#423](https://github.com/WestpacCXTeam/GUI-source/issues/423)
+	* Templates now includes the Headers and Footers modules; which are now deprecated
+		[#424](https://github.com/WestpacCXTeam/GUI-source/issues/424)
+	* Adding sidebar styling
+	* Increased vertical section padding for mobile
+	* Removed `.section` alternating background fill; now available as an option via `.section-fill` modifier
+	* Removed the content panel (`.content-panel`) block; now provided by the new Form-Pod module
+	* Adding new scroll locking utility styling
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Removed `.main-fit` modifier styling; found to be unnecessary and easily misunderstood
 	* Added `.section` block styling; similar to `.main-padded` modifier styling
@@ -34,7 +46,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-templates/master/LICENSE).
+Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-templates/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

@@ -1,0 +1,28 @@
+{
+	"ID": "form-pods",
+	"name": "Form-Pods",
+	"description": "A page panel, header, footer and controls area for forms. Form-Pods plays nicely with Templates.",
+	"versions": {
+		"1.0.0": {
+			"dependencies": [
+				"icons",
+				"buttons",
+				"responsive-margins"
+			],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 3,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
+		}
+	},
+	"hash": "a410bbfdefb5628325f470e20f88ce14"
+}
