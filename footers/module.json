@@ -2,7 +2,8 @@
 	"ID": "footers",
 	"name": "Footers",
 	"description": "Global footer panels.",
-	"category": "Footers",
+	"category": "Deprecated",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [

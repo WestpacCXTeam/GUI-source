@@ -2,7 +2,8 @@
 	"ID": "headers",
 	"name": "Headers",
 	"description": "Global header panels.",
-	"category": "Headers",
+	"category": "Deprecated",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
