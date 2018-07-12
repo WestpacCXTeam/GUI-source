@@ -985,3 +985,6 @@
 [submodule "progress-ropes/1.0.0"]
 	path = progress-ropes/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
+[submodule "form-pods/1.0.0"]
+	path = form-pods/1.0.0
+	url = git@github.com:WestpacCXTeam/GUI-form-pods.git
