@@ -982,3 +982,6 @@
 [submodule "templates/2.0.0"]
 	path = templates/2.0.0
 	url = git@github.com:WestpacCXTeam/GUI-templates.git
+[submodule "progress-ropes/1.0.0"]
+	path = progress-ropes/1.0.0
+	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
