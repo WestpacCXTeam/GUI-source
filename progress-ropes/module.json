@@ -2,6 +2,7 @@
 	"ID": "progress-ropes",
 	"name": "Progress-Ropes",
 	"description": "A detailed visual indication of progress. Use to indicate how far along the user is in a journey. Progress-Ropes plays nicely with Templates.",
+	"category": "Form components",
 	"versions": {
 		"1.0.0": {
 			"dependencies": [
