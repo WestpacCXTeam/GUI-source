@@ -245,7 +245,7 @@ var GUI = (function guiInit() {
 
 //run GUI
 GUI.init();
-/*!progress-ropes v1.0.0*/
+/*!progress-ropes v1.0.0-alpha*/
 /***************************************************************************************************************************************************************
  *
  * progress-ropes
@@ -271,7 +271,7 @@ GUI.init();
 	module.init = function progressInit() {
 		GUI.debugging( 'progress rope: Initiating', 'report' );
 
-		if( $('.js-progress-rope-accordion').length ) {
+		if( $('.js-progress-rope-list-accordion').length ) {
 			GUI.debugging( 'progress rope: Found instance', 'report' );
 
 			module.render();
@@ -301,7 +301,7 @@ GUI.init();
 		$target
 			.css({ 'height': oldHeight })
 			.attr('aria-hidden', 'true')
-			.closest('.js-progress-rope-accordion-group').removeClass('is-open');
+			.closest('.js-progress-rope-list-accordion-group').removeClass('is-open');
 
 		if ( _isAnimated ) {
 			$target
@@ -317,7 +317,7 @@ GUI.init();
 		}
 
 		// Toggle
-		var $toggle = $target.closest('.js-progress-rope-accordion-group').find('.js-progress-rope-accordion-toggle');
+		var $toggle = $target.closest('.js-progress-rope-list-accordion-group').find('.js-progress-rope-list-accordion-toggle');
 		$toggle
 			.attr('aria-selected', 'false')
 			.attr('aria-expanded', 'false');
@@ -346,7 +346,7 @@ GUI.init();
 		$target
 			.css({ 'height': oldHeight })
 			.attr('aria-hidden', 'false')
-			.closest('.js-progress-rope-accordion-group').addClass('is-open');
+			.closest('.js-progress-rope-list-accordion-group').addClass('is-open');
 
 		if ( _isAnimated ) {
 			$target.stop(true).animate({ 'height': height }, 300, function animateCallback() {
@@ -366,7 +366,7 @@ GUI.init();
 		}
 
 		// Toggle
-		var $toggle = $target.closest('.js-progress-rope-accordion-group').find('.js-progress-rope-accordion-toggle');
+		var $toggle = $target.closest('.js-progress-rope-list-accordion-group').find('.js-progress-rope-list-accordion-toggle');
 		$toggle
 			.attr('aria-selected', 'true')
 			.attr('aria-expanded', 'true');
@@ -383,25 +383,25 @@ GUI.init();
 		GUI.debugging( 'progress rope: Rendering', 'report' );
 
 		// Bind click event
-		$('.js-progress-rope-accordion-toggle').not('.js-rendered').on('click', function showAccordionContent(e) {
+		$('.js-progress-rope-list-accordion-toggle').not('.js-rendered').on('click', function showAccordionContent(e) {
 			GUI.debugging( 'progress rope: Showing content', 'interaction' );
 			e.preventDefault();
 
 			var $thisToggle = $(this);
-			var $group = $thisToggle.closest('.js-progress-rope-accordion-group');
+			var $group = $thisToggle.closest('.js-progress-rope-list-accordion-group');
 			var target = $thisToggle.attr('href') ? $thisToggle.attr('href') : $thisToggle.attr('data-collapsible');
 
 			if( !$group.hasClass('is-open')) {
 				// Close any currently open siblings, for ‘Desktop’ layout (MD & LG)
 				if ($window.width() >= 992) {
-					module.close( $group.siblings('.is-open').find('.js-progress-rope-accordion-body') );
+					module.close( $group.siblings('.is-open').find('.js-progress-rope-list-accordion-body') );
 				}
 
 				// Open the given target
 				module.open( target );
 
 				if( e.type === 'click' ) { //only trigger on tabbing or clicking, not arrowing
-					$group.find('.js-progress-rope-accordion-body').focus();
+					$group.find('.js-progress-rope-list-accordion-body').focus();
 				}
 
 			} else {

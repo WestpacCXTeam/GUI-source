@@ -26,7 +26,8 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 		[#423](https://github.com/WestpacCXTeam/GUI-source/issues/423)
 	* Templates now includes the Headers and Footers modules; which are now deprecated
 		[#424](https://github.com/WestpacCXTeam/GUI-source/issues/424)
-	* Adding sidebar styling
+	* Renamed `.wrapper` class... now `.template-wrapper`
+	* Added sidebar styling
 	* Increased vertical section padding for mobile
 	* Removed `.section` alternating background fill; now available as an option via `.section-fill` modifier
 	* Removed the content panel (`.content-panel`) block; now provided by the new Form-Pod module

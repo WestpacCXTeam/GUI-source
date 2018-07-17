@@ -4,7 +4,7 @@
 	"description": "A detailed visual indication of progress. Use to indicate how far along the user is in a journey. Progress-Ropes plays nicely with Templates.",
 	"category": "Form components",
 	"versions": {
-		"1.0.0": {
+		"1.0.0-alpha": {
 			"dependencies": [
 				"icons",
 				"buttons",
@@ -25,5 +25,5 @@
 			]
 		}
 	},
-	"hash": "17ee3338ba91cf37ef4b80edb5836253"
+	"hash": "45564f507ef9bd2f3428c539e9e17987"
 }

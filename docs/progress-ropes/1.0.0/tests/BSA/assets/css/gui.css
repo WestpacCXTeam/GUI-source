@@ -1272,7 +1272,7 @@ a:focus {
     width: auto;
   }
 }
-/*!progress-ropes v1.0.0 BSA*/
+/*!progress-ropes v1.0.0-alpha BSA*/
 /*
  * progress-ropes mixins
  *
@@ -1285,8 +1285,8 @@ a:focus {
   padding-bottom: 60px;
 }
 .is-keyboarduser .progress-rope a:focus,
-.is-keyboarduser .progress-rope .progress-rope-accordion-toggle:focus,
-.is-keyboarduser .progress-rope .js-progress-rope-accordion-group.is-open .progress-rope-accordion-body:focus {
+.is-keyboarduser .progress-rope .progress-rope-list-accordion-toggle:focus,
+.is-keyboarduser .progress-rope .js-progress-rope-list-accordion-group.is-open .progress-rope-list-accordion-body:focus {
   outline-offset: -2px;
 }
 .progress-rope-list {
@@ -1305,42 +1305,31 @@ a:focus {
   bottom: 0;
   right: 36px;
 }
-.progress-rope-accordion,
-.progress-rope-accordion-body {
+.progress-rope-list-accordion,
+.progress-rope-list-accordion-body {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-.progress-rope-accordion-group {
+.progress-rope-list-accordion-group {
   position: relative;
   margin-top: -10px;
 }
-.progress-rope-accordion-toggle,
-.progress-rope-link {
+.progress-rope-list-accordion-toggle,
+.progress-rope-step {
   display: block;
   color: #333;
 }
-.progress-rope-accordion-toggle,
-.progress-rope-link,
-.progress-rope-accordion-toggle:hover,
-.progress-rope-link:hover,
-.progress-rope-accordion-toggle:focus,
-.progress-rope-link:focus {
+.progress-rope-list-accordion-toggle,
+.progress-rope-step,
+.progress-rope-list-accordion-toggle:hover,
+.progress-rope-step:hover,
+.progress-rope-list-accordion-toggle:focus,
+.progress-rope-step:focus {
   text-decoration: none;
 }
-.progress-rope-accordion-toggle {
-  position: relative;
-  padding-top: 6px;
-  padding-bottom: 26px;
-  padding-right: 56px;
-  padding-left: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  color: #989b9e;
+.progress-rope-list-accordion-toggle,
+.progress-rope-step {
   width: 100%;
   border: none;
   background: none;
@@ -1357,14 +1346,28 @@ a:focus {
   text-align: left;
   line-height: 1.428571429;
 }
-.progress-rope-accordion-toggle:focus {
+.progress-rope-list-accordion-toggle {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 26px;
+  padding-right: 56px;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  color: #989b9e;
+}
+.progress-rope-list-accordion-toggle:focus {
   outline: none;
 }
-.is-keyboarduser .progress-rope-accordion-toggle:focus {
+.is-keyboarduser .progress-rope-list-accordion-toggle:focus {
   outline: 2px dotted #000;
   outline-offset: 0.5rem;
 }
-.progress-rope-accordion-toggle::after {
+.progress-rope-list-accordion-toggle::after {
   content: '';
   display: block;
   width: 14px;
@@ -1377,13 +1380,13 @@ a:focus {
   top: 10px;
   right: 30px;
 }
-.progress-rope-accordion-group.is-inprogress > .progress-rope-accordion-toggle {
+.progress-rope-list-accordion-group.is-inprogress > .progress-rope-list-accordion-toggle {
   color: #333;
 }
-.progress-rope-accordion-group.is-inprogress > .progress-rope-accordion-toggle::after {
+.progress-rope-list-accordion-group.is-inprogress > .progress-rope-list-accordion-toggle::after {
   border-color: #d81b2b;
 }
-.progress-rope-accordion-group.is-inprogress > .progress-rope-accordion-toggle::before {
+.progress-rope-list-accordion-group.is-inprogress > .progress-rope-list-accordion-toggle::before {
   content: '';
   display: block;
   border-left: 2px solid #d81b2b;
@@ -1397,10 +1400,10 @@ a:focus {
   position: relative;
   z-index: 1;
 }
-.progress-rope-accordion-group ul > .progress-rope-item:first-child {
+.progress-rope-list-accordion-body > .progress-rope-item:first-child {
   padding-top: 0;
 }
-.progress-rope-accordion-group ul > .progress-rope-item:last-child {
+.progress-rope-list-accordion-body > .progress-rope-item:last-child {
   padding-bottom: 30px;
 }
 .progress-rope-list > .progress-rope-item:last-child {
@@ -1430,7 +1433,7 @@ a:focus {
 .progress-rope-item-review.is-inprogress::before {
   display: none;
 }
-.progress-rope-link {
+.progress-rope-step {
   position: relative;
   padding-top: 8px;
   padding-bottom: 14px;
@@ -1440,21 +1443,21 @@ a:focus {
   color: #7b7e82;
   cursor: default;
 }
-.progress-rope-item.is-inprogress .progress-rope-link:first-child,
-.progress-rope-link.is-active + .progress-rope-link {
+.progress-rope-item.is-inprogress .progress-rope-step:first-child,
+.progress-rope-step.is-active + .progress-rope-step {
   cursor: pointer;
 }
-.progress-rope-accordion-group .progress-rope-link {
+.progress-rope-list-accordion-group .progress-rope-step {
   padding-left: 48px;
 }
-.js .progress-rope-accordion-group .progress-rope-link {
+.js .progress-rope-list-accordion-group .progress-rope-step {
   opacity: 0;
   transition: opacity .4s ease;
 }
-.js .progress-rope-accordion-group.is-open .progress-rope-link {
+.js .progress-rope-list-accordion-group.is-open .progress-rope-step {
   opacity: 1;
 }
-.progress-rope-link::after {
+.progress-rope-step::after {
   content: '';
   display: block;
   border-radius: 50%;
@@ -1467,7 +1470,7 @@ a:focus {
   border: 2px solid #d3d4d5;
   background-color: #fff;
 }
-.progress-rope-accordion-group .progress-rope-link::after {
+.progress-rope-list-accordion-group .progress-rope-step::after {
   top: 14px;
   width: 6px;
   height: 6px;
@@ -1475,7 +1478,7 @@ a:focus {
   border: none;
   background-color: #d3d4d5;
 }
-.progress-rope-item-review .progress-rope-link::after {
+.progress-rope-item-review .progress-rope-step::after {
   width: 14px;
   height: 14px;
   top: 10px;
@@ -1483,40 +1486,40 @@ a:focus {
   border: none;
   background-color: #d3d4d5;
 }
-.progress-rope-item.is-inprogress > .progress-rope-link {
+.progress-rope-item.is-inprogress > .progress-rope-step {
   color: #333;
 }
-.progress-rope-item.is-inprogress > .progress-rope-link::after {
+.progress-rope-item.is-inprogress > .progress-rope-step::after {
   border-color: #d81b2b;
 }
-.progress-rope-accordion-group .progress-rope-item.is-inprogress > .progress-rope-link::after {
+.progress-rope-list-accordion-group .progress-rope-item.is-inprogress > .progress-rope-step::after {
   background-color: #d81b2b;
   border: none;
 }
-.progress-rope-item-review.is-inprogress > .progress-rope-link::after {
+.progress-rope-item-review.is-inprogress > .progress-rope-step::after {
   background-color: #d81b2b;
 }
-.progress-rope-item.is-active > .progress-rope-link {
+.progress-rope-item.is-active > .progress-rope-step {
   color: #d81b2b;
 }
-.progress-rope-accordion-body {
+.progress-rope-list-accordion-body {
   overflow: hidden;
 }
-.js-progress-rope-accordion-group.is-open .progress-rope-accordion-body:focus {
+.js-progress-rope-list-accordion-group.is-open .progress-rope-list-accordion-body:focus {
   outline: none;
 }
-.is-keyboarduser .js-progress-rope-accordion-group.is-open .progress-rope-accordion-body:focus {
+.is-keyboarduser .js-progress-rope-list-accordion-group.is-open .progress-rope-list-accordion-body:focus {
   outline: 2px dotted #000;
   outline-offset: .5rem;
 }
-.js .progress-rope-accordion-body {
+.js .progress-rope-list-accordion-body {
   height: 0;
   visibility: hidden;
   overflow: hidden;
   will-change: height;
   transition: visibility .3s ease;
 }
-.js .js-progress-rope-accordion-group.is-open .progress-rope-accordion-body {
+.js .js-progress-rope-list-accordion-group.is-open .progress-rope-list-accordion-body {
   height: auto;
   visibility: visible;
   transition: none;

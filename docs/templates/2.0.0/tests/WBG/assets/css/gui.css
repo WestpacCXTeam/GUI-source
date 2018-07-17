@@ -1272,7 +1272,7 @@ a:focus {
     width: auto;
   }
 }
-/*!templates v2.0.0 WBG*/
+/*!templates v2.0.0-alpha WBG*/
 /*
  * templates mixins
  *
@@ -1284,13 +1284,13 @@ a:focus {
   background-color: #fff;
 }
 .template,
-.template .wrapper {
+.template .template-wrapper {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
 }
-.template .wrapper {
+.template .template-wrapper {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -1300,7 +1300,7 @@ a:focus {
   background-color: #f3f5f6;
 }
 @media (min-width: 1922px) {
-  .template .wrapper {
+  .template .template-wrapper {
     border-left: 1px solid #cfd8dc;
     border-right: 1px solid #cfd8dc;
   }

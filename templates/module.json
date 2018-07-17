@@ -52,7 +52,7 @@
 				"BT"
 			]
 		},
-		"2.0.0": {
+		"2.0.0-alpha": {
 			"dependencies": [
 				"logos",
 				"icons",
@@ -75,5 +75,5 @@
 			]
 		}
 	},
-	"hash": "9b2b7037c5a80e7968410bc09bd787df"
+	"hash": "5ac485264fd524ddfdbf9af08303b7da"
 }
