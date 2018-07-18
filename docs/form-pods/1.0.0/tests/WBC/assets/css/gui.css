@@ -1333,13 +1333,15 @@ a:focus {
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
-.form-pod-actions-primary .btn {
-  width: calc(50% - 6px);
-}
 @media (min-width: 768px) {
   .form-pod-actions-primary {
     display: block;
     margin-left: auto;
+  }
+}
+@media (max-width: 767px) {
+  .form-pod-actions-primary .btn {
+    width: calc(50% - 6px);
   }
 }
 .form-pod-contact {
@@ -1421,20 +1423,6 @@ a:focus {
 .ie9 .form-pod-panel-footer-right {
   float: right;
 }
-@media (max-width: 767px) {
-  .ie8 .form-pod-actions-primary,
-  .ie9 .form-pod-actions-primary {
-    overflow: hidden;
-  }
-  .ie8 .form-pod-actions-primary .btn:first-child,
-  .ie9 .form-pod-actions-primary .btn:first-child {
-    float: left;
-  }
-  .ie8 .form-pod-actions-primary .btn:last-child,
-  .ie9 .form-pod-actions-primary .btn:last-child {
-    float: right;
-  }
-}
 @media (min-width: 768px) {
   .ie8 .form-pod-actions,
   .ie9 .form-pod-actions {
@@ -1446,6 +1434,20 @@ a:focus {
   }
   .ie8 .form-pod-actions-primary,
   .ie9 .form-pod-actions-primary {
+    float: right;
+  }
+}
+@media (max-width: 767px) {
+  .ie8 .form-pod-actions-primary,
+  .ie9 .form-pod-actions-primary {
+    overflow: hidden;
+  }
+  .ie8 .form-pod-actions-primary .btn:first-child,
+  .ie9 .form-pod-actions-primary .btn:first-child {
+    float: left;
+  }
+  .ie8 .form-pod-actions-primary .btn:last-child,
+  .ie9 .form-pod-actions-primary .btn:last-child {
     float: right;
   }
 }
