@@ -273,6 +273,30 @@ module.exports = function(grunt) {
 
 
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	// Custom grunt task to synchronize submodules' remote URL configuration setting to the value specified in .gitmodules.
+	// Running this ensures submodule updates are sync'd between developers
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
+	grunt.registerTask('submoduleSync', 'Git sync the submodules.', function() {
+
+		var exec = {};
+
+		// Running git submodule sync
+		grunt.verbose.writeln( 'Running git submodule sync' );
+		exec[ 'submodule-sync' ] = { //SYNC
+			options: {
+				stderr: false,
+				stdout: true,
+			},
+			command: 'git submodule sync',
+		};
+
+		//running tasks
+		grunt.config.set('exec', exec);
+		grunt.task.run('exec:submodule-sync');
+	});
+
+
+	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	// Custom grunt task to create a page for all modules
 	//------------------------------------------------------------------------------------------------------------------------------------------------------------
 	grunt.registerTask('buildEverything', 'Build a page to test all the latest versions in one site.', function() {
@@ -586,6 +610,15 @@ module.exports = function(grunt) {
 				text: ' copying tests',
 			},
 
+			submoduleSync: {
+				options: {
+					font: 'simple',
+					maxLength: 30,
+					colors: ['magenta'],
+				},
+				text: ' syncing submodules',
+			},
+
 			finished: {
 				text: 'finished',
 			},
@@ -635,6 +668,9 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [ //build index and gui.json
 		'font:title',
 
+		'font:submoduleSync',
+		'submoduleSync',
+
 		'font:cleanDocs',
 		'clean:docs',
 
@@ -650,6 +686,9 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('all', [ //build index, gui.json and _sandbox
 		'font:title',
+
+		'font:submoduleSync',
+		'submoduleSync',
 
 		'font:cleanDocs',
 		'clean:docs',

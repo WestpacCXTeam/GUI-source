@@ -258,6 +258,7 @@ The `module.json` file that is then compiled into the GUI.json file is the engin
 
 > We are trying to make as little changes to the overall build as possible.
 
+* v1.0.5 - Added new `submoduleSync` task to ensure submodule updates are sync’d between developers
 * v1.0.4 - Send stress test pages to `/docs` directory
 * v1.0.3 - Clean `_sandbox` icon output pre build and update `._template` files
 * v1.0.2 - Automated branding with the `.guiconfig` file
@@ -272,7 +273,7 @@ The `module.json` file that is then compiled into the GUI.json file is the engin
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
 
 **[:point_up: back to top](#content)**
 
