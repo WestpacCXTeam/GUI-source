@@ -991,3 +991,6 @@ url=git@github.com:WestpacCXTeam/GUI-panels.git
 [submodule "icon/2.0.2"]
 	path = icon/2.0.2
 	url = git@github.com:WestpacCXTeam/GUI-icons.git
+[submodule "icons/2.0.2"]
+	path = icons/2.0.2
+	url = git@github.com:WestpacCXTeam/GUI-icons.git
