@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]>
+	<html class="no-js lt-ie8 lt-ie9" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+	<html class="no-js lt-ie9 ie8" lang="en">
+<![endif]-->
+<!--[if IE 9 ]>
+	<html class="no-js ie9" lang="en">
+<![endif]-->
+<!--[if !(IE)]><!-->
+	<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Testing icons v2.0.2 WBC</title>
+
+	<script type="text/javascript">
+		var $html = document.documentElement;
+
+		if( $html.classList ) {
+			$html.classList.remove( 'no-js' );
+			$html.classList.add( 'js' );
+		}
+		else {
+			var className = 'no-js';
+
+			$html.className = $html.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+			$html.className += ' js';
+		}
+	</script>
+
+	<!-- Buttons -->
+	<link rel="stylesheet" href="//westpaccxteam.github.io/GUI-source/buttons/4.0.0/tests/WBC/assets/css/gui.css">
+
+	<link rel="stylesheet" href="assets/css/gui.css">
+
+	<style>
+		body {
+			background-color: #eee;
+		}
+		header {
+			margin: 21px 0;
+		}
+		.nav {
+			float: left;
+		}
+		.headline {
+			text-align: right;
+			margin-top: 0;
+		}
+		main.container {
+			background-color: #fff;
+		}
+		h2 {
+			margin-bottom: 1em;
+		}
+		h3 {
+			margin-top: 2em;
+		}
+		.dark-background {
+			background: #575F65;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 0
+		}
+	</style>
+	<!--[if lt IE 9]>
+		<script>
+			/* @preserve HTML5 Shiv 3.7.2 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed */
+			!function(a,b){function c(a,b){var c=a.createElement("p"),d=a.getElementsByTagName("head")[0]||a.documentElement;return c.innerHTML="x<style>"+b+"</style>",d.insertBefore(c.lastChild,d.firstChild)}function d(){var a=y.elements;return"string"==typeof a?a.split(" "):a}function e(a,b){var c=y.elements;"string"!=typeof c&&(c=c.join(" ")),"string"!=typeof a&&(a=a.join(" ")),y.elements=c+" "+a,j(b)}function f(a){var b=x[a[v]];return b||(b={},w++,a[v]=w,x[w]=b),b}function g(a,c,d){if(c||(c=b),q)return c.createElement(a);d||(d=f(c));var e;return e=d.cache[a]?d.cache[a].cloneNode():u.test(a)?(d.cache[a]=d.createElem(a)).cloneNode():d.createElem(a),!e.canHaveChildren||t.test(a)||e.tagUrn?e:d.frag.appendChild(e)}function h(a,c){if(a||(a=b),q)return a.createDocumentFragment();c=c||f(a);for(var e=c.frag.cloneNode(),g=0,h=d(),i=h.length;i>g;g++)e.createElement(h[g]);return e}function i(a,b){b.cache||(b.cache={},b.createElem=a.createElement,b.createFrag=a.createDocumentFragment,b.frag=b.createFrag()),a.createElement=function(c){return y.shivMethods?g(c,a,b):b.createElem(c)},a.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+d().join().replace(/[\w\-:]+/g,function(a){return b.createElem(a),b.frag.createElement(a),'c("'+a+'")'})+");return n}")(y,b.frag)}function j(a){a||(a=b);var d=f(a);return!y.shivCSS||p||d.hasCSS||(d.hasCSS=!!c(a,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),q||i(a,d),a}function k(a){for(var b,c=a.getElementsByTagName("*"),e=c.length,f=RegExp("^(?:"+d().join("|")+")$","i"),g=[];e-=1;)b=c[e],f.test(b.nodeName)&&g.push(b.applyElement(l(b)));return g}function l(a){for(var b,c=a.attributes,d=c.length,e=a.ownerDocument.createElement(A+":"+a.nodeName);d-=1;)b=c[d],b.specified&&e.setAttribute(b.nodeName,b.nodeValue);return e.style.cssText=a.style.cssText,e}function m(a){for(var b,c=a.split("{"),e=c.length,f=RegExp("(^|[\\s,>+~])("+d().join("|")+")(?=[[\\s,>+~#.:]|$)","gi"),g="$1"+A+"\\:$2";e-=1;)b=c[e]=c[e].split("}"),b[b.length-1]=b[b.length-1].replace(f,g),c[e]=b.join("}");return c.join("{")}function n(a){for(var b=a.length;b-=1;)a[b].removeNode()}function o(a){function b(){clearTimeout(g._removeSheetTimer),d&&d.removeNode(!0),d=null}var d,e,g=f(a),h=a.namespaces,i=a.parentWindow;return!B||a.printShived?a:("undefined"==typeof h[A]&&h.add(A),i.attachEvent("onbeforeprint",function(){b();for(var f,g,h,i=a.styleSheets,j=[],l=i.length,n=Array(l);l-=1;)n[l]=i[l];for(;h=n.pop();)if(!h.disabled&&z.test(h.media)){try{f=h.imports,g=f.length}catch(o){g=0}for(l=0;g>l;l++)n.push(f[l]);try{j.push(h.cssText)}catch(o){}}j=m(j.reverse().join("")),e=k(a),d=c(a,j)}),i.attachEvent("onafterprint",function(){n(e),clearTimeout(g._removeSheetTimer),g._removeSheetTimer=setTimeout(b,500)}),a.printShived=!0,a)}var p,q,r="3.7.2",s=a.html5||{},t=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,u=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,v="_html5shiv",w=0,x={};!function(){try{var a=b.createElement("a");a.innerHTML="<xyz></xyz>",p="hidden"in a,q=1==a.childNodes.length||function(){b.createElement("a");var a=b.createDocumentFragment();return"undefined"==typeof a.cloneNode||"undefined"==typeof a.createDocumentFragment||"undefined"==typeof a.createElement}()}catch(c){p=!0,q=!0}}();var y={elements:s.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:r,shivCSS:s.shivCSS!==!1,supportsUnknownElements:q,shivMethods:s.shivMethods!==!1,type:"default",shivDocument:j,createElement:g,createDocumentFragment:h,addElements:e};a.html5=y,j(b);var z=/^$|\b(?:all|print)\b/,A="html5shiv",B=!q&&function(){var c=b.documentElement;return!("undefined"==typeof b.namespaces||"undefined"==typeof b.parentWindow||"undefined"==typeof c.applyElement||"undefined"==typeof c.removeNode||"undefined"==typeof a.attachEvent)}();y.type+=" print",y.shivPrint=o,o(b)}(this,document);
+		</script>
+		<script>
+			/* Respond.js v1.4.2: min/max-width media query polyfill * Copyright 2013 Scott Jehl Licensed under https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT */
+			!function(a){"use strict";a.matchMedia=a.matchMedia||function(a){var b,c=a.documentElement,d=c.firstElementChild||c.firstChild,e=a.createElement("body"),f=a.createElement("div");return f.id="mq-test-1",f.style.cssText="position:absolute;top:-100em",e.style.background="none",e.appendChild(f),function(a){return f.innerHTML='&shy;<style media="'+a+'"> #mq-test-1 { width: 42px; }</style>',c.insertBefore(e,d),b=42===f.offsetWidth,c.removeChild(e),{matches:b,media:a}}}(a.document)}(this),function(a){"use strict";function b(){u(!0)}var c={};a.respond=c,c.update=function(){};var d=[],e=function(){var b=!1;try{b=new a.XMLHttpRequest}catch(c){b=new a.ActiveXObject("Microsoft.XMLHTTP")}return function(){return b}}(),f=function(a,b){var c=e();c&&(c.open("GET",a,!0),c.onreadystatechange=function(){4!==c.readyState||200!==c.status&&304!==c.status||b(c.responseText)},4!==c.readyState&&c.send(null))};if(c.ajax=f,c.queue=d,c.regex={media:/@media[^\{]+\{([^\{\}]*\{[^\}\{]*\})+/gi,keyframes:/@(?:\-(?:o|moz|webkit)\-)?keyframes[^\{]+\{(?:[^\{\}]*\{[^\}\{]*\})+[^\}]*\}/gi,urls:/(url\()['"]?([^\/\)'"][^:\)'"]+)['"]?(\))/g,findStyles:/@media *([^\{]+)\{([\S\s]+?)$/,only:/(only\s+)?([a-zA-Z]+)\s?/,minw:/\([\s]*min\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/,maxw:/\([\s]*max\-width\s*:[\s]*([\s]*[0-9\.]+)(px|em)[\s]*\)/},c.mediaQueriesSupported=a.matchMedia&&null!==a.matchMedia("only all")&&a.matchMedia("only all").matches,!c.mediaQueriesSupported){var g,h,i,j=a.document,k=j.documentElement,l=[],m=[],n=[],o={},p=30,q=j.getElementsByTagName("head")[0]||k,r=j.getElementsByTagName("base")[0],s=q.getElementsByTagName("link"),t=function(){var a,b=j.createElement("div"),c=j.body,d=k.style.fontSize,e=c&&c.style.fontSize,f=!1;return b.style.cssText="position:absolute;font-size:1em;width:1em",c||(c=f=j.createElement("body"),c.style.background="none"),k.style.fontSize="100%",c.style.fontSize="100%",c.appendChild(b),f&&k.insertBefore(c,k.firstChild),a=b.offsetWidth,f?k.removeChild(c):c.removeChild(b),k.style.fontSize=d,e&&(c.style.fontSize=e),a=i=parseFloat(a)},u=function(b){var c="clientWidth",d=k[c],e="CSS1Compat"===j.compatMode&&d||j.body[c]||d,f={},o=s[s.length-1],r=(new Date).getTime();if(b&&g&&p>r-g)return a.clearTimeout(h),h=a.setTimeout(u,p),void 0;g=r;for(var v in l)if(l.hasOwnProperty(v)){var w=l[v],x=w.minw,y=w.maxw,z=null===x,A=null===y,B="em";x&&(x=parseFloat(x)*(x.indexOf(B)>-1?i||t():1)),y&&(y=parseFloat(y)*(y.indexOf(B)>-1?i||t():1)),w.hasquery&&(z&&A||!(z||e>=x)||!(A||y>=e))||(f[w.media]||(f[w.media]=[]),f[w.media].push(m[w.rules]))}for(var C in n)n.hasOwnProperty(C)&&n[C]&&n[C].parentNode===q&&q.removeChild(n[C]);n.length=0;for(var D in f)if(f.hasOwnProperty(D)){var E=j.createElement("style"),F=f[D].join("\n");E.type="text/css",E.media=D,q.insertBefore(E,o.nextSibling),E.styleSheet?E.styleSheet.cssText=F:E.appendChild(j.createTextNode(F)),n.push(E)}},v=function(a,b,d){var e=a.replace(c.regex.keyframes,"").match(c.regex.media),f=e&&e.length||0;b=b.substring(0,b.lastIndexOf("/"));var g=function(a){return a.replace(c.regex.urls,"$1"+b+"$2$3")},h=!f&&d;b.length&&(b+="/"),h&&(f=1);for(var i=0;f>i;i++){var j,k,n,o;h?(j=d,m.push(g(a))):(j=e[i].match(c.regex.findStyles)&&RegExp.$1,m.push(RegExp.$2&&g(RegExp.$2))),n=j.split(","),o=n.length;for(var p=0;o>p;p++)k=n[p],l.push({media:k.split("(")[0].match(c.regex.only)&&RegExp.$2||"all",rules:m.length-1,hasquery:k.indexOf("(")>-1,minw:k.match(c.regex.minw)&&parseFloat(RegExp.$1)+(RegExp.$2||""),maxw:k.match(c.regex.maxw)&&parseFloat(RegExp.$1)+(RegExp.$2||"")})}u()},w=function(){if(d.length){var b=d.shift();f(b.href,function(c){v(c,b.href,b.media),o[b.href]=!0,a.setTimeout(function(){w()},0)})}},x=function(){for(var b=0;b<s.length;b++){var c=s[b],e=c.href,f=c.media,g=c.rel&&"stylesheet"===c.rel.toLowerCase();e&&g&&!o[e]&&(c.styleSheet&&c.styleSheet.rawCssText?(v(c.styleSheet.rawCssText,e,f),o[e]=!0):(!/^([a-zA-Z:]*\/\/)/.test(e)&&!r||e.replace(RegExp.$1,"").split("/")[0]===a.location.host)&&("//"===e.substring(0,2)&&(e=a.location.protocol+e),d.push({href:e,media:f})))}w()};x(),c.update=x,c.getEmValue=t,a.addEventListener?a.addEventListener("resize",b,!1):a.attachEvent&&a.attachEvent("onresize",b)}}(this);
+		</script>
+	<![endif]-->
+	<script>
+		/*! grunt-grunticon Stylesheet Loader - v2.1.6 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+		!function(){function e(e,t){function n(){!o&&t&&(o=!0,t.call(e))}var o;e.addEventListener&&e.addEventListener("load",n),e.attachEvent&&e.attachEvent("onload",n),"isApplicationInstalled"in navigator&&"onloadcssdefined"in e&&e.onloadcssdefined(n)}!function(e){"use strict";var t=function(t,n,o){function r(e){if(c.body)return e();setTimeout(function(){r(e)})}function a(){d.addEventListener&&d.removeEventListener("load",a),d.media=o||"all"}var i,c=e.document,d=c.createElement("link");if(n)i=n;else{var l=(c.body||c.getElementsByTagName("head")[0]).childNodes;i=l[l.length-1]}var s=c.styleSheets;d.rel="stylesheet",d.href=t,d.media="only x",r(function(){i.parentNode.insertBefore(d,n?i:i.nextSibling)});var u=function(e){for(var t=d.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){u(e)})};return d.addEventListener&&d.addEventListener("load",a),d.onloadcssdefined=u,u(a),d};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this),function(t){var n=function(o,r){"use strict";if(o&&3===o.length){var a=t.navigator,i=t.document,c=t.Image,d=!(!i.createElementNS||!i.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!i.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||t.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),l=new c;l.onerror=function(){n.method="png",n.href=o[2],loadCSS(o[2])},l.onload=function(){var t=1===l.width&&1===l.height,a=o[t&&d?0:t?1:2];n.method=t&&d?"svg":t?"datapng":"png",n.href=a,e(loadCSS(a),r)},l.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",i.documentElement.className+=" grunticon"}};n.loadCSS=loadCSS,n.onloadCSS=e,t.grunticon=n}(this),function(e,t){"use strict";var n,o=t.document,r=function(e){if(o.attachEvent?"complete"===o.readyState:"loading"!==o.readyState)e();else{var t=!1;o.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},i=function(e,t){if(n&&!t)return n;n={};var o,r,a,i,c,d;if(!(o=e.sheet))return n;r=o.cssRules?o.cssRules:o.rules;for(var l=0;l<r.length;l++)a=r[l].cssText,i="grunticon:"+r[l].selectorText,(c=a.split(");")[0].match(/US\-ASCII\,([^"']+)/))&&c[1]&&(d=decodeURIComponent(c[1]),n[i]=d);return n},c=function(e,t){var n,r,a,i,c;t?n=e:(t=e,n=o),i="data-grunticon-embed";for(var d in t){c=d.slice("grunticon:".length);try{r=n.querySelectorAll(c)}catch(e){continue}a=[];for(var l=0;l<r.length;l++)null!==r[l].getAttribute(i)&&a.push(r[l]);if(a.length)for(l=0;l<a.length;l++)a[l].innerHTML=t[d],a[l].style.backgroundImage="none",a[l].removeAttribute(i)}return a},d=function(t,n){"svg"===e.method&&r(function(){var o=i(a(e.href));"function"==typeof n?(c(t,o),n()):c(o),"function"==typeof t&&t()})};e.embedIcons=c,e.getCSS=a,e.getIcons=i,e.ready=r,e.svgLoadedCallback=d,e.embedSVG=d}(grunticon,this)}();
+		grunticon(["assets/css/symbols.data.svg.css", "assets/css/symbols.data.png.css", "assets/css/symbols.fallback.css"], grunticon.svgLoadedCallback);
+	</script>
+	<noscript><link href="assets/css/symbols.fallback.css" rel="stylesheet"></noscript>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<a class="nav" href="//westpaccxteam.github.io/GUI-source/">
+				&#8672; Back to the GUI source list
+			</a>
+			<h1 class="headline brand-font">Testing icons v2.0.2 WBC</h1>
+		</div>
+	</header>
+
+	<main class="container">
+<h2>Background method</h2>
+
+<!-- EXTRA SMALL -->
+<h3>Extra small (12px)</h3>
+<span class="icon icon-xsmall icon-loading"></span>
+<div class="dark-background"><span class="icon icon-xsmall icon-loading-inverse"></span></div>
+<span class="icon icon-xsmall icon-accessibility"></span>
+<span class="icon icon-xsmall icon-account"></span>
+<span class="icon icon-xsmall icon-add-circle"></span>
+<span class="icon icon-xsmall icon-add"></span>
+<span class="icon icon-xsmall icon-alert"></span>
+<span class="icon icon-xsmall icon-android"></span>
+<span class="icon icon-xsmall icon-apple"></span>
+<span class="icon icon-xsmall icon-arrow-left"></span>
+<span class="icon icon-xsmall icon-arrow-right"></span>
+<span class="icon icon-xsmall icon-atm"></span>
+<span class="icon icon-xsmall icon-australia"></span>
+<span class="icon icon-xsmall icon-backspace"></span>
+<span class="icon icon-xsmall icon-bank"></span>
+<span class="icon icon-xsmall icon-bar-chart"></span>
+<span class="icon icon-xsmall icon-book"></span>
+<span class="icon icon-xsmall icon-bpay"></span>
+<span class="icon icon-xsmall icon-business-person"></span>
+<span class="icon icon-xsmall icon-cafe"></span>
+<span class="icon icon-xsmall icon-calculator"></span>
+<span class="icon icon-xsmall icon-calendar"></span>
+<span class="icon icon-xsmall icon-camera"></span>
+<span class="icon icon-xsmall icon-car"></span>
+<span class="icon icon-xsmall icon-chat"></span>
+<span class="icon icon-xsmall icon-clock"></span>
+<span class="icon icon-xsmall icon-close"></span>
+<span class="icon icon-xsmall icon-compass"></span>
+<span class="icon icon-xsmall icon-contact"></span>
+<span class="icon icon-xsmall icon-credit-card"></span>
+<span class="icon icon-xsmall icon-cube"></span>
+<span class="icon icon-xsmall icon-delete"></span>
+<span class="icon icon-xsmall icon-desktop"></span>
+<span class="icon icon-xsmall icon-dollar"></span>
+<span class="icon icon-xsmall icon-download-file"></span>
+<span class="icon icon-xsmall icon-download"></span>
+<span class="icon icon-xsmall icon-drag"></span>
+<span class="icon icon-xsmall icon-drop-down"></span>
+<span class="icon icon-xsmall icon-drop-up"></span>
+<span class="icon icon-xsmall icon-dropbox"></span>
+<span class="icon icon-xsmall icon-edit"></span>
+<span class="icon icon-xsmall icon-eftpos"></span>
+<span class="icon icon-xsmall icon-email"></span>
+<span class="icon icon-xsmall icon-error"></span>
+<span class="icon icon-xsmall icon-excel-file"></span>
+<span class="icon icon-xsmall icon-exit"></span>
+<span class="icon icon-xsmall icon-expand-less"></span>
+<span class="icon icon-xsmall icon-expand-more"></span>
+<span class="icon icon-xsmall icon-face-happy"></span>
+<span class="icon icon-xsmall icon-facebook"></span>
+<span class="icon icon-xsmall icon-favourite"></span>
+<span class="icon icon-xsmall icon-filter"></span>
+<span class="icon icon-xsmall icon-fingerprint"></span>
+<span class="icon icon-xsmall icon-future-clock"></span>
+<span class="icon icon-xsmall icon-generic-file"></span>
+<span class="icon icon-xsmall icon-geolocation"></span>
+<span class="icon icon-xsmall icon-gift"></span>
+<span class="icon icon-xsmall icon-github"></span>
+<span class="icon icon-xsmall icon-global"></span>
+<span class="icon icon-xsmall icon-google-plus"></span>
+<span class="icon icon-xsmall icon-grid"></span>
+<span class="icon icon-xsmall icon-growth"></span>
+<span class="icon icon-xsmall icon-hamburger-menu"></span>
+<span class="icon icon-xsmall icon-headset"></span>
+<span class="icon icon-xsmall icon-help"></span>
+<span class="icon icon-xsmall icon-history-clock"></span>
+<span class="icon icon-xsmall icon-house"></span>
+<span class="icon icon-xsmall icon-id-card"></span>
+<span class="icon icon-xsmall icon-image-square"></span>
+<span class="icon icon-xsmall icon-info"></span>
+<span class="icon icon-xsmall icon-instagram"></span>
+<span class="icon icon-xsmall icon-invest"></span>
+<span class="icon icon-xsmall icon-key"></span>
+<span class="icon icon-xsmall icon-keyhole"></span>
+<span class="icon icon-xsmall icon-light-bulb"></span>
+<span class="icon icon-xsmall icon-limit"></span>
+<span class="icon icon-xsmall icon-link"></span>
+<span class="icon icon-xsmall icon-linkedin"></span>
+<span class="icon icon-xsmall icon-list"></span>
+<span class="icon icon-xsmall icon-live-chat"></span>
+<span class="icon icon-xsmall icon-map-pin"></span>
+<span class="icon icon-xsmall icon-map"></span>
+<span class="icon icon-xsmall icon-message"></span>
+<span class="icon icon-xsmall icon-mobile-pay"></span>
+<span class="icon icon-xsmall icon-money-in"></span>
+<span class="icon icon-xsmall icon-money-out"></span>
+<span class="icon icon-xsmall icon-more-horiz"></span>
+<span class="icon icon-xsmall icon-more-vert"></span>
+<span class="icon icon-xsmall icon-move-from"></span>
+<span class="icon icon-xsmall icon-move-to"></span>
+<span class="icon icon-xsmall icon-new-content"></span>
+<span class="icon icon-xsmall icon-new-window"></span>
+<span class="icon icon-xsmall icon-notification-active"></span>
+<span class="icon icon-xsmall icon-notification-off"></span>
+<span class="icon icon-xsmall icon-notification"></span>
+<span class="icon icon-xsmall icon-office"></span>
+<span class="icon icon-xsmall icon-open-browser"></span>
+<span class="icon icon-xsmall icon-padlock-open"></span>
+<span class="icon icon-xsmall icon-padlock"></span>
+<span class="icon icon-xsmall icon-pause-circle"></span>
+<span class="icon icon-xsmall icon-pause"></span>
+<span class="icon icon-xsmall icon-pay"></span>
+<span class="icon icon-xsmall icon-pay-to-mobile"></span>
+<span class="icon icon-xsmall icon-paypass"></span>
+<span class="icon icon-xsmall icon-pdf-file"></span>
+<span class="icon icon-xsmall icon-pending"></span>
+<span class="icon icon-xsmall icon-people"></span>
+<span class="icon icon-xsmall icon-percent"></span>
+<span class="icon icon-xsmall icon-person"></span>
+<span class="icon icon-xsmall icon-phone"></span>
+<span class="icon icon-xsmall icon-pie-chart"></span>
+<span class="icon icon-xsmall icon-plane"></span>
+<span class="icon icon-xsmall icon-play-circle"></span>
+<span class="icon icon-xsmall icon-play"></span>
+<span class="icon icon-xsmall icon-print"></span>
+<span class="icon icon-xsmall icon-progress"></span>
+<span class="icon icon-xsmall icon-quick-balance"></span>
+<span class="icon icon-xsmall icon-receipt"></span>
+<span class="icon icon-xsmall icon-refresh"></span>
+<span class="icon icon-xsmall icon-remove-circle"></span>
+<span class="icon icon-xsmall icon-remove"></span>
+<span class="icon icon-xsmall icon-rss"></span>
+<span class="icon icon-xsmall icon-sd-storage"></span>
+<span class="icon icon-xsmall icon-search"></span>
+<span class="icon icon-xsmall icon-security"></span>
+<span class="icon icon-xsmall icon-service-bell"></span>
+<span class="icon icon-xsmall icon-settings"></span>
+<span class="icon icon-xsmall icon-share"></span>
+<span class="icon icon-xsmall icon-shop"></span>
+<span class="icon icon-xsmall icon-sim-card"></span>
+<span class="icon icon-xsmall icon-slack"></span>
+<span class="icon icon-xsmall icon-sms"></span>
+<span class="icon icon-xsmall icon-star1"></span>
+<span class="icon icon-xsmall icon-star2"></span>
+<span class="icon icon-xsmall icon-star3"></span>
+<span class="icon icon-xsmall icon-stopwatch"></span>
+<span class="icon icon-xsmall icon-super"></span>
+<span class="icon icon-xsmall icon-switch"></span>
+<span class="icon icon-xsmall icon-tablet"></span>
+<span class="icon icon-xsmall icon-take-out"></span>
+<span class="icon icon-xsmall icon-telephone"></span>
+<span class="icon icon-xsmall icon-thumb-down"></span>
+<span class="icon icon-xsmall icon-thumb-up"></span>
+<span class="icon icon-xsmall icon-tick"></span>
+<span class="icon icon-xsmall icon-transfer"></span>
+<span class="icon icon-xsmall icon-transport"></span>
+<span class="icon icon-xsmall icon-twitter"></span>
+<span class="icon icon-xsmall icon-umbrella"></span>
+<span class="icon icon-xsmall icon-upload"></span>
+<span class="icon icon-xsmall icon-verified"></span>
+<span class="icon icon-xsmall icon-video"></span>
+<span class="icon icon-xsmall icon-voice"></span>
+<span class="icon icon-xsmall icon-walk"></span>
+<span class="icon icon-xsmall icon-wallet"></span>
+<span class="icon icon-xsmall icon-watch"></span>
+<span class="icon icon-xsmall icon-wearable"></span>
+<span class="icon icon-xsmall icon-wheelchair"></span>
+<span class="icon icon-xsmall icon-windows-new"></span>
+<span class="icon icon-xsmall icon-word-file"></span>
+<span class="icon icon-xsmall icon-write"></span>
+<span class="icon icon-xsmall icon-yammer"></span>
+<span class="icon icon-xsmall icon-youtube"></span>
+<span class="icon icon-xsmall icon-zip-file"></span>
+
+<!-- SMALL -->
+<h3>Small (18px)</h3>
+<span class="icon icon-small icon-loading"></span>
+<div class="dark-background"><span class="icon icon-small icon-loading-inverse"></span></div>
+<span class="icon icon-small icon-accessibility"></span>
+<span class="icon icon-small icon-account"></span>
+<span class="icon icon-small icon-add-circle"></span>
+<span class="icon icon-small icon-add"></span>
+<span class="icon icon-small icon-alert"></span>
+<span class="icon icon-small icon-android"></span>
+<span class="icon icon-small icon-apple"></span>
+<span class="icon icon-small icon-arrow-left"></span>
+<span class="icon icon-small icon-arrow-right"></span>
+<span class="icon icon-small icon-atm"></span>
+<span class="icon icon-small icon-australia"></span>
+<span class="icon icon-small icon-backspace"></span>
+<span class="icon icon-small icon-bank"></span>
+<span class="icon icon-small icon-bar-chart"></span>
+<span class="icon icon-small icon-book"></span>
+<span class="icon icon-small icon-bpay"></span>
+<span class="icon icon-small icon-business-person"></span>
+<span class="icon icon-small icon-cafe"></span>
+<span class="icon icon-small icon-calculator"></span>
+<span class="icon icon-small icon-calendar"></span>
+<span class="icon icon-small icon-camera"></span>
+<span class="icon icon-small icon-car"></span>
+<span class="icon icon-small icon-chat"></span>
+<span class="icon icon-small icon-clock"></span>
+<span class="icon icon-small icon-close"></span>
+<span class="icon icon-small icon-compass"></span>
+<span class="icon icon-small icon-contact"></span>
+<span class="icon icon-small icon-credit-card"></span>
+<span class="icon icon-small icon-cube"></span>
+<span class="icon icon-small icon-delete"></span>
+<span class="icon icon-small icon-desktop"></span>
+<span class="icon icon-small icon-dollar"></span>
+<span class="icon icon-small icon-download-file"></span>
+<span class="icon icon-small icon-download"></span>
+<span class="icon icon-small icon-drag"></span>
+<span class="icon icon-small icon-drop-down"></span>
+<span class="icon icon-small icon-drop-up"></span>
+<span class="icon icon-small icon-dropbox"></span>
+<span class="icon icon-small icon-edit"></span>
+<span class="icon icon-small icon-eftpos"></span>
+<span class="icon icon-small icon-email"></span>
+<span class="icon icon-small icon-error"></span>
+<span class="icon icon-small icon-excel-file"></span>
+<span class="icon icon-small icon-exit"></span>
+<span class="icon icon-small icon-expand-less"></span>
+<span class="icon icon-small icon-expand-more"></span>
+<span class="icon icon-small icon-face-happy"></span>
+<span class="icon icon-small icon-facebook"></span>
+<span class="icon icon-small icon-favourite"></span>
+<span class="icon icon-small icon-filter"></span>
+<span class="icon icon-small icon-fingerprint"></span>
+<span class="icon icon-small icon-future-clock"></span>
+<span class="icon icon-small icon-generic-file"></span>
+<span class="icon icon-small icon-geolocation"></span>
+<span class="icon icon-small icon-gift"></span>
+<span class="icon icon-small icon-github"></span>
+<span class="icon icon-small icon-global"></span>
+<span class="icon icon-small icon-google-plus"></span>
+<span class="icon icon-small icon-grid"></span>
+<span class="icon icon-small icon-growth"></span>
+<span class="icon icon-small icon-hamburger-menu"></span>
+<span class="icon icon-small icon-headset"></span>
+<span class="icon icon-small icon-help"></span>
+<span class="icon icon-small icon-history-clock"></span>
+<span class="icon icon-small icon-house"></span>
+<span class="icon icon-small icon-id-card"></span>
+<span class="icon icon-small icon-image-square"></span>
+<span class="icon icon-small icon-info"></span>
+<span class="icon icon-small icon-instagram"></span>
+<span class="icon icon-small icon-invest"></span>
+<span class="icon icon-small icon-key"></span>
+<span class="icon icon-small icon-keyhole"></span>
+<span class="icon icon-small icon-light-bulb"></span>
+<span class="icon icon-small icon-limit"></span>
+<span class="icon icon-small icon-link"></span>
+<span class="icon icon-small icon-linkedin"></span>
+<span class="icon icon-small icon-list"></span>
+<span class="icon icon-small icon-live-chat"></span>
+<span class="icon icon-small icon-map-pin"></span>
+<span class="icon icon-small icon-map"></span>
+<span class="icon icon-small icon-message"></span>
+<span class="icon icon-small icon-mobile-pay"></span>
+<span class="icon icon-small icon-money-in"></span>
+<span class="icon icon-small icon-money-out"></span>
+<span class="icon icon-small icon-more-horiz"></span>
+<span class="icon icon-small icon-more-vert"></span>
+<span class="icon icon-small icon-move-from"></span>
+<span class="icon icon-small icon-move-to"></span>
+<span class="icon icon-small icon-new-content"></span>
+<span class="icon icon-small icon-new-window"></span>
+<span class="icon icon-small icon-notification-active"></span>
+<span class="icon icon-small icon-notification-off"></span>
+<span class="icon icon-small icon-notification"></span>
+<span class="icon icon-small icon-office"></span>
+<span class="icon icon-small icon-open-browser"></span>
+<span class="icon icon-small icon-padlock-open"></span>
+<span class="icon icon-small icon-padlock"></span>
+<span class="icon icon-small icon-pause-circle"></span>
+<span class="icon icon-small icon-pause"></span>
+<span class="icon icon-small icon-pay"></span>
+<span class="icon icon-small icon-pay-to-mobile"></span>
+<span class="icon icon-small icon-paypass"></span>
+<span class="icon icon-small icon-pdf-file"></span>
+<span class="icon icon-small icon-pending"></span>
+<span class="icon icon-small icon-people"></span>
+<span class="icon icon-small icon-percent"></span>
+<span class="icon icon-small icon-person"></span>
+<span class="icon icon-small icon-phone"></span>
+<span class="icon icon-small icon-pie-chart"></span>
+<span class="icon icon-small icon-plane"></span>
+<span class="icon icon-small icon-play-circle"></span>
+<span class="icon icon-small icon-play"></span>
+<span class="icon icon-small icon-print"></span>
+<span class="icon icon-small icon-progress"></span>
+<span class="icon icon-small icon-quick-balance"></span>
+<span class="icon icon-small icon-receipt"></span>
+<span class="icon icon-small icon-refresh"></span>
+<span class="icon icon-small icon-remove-circle"></span>
+<span class="icon icon-small icon-remove"></span>
+<span class="icon icon-small icon-rss"></span>
+<span class="icon icon-small icon-sd-storage"></span>
+<span class="icon icon-small icon-search"></span>
+<span class="icon icon-small icon-security"></span>
+<span class="icon icon-small icon-service-bell"></span>
+<span class="icon icon-small icon-settings"></span>
+<span class="icon icon-small icon-share"></span>
+<span class="icon icon-small icon-shop"></span>
+<span class="icon icon-small icon-sim-card"></span>
+<span class="icon icon-small icon-slack"></span>
+<span class="icon icon-small icon-sms"></span>
+<span class="icon icon-small icon-star1"></span>
+<span class="icon icon-small icon-star2"></span>
+<span class="icon icon-small icon-star3"></span>
+<span class="icon icon-small icon-stopwatch"></span>
+<span class="icon icon-small icon-super"></span>
+<span class="icon icon-small icon-switch"></span>
+<span class="icon icon-small icon-tablet"></span>
+<span class="icon icon-small icon-take-out"></span>
+<span class="icon icon-small icon-telephone"></span>
+<span class="icon icon-small icon-thumb-down"></span>
+<span class="icon icon-small icon-thumb-up"></span>
+<span class="icon icon-small icon-tick"></span>
+<span class="icon icon-small icon-transfer"></span>
+<span class="icon icon-small icon-transport"></span>
+<span class="icon icon-small icon-twitter"></span>
+<span class="icon icon-small icon-umbrella"></span>
+<span class="icon icon-small icon-upload"></span>
+<span class="icon icon-small icon-verified"></span>
+<span class="icon icon-small icon-video"></span>
+<span class="icon icon-small icon-voice"></span>
+<span class="icon icon-small icon-walk"></span>
+<span class="icon icon-small icon-wallet"></span>
+<span class="icon icon-small icon-watch"></span>
+<span class="icon icon-small icon-wearable"></span>
+<span class="icon icon-small icon-wheelchair"></span>
+<span class="icon icon-small icon-windows-new"></span>
+<span class="icon icon-small icon-word-file"></span>
+<span class="icon icon-small icon-write"></span>
+<span class="icon icon-small icon-yammer"></span>
+<span class="icon icon-small icon-youtube"></span>
+<span class="icon icon-small icon-zip-file"></span>
+
+<!-- MEDIUM (DEFAULT) -->
+<h3>Medium (24px) — default</h3>
+<span class="icon icon-loading"></span>
+<div class="dark-background"><span class="icon icon-loading-inverse"></span></div>
+<span class="icon icon-accessibility"></span>
+<span class="icon icon-account"></span>
+<span class="icon icon-add-circle"></span>
+<span class="icon icon-add"></span>
+<span class="icon icon-alert"></span>
+<span class="icon icon-android"></span>
+<span class="icon icon-apple"></span>
+<span class="icon icon-arrow-left"></span>
+<span class="icon icon-arrow-right"></span>
+<span class="icon icon-atm"></span>
+<span class="icon icon-australia"></span>
+<span class="icon icon-backspace"></span>
+<span class="icon icon-bank"></span>
+<span class="icon icon-bar-chart"></span>
+<span class="icon icon-book"></span>
+<span class="icon icon-bpay"></span>
+<span class="icon icon-business-person"></span>
+<span class="icon icon-cafe"></span>
+<span class="icon icon-calculator"></span>
+<span class="icon icon-calendar"></span>
+<span class="icon icon-camera"></span>
+<span class="icon icon-car"></span>
+<span class="icon icon-chat"></span>
+<span class="icon icon-clock"></span>
+<span class="icon icon-close"></span>
+<span class="icon icon-compass"></span>
+<span class="icon icon-contact"></span>
+<span class="icon icon-credit-card"></span>
+<span class="icon icon-cube"></span>
+<span class="icon icon-delete"></span>
+<span class="icon icon-desktop"></span>
+<span class="icon icon-dollar"></span>
+<span class="icon icon-download-file"></span>
+<span class="icon icon-download"></span>
+<span class="icon icon-drag"></span>
+<span class="icon icon-drop-down"></span>
+<span class="icon icon-drop-up"></span>
+<span class="icon icon-dropbox"></span>
+<span class="icon icon-edit"></span>
+<span class="icon icon-eftpos"></span>
+<span class="icon icon-email"></span>
+<span class="icon icon-error"></span>
+<span class="icon icon-excel-file"></span>
+<span class="icon icon-exit"></span>
+<span class="icon icon-expand-less"></span>
+<span class="icon icon-expand-more"></span>
+<span class="icon icon-face-happy"></span>
+<span class="icon icon-facebook"></span>
+<span class="icon icon-favourite"></span>
+<span class="icon icon-filter"></span>
+<span class="icon icon-fingerprint"></span>
+<span class="icon icon-future-clock"></span>
+<span class="icon icon-generic-file"></span>
+<span class="icon icon-geolocation"></span>
+<span class="icon icon-gift"></span>
+<span class="icon icon-github"></span>
+<span class="icon icon-global"></span>
+<span class="icon icon-google-plus"></span>
+<span class="icon icon-grid"></span>
+<span class="icon icon-growth"></span>
+<span class="icon icon-hamburger-menu"></span>
+<span class="icon icon-headset"></span>
+<span class="icon icon-help"></span>
+<span class="icon icon-history-clock"></span>
+<span class="icon icon-house"></span>
+<span class="icon icon-id-card"></span>
+<span class="icon icon-image-square"></span>
+<span class="icon icon-info"></span>
+<span class="icon icon-instagram"></span>
+<span class="icon icon-invest"></span>
+<span class="icon icon-key"></span>
+<span class="icon icon-keyhole"></span>
+<span class="icon icon-light-bulb"></span>
+<span class="icon icon-limit"></span>
+<span class="icon icon-link"></span>
+<span class="icon icon-linkedin"></span>
+<span class="icon icon-list"></span>
+<span class="icon icon-live-chat"></span>
+<span class="icon icon-map-pin"></span>
+<span class="icon icon-map"></span>
+<span class="icon icon-message"></span>
+<span class="icon icon-mobile-pay"></span>
+<span class="icon icon-money-in"></span>
+<span class="icon icon-money-out"></span>
+<span class="icon icon-more-horiz"></span>
+<span class="icon icon-more-vert"></span>
+<span class="icon icon-move-from"></span>
+<span class="icon icon-move-to"></span>
+<span class="icon icon-new-content"></span>
+<span class="icon icon-new-window"></span>
+<span class="icon icon-notification-active"></span>
+<span class="icon icon-notification-off"></span>
+<span class="icon icon-notification"></span>
+<span class="icon icon-office"></span>
+<span class="icon icon-open-browser"></span>
+<span class="icon icon-padlock-open"></span>
+<span class="icon icon-padlock"></span>
+<span class="icon icon-pause-circle"></span>
+<span class="icon icon-pause"></span>
+<span class="icon icon-pay"></span>
+<span class="icon icon-pay-to-mobile"></span>
+<span class="icon icon-paypass"></span>
+<span class="icon icon-pdf-file"></span>
+<span class="icon icon-pending"></span>
+<span class="icon icon-people"></span>
+<span class="icon icon-percent"></span>
+<span class="icon icon-person"></span>
+<span class="icon icon-phone"></span>
+<span class="icon icon-pie-chart"></span>
+<span class="icon icon-plane"></span>
+<span class="icon icon-play-circle"></span>
+<span class="icon icon-play"></span>
+<span class="icon icon-print"></span>
+<span class="icon icon-progress"></span>
+<span class="icon icon-quick-balance"></span>
+<span class="icon icon-receipt"></span>
+<span class="icon icon-refresh"></span>
+<span class="icon icon-remove-circle"></span>
+<span class="icon icon-remove"></span>
+<span class="icon icon-rss"></span>
+<span class="icon icon-sd-storage"></span>
+<span class="icon icon-search"></span>
+<span class="icon icon-security"></span>
+<span class="icon icon-service-bell"></span>
+<span class="icon icon-settings"></span>
+<span class="icon icon-share"></span>
+<span class="icon icon-shop"></span>
+<span class="icon icon-sim-card"></span>
+<span class="icon icon-slack"></span>
+<span class="icon icon-sms"></span>
+<span class="icon icon-star1"></span>
+<span class="icon icon-star2"></span>
+<span class="icon icon-star3"></span>
+<span class="icon icon-stopwatch"></span>
+<span class="icon icon-super"></span>
+<span class="icon icon-switch"></span>
+<span class="icon icon-tablet"></span>
+<span class="icon icon-take-out"></span>
+<span class="icon icon-telephone"></span>
+<span class="icon icon-thumb-down"></span>
+<span class="icon icon-thumb-up"></span>
+<span class="icon icon-tick"></span>
+<span class="icon icon-transfer"></span>
+<span class="icon icon-transport"></span>
+<span class="icon icon-twitter"></span>
+<span class="icon icon-umbrella"></span>
+<span class="icon icon-upload"></span>
+<span class="icon icon-verified"></span>
+<span class="icon icon-video"></span>
+<span class="icon icon-voice"></span>
+<span class="icon icon-walk"></span>
+<span class="icon icon-wallet"></span>
+<span class="icon icon-watch"></span>
+<span class="icon icon-wearable"></span>
+<span class="icon icon-wheelchair"></span>
+<span class="icon icon-windows-new"></span>
+<span class="icon icon-word-file"></span>
+<span class="icon icon-write"></span>
+<span class="icon icon-yammer"></span>
+<span class="icon icon-youtube"></span>
+<span class="icon icon-zip-file"></span>
+
+<!-- LARGE -->
+<h3>Large 36px</h3>
+<span class="icon icon-large icon-loading"></span>
+<div class="dark-background"><span class="icon icon-large icon-loading-inverse"></span></div>
+<span class="icon icon-large icon-accessibility"></span>
+<span class="icon icon-large icon-account"></span>
+<span class="icon icon-large icon-add-circle"></span>
+<span class="icon icon-large icon-add"></span>
+<span class="icon icon-large icon-alert"></span>
+<span class="icon icon-large icon-android"></span>
+<span class="icon icon-large icon-apple"></span>
+<span class="icon icon-large icon-arrow-left"></span>
+<span class="icon icon-large icon-arrow-right"></span>
+<span class="icon icon-large icon-atm"></span>
+<span class="icon icon-large icon-australia"></span>
+<span class="icon icon-large icon-backspace"></span>
+<span class="icon icon-large icon-bank"></span>
+<span class="icon icon-large icon-bar-chart"></span>
+<span class="icon icon-large icon-book"></span>
+<span class="icon icon-large icon-bpay"></span>
+<span class="icon icon-large icon-business-person"></span>
+<span class="icon icon-large icon-cafe"></span>
+<span class="icon icon-large icon-calculator"></span>
+<span class="icon icon-large icon-calendar"></span>
+<span class="icon icon-large icon-camera"></span>
+<span class="icon icon-large icon-car"></span>
+<span class="icon icon-large icon-chat"></span>
+<span class="icon icon-large icon-clock"></span>
+<span class="icon icon-large icon-close"></span>
+<span class="icon icon-large icon-compass"></span>
+<span class="icon icon-large icon-contact"></span>
+<span class="icon icon-large icon-credit-card"></span>
+<span class="icon icon-large icon-cube"></span>
+<span class="icon icon-large icon-delete"></span>
+<span class="icon icon-large icon-desktop"></span>
+<span class="icon icon-large icon-dollar"></span>
+<span class="icon icon-large icon-download-file"></span>
+<span class="icon icon-large icon-download"></span>
+<span class="icon icon-large icon-drag"></span>
+<span class="icon icon-large icon-drop-down"></span>
+<span class="icon icon-large icon-drop-up"></span>
+<span class="icon icon-large icon-dropbox"></span>
+<span class="icon icon-large icon-edit"></span>
+<span class="icon icon-large icon-eftpos"></span>
+<span class="icon icon-large icon-email"></span>
+<span class="icon icon-large icon-error"></span>
+<span class="icon icon-large icon-excel-file"></span>
+<span class="icon icon-large icon-exit"></span>
+<span class="icon icon-large icon-expand-less"></span>
+<span class="icon icon-large icon-expand-more"></span>
+<span class="icon icon-large icon-face-happy"></span>
+<span class="icon icon-large icon-facebook"></span>
+<span class="icon icon-large icon-favourite"></span>
+<span class="icon icon-large icon-filter"></span>
+<span class="icon icon-large icon-fingerprint"></span>
+<span class="icon icon-large icon-future-clock"></span>
+<span class="icon icon-large icon-generic-file"></span>
+<span class="icon icon-large icon-geolocation"></span>
+<span class="icon icon-large icon-gift"></span>
+<span class="icon icon-large icon-github"></span>
+<span class="icon icon-large icon-global"></span>
+<span class="icon icon-large icon-google-plus"></span>
+<span class="icon icon-large icon-grid"></span>
+<span class="icon icon-large icon-growth"></span>
+<span class="icon icon-large icon-hamburger-menu"></span>
+<span class="icon icon-large icon-headset"></span>
+<span class="icon icon-large icon-help"></span>
+<span class="icon icon-large icon-history-clock"></span>
+<span class="icon icon-large icon-house"></span>
+<span class="icon icon-large icon-id-card"></span>
+<span class="icon icon-large icon-image-square"></span>
+<span class="icon icon-large icon-info"></span>
+<span class="icon icon-large icon-instagram"></span>
+<span class="icon icon-large icon-invest"></span>
+<span class="icon icon-large icon-key"></span>
+<span class="icon icon-large icon-keyhole"></span>
+<span class="icon icon-large icon-light-bulb"></span>
+<span class="icon icon-large icon-limit"></span>
+<span class="icon icon-large icon-link"></span>
+<span class="icon icon-large icon-linkedin"></span>
+<span class="icon icon-large icon-list"></span>
+<span class="icon icon-large icon-live-chat"></span>
+<span class="icon icon-large icon-map-pin"></span>
+<span class="icon icon-large icon-map"></span>
+<span class="icon icon-large icon-message"></span>
+<span class="icon icon-large icon-mobile-pay"></span>
+<span class="icon icon-large icon-money-in"></span>
+<span class="icon icon-large icon-money-out"></span>
+<span class="icon icon-large icon-more-horiz"></span>
+<span class="icon icon-large icon-more-vert"></span>
+<span class="icon icon-large icon-move-from"></span>
+<span class="icon icon-large icon-move-to"></span>
+<span class="icon icon-large icon-new-content"></span>
+<span class="icon icon-large icon-new-window"></span>
+<span class="icon icon-large icon-notification-active"></span>
+<span class="icon icon-large icon-notification-off"></span>
+<span class="icon icon-large icon-notification"></span>
+<span class="icon icon-large icon-office"></span>
+<span class="icon icon-large icon-open-browser"></span>
+<span class="icon icon-large icon-padlock-open"></span>
+<span class="icon icon-large icon-padlock"></span>
+<span class="icon icon-large icon-pause-circle"></span>
+<span class="icon icon-large icon-pause"></span>
+<span class="icon icon-large icon-pay"></span>
+<span class="icon icon-large icon-pay-to-mobile"></span>
+<span class="icon icon-large icon-paypass"></span>
+<span class="icon icon-large icon-pdf-file"></span>
+<span class="icon icon-large icon-pending"></span>
+<span class="icon icon-large icon-people"></span>
+<span class="icon icon-large icon-percent"></span>
+<span class="icon icon-large icon-person"></span>
+<span class="icon icon-large icon-phone"></span>
+<span class="icon icon-large icon-pie-chart"></span>
+<span class="icon icon-large icon-plane"></span>
+<span class="icon icon-large icon-play-circle"></span>
+<span class="icon icon-large icon-play"></span>
+<span class="icon icon-large icon-print"></span>
+<span class="icon icon-large icon-progress"></span>
+<span class="icon icon-large icon-quick-balance"></span>
+<span class="icon icon-large icon-receipt"></span>
+<span class="icon icon-large icon-refresh"></span>
+<span class="icon icon-large icon-remove-circle"></span>
+<span class="icon icon-large icon-remove"></span>
+<span class="icon icon-large icon-rss"></span>
+<span class="icon icon-large icon-sd-storage"></span>
+<span class="icon icon-large icon-search"></span>
+<span class="icon icon-large icon-security"></span>
+<span class="icon icon-large icon-service-bell"></span>
+<span class="icon icon-large icon-settings"></span>
+<span class="icon icon-large icon-share"></span>
+<span class="icon icon-large icon-shop"></span>
+<span class="icon icon-large icon-sim-card"></span>
+<span class="icon icon-large icon-slack"></span>
+<span class="icon icon-large icon-sms"></span>
+<span class="icon icon-large icon-star1"></span>
+<span class="icon icon-large icon-star2"></span>
+<span class="icon icon-large icon-star3"></span>
+<span class="icon icon-large icon-stopwatch"></span>
+<span class="icon icon-large icon-super"></span>
+<span class="icon icon-large icon-switch"></span>
+<span class="icon icon-large icon-tablet"></span>
+<span class="icon icon-large icon-take-out"></span>
+<span class="icon icon-large icon-telephone"></span>
+<span class="icon icon-large icon-thumb-down"></span>
+<span class="icon icon-large icon-thumb-up"></span>
+<span class="icon icon-large icon-tick"></span>
+<span class="icon icon-large icon-transfer"></span>
+<span class="icon icon-large icon-transport"></span>
+<span class="icon icon-large icon-twitter"></span>
+<span class="icon icon-large icon-umbrella"></span>
+<span class="icon icon-large icon-upload"></span>
+<span class="icon icon-large icon-verified"></span>
+<span class="icon icon-large icon-video"></span>
+<span class="icon icon-large icon-voice"></span>
+<span class="icon icon-large icon-walk"></span>
+<span class="icon icon-large icon-wallet"></span>
+<span class="icon icon-large icon-watch"></span>
+<span class="icon icon-large icon-wearable"></span>
+<span class="icon icon-large icon-wheelchair"></span>
+<span class="icon icon-large icon-windows-new"></span>
+<span class="icon icon-large icon-word-file"></span>
+<span class="icon icon-large icon-write"></span>
+<span class="icon icon-large icon-yammer"></span>
+<span class="icon icon-large icon-youtube"></span>
+<span class="icon icon-large icon-zip-file"></span>
+
+<!-- EXTRA LARGE -->
+<h3>Extra large (48px)</h3>
+<span class="icon icon-xlarge icon-loading"></span>
+<div class="dark-background"><span class="icon icon-xlarge icon-loading-inverse"></span></div>
+<span class="icon icon-xlarge icon-accessibility"></span>
+<span class="icon icon-xlarge icon-account"></span>
+<span class="icon icon-xlarge icon-add-circle"></span>
+<span class="icon icon-xlarge icon-add"></span>
+<span class="icon icon-xlarge icon-alert"></span>
+<span class="icon icon-xlarge icon-android"></span>
+<span class="icon icon-xlarge icon-apple"></span>
+<span class="icon icon-xlarge icon-arrow-left"></span>
+<span class="icon icon-xlarge icon-arrow-right"></span>
+<span class="icon icon-xlarge icon-atm"></span>
+<span class="icon icon-xlarge icon-australia"></span>
+<span class="icon icon-xlarge icon-backspace"></span>
+<span class="icon icon-xlarge icon-bank"></span>
+<span class="icon icon-xlarge icon-bar-chart"></span>
+<span class="icon icon-xlarge icon-book"></span>
+<span class="icon icon-xlarge icon-bpay"></span>
+<span class="icon icon-xlarge icon-business-person"></span>
+<span class="icon icon-xlarge icon-cafe"></span>
+<span class="icon icon-xlarge icon-calculator"></span>
+<span class="icon icon-xlarge icon-calendar"></span>
+<span class="icon icon-xlarge icon-camera"></span>
+<span class="icon icon-xlarge icon-car"></span>
+<span class="icon icon-xlarge icon-chat"></span>
+<span class="icon icon-xlarge icon-clock"></span>
+<span class="icon icon-xlarge icon-close"></span>
+<span class="icon icon-xlarge icon-compass"></span>
+<span class="icon icon-xlarge icon-contact"></span>
+<span class="icon icon-xlarge icon-credit-card"></span>
+<span class="icon icon-xlarge icon-cube"></span>
+<span class="icon icon-xlarge icon-delete"></span>
+<span class="icon icon-xlarge icon-desktop"></span>
+<span class="icon icon-xlarge icon-dollar"></span>
+<span class="icon icon-xlarge icon-download-file"></span>
+<span class="icon icon-xlarge icon-download"></span>
+<span class="icon icon-xlarge icon-drag"></span>
+<span class="icon icon-xlarge icon-drop-down"></span>
+<span class="icon icon-xlarge icon-drop-up"></span>
+<span class="icon icon-xlarge icon-dropbox"></span>
+<span class="icon icon-xlarge icon-edit"></span>
+<span class="icon icon-xlarge icon-eftpos"></span>
+<span class="icon icon-xlarge icon-email"></span>
+<span class="icon icon-xlarge icon-error"></span>
+<span class="icon icon-xlarge icon-excel-file"></span>
+<span class="icon icon-xlarge icon-exit"></span>
+<span class="icon icon-xlarge icon-expand-less"></span>
+<span class="icon icon-xlarge icon-expand-more"></span>
+<span class="icon icon-xlarge icon-face-happy"></span>
+<span class="icon icon-xlarge icon-facebook"></span>
+<span class="icon icon-xlarge icon-favourite"></span>
+<span class="icon icon-xlarge icon-filter"></span>
+<span class="icon icon-xlarge icon-fingerprint"></span>
+<span class="icon icon-xlarge icon-future-clock"></span>
+<span class="icon icon-xlarge icon-generic-file"></span>
+<span class="icon icon-xlarge icon-geolocation"></span>
+<span class="icon icon-xlarge icon-gift"></span>
+<span class="icon icon-xlarge icon-github"></span>
+<span class="icon icon-xlarge icon-global"></span>
+<span class="icon icon-xlarge icon-google-plus"></span>
+<span class="icon icon-xlarge icon-grid"></span>
+<span class="icon icon-xlarge icon-growth"></span>
+<span class="icon icon-xlarge icon-hamburger-menu"></span>
+<span class="icon icon-xlarge icon-headset"></span>
+<span class="icon icon-xlarge icon-help"></span>
+<span class="icon icon-xlarge icon-history-clock"></span>
+<span class="icon icon-xlarge icon-house"></span>
+<span class="icon icon-xlarge icon-id-card"></span>
+<span class="icon icon-xlarge icon-image-square"></span>
+<span class="icon icon-xlarge icon-info"></span>
+<span class="icon icon-xlarge icon-instagram"></span>
+<span class="icon icon-xlarge icon-invest"></span>
+<span class="icon icon-xlarge icon-key"></span>
+<span class="icon icon-xlarge icon-keyhole"></span>
+<span class="icon icon-xlarge icon-light-bulb"></span>
+<span class="icon icon-xlarge icon-limit"></span>
+<span class="icon icon-xlarge icon-link"></span>
+<span class="icon icon-xlarge icon-linkedin"></span>
+<span class="icon icon-xlarge icon-list"></span>
+<span class="icon icon-xlarge icon-live-chat"></span>
+<span class="icon icon-xlarge icon-map-pin"></span>
+<span class="icon icon-xlarge icon-map"></span>
+<span class="icon icon-xlarge icon-message"></span>
+<span class="icon icon-xlarge icon-mobile-pay"></span>
+<span class="icon icon-xlarge icon-money-in"></span>
+<span class="icon icon-xlarge icon-money-out"></span>
+<span class="icon icon-xlarge icon-more-horiz"></span>
+<span class="icon icon-xlarge icon-more-vert"></span>
+<span class="icon icon-xlarge icon-move-from"></span>
+<span class="icon icon-xlarge icon-move-to"></span>
+<span class="icon icon-xlarge icon-new-content"></span>
+<span class="icon icon-xlarge icon-new-window"></span>
+<span class="icon icon-xlarge icon-notification-active"></span>
+<span class="icon icon-xlarge icon-notification-off"></span>
+<span class="icon icon-xlarge icon-notification"></span>
+<span class="icon icon-xlarge icon-office"></span>
+<span class="icon icon-xlarge icon-open-browser"></span>
+<span class="icon icon-xlarge icon-padlock-open"></span>
+<span class="icon icon-xlarge icon-padlock"></span>
+<span class="icon icon-xlarge icon-pause-circle"></span>
+<span class="icon icon-xlarge icon-pause"></span>
+<span class="icon icon-xlarge icon-pay"></span>
+<span class="icon icon-xlarge icon-pay-to-mobile"></span>
+<span class="icon icon-xlarge icon-paypass"></span>
+<span class="icon icon-xlarge icon-pdf-file"></span>
+<span class="icon icon-xlarge icon-pending"></span>
+<span class="icon icon-xlarge icon-people"></span>
+<span class="icon icon-xlarge icon-percent"></span>
+<span class="icon icon-xlarge icon-person"></span>
+<span class="icon icon-xlarge icon-phone"></span>
+<span class="icon icon-xlarge icon-pie-chart"></span>
+<span class="icon icon-xlarge icon-plane"></span>
+<span class="icon icon-xlarge icon-play-circle"></span>
+<span class="icon icon-xlarge icon-play"></span>
+<span class="icon icon-xlarge icon-print"></span>
+<span class="icon icon-xlarge icon-progress"></span>
+<span class="icon icon-xlarge icon-quick-balance"></span>
+<span class="icon icon-xlarge icon-receipt"></span>
+<span class="icon icon-xlarge icon-refresh"></span>
+<span class="icon icon-xlarge icon-remove-circle"></span>
+<span class="icon icon-xlarge icon-remove"></span>
+<span class="icon icon-xlarge icon-rss"></span>
+<span class="icon icon-xlarge icon-sd-storage"></span>
+<span class="icon icon-xlarge icon-search"></span>
+<span class="icon icon-xlarge icon-security"></span>
+<span class="icon icon-xlarge icon-service-bell"></span>
+<span class="icon icon-xlarge icon-settings"></span>
+<span class="icon icon-xlarge icon-share"></span>
+<span class="icon icon-xlarge icon-shop"></span>
+<span class="icon icon-xlarge icon-sim-card"></span>
+<span class="icon icon-xlarge icon-slack"></span>
+<span class="icon icon-xlarge icon-sms"></span>
+<span class="icon icon-xlarge icon-star1"></span>
+<span class="icon icon-xlarge icon-star2"></span>
+<span class="icon icon-xlarge icon-star3"></span>
+<span class="icon icon-xlarge icon-stopwatch"></span>
+<span class="icon icon-xlarge icon-super"></span>
+<span class="icon icon-xlarge icon-switch"></span>
+<span class="icon icon-xlarge icon-tablet"></span>
+<span class="icon icon-xlarge icon-take-out"></span>
+<span class="icon icon-xlarge icon-telephone"></span>
+<span class="icon icon-xlarge icon-thumb-down"></span>
+<span class="icon icon-xlarge icon-thumb-up"></span>
+<span class="icon icon-xlarge icon-tick"></span>
+<span class="icon icon-xlarge icon-transfer"></span>
+<span class="icon icon-xlarge icon-transport"></span>
+<span class="icon icon-xlarge icon-twitter"></span>
+<span class="icon icon-xlarge icon-umbrella"></span>
+<span class="icon icon-xlarge icon-upload"></span>
+<span class="icon icon-xlarge icon-verified"></span>
+<span class="icon icon-xlarge icon-video"></span>
+<span class="icon icon-xlarge icon-voice"></span>
+<span class="icon icon-xlarge icon-walk"></span>
+<span class="icon icon-xlarge icon-wallet"></span>
+<span class="icon icon-xlarge icon-watch"></span>
+<span class="icon icon-xlarge icon-wearable"></span>
+<span class="icon icon-xlarge icon-wheelchair"></span>
+<span class="icon icon-xlarge icon-windows-new"></span>
+<span class="icon icon-xlarge icon-word-file"></span>
+<span class="icon icon-xlarge icon-write"></span>
+<span class="icon icon-xlarge icon-yammer"></span>
+<span class="icon icon-xlarge icon-youtube"></span>
+<span class="icon icon-xlarge icon-zip-file"></span>
+
+<hr>
+
+<h2>Direct embedding method</h2>
+
+<!-- EXTRA SMALL -->
+<h3>Extra small (12px)</h3>
+<span class="icon icon-xsmall icon-accessibility" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-account" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-add-circle" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-add" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-alert" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-android" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-apple" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-arrow-left" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-arrow-right" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-atm" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-australia" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-backspace" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-bank" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-bar-chart" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-book" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-bpay" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-business-person" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-cafe" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-calculator" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-calendar" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-camera" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-car" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-chat" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-clock" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-close" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-compass" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-contact" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-credit-card" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-cube" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-delete" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-desktop" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-dollar" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-download-file" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-download" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-drag" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-drop-down" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-drop-up" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-dropbox" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-edit" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-eftpos" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-email" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-error" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-excel-file" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-exit" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-expand-less" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-expand-more" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-face-happy" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-facebook" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-favourite" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-filter" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-fingerprint" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-future-clock" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-generic-file" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-geolocation" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-gift" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-github" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-global" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-google-plus" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-grid" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-growth" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-hamburger-menu" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-headset" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-help" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-history-clock" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-house" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-id-card" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-image-square" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-info" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-instagram" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-invest" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-key" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-keyhole" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-light-bulb" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-limit" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-link" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-linkedin" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-list" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-live-chat" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-map-pin" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-map" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-message" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-mobile-pay" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-money-in" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-money-out" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-more-horiz" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-more-vert" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-move-from" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-move-to" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-new-content" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-new-window" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-notification-active" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-notification-off" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-notification" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-office" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-open-browser" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-padlock-open" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-padlock" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-pause-circle" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-pause" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-pay" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-pay-to-mobile" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-paypass" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-pdf-file" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-pending" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-people" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-percent" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-person" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-phone" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-pie-chart" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-plane" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-play-circle" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-play" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-print" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-progress" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-quick-balance" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-receipt" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-refresh" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-remove-circle" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-remove" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-rss" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-sd-storage" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-search" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-security" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-service-bell" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-settings" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-share" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-shop" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-sim-card" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-slack" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-sms" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-star1" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-star2" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-star3" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-stopwatch" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-super" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-switch" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-tablet" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-take-out" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-telephone" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-thumb-down" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-thumb-up" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-tick" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-transfer" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-transport" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-twitter" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-umbrella" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-upload" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-verified" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-video" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-voice" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-walk" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-wallet" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-watch" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-wearable" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-wheelchair" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-windows-new" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-word-file" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-write" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-yammer" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-youtube" data-grunticon-embed></span>
+<span class="icon icon-xsmall icon-zip-file" data-grunticon-embed></span>
+
+<p>
+  <button type="button" class="btn btn-primary btn-small">
+    <span class="btn-text">Primary Small</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-hero btn-small">
+    <span class="btn-text">Hero Small</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-neutral btn-small">
+    <span class="btn-text">Neutral Small</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-faint btn-small">
+    <span class="btn-text">Faint Small</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-link btn-small">
+    <span class="btn-text">Link Small</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+</p>
+
+<!-- SMALL -->
+<h3>Small (18px)</h3>
+<span class="icon icon-small icon-accessibility" data-grunticon-embed></span>
+<span class="icon icon-small icon-account" data-grunticon-embed></span>
+<span class="icon icon-small icon-add-circle" data-grunticon-embed></span>
+<span class="icon icon-small icon-add" data-grunticon-embed></span>
+<span class="icon icon-small icon-alert" data-grunticon-embed></span>
+<span class="icon icon-small icon-android" data-grunticon-embed></span>
+<span class="icon icon-small icon-apple" data-grunticon-embed></span>
+<span class="icon icon-small icon-arrow-left" data-grunticon-embed></span>
+<span class="icon icon-small icon-arrow-right" data-grunticon-embed></span>
+<span class="icon icon-small icon-atm" data-grunticon-embed></span>
+<span class="icon icon-small icon-australia" data-grunticon-embed></span>
+<span class="icon icon-small icon-backspace" data-grunticon-embed></span>
+<span class="icon icon-small icon-bank" data-grunticon-embed></span>
+<span class="icon icon-small icon-bar-chart" data-grunticon-embed></span>
+<span class="icon icon-small icon-book" data-grunticon-embed></span>
+<span class="icon icon-small icon-bpay" data-grunticon-embed></span>
+<span class="icon icon-small icon-business-person" data-grunticon-embed></span>
+<span class="icon icon-small icon-cafe" data-grunticon-embed></span>
+<span class="icon icon-small icon-calculator" data-grunticon-embed></span>
+<span class="icon icon-small icon-calendar" data-grunticon-embed></span>
+<span class="icon icon-small icon-camera" data-grunticon-embed></span>
+<span class="icon icon-small icon-car" data-grunticon-embed></span>
+<span class="icon icon-small icon-chat" data-grunticon-embed></span>
+<span class="icon icon-small icon-clock" data-grunticon-embed></span>
+<span class="icon icon-small icon-close" data-grunticon-embed></span>
+<span class="icon icon-small icon-compass" data-grunticon-embed></span>
+<span class="icon icon-small icon-contact" data-grunticon-embed></span>
+<span class="icon icon-small icon-credit-card" data-grunticon-embed></span>
+<span class="icon icon-small icon-cube" data-grunticon-embed></span>
+<span class="icon icon-small icon-delete" data-grunticon-embed></span>
+<span class="icon icon-small icon-desktop" data-grunticon-embed></span>
+<span class="icon icon-small icon-dollar" data-grunticon-embed></span>
+<span class="icon icon-small icon-download-file" data-grunticon-embed></span>
+<span class="icon icon-small icon-download" data-grunticon-embed></span>
+<span class="icon icon-small icon-drag" data-grunticon-embed></span>
+<span class="icon icon-small icon-drop-down" data-grunticon-embed></span>
+<span class="icon icon-small icon-drop-up" data-grunticon-embed></span>
+<span class="icon icon-small icon-dropbox" data-grunticon-embed></span>
+<span class="icon icon-small icon-edit" data-grunticon-embed></span>
+<span class="icon icon-small icon-eftpos" data-grunticon-embed></span>
+<span class="icon icon-small icon-email" data-grunticon-embed></span>
+<span class="icon icon-small icon-error" data-grunticon-embed></span>
+<span class="icon icon-small icon-excel-file" data-grunticon-embed></span>
+<span class="icon icon-small icon-exit" data-grunticon-embed></span>
+<span class="icon icon-small icon-expand-less" data-grunticon-embed></span>
+<span class="icon icon-small icon-expand-more" data-grunticon-embed></span>
+<span class="icon icon-small icon-face-happy" data-grunticon-embed></span>
+<span class="icon icon-small icon-facebook" data-grunticon-embed></span>
+<span class="icon icon-small icon-favourite" data-grunticon-embed></span>
+<span class="icon icon-small icon-filter" data-grunticon-embed></span>
+<span class="icon icon-small icon-fingerprint" data-grunticon-embed></span>
+<span class="icon icon-small icon-future-clock" data-grunticon-embed></span>
+<span class="icon icon-small icon-generic-file" data-grunticon-embed></span>
+<span class="icon icon-small icon-geolocation" data-grunticon-embed></span>
+<span class="icon icon-small icon-gift" data-grunticon-embed></span>
+<span class="icon icon-small icon-github" data-grunticon-embed></span>
+<span class="icon icon-small icon-global" data-grunticon-embed></span>
+<span class="icon icon-small icon-google-plus" data-grunticon-embed></span>
+<span class="icon icon-small icon-grid" data-grunticon-embed></span>
+<span class="icon icon-small icon-growth" data-grunticon-embed></span>
+<span class="icon icon-small icon-hamburger-menu" data-grunticon-embed></span>
+<span class="icon icon-small icon-headset" data-grunticon-embed></span>
+<span class="icon icon-small icon-help" data-grunticon-embed></span>
+<span class="icon icon-small icon-history-clock" data-grunticon-embed></span>
+<span class="icon icon-small icon-house" data-grunticon-embed></span>
+<span class="icon icon-small icon-id-card" data-grunticon-embed></span>
+<span class="icon icon-small icon-image-square" data-grunticon-embed></span>
+<span class="icon icon-small icon-info" data-grunticon-embed></span>
+<span class="icon icon-small icon-instagram" data-grunticon-embed></span>
+<span class="icon icon-small icon-invest" data-grunticon-embed></span>
+<span class="icon icon-small icon-key" data-grunticon-embed></span>
+<span class="icon icon-small icon-keyhole" data-grunticon-embed></span>
+<span class="icon icon-small icon-light-bulb" data-grunticon-embed></span>
+<span class="icon icon-small icon-limit" data-grunticon-embed></span>
+<span class="icon icon-small icon-link" data-grunticon-embed></span>
+<span class="icon icon-small icon-linkedin" data-grunticon-embed></span>
+<span class="icon icon-small icon-list" data-grunticon-embed></span>
+<span class="icon icon-small icon-live-chat" data-grunticon-embed></span>
+<span class="icon icon-small icon-map-pin" data-grunticon-embed></span>
+<span class="icon icon-small icon-map" data-grunticon-embed></span>
+<span class="icon icon-small icon-message" data-grunticon-embed></span>
+<span class="icon icon-small icon-mobile-pay" data-grunticon-embed></span>
+<span class="icon icon-small icon-money-in" data-grunticon-embed></span>
+<span class="icon icon-small icon-money-out" data-grunticon-embed></span>
+<span class="icon icon-small icon-more-horiz" data-grunticon-embed></span>
+<span class="icon icon-small icon-more-vert" data-grunticon-embed></span>
+<span class="icon icon-small icon-move-from" data-grunticon-embed></span>
+<span class="icon icon-small icon-move-to" data-grunticon-embed></span>
+<span class="icon icon-small icon-new-content" data-grunticon-embed></span>
+<span class="icon icon-small icon-new-window" data-grunticon-embed></span>
+<span class="icon icon-small icon-notification-active" data-grunticon-embed></span>
+<span class="icon icon-small icon-notification-off" data-grunticon-embed></span>
+<span class="icon icon-small icon-notification" data-grunticon-embed></span>
+<span class="icon icon-small icon-office" data-grunticon-embed></span>
+<span class="icon icon-small icon-open-browser" data-grunticon-embed></span>
+<span class="icon icon-small icon-padlock-open" data-grunticon-embed></span>
+<span class="icon icon-small icon-padlock" data-grunticon-embed></span>
+<span class="icon icon-small icon-pause-circle" data-grunticon-embed></span>
+<span class="icon icon-small icon-pause" data-grunticon-embed></span>
+<span class="icon icon-small icon-pay" data-grunticon-embed></span>
+<span class="icon icon-small icon-pay-to-mobile" data-grunticon-embed></span>
+<span class="icon icon-small icon-paypass" data-grunticon-embed></span>
+<span class="icon icon-small icon-pdf-file" data-grunticon-embed></span>
+<span class="icon icon-small icon-pending" data-grunticon-embed></span>
+<span class="icon icon-small icon-people" data-grunticon-embed></span>
+<span class="icon icon-small icon-percent" data-grunticon-embed></span>
+<span class="icon icon-small icon-person" data-grunticon-embed></span>
+<span class="icon icon-small icon-phone" data-grunticon-embed></span>
+<span class="icon icon-small icon-pie-chart" data-grunticon-embed></span>
+<span class="icon icon-small icon-plane" data-grunticon-embed></span>
+<span class="icon icon-small icon-play-circle" data-grunticon-embed></span>
+<span class="icon icon-small icon-play" data-grunticon-embed></span>
+<span class="icon icon-small icon-print" data-grunticon-embed></span>
+<span class="icon icon-small icon-progress" data-grunticon-embed></span>
+<span class="icon icon-small icon-quick-balance" data-grunticon-embed></span>
+<span class="icon icon-small icon-receipt" data-grunticon-embed></span>
+<span class="icon icon-small icon-refresh" data-grunticon-embed></span>
+<span class="icon icon-small icon-remove-circle" data-grunticon-embed></span>
+<span class="icon icon-small icon-remove" data-grunticon-embed></span>
+<span class="icon icon-small icon-rss" data-grunticon-embed></span>
+<span class="icon icon-small icon-sd-storage" data-grunticon-embed></span>
+<span class="icon icon-small icon-search" data-grunticon-embed></span>
+<span class="icon icon-small icon-security" data-grunticon-embed></span>
+<span class="icon icon-small icon-service-bell" data-grunticon-embed></span>
+<span class="icon icon-small icon-settings" data-grunticon-embed></span>
+<span class="icon icon-small icon-share" data-grunticon-embed></span>
+<span class="icon icon-small icon-shop" data-grunticon-embed></span>
+<span class="icon icon-small icon-sim-card" data-grunticon-embed></span>
+<span class="icon icon-small icon-slack" data-grunticon-embed></span>
+<span class="icon icon-small icon-sms" data-grunticon-embed></span>
+<span class="icon icon-small icon-star1" data-grunticon-embed></span>
+<span class="icon icon-small icon-star2" data-grunticon-embed></span>
+<span class="icon icon-small icon-star3" data-grunticon-embed></span>
+<span class="icon icon-small icon-stopwatch" data-grunticon-embed></span>
+<span class="icon icon-small icon-super" data-grunticon-embed></span>
+<span class="icon icon-small icon-switch" data-grunticon-embed></span>
+<span class="icon icon-small icon-tablet" data-grunticon-embed></span>
+<span class="icon icon-small icon-take-out" data-grunticon-embed></span>
+<span class="icon icon-small icon-telephone" data-grunticon-embed></span>
+<span class="icon icon-small icon-thumb-down" data-grunticon-embed></span>
+<span class="icon icon-small icon-thumb-up" data-grunticon-embed></span>
+<span class="icon icon-small icon-tick" data-grunticon-embed></span>
+<span class="icon icon-small icon-transfer" data-grunticon-embed></span>
+<span class="icon icon-small icon-transport" data-grunticon-embed></span>
+<span class="icon icon-small icon-twitter" data-grunticon-embed></span>
+<span class="icon icon-small icon-umbrella" data-grunticon-embed></span>
+<span class="icon icon-small icon-upload" data-grunticon-embed></span>
+<span class="icon icon-small icon-verified" data-grunticon-embed></span>
+<span class="icon icon-small icon-video" data-grunticon-embed></span>
+<span class="icon icon-small icon-voice" data-grunticon-embed></span>
+<span class="icon icon-small icon-walk" data-grunticon-embed></span>
+<span class="icon icon-small icon-wallet" data-grunticon-embed></span>
+<span class="icon icon-small icon-watch" data-grunticon-embed></span>
+<span class="icon icon-small icon-wearable" data-grunticon-embed></span>
+<span class="icon icon-small icon-wheelchair" data-grunticon-embed></span>
+<span class="icon icon-small icon-windows-new" data-grunticon-embed></span>
+<span class="icon icon-small icon-word-file" data-grunticon-embed></span>
+<span class="icon icon-small icon-write" data-grunticon-embed></span>
+<span class="icon icon-small icon-yammer" data-grunticon-embed></span>
+<span class="icon icon-small icon-youtube" data-grunticon-embed></span>
+<span class="icon icon-small icon-zip-file" data-grunticon-embed></span>
+
+<p>
+  <button type="button" class="btn btn-primary">
+    <span class="btn-text">Primary Default</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-hero">
+    <span class="btn-text">Hero Default</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-neutral">
+    <span class="btn-text">Neutral Default</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-faint">
+    <span class="btn-text">Faint Default</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-link">
+    <span class="btn-text">Link Default</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+</p>
+
+
+<!-- MEDIUM (DEFAULT) -->
+<h3>Medium (24px) — default</h3>
+<span class="icon icon-accessibility" data-grunticon-embed></span>
+<span class="icon icon-account" data-grunticon-embed></span>
+<span class="icon icon-add-circle" data-grunticon-embed></span>
+<span class="icon icon-add" data-grunticon-embed></span>
+<span class="icon icon-alert" data-grunticon-embed></span>
+<span class="icon icon-android" data-grunticon-embed></span>
+<span class="icon icon-apple" data-grunticon-embed></span>
+<span class="icon icon-arrow-left" data-grunticon-embed></span>
+<span class="icon icon-arrow-right" data-grunticon-embed></span>
+<span class="icon icon-atm" data-grunticon-embed></span>
+<span class="icon icon-australia" data-grunticon-embed></span>
+<span class="icon icon-backspace" data-grunticon-embed></span>
+<span class="icon icon-bank" data-grunticon-embed></span>
+<span class="icon icon-bar-chart" data-grunticon-embed></span>
+<span class="icon icon-book" data-grunticon-embed></span>
+<span class="icon icon-bpay" data-grunticon-embed></span>
+<span class="icon icon-business-person" data-grunticon-embed></span>
+<span class="icon icon-cafe" data-grunticon-embed></span>
+<span class="icon icon-calculator" data-grunticon-embed></span>
+<span class="icon icon-calendar" data-grunticon-embed></span>
+<span class="icon icon-camera" data-grunticon-embed></span>
+<span class="icon icon-car" data-grunticon-embed></span>
+<span class="icon icon-chat" data-grunticon-embed></span>
+<span class="icon icon-clock" data-grunticon-embed></span>
+<span class="icon icon-close" data-grunticon-embed></span>
+<span class="icon icon-compass" data-grunticon-embed></span>
+<span class="icon icon-contact" data-grunticon-embed></span>
+<span class="icon icon-credit-card" data-grunticon-embed></span>
+<span class="icon icon-cube" data-grunticon-embed></span>
+<span class="icon icon-delete" data-grunticon-embed></span>
+<span class="icon icon-desktop" data-grunticon-embed></span>
+<span class="icon icon-dollar" data-grunticon-embed></span>
+<span class="icon icon-download-file" data-grunticon-embed></span>
+<span class="icon icon-download" data-grunticon-embed></span>
+<span class="icon icon-drag" data-grunticon-embed></span>
+<span class="icon icon-drop-down" data-grunticon-embed></span>
+<span class="icon icon-drop-up" data-grunticon-embed></span>
+<span class="icon icon-dropbox" data-grunticon-embed></span>
+<span class="icon icon-edit" data-grunticon-embed></span>
+<span class="icon icon-eftpos" data-grunticon-embed></span>
+<span class="icon icon-email" data-grunticon-embed></span>
+<span class="icon icon-error" data-grunticon-embed></span>
+<span class="icon icon-excel-file" data-grunticon-embed></span>
+<span class="icon icon-exit" data-grunticon-embed></span>
+<span class="icon icon-expand-less" data-grunticon-embed></span>
+<span class="icon icon-expand-more" data-grunticon-embed></span>
+<span class="icon icon-face-happy" data-grunticon-embed></span>
+<span class="icon icon-facebook" data-grunticon-embed></span>
+<span class="icon icon-favourite" data-grunticon-embed></span>
+<span class="icon icon-filter" data-grunticon-embed></span>
+<span class="icon icon-fingerprint" data-grunticon-embed></span>
+<span class="icon icon-future-clock" data-grunticon-embed></span>
+<span class="icon icon-generic-file" data-grunticon-embed></span>
+<span class="icon icon-geolocation" data-grunticon-embed></span>
+<span class="icon icon-gift" data-grunticon-embed></span>
+<span class="icon icon-github" data-grunticon-embed></span>
+<span class="icon icon-global" data-grunticon-embed></span>
+<span class="icon icon-google-plus" data-grunticon-embed></span>
+<span class="icon icon-grid" data-grunticon-embed></span>
+<span class="icon icon-growth" data-grunticon-embed></span>
+<span class="icon icon-hamburger-menu" data-grunticon-embed></span>
+<span class="icon icon-headset" data-grunticon-embed></span>
+<span class="icon icon-help" data-grunticon-embed></span>
+<span class="icon icon-history-clock" data-grunticon-embed></span>
+<span class="icon icon-house" data-grunticon-embed></span>
+<span class="icon icon-id-card" data-grunticon-embed></span>
+<span class="icon icon-image-square" data-grunticon-embed></span>
+<span class="icon icon-info" data-grunticon-embed></span>
+<span class="icon icon-instagram" data-grunticon-embed></span>
+<span class="icon icon-invest" data-grunticon-embed></span>
+<span class="icon icon-key" data-grunticon-embed></span>
+<span class="icon icon-keyhole" data-grunticon-embed></span>
+<span class="icon icon-light-bulb" data-grunticon-embed></span>
+<span class="icon icon-limit" data-grunticon-embed></span>
+<span class="icon icon-link" data-grunticon-embed></span>
+<span class="icon icon-linkedin" data-grunticon-embed></span>
+<span class="icon icon-list" data-grunticon-embed></span>
+<span class="icon icon-live-chat" data-grunticon-embed></span>
+<span class="icon icon-map-pin" data-grunticon-embed></span>
+<span class="icon icon-map" data-grunticon-embed></span>
+<span class="icon icon-message" data-grunticon-embed></span>
+<span class="icon icon-mobile-pay" data-grunticon-embed></span>
+<span class="icon icon-money-in" data-grunticon-embed></span>
+<span class="icon icon-money-out" data-grunticon-embed></span>
+<span class="icon icon-more-horiz" data-grunticon-embed></span>
+<span class="icon icon-more-vert" data-grunticon-embed></span>
+<span class="icon icon-move-from" data-grunticon-embed></span>
+<span class="icon icon-move-to" data-grunticon-embed></span>
+<span class="icon icon-new-content" data-grunticon-embed></span>
+<span class="icon icon-new-window" data-grunticon-embed></span>
+<span class="icon icon-notification-active" data-grunticon-embed></span>
+<span class="icon icon-notification-off" data-grunticon-embed></span>
+<span class="icon icon-notification" data-grunticon-embed></span>
+<span class="icon icon-office" data-grunticon-embed></span>
+<span class="icon icon-open-browser" data-grunticon-embed></span>
+<span class="icon icon-padlock-open" data-grunticon-embed></span>
+<span class="icon icon-padlock" data-grunticon-embed></span>
+<span class="icon icon-pause-circle" data-grunticon-embed></span>
+<span class="icon icon-pause" data-grunticon-embed></span>
+<span class="icon icon-pay" data-grunticon-embed></span>
+<span class="icon icon-pay-to-mobile" data-grunticon-embed></span>
+<span class="icon icon-paypass" data-grunticon-embed></span>
+<span class="icon icon-pdf-file" data-grunticon-embed></span>
+<span class="icon icon-pending" data-grunticon-embed></span>
+<span class="icon icon-people" data-grunticon-embed></span>
+<span class="icon icon-percent" data-grunticon-embed></span>
+<span class="icon icon-person" data-grunticon-embed></span>
+<span class="icon icon-phone" data-grunticon-embed></span>
+<span class="icon icon-pie-chart" data-grunticon-embed></span>
+<span class="icon icon-plane" data-grunticon-embed></span>
+<span class="icon icon-play-circle" data-grunticon-embed></span>
+<span class="icon icon-play" data-grunticon-embed></span>
+<span class="icon icon-print" data-grunticon-embed></span>
+<span class="icon icon-progress" data-grunticon-embed></span>
+<span class="icon icon-quick-balance" data-grunticon-embed></span>
+<span class="icon icon-receipt" data-grunticon-embed></span>
+<span class="icon icon-refresh" data-grunticon-embed></span>
+<span class="icon icon-remove-circle" data-grunticon-embed></span>
+<span class="icon icon-remove" data-grunticon-embed></span>
+<span class="icon icon-rss" data-grunticon-embed></span>
+<span class="icon icon-sd-storage" data-grunticon-embed></span>
+<span class="icon icon-search" data-grunticon-embed></span>
+<span class="icon icon-security" data-grunticon-embed></span>
+<span class="icon icon-service-bell" data-grunticon-embed></span>
+<span class="icon icon-settings" data-grunticon-embed></span>
+<span class="icon icon-share" data-grunticon-embed></span>
+<span class="icon icon-shop" data-grunticon-embed></span>
+<span class="icon icon-sim-card" data-grunticon-embed></span>
+<span class="icon icon-slack" data-grunticon-embed></span>
+<span class="icon icon-sms" data-grunticon-embed></span>
+<span class="icon icon-star1" data-grunticon-embed></span>
+<span class="icon icon-star2" data-grunticon-embed></span>
+<span class="icon icon-star3" data-grunticon-embed></span>
+<span class="icon icon-stopwatch" data-grunticon-embed></span>
+<span class="icon icon-super" data-grunticon-embed></span>
+<span class="icon icon-switch" data-grunticon-embed></span>
+<span class="icon icon-tablet" data-grunticon-embed></span>
+<span class="icon icon-take-out" data-grunticon-embed></span>
+<span class="icon icon-telephone" data-grunticon-embed></span>
+<span class="icon icon-thumb-down" data-grunticon-embed></span>
+<span class="icon icon-thumb-up" data-grunticon-embed></span>
+<span class="icon icon-tick" data-grunticon-embed></span>
+<span class="icon icon-transfer" data-grunticon-embed></span>
+<span class="icon icon-transport" data-grunticon-embed></span>
+<span class="icon icon-twitter" data-grunticon-embed></span>
+<span class="icon icon-umbrella" data-grunticon-embed></span>
+<span class="icon icon-upload" data-grunticon-embed></span>
+<span class="icon icon-verified" data-grunticon-embed></span>
+<span class="icon icon-video" data-grunticon-embed></span>
+<span class="icon icon-voice" data-grunticon-embed></span>
+<span class="icon icon-walk" data-grunticon-embed></span>
+<span class="icon icon-wallet" data-grunticon-embed></span>
+<span class="icon icon-watch" data-grunticon-embed></span>
+<span class="icon icon-wearable" data-grunticon-embed></span>
+<span class="icon icon-wheelchair" data-grunticon-embed></span>
+<span class="icon icon-windows-new" data-grunticon-embed></span>
+<span class="icon icon-word-file" data-grunticon-embed></span>
+<span class="icon icon-write" data-grunticon-embed></span>
+<span class="icon icon-yammer" data-grunticon-embed></span>
+<span class="icon icon-youtube" data-grunticon-embed></span>
+<span class="icon icon-zip-file" data-grunticon-embed></span>
+
+<p>
+  <button type="button" class="btn btn-primary btn-large">
+    <span class="btn-text">Primary Large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-hero btn-large">
+    <span class="btn-text">Hero Large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-neutral btn-large">
+    <span class="btn-text">Neutral Large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-faint btn-large">
+    <span class="btn-text">Faint Large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-link btn-large">
+    <span class="btn-text">Link Large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+</p>
+<p>
+  <button type="button" class="btn btn-primary btn-xlarge">
+    <span class="btn-text">Primary Extra large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-hero btn-xlarge">
+    <span class="btn-text">Hero Extra large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-neutral btn-xlarge">
+    <span class="btn-text">Neutral Extra large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-faint btn-xlarge">
+    <span class="btn-text">Faint Extra large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+  <button type="button" class="btn btn-link btn-xlarge">
+    <span class="btn-text">Link Extra large</span>
+    <span class="btn-icon icon icon-info" data-grunticon-embed></span>
+  </button>
+</p>
+
+
+<!-- LARGE -->
+<h3>Large (36px)</h3>
+<span class="icon icon-large icon-accessibility" data-grunticon-embed></span>
+<span class="icon icon-large icon-account" data-grunticon-embed></span>
+<span class="icon icon-large icon-add-circle" data-grunticon-embed></span>
+<span class="icon icon-large icon-add" data-grunticon-embed></span>
+<span class="icon icon-large icon-alert" data-grunticon-embed></span>
+<span class="icon icon-large icon-android" data-grunticon-embed></span>
+<span class="icon icon-large icon-apple" data-grunticon-embed></span>
+<span class="icon icon-large icon-arrow-left" data-grunticon-embed></span>
+<span class="icon icon-large icon-arrow-right" data-grunticon-embed></span>
+<span class="icon icon-large icon-atm" data-grunticon-embed></span>
+<span class="icon icon-large icon-australia" data-grunticon-embed></span>
+<span class="icon icon-large icon-backspace" data-grunticon-embed></span>
+<span class="icon icon-large icon-bank" data-grunticon-embed></span>
+<span class="icon icon-large icon-bar-chart" data-grunticon-embed></span>
+<span class="icon icon-large icon-book" data-grunticon-embed></span>
+<span class="icon icon-large icon-bpay" data-grunticon-embed></span>
+<span class="icon icon-large icon-business-person" data-grunticon-embed></span>
+<span class="icon icon-large icon-cafe" data-grunticon-embed></span>
+<span class="icon icon-large icon-calculator" data-grunticon-embed></span>
+<span class="icon icon-large icon-calendar" data-grunticon-embed></span>
+<span class="icon icon-large icon-camera" data-grunticon-embed></span>
+<span class="icon icon-large icon-car" data-grunticon-embed></span>
+<span class="icon icon-large icon-chat" data-grunticon-embed></span>
+<span class="icon icon-large icon-clock" data-grunticon-embed></span>
+<span class="icon icon-large icon-close" data-grunticon-embed></span>
+<span class="icon icon-large icon-compass" data-grunticon-embed></span>
+<span class="icon icon-large icon-contact" data-grunticon-embed></span>
+<span class="icon icon-large icon-credit-card" data-grunticon-embed></span>
+<span class="icon icon-large icon-cube" data-grunticon-embed></span>
+<span class="icon icon-large icon-delete" data-grunticon-embed></span>
+<span class="icon icon-large icon-desktop" data-grunticon-embed></span>
+<span class="icon icon-large icon-dollar" data-grunticon-embed></span>
+<span class="icon icon-large icon-download-file" data-grunticon-embed></span>
+<span class="icon icon-large icon-download" data-grunticon-embed></span>
+<span class="icon icon-large icon-drag" data-grunticon-embed></span>
+<span class="icon icon-large icon-drop-down" data-grunticon-embed></span>
+<span class="icon icon-large icon-drop-up" data-grunticon-embed></span>
+<span class="icon icon-large icon-dropbox" data-grunticon-embed></span>
+<span class="icon icon-large icon-edit" data-grunticon-embed></span>
+<span class="icon icon-large icon-eftpos" data-grunticon-embed></span>
+<span class="icon icon-large icon-email" data-grunticon-embed></span>
+<span class="icon icon-large icon-error" data-grunticon-embed></span>
+<span class="icon icon-large icon-excel-file" data-grunticon-embed></span>
+<span class="icon icon-large icon-exit" data-grunticon-embed></span>
+<span class="icon icon-large icon-expand-less" data-grunticon-embed></span>
+<span class="icon icon-large icon-expand-more" data-grunticon-embed></span>
+<span class="icon icon-large icon-face-happy" data-grunticon-embed></span>
+<span class="icon icon-large icon-facebook" data-grunticon-embed></span>
+<span class="icon icon-large icon-favourite" data-grunticon-embed></span>
+<span class="icon icon-large icon-filter" data-grunticon-embed></span>
+<span class="icon icon-large icon-fingerprint" data-grunticon-embed></span>
+<span class="icon icon-large icon-future-clock" data-grunticon-embed></span>
+<span class="icon icon-large icon-generic-file" data-grunticon-embed></span>
+<span class="icon icon-large icon-geolocation" data-grunticon-embed></span>
+<span class="icon icon-large icon-gift" data-grunticon-embed></span>
+<span class="icon icon-large icon-github" data-grunticon-embed></span>
+<span class="icon icon-large icon-global" data-grunticon-embed></span>
+<span class="icon icon-large icon-google-plus" data-grunticon-embed></span>
+<span class="icon icon-large icon-grid" data-grunticon-embed></span>
+<span class="icon icon-large icon-growth" data-grunticon-embed></span>
+<span class="icon icon-large icon-hamburger-menu" data-grunticon-embed></span>
+<span class="icon icon-large icon-headset" data-grunticon-embed></span>
+<span class="icon icon-large icon-help" data-grunticon-embed></span>
+<span class="icon icon-large icon-history-clock" data-grunticon-embed></span>
+<span class="icon icon-large icon-house" data-grunticon-embed></span>
+<span class="icon icon-large icon-id-card" data-grunticon-embed></span>
+<span class="icon icon-large icon-image-square" data-grunticon-embed></span>
+<span class="icon icon-large icon-info" data-grunticon-embed></span>
+<span class="icon icon-large icon-instagram" data-grunticon-embed></span>
+<span class="icon icon-large icon-invest" data-grunticon-embed></span>
+<span class="icon icon-large icon-key" data-grunticon-embed></span>
+<span class="icon icon-large icon-keyhole" data-grunticon-embed></span>
+<span class="icon icon-large icon-light-bulb" data-grunticon-embed></span>
+<span class="icon icon-large icon-limit" data-grunticon-embed></span>
+<span class="icon icon-large icon-link" data-grunticon-embed></span>
+<span class="icon icon-large icon-linkedin" data-grunticon-embed></span>
+<span class="icon icon-large icon-list" data-grunticon-embed></span>
+<span class="icon icon-large icon-live-chat" data-grunticon-embed></span>
+<span class="icon icon-large icon-map-pin" data-grunticon-embed></span>
+<span class="icon icon-large icon-map" data-grunticon-embed></span>
+<span class="icon icon-large icon-message" data-grunticon-embed></span>
+<span class="icon icon-large icon-mobile-pay" data-grunticon-embed></span>
+<span class="icon icon-large icon-money-in" data-grunticon-embed></span>
+<span class="icon icon-large icon-money-out" data-grunticon-embed></span>
+<span class="icon icon-large icon-more-horiz" data-grunticon-embed></span>
+<span class="icon icon-large icon-more-vert" data-grunticon-embed></span>
+<span class="icon icon-large icon-move-from" data-grunticon-embed></span>
+<span class="icon icon-large icon-move-to" data-grunticon-embed></span>
+<span class="icon icon-large icon-new-content" data-grunticon-embed></span>
+<span class="icon icon-large icon-new-window" data-grunticon-embed></span>
+<span class="icon icon-large icon-notification-active" data-grunticon-embed></span>
+<span class="icon icon-large icon-notification-off" data-grunticon-embed></span>
+<span class="icon icon-large icon-notification" data-grunticon-embed></span>
+<span class="icon icon-large icon-office" data-grunticon-embed></span>
+<span class="icon icon-large icon-open-browser" data-grunticon-embed></span>
+<span class="icon icon-large icon-padlock-open" data-grunticon-embed></span>
+<span class="icon icon-large icon-padlock" data-grunticon-embed></span>
+<span class="icon icon-large icon-pause-circle" data-grunticon-embed></span>
+<span class="icon icon-large icon-pause" data-grunticon-embed></span>
+<span class="icon icon-large icon-pay" data-grunticon-embed></span>
+<span class="icon icon-large icon-pay-to-mobile" data-grunticon-embed></span>
+<span class="icon icon-large icon-paypass" data-grunticon-embed></span>
+<span class="icon icon-large icon-pdf-file" data-grunticon-embed></span>
+<span class="icon icon-large icon-pending" data-grunticon-embed></span>
+<span class="icon icon-large icon-people" data-grunticon-embed></span>
+<span class="icon icon-large icon-percent" data-grunticon-embed></span>
+<span class="icon icon-large icon-person" data-grunticon-embed></span>
+<span class="icon icon-large icon-phone" data-grunticon-embed></span>
+<span class="icon icon-large icon-pie-chart" data-grunticon-embed></span>
+<span class="icon icon-large icon-plane" data-grunticon-embed></span>
+<span class="icon icon-large icon-play-circle" data-grunticon-embed></span>
+<span class="icon icon-large icon-play" data-grunticon-embed></span>
+<span class="icon icon-large icon-print" data-grunticon-embed></span>
+<span class="icon icon-large icon-progress" data-grunticon-embed></span>
+<span class="icon icon-large icon-quick-balance" data-grunticon-embed></span>
+<span class="icon icon-large icon-receipt" data-grunticon-embed></span>
+<span class="icon icon-large icon-refresh" data-grunticon-embed></span>
+<span class="icon icon-large icon-remove-circle" data-grunticon-embed></span>
+<span class="icon icon-large icon-remove" data-grunticon-embed></span>
+<span class="icon icon-large icon-rss" data-grunticon-embed></span>
+<span class="icon icon-large icon-sd-storage" data-grunticon-embed></span>
+<span class="icon icon-large icon-search" data-grunticon-embed></span>
+<span class="icon icon-large icon-security" data-grunticon-embed></span>
+<span class="icon icon-large icon-service-bell" data-grunticon-embed></span>
+<span class="icon icon-large icon-settings" data-grunticon-embed></span>
+<span class="icon icon-large icon-share" data-grunticon-embed></span>
+<span class="icon icon-large icon-shop" data-grunticon-embed></span>
+<span class="icon icon-large icon-sim-card" data-grunticon-embed></span>
+<span class="icon icon-large icon-slack" data-grunticon-embed></span>
+<span class="icon icon-large icon-sms" data-grunticon-embed></span>
+<span class="icon icon-large icon-star1" data-grunticon-embed></span>
+<span class="icon icon-large icon-star2" data-grunticon-embed></span>
+<span class="icon icon-large icon-star3" data-grunticon-embed></span>
+<span class="icon icon-large icon-stopwatch" data-grunticon-embed></span>
+<span class="icon icon-large icon-super" data-grunticon-embed></span>
+<span class="icon icon-large icon-switch" data-grunticon-embed></span>
+<span class="icon icon-large icon-tablet" data-grunticon-embed></span>
+<span class="icon icon-large icon-take-out" data-grunticon-embed></span>
+<span class="icon icon-large icon-telephone" data-grunticon-embed></span>
+<span class="icon icon-large icon-thumb-down" data-grunticon-embed></span>
+<span class="icon icon-large icon-thumb-up" data-grunticon-embed></span>
+<span class="icon icon-large icon-tick" data-grunticon-embed></span>
+<span class="icon icon-large icon-transfer" data-grunticon-embed></span>
+<span class="icon icon-large icon-transport" data-grunticon-embed></span>
+<span class="icon icon-large icon-twitter" data-grunticon-embed></span>
+<span class="icon icon-large icon-umbrella" data-grunticon-embed></span>
+<span class="icon icon-large icon-upload" data-grunticon-embed></span>
+<span class="icon icon-large icon-verified" data-grunticon-embed></span>
+<span class="icon icon-large icon-video" data-grunticon-embed></span>
+<span class="icon icon-large icon-voice" data-grunticon-embed></span>
+<span class="icon icon-large icon-walk" data-grunticon-embed></span>
+<span class="icon icon-large icon-wallet" data-grunticon-embed></span>
+<span class="icon icon-large icon-watch" data-grunticon-embed></span>
+<span class="icon icon-large icon-wearable" data-grunticon-embed></span>
+<span class="icon icon-large icon-wheelchair" data-grunticon-embed></span>
+<span class="icon icon-large icon-windows-new" data-grunticon-embed></span>
+<span class="icon icon-large icon-word-file" data-grunticon-embed></span>
+<span class="icon icon-large icon-write" data-grunticon-embed></span>
+<span class="icon icon-large icon-yammer" data-grunticon-embed></span>
+<span class="icon icon-large icon-youtube" data-grunticon-embed></span>
+<span class="icon icon-large icon-zip-file" data-grunticon-embed></span>
+
+<!-- EXTRA LARGE -->
+<h3>Extra large (48px)</h3>
+<span class="icon icon-xlarge icon-accessibility" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-account" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-add-circle" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-add" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-alert" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-android" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-apple" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-arrow-left" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-arrow-right" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-atm" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-australia" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-backspace" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-bank" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-bar-chart" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-book" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-bpay" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-business-person" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-cafe" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-calculator" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-calendar" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-camera" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-car" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-chat" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-clock" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-close" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-compass" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-contact" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-credit-card" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-cube" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-delete" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-desktop" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-dollar" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-download-file" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-download" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-drag" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-drop-down" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-drop-up" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-dropbox" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-edit" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-eftpos" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-email" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-error" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-excel-file" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-exit" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-expand-less" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-expand-more" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-face-happy" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-facebook" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-favourite" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-filter" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-fingerprint" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-future-clock" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-generic-file" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-geolocation" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-gift" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-github" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-global" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-google-plus" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-grid" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-growth" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-hamburger-menu" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-headset" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-help" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-history-clock" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-house" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-id-card" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-image-square" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-info" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-instagram" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-invest" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-key" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-keyhole" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-light-bulb" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-limit" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-link" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-linkedin" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-list" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-live-chat" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-map-pin" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-map" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-message" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-mobile-pay" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-money-in" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-money-out" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-more-horiz" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-more-vert" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-move-from" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-move-to" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-new-content" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-new-window" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-notification-active" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-notification-off" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-notification" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-office" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-open-browser" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-padlock-open" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-padlock" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-pause-circle" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-pause" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-pay" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-pay-to-mobile" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-paypass" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-pdf-file" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-pending" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-people" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-percent" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-person" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-phone" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-pie-chart" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-plane" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-play-circle" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-play" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-print" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-progress" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-quick-balance" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-receipt" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-refresh" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-remove-circle" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-remove" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-rss" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-sd-storage" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-search" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-security" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-service-bell" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-settings" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-share" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-shop" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-sim-card" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-slack" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-sms" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-star1" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-star2" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-star3" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-stopwatch" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-super" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-switch" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-tablet" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-take-out" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-telephone" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-thumb-down" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-thumb-up" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-tick" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-transfer" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-transport" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-twitter" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-umbrella" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-upload" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-verified" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-video" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-voice" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-walk" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-wallet" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-watch" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-wearable" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-wheelchair" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-windows-new" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-word-file" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-write" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-yammer" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-youtube" data-grunticon-embed></span>
+<span class="icon icon-xlarge icon-zip-file" data-grunticon-embed></span>
+
+<hr>
+
+<h2>Direct embedding method (filled)</h2>
+<style type="text/css">
+	.icon-test .icon .icons-background {
+		fill: hotpink;
+	}
+</style>
+
+<div class="icon-test">
+	<!-- MEDIUM (DEFAULT) -->
+	<h3>Medium (24px) — default</h3>
+	<span class="icon icon-accessibility" data-grunticon-embed></span>
+	<span class="icon icon-account" data-grunticon-embed></span>
+	<span class="icon icon-add-circle" data-grunticon-embed></span>
+	<span class="icon icon-add" data-grunticon-embed></span>
+	<span class="icon icon-alert" data-grunticon-embed></span>
+	<span class="icon icon-android" data-grunticon-embed></span>
+	<span class="icon icon-apple" data-grunticon-embed></span>
+	<span class="icon icon-arrow-left" data-grunticon-embed></span>
+	<span class="icon icon-arrow-right" data-grunticon-embed></span>
+	<span class="icon icon-atm" data-grunticon-embed></span>
+	<span class="icon icon-australia" data-grunticon-embed></span>
+	<span class="icon icon-backspace" data-grunticon-embed></span>
+	<span class="icon icon-bank" data-grunticon-embed></span>
+	<span class="icon icon-bar-chart" data-grunticon-embed></span>
+	<span class="icon icon-book" data-grunticon-embed></span>
+	<span class="icon icon-bpay" data-grunticon-embed></span>
+	<span class="icon icon-business-person" data-grunticon-embed></span>
+	<span class="icon icon-cafe" data-grunticon-embed></span>
+	<span class="icon icon-calculator" data-grunticon-embed></span>
+	<span class="icon icon-calendar" data-grunticon-embed></span>
+	<span class="icon icon-camera" data-grunticon-embed></span>
+	<span class="icon icon-car" data-grunticon-embed></span>
+	<span class="icon icon-chat" data-grunticon-embed></span>
+	<span class="icon icon-clock" data-grunticon-embed></span>
+	<span class="icon icon-close" data-grunticon-embed></span>
+	<span class="icon icon-compass" data-grunticon-embed></span>
+	<span class="icon icon-contact" data-grunticon-embed></span>
+	<span class="icon icon-credit-card" data-grunticon-embed></span>
+	<span class="icon icon-cube" data-grunticon-embed></span>
+	<span class="icon icon-delete" data-grunticon-embed></span>
+	<span class="icon icon-desktop" data-grunticon-embed></span>
+	<span class="icon icon-dollar" data-grunticon-embed></span>
+	<span class="icon icon-download-file" data-grunticon-embed></span>
+	<span class="icon icon-download" data-grunticon-embed></span>
+	<span class="icon icon-drag" data-grunticon-embed></span>
+	<span class="icon icon-drop-down" data-grunticon-embed></span>
+	<span class="icon icon-drop-up" data-grunticon-embed></span>
+	<span class="icon icon-dropbox" data-grunticon-embed></span>
+	<span class="icon icon-edit" data-grunticon-embed></span>
+	<span class="icon icon-eftpos" data-grunticon-embed></span>
+	<span class="icon icon-email" data-grunticon-embed></span>
+	<span class="icon icon-error" data-grunticon-embed></span>
+	<span class="icon icon-excel-file" data-grunticon-embed></span>
+	<span class="icon icon-exit" data-grunticon-embed></span>
+	<span class="icon icon-expand-less" data-grunticon-embed></span>
+	<span class="icon icon-expand-more" data-grunticon-embed></span>
+	<span class="icon icon-face-happy" data-grunticon-embed></span>
+	<span class="icon icon-facebook" data-grunticon-embed></span>
+	<span class="icon icon-favourite" data-grunticon-embed></span>
+	<span class="icon icon-filter" data-grunticon-embed></span>
+  <span class="icon icon-fingerprint" data-grunticon-embed></span>
+	<span class="icon icon-future-clock" data-grunticon-embed></span>
+	<span class="icon icon-generic-file" data-grunticon-embed></span>
+	<span class="icon icon-geolocation" data-grunticon-embed></span>
+	<span class="icon icon-gift" data-grunticon-embed></span>
+	<span class="icon icon-github" data-grunticon-embed></span>
+	<span class="icon icon-global" data-grunticon-embed></span>
+	<span class="icon icon-google-plus" data-grunticon-embed></span>
+	<span class="icon icon-grid" data-grunticon-embed></span>
+	<span class="icon icon-growth" data-grunticon-embed></span>
+	<span class="icon icon-hamburger-menu" data-grunticon-embed></span>
+	<span class="icon icon-headset" data-grunticon-embed></span>
+	<span class="icon icon-help" data-grunticon-embed></span>
+	<span class="icon icon-history-clock" data-grunticon-embed></span>
+	<span class="icon icon-house" data-grunticon-embed></span>
+	<span class="icon icon-id-card" data-grunticon-embed></span>
+	<span class="icon icon-image-square" data-grunticon-embed></span>
+	<span class="icon icon-info" data-grunticon-embed></span>
+	<span class="icon icon-instagram" data-grunticon-embed></span>
+	<span class="icon icon-invest" data-grunticon-embed></span>
+	<span class="icon icon-key" data-grunticon-embed></span>
+	<span class="icon icon-keyhole" data-grunticon-embed></span>
+	<span class="icon icon-light-bulb" data-grunticon-embed></span>
+	<span class="icon icon-limit" data-grunticon-embed></span>
+	<span class="icon icon-link" data-grunticon-embed></span>
+	<span class="icon icon-linkedin" data-grunticon-embed></span>
+	<span class="icon icon-list" data-grunticon-embed></span>
+	<span class="icon icon-live-chat" data-grunticon-embed></span>
+	<span class="icon icon-map-pin" data-grunticon-embed></span>
+	<span class="icon icon-map" data-grunticon-embed></span>
+	<span class="icon icon-message" data-grunticon-embed></span>
+	<span class="icon icon-mobile-pay" data-grunticon-embed></span>
+	<span class="icon icon-money-in" data-grunticon-embed></span>
+	<span class="icon icon-money-out" data-grunticon-embed></span>
+	<span class="icon icon-more-horiz" data-grunticon-embed></span>
+	<span class="icon icon-more-vert" data-grunticon-embed></span>
+	<span class="icon icon-move-from" data-grunticon-embed></span>
+	<span class="icon icon-move-to" data-grunticon-embed></span>
+	<span class="icon icon-new-content" data-grunticon-embed></span>
+	<span class="icon icon-new-window" data-grunticon-embed></span>
+	<span class="icon icon-notification-active" data-grunticon-embed></span>
+	<span class="icon icon-notification-off" data-grunticon-embed></span>
+	<span class="icon icon-notification" data-grunticon-embed></span>
+	<span class="icon icon-office" data-grunticon-embed></span>
+	<span class="icon icon-open-browser" data-grunticon-embed></span>
+	<span class="icon icon-padlock-open" data-grunticon-embed></span>
+	<span class="icon icon-padlock" data-grunticon-embed></span>
+	<span class="icon icon-pause-circle" data-grunticon-embed></span>
+	<span class="icon icon-pause" data-grunticon-embed></span>
+	<span class="icon icon-pay" data-grunticon-embed></span>
+	<span class="icon icon-pay-to-mobile" data-grunticon-embed></span>
+	<span class="icon icon-paypass" data-grunticon-embed></span>
+  <span class="icon icon-pdf-file" data-grunticon-embed></span>
+	<span class="icon icon-pending" data-grunticon-embed></span>
+	<span class="icon icon-people" data-grunticon-embed></span>
+	<span class="icon icon-percent" data-grunticon-embed></span>
+	<span class="icon icon-person" data-grunticon-embed></span>
+	<span class="icon icon-phone" data-grunticon-embed></span>
+	<span class="icon icon-pie-chart" data-grunticon-embed></span>
+	<span class="icon icon-plane" data-grunticon-embed></span>
+	<span class="icon icon-play-circle" data-grunticon-embed></span>
+	<span class="icon icon-play" data-grunticon-embed></span>
+	<span class="icon icon-print" data-grunticon-embed></span>
+	<span class="icon icon-progress" data-grunticon-embed></span>
+	<span class="icon icon-quick-balance" data-grunticon-embed></span>
+	<span class="icon icon-receipt" data-grunticon-embed></span>
+	<span class="icon icon-refresh" data-grunticon-embed></span>
+	<span class="icon icon-remove-circle" data-grunticon-embed></span>
+	<span class="icon icon-remove" data-grunticon-embed></span>
+	<span class="icon icon-rss" data-grunticon-embed></span>
+	<span class="icon icon-sd-storage" data-grunticon-embed></span>
+	<span class="icon icon-search" data-grunticon-embed></span>
+	<span class="icon icon-security" data-grunticon-embed></span>
+	<span class="icon icon-service-bell" data-grunticon-embed></span>
+	<span class="icon icon-settings" data-grunticon-embed></span>
+	<span class="icon icon-share" data-grunticon-embed></span>
+	<span class="icon icon-shop" data-grunticon-embed></span>
+	<span class="icon icon-sim-card" data-grunticon-embed></span>
+	<span class="icon icon-slack" data-grunticon-embed></span>
+	<span class="icon icon-sms" data-grunticon-embed></span>
+	<span class="icon icon-star1" data-grunticon-embed></span>
+	<span class="icon icon-star2" data-grunticon-embed></span>
+	<span class="icon icon-star3" data-grunticon-embed></span>
+	<span class="icon icon-stopwatch" data-grunticon-embed></span>
+	<span class="icon icon-super" data-grunticon-embed></span>
+	<span class="icon icon-switch" data-grunticon-embed></span>
+	<span class="icon icon-tablet" data-grunticon-embed></span>
+	<span class="icon icon-take-out" data-grunticon-embed></span>
+	<span class="icon icon-telephone" data-grunticon-embed></span>
+	<span class="icon icon-thumb-down" data-grunticon-embed></span>
+	<span class="icon icon-thumb-up" data-grunticon-embed></span>
+	<span class="icon icon-tick" data-grunticon-embed></span>
+	<span class="icon icon-transfer" data-grunticon-embed></span>
+	<span class="icon icon-transport" data-grunticon-embed></span>
+	<span class="icon icon-twitter" data-grunticon-embed></span>
+	<span class="icon icon-umbrella" data-grunticon-embed></span>
+	<span class="icon icon-upload" data-grunticon-embed></span>
+	<span class="icon icon-verified" data-grunticon-embed></span>
+	<span class="icon icon-video" data-grunticon-embed></span>
+	<span class="icon icon-voice" data-grunticon-embed></span>
+	<span class="icon icon-walk" data-grunticon-embed></span>
+	<span class="icon icon-wallet" data-grunticon-embed></span>
+  <span class="icon icon-watch" data-grunticon-embed></span>
+	<span class="icon icon-wearable" data-grunticon-embed></span>
+	<span class="icon icon-wheelchair" data-grunticon-embed></span>
+	<span class="icon icon-windows-new" data-grunticon-embed></span>
+	<span class="icon icon-word-file" data-grunticon-embed></span>
+	<span class="icon icon-write" data-grunticon-embed></span>
+	<span class="icon icon-yammer" data-grunticon-embed></span>
+	<span class="icon icon-youtube" data-grunticon-embed></span>
+	<span class="icon icon-zip-file" data-grunticon-embed></span>
+</div>
+
+<hr>
+
+<h2>Inside links</h2>
+<a href="#url">Link with icon <span class="icon icon-small icon-info" data-grunticon-embed></span></a>
+
+<hr>
+
+<h2>Responsive icons</h2>
+
+<h3>This breakpoint and up</h3>
+<p>Default icon, but Extra large for MD or wider</p>
+<span class="icon icon-accessibility icon-xlarge-md" data-grunticon-embed></span>
+
+<h3>This breakpoint only</h3>
+<p>Default icon, but Small for SM only</p>
+<span class="icon icon-accessibility icon-small-sm-only" data-grunticon-embed></span>
+
+<p>Extra large icon, but Small for MD only</p>
+<span class="icon icon-accessibility icon-xlarge icon-small-md-only" data-grunticon-embed></span>
+
+<br><br>
+
+
+
+
+
+
+	</main>
+
+	<script src="assets/js/gui.js"></script>
+</body>
+</html>
