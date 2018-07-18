@@ -247,8 +247,8 @@
 [submodule "footers/2.0.0"]
 	path = footers/2.0.0
 	url = git@github.com:WestpacCXTeam/GUI-footers.git
-[submodule "form-pods/1.0.0"]
-	path = form-pods/1.0.0
+[submodule "form-pods/1.0.0-alpha"]
+	path = form-pods/1.0.0-alpha
 	url = git@github.com:WestpacCXTeam/GUI-form-pods.git
 [submodule "headers/1.0.0"]
 	path = headers/1.0.0
@@ -751,9 +751,6 @@ url=git@github.com:WestpacCXTeam/GUI-panels.git
 [submodule "panels/2.0.2"]
 	path = panels/2.0.2
 	url = git@github.com:WestpacCXTeam/GUI-panels.git
-[submodule "progress-ropes/1.0.0"]
-	path = progress-ropes/1.0.0
-	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
 [submodule "popovers/1.0.0"]
 	path = popovers/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-popovers.git
@@ -781,6 +778,9 @@ url=git@github.com:WestpacCXTeam/GUI-panels.git
 [submodule "progress-bars/2.0.1"]
 	path = progress-bars/2.0.1
 	url = git@github.com:WestpacCXTeam/GUI-progress-bars.git
+[submodule "progress-ropes/1.0.0-alpha"]
+	path = progress-ropes/1.0.0-alpha
+	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
 [submodule "radios/1.0.0"]
 	path = radios/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-radios.git
@@ -946,8 +946,8 @@ url=git@github.com:WestpacCXTeam/GUI-panels.git
 [submodule "templates/1.0.1"]
 	path = templates/1.0.1
 	url = git@github.com:WestpacCXTeam/GUI-templates.git
-[submodule "templates/2.0.0"]
-	path = templates/2.0.0
+[submodule "templates/2.0.0-alpha"]
+	path = templates/2.0.0-alpha
 	url = git@github.com:WestpacCXTeam/GUI-templates.git
 [submodule "text-extensions/1.0.0"]
 	path = text-extensions/1.0.0
