@@ -988,3 +988,6 @@ url=git@github.com:WestpacCXTeam/GUI-panels.git
 [submodule "wells/2.0.2"]
 	path = wells/2.0.2
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
+[submodule "icon/2.0.2"]
+	path = icon/2.0.2
+	url = git@github.com:WestpacCXTeam/GUI-icons.git
