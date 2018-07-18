@@ -10,7 +10,7 @@
 				"buttons",
 				"responsive-margins"
 			],
-			"js": false,
+			"js": true,
 			"less": true,
 			"svg": false,
 			"font": false,
