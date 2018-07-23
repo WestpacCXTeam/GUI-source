@@ -19,6 +19,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.1.0 - ~~`LESS/CSS`~~ ~~`HTML`~~ `JS`
+	* Fixed popover pointer triangle positioning in XS breakpoint
+		[#426](https://github.com/WestpacCXTeam/GUI-source/issues/426)
+	* Fixed popover pointer triangle positioning with multiple popovers
+		[#429](https://github.com/WestpacCXTeam/GUI-source/issues/429)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Reduced the pointer triangle size
 		[#357](https://github.com/WestpacCXTeam/GUI-source/issues/357)
