@@ -1332,8 +1332,8 @@ a:focus {
   }
 }
 @media (max-width: 767px) {
-  .form-pod-actions-primary .btn {
-    width: calc(50% - 6px);
+  .form-pod-actions-primary .btn + .btn {
+    margin-left: 12px;
   }
 }
 .form-pod-contact {
@@ -1430,16 +1430,9 @@ a:focus {
   }
 }
 @media (max-width: 767px) {
-  .ie8 .form-pod-actions-primary,
-  .ie9 .form-pod-actions-primary {
-    overflow: hidden;
-  }
-  .ie8 .form-pod-actions-primary .btn:first-child,
-  .ie9 .form-pod-actions-primary .btn:first-child {
-    float: left;
-  }
-  .ie8 .form-pod-actions-primary .btn:last-child,
-  .ie9 .form-pod-actions-primary .btn:last-child {
-    float: right;
+  .ie8 .form-pod-actions .btn + .btn,
+  .ie9 .form-pod-actions .btn + .btn {
+    margin-left: 0;
+    margin-top: 12px;
   }
 }
