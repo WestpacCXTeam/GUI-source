@@ -1,8 +1,8 @@
 {
 	"ID": "form-pods",
 	"name": "Form-Pods",
-	"description": "A page panel, header, footer and controls area for forms. Form-Pods plays nicely with Templates.",
-	"category": "Form components",
+	"description": "Includes a heading, content area, footer and controls. The Form-Pod is designed to work inside a Template. When building a form each page should include one Form-Pod containing form components.",
+	"category": "Templates",
 	"versions": {
 		"1.0.0-alpha": {
 			"dependencies": [
