@@ -24,6 +24,9 @@ var Crypto = require('crypto');
 var Path = require('path');
 var Du = require('du');
 var Fs = require('fs');
+var LessPluginAutoPrefix = require('less-plugin-autoprefix');
+
+var autoprefixPlugin = new LessPluginAutoPrefix({ browsers: ['last 2 versions', 'not dead', 'ie >= 8'] });
 
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -390,7 +393,7 @@ module.exports = function(grunt) {
 					compress: false,
 					ieCompat: true,
 					report: 'min',
-					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
+					plugins: [ autoprefixPlugin ],
 				},
 				src: [
 					'tests/' + brand.ID + '/assets/less/gui.less',
@@ -405,7 +408,7 @@ module.exports = function(grunt) {
 					compress: true,
 					ieCompat: true,
 					report: 'min',
-					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
+					plugins: [ autoprefixPlugin ],
 				},
 				src: [
 					'tests/' + brand.ID + '/assets/less/gui.less',
@@ -420,7 +423,7 @@ module.exports = function(grunt) {
 					compress: true,
 					ieCompat: true,
 					report: 'min',
-					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
+					plugins: [ autoprefixPlugin ],
 				},
 				src: [
 					'tests/' + brand.ID + '/assets/less/coreSize.less',
@@ -435,7 +438,7 @@ module.exports = function(grunt) {
 					compress: false,
 					ieCompat: true,
 					report: 'min',
-					plugins : [ new (require('less-plugin-autoprefix'))({ browsers: [ 'last 2 versions', 'ie 8', 'ie 9', 'ie 10' ] }) ],
+					plugins: [ autoprefixPlugin ],
 				},
 				src: [
 					'tests/' + brand.ID + '/assets/less/test.less',
@@ -509,6 +512,9 @@ module.exports = function(grunt) {
 				}, {
 					from: '[radcheck-disabled-border]',
 					to: SETTINGS(grunt).colors[ brand.ID ]['radcheck-disabled-border'],
+				}, {
+					from: '[breadcrumb-separator]',
+					to: SETTINGS(grunt).colors[ brand.ID ]['breadcrumb-separator'],
 				}],
 			};
 			tasks.add( 'replace:ReplaceSVG' + brand.ID );
@@ -560,6 +566,9 @@ module.exports = function(grunt) {
 				}, {
 					from: '[radcheck-disabled-border]',
 					to: SETTINGS(grunt).colors[ brand.ID ]['radcheck-disabled-border'],
+				}, {
+					from: '[breadcrumb-separator]',
+					to: SETTINGS(grunt).colors[ brand.ID ]['breadcrumb-separator'],
 				}],
 			};
 			tasks.add( 'replace:ReplaceSVGAgain' + brand.ID );
