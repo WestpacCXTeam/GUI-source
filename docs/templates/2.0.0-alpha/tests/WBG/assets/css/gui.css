@@ -109,7 +109,18 @@
     padding-right: 12px;
   }
 }
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
   float: left;
 }
 .col-xs-12 {
@@ -266,7 +277,18 @@
   margin-left: 0%;
 }
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
     float: left;
   }
   .col-sm-12 {
@@ -424,7 +446,18 @@
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
     float: left;
   }
   .col-md-12 {
@@ -582,7 +615,18 @@
   }
 }
 @media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
     float: left;
   }
   .col-lg-12 {
@@ -854,7 +898,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 /**
@@ -1148,7 +1193,7 @@ template {
 	 */
 body {
   font-size: 0.875em;
-  line-height: 1.428571429;
+  line-height: 1.42857143;
   color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
@@ -1183,7 +1228,7 @@ h6 {
   color: #000;
 }
 p {
-  margin: 0.8571428572em 0;
+  margin: 0.85714286em 0;
 }
 dl dt {
   font-weight: 700;
@@ -1397,7 +1442,7 @@ body.is-noscroll {
   top: 100%;
   overflow: hidden;
   border-top: 1px solid #cfd8dc;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
   will-change: opacity;
 }
 .header-fixed {
@@ -1431,7 +1476,7 @@ body.has-scroll .header-fixed .header-inner:before {
   right: 0;
   height: 6px;
   pointer-events: none;
-  transition: all .2s;
+  transition: all 0.2s;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
   will-change: opacity;
@@ -1467,7 +1512,7 @@ body.has-scroll .header-fixed .header-inner:after {
     right: 0;
     height: 6px;
     pointer-events: none;
-    transition: all .2s;
+    transition: all 0.2s;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     will-change: opacity;
@@ -1509,7 +1554,7 @@ body.has-scroll .header-fixed .header-inner:after {
     right: 0;
     height: 6px;
     pointer-events: none;
-    transition: all .2s;
+    transition: all 0.2s;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     will-change: opacity;
@@ -1551,7 +1596,7 @@ body.has-scroll .header-fixed .header-inner:after {
     right: 0;
     height: 6px;
     pointer-events: none;
-    transition: all .2s;
+    transition: all 0.2s;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     will-change: opacity;
@@ -1593,7 +1638,7 @@ body.has-scroll .header-fixed .header-inner:after {
     right: 0;
     height: 6px;
     pointer-events: none;
-    transition: all .2s;
+    transition: all 0.2s;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     will-change: opacity;
@@ -1710,8 +1755,9 @@ body.has-scroll .header-fixed .header-inner:after {
   z-index: 0;
   left: 50%;
   top: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
   .header-basic .header-logo-center-xs-only {
@@ -1719,8 +1765,9 @@ body.has-scroll .header-fixed .header-inner:after {
     z-index: 0;
     left: 50%;
     top: 50%;
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 .header-contact {
@@ -1881,8 +1928,9 @@ body.has-scroll .header-fixed .header-inner:after {
 @media (min-width: 1922px) {
   .template-sidebar-right .sidebar {
     right: auto;
-    -ms-transform: translateX(1620px);
-        transform: translateX(1620px);
+    -webkit-transform: translateX(1620px);
+        -ms-transform: translateX(1620px);
+            transform: translateX(1620px);
   }
 }
 @media (min-width: 992px) {
@@ -1934,7 +1982,7 @@ body.has-scroll-header .sidebar-header:before {
   right: 0;
   height: 6px;
   pointer-events: none;
-  transition: all .2s;
+  transition: all 0.2s;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
   will-change: opacity;
@@ -1987,7 +2035,7 @@ body.has-scroll-header .sidebar-header {
   z-index: 1040;
   background-color: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  transition: opacity .15s linear;
+  transition: opacity 0.15s linear;
   visibility: hidden;
 }
 @media (max-width: 991px) {
@@ -2029,7 +2077,7 @@ body.has-scroll-header .sidebar-header {
     right: 0;
     height: 6px;
     pointer-events: none;
-    transition: all .2s;
+    transition: all 0.2s;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     will-change: opacity;
@@ -2046,16 +2094,20 @@ body.has-scroll-header .sidebar-header {
     top: 0;
     bottom: 0;
     right: 0;
-    -ms-transform: translateX(100%);
-        transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    transition: -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     will-change: transform;
     width: 100%;
     max-width: 300px;
   }
   .sidebar-content.is-open {
-    -ms-transform: translateX(0);
-        transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 .sidebar-content-header {
@@ -2089,7 +2141,7 @@ body.has-scroll-header .sidebar-header {
     right: 0;
     height: 6px;
     pointer-events: none;
-    transition: all .2s;
+    transition: all 0.2s;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     will-change: opacity;

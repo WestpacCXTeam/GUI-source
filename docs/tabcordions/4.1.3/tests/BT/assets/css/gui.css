@@ -1141,7 +1141,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 /**
@@ -1435,7 +1436,7 @@ template {
 	 */
 body {
   font-size: 0.875em;
-  line-height: 1.428571429;
+  line-height: 1.42857143;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
@@ -1470,7 +1471,7 @@ h6 {
   color: #2574a9;
 }
 p {
-  margin: 0.8571428572em 0;
+  margin: 0.85714286em 0;
 }
 dl dt {
   font-weight: 700;
@@ -1576,7 +1577,8 @@ label {
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 .js .collapsible-body.is-open {

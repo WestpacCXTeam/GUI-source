@@ -1156,7 +1156,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 /**
@@ -1450,7 +1451,7 @@ template {
 	 */
 body {
   font-size: 0.875em;
-  line-height: 1.428571429;
+  line-height: 1.42857143;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
@@ -1485,7 +1486,7 @@ h6 {
   color: #002f6c;
 }
 p {
-  margin: 0.8571428572em 0;
+  margin: 0.85714286em 0;
 }
 dl dt {
   font-weight: 700;
@@ -1611,7 +1612,7 @@ label {
   top: 100%;
   overflow: hidden;
   border-top: 1px solid #d3d4d5;
-  transition: opacity .2s;
+  transition: opacity 0.2s;
   will-change: opacity;
 }
 .header-fixed {
@@ -1645,7 +1646,7 @@ body.has-scroll .header-fixed .header-inner:before {
   right: 0;
   height: 6px;
   pointer-events: none;
-  transition: all .2s;
+  transition: all 0.2s;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
   will-change: opacity;
@@ -1681,7 +1682,7 @@ body.has-scroll .header-fixed .header-inner:after {
     right: 0;
     height: 6px;
     pointer-events: none;
-    transition: all .2s;
+    transition: all 0.2s;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     will-change: opacity;
@@ -1723,7 +1724,7 @@ body.has-scroll .header-fixed .header-inner:after {
     right: 0;
     height: 6px;
     pointer-events: none;
-    transition: all .2s;
+    transition: all 0.2s;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     will-change: opacity;
@@ -1765,7 +1766,7 @@ body.has-scroll .header-fixed .header-inner:after {
     right: 0;
     height: 6px;
     pointer-events: none;
-    transition: all .2s;
+    transition: all 0.2s;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=0);
     will-change: opacity;
@@ -1882,8 +1883,9 @@ body.has-scroll .header-fixed .header-inner:after {
   z-index: 0;
   left: 50%;
   top: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 @media (max-width: 767px) {
   .header-basic .header-logo-center-xs-only {
@@ -1891,8 +1893,9 @@ body.has-scroll .header-fixed .header-inner:after {
     z-index: 0;
     left: 50%;
     top: 50%;
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 .header-contact {

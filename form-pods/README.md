@@ -1,4 +1,4 @@
-GUI Progress Ropes
+GUI Form Pods
 ===========
 
 ***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other

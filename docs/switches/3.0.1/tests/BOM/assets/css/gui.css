@@ -1152,7 +1152,8 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 /**
@@ -1446,7 +1447,7 @@ template {
 	 */
 body {
   font-size: 0.875em;
-  line-height: 1.428571429;
+  line-height: 1.42857143;
   color: #1f252c;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
@@ -1481,7 +1482,7 @@ h6 {
   color: #1f252c;
 }
 p {
-  margin: 0.8571428572em 0;
+  margin: 0.85714286em 0;
 }
 dl dt {
   font-weight: 700;
@@ -1647,7 +1648,7 @@ fieldset[disabled] .switch-text {
 .switch-input:disabled ~ .switch-toggle,
 fieldset[disabled] .switch-toggle {
   cursor: not-allowed;
-  opacity: .5;
+  opacity: 0.5;
 }
 .switch-text {
   display: table-cell;
@@ -1689,8 +1690,9 @@ fieldset[disabled] .switch-toggle {
 }
 .switch-input:checked ~ .switch-toggle:after {
   left: 100%;
-  -ms-transform: translateX(-100%);
-      transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
   box-shadow: -3px 0 6px 0 rgba(0, 0, 0, 0.3);
 }
 .switch-input:checked ~ .switch-toggle .switch-toggle-off {
