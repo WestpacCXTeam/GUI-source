@@ -4,7 +4,7 @@
 	"description": "",
 	"category": "",
 	"versions": {
-		"2.0.0": {
+		"1.0.0": {
 			"dependencies": [],
 			"js": false,
 			"less": true,
