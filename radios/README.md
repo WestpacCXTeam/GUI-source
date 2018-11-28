@@ -1,8 +1,7 @@
 GUI Radios
 ==========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-radios/tests/BOM/) |
@@ -12,8 +11,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-radios/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-radios/tests/BT/)
 
-> Forms play an important role in our brand's products and services. All roads lead to a form so it’s important to get them right. These basic form
-> elements have been carefully crafted and rigorously tested. Use them as the foundation for any form creation.
+> Forms play an important role in our brand's products and services. All roads lead to a form so it’s important to get them right. These basic form elements have been carefully crafted and rigorously tested. Use them as the foundation for any form creation.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -21,9 +19,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Fixing radio layout for Firefox
+	* Fixed radio layout for Firefox
     [#407](https://github.com/WestpacCXTeam/GUI-source/issues/407)
-  * Ensuring sibling radios are top aligned
+  * Updated sibling radios to be top aligned
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New `.radio-block` block level radios; in addition to `.radio-flip` option
 	* Fixed `fieldset:disabled` support in IE

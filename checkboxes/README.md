@@ -1,8 +1,7 @@
 GUI Checkboxes
 ==============
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-checkboxes/tests/BOM/) |
@@ -12,8 +11,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-checkboxes/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-checkboxes/tests/BT/)
 
-> Forms play an important role in our brand's products and services. All roads lead to a form so it’s important to get them right. These basic form
-> elements have been carefully crafted and rigorously tested. Use them as the foundation for any form creation.
+> Forms play an important role in our brand's products and services. All roads lead to a form so it’s important to get them right. These basic form elements have been carefully crafted and rigorously tested. Use them as the foundation for any form creation.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -21,15 +19,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 ### Release History
 
 * v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Fixing checkbox layout for Firefox
+	* Fixed checkbox layout for Firefox
     [#407](https://github.com/WestpacCXTeam/GUI-source/issues/407)
-   * Ensuring sibling checkboxes are top aligned
+   * Updated sibling checkboxes to be top aligned
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New `.checkbox-block` block level checkboxes; in addition to `.checkbox-flip` option
 	* Fixed `fieldset:disabled` support in IE
 	* Reduced CSS specificity
 * v2.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
-	* Remove secondary `.symbol-*` prefix from checkbox marks (roll with `.icon-*` prefix for consistency)
+	* Removed secondary `.symbol-*` prefix from checkbox marks (roll with `.icon-*` prefix for consistency)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* The checkboxes slimmed down to 24px after a month of cardio and strict diet.
 		[#151](https://github.com/WestpacCXTeam/GUI-source/issues/151)
