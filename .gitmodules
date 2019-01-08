@@ -1027,3 +1027,6 @@
 [submodule "progress-ropes/1.0.0"]
 	path = progress-ropes/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
+[submodule "tabcordions/4.1.4"]
+	path = tabcordions/4.1.4
+	url = git@github.com:WestpacCXTeam/GUI-tabcordions.git
