@@ -1015,3 +1015,6 @@
 [submodule "icons/2.0.3"]
 	path = icons/2.0.3
 	url = git@github.com:WestpacCXTeam/GUI-icons.git
+[submodule "modals/3.0.1"]
+	path = modals/3.0.1
+	url = git@github.com:WestpacCXTeam/GUI-modals.git
