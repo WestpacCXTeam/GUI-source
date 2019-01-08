@@ -808,9 +808,6 @@
 [submodule "progress-bars/2.0.1"]
 	path = progress-bars/2.0.1
 	url = git@github.com:WestpacCXTeam/GUI-progress-bars.git
-[submodule "progress-ropes/1.0.0-alpha"]
-	path = progress-ropes/1.0.0-alpha
-	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
 [submodule "progress-ropes/1.0.0"]
 	path = progress-ropes/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
