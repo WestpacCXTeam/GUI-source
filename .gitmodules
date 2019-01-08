@@ -19,6 +19,9 @@
 [submodule "_colors/3.0.1"]
 	path = _colors/3.0.1
 	url = git@github.com:WestpacCXTeam/GUI_colors.git
+[submodule "_colors/3.0.2"]
+	path = _colors/3.0.2
+	url = git@github.com:WestpacCXTeam/GUI_colors.git
 [submodule "_fonts/1.0.0"]
 	path = _fonts/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI_fonts.git
@@ -772,6 +775,9 @@
 [submodule "popovers/2.0.3"]
 	path = popovers/2.0.3
 	url = git@github.com:WestpacCXTeam/GUI-popovers.git
+[submodule "popovers/2.1.0"]
+	path = popovers/2.1.0
+	url = git@github.com:WestpacCXTeam/GUI-popovers.git
 [submodule "progress-bars/1.0.0"]
 	path = progress-bars/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-progress-bars.git
@@ -991,6 +997,3 @@
 [submodule "wells/2.0.2"]
 	path = wells/2.0.2
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
-[submodule "popovers/2.1.0"]
-	path = popovers/2.1.0
-	url = git@github.com:WestpacCXTeam/GUI-popovers.git
