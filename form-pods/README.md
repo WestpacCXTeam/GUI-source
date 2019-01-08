@@ -1,8 +1,7 @@
 GUI Form Pods
 ===========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-form-pods/tests/BOM/) |
@@ -19,7 +18,13 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v1.0.0 - Initial port
+* v1.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Adding new `.form-pod-panel-inner-padded` modifier option to provide additional padding per breakpoint as appropriate
+	* Adding new `.form-pod-actions-reverse` modifier option to reverse the actions bar item order if required
+	* Adding new `.form-pod-header-center-xs-only` modifier option to centre the header in XS only
+	* Adding new `.form-pod-header-icon` option
+	* Adding styling to position alert boxes above Form-Pods (`.form-pod-alert`); used for the ‘Error summary’ pattern
+* v1.0.0-alpha - Initial port
 
 **[⬆ back to top](#content)**
 

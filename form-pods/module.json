@@ -4,7 +4,7 @@
 	"description": "Includes a heading, content area, footer and controls. The Form-Pod is designed to work inside a Template. When building a form each page should include one Form-Pod containing form components.",
 	"category": "Templates",
 	"versions": {
-		"1.0.0-alpha": {
+		"1.0.0": {
 			"dependencies": [
 				"icons",
 				"buttons",
@@ -14,7 +14,7 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 3,
+			"size": 4,
 			"brands": [
 				"BOM",
 				"BSA",
@@ -25,5 +25,5 @@
 			]
 		}
 	},
-	"hash": "98436b707c9a647b5f77118011ad74c4"
+	"hash": "5e6b12e00020ae2763b896ab2d849a7f"
 }

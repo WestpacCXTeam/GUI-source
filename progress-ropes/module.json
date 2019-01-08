@@ -4,7 +4,7 @@
 	"description": "A detailed visual indication of progress. Use to indicate how far along the user is in a journey. Progress-Ropes plays nicely with ‘Template with sidebar’.",
 	"category": "Templates",
 	"versions": {
-		"1.0.0-alpha": {
+		"1.0.0": {
 			"dependencies": [
 				"icons",
 				"buttons",
@@ -14,7 +14,7 @@
 			"less": true,
 			"svg": false,
 			"font": false,
-			"size": 8,
+			"size": 7,
 			"brands": [
 				"BOM",
 				"BSA",
@@ -25,5 +25,5 @@
 			]
 		}
 	},
-	"hash": "45564f507ef9bd2f3428c539e9e17987"
+	"hash": "c5cc644260908ae0dab66ada775513f1"
 }

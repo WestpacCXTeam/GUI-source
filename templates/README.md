@@ -1,8 +1,7 @@
 GUI Templates
 ===========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-templates/tests/BOM/) |
@@ -19,7 +18,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
-* v2.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+* v2.0.0 - `LESS/CSS` `HTML` `JS`
+	* Updated `.header-inner`, `.sidebar-content` and sidebar backdrop overlay z-index
+	* Added styling to reposition sidebar `.sr-skiplink`
+	* Updated JS functionality; only add sidebar `aria-hidden` attribute if necessary (when hidden in XS & SM)
+* v2.0.0-alpha - `LESS/CSS` `HTML` ~~`JS`~~
 	* Fixed sticky footer functionality and fixed header center alignment in IE
 		[#423](https://github.com/WestpacCXTeam/GUI-source/issues/423)
 	* Moved the `.template` class from `<html>` down to `<body>` element; our new sticky footer implementation no longer requires access to `<html>` (Note: This is in the only HTML update)
