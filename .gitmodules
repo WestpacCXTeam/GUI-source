@@ -1021,3 +1021,6 @@
 [submodule "templates/2.0.0"]
 	path = templates/2.0.0
 	url = git@github.com:WestpacCXTeam/GUI-templates.git
+[submodule "form-pods/1.0.0"]
+	path = form-pods/1.0.0
+	url = git@github.com:WestpacCXTeam/GUI-form-pods.git
