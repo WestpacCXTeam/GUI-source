@@ -256,6 +256,9 @@
 [submodule "footers/2.0.0"]
 	path = footers/2.0.0
 	url = git@github.com:WestpacCXTeam/GUI-footers.git
+[submodule "form-checks/1.0.0"]
+	path = form-checks/1.0.0
+	url = git@github.com:WestpacCXTeam/GUI-form-checks.git
 [submodule "form-pods/1.0.0"]
 	path = form-pods/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-form-pods.git
