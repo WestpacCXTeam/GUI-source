@@ -1012,3 +1012,6 @@
 [submodule "_text-styling/4.0.5"]
 	path = _text-styling/4.0.5
 	url = git@github.com:WestpacCXTeam/GUI_text-styling.git
+[submodule "icons/2.0.3"]
+	path = icons/2.0.3
+	url = git@github.com:WestpacCXTeam/GUI-icons.git
