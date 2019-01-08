@@ -997,3 +997,6 @@
 [submodule "wells/2.0.2"]
 	path = wells/2.0.2
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
+[submodule "alerts/4.0.0"]
+	path = alerts/4.0.0
+	url = git@github.com:WestpacCXTeam/GUI-alerts.git
