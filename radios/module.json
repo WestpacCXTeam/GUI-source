@@ -2,7 +2,8 @@
 	"ID": "radios",
 	"name": "Radios",
 	"description": "Styled radio buttons with SVG enhancements.",
-	"category": "Forms",
+	"category": "Deprecated",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [],

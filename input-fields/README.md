@@ -1,8 +1,7 @@
 GUI Input-field
 ===============
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-input-fields/tests/BOM/) |
@@ -12,22 +11,31 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-input-fields/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-input-fields/tests/BT/)
 
-> Inputs are the most common form controls. Text-based input fields include support for all HTML5 types: text, password, datetime, datetime-local, date, month,
-> time, week, number, email, url, search, tel, and colour. The date element triggers the date selector in compliant browsers.
+> Inputs are the most common form controls. Text-based input fields include support for all HTML5 types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and colour. The date element triggers the date selector in compliant browsers.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Dependency: GUI_colors v3.0.2, GUI_text-styling v4.0.5
+	* Mapped new border colour `@color-BorderDark` from Colors v3.0.2
+		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
+	* Making use of the new accessible focus outline styling from Text-Styling v4.0.5
+		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
+	* Disabled number input spinners/steppers in WebKit
+	* New size by character length classes (`.input-width-*`)
+	* Removed `.form-group` styling; now part of new Form-Base module
+	* Removed fieldset and legend styling
+	* New `.input-field-error` class. Error styling is now applied per input, rather than via a parent `.has-danger` class. This allows us to indicate errors on individual inputs within grouped inputs. Error styling no longer applies text colour styling; now simply a border colour.
 * v3.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Changed the input field sizing classes to our new naming convention
 		[#380](https://github.com/WestpacCXTeam/GUI-source/issues/380)
 	* Updated input sizing and added input line-height
 	* Select inputs are now block level by default as per other text inputs; use `.form-inline` wrapping for inline
 	* Restyled and simplified select input markup; wrapping element (`.input-field-select-wrapper`) no longer required, SVG caret supplied via Grunticon, removed Hero colour fill and `.input-addon-faint` modifier class
-	* Dropped the `.input-field-select`, `.input-field-select-{size}` and `.input-field-select-wrapper` classes; simply use the common `.input-field` and
-	`.input-field-{size}` classes on all input types (input, textarea and select)
+	* Dropped the `.input-field-select`, `.input-field-select-{size}` and `.input-field-select-wrapper` classes; simply use the common `.input-field` and `.input-field-{size}` classes on all input types (input, textarea and select)
 	* Removed fieldset sizing options; sizing already available per input via sizing classes `.input-field-{size}`
 	* Merged `:disabled` and `readonly` state styling; using the former’s styling
 	* Added default styling for label element; incl. bottom margin
@@ -42,14 +50,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 	* IE8 and IE9 got some visual love because we care, not because they deserved it.
 		[#193](https://github.com/WestpacCXTeam/GUI-source/issues/193)
 * v1.0.2 - `HTML` ~~`LESS/CSS`~~ ~~`JS`~~
-	* Our recent move to system fonts means we trust the system to take care of something as basic as the display of a font. Turns out you can't trust Microsoft
-		with such a task as they increase the size of the font rather than just the face. We fixed that and wrote an ~~angry~~ constructive letter to Redmond.
-		It's always important to vent your frustrations in a productive manner.
+	* Our recent move to system fonts means we trust the system to take care of something as basic as the display of a font. Turns out you can’t trust Microsoft with such a task as they increase the size of the font rather than just the face. We fixed that and wrote an ~~angry~ constructive letter to Redmond. It’s always important to vent your frustrations in a productive manner.
 		[#174](https://github.com/WestpacCXTeam/GUI-source/issues/174)
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Somewhere at Microsoft a person decided that placeholder text should look like input text. Making it less placeholder text and more like... text.
-		We were sure there was logic in there somewhere but we couldn't find it so we made it a tint in all browsers (including the elusive IE) to match the default
-		styling of sensible browsers.
+	* Somewhere at Microsoft a person decided that placeholder text should look like input text. Making it less placeholder text and more like... text. We were sure there was logic in there somewhere but we couldn't find it so we made it a tint in all browsers (including the elusive IE) to match the default styling of sensible browsers.
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
@@ -60,7 +64,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

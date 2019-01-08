@@ -1,8 +1,7 @@
 GUI Text-styling
 ================
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI_text-styling/tests/BOM/) |
@@ -12,15 +11,18 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI_text-styling/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI_text-styling/tests/BT/)
 
-> All HTML headings, are available. h1 through to h6 classes are also available, for when you want to match the font styling of a heading while maintaining
-> inline display. The default spacing used in these headings may not be suitable in all cases. Use the margin classes to adjust spacing above and below
-> headings.
+> All HTML headings, are available. h1 through to h6 classes are also available, for when you want to match the font styling of a heading while maintaining inline display. The default spacing used in these headings may not be suitable in all cases. Use the margin classes to adjust spacing above and below headings.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v4.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Dependency: GUI_colors v3.0.2
+	* Updating focus outline styling
+		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
+	* Reset default browser focus outline styling; applied to default interative and programatically focussed elements as required
 * v4.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Ensure OpenType ligatures are enabled for IE (modern browsers do this by default)
 * v4.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
@@ -73,7 +75,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_text-styling/master/LICENSE).
+Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_text-styling/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

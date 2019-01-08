@@ -97,7 +97,43 @@
 				"WBG",
 				"BT"
 			]
+		},
+		"3.0.1": {
+			"dependencies": [
+				"input-fields"
+			],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 3,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
+		},
+		"3.0.2": {
+			"dependencies": [
+				"input-fields"
+			],
+			"js": false,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 3,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
 		}
 	},
-	"hash": "c3a89c866647164cc1938e1638effc81"
+	"hash": "757c1d2c560c8e2ff195950d323b756e"
 }

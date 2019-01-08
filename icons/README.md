@@ -22,6 +22,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+	* Updated icon SVGs to include `focusable="false"` attribute to disable focus in IE/Edge. This will ensure focus behaviour is consistent between all browsers.
+		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
 * v2.0.2 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated the transfer icon design (`.icon-transfer`)
 * v2.0.1 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
@@ -47,7 +50,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-icons/master/LICENSE).
+Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-icons/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

@@ -154,7 +154,26 @@
 				"WBG",
 				"BT"
 			]
+		},
+		"4.0.0": {
+			"dependencies": [
+				"icons",
+				"buttons"
+			],
+			"js": true,
+			"less": true,
+			"svg": false,
+			"font": false,
+			"size": 6,
+			"brands": [
+				"BOM",
+				"BSA",
+				"STG",
+				"WBC",
+				"WBG",
+				"BT"
+			]
 		}
 	},
-	"hash": "d9dfb792c0c4c8261f18e8244a582221"
+	"hash": "7edbc5f4453a47fb071d1babe68ed7b8"
 }

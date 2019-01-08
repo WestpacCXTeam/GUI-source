@@ -2,7 +2,8 @@
 	"ID": "checkboxes",
 	"name": "Checkboxes",
 	"description": "Styled checkboxes with SVG enhancements.",
-	"category": "Forms",
+	"category": "Deprecated",
+	"deprecated": true,
 	"versions": {
 		"1.0.0": {
 			"dependencies": [],

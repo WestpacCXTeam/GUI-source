@@ -12,14 +12,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-tabcordions/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-tabcordions/tests/BT/)
 
-> Sometimes you need to group elements either for visual structure or as a functional requirement so that you can manipulate the group. For those situations
-> we’ve created several containers to get you started.
+> Sometimes you need to group elements either for visual structure or as a functional requirement so that you can manipulate the group. For those situations we’ve created several containers to get you started.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v4.1.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Ensuring open collapsibles don’t chop overflow; was affecting offset focus outlines
 * v4.1.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updating the accordion toggle icon and removing the indicator arrow
 	[#402](https://github.com/WestpacCXTeam/GUI-source/issues/402)
@@ -72,7 +73,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-tabcordions/master/LICENSE).
+Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-tabcordions/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

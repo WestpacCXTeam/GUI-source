@@ -1,8 +1,7 @@
 GUI Modals
 ==========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-modals/tests/BOM/) |
@@ -12,14 +11,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-modals/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-modals/tests/BT/)
 
-> Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. Modals should be easy to digest so that the
-> user can quickly get back to what they were doing. Set the initial width of your modal depending on the amount of content you are showing.
+> Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. Modals should be easy to digest so that the user can quickly get back to what they were doing. Set the initial width of your modal depending on the amount of content you are showing.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Increased modal z-index; modals should sit above everything
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Dependencies: Buttons v4.0.0, Icons v2.0.0
 	* Changed the modal sizing classes to our new naming convention
@@ -55,7 +55,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-modals/master/LICENSE).
+Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-modals/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

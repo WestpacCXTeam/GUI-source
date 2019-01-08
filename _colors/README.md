@@ -1,8 +1,7 @@
 GUI Colors
 ==========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -14,14 +13,19 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI_colors/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI_colors/tests/BT/)
 
-> The colours specified below should be used for all WBC user interfaces. It’s important to understand how the colour system works in a multi-brand
-> environment. It’s also very important to adhere to the accessibility guidelines.
+> The colours specified below should be used for all WBC user interfaces. It’s important to understand how the colour system works in a multi-brand environment. It’s also very important to adhere to the accessibility guidelines.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated BOM brand colours
+	* New colour variable `@color-BorderDark` for form inputs; powered by swatch slot D (`@color-D`), no longer empty
+		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
+	* New colour variable `@color-Focus` for form control focus styling; powered by a new swatch slot K (`@color-K`)
+		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
 * v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated STG brand‘s secondary palette colour ‘Access Green’.
 		[#418](https://github.com/WestpacCXTeam/GUI-source/issues/418)
@@ -55,7 +59,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_colors/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_colors/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

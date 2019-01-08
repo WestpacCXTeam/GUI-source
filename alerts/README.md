@@ -9,14 +9,19 @@ GUI Alerts
 [WBG](http://westpaccxteam.github.io/GUI-alerts/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-alerts/tests/BT/)
 
-> User feedback and messaging is essential in UI design. Using a cross-brand palette of reserved, contextual colours provides a flexible, consistent message
-> system for common user interactions.
+> User feedback and messaging is essential in UI design. Using a cross-brand palette of reserved, contextual colours provides a flexible, consistent message system for common user interactions.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+  * Removed alert form message styling (`.alert-form-msg`); now managed by the new Form-Base module as `.form-error-message`. Note: These form error messages no longer require a parent `.has-*` class (e.g. `.has-danger`), and are now positioned above the input control for better UX and a11y support, text sizing increased to 14px
+  * Alert boxes are now using Flexbox; providing a more robust method to style alert icon and text layout
+  * Ensure any text, headings and lists inside alert boxes is styled with the appropriate colour
+  * Alert body hidden overflow removed; child element focus outline offset styling no longer chopped
+  * New `.alert-heading` style; resets any top margin
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
   * Dependencies: GUI-buttons v4.0.0, GUI-icons v2.0.0
   * Alerts module consists of three alert types...
@@ -39,7 +44,7 @@ GUI Alerts
     [#364](https://github.com/WestpacCXTeam/GUI-source/issues/364)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
   * Tweaking has alert class to apply alert colour to input and textarea content so they are more visible.
-  [#315](https://github.com/WestpacCXTeam/GUI-source/issues/315)
+    [#315](https://github.com/WestpacCXTeam/GUI-source/issues/315)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
   * Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
@@ -48,18 +53,14 @@ GUI Alerts
 * v1.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
   * Fixed flexbox bug with a handy workaround.
     [#194](https://github.com/WestpacCXTeam/GUI-source/issues/194)
-  * Worked on the no-js fallback and made usability of large alerts better. Not that you should use large alert messages. Let's keep those grumpy messages
-    as short as possible.
+  * Worked on the no-js fallback and made usability of large alerts better. Not that you should use large alert messages. Let's keep those grumpy messages as short as possible.
   * Icons in those handy alert messages are now tinting the way they should have right from the start.
     [#190](https://github.com/WestpacCXTeam/GUI-source/issues/190)
 * v1.0.3 - `HTML` `LESS/CSS` ~~`JS`~~
-  * You know the feeling when you're trying to buy a beer at the corner pub on a Friday afternoon after you've just finished a sprint that was particularly
-    difficult and the alert message says: "No more funds" and you know you left the other card at home and never got around to setting up cardless cash?
-    Long story short: You now get to make that alert message a bit easier on the eyes by adding icons inside of it to help make Friday afternoons fun again.
+  * You know the feeling when you're trying to buy a beer at the corner pub on a Friday afternoon after you've just finished a sprint that was particularly difficult and the alert message says: "No more funds" and you know you left the other card at home and never got around to setting up cardless cash? Long story short: You now get to make that alert message a bit easier on the eyes by adding icons inside of it to help make Friday afternoons fun again.
     [#177](https://github.com/WestpacCXTeam/GUI-source/issues/177)
 * v1.0.2 - `JS` `HTML` ~~`LESS/CSS`~~
-  * We got word that using our JavaScript in dynamic DOM application was a bit... clunky. Clunky wasn't good enough for us so we refactored all Javascript
-    modules to unclunk all the things. Beware though, some JavaScript classes had to be injected to keep the modules clunk-free.
+  * We got word that using our JavaScript in dynamic DOM application was a bit... clunky. Clunky wasn't good enough for us so we refactored all Javascript modules to unclunk all the things. Beware though, some JavaScript classes had to be injected to keep the modules clunk-free.
     [#140](https://github.com/WestpacCXTeam/GUI-source/issues/140)
 * v1.0.1 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
   * As the built-in faux italic cut off the descenders in alert messages, we changed the font style to a more native style.
@@ -74,7 +75,7 @@ GUI Alerts
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-alerts/master/LICENSE).
+Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-alerts/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
