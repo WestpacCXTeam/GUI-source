@@ -1,8 +1,8 @@
-/*!_colors v3.0.0*/
+/*!_colors v3.0.2*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.3*/
+/*!_fonts v2.0.4*/
 /*
 	 *  SETTINGS
 	 */
@@ -27,8 +27,8 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .brand-font {
-  font-weight: normal;
   font-family: "aller";
+  font-weight: normal;
 }
 /*!_grid v3.0.0 BSA*/
 .clearfix:before,
@@ -798,7 +798,7 @@
     margin-left: 0%;
   }
 }
-/*!_text-styling v4.0.3*/
+/*!_text-styling v4.0.5*/
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
 	 * 1. Change the default font family in all browsers (opinionated).
@@ -1211,6 +1211,8 @@ body {
   line-height: 1.42857143;
   color: #333;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-feature-settings: "liga" 1;
+          font-feature-settings: "liga" 1;
 }
 abbr[title] {
   cursor: help;
@@ -1251,6 +1253,9 @@ dl dt {
 dl dd {
   margin: 0;
 }
+:focus {
+  outline: none;
+}
 ::-moz-selection {
   background-color: #f7d1d5;
 }
@@ -1265,12 +1270,9 @@ a:hover,
 a:focus {
   text-decoration: underline;
 }
-a:focus {
-  outline: none;
-}
 .is-keyboarduser a:focus {
-  outline: 2px dotted #000;
-  outline-offset: 0.5rem;
+  outline: 2px solid #c26f9d;
+  outline-offset: 3px;
 }
 label {
   display: inline-block;

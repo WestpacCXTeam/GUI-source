@@ -1,8 +1,8 @@
-/*!_colors v3.0.0*/
+/*!_colors v3.0.2*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.3*/
+/*!_fonts v2.0.4*/
 /*
 	 *  SETTINGS
 	 */
@@ -20,8 +20,8 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .brand-font {
-  font-weight: normal;
   font-family: "korolev-w01-cmp-bold";
+  font-weight: normal;
 }
 /*!_grid v3.0.0 BOM*/
 .clearfix:before,
@@ -791,7 +791,7 @@
     margin-left: 0%;
   }
 }
-/*!_text-styling v4.0.3*/
+/*!_text-styling v4.0.5*/
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
 	 * 1. Change the default font family in all browsers (opinionated).
@@ -1202,12 +1202,14 @@ template {
 body {
   font-size: 0.875em;
   line-height: 1.42857143;
-  color: #1f252c;
+  color: #20024e;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-feature-settings: "liga" 1;
+          font-feature-settings: "liga" 1;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #1f252c;
+  border-bottom: 1px dotted #20024e;
   text-decoration: none;
 }
 address {
@@ -1225,7 +1227,7 @@ textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 mark {
-  background-color: #f0ded7;
+  background-color: #f7d8cc;
 }
 h1,
 h2,
@@ -1233,7 +1235,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1f252c;
+  color: #403489;
 }
 p {
   margin: 0.85714286em 0;
@@ -1244,26 +1246,26 @@ dl dt {
 dl dd {
   margin: 0;
 }
+:focus {
+  outline: none;
+}
 ::-moz-selection {
-  background-color: #f0ded7;
+  background-color: #f7d8cc;
 }
 ::selection {
-  background-color: #f0ded7;
+  background-color: #f7d8cc;
 }
 a {
-  color: #b45c38;
+  color: #d73b00;
   text-decoration: underline;
 }
 a:hover,
 a:focus {
   text-decoration: underline;
 }
-a:focus {
-  outline: none;
-}
 .is-keyboarduser a:focus {
-  outline: 2px dotted #000;
-  outline-offset: 0.5rem;
+  outline: 2px solid #867bcd;
+  outline-offset: 3px;
 }
 label {
   display: inline-block;
