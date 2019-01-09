@@ -107,7 +107,6 @@
 </style>
 
 <h2>Progress Rope</h2>
-<p>It‘s important to use whichever step toggle element is semantically correct for the application (<code>&lt;a&gt;</code> or <code>&lt;button&gt;</code>).</p>
 
 <div class="row">
 	<div class="col-sm-6">
@@ -144,40 +143,6 @@
 		</div>
 
 	</div>
-	<div class="col-sm-6">
-
-		<h3>Using <code>&lt;button&gt;</code> elements</h3>
-
-		<div class="progress-rope progress-rope-test">
-			<ol class="progress-rope-list">
-				<li class="progress-rope-item is-inprogress is-complete">
-					<button type="button" class="progress-rope-step" id="step-1">Step 1</a>
-				</li>
-				<li class="progress-rope-item is-inprogress is-complete">
-					<button type="button" class="progress-rope-step" id="step-2">Step 2</a>
-				</li>
-				<li class="progress-rope-item is-inprogress is-active">
-					<button type="button" class="progress-rope-step" id="step-3">Step 3</a>
-				</li>
-				<li class="progress-rope-item">
-					<button type="button" class="progress-rope-step" id="step-4">Step 4</a>
-				</li>
-				<li class="progress-rope-item">
-					<button type="button" class="progress-rope-step" id="step-5">Step 5</a>
-				</li>
-				<li class="progress-rope-item">
-					<button type="button" class="progress-rope-step" id="step-6">Step 6</a>
-				</li>
-				<li class="progress-rope-item">
-					<button type="button" class="progress-rope-step" id="step-7">Step 7</a>
-				</li>
-			</ol>
-			<div class="progress-rope-item progress-rope-item-review">
-				<button type="button" class="progress-rope-step" id="step-review">Review and submit</a>
-			</div>
-		</div>
-	</div>
-
 </div>
 
 <hr>
@@ -243,67 +208,6 @@
 				<a href="#review" class="progress-rope-step">Review and submit</a>
 			</div>
 		</div>
-
-	</div>
-	<div class="col-sm-6">
-
-			<h3>Using <code>&lt;button&gt;</code> elements</h3>
-
-			<div class="progress-rope progress-rope-test">
-				<ol class="progress-rope-list progress-rope-list-accordion js-progress-rope-list-accordion">
-					<li class="progress-rope-list-accordion-group js-progress-rope-list-accordion-group is-inprogress is-complete">
-						<button type="button" data-collapsible="#progressGroupingE" class="progress-rope-list-accordion-toggle js-progress-rope-list-accordion-toggle">Group 1</button>
-
-						<ol class="progress-rope-list-accordion-body js-progress-rope-list-accordion-body" id="progressGroupingE" aria-hidden="false" tabindex="-1">
-							<li class="progress-rope-item is-inprogress is-complete">
-								<button type="button" class="progress-rope-step" id="step-1">Step 1</button>
-							</li>
-						</ol>
-					</li>
-
-					<li class="progress-rope-list-accordion-group js-progress-rope-list-accordion-group is-inprogress is-open">
-						<button type="button" data-collapsible="#progressGroupingF" class="progress-rope-list-accordion-toggle js-progress-rope-list-accordion-toggle">Group 2</button>
-
-						<ol class="progress-rope-list-accordion-body js-progress-rope-list-accordion-body" id="progressGroupingF" aria-hidden="true" tabindex="-1">
-							<li class="progress-rope-item is-inprogress is-complete">
-								<button type="button" class="progress-rope-step" id="step-2">Step 2</button>
-							</li>
-							<li class="progress-rope-item is-inprogress is-active">
-								<button type="button" class="progress-rope-step" id="step-3">Step 3</button>
-							</li>
-							<li class="progress-rope-item">
-								<button type="button" class="progress-rope-step" id="step-4">Step 4</button>
-							</li>
-						</ol>
-					</li>
-
-					<li class="progress-rope-list-accordion-group js-progress-rope-list-accordion-group">
-						<button type="button" data-collapsible="#progressGroupingG" class="progress-rope-list-accordion-toggle js-progress-rope-list-accordion-toggle">Group 3</button>
-
-						<ol class="progress-rope-list-accordion-body js-progress-rope-list-accordion-body" id="progressGroupingG" aria-hidden="true" tabindex="-1">
-							<li class="progress-rope-item">
-								<button type="button" class="progress-rope-step" id="step-5">Step 5</a>
-							</li>
-						</ol>
-					</li>
-
-					<li class="progress-rope-list-accordion-group js-progress-rope-list-accordion-group">
-						<button type="button" data-collapsible="#progressGroupingH" class="progress-rope-list-accordion-toggle js-progress-rope-list-accordion-toggle">Group 4</button>
-
-						<ol class="progress-rope-list-accordion-body js-progress-rope-list-accordion-body" id="progressGroupingH" aria-hidden="true" tabindex="-1">
-							<li class="progress-rope-item">
-								<button type="button" class="progress-rope-step" id="step-6">Step 6</a>
-							</li>
-							<li class="progress-rope-item">
-								<button type="button" class="progress-rope-step" id="step-7">Step 7</a>
-							</li>
-						</ol>
-					</li>
-				</ol>
-				<div class="progress-rope-item progress-rope-item-review">
-					<button type="button" class="progress-rope-step" id="step-review">Review and submit</a>
-				</div>
-			</div>
 
 	</div>
 </div>
