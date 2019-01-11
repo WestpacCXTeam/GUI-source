@@ -1,8 +1,7 @@
 GUI Fonts
 =========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -14,15 +13,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI_fonts/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI_fonts/tests/BT/)
 
-> The typography system caters for our multi-brand framework allowing us to implement brand specific web typography. Due to licensing issues we currently don’t
-> use many brand specific web fonts however we’re hoping to resolve this soon. The system will then help us to implement brand specific fonts very easily.
-> Never use a web font without prior confirmation that you have the correct licence agreement in place.
+> The typography system caters for our multi-brand framework allowing us to implement brand specific web typography. Due to licensing issues we currently don’t use many brand specific web fonts however we’re hoping to resolve this soon. The system will then help us to implement brand specific fonts very easily. Never use a web font without prior confirmation that you have the correct licence agreement in place.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated BOM brand’s font to ‘LL Brown’
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Exposed some new Less mixins to help when styling elements with brand and body text styling.
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
@@ -52,7 +51,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_fonts/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_fonts/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
