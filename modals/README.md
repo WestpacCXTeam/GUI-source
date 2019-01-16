@@ -20,6 +20,7 @@ GUI Modals
 
 * v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Increased modal z-index; modals should sit above everything
+	* Decreased close button size to medium (default) and adjust positioning
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Dependencies: Buttons v4.0.0, Icons v2.0.0
 	* Changed the modal sizing classes to our new naming convention
@@ -55,7 +56,7 @@ GUI Modals
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-modals/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-modals/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

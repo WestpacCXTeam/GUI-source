@@ -1380,8 +1380,8 @@ label {
 }
 .modal-close {
   position: relative;
-  margin-top: -15px;
-  margin-right: -24px;
+  margin-top: -12px;
+  margin-right: -22px;
   float: right;
   opacity: 1;
   transition: opacity 0.2s ease;
