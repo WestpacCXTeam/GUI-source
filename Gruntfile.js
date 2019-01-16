@@ -668,8 +668,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [ //build index and gui.json
 		'font:title',
 
-		'font:submoduleSync',
-		'submoduleSync',
+		// 'font:submoduleSync',
+		// 'submoduleSync',
 
 		'font:cleanDocs',
 		'clean:docs',
