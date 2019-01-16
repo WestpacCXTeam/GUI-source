@@ -148,7 +148,7 @@ See more in [Workflow](#workflow).
 > Run GUI-source and GUI-docs and upload to ubuntu server, install blender script and make sure we have 404 pages in place for transition
 
 1. GUI-source
-	1. add submodule in new version folder `git submodule add https://github.com/WestpacCXTeam/GUI-[module].git [module]/[version]`
+	1. add submodule in new version folder `git submodule add git@github.com:WestpacCXTeam/GUI-[module].git [module]/[version]`
 	1. update submodule to pull files (command above does that automatically)
 	1. checkout tag (should always be the latest tag)
 	1. `grunt` to compile `index.html`, `GUI.json` and all READMEs
