@@ -757,9 +757,6 @@
 [submodule "modals/3.0.0"]
 	path = modals/3.0.0
 	url = git@github.com:WestpacCXTeam/GUI-modals.git
-[submodule "modals/3.0.1"]
-	path = modals/3.0.1
-	url = git@github.com:WestpacCXTeam/GUI-modals.git
 [submodule "paginations/1.0.0"]
 	path = paginations/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-paginations.git
