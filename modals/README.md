@@ -18,9 +18,9 @@ GUI Modals
 
 ### Release History
 
-* v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+* v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Increased modal z-index; modals should sit above everything
-	* Decreased close button size to medium (default) and adjust positioning
+	* Decreased close button size to medium (default) and adjusted positioning
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Dependencies: Buttons v4.0.0, Icons v2.0.0
 	* Changed the modal sizing classes to our new naming convention

@@ -113,7 +113,7 @@
 				"BT"
 			]
 		},
-		"3.0.1": {
+		"4.0.0": {
 			"dependencies": [
 				"icons",
 				"buttons"
