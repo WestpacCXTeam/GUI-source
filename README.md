@@ -160,12 +160,10 @@ See more in [Workflow](#workflow).
 	1. run `grunt new-example` to automatically add the missing `_includes/modules` and `_examples` folders
 	1. make sure you have the new `_includes/modules/[module]/[version].liquid` file and updated its documentation
 	1. adjust `_examples` and add whatsnew
-	1. add email link to GUI mail archive in Getting started
-	1. `grunt` to compile (current devBrand) and run server
-	1. _(or)_ `grunt server` if you don't need to compile
+	1. `grunt` to compile (current devBrand) and run server _(or)_ `grunt server` if you don't need to compile
 	1. run blender locally `node remote/server-dev.js` from `/blender` (while GUI-docs server is running)
 	1. check local copy and blend new blend if required
-	1. install new GUI module into the docs build (js, css, grunticon, img fallback)
+	1. install new GUI module(s) into the docs build (js, css, grunticon, img fallback)
 	1. check new versions examples in all brands
 	1. `grunt prod-all` to build the production files
 	1. commit, merge `master`
