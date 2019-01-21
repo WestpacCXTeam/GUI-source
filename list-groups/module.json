@@ -1,6 +1,6 @@
 {
 	"ID": "list-groups",
-	"name": "List-Groups",
+	"name": "List Groups",
 	"description": "Complex lists with custom content.",
 	"category": "Lists",
 	"versions": {

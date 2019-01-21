@@ -1,6 +1,6 @@
 {
 	"ID": "form-pods",
-	"name": "Form-Pods",
+	"name": "Form Pods",
 	"description": "Includes a heading, content area, footer and controls. The Form-Pod is designed to work inside a Template. When building a form each page should include one Form-Pod containing form components.",
 	"category": "Templates",
 	"versions": {
