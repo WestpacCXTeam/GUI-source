@@ -1,7 +1,7 @@
 {
 	"ID": "form-base",
-	"name": "Forms",
-	"description": "",
+	"name": "Form-Base",
+	"description": "General form styling; providing form structure, layout and grouped input styling",
 	"category": "Forms",
 	"versions": {
 		"1.0.0": {

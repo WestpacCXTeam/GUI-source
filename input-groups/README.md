@@ -18,7 +18,7 @@ GUI Input-groups
 
 ### Release History
 
-* v3.0.1 - `LESS/CSS` `HTML` ~~`JS`~~
+* v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
   * Dependencies: GUI_colors v3.0.2, GUI-input-fields v3.0.1
   * Mapped new border colour `@color-BorderDark` from Colors v3.0.2
     [#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
