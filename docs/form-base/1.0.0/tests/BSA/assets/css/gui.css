@@ -1491,16 +1491,16 @@ label {
   margin: 0;
   padding: 0;
 }
-.inputs-item + .inputs-item {
+.form-inputs-item + .form-inputs-item {
   margin-top: 18px;
 }
-.inputs-inline {
+.form-inputs-inline {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.inputs-inline .inputs-item {
+.form-inputs-inline .form-inputs-item {
   margin-top: 0;
   margin-right: 20px;
   display: -ms-flexbox;
