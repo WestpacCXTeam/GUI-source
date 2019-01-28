@@ -1,8 +1,7 @@
 GUI Symbols
 ===========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-symbols/tests/BOM/) |
@@ -12,15 +11,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-symbols/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-symbols/tests/BT/)
 
-> These symbols are commonly used in WBC user interfaces. They are implemented as scalable vector graphics (SVGs) with PNG fallbacks for older browsers.
-> Using SVGs ensures the highest quality rendering on all devices, allows us to style the symbols using code and also complies with AA accessibility
-> requirements.
+> These symbols are commonly used in WBC user interfaces. They are implemented as scalable vector graphics (SVGs) with PNG fallbacks for older browsers. Using requirements.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v3.0.2 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* New PayID symbol added... `.symbol-payid`
 * v3.0.1 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated the Apple Store symbol and added an inverse option
 	* New BPay symbols added... `.symbol-bpay-port` and `.symbol-bpay-land`
@@ -74,7 +73,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-symbols/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-symbols/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
