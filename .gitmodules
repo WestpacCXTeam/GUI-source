@@ -931,6 +931,9 @@
 [submodule "symbols/3.0.1"]
 	path = symbols/3.0.1
 	url = git@github.com:WestpacCXTeam/GUI-symbols.git
+[submodule "symbols/3.0.2"]
+	path = symbols/3.0.2
+	url = git@github.com:WestpacCXTeam/GUI-symbols.git
 [submodule "tabcordions/1.0.0"]
 	path = tabcordions/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-tabcordions.git
@@ -1030,6 +1033,3 @@
 [submodule "wells/2.0.2"]
 	path = wells/2.0.2
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
-[submodule "symbols/3.0.2"]
-	path = symbols/3.0.2
-	url = git@github.com:WestpacCXTeam/GUI-symbols.git
