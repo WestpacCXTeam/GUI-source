@@ -1610,6 +1610,8 @@ label {
 }
 .alert-body {
   position: relative;
+  -ms-flex: 1;
+      flex: 1;
 }
 .alert-heading {
   margin-top: 0;
