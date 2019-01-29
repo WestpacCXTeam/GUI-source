@@ -178,6 +178,9 @@
 [submodule "breadcrumbs/2.0.2"]
 	path = breadcrumbs/2.0.2
 	url = git@github.com:WestpacCXTeam/GUI-breadcrumbs.git
+[submodule "breadcrumbs/2.0.3"]
+	path = breadcrumbs/2.0.3
+	url = git@github.com:WestpacCXTeam/GUI-breadcrumbs.git
 [submodule "buttons/1.0.0"]
 	path = buttons/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-buttons.git
