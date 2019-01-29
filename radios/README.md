@@ -11,7 +11,7 @@ GUI Radios
 [WBG](http://westpaccxteam.github.io/GUI-radios/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-radios/tests/BT/)
 
-> Forms play an important role in our brand's products and services. All roads lead to a form so it’s important to get them right. These basic form elements have been carefully crafted and rigorously tested. Use them as the foundation for any form creation.
+> ⚠️ **IMPORTANT!** This module is deprecated and merged into Form Checks as from v1.0.0. Please refer to [GUI-form-checks](https://github.com/WestpacCXTeam/GUI-form-checks) for new projects.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -63,7 +63,7 @@ GUI Radios
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-radios/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-radios/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

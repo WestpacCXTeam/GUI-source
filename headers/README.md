@@ -1,8 +1,7 @@
 GUI headers
 ===========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-headers/tests/BOM/) |
@@ -12,7 +11,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-headers/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-headers/tests/BT/)
 
-> Our multi-brand, responsive header components provide a flexible, accessible solution for navigation and branding. Using these headers will help to maintain a consistent application of our brand marks (size, position etc) throughout the customer journey. It’s important to note that all header components use the multi-brand logos and flex box. This makes them extremely robust and versatile.
+> ⚠️ **IMPORTANT!** This module is deprecated and merged into Templates as from v2.0.0. Please refer to [GUI-templates](https://github.com/WestpacCXTeam/GUI-templates) for new projects.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -48,7 +47,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-headers/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-headers/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

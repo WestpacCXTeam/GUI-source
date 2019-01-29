@@ -24,7 +24,7 @@ GUI Progress Ropes
 	* Updated focus outline to use global styling; provided by _Text-Styling module
 	* Removed styling for step links as buttons; simply use link `<a>` elements
 	* Updated future step markup for better screen reader and keyboard user support; ideally ’disabled links’ (divs) until actived
-	* Added a simple active step marker for high contast mode users
+	* Added a simple active step marker for high contrast mode users
 * v1.0.0-alpha - Initial port
 
 **[⬆ back to top](#content)**
@@ -35,7 +35,7 @@ GUI Progress Ropes
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-progress-ropes/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-progress-ropes/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

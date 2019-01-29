@@ -12,7 +12,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-footers/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-footers/tests/BT/)
 
-> Our multi-brand, responsive footer components provide a flexible, accessible solution for footer information, navigation and branding. Using these footers will help to maintain a consistent application of our brand marks (size, position etc) throughout the customer journey. It’s important to note that all footer components use the multi-brand logos and flex box. This makes them extremely robust and versatile.
+> ⚠️ **IMPORTANT!** This module is deprecated and merged into Templates as from v2.0.0. Please refer to [GUI-templates](https://github.com/WestpacCXTeam/GUI-templates) for new projects.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -38,7 +38,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-footers/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-footers/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

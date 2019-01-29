@@ -22,7 +22,7 @@ GUI Text-styling
 	* Dependency: GUI_colors v3.0.2
 	* Updating focus outline styling
 		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
-	* Reset default browser focus outline styling; applied to default interative and programatically focussed elements as required
+	* Reset default browser focus outline styling; applied to default interactive and programatically focussed elements as required
 * v4.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Ensure OpenType ligatures are enabled for IE (modern browsers do this by default)
 * v4.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
@@ -75,7 +75,7 @@ GUI Text-styling
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_text-styling/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI_text-styling/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
