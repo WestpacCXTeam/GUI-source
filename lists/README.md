@@ -21,6 +21,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 * v3.0.1 - ~~`SVG`~~ `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Add a new `.lists-unstyled` list option
+	* Updated BOM brand’s link and tick list icon colours
 * v3.0.0 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
 	* Changed the lists sizing class to our new naming convention
 		[#380](https://github.com/WestpacCXTeam/GUI-source/issues/380)
