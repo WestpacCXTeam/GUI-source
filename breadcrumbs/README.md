@@ -12,14 +12,15 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-breadcrumbs/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-breadcrumbs/tests/BT/)
 
-> Breadcrumbs are styled navigational links used to indicate a user journey or path. They are a simple, effective and proven method to aid orientation.
-> We like breadcrumbs.
+> Breadcrumbs are styled navigational links used to indicate a user journey or path. They are a simple, effective and proven method to aid orientation. We like breadcrumbs.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v2.0.3 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated BOM brand’s breadcrumb separator colour
 * v2.0.2 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated the breadcrumb separator to a ‘greater-than sign’ SVG icon
 		[#256](https://github.com/WestpacCXTeam/GUI-source/issues/256)
@@ -40,7 +41,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-breadcrumbs/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-breadcrumbs/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
