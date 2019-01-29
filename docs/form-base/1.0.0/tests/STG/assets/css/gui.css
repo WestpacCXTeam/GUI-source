@@ -1452,6 +1452,7 @@ label {
   margin: 0;
 }
 .input-label {
+  display: inline-block;
   font-size: 16px;
   margin-bottom: 12px;
   font-weight: 500;
@@ -1495,7 +1496,7 @@ label {
 }
 .form-inputs-inline .form-inputs-item {
   margin-top: 0;
-  margin-right: 20px;
+  margin-right: 18px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
