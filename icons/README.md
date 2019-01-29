@@ -1,8 +1,7 @@
 GUI Icons
 =========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-icons/tests/BOM/) |
@@ -12,10 +11,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-icons/tests/WBC/) |
 [BT](http://westpaccxteam.github.io/GUI-icons/tests/BT/)
 
-> This library of icons is intended for use across all of our brands and user interfaces. They are designed to aid navigation and legibility. The use of
-> icons purely as page embellishment is not recommended and in some cases will be off brand. These icons are implemented as scalable vector graphics (SVGs)
-> with PNG fallbacks for older browsers. Using SVGs ensures the highest quality rendering on all devices, allows us to style the icons using code and also
-> complies with AA accessibility requirements.
+> This library of icons is intended for use across all of our brands and user interfaces. They are designed to aid navigation and legibility. The use of icons purely as page embellishment is not recommended and in some cases will be off brand. These icons are implemented as scalable vector graphics (SVGs) with PNG fallbacks for older browsers. Using SVGs ensures the highest quality rendering on all devices, allows us to style the icons using code and also complies with WCAG AA accessibility requirements.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -25,6 +21,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 * v2.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Updated icon SVGs to include `focusable="false"` attribute to disable focus in IE/Edge. This will ensure focus behaviour is consistent between all browsers.
 		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
+	* Updated the Slack icon (`.icon-slack`)
 * v2.0.2 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated the transfer icon design (`.icon-transfer`)
 * v2.0.1 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
@@ -50,7 +47,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-icons/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-icons/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

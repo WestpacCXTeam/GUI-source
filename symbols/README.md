@@ -20,6 +20,7 @@ GUI Symbols
 
 * v3.0.2 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New PayID symbol added... `.symbol-payid`
+	* Updated the Slack symbol
 * v3.0.1 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated the Apple Store symbol and added an inverse option
 	* New BPay symbols added... `.symbol-bpay-port` and `.symbol-bpay-land`
