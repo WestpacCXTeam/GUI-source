@@ -171,7 +171,8 @@ See more in [Workflow](#workflow).
 	1. if fonts have changed make sure to upload the new webfont zip to
 		[the internal hosting site](https://sites.thewestpacgroup.com.au/sites/TS1206/SitePages/Home.aspx)
 1. upload files
-	1. upload `gui.zip` and `docs.zip` to `.temp` folder (check no version folders are empty)
+	1. upload `gui.zip` and `docs.zip` to `/www/.temp` folder (check no version folders are empty)
+		_(or use `scp /Users/username/Desktop/gui.zip deploy@128.199.200.220:/www/GUI/.temp/gui.zip` from your local computer)_
 	1. upload blender files (`server.js`, `.template/`, `assets/` possibly `package.json` and `.guiconfig`) [For Blender updates only]
 	1. ssh into machine
 	1. possibly `npm i` in `blender/remote` folder [For Blender updates only]
