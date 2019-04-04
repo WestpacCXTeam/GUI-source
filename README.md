@@ -171,14 +171,10 @@ See more in [Workflow](#workflow).
 	1. if fonts have changed make sure to upload the new webfont zip to
 		[the internal hosting site](https://sites.thewestpacgroup.com.au/sites/TS1206/SitePages/Home.aspx)
 1. upload files
-<<<<<<< HEAD
     1. Compress all the folders found in `GUI-docs/jekyll/_site` in `docs.zip`
     1. Compress all the files and folders found in `GUI-docs/GUI-source-master` in `gui.zip`
-	1. In the server: upload `gui.zip` and `docs.zip` to `/www/GUI/.temp` folder (check no version folders are empty)
-=======
-	1. upload `gui.zip` and `docs.zip` to `/www/.temp` folder (check no version folders are empty)
+	1. In the server: upload `gui.zip` and `docs.zip` to `/www/.temp` folder (check no version folders are empty)
 		_(or use `scp /Users/username/Desktop/gui.zip deploy@128.199.200.220:/www/GUI/.temp/gui.zip` from your local computer)_
->>>>>>> a66065eb5d2f23f276b548c7c41e4ee024da8cc7
 	1. upload blender files (`server.js`, `.template/`, `assets/` possibly `package.json` and `.guiconfig`) [For Blender updates only]
 	1. ssh into machine
 	1. possibly `npm i` in `blender/remote` folder [For Blender updates only]
