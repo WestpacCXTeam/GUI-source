@@ -171,18 +171,20 @@ See more in [Workflow](#workflow).
 	1. if fonts have changed make sure to upload the new webfont zip to
 		[the internal hosting site](https://sites.thewestpacgroup.com.au/sites/TS1206/SitePages/Home.aspx)
 1. upload files
-	1. upload `gui.zip` and `docs.zip` to `.temp` folder (check no version folders are empty)
+    1. Compress all the folders found in `GUI-docs/jekyll/_site` in `docs.zip`
+    1. Compress all the files and folders found in `GUI-docs/GUI-source-master` in `gui.zip`
+	1. In the server: upload `gui.zip` and `docs.zip` to `/www/GUI/.temp` folder (check no version folders are empty)
 	1. upload blender files (`server.js`, `.template/`, `assets/` possibly `package.json` and `.guiconfig`) [For Blender updates only]
 	1. ssh into machine
 	1. possibly `npm i` in `blender/remote` folder [For Blender updates only]
-	1. `unzip gui.zip -d ../`
+	1. Navigate to the `/www/GUI/.temp` folder and run: `unzip gui.zip -d ../`
 	1. `forever list` [For Blender updates only]
 	1. `forever restart 0` or `forever start -l blender.log --append -o blenderOut.log -e blenderError.log server.js` [For Blender updates only]
 	1. `forever list` and blend something to test [For Blender updates only]
-	1. rename `construction2.html` to `construction.html` to redirect traffic to this file with nginx
-	1. `rm -rf BOM` | `rm -rf BSA` | `rm -rf STG` | `rm -rf WBC` | `rm -rf WBG` | `rm -rf BT`
-	1. `unzip docs.zip -d ../`
-	1. rename `construction.html` to `construction2.html` to direct traffic back to the site
+	1. Navigate to the `/www` folder and rename `construction2.html` to `construction.html` to redirect traffic to this file with nginx
+	1. Navigate to the `/www/GUI` folder and run: `rm -rf BOM` | `rm -rf BSA` | `rm -rf STG` | `rm -rf WBC` | `rm -rf WBG` | `rm -rf BT`
+	1. Navigate to the `/www/GUI/.temp` folder and run: `unzip docs.zip -d ../`
+	1. Navigate to the `/www` folder and rename `construction.html` to `construction2.html` to direct traffic back to the site
 	1. `sudo reboot` if necessary
 1. email
 	1. get all change messages
