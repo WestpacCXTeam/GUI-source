@@ -20,6 +20,8 @@ GUI Colors
 
 ### Release History
 
+* v3.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated BOM brand colours
 * v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated BOM brand colours
 	* New colour variable `@color-BorderDark` for form inputs; powered by swatch slot D (`@color-D`), no longer empty
