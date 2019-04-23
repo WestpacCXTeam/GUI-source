@@ -1039,3 +1039,6 @@
 [submodule "alerts/4.0.1"]
 	path = alerts/4.0.1
 	url = git@github.com:WestpacCXTeam/GUI-alerts.git
+[submodule "_colors/3.0.3"]
+	path = _colors/3.0.3
+	url = git@github.com:WestpacCXTeam/GUI_colors.git
