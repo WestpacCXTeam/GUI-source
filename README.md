@@ -172,13 +172,15 @@ See more in [Workflow](#workflow).
 		[the internal hosting site](https://sites.thewestpacgroup.com.au/sites/TS1206/SitePages/Home.aspx)
 1. upload files
     1. Compress all the folders found in `GUI-docs/jekyll/_site` in `docs.zip`
-    1. Compress all the files and folders found in `GUI-docs/GUI-source-master` in `gui.zip`
-	1. In the server: upload `gui.zip` and `docs.zip` to `/www/.temp` folder (check no version folders are empty)
+    1. Compress `GUI-source-master` folder found in `GUI-docs/GUI-source-master` in `gui.zip`
+	1. In the server: upload `gui.zip` and `docs.zip` to `/www/GUI/.temp` folder (check no version folders are empty)
 		_(or use `scp /Users/username/Desktop/gui.zip deploy@128.199.200.220:/www/GUI/.temp/gui.zip` from your local computer)_
 	1. upload blender files (`server.js`, `.template/`, `assets/` possibly `package.json` and `.guiconfig`) [For Blender updates only]
 	1. ssh into machine
 	1. possibly `npm i` in `blender/remote` folder [For Blender updates only]
-	1. Navigate to the `/www/GUI/.temp` folder and run: `unzip gui.zip -d ../`
+	1. Navigate to the `/www/GUI/.temp` folder and run: `unzip gui.zip -d ../safety-net`
+    1. Navigate to the `/www/GUI` folder and run: `rm -rf GUI-source-master`
+    1. Move `GUI-source-master` from folder `safety-net` to the `/www/GUI` folder
 	1. `forever list` [For Blender updates only]
 	1. `forever restart 0` or `forever start -l blender.log --append -o blenderOut.log -e blenderError.log server.js` [For Blender updates only]
 	1. `forever list` and blend something to test [For Blender updates only]
