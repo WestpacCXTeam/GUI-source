@@ -1,4 +1,4 @@
-/*!_colors v3.0.2*/
+/*!_colors v3.0.3*/
 /*
 	 *  SETTINGS
 	 */
@@ -1235,7 +1235,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #403489;
+  color: #534891;
 }
 p {
   margin: 0.85714286em 0;
@@ -1370,7 +1370,7 @@ label {
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 3px solid #403489;
+  border-bottom: 3px solid #534891;
   font-weight: 500;
   color: #20024e;
 }
@@ -1383,7 +1383,7 @@ label {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #403489;
+  border-top: 2px solid #534891;
 }
 .table:not(.table-striped) > tbody > tr {
   transition: background 0.2s ease;

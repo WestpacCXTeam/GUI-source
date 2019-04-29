@@ -1,4 +1,4 @@
-/*!_colors v3.0.2*/
+/*!_colors v3.0.3*/
 /*
 	 *  SETTINGS
 	 */
@@ -1238,7 +1238,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #403489;
+  color: #534891;
 }
 p {
   margin: 0.85714286em 0;
@@ -1525,16 +1525,16 @@ html {
       flex-grow: 1;
 }
 .tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab a {
-  background-color: #403489;
+  background-color: #534891;
   color: #fff;
   border-radius: 0;
   margin-bottom: 2px;
   padding-bottom: 12px;
-  border-color: #403489;
+  border-color: #534891;
   transition: background 0.3s ease, padding 0.3s ease, margin 0.3s ease;
 }
 .tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab a:hover {
-  background-color: #7971ac;
+  background-color: #877fb2;
 }
 .tabcordion-lego.tabcordion .tabcordion-tabs .tabcordion-tab.is-active a {
   background-color: #fff;
@@ -1602,7 +1602,7 @@ html {
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header {
   transition: border 0.3s ease;
-  border-left: 6px solid #403489;
+  border-left: 6px solid #534891;
 }
 .tabcordion-lego.tabcordion .tabcordion-body-header .tabcordion-body-headline {
   padding-left: 12px;

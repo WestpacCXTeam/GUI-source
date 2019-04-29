@@ -1,4 +1,4 @@
-/*!_colors v3.0.2*/
+/*!_colors v3.0.3*/
 /*
 	 *  SETTINGS
 	 */
@@ -1235,7 +1235,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #403489;
+  color: #534891;
 }
 p {
   margin: 0.85714286em 0;
@@ -1397,7 +1397,7 @@ fieldset[disabled] .form-checks-label {
   left: 0;
   width: 24px;
   height: 24px;
-  border: 1px solid #403489;
+  border: 1px solid #534891;
   background: transparent;
 }
 .form-checks-input[type="checkbox"] + .form-checks-label::before {
@@ -1418,7 +1418,7 @@ fieldset[disabled] .form-checks-label::before {
 .form-checks-label::after {
   content: '';
   position: absolute;
-  border: solid #403489;
+  border: solid #534891;
   opacity: 0;
 }
 .form-checks-input[type="radio"] + .form-checks-label::after {
@@ -1428,7 +1428,7 @@ fieldset[disabled] .form-checks-label::before {
   height: 0;
   border-width: 6px;
   border-radius: 50%;
-  background: #403489;
+  background: #534891;
 }
 .form-checks-input[type="checkbox"] + .form-checks-label::after {
   top: 6px;

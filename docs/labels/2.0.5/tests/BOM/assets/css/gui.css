@@ -1,4 +1,4 @@
-/*!_colors v3.0.2*/
+/*!_colors v3.0.3*/
 /*
 	 *  SETTINGS
 	 */
@@ -1235,7 +1235,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #403489;
+  color: #534891;
 }
 p {
   margin: 0.85714286em 0;
@@ -1393,13 +1393,13 @@ a.label-primary:focus {
 }
 .label-hero {
   color: #fff;
-  background-color: #403489;
-  border: 1px solid #403489;
+  background-color: #534891;
+  border: 1px solid #534891;
 }
 .label-hero[href]:not(.label-faint):hover,
 .label-hero[href]:not(.label-faint):focus {
-  background-color: #a09ac4;
-  border-color: #a09ac4;
+  background-color: #a9a4c8;
+  border-color: #a9a4c8;
 }
 a.label-hero:hover,
 a.label-hero:focus {

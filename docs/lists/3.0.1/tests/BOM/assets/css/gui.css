@@ -1,4 +1,4 @@
-/*!_colors v3.0.2*/
+/*!_colors v3.0.3*/
 /*
 	 *  SETTINGS
 	 */
@@ -1235,7 +1235,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #403489;
+  color: #534891;
 }
 p {
   margin: 0.85714286em 0;
@@ -1367,8 +1367,8 @@ ul.lists > li > .lists > li::after {
   background-color: transparent;
 }
 ul.lists.lists-hero > li::after {
-  border-color: #403489;
-  background-color: #403489;
+  border-color: #534891;
+  background-color: #534891;
 }
 ul.lists.lists-neutral > li::after {
   border-color: #595762;
@@ -1431,7 +1431,7 @@ ul.lists.lists-neutral > li::after {
   fill: #d73b00;
 }
 .lists.lists-icon.lists-hero > li > .icon .icons-background {
-  fill: #403489;
+  fill: #534891;
 }
 .lists.lists-icon.lists-neutral > li > .icon .icons-background {
   fill: #595762;

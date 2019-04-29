@@ -1,4 +1,4 @@
-/*!_colors v3.0.2*/
+/*!_colors v3.0.3*/
 /*
 	 *  SETTINGS
 	 */
@@ -1235,7 +1235,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #403489;
+  color: #534891;
 }
 p {
   margin: 0.85714286em 0;
@@ -1462,22 +1462,22 @@ fieldset[disabled] a.btn {
 }
 .btn-hero {
   color: #fff;
-  border-color: #403489;
-  background-color: #403489;
+  border-color: #534891;
+  background-color: #534891;
   transition: background 0.2s ease, color 0.2s ease;
 }
 .btn-hero:hover {
   color: #fff;
-  border-color: #403489;
-  background-color: #7971ac;
+  border-color: #534891;
+  background-color: #877fb2;
 }
 .btn-hero:hover .icons-background {
   fill: #fff;
 }
 .btn-hero:active {
   color: #fff;
-  border-color: #403489;
-  background-color: #a09ac4;
+  border-color: #534891;
+  background-color: #a9a4c8;
 }
 .btn-hero:active .icons-background {
   fill: #fff;
@@ -1487,8 +1487,8 @@ fieldset[disabled] a.btn {
 }
 .btn-group .btn-group-input:checked + .btn-hero {
   color: #fff;
-  border-color: #403489;
-  background-color: #403489;
+  border-color: #534891;
+  background-color: #534891;
 }
 .btn-group .btn-group-input:checked + .btn-hero .icons-background {
   fill: #fff;
@@ -1498,8 +1498,8 @@ fieldset[disabled] a.btn {
 .btn-hero.disabled:hover,
 .btn-hero:disabled:hover {
   color: #fff;
-  border-color: #403489;
-  background-color: #403489;
+  border-color: #534891;
+  background-color: #534891;
 }
 .btn-neutral {
   color: #fff;

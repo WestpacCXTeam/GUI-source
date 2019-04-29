@@ -1,4 +1,4 @@
-/*!_colors v3.0.2*/
+/*!_colors v3.0.3*/
 /*
 	 *  SETTINGS
 	 */
@@ -1238,7 +1238,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #403489;
+  color: #534891;
 }
 p {
   margin: 0.85714286em 0;
@@ -1506,7 +1506,7 @@ label {
 }
 .form-chitchat {
   font-size: 18px;
-  color: #403489;
+  color: #534891;
   line-height: 1.4;
   font-weight: bold;
   text-align: center;
@@ -1528,7 +1528,7 @@ label {
 }
 .form-cross-sell-heading {
   font-size: 18px;
-  color: #403489;
+  color: #534891;
   line-height: 1.4;
   font-weight: bold;
   text-align: center;
