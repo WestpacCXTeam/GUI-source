@@ -1042,3 +1042,6 @@
 [submodule "_colors/3.0.3"]
 	path = _colors/3.0.3
 	url = git@github.com:WestpacCXTeam/GUI_colors.git
+[submodule "input-groups/3.0.2"]
+	path = input-groups/3.0.2
+	url = git@github.com:WestpacCXTeam/GUI-input-groups.git
