@@ -18,6 +18,9 @@ GUI Input-groups
 
 ### Release History
 
+* v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+  * Removed the border left and right on the input fields when they use Button controls
+    [#444](https://github.com/WestpacCXTeam/GUI-source/issues/444)
 * v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
   * Dependencies: GUI_colors v3.0.2, GUI-input-fields v3.0.1
   * Mapped new border colour `@color-BorderDark` from Colors v3.0.2
