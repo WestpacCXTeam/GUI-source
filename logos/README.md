@@ -1,8 +1,7 @@
 GUI Logos
 =========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-logos/tests/BOM/) |
@@ -13,18 +12,20 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [BT](http://westpaccxteam.github.io/GUI-logos/tests/BT/)
 
 > These symbols are commonly used in WBC user interfaces. They are implemented as scalable vector graphics (SVGs) with PNG fallbacks for older browsers.
-> Using SVGs ensures the highest quality rendering on all devices, allows us to style the symbols using code and also complies with AA accessibility
-> requirements.
+> Using SVGs ensures the highest quality rendering on all devices, allows us to style the symbols using code and also complies with AA accessibility requirements.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v2.0.7 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+	* `.logo-wbc-200` logo removed, Westpac multi-brand logos updated. The ‘Westpac 200’ logo is now deprecated, we have reverted back to using the standard ‘Westpac W’ logo.
+		[#446](https://github.com/WestpacCXTeam/GUI-source/issues/446)
 * v2.0.6 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
 	* `.logo-multibrand-small` multi-brand logo has been resized; slightly taller and wider to 122&times;44px
 	* New `.logo-multibrand-small-center` and `.logo-multibrand-small-right` multi-brand logos (122&times;44px)
-	* WBC brand’s multi-brand logo now uses the 'Westpac 200' design
+	* WBC brand’s multi-brand logo now uses the ‘Westpac 200’ design
 * v2.0.5 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
 	* New `.logo-multibrand-*` multi-brand logos; brought over from the Symbols module and renamed for clarity.
 		[#333](https://github.com/WestpacCXTeam/GUI-source/issues/333)
@@ -58,7 +59,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-logos/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-logos/master/LICENSE).
 
 **[⬆ back to top](#content)**
 
