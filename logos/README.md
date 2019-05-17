@@ -19,18 +19,18 @@ GUI Logos
 
 ### Release History
 
-* v2.0.7 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+* v2.0.7 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* `.logo-wbc-200` logo removed, Westpac multi-brand logos updated. The ‘Westpac 200’ logo is now deprecated, we have reverted back to using the standard ‘Westpac W’ logo.
 		[#446](https://github.com/WestpacCXTeam/GUI-source/issues/446)
-* v2.0.6 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+* v2.0.6 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* `.logo-multibrand-small` multi-brand logo has been resized; slightly taller and wider to 122&times;44px
 	* New `.logo-multibrand-small-center` and `.logo-multibrand-small-right` multi-brand logos (122&times;44px)
 	* WBC brand’s multi-brand logo now uses the ‘Westpac 200’ design
-* v2.0.5 - `SVG` `LESS/CSS` `HTML` ~~`JS`~~
+* v2.0.5 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New `.logo-multibrand-*` multi-brand logos; brought over from the Symbols module and renamed for clarity.
 		[#333](https://github.com/WestpacCXTeam/GUI-source/issues/333)
 	* Reduce CSS over-specificity
-* v2.0.4 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
+* v2.0.4 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Remove secondary `.symbol-*` prefix from all Logos. Logos use the `.logo-*` prefix and Symbols use the `.symbol-*` prefix exclusively.
 * v2.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* We added Westpac’s 200 year birthday logo. Yes. We’re turning 200. 🎂🎉🎁 Feels just like yesterday when we started with this whole banking thing.
