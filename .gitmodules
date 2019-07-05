@@ -1048,3 +1048,6 @@
 [submodule "logos/2.0.7"]
 	path = logos/2.0.7
 	url = git@github.com:WestpacCXTeam/GUI-logos.git
+[submodule "alerts/4.0.2"]
+	path = alerts/4.0.2
+	url = git@github.com:WestpacCXTeam/GUI-alerts.git
