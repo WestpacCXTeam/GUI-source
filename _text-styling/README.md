@@ -18,9 +18,12 @@ GUI Text-styling
 
 ### Release History
 
+* v4.0.6 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Added heading :focus styling; so headings manually given tab order (tabindex) are styled appropriately
+		[#453](https://github.com/WestpacCXTeam/GUI-source/issues/453)
 * v4.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Dependency: GUI_colors v3.0.2
-	* Updating focus outline styling
+	* Updated focus outline styling
 		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)
 	* Reset default browser focus outline styling; applied to default interactive and programatically focussed elements as required
 * v4.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

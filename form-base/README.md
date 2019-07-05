@@ -18,6 +18,8 @@ GUI Form Base
 
 ### Release History
 
+* v1.0.1 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
+	* Updated error styling to support multiple error messages in lists
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**

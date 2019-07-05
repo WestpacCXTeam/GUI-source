@@ -18,6 +18,9 @@ GUI Templates
 
 ### Release History
 
+* v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Fixed header drop shadow rendering
+		[#450](https://github.com/WestpacCXTeam/GUI-source/issues/450)
 * v2.0.0 - `LESS/CSS` `HTML` `JS`
 	* Updated `.header-inner`, `.sidebar-content` and sidebar backdrop overlay z-index
 	* Added styling to reposition sidebar `.sr-skiplink`
@@ -50,7 +53,7 @@ GUI Templates
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-templates/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-templates/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

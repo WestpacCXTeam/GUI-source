@@ -16,8 +16,14 @@ GUI Alerts
 
 ### Release History
 
+* v4.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+  * Fixed alert box content overflow bug
+    [#452](https://github.com/WestpacCXTeam/GUI-source/issues/452)
+  * Fixed alert box close button positioning; remove overlap with alert body text, for all breakpoints
+  * Refactored codebase; simplifying styling of alert content for each of the alert types
+  * Added legacy styling for IE 8&9 which doesn’t support flexbox layout
 * v4.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-  * Link colour in Alerts; the link text should be the same colour as the message text 
+  * Link colour in Alerts; the link text should be the same colour as the message text
     [#442](https://github.com/WestpacCXTeam/GUI-source/issues/442)
 * v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
   * Removed alert form message styling (`.alert-form-msg`); now managed by the new Form-Base module as `.form-error-message`. Note: These form error messages no longer require a parent `.has-*` class (e.g. `.has-danger`), and are now positioned above the input control for better UX and a11y support, text sizing increased to 14px

@@ -22,6 +22,9 @@
 [submodule "_colors/3.0.2"]
 	path = _colors/3.0.2
 	url = git@github.com:WestpacCXTeam/GUI_colors.git
+[submodule "_colors/3.0.3"]
+	path = _colors/3.0.3
+	url = git@github.com:WestpacCXTeam/GUI_colors.git
 [submodule "_fonts/1.0.0"]
 	path = _fonts/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI_fonts.git
@@ -106,6 +109,9 @@
 [submodule "_text-styling/4.0.5"]
 	path = _text-styling/4.0.5
 	url = git@github.com:WestpacCXTeam/GUI_text-styling.git
+[submodule "_text-styling/4.0.6"]
+	path = _text-styling/4.0.6
+	url = git@github.com:WestpacCXTeam/GUI_text-styling.git
 [submodule "accessibility-helpers/1.0.0"]
 	path = accessibility-helpers/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-accessibility-helpers.git
@@ -150,6 +156,12 @@
 	url = git@github.com:WestpacCXTeam/GUI-alerts.git
 [submodule "alerts/4.0.0"]
 	path = alerts/4.0.0
+	url = git@github.com:WestpacCXTeam/GUI-alerts.git
+[submodule "alerts/4.0.1"]
+	path = alerts/4.0.1
+	url = git@github.com:WestpacCXTeam/GUI-alerts.git
+[submodule "alerts/4.0.2"]
+	path = alerts/4.0.2
 	url = git@github.com:WestpacCXTeam/GUI-alerts.git
 [submodule "badges/1.0.0"]
 	path = badges/1.0.0
@@ -264,6 +276,9 @@
 	url = git@github.com:WestpacCXTeam/GUI-footers.git
 [submodule "form-base/1.0.0"]
 	path = form-base/1.0.0
+	url = git@github.com:WestpacCXTeam/GUI-form-base.git
+[submodule "form-base/1.0.1"]
+	path = form-base/1.0.1
 	url = git@github.com:WestpacCXTeam/GUI-form-base.git
 [submodule "form-checks/1.0.0"]
 	path = form-checks/1.0.0
@@ -649,6 +664,9 @@
 [submodule "input-groups/3.0.1"]
 	path = input-groups/3.0.1
 	url = git@github.com:WestpacCXTeam/GUI-input-groups.git
+[submodule "input-groups/3.0.2"]
+	path = input-groups/3.0.2
+	url = git@github.com:WestpacCXTeam/GUI-input-groups.git
 [submodule "labels/1.0.0"]
 	path = labels/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-labels.git
@@ -738,6 +756,9 @@
 	url = git@github.com:WestpacCXTeam/GUI-logos.git
 [submodule "logos/2.0.6"]
 	path = logos/2.0.6
+	url = git@github.com:WestpacCXTeam/GUI-logos.git
+[submodule "logos/2.0.7"]
+	path = logos/2.0.7
 	url = git@github.com:WestpacCXTeam/GUI-logos.git
 [submodule "modals/1.0.0"]
 	path = modals/1.0.0
@@ -1036,24 +1057,3 @@
 [submodule "wells/2.0.2"]
 	path = wells/2.0.2
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
-[submodule "alerts/4.0.1"]
-	path = alerts/4.0.1
-	url = git@github.com:WestpacCXTeam/GUI-alerts.git
-[submodule "_colors/3.0.3"]
-	path = _colors/3.0.3
-	url = git@github.com:WestpacCXTeam/GUI_colors.git
-[submodule "input-groups/3.0.2"]
-	path = input-groups/3.0.2
-	url = git@github.com:WestpacCXTeam/GUI-input-groups.git
-[submodule "logos/2.0.7"]
-	path = logos/2.0.7
-	url = git@github.com:WestpacCXTeam/GUI-logos.git
-[submodule "alerts/4.0.2"]
-	path = alerts/4.0.2
-	url = git@github.com:WestpacCXTeam/GUI-alerts.git
-[submodule "_text-styling/4.0.6"]
-	path = _text-styling/4.0.6
-	url = git@github.com:WestpacCXTeam/GUI_text-styling.git
-[submodule "form-base/1.0.1"]
-	path = form-base/1.0.1
-	url = git@github.com:WestpacCXTeam/GUI-form-base.git

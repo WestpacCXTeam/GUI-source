@@ -794,7 +794,7 @@
     margin-left: 0%;
   }
 }
-/*!_text-styling v4.0.5*/
+/*!_text-styling v4.0.6*/
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
 	 * 1. Change the default font family in all browsers (opinionated).
@@ -1239,6 +1239,15 @@ h4,
 h5,
 h6 {
   color: #534891;
+}
+.is-keyboarduser h1:focus,
+.is-keyboarduser h2:focus,
+.is-keyboarduser h3:focus,
+.is-keyboarduser h4:focus,
+.is-keyboarduser h5:focus,
+.is-keyboarduser h6:focus {
+  outline: 2px solid #867bcd;
+  outline-offset: 3px;
 }
 p {
   margin: 0.85714286em 0;
