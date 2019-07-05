@@ -1054,3 +1054,6 @@
 [submodule "_text-styling/4.0.6"]
 	path = _text-styling/4.0.6
 	url = git@github.com:WestpacCXTeam/GUI_text-styling.git
+[submodule "form-base/1.0.1"]
+	path = form-base/1.0.1
+	url = git@github.com:WestpacCXTeam/GUI-form-base.git
