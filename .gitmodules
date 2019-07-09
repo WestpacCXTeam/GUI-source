@@ -1018,6 +1018,9 @@
 [submodule "templates/2.0.0"]
 	path = templates/2.0.0
 	url = git@github.com:WestpacCXTeam/GUI-templates.git
+[submodule "templates/2.0.1"]
+	path = templates/2.0.1
+	url = git@github.com:WestpacCXTeam/GUI-templates.git
 [submodule "text-extensions/1.0.0"]
 	path = text-extensions/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-text-extensions.git
