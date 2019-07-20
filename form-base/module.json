@@ -8,7 +8,7 @@
 			"dependencies": [],
 			"js": false,
 			"less": true,
-			"svg": false,
+			"svg": true,
 			"font": false,
 			"size": 6,
 			"brands": [
@@ -24,9 +24,9 @@
 			"dependencies": [],
 			"js": false,
 			"less": true,
-			"svg": false,
+			"svg": true,
 			"font": false,
-			"size": 6,
+			"size": 7,
 			"brands": [
 				"BOM",
 				"BSA",
@@ -37,5 +37,5 @@
 			]
 		}
 	},
-	"hash": "3d4f399bcc48d1ab861f6a9c76fec29e"
+	"hash": "a6394ac3dc2fba53cf7cf2e289d495c5"
 }
