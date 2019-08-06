@@ -19,6 +19,9 @@ GUI Logos
 
 ### Release History
 
+* v2.0.8 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* New `.logo-red-avatar`, `.logo-red-avatar-circle` and `.logo-red-avatar-circle-reversed` ‘Red Avatar’ logos
+		[#454](https://github.com/WestpacCXTeam/GUI-source/issues/454)
 * v2.0.7 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* `.logo-wbc-200` logo removed, Westpac multi-brand logos updated. The ‘Westpac 200’ logo is now deprecated, we have reverted back to using the standard ‘Westpac W’ logo.
 		[#446](https://github.com/WestpacCXTeam/GUI-source/issues/446)

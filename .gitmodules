@@ -232,6 +232,9 @@
 [submodule "buttons/4.0.2"]
 	path = buttons/4.0.2
 	url = git@github.com:WestpacCXTeam/GUI-buttons.git
+[submodule "buttons/4.0.3"]
+	path = buttons/4.0.3
+	url = git@github.com:WestpacCXTeam/GUI-buttons.git
 [submodule "checkboxes/1.0.0"]
 	path = checkboxes/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-checkboxes.git
@@ -759,6 +762,9 @@
 	url = git@github.com:WestpacCXTeam/GUI-logos.git
 [submodule "logos/2.0.7"]
 	path = logos/2.0.7
+	url = git@github.com:WestpacCXTeam/GUI-logos.git
+[submodule "logos/2.0.8"]
+	path = logos/2.0.8
 	url = git@github.com:WestpacCXTeam/GUI-logos.git
 [submodule "modals/1.0.0"]
 	path = modals/1.0.0

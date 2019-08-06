@@ -1,8 +1,7 @@
 GUI Buttons
 ===========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-buttons/tests/BOM/) |
@@ -12,14 +11,16 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-buttons/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-buttons/tests/BT/)
 
-> The button design system gives you the flexibility to choose from multiple styles, sizes and configurations depending on your needs. Use the button classes
-> to quickly create styled buttons, groups of buttons, dropdown buttons etc.
+> The button design system gives you the flexibility to choose from multiple styles, sizes and configurations depending on your needs. Use the button classes to quickly create styled buttons, groups of buttons, dropdown buttons etc.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v4.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Increased small button icon size to ‘small’ (18px); was ‘xsmall’ (12px)
+		[#440](https://github.com/WestpacCXTeam/GUI-source/issues/440)
 * v4.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Removed stacked block buttons styling; this can be implemented per breakpoint via use of Responsive-Margins classes (e.g. `.top-margin1-xs`)
 * v4.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
