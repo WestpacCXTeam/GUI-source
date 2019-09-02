@@ -8,7 +8,7 @@
 			"dependencies": [],
 			"js": false,
 			"less": true,
-			"svg": true,
+			"svg": false,
 			"font": false,
 			"size": 6,
 			"brands": [
