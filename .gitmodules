@@ -283,6 +283,9 @@
 [submodule "form-base/1.0.1"]
 	path = form-base/1.0.1
 	url = git@github.com:WestpacCXTeam/GUI-form-base.git
+[submodule "form-base/1.0.2"]
+	path = form-base/1.0.2
+	url = git@github.com:WestpacCXTeam/GUI-form-base.git
 [submodule "form-checks/1.0.0"]
 	path = form-checks/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-form-checks.git
