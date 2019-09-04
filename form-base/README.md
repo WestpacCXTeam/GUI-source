@@ -18,6 +18,8 @@ GUI Form Base
 
 ### Release History
 
+* v1.0.2 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
+	* Added form review page styling
 * v1.0.1 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
 	* Updated error styling to support multiple error messages in lists
 * v1.0.0 - Initial port
@@ -30,7 +32,7 @@ GUI Form Base
 
 ### License
 
-Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-form-base/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-form-base/master/LICENSE). 
 
 **[⬆ back to top](#content)**
 
