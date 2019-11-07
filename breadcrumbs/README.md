@@ -19,6 +19,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v2.0.3 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated BOM brand’s breadcrumb separator colour
 * v2.0.2 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

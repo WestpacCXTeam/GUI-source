@@ -2,7 +2,7 @@
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.4*/
+/*!_fonts v2.0.5*/
 /*
 	 *  SETTINGS
 	 */
@@ -10,17 +10,31 @@
 	 *  SETTINGS
 	 */
 @font-face {
-  font-family: 'korolev-w01-cmp-bold';
-  src: url('../font/a0d7267a-60f5-405d-9c00-645ad5e3ab49.eot');
-  src: url('../font/a0d7267a-60f5-405d-9c00-645ad5e3ab49.eot?#iefix') format('embedded-opentype'), url('../font/1bc7db59-291e-455a-8b7a-acf77d64e375.woff2') format('woff2'), url('../font/0e1e43ea-da50-4758-9344-4b9f797e1722.woff') format('woff'), url('../font/41083cb5-f18a-4f54-b1a5-cb2dcecc0c61.ttf') format('truetype'), url('../font/07542238-f8a4-45bf-83b9-56347ceb1ddf.svg#07542238-f8a4-45bf-83b9-56347ceb1ddf') format('svg');
+  font-family: 'brown';
+  src: url(../font/lineto-brown-pro-regular.eot);
+  src: url(../font/lineto-brown-pro-regular.eot?#iefix) format("embedded-opentype"), url(../font/lineto-brown-pro-regular.woff2) format("woff2"), url(../font/lineto-brown-pro-regular.woff) format("woff");
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'brown';
+  src: url(../font/lineto-brown-pro-bold.eot);
+  src: url(../font/lineto-brown-pro-bold.eot?#iefix) format("embedded-opentype"), url(../font/lineto-brown-pro-bold.woff2) format("woff2"), url(../font/lineto-brown-pro-bold.woff) format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'brown';
+  src: url(../font/lineto-brown-pro-light.eot);
+  src: url(../font/lineto-brown-pro-light.eot?#iefix) format("embedded-opentype"), url(../font/lineto-brown-pro-light.woff2) format("woff2"), url(../font/lineto-brown-pro-light.woff) format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 .body-font {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .brand-font {
-  font-family: "korolev-w01-cmp-bold";
+  font-family: "brown";
   font-weight: normal;
 }
 /*!_grid v3.0.0*/
@@ -791,7 +805,7 @@
     margin-left: 0%;
   }
 }
-/*!_text-styling v4.0.6*/
+/*!_text-styling v4.0.7*/
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
 	 * 1. Change the default font family in all browsers (opinionated).
@@ -1200,7 +1214,7 @@ template {
 	 *  SETTINGS
 	 */
 body {
-  font-size: 0.875em;
+  font-size: 0.875rem;
   line-height: 1.42857143;
   color: #20024e;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -1216,7 +1230,7 @@ address {
   font-style: normal;
 }
 blockquote {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
 }
 button,
@@ -1278,7 +1292,7 @@ a:focus {
 }
 label {
   display: inline-block;
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 @media print {
   * {
@@ -1292,20 +1306,20 @@ label {
   a:visited {
     text-decoration: underline;
   }
-  a[href]:after {
+  a[href]::after {
     content: " (" attr(href) ")";
   }
-  abbr[title]:after {
+  abbr[title]::after {
     content: " (" attr(title) ")";
   }
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
+  a[href^="javascript:"]::after,
+  a[href^="#"]::after {
     content: "";
   }
   pre,
   blockquote {
     border: 1px solid #999;
-    padding: 6px;
+    padding: 0.375rem;
     page-break-inside: avoid;
   }
   thead {

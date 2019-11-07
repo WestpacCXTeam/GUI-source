@@ -18,6 +18,9 @@ GUI Form Checks
 
 ### Release History
 
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
@@ -28,7 +31,7 @@ GUI Form Checks
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-form-checks/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-form-checks/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

@@ -18,6 +18,9 @@ GUI Input-field
 
 ### Release History
 
+* v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Dependency: GUI_colors v3.0.2, GUI_text-styling v4.0.5
 	* Mapped new border colour `@color-BorderDark` from Colors v3.0.2
@@ -64,7 +67,7 @@ GUI Input-field
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-source/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

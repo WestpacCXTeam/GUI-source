@@ -20,6 +20,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* We know all people (and projects for that matter) come in all forms and variation. We love the diversity and the new insights that this brings with it.
 		Unfortunately the responsive margins were not diverse at all only giving you seven options for spacing. We expanded it’s mind in a flower-power filled
@@ -40,7 +43,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-responsive-margins/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-responsive-margins/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

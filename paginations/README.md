@@ -21,6 +21,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Increasing top and bottom padding to bring pagination height to 36px, a multiple of 6px for GEL consistency.
 		[#316](https://github.com/WestpacCXTeam/GUI-source/issues/316)
@@ -47,7 +50,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-paginations/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-paginations/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

@@ -18,6 +18,9 @@ GUI Form Pods
 
 ### Release History
 
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v1.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Adding new `.form-pod-panel-inner-padded` modifier option to provide additional padding per breakpoint as appropriate
 	* Adding new `.form-pod-actions-reverse` modifier option to reverse the actions bar item order if required
@@ -34,7 +37,7 @@ GUI Form Pods
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-form-pods/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-form-pods/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

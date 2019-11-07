@@ -18,6 +18,9 @@ GUI Templates
 
 ### Release History
 
+* v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Fixed header drop shadow rendering
 		[#450](https://github.com/WestpacCXTeam/GUI-source/issues/450)

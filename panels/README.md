@@ -19,6 +19,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Changed panel footer background colour from @color-Background to @color-Light
 		[#310](https://github.com/WestpacCXTeam/GUI-source/issues/310)
@@ -37,7 +40,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-panels/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-panels/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

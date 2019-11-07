@@ -20,6 +20,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
+  * Simplify off/on label CSS positioning
 * v3.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
   * Fixing switch layout for Firefox
     [#407](https://github.com/WestpacCXTeam/GUI-source/issues/407)
@@ -61,7 +65,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-switches/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-switches/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

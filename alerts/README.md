@@ -16,64 +16,68 @@ GUI Alerts
 
 ### Release History
 
+* v4.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
+	* Fixed alert box close button icon colour; addressed CSS specificity
 * v4.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-  * Fixed alert box content overflow bug
-    [#452](https://github.com/WestpacCXTeam/GUI-source/issues/452)
-  * Fixed alert box close button positioning; remove overlap with alert body text, for all breakpoints
-  * Refactored codebase; simplifying styling of alert content for each of the alert types
-  * Added legacy styling for IE 8&9 which doesn’t support flexbox layout
+	* Fixed alert box content overflow bug
+		[#452](https://github.com/WestpacCXTeam/GUI-source/issues/452)
+	* Fixed alert box close button positioning; remove overlap with alert body text, for all breakpoints
+	* Refactored codebase; simplifying styling of alert content for each of the alert types
+	* Added legacy styling for IE 8&9 which doesn’t support flexbox layout
 * v4.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-  * Link colour in Alerts; the link text should be the same colour as the message text
-    [#442](https://github.com/WestpacCXTeam/GUI-source/issues/442)
+	* Link colour in Alerts; the link text should be the same colour as the message text
+		[#442](https://github.com/WestpacCXTeam/GUI-source/issues/442)
 * v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
-  * Removed alert form message styling (`.alert-form-msg`); now managed by the new Form-Base module as `.form-error-message`. Note: These form error messages no longer require a parent `.has-*` class (e.g. `.has-danger`), and are now positioned above the input control for better UX and a11y support, text sizing increased to 14px
-  * Alert boxes are now using Flexbox; providing a more robust method to style alert icon and text layout
-  * Ensure any text, headings and lists inside alert boxes is styled with the appropriate colour
-  * Alert body hidden overflow removed; child element focus outline offset styling no longer chopped
-  * New `.alert-heading` style; resets any top margin
+	* Removed alert form message styling (`.alert-form-msg`); now managed by the new Form-Base module as `.form-error-message`. Note: These form error messages no longer require a parent `.has-*` class (e.g. `.has-danger`), and are now positioned above the input control for better UX and a11y support, text sizing increased to 14px
+	* Alert boxes are now using Flexbox; providing a more robust method to style alert icon and text layout
+	* Ensure any text, headings and lists inside alert boxes is styled with the appropriate colour
+	* Alert body hidden overflow removed; child element focus outline offset styling no longer chopped
+	* New `.alert-heading` style; resets any top margin
 * v3.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
-  * Dependencies: GUI-buttons v4.0.0, GUI-icons v2.0.0
-  * Alerts module consists of three alert types...
-    * Text (alert): simple inline text styling
-    * Alert: structured (block) alert without icon text wrapping (maintains left text edge)
-    * Alert form: validation styling for forms
-  * Changed alert close button markup structure for consistency; close icon now inside button
-  * Alert close button now leverages `.btn-link`; Alerts module now has a Buttons (and Icons) dependency
-  * Alert padding (right-side) is now consistent with other sides; whether or not close button exists
-  * Alert body wraps around icon in XS; reducing unnecessary left-side whitespace
-  * Alert body vertically aligns with icon if needed (small and xsmall disregard); also considers responsive icon sizing
-  * Removed flex layout, max-height restrictions and scrolling
-  * Alert form (validation) messages now support icons, font-size decreased from 13px to 12px
-  * Reduced CSS specificity
-    [#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
+	* Dependencies: GUI-buttons v4.0.0, GUI-icons v2.0.0
+	* Alerts module consists of three alert types...
+		* Text (alert): simple inline text styling
+		* Alert: structured (block) alert without icon text wrapping (maintains left text edge)
+		* Alert form: validation styling for forms
+	* Changed alert close button markup structure for consistency; close icon now inside button
+	* Alert close button now leverages `.btn-link`; Alerts module now has a Buttons (and Icons) dependency
+	* Alert padding (right-side) is now consistent with other sides; whether or not close button exists
+	* Alert body wraps around icon in XS; reducing unnecessary left-side whitespace
+	* Alert body vertically aligns with icon if needed (small and xsmall disregard); also considers responsive icon sizing
+	* Removed flex layout, max-height restrictions and scrolling
+	* Alert form (validation) messages now support icons, font-size decreased from 13px to 12px
+	* Reduced CSS specificity
+		[#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-  * Reduce module modifier CSS over-specificity
-    [#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
-  * Removed duplicated alert label styling (already in Labels module)
-    [#364](https://github.com/WestpacCXTeam/GUI-source/issues/364)
+	* Reduce module modifier CSS over-specificity
+		[#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
+	* Removed duplicated alert label styling (already in Labels module)
+		[#364](https://github.com/WestpacCXTeam/GUI-source/issues/364)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-  * Tweaking has alert class to apply alert colour to input and textarea content so they are more visible.
-    [#315](https://github.com/WestpacCXTeam/GUI-source/issues/315)
+	* Tweaking has alert class to apply alert colour to input and textarea content so they are more visible.
+		[#315](https://github.com/WestpacCXTeam/GUI-source/issues/315)
 * v2.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-  * Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
+	* Fanfare, Drum roll … We’ve added another brand. Yay! :clap:
 * v2.0.0 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-  * To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
-    [#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
+	* To make it easier to switch brands with Less we’ve added a brand variable. Building multibrand sites has never been this easy!
+		[#203](https://github.com/WestpacCXTeam/GUI-source/issues/203)
 * v1.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-  * Fixed flexbox bug with a handy workaround.
-    [#194](https://github.com/WestpacCXTeam/GUI-source/issues/194)
-  * Worked on the no-js fallback and made usability of large alerts better. Not that you should use large alert messages. Let's keep those grumpy messages as short as possible.
-  * Icons in those handy alert messages are now tinting the way they should have right from the start.
-    [#190](https://github.com/WestpacCXTeam/GUI-source/issues/190)
+	* Fixed flexbox bug with a handy workaround.
+		[#194](https://github.com/WestpacCXTeam/GUI-source/issues/194)
+	* Worked on the no-js fallback and made usability of large alerts better. Not that you should use large alert messages. Let's keep those grumpy messages as short as possible.
+	* Icons in those handy alert messages are now tinting the way they should have right from the start.
+		[#190](https://github.com/WestpacCXTeam/GUI-source/issues/190)
 * v1.0.3 - `HTML` `LESS/CSS` ~~`JS`~~
-  * You know the feeling when you're trying to buy a beer at the corner pub on a Friday afternoon after you've just finished a sprint that was particularly difficult and the alert message says: "No more funds" and you know you left the other card at home and never got around to setting up cardless cash? Long story short: You now get to make that alert message a bit easier on the eyes by adding icons inside of it to help make Friday afternoons fun again.
-    [#177](https://github.com/WestpacCXTeam/GUI-source/issues/177)
+	* You know the feeling when you're trying to buy a beer at the corner pub on a Friday afternoon after you've just finished a sprint that was particularly difficult and the alert message says: "No more funds" and you know you left the other card at home and never got around to setting up cardless cash? Long story short: You now get to make that alert message a bit easier on the eyes by adding icons inside of it to help make Friday afternoons fun again.
+		[#177](https://github.com/WestpacCXTeam/GUI-source/issues/177)
 * v1.0.2 - `JS` `HTML` ~~`LESS/CSS`~~
-  * We got word that using our JavaScript in dynamic DOM application was a bit... clunky. Clunky wasn't good enough for us so we refactored all Javascript modules to unclunk all the things. Beware though, some JavaScript classes had to be injected to keep the modules clunk-free.
-    [#140](https://github.com/WestpacCXTeam/GUI-source/issues/140)
+	* We got word that using our JavaScript in dynamic DOM application was a bit... clunky. Clunky wasn't good enough for us so we refactored all Javascript modules to unclunk all the things. Beware though, some JavaScript classes had to be injected to keep the modules clunk-free.
+		[#140](https://github.com/WestpacCXTeam/GUI-source/issues/140)
 * v1.0.1 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
-  * As the built-in faux italic cut off the descenders in alert messages, we changed the font style to a more native style.
-    [#130](https://github.com/WestpacCXTeam/GUI-source/issues/130)
+	* As the built-in faux italic cut off the descenders in alert messages, we changed the font style to a more native style.
+		[#130](https://github.com/WestpacCXTeam/GUI-source/issues/130)
 * v1.0.0 - Initial port
 
 **[⬆ back to top](#content)**
@@ -84,7 +88,7 @@ GUI Alerts
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-alerts/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-alerts/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

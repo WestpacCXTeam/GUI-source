@@ -19,6 +19,10 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.1.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
+	* Simplify triangle positioning by using css calc
 * v2.1.0 - ~~`LESS/CSS`~~ ~~`HTML`~~ `JS`
 	* Fixed popover pointer triangle positioning in XS breakpoint
 		[#426](https://github.com/WestpacCXTeam/GUI-source/issues/426)
@@ -50,7 +54,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-popovers/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-popovers/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

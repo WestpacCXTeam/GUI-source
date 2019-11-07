@@ -18,6 +18,9 @@ GUI Buttons
 
 ### Release History
 
+* v4.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v4.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Increased small button icon size to ‘small’ (18px); was ‘xsmall’ (12px)
 		[#440](https://github.com/WestpacCXTeam/GUI-source/issues/440)
@@ -116,7 +119,7 @@ GUI Buttons
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-buttons/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-buttons/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

@@ -1,0 +1,6 @@
+.lists.lists-linklist > li:after,
+.icon-linklist { background-image: url('data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20aria-labelledby%3D%22title-icon-linklist%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%20%20%3Ctitle%20id%3D%22title-icon-linklist%22%20lang%3D%22en%22%3ELink%3C%2Ftitle%3E%20%20%3Cpolygon%20fill%3D%22%23d73b00%22%20class%3D%22icons-background%22%20fill-rule%3D%22evenodd%22%20points%3D%2214.588%2012%208%2018.588%209.412%2020%2017.412%2012%209.412%204%208%205.412%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
+
+.lists.lists-tick > li:after,
+.icon-ticklist { background-image: url('data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20aria-labelledby%3D%22title-icon-ticklist%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%3E%20%20%3Ctitle%20id%3D%22title-icon-ticklist%22%20lang%3D%22en%22%3ETick%3C%2Ftitle%3E%20%20%3Cpolygon%20fill%3D%22%23403489%22%20class%3D%22icons-background%22%20points%3D%228.6%2015.6%204.4%2011.4%203%2012.8%208.6%2018.4%2020.6%206.4%2019.2%205%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat; }
+

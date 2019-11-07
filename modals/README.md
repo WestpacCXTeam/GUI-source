@@ -18,6 +18,9 @@ GUI Modals
 
 ### Release History
 
+* v4.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v4.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
 	* Increased modal z-index; modals should sit above everything
 	* Decreased close button size to medium (default) and adjusted positioning

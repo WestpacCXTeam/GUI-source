@@ -18,6 +18,9 @@ GUI Form Base
 
 ### Release History
 
+* v1.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v1.0.2 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~
 	* Added form review page styling
 * v1.0.1 - `LESS/CSS` ~~`JS`~~ ~~`HTML`~~

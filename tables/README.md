@@ -20,8 +20,11 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
-	* Removed row hover styling for `.table-striped` tables. The row hover background colour fill is provided to help when scanning across the row, but striped 
+	* Removed row hover styling for `.table-striped` tables. The row hover background colour fill is provided to help when scanning across the row, but striped
 	tables provide this anyway without hovering.
 		[#377](https://github.com/WestpacCXTeam/GUI-source/issues/377)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
@@ -47,7 +50,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-tables/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-tables/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

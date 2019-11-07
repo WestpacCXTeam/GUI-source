@@ -19,11 +19,14 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Removed icon sizing classes; icon sizing maintained by Icons module
 	* Styled inline tooltip text; now italic and lighter (muted) colour
 	* Disabled inline tooltip text for buttons and icons at XS; providing suitable positioning was too unreliable
-	* Nb. Tooltips attached to Direct embedded SVG icons are currently not supported 
+	* Nb. Tooltips attached to Direct embedded SVG icons are currently not supported
 		[#384](https://github.com/WestpacCXTeam/GUI-source/issues/384)
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Ensuring when Tooltip abbr title values are shown (for mobile) they don’t butt up against the abbr text.
@@ -49,7 +52,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-tooltips/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-tooltips/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

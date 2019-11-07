@@ -19,9 +19,12 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.6 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Added `.label-success` option
-  * Further optimised CSS 
+  * Further optimised CSS
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Reduced CSS specificity
     [#346](https://github.com/WestpacCXTeam/GUI-source/issues/346)
@@ -47,7 +50,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2017 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-labels/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-labels/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

@@ -18,6 +18,9 @@ GUI Input-groups
 
 ### Release History
 
+* v3.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
   * Removed the border left and right on the input fields when they use Button controls
     [#444](https://github.com/WestpacCXTeam/GUI-source/issues/444)
@@ -63,7 +66,7 @@ GUI Input-groups
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-input-groups/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-input-groups/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

@@ -19,6 +19,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v4.1.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v4.1.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Ensuring open collapsibles don’t chop overflow; was affecting offset focus outlines
 * v4.1.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
@@ -73,7 +76,7 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### License
 
-Copyright (c) 2018 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-tabcordions/master/LICENSE).
+Copyright (c) 2019 Westpac. Licensed under the [GNU GPLv2](https://raw.githubusercontent.com/WestpacCXTeam/GUI-tabcordions/master/LICENSE).
 
 **[⬆ back to top](#content)**
 

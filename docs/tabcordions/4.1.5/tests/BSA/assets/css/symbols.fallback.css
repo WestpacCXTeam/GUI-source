@@ -1,0 +1,6 @@
+.tabcordion-body-header.is-active .tabcordion-body-headline:after,
+.icon-tabcordion-toggle-active { background-image: url('../img/icon-tabcordion-toggle-active.png'); background-repeat: no-repeat; }
+
+.tabcordion-body-headline:after,
+.icon-tabcordion-toggle { background-image: url('../img/icon-tabcordion-toggle.png'); background-repeat: no-repeat; }
+

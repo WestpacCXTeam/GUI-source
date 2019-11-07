@@ -18,6 +18,9 @@ GUI Progress Ropes
 
 ### Release History
 
+* v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v1.0.0 - `LESS/CSS` ~~`HTML`~~ `JS`
 	* Removed programmatic focus setting on group body; focus remains on the group toggle
 	* Removed `aria-selected` attribute; not required by the ARIA design pattern

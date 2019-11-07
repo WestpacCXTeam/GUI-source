@@ -18,6 +18,9 @@ GUI Text-styling
 
 ### Release History
 
+* v4.0.7 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Migrate to relative CSS units (a11y)
+		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
 * v4.0.6 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Added heading :focus styling; so headings manually given tab order (tabindex) are styled appropriately
 		[#453](https://github.com/WestpacCXTeam/GUI-source/issues/453)
