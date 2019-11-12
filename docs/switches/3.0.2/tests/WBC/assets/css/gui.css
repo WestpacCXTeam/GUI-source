@@ -1382,10 +1382,10 @@ label {
   font-size: 1rem;
 }
 .switch .switch-toggle-off {
-  padding-left: 2.5rem;
+  padding-left: calc(2.25rem -  4px );
 }
 .switch .switch-toggle-on {
-  padding-right: 2.5rem;
+  padding-right: calc(2.25rem -  4px );
 }
 .switch:hover {
   cursor: pointer;
@@ -1477,11 +1477,13 @@ fieldset[disabled] .switch-toggle {
   position: absolute;
   text-align: center;
   transition: opacity 0.3s ease;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
   width: 100%;
 }
+.switch-toggle-off {
+  padding-right: 6%;
+}
 .switch-toggle-on {
+  padding-left: 6%;
   opacity: 0;
   color: #fff;
 }
@@ -1507,10 +1509,10 @@ fieldset[disabled] .switch-toggle {
   font-size: 0.875rem;
 }
 .switch-small .switch-toggle-off {
-  padding-left: 2.125rem;
+  padding-left: calc(1.875rem -  4px );
 }
 .switch-small .switch-toggle-on {
-  padding-right: 2.125rem;
+  padding-right: calc(1.875rem -  4px );
 }
 .switch-large {
   height: 2.625rem;
@@ -1534,10 +1536,10 @@ fieldset[disabled] .switch-toggle {
   font-size: 1rem;
 }
 .switch-large .switch-toggle-off {
-  padding-left: 2.875rem;
+  padding-left: calc(2.625rem -  4px );
 }
 .switch-large .switch-toggle-on {
-  padding-right: 2.875rem;
+  padding-right: calc(2.625rem -  4px );
 }
 .switch-xlarge {
   height: 3rem;
@@ -1561,10 +1563,10 @@ fieldset[disabled] .switch-toggle {
   font-size: 1.125rem;
 }
 .switch-xlarge .switch-toggle-off {
-  padding-left: 3.25rem;
+  padding-left: calc(3rem -  4px );
 }
 .switch-xlarge .switch-toggle-on {
-  padding-right: 3.25rem;
+  padding-right: calc(3rem -  4px );
 }
 @media (min-width: 768px) {
   .switch-small-sm {
@@ -1589,10 +1591,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 0.875rem;
   }
   .switch-small-sm .switch-toggle-off {
-    padding-left: 2.125rem;
+    padding-left: calc(1.875rem -  4px );
   }
   .switch-small-sm .switch-toggle-on {
-    padding-right: 2.125rem;
+    padding-right: calc(1.875rem -  4px );
   }
   .switch-medium-sm {
     height: 2.25rem;
@@ -1616,10 +1618,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-medium-sm .switch-toggle-off {
-    padding-left: 2.5rem;
+    padding-left: calc(2.25rem -  4px );
   }
   .switch-medium-sm .switch-toggle-on {
-    padding-right: 2.5rem;
+    padding-right: calc(2.25rem -  4px );
   }
   .switch-large-sm {
     height: 2.625rem;
@@ -1643,10 +1645,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-large-sm .switch-toggle-off {
-    padding-left: 2.875rem;
+    padding-left: calc(2.625rem -  4px );
   }
   .switch-large-sm .switch-toggle-on {
-    padding-right: 2.875rem;
+    padding-right: calc(2.625rem -  4px );
   }
   .switch-xlarge-sm {
     height: 3rem;
@@ -1670,10 +1672,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1.125rem;
   }
   .switch-xlarge-sm .switch-toggle-off {
-    padding-left: 3.25rem;
+    padding-left: calc(3rem -  4px );
   }
   .switch-xlarge-sm .switch-toggle-on {
-    padding-right: 3.25rem;
+    padding-right: calc(3rem -  4px );
   }
 }
 @media (min-width: 992px) {
@@ -1699,10 +1701,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 0.875rem;
   }
   .switch-small-md .switch-toggle-off {
-    padding-left: 2.125rem;
+    padding-left: calc(1.875rem -  4px );
   }
   .switch-small-md .switch-toggle-on {
-    padding-right: 2.125rem;
+    padding-right: calc(1.875rem -  4px );
   }
   .switch-medium-md {
     height: 2.25rem;
@@ -1726,10 +1728,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-medium-md .switch-toggle-off {
-    padding-left: 2.5rem;
+    padding-left: calc(2.25rem -  4px );
   }
   .switch-medium-md .switch-toggle-on {
-    padding-right: 2.5rem;
+    padding-right: calc(2.25rem -  4px );
   }
   .switch-large-md {
     height: 2.625rem;
@@ -1753,10 +1755,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-large-md .switch-toggle-off {
-    padding-left: 2.875rem;
+    padding-left: calc(2.625rem -  4px );
   }
   .switch-large-md .switch-toggle-on {
-    padding-right: 2.875rem;
+    padding-right: calc(2.625rem -  4px );
   }
   .switch-xlarge-md {
     height: 3rem;
@@ -1780,10 +1782,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1.125rem;
   }
   .switch-xlarge-md .switch-toggle-off {
-    padding-left: 3.25rem;
+    padding-left: calc(3rem -  4px );
   }
   .switch-xlarge-md .switch-toggle-on {
-    padding-right: 3.25rem;
+    padding-right: calc(3rem -  4px );
   }
 }
 @media (min-width: 1200px) {
@@ -1809,10 +1811,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 0.875rem;
   }
   .switch-small-lg .switch-toggle-off {
-    padding-left: 2.125rem;
+    padding-left: calc(1.875rem -  4px );
   }
   .switch-small-lg .switch-toggle-on {
-    padding-right: 2.125rem;
+    padding-right: calc(1.875rem -  4px );
   }
   .switch-medium-lg {
     height: 2.25rem;
@@ -1836,10 +1838,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-medium-lg .switch-toggle-off {
-    padding-left: 2.5rem;
+    padding-left: calc(2.25rem -  4px );
   }
   .switch-medium-lg .switch-toggle-on {
-    padding-right: 2.5rem;
+    padding-right: calc(2.25rem -  4px );
   }
   .switch-large-lg {
     height: 2.625rem;
@@ -1863,10 +1865,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-large-lg .switch-toggle-off {
-    padding-left: 2.875rem;
+    padding-left: calc(2.625rem -  4px );
   }
   .switch-large-lg .switch-toggle-on {
-    padding-right: 2.875rem;
+    padding-right: calc(2.625rem -  4px );
   }
   .switch-xlarge-lg {
     height: 3rem;
@@ -1890,10 +1892,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1.125rem;
   }
   .switch-xlarge-lg .switch-toggle-off {
-    padding-left: 3.25rem;
+    padding-left: calc(3rem -  4px );
   }
   .switch-xlarge-lg .switch-toggle-on {
-    padding-right: 3.25rem;
+    padding-right: calc(3rem -  4px );
   }
 }
 @media (max-width: 767px) {
@@ -1919,10 +1921,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 0.875rem;
   }
   .switch-small-xs-only .switch-toggle-off {
-    padding-left: 2.125rem;
+    padding-left: calc(1.875rem -  4px );
   }
   .switch-small-xs-only .switch-toggle-on {
-    padding-right: 2.125rem;
+    padding-right: calc(1.875rem -  4px );
   }
   .switch-medium-xs-only {
     height: 2.25rem;
@@ -1946,10 +1948,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-medium-xs-only .switch-toggle-off {
-    padding-left: 2.5rem;
+    padding-left: calc(2.25rem -  4px );
   }
   .switch-medium-xs-only .switch-toggle-on {
-    padding-right: 2.5rem;
+    padding-right: calc(2.25rem -  4px );
   }
   .switch-large-xs-only {
     height: 2.625rem;
@@ -1973,10 +1975,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-large-xs-only .switch-toggle-off {
-    padding-left: 2.875rem;
+    padding-left: calc(2.625rem -  4px );
   }
   .switch-large-xs-only .switch-toggle-on {
-    padding-right: 2.875rem;
+    padding-right: calc(2.625rem -  4px );
   }
   .switch-xlarge-xs-only {
     height: 3rem;
@@ -2000,10 +2002,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1.125rem;
   }
   .switch-xlarge-xs-only .switch-toggle-off {
-    padding-left: 3.25rem;
+    padding-left: calc(3rem -  4px );
   }
   .switch-xlarge-xs-only .switch-toggle-on {
-    padding-right: 3.25rem;
+    padding-right: calc(3rem -  4px );
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2029,10 +2031,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 0.875rem;
   }
   .switch-small-sm-only .switch-toggle-off {
-    padding-left: 2.125rem;
+    padding-left: calc(1.875rem -  4px );
   }
   .switch-small-sm-only .switch-toggle-on {
-    padding-right: 2.125rem;
+    padding-right: calc(1.875rem -  4px );
   }
   .switch-medium-sm-only {
     height: 2.25rem;
@@ -2056,10 +2058,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-medium-sm-only .switch-toggle-off {
-    padding-left: 2.5rem;
+    padding-left: calc(2.25rem -  4px );
   }
   .switch-medium-sm-only .switch-toggle-on {
-    padding-right: 2.5rem;
+    padding-right: calc(2.25rem -  4px );
   }
   .switch-large-sm-only {
     height: 2.625rem;
@@ -2083,10 +2085,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-large-sm-only .switch-toggle-off {
-    padding-left: 2.875rem;
+    padding-left: calc(2.625rem -  4px );
   }
   .switch-large-sm-only .switch-toggle-on {
-    padding-right: 2.875rem;
+    padding-right: calc(2.625rem -  4px );
   }
   .switch-xlarge-sm-only {
     height: 3rem;
@@ -2110,10 +2112,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1.125rem;
   }
   .switch-xlarge-sm-only .switch-toggle-off {
-    padding-left: 3.25rem;
+    padding-left: calc(3rem -  4px );
   }
   .switch-xlarge-sm-only .switch-toggle-on {
-    padding-right: 3.25rem;
+    padding-right: calc(3rem -  4px );
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -2139,10 +2141,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 0.875rem;
   }
   .switch-small-md-only .switch-toggle-off {
-    padding-left: 2.125rem;
+    padding-left: calc(1.875rem -  4px );
   }
   .switch-small-md-only .switch-toggle-on {
-    padding-right: 2.125rem;
+    padding-right: calc(1.875rem -  4px );
   }
   .switch-medium-md-only {
     height: 2.25rem;
@@ -2166,10 +2168,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-medium-md-only .switch-toggle-off {
-    padding-left: 2.5rem;
+    padding-left: calc(2.25rem -  4px );
   }
   .switch-medium-md-only .switch-toggle-on {
-    padding-right: 2.5rem;
+    padding-right: calc(2.25rem -  4px );
   }
   .switch-large-md-only {
     height: 2.625rem;
@@ -2193,10 +2195,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1rem;
   }
   .switch-large-md-only .switch-toggle-off {
-    padding-left: 2.875rem;
+    padding-left: calc(2.625rem -  4px );
   }
   .switch-large-md-only .switch-toggle-on {
-    padding-right: 2.875rem;
+    padding-right: calc(2.625rem -  4px );
   }
   .switch-xlarge-md-only {
     height: 3rem;
@@ -2220,10 +2222,10 @@ fieldset[disabled] .switch-toggle {
     font-size: 1.125rem;
   }
   .switch-xlarge-md-only .switch-toggle-off {
-    padding-left: 3.25rem;
+    padding-left: calc(3rem -  4px );
   }
   .switch-xlarge-md-only .switch-toggle-on {
-    padding-right: 3.25rem;
+    padding-right: calc(3rem -  4px );
   }
 }
 .switch-flip {
