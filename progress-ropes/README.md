@@ -18,6 +18,13 @@ GUI Progress Ropes
 
 ### Release History
 
+* v2.0.0 - `LESS/CSS` `HTML` ~~`JS`~~
+	* Adding further accessibility features required to meet WCAG 2.1 AA
+		* Updated group and step styling to improve visual indication of current state (not relying on colour alone)
+		* Group toggle button heading element wrapping; provides navigation shortcut for screen reader users
+		* Visually hidden (screen reader only) text appended to group and step text; announces current state to screen reader users
+		* ARIA attributes (`aria-controls` and `aria-expanded`) added to group toggles
+		* Final review step moved into ordered list
 * v1.0.1 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Migrate to relative CSS units (a11y)
 		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)
