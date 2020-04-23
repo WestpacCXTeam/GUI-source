@@ -1156,3 +1156,6 @@
 [submodule "wells/2.0.3"]
 	path = wells/2.0.3
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
+[submodule "progress-ropes/2.0.0"]
+	path = progress-ropes/2.0.0
+	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
