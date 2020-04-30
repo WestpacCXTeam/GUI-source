@@ -307,6 +307,9 @@
 [submodule "form-base/1.0.3"]
 	path = form-base/1.0.3
 	url = git@github.com:WestpacCXTeam/GUI-form-base.git
+[submodule "form-base/1.0.4"]
+	path = form-base/1.0.4
+	url = git@github.com:WestpacCXTeam/GUI-form-base.git
 [submodule "form-checks/1.0.0"]
 	path = form-checks/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-form-checks.git
@@ -916,6 +919,9 @@
 [submodule "progress-ropes/1.0.1"]
 	path = progress-ropes/1.0.1
 	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
+[submodule "progress-ropes/2.0.0"]
+	path = progress-ropes/2.0.0
+	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
 [submodule "radios/1.0.0"]
 	path = radios/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-radios.git
@@ -1156,6 +1162,3 @@
 [submodule "wells/2.0.3"]
 	path = wells/2.0.3
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
-[submodule "progress-ropes/2.0.0"]
-	path = progress-ropes/2.0.0
-	url = git@github.com:WestpacCXTeam/GUI-progress-ropes.git
