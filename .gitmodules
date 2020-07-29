@@ -1174,3 +1174,6 @@
 [submodule "buttons/4.0.5"]
 	path = buttons/4.0.5
 	url = git@github.com:WestpacCXTeam/GUI-buttons.git
+[submodule "labels/2.0.7"]
+	path = labels/2.0.7
+	url = git@github.com:WestpacCXTeam/GUI-labels.git
