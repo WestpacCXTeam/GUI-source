@@ -1165,3 +1165,6 @@
 [submodule "_colors/3.0.4"]
 	path = _colors/3.0.4
 	url = git@github.com:WestpacCXTeam/GUI_colors.git
+[submodule "_fonts/2.0.6"]
+	path = _fonts/2.0.6
+	url = git@github.com:WestpacCXTeam/GUI_fonts.git
