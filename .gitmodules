@@ -1180,3 +1180,6 @@
 [submodule "paginations/2.0.5"]
 	path = paginations/2.0.5
 	url = git@github.com:WestpacCXTeam/GUI-paginations.git
+[submodule "panels/2.0.4"]
+	path = panels/2.0.4
+	url = git@github.com:WestpacCXTeam/GUI-panels.git
