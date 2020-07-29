@@ -1168,3 +1168,6 @@
 [submodule "_fonts/2.0.6"]
 	path = _fonts/2.0.6
 	url = git@github.com:WestpacCXTeam/GUI_fonts.git
+[submodule "badges/2.0.5"]
+	path = badges/2.0.5
+	url = git@github.com:WestpacCXTeam/GUI-badges.git
