@@ -1171,3 +1171,6 @@
 [submodule "badges/2.0.5"]
 	path = badges/2.0.5
 	url = git@github.com:WestpacCXTeam/GUI-badges.git
+[submodule "buttons/4.0.5"]
+	path = buttons/4.0.5
+	url = git@github.com:WestpacCXTeam/GUI-buttons.git
