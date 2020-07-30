@@ -1186,3 +1186,6 @@
 [submodule "progress-bars/2.0.3"]
 	path = progress-bars/2.0.3
 	url = git@github.com:WestpacCXTeam/GUI-progress-bars.git
+[submodule "switches/3.0.3"]
+	path = switches/3.0.3
+	url = git@github.com:WestpacCXTeam/GUI-switches.git
