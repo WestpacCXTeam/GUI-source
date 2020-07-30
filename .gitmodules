@@ -1189,3 +1189,6 @@
 [submodule "switches/3.0.3"]
 	path = switches/3.0.3
 	url = git@github.com:WestpacCXTeam/GUI-switches.git
+[submodule "tabcordions/4.1.6"]
+	path = tabcordions/4.1.6
+	url = git@github.com:WestpacCXTeam/GUI-tabcordions.git
