@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1387,7 +1387,7 @@ label {
   vertical-align: middle;
 }
 .input-group-addon {
-  background-color: #f8f8f7;
+  background-color: #fafaf9;
   border: 1px solid #949386;
   font-weight: 400;
   color: #004833;
@@ -1420,7 +1420,7 @@ label {
   background: #e30000;
 }
 .input-group-control > .btn.btn-hero::before {
-  background: #78be20;
+  background: #008739;
 }
 .input-group-control:first-child > .btn::before,
 .input-group-control:first-child + .input-group-control > .btn::before {

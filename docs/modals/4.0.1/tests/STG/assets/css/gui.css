@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1387,7 +1387,7 @@ label {
 }
 .modal-header {
   overflow: hidden;
-  border-bottom: 1px solid #78be20;
+  border-bottom: 1px solid #008739;
   padding: 1rem 1.5rem 0.75rem;
 }
 .modal-header-title {
@@ -1419,7 +1419,7 @@ label {
   padding: 1.125rem 1.5rem;
 }
 .modal-footer {
-  background-color: #f1f1ef;
+  background-color: #f5f5f4;
   border-top: 1px solid #d6d5d0;
   text-align: right;
   padding: 0.75rem 1.125rem;

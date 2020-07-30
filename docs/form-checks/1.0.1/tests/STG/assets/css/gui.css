@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1258,6 +1258,9 @@ dl dd {
 :focus {
   outline: none;
 }
+::-moz-selection {
+  background-color: #f9cccc;
+}
 ::selection {
   background-color: #f9cccc;
 }
@@ -1395,7 +1398,7 @@ fieldset[disabled] .form-checks-input {
 }
 .form-checks-input:disabled + .form-checks-label,
 fieldset[disabled] .form-checks-label {
-  color: #757463;
+  color: #727163;
   cursor: default;
 }
 .form-checks-label::before {
@@ -1406,7 +1409,7 @@ fieldset[disabled] .form-checks-label {
   left: 0;
   width: 1.5rem;
   height: 1.5rem;
-  border: 1px solid #78be20;
+  border: 1px solid #008739;
   background: transparent;
 }
 .form-checks-input[type="checkbox"] + .form-checks-label::before {
@@ -1422,12 +1425,12 @@ fieldset[disabled] .form-checks-label {
 .form-checks-input:disabled + .form-checks-label::before,
 fieldset[disabled] .form-checks-label::before {
   border-color: #d6d5d0;
-  background: #f8f8f7;
+  background: #fafaf9;
 }
 .form-checks-label::after {
   content: '';
   position: absolute;
-  border: solid #78be20;
+  border: solid #008739;
   opacity: 0;
 }
 .form-checks-input[type="radio"] + .form-checks-label::after {
@@ -1437,7 +1440,7 @@ fieldset[disabled] .form-checks-label::before {
   height: 0;
   border-width: 0.375rem;
   border-radius: 50%;
-  background: #78be20;
+  background: #008739;
 }
 .form-checks-input[type="checkbox"] + .form-checks-label::after {
   top: 0.375rem;

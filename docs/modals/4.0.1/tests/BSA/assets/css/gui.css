@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1426,7 +1426,7 @@ label {
   padding: 1.125rem 1.5rem;
 }
 .modal-footer {
-  background-color: #f0f1f1;
+  background-color: #f3f4f4;
   border-top: 1px solid #d3d4d5;
   text-align: right;
   padding: 0.75rem 1.125rem;

@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1419,7 +1419,7 @@ label {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  color: #9e9e92;
+  color: #9c9c92;
   border: none;
   background: none;
   -ms-touch-action: manipulation;
@@ -1506,7 +1506,7 @@ label {
   padding-left: calc(1.625rem + 30px);
   padding-right: 30px;
   font-size: 0.875rem;
-  color: #838273;
+  color: #807f73;
 }
 .progress-rope-list-accordion-group .progress-rope-step {
   padding-left: calc(1.625rem + 0.75rem + 30px);

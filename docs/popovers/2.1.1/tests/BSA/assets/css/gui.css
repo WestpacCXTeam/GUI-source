@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1380,7 +1380,7 @@ label {
   top: auto;
   bottom: calc(100% +  1px );
   border-top: none;
-  border-bottom: 0.75rem solid #6c7074;
+  border-bottom: 0.75rem solid #6a6e72;
 }
 .is-open.is-bottom .popover-popup::after {
   display: none;
@@ -1395,7 +1395,7 @@ label {
   margin-left: -8.8125rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0.1875rem;
-  border: 1px solid #6c7074;
+  border: 1px solid #6a6e72;
   z-index: 105;
   background-color: #fff;
   pointer-events: all;
@@ -1422,7 +1422,7 @@ label {
 }
 .popover-popup::before {
   top: calc(100% +  1px );
-  border-top-color: #6c7074;
+  border-top-color: #6a6e72;
   z-index: 105;
 }
 .popover-popup::after {
@@ -1441,7 +1441,7 @@ label {
   line-height: 1.42857143;
 }
 .popover-popup .popover-popup-title {
-  background-color: #6c7074;
+  background-color: #6a6e72;
   color: #fff;
   font-size: 1rem;
   font-weight: 400;

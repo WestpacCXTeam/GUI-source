@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1384,6 +1384,11 @@ label {
   color: #999999;
   opacity: 1;
 }
+.input-field::-moz-placeholder {
+  font-weight: 300;
+  color: #999999;
+  opacity: 1;
+}
 .input-field::-ms-input-placeholder {
   font-weight: 300;
   color: #999999;
@@ -1404,8 +1409,8 @@ textarea.input-field {
 }
 .input-field:disabled,
 .input-field[readonly] {
-  background-color: #f8f8f8;
-  color: #6c7074;
+  background-color: #fafafa;
+  color: #6a6e72;
   cursor: not-allowed;
   opacity: 1;
 }

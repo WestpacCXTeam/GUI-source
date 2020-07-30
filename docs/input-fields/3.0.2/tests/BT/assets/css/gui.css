@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1365,6 +1365,11 @@ label {
   }
 }
 .input-field::-webkit-input-placeholder {
+  font-weight: 300;
+  color: #999999;
+  opacity: 1;
+}
+.input-field::-moz-placeholder {
   font-weight: 300;
   color: #999999;
   opacity: 1;

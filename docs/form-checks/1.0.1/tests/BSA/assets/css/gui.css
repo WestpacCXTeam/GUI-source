@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1265,6 +1265,9 @@ dl dd {
 :focus {
   outline: none;
 }
+::-moz-selection {
+  background-color: #f7d1d5;
+}
 ::selection {
   background-color: #f7d1d5;
 }
@@ -1402,7 +1405,7 @@ fieldset[disabled] .form-checks-input {
 }
 .form-checks-input:disabled + .form-checks-label,
 fieldset[disabled] .form-checks-label {
-  color: #6c7074;
+  color: #6a6e72;
   cursor: default;
 }
 .form-checks-label::before {
@@ -1429,7 +1432,7 @@ fieldset[disabled] .form-checks-label {
 .form-checks-input:disabled + .form-checks-label::before,
 fieldset[disabled] .form-checks-label::before {
   border-color: #d3d4d5;
-  background: #f8f8f8;
+  background: #fafafa;
 }
 .form-checks-label::after {
   content: '';

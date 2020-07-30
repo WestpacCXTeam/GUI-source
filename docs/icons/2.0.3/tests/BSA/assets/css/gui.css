@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1347,7 +1347,7 @@ label {
     width: auto;
   }
 }
-/*!icons v2.0.3 BSA*/
+/*!icons v2.0.4 BSA*/
 /*
  * icons mixins
  *
@@ -1420,8 +1420,8 @@ a .icons-background {
 }
 .icon-loading:before,
 .icon-loading:after {
-  color: #6c7074;
-  border-color: #6c7074;
+  color: #6a6e72;
+  border-color: #6a6e72;
 }
 .ie8 .icon-loading,
 .ie9 .icon-loading {

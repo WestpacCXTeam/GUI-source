@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1241,7 +1241,7 @@ textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 mark {
-  background-color: #f7d8cc;
+  background-color: #f6d7cc;
 }
 h1,
 h2,
@@ -1273,13 +1273,13 @@ dl dd {
   outline: none;
 }
 ::-moz-selection {
-  background-color: #f7d8cc;
+  background-color: #f6d7cc;
 }
 ::selection {
-  background-color: #f7d8cc;
+  background-color: #f6d7cc;
 }
 a {
-  color: #d73b00;
+  color: #d13900;
   text-decoration: underline;
 }
 a:hover,
@@ -1412,19 +1412,19 @@ label {
   transition: background 0.2s ease;
 }
 .table:not(.table-striped) > tbody > tr:hover {
-  background-color: #f1f1f2;
+  background-color: #f7f7f7;
 }
 .table > tbody > tr.table-highlight {
-  border-left: 6px solid #d73b00;
+  border-left: 6px solid #d13900;
 }
 .table > tbody > tr.table-highlight > th,
 .table > tbody > tr.table-highlight > td {
-  border-bottom: 1px solid #d73b00;
+  border-bottom: 1px solid #d13900;
 }
 .table > tbody > tr > td.table-highlight,
 .table > tbody > tr > th.table-highlight {
-  border-left: 6px solid #d73b00;
-  border-bottom: 1px solid #d73b00;
+  border-left: 6px solid #d13900;
+  border-bottom: 1px solid #d13900;
 }
 .table > tbody > tr > td.table-highlight + td.table-highlight,
 .table > tbody > tr > th.table-highlight + td.table-highlight,
@@ -1462,7 +1462,7 @@ label {
 @media screen and (max-width: 480px) {
   .table-responsive > .table-bordered > tbody > tr > td:first-child.table-highlight,
   .table-responsive > .table-bordered > tbody > tr > th:first-child.table-highlight {
-    border-left: 6px solid #d73b00;
+    border-left: 6px solid #d13900;
   }
 }
 @-moz-document url-prefix() {

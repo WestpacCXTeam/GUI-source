@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1382,7 +1382,7 @@ label {
   border-top: 1px solid #d3d4d5;
 }
 .table > tfoot {
-  color: #6c7074;
+  color: #6a6e72;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -1405,7 +1405,7 @@ label {
   transition: background 0.2s ease;
 }
 .table:not(.table-striped) > tbody > tr:hover {
-  background-color: #f0f1f1;
+  background-color: #f3f4f4;
 }
 .table > tbody > tr.table-highlight {
   border-left: 6px solid #d81b2b;
@@ -1426,7 +1426,7 @@ label {
   border-left: 0 none;
 }
 .table-striped > tbody > tr:nth-child(even) {
-  background-color: #f8f8f8;
+  background-color: #fafafa;
 }
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,

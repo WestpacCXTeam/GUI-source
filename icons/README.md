@@ -18,6 +18,8 @@ GUI Icons
 
 ### Release History
 
+* v2.0.4 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Added new clear icons (`.icon-clear` and `.icon-clear-circle`)
 * v2.0.3 - `SVG` ~~`LESS/CSS`~~ ~~`HTML`~~ ~~`JS`~~
 	* Updated icon SVGs to include `focusable="false"` attribute to disable focus in IE/Edge. This will ensure focus behaviour is consistent between all browsers.
 		[#433](https://github.com/WestpacCXTeam/GUI-source/issues/433)

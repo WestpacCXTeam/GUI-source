@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1394,7 +1394,7 @@ label {
   vertical-align: middle;
 }
 .input-group-addon {
-  background-color: #f8f8f8;
+  background-color: #fafafa;
   border: 1px solid #909396;
   font-weight: 400;
   color: #333;

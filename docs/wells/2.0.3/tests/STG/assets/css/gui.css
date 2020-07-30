@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1351,7 +1351,7 @@ label {
 .well {
   padding: 0.75rem;
   margin-bottom: 1.125rem;
-  background-color: #f8f8f7;
+  background-color: #fafaf9;
   border: 1px solid #d6d5d0;
   border-radius: 0.1875rem;
 }

@@ -1,19 +1,41 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
 /*
 	 *  SETTINGS
 	 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/montserrat-v14-latin-300.eot');
+  src: url('../font/montserrat-v14-latin-300.eot?#iefix') format('embedded-opentype'), url('../font/montserrat-v14-latin-300.woff2') format('woff2'), url('../font/montserrat-v14-latin-300.woff') format('woff'), url('../font/montserrat-v14-latin-300.ttf') format('truetype'), url('../font/montserrat-v14-latin-300.svg#Montserrat') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/montserrat-v14-latin-regular.eot');
+  src: url('../font/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'), url('../font/montserrat-v14-latin-regular.woff2') format('woff2'), url('../font/montserrat-v14-latin-regular.woff') format('woff'), url('../font/montserrat-v14-latin-regular.ttf') format('truetype'), url('../font/montserrat-v14-latin-regular.svg#Montserrat') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../font/montserrat-v14-latin-700.eot');
+  src: url('../font/montserrat-v14-latin-700.eot?#iefix') format('embedded-opentype'), url('../font/montserrat-v14-latin-700.woff2') format('woff2'), url('../font/montserrat-v14-latin-700.woff') format('woff'), url('../font/montserrat-v14-latin-700.ttf') format('truetype'), url('../font/montserrat-v14-latin-700.svg#Montserrat') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
 .body-font {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 .brand-font {
-  font-family: "Times New Roman", "Times", serif;
+  font-family: "Montserrat";
+  font-weight: normal;
 }
 /*!_grid v3.0.0*/
 /*
@@ -1219,7 +1241,7 @@ textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 mark {
-  background-color: #f7ccd5;
+  background-color: #f8d1cf;
 }
 h1,
 h2,
@@ -1251,13 +1273,13 @@ dl dd {
   outline: none;
 }
 ::-moz-selection {
-  background-color: #f7ccd5;
+  background-color: #f8d1cf;
 }
 ::selection {
-  background-color: #f7ccd5;
+  background-color: #f8d1cf;
 }
 a {
-  color: #d5002b;
+  color: #da1710;
   text-decoration: underline;
 }
 a:hover,
@@ -1361,19 +1383,19 @@ ul.lists > li::after {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  border: 0.0625rem solid #d5002b;
-  background-color: #d5002b;
+  border: 0.0625rem solid #da1710;
+  background-color: #da1710;
 }
 ul.lists > li > .lists > li::after {
   background-color: transparent;
 }
 ul.lists.lists-hero > li::after {
-  border-color: #495761;
-  background-color: #495761;
+  border-color: #000;
+  background-color: #000;
 }
 ul.lists.lists-neutral > li::after {
-  border-color: #263238;
-  background-color: #263238;
+  border-color: #403a38;
+  background-color: #403a38;
 }
 .lists {
   margin: 0;
@@ -1429,13 +1451,13 @@ ul.lists.lists-neutral > li::after {
   top: 0;
 }
 .lists.lists-icon.lists-primary > li > .icon .icons-background {
-  fill: #d5002b;
+  fill: #da1710;
 }
 .lists.lists-icon.lists-hero > li > .icon .icons-background {
-  fill: #495761;
+  fill: #000;
 }
 .lists.lists-icon.lists-neutral > li > .icon .icons-background {
-  fill: #263238;
+  fill: #403a38;
 }
 .lists-large > li {
   margin-top: 0.75rem;

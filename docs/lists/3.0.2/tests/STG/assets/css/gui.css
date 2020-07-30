@@ -1,8 +1,8 @@
-/*!_colors v3.0.3*/
+/*!_colors v3.0.4*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.5*/
+/*!_fonts v2.0.6*/
 /*
 	 *  SETTINGS
 	 */
@@ -1376,12 +1376,12 @@ ul.lists > li > .lists > li::after {
   background-color: transparent;
 }
 ul.lists.lists-hero > li::after {
-  border-color: #78be20;
-  background-color: #78be20;
+  border-color: #008739;
+  background-color: #008739;
 }
 ul.lists.lists-neutral > li::after {
-  border-color: #757463;
-  background-color: #757463;
+  border-color: #727163;
+  background-color: #727163;
 }
 .lists {
   margin: 0;
@@ -1440,10 +1440,10 @@ ul.lists.lists-neutral > li::after {
   fill: #e30000;
 }
 .lists.lists-icon.lists-hero > li > .icon .icons-background {
-  fill: #78be20;
+  fill: #008739;
 }
 .lists.lists-icon.lists-neutral > li > .icon .icons-background {
-  fill: #757463;
+  fill: #727163;
 }
 .lists-large > li {
   margin-top: 0.75rem;
