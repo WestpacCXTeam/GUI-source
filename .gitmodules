@@ -358,6 +358,9 @@
 [submodule "icons/2.0.3"]
 	path = icons/2.0.3
 	url = git@github.com:WestpacCXTeam/GUI-icons.git
+[submodule "icons/2.0.4"]
+	path = icons/2.0.4
+	url = git@github.com:WestpacCXTeam/GUI-icons.git
 [submodule "icons-base/1.0.0"]
 	path = icons-base/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-icons-base.git
@@ -1195,6 +1198,3 @@
 [submodule "wells/2.0.3"]
 	path = wells/2.0.3
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
-[submodule "icons/2.0.4"]
-	path = icons/2.0.4
-	url = git@github.com:WestpacCXTeam/GUI-icons.git
