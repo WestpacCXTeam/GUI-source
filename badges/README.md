@@ -1,8 +1,7 @@
 GUI Badges
 ==========
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-badges/tests/BOM/) |
@@ -19,6 +18,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Dependency: GUI_colors v3.0.4
+	* Remap Hero badge text colour for STG brand
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Migrate to relative CSS units (a11y)
 		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)

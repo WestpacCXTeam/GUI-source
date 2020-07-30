@@ -1,0 +1,2341 @@
+/*
+ * Testing colors for _colors v3.0.4 BT
+ */
+/* ---------------------------------------| COLORS |--------------------------------------- */
+/*!_colors v3.0.4 BT*/
+/*
+	 *  SETTINGS
+	 */
+/*!_fonts v2.0.6*/
+/*
+	 *  SETTINGS
+	 */
+/*
+	 *  SETTINGS
+	 */
+.body-font {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.brand-font {
+  font-family: Georgia, "Times New Roman", "Times", serif;
+}
+/*!_grid v3.0.0*/
+/*
+	 *  SETTINGS
+	 */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+  content: '';
+  display: table;
+}
+.clearfix:after,
+.container:after,
+.container-fluid:after,
+.row:after {
+  clear: both;
+}
+.container,
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+@media (min-width: 768px) {
+  .container,
+  .container-fluid {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+}
+@media (min-width: 992px) {
+  .container,
+  .container-fluid {
+    padding-right: 48px;
+    padding-left: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-fluid {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.container-fluid {
+  max-width: 1320px;
+}
+.row {
+  margin-left: -6px;
+  margin-right: -6px;
+}
+@media (min-width: 768px) {
+  .row {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+[class*="col-"] {
+  position: relative;
+  min-height: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+@media (min-width: 768px) {
+  [class*="col-"] {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-5 {
+  width: 41.66666667%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-1 {
+  width: 8.33333333%;
+}
+.col-xs-pull-12 {
+  right: 100%;
+}
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+.col-xs-pull-9 {
+  right: 75%;
+}
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+.col-xs-pull-6 {
+  right: 50%;
+}
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+.col-xs-pull-3 {
+  right: 25%;
+}
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+.col-xs-pull-0 {
+  right: auto;
+}
+.col-xs-push-12 {
+  left: 100%;
+}
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+.col-xs-push-9 {
+  left: 75%;
+}
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+.col-xs-push-6 {
+  left: 50%;
+}
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+.col-xs-push-3 {
+  left: 25%;
+}
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+.col-xs-push-0 {
+  left: auto;
+}
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+@media (min-width: 768px) {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-sm-pull-0 {
+    right: auto;
+  }
+  .col-sm-push-12 {
+    left: 100%;
+  }
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+  .col-sm-push-9 {
+    left: 75%;
+  }
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+  .col-sm-push-6 {
+    left: 50%;
+  }
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+  .col-sm-push-3 {
+    left: 25%;
+  }
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+  .col-sm-push-0 {
+    left: auto;
+  }
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-md-pull-0 {
+    right: auto;
+  }
+  .col-md-push-12 {
+    left: 100%;
+  }
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .col-md-push-9 {
+    left: 75%;
+  }
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .col-md-push-6 {
+    left: 50%;
+  }
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .col-md-push-3 {
+    left: 25%;
+  }
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .col-md-push-0 {
+    left: auto;
+  }
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-lg-pull-0 {
+    right: auto;
+  }
+  .col-lg-push-12 {
+    left: 100%;
+  }
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+  .col-lg-push-9 {
+    left: 75%;
+  }
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+  .col-lg-push-6 {
+    left: 50%;
+  }
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+  .col-lg-push-3 {
+    left: 25%;
+  }
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+  .col-lg-push-0 {
+    left: auto;
+  }
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+/*!_text-styling v4.0.7*/
+/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
+/**
+	 * 1. Change the default font family in all browsers (opinionated).
+	 * 2. Correct the line height in all browsers.
+	 * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+	 */
+/* Document
+		 ========================================================================== */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+/* Sections
+		 ========================================================================== */
+/**
+	 * Remove the margin in all browsers (opinionated).
+	 */
+body {
+  margin: 0;
+}
+/**
+	 * Add the correct display in IE 9-.
+	 */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+/**
+	 * Correct the font size and margin on `h1` elements within `section` and
+	 * `article` contexts in Chrome, Firefox, and Safari.
+	 */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/* Grouping content
+		 ========================================================================== */
+/**
+	 * Add the correct display in IE 9-.
+	 * 1. Add the correct display in IE.
+	 */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+/**
+	 * Add the correct margin in IE 8.
+	 */
+figure {
+  margin: 1em 40px;
+}
+/**
+	 * 1. Add the correct box sizing in Firefox.
+	 * 2. Show the overflow in Edge and IE.
+	 */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+/**
+	 * 1. Correct the inheritance and scaling of font size in all browsers.
+	 * 2. Correct the odd `em` font sizing in all browsers.
+	 */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/* Text-level semantics
+		 ========================================================================== */
+/**
+	 * 1. Remove the gray background on active links in IE 10.
+	 * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+	 */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+/**
+	 * Remove the outline on focused links when they are also active or hovered
+	 * in all browsers (opinionated).
+	 */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+/**
+	 * 1. Remove the bottom border in Firefox 39-.
+	 * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+	 */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+/**
+	 * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+	 */
+b,
+strong {
+  font-weight: inherit;
+}
+/**
+	 * Add the correct font weight in Chrome, Edge, and Safari.
+	 */
+b,
+strong {
+  font-weight: bolder;
+}
+/**
+	 * 1. Correct the inheritance and scaling of font size in all browsers.
+	 * 2. Correct the odd `em` font sizing in all browsers.
+	 */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+/**
+	 * Add the correct font style in Android 4.3-.
+	 */
+dfn {
+  font-style: italic;
+}
+/**
+	 * Add the correct background and color in IE 9-.
+	 */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+/**
+	 * Add the correct font size in all browsers.
+	 */
+small {
+  font-size: 80%;
+}
+/**
+	 * Prevent `sub` and `sup` elements from affecting the line height in
+	 * all browsers.
+	 */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+/* Embedded content
+		 ========================================================================== */
+/**
+	 * Add the correct display in IE 9-.
+	 */
+audio,
+video {
+  display: inline-block;
+}
+/**
+	 * Add the correct display in iOS 4-7.
+	 */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+	 * Remove the border on images inside links in IE 10-.
+	 */
+img {
+  border-style: none;
+}
+/**
+	 * Hide the overflow in IE.
+	 */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* Forms
+		 ========================================================================== */
+/**
+	 * 1. Change the font styles in all browsers (opinionated).
+	 * 2. Remove the margin in Firefox and Safari.
+	 */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+/**
+	 * Show the overflow in IE.
+	 * 1. Show the overflow in Edge.
+	 */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+/**
+	 * Remove the inheritance of text transform in Edge, Firefox, and IE.
+	 * 1. Remove the inheritance of text transform in Firefox.
+	 */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+/**
+	 * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+	 *    controls in Android 4.
+	 * 2. Correct the inability to style clickable types in iOS and Safari.
+	 */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+/**
+	 * Remove the inner border and padding in Firefox.
+	 */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+/**
+	 * Restore the focus styles unset by the previous rule.
+	 */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+/**
+	 * Change the border, margin, and padding in all browsers (opinionated).
+	 */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+	 * 1. Correct the text wrapping in Edge and IE.
+	 * 2. Correct the color inheritance from `fieldset` elements in IE.
+	 * 3. Remove the padding so developers are not caught out when they zero out
+	 *    `fieldset` elements in all browsers.
+	 */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+/**
+	 * 1. Add the correct display in IE 9-.
+	 * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+	 */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+/**
+	 * Remove the default vertical scrollbar in IE.
+	 */
+textarea {
+  overflow: auto;
+}
+/**
+	 * 1. Add the correct box sizing in IE 10-.
+	 * 2. Remove the padding in IE 10-.
+	 */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+/**
+	 * Correct the cursor style of increment and decrement buttons in Chrome.
+	 */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+/**
+	 * 1. Correct the odd appearance in Chrome and Safari.
+	 * 2. Correct the outline style in Safari.
+	 */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+/**
+	 * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+	 */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+	 * 1. Correct the inability to style clickable types in iOS and Safari.
+	 * 2. Change font properties to `inherit` in Safari.
+	 */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+/* Interactive
+		 ========================================================================== */
+/*
+	 * Add the correct display in IE 9-.
+	 * 1. Add the correct display in Edge, IE, and Firefox.
+	 */
+details,
+menu {
+  display: block;
+}
+/*
+	 * Add the correct display in all browsers.
+	 */
+summary {
+  display: list-item;
+}
+/* Scripting
+		 ========================================================================== */
+/**
+	 * Add the correct display in IE 9-.
+	 */
+canvas {
+  display: inline-block;
+}
+/**
+	 * Add the correct display in IE.
+	 */
+template {
+  display: none;
+}
+/* Hidden
+		 ========================================================================== */
+/**
+	 * Add the correct display in IE 10-.
+	 */
+[hidden] {
+  display: none;
+}
+/*
+	 *  SETTINGS
+	 */
+body {
+  font-size: 0.875rem;
+  line-height: 1.42857143;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-feature-settings: "liga" 1;
+          font-feature-settings: "liga" 1;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #333;
+  text-decoration: none;
+}
+address {
+  font-style: normal;
+}
+blockquote {
+  font-size: 1rem;
+  font-weight: 300;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+mark {
+  background-color: #d3e3ee;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2574a9;
+}
+.is-keyboarduser h1:focus,
+.is-keyboarduser h2:focus,
+.is-keyboarduser h3:focus,
+.is-keyboarduser h4:focus,
+.is-keyboarduser h5:focus,
+.is-keyboarduser h6:focus {
+  outline: 2px solid #ca73a6;
+  outline-offset: 3px;
+}
+p {
+  margin: 0.85714286em 0;
+}
+dl dt {
+  font-weight: 700;
+}
+dl dd {
+  margin: 0;
+}
+:focus {
+  outline: none;
+}
+::-moz-selection {
+  background-color: #d3e3ee;
+}
+::selection {
+  background-color: #d3e3ee;
+}
+a {
+  color: #9e005d;
+  text-decoration: underline;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+.is-keyboarduser a:focus {
+  outline: 2px solid #ca73a6;
+  outline-offset: 3px;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.375rem;
+}
+@media print {
+  * {
+    text-shadow: none !important;
+    color: #000 !important;
+    background: #fff !important;
+    box-shadow: none !important;
+    border-color: #000 !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="javascript:"]::after,
+  a[href^="#"]::after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    padding: 0.375rem;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  p a {
+    word-wrap: break-word;
+  }
+  select {
+    background: #fff !important;
+  }
+  .container,
+  .container-fluid {
+    margin: auto;
+    width: auto;
+  }
+}
+.colors {
+  padding: 12px;
+}
+.colors:after {
+  float: right;
+  font-size: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 6px;
+  text-transform: uppercase;
+  min-width: 75px;
+  display: inline-block;
+  text-align: center;
+}
+.color-A {
+  background-color: #9e005d;
+}
+.color-A:after {
+  content: "#9e005d";
+}
+.color-A-90 {
+  background-color: #a8196d;
+}
+.color-A-90:after {
+  content: "#a8196d";
+}
+.color-A-80 {
+  background-color: #b1337d;
+}
+.color-A-80:after {
+  content: "#b1337d";
+}
+.color-A-70 {
+  background-color: #bb4d8e;
+}
+.color-A-70:after {
+  content: "#bb4d8e";
+}
+.color-A-60 {
+  background-color: #c5669e;
+}
+.color-A-60:after {
+  content: "#c5669e";
+}
+.color-A-50 {
+  background-color: #cf80ae;
+}
+.color-A-50:after {
+  content: "#cf80ae";
+}
+.color-A-40 {
+  background-color: #d899be;
+}
+.color-A-40:after {
+  content: "#d899be";
+}
+.color-A-30 {
+  background-color: #e2b3ce;
+}
+.color-A-30:after {
+  content: "#e2b3ce";
+}
+.color-A-20 {
+  background-color: #ecccdf;
+}
+.color-A-20:after {
+  content: "#ecccdf";
+}
+.color-A-10 {
+  background-color: #f5e6ef;
+}
+.color-A-10:after {
+  content: "#f5e6ef";
+}
+.color-A-5 {
+  background-color: #faf2f7;
+}
+.color-A-5:after {
+  content: "#faf2f7";
+}
+.color-B {
+  background-color: #2574a9;
+}
+.color-B:after {
+  content: "#2574a9";
+}
+.color-B-90 {
+  background-color: #3b82b2;
+}
+.color-B-90:after {
+  content: "#3b82b2";
+}
+.color-B-80 {
+  background-color: #5190ba;
+}
+.color-B-80:after {
+  content: "#5190ba";
+}
+.color-B-70 {
+  background-color: #669ec3;
+}
+.color-B-70:after {
+  content: "#669ec3";
+}
+.color-B-60 {
+  background-color: #7caccb;
+}
+.color-B-60:after {
+  content: "#7caccb";
+}
+.color-B-50 {
+  background-color: #92bad4;
+}
+.color-B-50:after {
+  content: "#92bad4";
+}
+.color-B-40 {
+  background-color: #a8c7dd;
+}
+.color-B-40:after {
+  content: "#a8c7dd";
+}
+.color-B-30 {
+  background-color: #bed5e5;
+}
+.color-B-30:after {
+  content: "#bed5e5";
+}
+.color-B-20 {
+  background-color: #d3e3ee;
+}
+.color-B-20:after {
+  content: "#d3e3ee";
+}
+.color-B-10 {
+  background-color: #e9f1f6;
+}
+.color-B-10:after {
+  content: "#e9f1f6";
+}
+.color-B-5 {
+  background-color: #f4f8fb;
+}
+.color-B-5:after {
+  content: "#f4f8fb";
+}
+.color-C {
+  background-color: #637b98;
+}
+.color-C:after {
+  content: "#637b98";
+}
+.color-C-90 {
+  background-color: #7388a2;
+}
+.color-C-90:after {
+  content: "#7388a2";
+}
+.color-C-80 {
+  background-color: #8295ad;
+}
+.color-C-80:after {
+  content: "#8295ad";
+}
+.color-C-70 {
+  background-color: #92a3b7;
+}
+.color-C-70:after {
+  content: "#92a3b7";
+}
+.color-C-60 {
+  background-color: #a1b0c1;
+}
+.color-C-60:after {
+  content: "#a1b0c1";
+}
+.color-C-50 {
+  background-color: #b1bdcc;
+}
+.color-C-50:after {
+  content: "#b1bdcc";
+}
+.color-C-40 {
+  background-color: #c1cad6;
+}
+.color-C-40:after {
+  content: "#c1cad6";
+}
+.color-C-30 {
+  background-color: #d0d7e0;
+}
+.color-C-30:after {
+  content: "#d0d7e0";
+}
+.color-C-20 {
+  background-color: #e0e5ea;
+}
+.color-C-20:after {
+  content: "#e0e5ea";
+}
+.color-C-10 {
+  background-color: #eff2f5;
+}
+.color-C-10:after {
+  content: "#eff2f5";
+}
+.color-C-5 {
+  background-color: #f7f8fa;
+}
+.color-C-5:after {
+  content: "#f7f8fa";
+}
+.color-D {
+  background-color: #949494;
+}
+.color-D:after {
+  content: "#949494";
+}
+.color-D-90 {
+  background-color: #9f9f9f;
+}
+.color-D-90:after {
+  content: "#9f9f9f";
+}
+.color-D-80 {
+  background-color: #a9a9a9;
+}
+.color-D-80:after {
+  content: "#a9a9a9";
+}
+.color-D-70 {
+  background-color: #b4b4b4;
+}
+.color-D-70:after {
+  content: "#b4b4b4";
+}
+.color-D-60 {
+  background-color: #bfbfbf;
+}
+.color-D-60:after {
+  content: "#bfbfbf";
+}
+.color-D-50 {
+  background-color: #cacaca;
+}
+.color-D-50:after {
+  content: "#cacaca";
+}
+.color-D-40 {
+  background-color: #d4d4d4;
+}
+.color-D-40:after {
+  content: "#d4d4d4";
+}
+.color-D-30 {
+  background-color: #dfdfdf;
+}
+.color-D-30:after {
+  content: "#dfdfdf";
+}
+.color-D-20 {
+  background-color: #eaeaea;
+}
+.color-D-20:after {
+  content: "#eaeaea";
+}
+.color-D-10 {
+  background-color: #f4f4f4;
+}
+.color-D-10:after {
+  content: "#f4f4f4";
+}
+.color-D-5 {
+  background-color: #fafafa;
+}
+.color-D-5:after {
+  content: "#fafafa";
+}
+.color-E {
+  background-color: #2574a9;
+}
+.color-E:after {
+  content: "#2574a9";
+}
+.color-E-90 {
+  background-color: #3b82b2;
+}
+.color-E-90:after {
+  content: "#3b82b2";
+}
+.color-E-80 {
+  background-color: #5190ba;
+}
+.color-E-80:after {
+  content: "#5190ba";
+}
+.color-E-70 {
+  background-color: #669ec3;
+}
+.color-E-70:after {
+  content: "#669ec3";
+}
+.color-E-60 {
+  background-color: #7caccb;
+}
+.color-E-60:after {
+  content: "#7caccb";
+}
+.color-E-50 {
+  background-color: #92bad4;
+}
+.color-E-50:after {
+  content: "#92bad4";
+}
+.color-E-40 {
+  background-color: #a8c7dd;
+}
+.color-E-40:after {
+  content: "#a8c7dd";
+}
+.color-E-30 {
+  background-color: #bed5e5;
+}
+.color-E-30:after {
+  content: "#bed5e5";
+}
+.color-E-20 {
+  background-color: #d3e3ee;
+}
+.color-E-20:after {
+  content: "#d3e3ee";
+}
+.color-E-10 {
+  background-color: #e9f1f6;
+}
+.color-E-10:after {
+  content: "#e9f1f6";
+}
+.color-E-5 {
+  background-color: #f4f8fb;
+}
+.color-E-5:after {
+  content: "#f4f8fb";
+}
+.color-F {
+  background-color: #333;
+}
+.color-F:after {
+  content: "#333";
+}
+.color-F-90 {
+  background-color: #474747;
+}
+.color-F-90:after {
+  content: "#474747";
+}
+.color-F-80 {
+  background-color: #5c5c5c;
+}
+.color-F-80:after {
+  content: "#5c5c5c";
+}
+.color-F-70 {
+  background-color: #707070;
+}
+.color-F-70:after {
+  content: "#707070";
+}
+.color-F-60 {
+  background-color: #858585;
+}
+.color-F-60:after {
+  content: "#858585";
+}
+.color-F-50 {
+  background-color: #999999;
+}
+.color-F-50:after {
+  content: "#999999";
+}
+.color-F-40 {
+  background-color: #adadad;
+}
+.color-F-40:after {
+  content: "#adadad";
+}
+.color-F-30 {
+  background-color: #c2c2c2;
+}
+.color-F-30:after {
+  content: "#c2c2c2";
+}
+.color-F-20 {
+  background-color: #d6d6d6;
+}
+.color-F-20:after {
+  content: "#d6d6d6";
+}
+.color-F-10 {
+  background-color: #ebebeb;
+}
+.color-F-10:after {
+  content: "#ebebeb";
+}
+.color-F-5 {
+  background-color: #f5f5f5;
+}
+.color-F-5:after {
+  content: "#f5f5f5";
+}
+.color-G {
+  background-color: #666;
+}
+.color-G:after {
+  content: "#666";
+}
+.color-G-90 {
+  background-color: #757575;
+}
+.color-G-90:after {
+  content: "#757575";
+}
+.color-G-80 {
+  background-color: #858585;
+}
+.color-G-80:after {
+  content: "#858585";
+}
+.color-G-70 {
+  background-color: #949494;
+}
+.color-G-70:after {
+  content: "#949494";
+}
+.color-G-60 {
+  background-color: #a3a3a3;
+}
+.color-G-60:after {
+  content: "#a3a3a3";
+}
+.color-G-50 {
+  background-color: #b3b3b3;
+}
+.color-G-50:after {
+  content: "#b3b3b3";
+}
+.color-G-40 {
+  background-color: #c2c2c2;
+}
+.color-G-40:after {
+  content: "#c2c2c2";
+}
+.color-G-30 {
+  background-color: #d1d1d1;
+}
+.color-G-30:after {
+  content: "#d1d1d1";
+}
+.color-G-20 {
+  background-color: #e0e0e0;
+}
+.color-G-20:after {
+  content: "#e0e0e0";
+}
+.color-G-10 {
+  background-color: #f0f0f0;
+}
+.color-G-10:after {
+  content: "#f0f0f0";
+}
+.color-G-5 {
+  background-color: #f7f7f7;
+}
+.color-G-5:after {
+  content: "#f7f7f7";
+}
+.color-H {
+  background-color: #e0e0e0;
+}
+.color-H:after {
+  content: "#e0e0e0";
+}
+.color-H-90 {
+  background-color: #e3e3e3;
+}
+.color-H-90:after {
+  content: "#e3e3e3";
+}
+.color-H-80 {
+  background-color: #e6e6e6;
+}
+.color-H-80:after {
+  content: "#e6e6e6";
+}
+.color-H-70 {
+  background-color: #e9e9e9;
+}
+.color-H-70:after {
+  content: "#e9e9e9";
+}
+.color-H-60 {
+  background-color: #ececec;
+}
+.color-H-60:after {
+  content: "#ececec";
+}
+.color-H-50 {
+  background-color: #f0f0f0;
+}
+.color-H-50:after {
+  content: "#f0f0f0";
+}
+.color-H-40 {
+  background-color: #f3f3f3;
+}
+.color-H-40:after {
+  content: "#f3f3f3";
+}
+.color-H-30 {
+  background-color: #f6f6f6;
+}
+.color-H-30:after {
+  content: "#f6f6f6";
+}
+.color-H-20 {
+  background-color: #f9f9f9;
+}
+.color-H-20:after {
+  content: "#f9f9f9";
+}
+.color-H-10 {
+  background-color: #fcfcfc;
+}
+.color-H-10:after {
+  content: "#fcfcfc";
+}
+.color-H-5 {
+  background-color: #fdfdfd;
+}
+.color-H-5:after {
+  content: "#fdfdfd";
+}
+.color-I {
+  background-color: #f9f9f9;
+}
+.color-I:after {
+  content: "#f9f9f9";
+}
+.color-I-90 {
+  background-color: #fafafa;
+}
+.color-I-90:after {
+  content: "#fafafa";
+}
+.color-I-80 {
+  background-color: #fafafa;
+}
+.color-I-80:after {
+  content: "#fafafa";
+}
+.color-I-70 {
+  background-color: #fbfbfb;
+}
+.color-I-70:after {
+  content: "#fbfbfb";
+}
+.color-I-60 {
+  background-color: #fbfbfb;
+}
+.color-I-60:after {
+  content: "#fbfbfb";
+}
+.color-I-50 {
+  background-color: #fcfcfc;
+}
+.color-I-50:after {
+  content: "#fcfcfc";
+}
+.color-I-40 {
+  background-color: #fdfdfd;
+}
+.color-I-40:after {
+  content: "#fdfdfd";
+}
+.color-I-30 {
+  background-color: #fdfdfd;
+}
+.color-I-30:after {
+  content: "#fdfdfd";
+}
+.color-I-20 {
+  background-color: #fefefe;
+}
+.color-I-20:after {
+  content: "#fefefe";
+}
+.color-I-10 {
+  background-color: #fefefe;
+}
+.color-I-10:after {
+  content: "#fefefe";
+}
+.color-I-5 {
+  background-color: #ffffff;
+}
+.color-I-5:after {
+  content: "#ffffff";
+}
+.color-J {
+  background-color: #fcfcfc;
+}
+.color-J:after {
+  content: "#fcfcfc";
+}
+.color-J-90 {
+  background-color: #fcfcfc;
+}
+.color-J-90:after {
+  content: "#fcfcfc";
+}
+.color-J-80 {
+  background-color: #fdfdfd;
+}
+.color-J-80:after {
+  content: "#fdfdfd";
+}
+.color-J-70 {
+  background-color: #fdfdfd;
+}
+.color-J-70:after {
+  content: "#fdfdfd";
+}
+.color-J-60 {
+  background-color: #fdfdfd;
+}
+.color-J-60:after {
+  content: "#fdfdfd";
+}
+.color-J-50 {
+  background-color: #fefefe;
+}
+.color-J-50:after {
+  content: "#fefefe";
+}
+.color-J-40 {
+  background-color: #fefefe;
+}
+.color-J-40:after {
+  content: "#fefefe";
+}
+.color-J-30 {
+  background-color: #fefefe;
+}
+.color-J-30:after {
+  content: "#fefefe";
+}
+.color-J-20 {
+  background-color: #fefefe;
+}
+.color-J-20:after {
+  content: "#fefefe";
+}
+.color-J-10 {
+  background-color: #ffffff;
+}
+.color-J-10:after {
+  content: "#ffffff";
+}
+.color-J-5 {
+  background-color: #ffffff;
+}
+.color-J-5:after {
+  content: "#ffffff";
+}
+.color-K {
+  background-color: #ca73a6;
+}
+.color-K:after {
+  content: "#ca73a6";
+}
+.color-K-90 {
+  background-color: #cf81af;
+}
+.color-K-90:after {
+  content: "#cf81af";
+}
+.color-K-80 {
+  background-color: #d58fb8;
+}
+.color-K-80:after {
+  content: "#d58fb8";
+}
+.color-K-70 {
+  background-color: #da9dc1;
+}
+.color-K-70:after {
+  content: "#da9dc1";
+}
+.color-K-60 {
+  background-color: #dfabca;
+}
+.color-K-60:after {
+  content: "#dfabca";
+}
+.color-K-50 {
+  background-color: #e5b9d3;
+}
+.color-K-50:after {
+  content: "#e5b9d3";
+}
+.color-K-40 {
+  background-color: #eac7db;
+}
+.color-K-40:after {
+  content: "#eac7db";
+}
+.color-K-30 {
+  background-color: #efd5e4;
+}
+.color-K-30:after {
+  content: "#efd5e4";
+}
+.color-K-20 {
+  background-color: #f4e3ed;
+}
+.color-K-20:after {
+  content: "#f4e3ed";
+}
+.color-K-10 {
+  background-color: #faf1f6;
+}
+.color-K-10:after {
+  content: "#faf1f6";
+}
+.color-K-5 {
+  background-color: #fcf8fb;
+}
+.color-K-5:after {
+  content: "#fcf8fb";
+}
+.color-Success {
+  background-color: #008000;
+}
+.color-Success:after {
+  content: "#008000";
+}
+.color-Success-90 {
+  background-color: #198d19;
+}
+.color-Success-90:after {
+  content: "#198d19";
+}
+.color-Success-80 {
+  background-color: #339933;
+}
+.color-Success-80:after {
+  content: "#339933";
+}
+.color-Success-70 {
+  background-color: #4da64d;
+}
+.color-Success-70:after {
+  content: "#4da64d";
+}
+.color-Success-60 {
+  background-color: #66b366;
+}
+.color-Success-60:after {
+  content: "#66b366";
+}
+.color-Success-50 {
+  background-color: #80c080;
+}
+.color-Success-50:after {
+  content: "#80c080";
+}
+.color-Success-40 {
+  background-color: #99cc99;
+}
+.color-Success-40:after {
+  content: "#99cc99";
+}
+.color-Success-30 {
+  background-color: #b3d9b3;
+}
+.color-Success-30:after {
+  content: "#b3d9b3";
+}
+.color-Success-20 {
+  background-color: #cce6cc;
+}
+.color-Success-20:after {
+  content: "#cce6cc";
+}
+.color-Success-10 {
+  background-color: #e6f2e6;
+}
+.color-Success-10:after {
+  content: "#e6f2e6";
+}
+.color-Success-5 {
+  background-color: #f2f9f2;
+}
+.color-Success-5:after {
+  content: "#f2f9f2";
+}
+.color-Danger {
+  background-color: #c40000;
+}
+.color-Danger:after {
+  content: "#c40000";
+}
+.color-Danger-90 {
+  background-color: #ca1919;
+}
+.color-Danger-90:after {
+  content: "#ca1919";
+}
+.color-Danger-80 {
+  background-color: #d03333;
+}
+.color-Danger-80:after {
+  content: "#d03333";
+}
+.color-Danger-70 {
+  background-color: #d64d4d;
+}
+.color-Danger-70:after {
+  content: "#d64d4d";
+}
+.color-Danger-60 {
+  background-color: #dc6666;
+}
+.color-Danger-60:after {
+  content: "#dc6666";
+}
+.color-Danger-50 {
+  background-color: #e28080;
+}
+.color-Danger-50:after {
+  content: "#e28080";
+}
+.color-Danger-40 {
+  background-color: #e79999;
+}
+.color-Danger-40:after {
+  content: "#e79999";
+}
+.color-Danger-30 {
+  background-color: #edb3b3;
+}
+.color-Danger-30:after {
+  content: "#edb3b3";
+}
+.color-Danger-20 {
+  background-color: #f3cccc;
+}
+.color-Danger-20:after {
+  content: "#f3cccc";
+}
+.color-Danger-10 {
+  background-color: #f9e6e6;
+}
+.color-Danger-10:after {
+  content: "#f9e6e6";
+}
+.color-Danger-5 {
+  background-color: #fcf2f2;
+}
+.color-Danger-5:after {
+  content: "#fcf2f2";
+}
+.color-Warning {
+  background-color: #c53b00;
+}
+.color-Warning:after {
+  content: "#c53b00";
+}
+.color-Warning-90 {
+  background-color: #cb4f19;
+}
+.color-Warning-90:after {
+  content: "#cb4f19";
+}
+.color-Warning-80 {
+  background-color: #d16233;
+}
+.color-Warning-80:after {
+  content: "#d16233";
+}
+.color-Warning-70 {
+  background-color: #d6764d;
+}
+.color-Warning-70:after {
+  content: "#d6764d";
+}
+.color-Warning-60 {
+  background-color: #dc8966;
+}
+.color-Warning-60:after {
+  content: "#dc8966";
+}
+.color-Warning-50 {
+  background-color: #e29d80;
+}
+.color-Warning-50:after {
+  content: "#e29d80";
+}
+.color-Warning-40 {
+  background-color: #e8b199;
+}
+.color-Warning-40:after {
+  content: "#e8b199";
+}
+.color-Warning-30 {
+  background-color: #eec4b3;
+}
+.color-Warning-30:after {
+  content: "#eec4b3";
+}
+.color-Warning-20 {
+  background-color: #f3d8cc;
+}
+.color-Warning-20:after {
+  content: "#f3d8cc";
+}
+.color-Warning-10 {
+  background-color: #f9ebe6;
+}
+.color-Warning-10:after {
+  content: "#f9ebe6";
+}
+.color-Warning-5 {
+  background-color: #fcf5f2;
+}
+.color-Warning-5:after {
+  content: "#fcf5f2";
+}
+.color-Info {
+  background-color: #0074c4;
+}
+.color-Info:after {
+  content: "#0074c4";
+}
+.color-Info-90 {
+  background-color: #1982ca;
+}
+.color-Info-90:after {
+  content: "#1982ca";
+}
+.color-Info-80 {
+  background-color: #3390d0;
+}
+.color-Info-80:after {
+  content: "#3390d0";
+}
+.color-Info-70 {
+  background-color: #4d9ed6;
+}
+.color-Info-70:after {
+  content: "#4d9ed6";
+}
+.color-Info-60 {
+  background-color: #66acdc;
+}
+.color-Info-60:after {
+  content: "#66acdc";
+}
+.color-Info-50 {
+  background-color: #80bae2;
+}
+.color-Info-50:after {
+  content: "#80bae2";
+}
+.color-Info-40 {
+  background-color: #99c7e7;
+}
+.color-Info-40:after {
+  content: "#99c7e7";
+}
+.color-Info-30 {
+  background-color: #b3d5ed;
+}
+.color-Info-30:after {
+  content: "#b3d5ed";
+}
+.color-Info-20 {
+  background-color: #cce3f3;
+}
+.color-Info-20:after {
+  content: "#cce3f3";
+}
+.color-Info-10 {
+  background-color: #e6f1f9;
+}
+.color-Info-10:after {
+  content: "#e6f1f9";
+}
+.color-Info-5 {
+  background-color: #f2f8fc;
+}
+.color-Info-5:after {
+  content: "#f2f8fc";
+}

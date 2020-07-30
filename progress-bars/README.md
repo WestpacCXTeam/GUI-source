@@ -19,6 +19,9 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 
 ### Release History
 
+* v2.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Dependency: GUI_colors v3.0.4
+	* Remap indicator text colour for STG brand
 * v2.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Migrate to relative CSS units (a11y)
 		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)

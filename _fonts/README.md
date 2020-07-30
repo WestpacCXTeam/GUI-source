@@ -20,6 +20,8 @@ GUI Fonts
 
 ### Release History
 
+* v2.0.6 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated WBG brand’s font to ‘Montserrat’
 * v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated BOM brand’s font to ‘LL Brown’
 * v2.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

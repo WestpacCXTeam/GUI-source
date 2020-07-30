@@ -1,8 +1,7 @@
 GUI Switches
 ============
 
-***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other
-module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
+***This repo is part of the [Westpac GUI](http://gel.westpacgroup.com.au/GUI/) and is setup as a submodule. Please submit any issues with this or any other module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issues)***
 
 ➠
 [BOM](http://westpaccxteam.github.io/GUI-switches/tests/BOM/) |
@@ -12,14 +11,16 @@ module in our [GUI-source repo](https://github.com/WestpacCXTeam/GUI-source/issu
 [WBG](http://westpaccxteam.github.io/GUI-switches/tests/WBG/) |
 [BT](http://westpaccxteam.github.io/GUI-switches/tests/BT/)
 
-> These are very simple toggle switches ideal for use in settings or preference screens. The switch can be blank or contain a simple string for example;
-> yes/no, on/off etc. Please note: These switches are a fixed width. They are not for use with longs text strings.
+> These are very simple toggle switches ideal for use in settings or preference screens. The switch can be blank or contain a simple string for example; yes/no, on/off etc. Please note: These switches are a fixed width. They are not for use with longs text strings.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Release History
 
+* v3.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Dependency: GUI_colors v3.0.4
+	* Remap active toggle text colour for STG brand
 * v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Migrate to relative CSS units (a11y)
 		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)

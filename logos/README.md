@@ -19,6 +19,8 @@ GUI Logos
 
 ### Release History
 
+* v2.0.9 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Update logos for WBG brand
 * v2.0.8 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* New `.logo-red-avatar`, `.logo-red-avatar-circle` and `.logo-red-avatar-circle-reversed` ‘Red Avatar’ logos
 		[#454](https://github.com/WestpacCXTeam/GUI-source/issues/454)

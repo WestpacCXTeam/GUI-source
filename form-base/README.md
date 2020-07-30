@@ -18,6 +18,9 @@ GUI Form Base
 
 ### Release History
 
+* v1.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Remove multipleitem (Compacta) styling
+	* Update form repeat pattern styling; swap help link and utility button position
 * v1.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Migrate to relative CSS units (a11y)
 		[#456](https://github.com/WestpacCXTeam/GUI-source/issues/456)

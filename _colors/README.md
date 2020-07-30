@@ -20,6 +20,8 @@ GUI Colors
 
 ### Release History
 
+* v3.0.4 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated STG, WBG, BSA and BOM brand colours
 * v3.0.3 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated BOM brand colours
 * v3.0.2 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
