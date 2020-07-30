@@ -1183,3 +1183,6 @@
 [submodule "panels/2.0.4"]
 	path = panels/2.0.4
 	url = git@github.com:WestpacCXTeam/GUI-panels.git
+[submodule "progress-bars/2.0.3"]
+	path = progress-bars/2.0.3
+	url = git@github.com:WestpacCXTeam/GUI-progress-bars.git
