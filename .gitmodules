@@ -25,6 +25,9 @@
 [submodule "_colors/3.0.3"]
 	path = _colors/3.0.3
 	url = git@github.com:WestpacCXTeam/GUI_colors.git
+[submodule "_colors/3.0.4"]
+	path = _colors/3.0.4
+	url = git@github.com:WestpacCXTeam/GUI_colors.git
 [submodule "_fonts/1.0.0"]
 	path = _fonts/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI_fonts.git
@@ -51,6 +54,9 @@
 	url = git@github.com:WestpacCXTeam/GUI_fonts.git
 [submodule "_fonts/2.0.5"]
 	path = _fonts/2.0.5
+	url = git@github.com:WestpacCXTeam/GUI_fonts.git
+[submodule "_fonts/2.0.6"]
+	path = _fonts/2.0.6
 	url = git@github.com:WestpacCXTeam/GUI_fonts.git
 [submodule "_grid/1.0.0"]
 	path = _grid/1.0.0
@@ -190,6 +196,9 @@
 [submodule "badges/2.0.4"]
 	path = badges/2.0.4
 	url = git@github.com:WestpacCXTeam/GUI-badges.git
+[submodule "badges/2.0.5"]
+	path = badges/2.0.5
+	url = git@github.com:WestpacCXTeam/GUI-badges.git
 [submodule "breadcrumbs/1.0.0"]
 	path = breadcrumbs/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-breadcrumbs.git
@@ -252,6 +261,9 @@
 	url = git@github.com:WestpacCXTeam/GUI-buttons.git
 [submodule "buttons/4.0.4"]
 	path = buttons/4.0.4
+	url = git@github.com:WestpacCXTeam/GUI-buttons.git
+[submodule "buttons/4.0.5"]
+	path = buttons/4.0.5
 	url = git@github.com:WestpacCXTeam/GUI-buttons.git
 [submodule "checkboxes/1.0.0"]
 	path = checkboxes/1.0.0
@@ -736,6 +748,9 @@
 [submodule "labels/2.0.6"]
 	path = labels/2.0.6
 	url = git@github.com:WestpacCXTeam/GUI-labels.git
+[submodule "labels/2.0.7"]
+	path = labels/2.0.7
+	url = git@github.com:WestpacCXTeam/GUI-labels.git
 [submodule "list-groups/1.0.0"]
 	path = list-groups/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-list-groups.git
@@ -817,6 +832,9 @@
 [submodule "logos/2.0.8"]
 	path = logos/2.0.8
 	url = git@github.com:WestpacCXTeam/GUI-logos.git
+[submodule "logos/2.0.9"]
+	path = logos/2.0.9
+	url = git@github.com:WestpacCXTeam/GUI-logos.git
 [submodule "modals/1.0.0"]
 	path = modals/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-modals.git
@@ -862,6 +880,9 @@
 [submodule "paginations/2.0.4"]
 	path = paginations/2.0.4
 	url = git@github.com:WestpacCXTeam/GUI-paginations.git
+[submodule "paginations/2.0.5"]
+	path = paginations/2.0.5
+	url = git@github.com:WestpacCXTeam/GUI-paginations.git
 [submodule "panels/1.0.0"]
 	path = panels/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-panels.git
@@ -876,6 +897,9 @@
 	url = git@github.com:WestpacCXTeam/GUI-panels.git
 [submodule "panels/2.0.3"]
 	path = panels/2.0.3
+	url = git@github.com:WestpacCXTeam/GUI-panels.git
+[submodule "panels/2.0.4"]
+	path = panels/2.0.4
 	url = git@github.com:WestpacCXTeam/GUI-panels.git
 [submodule "popovers/1.0.0"]
 	path = popovers/1.0.0
@@ -912,6 +936,9 @@
 	url = git@github.com:WestpacCXTeam/GUI-progress-bars.git
 [submodule "progress-bars/2.0.2"]
 	path = progress-bars/2.0.2
+	url = git@github.com:WestpacCXTeam/GUI-progress-bars.git
+[submodule "progress-bars/2.0.3"]
+	path = progress-bars/2.0.3
 	url = git@github.com:WestpacCXTeam/GUI-progress-bars.git
 [submodule "progress-ropes/1.0.0"]
 	path = progress-ropes/1.0.0
@@ -1009,6 +1036,9 @@
 [submodule "switches/3.0.2"]
 	path = switches/3.0.2
 	url = git@github.com:WestpacCXTeam/GUI-switches.git
+[submodule "switches/3.0.3"]
+	path = switches/3.0.3
+	url = git@github.com:WestpacCXTeam/GUI-switches.git
 [submodule "symbols/1.0.0"]
 	path = symbols/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI-symbols.git
@@ -1077,6 +1107,9 @@
 	url = git@github.com:WestpacCXTeam/GUI-tabcordions.git
 [submodule "tabcordions/4.1.5"]
 	path = tabcordions/4.1.5
+	url = git@github.com:WestpacCXTeam/GUI-tabcordions.git
+[submodule "tabcordions/4.1.6"]
+	path = tabcordions/4.1.6
 	url = git@github.com:WestpacCXTeam/GUI-tabcordions.git
 [submodule "tables/1.0.0"]
 	path = tables/1.0.0
@@ -1162,36 +1195,3 @@
 [submodule "wells/2.0.3"]
 	path = wells/2.0.3
 	url = git@github.com:WestpacCXTeam/GUI-wells.git
-[submodule "_colors/3.0.4"]
-	path = _colors/3.0.4
-	url = git@github.com:WestpacCXTeam/GUI_colors.git
-[submodule "_fonts/2.0.6"]
-	path = _fonts/2.0.6
-	url = git@github.com:WestpacCXTeam/GUI_fonts.git
-[submodule "badges/2.0.5"]
-	path = badges/2.0.5
-	url = git@github.com:WestpacCXTeam/GUI-badges.git
-[submodule "buttons/4.0.5"]
-	path = buttons/4.0.5
-	url = git@github.com:WestpacCXTeam/GUI-buttons.git
-[submodule "labels/2.0.7"]
-	path = labels/2.0.7
-	url = git@github.com:WestpacCXTeam/GUI-labels.git
-[submodule "paginations/2.0.5"]
-	path = paginations/2.0.5
-	url = git@github.com:WestpacCXTeam/GUI-paginations.git
-[submodule "panels/2.0.4"]
-	path = panels/2.0.4
-	url = git@github.com:WestpacCXTeam/GUI-panels.git
-[submodule "progress-bars/2.0.3"]
-	path = progress-bars/2.0.3
-	url = git@github.com:WestpacCXTeam/GUI-progress-bars.git
-[submodule "switches/3.0.3"]
-	path = switches/3.0.3
-	url = git@github.com:WestpacCXTeam/GUI-switches.git
-[submodule "tabcordions/4.1.6"]
-	path = tabcordions/4.1.6
-	url = git@github.com:WestpacCXTeam/GUI-tabcordions.git
-[submodule "logos/2.0.9"]
-	path = logos/2.0.9
-	url = git@github.com:WestpacCXTeam/GUI-logos.git
