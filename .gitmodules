@@ -1192,3 +1192,6 @@
 [submodule "tabcordions/4.1.6"]
 	path = tabcordions/4.1.6
 	url = git@github.com:WestpacCXTeam/GUI-tabcordions.git
+[submodule "logos/2.0.9"]
+	path = logos/2.0.9
+	url = git@github.com:WestpacCXTeam/GUI-logos.git
