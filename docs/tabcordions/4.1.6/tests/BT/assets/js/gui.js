@@ -333,7 +333,7 @@ GUI.init();
 		if( _isAnimated ) {
 			$target
 				.stop(true)
-				.animate({ 'height': 0 }, 1000, Callback);
+				.animate({ 'height': 0 }, 300, Callback);
 		}
 		else {
 			$target.css({ 'height': 0 });
@@ -491,9 +491,10 @@ GUI.init();
 							scrollOffset = 0;
 						}
 
+
 						GUI.collapsible.open( $tabcordion.find( target ), _isAnimated, function scrollToTab() {
 							//scroll to top
-							// $('html, body').animate({ scrollTop: ( $this.offset().top - 60 - scrollOffset ) }, 200);
+							$('html, body').animate({ scrollTop: ( $this.offset().top - 60 - scrollOffset ) }, 200);
 						}, false);
 					}
 				}
