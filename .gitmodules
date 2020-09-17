@@ -58,6 +58,9 @@
 [submodule "_fonts/2.0.6"]
 	path = _fonts/2.0.6
 	url = git@github.com:WestpacCXTeam/GUI_fonts.git
+[submodule "_fonts/2.0.7"]
+	path = _fonts/2.0.7
+	url = git@github.com:WestpacCXTeam/GUI_fonts.git
 [submodule "_grid/1.0.0"]
 	path = _grid/1.0.0
 	url = git@github.com:WestpacCXTeam/GUI_grid.git
