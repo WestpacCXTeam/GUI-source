@@ -1,8 +1,8 @@
-/*!_colors v3.0.4*/
+/*!_colors v3.0.5*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.6*/
+/*!_fonts v2.0.7*/
 /*
 	 *  SETTINGS
 	 */
@@ -10,14 +10,14 @@
 	 *  SETTINGS
 	 */
 @font-face {
-  font-family: 'aller';
+  font-family: 'Aller';
   src: url('../font/Aller_Bd.eot');
   src: url('../font/Aller_Bd.eot?#iefix') format('embedded-opentype'), url('../font/Aller_Bd.woff2') format('woff2'), url('../font/Aller_Bd.woff') format('woff'), url('../font/Aller_Bd.ttf') format('truetype'), url('../font/Aller_Bd.svg#Aller-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'aller';
+  font-family: 'Aller';
   src: url('../font/Aller_Lt.eot');
   src: url('../font/Aller_Lt.eot?#iefix') format('embedded-opentype'), url('../font/Aller_Lt.woff2') format('woff2'), url('../font/Aller_Lt.woff') format('woff'), url('../font/Aller_Lt.ttf') format('truetype'), url('../font/Aller_Lt.svg#Aller-Light') format('svg');
   font-weight: 300;

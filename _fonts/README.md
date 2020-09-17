@@ -20,6 +20,10 @@ GUI Fonts
 
 ### Release History
 
+* v2.0.7 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Updated WBC brand’s font to ‘Westpac’ font
+	* Updated brand font font-family stacks with body font fallback
+	* Updated brand font names to title case
 * v2.0.6 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Updated WBG brand’s font to ‘Montserrat’
 * v2.0.5 - `LESS/CSS` ~~`HTML`~~ ~~`JS`~~

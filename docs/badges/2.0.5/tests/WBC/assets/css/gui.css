@@ -1,8 +1,8 @@
-/*!_colors v3.0.4*/
+/*!_colors v3.0.5*/
 /*
 	 *  SETTINGS
 	 */
-/*!_fonts v2.0.6*/
+/*!_fonts v2.0.7*/
 /*
 	 *  SETTINGS
 	 */
@@ -10,9 +10,9 @@
 	 *  SETTINGS
 	 */
 @font-face {
-  font-family: 'chronicle-disp-semibold';
-  src: url('../font/7FF5B4E46E46717F5.eot');
-  src: url('../font/7FF5B4E46E46717F5.eot?#iefix') format('embedded-opentype'), url('../font/7FF5B4E46E46717F5.woff2') format('woff2'), url('../font/7FF5B4E46E46717F5.woff') format('woff'), url('../font/7FF5B4E46E46717F5.ttf') format('truetype'), url('../font/7FF5B4E46E46717F5.svg#ChronicleDisplay-Semi') format('svg');
+  font-family: 'Westpac';
+  src: url('../font/Westpac-Bold.eot');
+  src: url('../font/Westpac-Bold.eot?#iefix') format('embedded-opentype'), url('../font/Westpac-Bold.woff2') format('woff2'), url('../font/Westpac-Bold.woff') format('woff'), url('../font/Westpac-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -1202,14 +1202,14 @@ template {
 body {
   font-size: 0.875rem;
   line-height: 1.42857143;
-  color: #2d373e;
+  color: #181b25;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-feature-settings: "liga" 1;
           font-feature-settings: "liga" 1;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #2d373e;
+  border-bottom: 1px dotted #181b25;
   text-decoration: none;
 }
 address {
@@ -1227,7 +1227,7 @@ textarea {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 mark {
-  background-color: #f7ccd5;
+  background-color: #f8d1cf;
 }
 h1,
 h2,
@@ -1235,7 +1235,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #621a4b;
+  color: #1f1c4f;
 }
 .is-keyboarduser h1:focus,
 .is-keyboarduser h2:focus,
@@ -1243,7 +1243,7 @@ h6 {
 .is-keyboarduser h4:focus,
 .is-keyboarduser h5:focus,
 .is-keyboarduser h6:focus {
-  outline: 2px solid #9f4585;
+  outline: 2px solid #b978d9;
   outline-offset: 3px;
 }
 p {
@@ -1259,13 +1259,13 @@ dl dd {
   outline: none;
 }
 ::-moz-selection {
-  background-color: #f7ccd5;
+  background-color: #f8d1cf;
 }
 ::selection {
-  background-color: #f7ccd5;
+  background-color: #f8d1cf;
 }
 a {
-  color: #d5002b;
+  color: #da1710;
   text-decoration: underline;
 }
 a:hover,
@@ -1273,7 +1273,7 @@ a:focus {
   text-decoration: underline;
 }
 .is-keyboarduser a:focus {
-  outline: 2px solid #9f4585;
+  outline: 2px solid #b978d9;
   outline-offset: 3px;
 }
 label {
@@ -1365,13 +1365,13 @@ label {
   font-weight: 700;
   font-size: 0.875rem;
   color: #fff;
-  background-color: #2d373e;
-  border: 1px solid #2d373e;
+  background-color: #2a2e42;
+  border: 1px solid #2a2e42;
 }
 .btn-primary:not(.btn-soft) .badge,
 .btn-hero:not(.btn-soft) .badge,
 .btn-neutral:not(.btn-soft) .badge {
-  color: #2d373e;
+  color: #181b25;
   background-color: #fff;
   border-color: #fff;
 }
@@ -1401,13 +1401,13 @@ label {
 }
 .badge-primary {
   color: #fff;
-  background-color: #d5002b;
-  border: 1px solid #d5002b;
+  background-color: #da1710;
+  border: 1px solid #da1710;
 }
 .btn-primary:not(.btn-soft) .badge-primary,
 .btn-hero:not(.btn-soft) .badge-primary,
 .btn-neutral:not(.btn-soft) .badge-primary {
-  color: #d5002b;
+  color: #da1710;
   background-color: #fff;
   border-color: #fff;
 }
@@ -1422,13 +1422,13 @@ label {
 }
 .badge-hero {
   color: #fff;
-  background-color: #621a4b;
-  border: 1px solid #621a4b;
+  background-color: #1f1c4f;
+  border: 1px solid #1f1c4f;
 }
 .btn-primary:not(.btn-soft) .badge-hero,
 .btn-hero:not(.btn-soft) .badge-hero,
 .btn-neutral:not(.btn-soft) .badge-hero {
-  color: #621a4b;
+  color: #1f1c4f;
   background-color: #fff;
   border-color: #fff;
 }
@@ -1443,13 +1443,13 @@ label {
 }
 .badge-neutral {
   color: #fff;
-  background-color: #2d373e;
-  border: 1px solid #2d373e;
+  background-color: #2a2e42;
+  border: 1px solid #2a2e42;
 }
 .btn-primary:not(.btn-soft) .badge-neutral,
 .btn-hero:not(.btn-soft) .badge-neutral,
 .btn-neutral:not(.btn-soft) .badge-neutral {
-  color: #2d373e;
+  color: #2a2e42;
   background-color: #fff;
   border-color: #fff;
 }
@@ -1463,14 +1463,14 @@ label {
   float: right;
 }
 .badge-faint {
-  color: #575f65;
+  color: #595767;
   background-color: #fff;
-  border: 1px solid #d7d2cb;
+  border: 1px solid #e8e8ed;
 }
 .btn-primary:not(.btn-soft) .badge-faint,
 .btn-hero:not(.btn-soft) .badge-faint,
 .btn-neutral:not(.btn-soft) .badge-faint {
-  color: #575f65;
+  color: #595767;
   background-color: #fff;
   border-color: #fff;
 }

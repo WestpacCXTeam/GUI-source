@@ -19,6 +19,9 @@ GUI Logos
 
 ### Release History
 
+* v2.0.10 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
+	* Update WBC logos with new brand colours
+	* Remove Westpac Live logo `.logo-wbc-live`
 * v2.0.9 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
 	* Update logos for WBG brand
 * v2.0.8 - `SVG` `LESS/CSS` ~~`HTML`~~ ~~`JS`~~
